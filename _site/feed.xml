@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+
+
+
+  
+
+<title type="text"><b>welcome to sh4's personal arena</b><br><br>you will find my notes on <b>life, travel, photography, <u>infosec</u></b> & almost everything I'd love to share.<br><br><sup>(Right now there are no blog posts, I will be publishing sooner or later)</sup></title>
+<generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
+<link rel="self" type="application/atom+xml" href="/feed.xml" />
+<link rel="alternate" type="text/html" href="/" />
+<updated>2015-09-04T20:38:05+06:00</updated>
+<id>/</id>
+<author>
+  <name>Shankar Damodaran</name>
+  <uri>/</uri>
+  <email>shan (at) signalhack (dot) net</email>
+</author>
+
+</feed>
