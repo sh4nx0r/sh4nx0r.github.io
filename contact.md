@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /touchbase/index.html
-title: PGP Touch Base
+title: Touch Base with Me
 tags: [shan, sh4, sh4nx0r, shanks, shankardamodaran]
 imagefeature: fourseasons.jpg
 chart: true
@@ -9,7 +9,7 @@ chart: true
 
 
 
-> Use the below PGP key to send your personalized messages to my email(shan at signalhack dot net) if you consider the message as **confidential**, otherwise you could connect with me on linkedin or twitter (available on the footer).
+> Use the below PGP key to send your personalized messages to my email(shan@signalhack.net) for **confidential** communication, otherwise you could connect with me on linkedin or twitter (available on the footer).
 
 <pre>
 -----BEGIN PGP PUBLIC KEY BLOCK-----
@@ -34,4 +34,4 @@ PpHd9w==
 
 ### Huh? How does this shit work?
 
-Use my above public key to encrypt your message using this [link](https://www.igolder.com/pgp/encryption/) <br>Copy that encrypted PGP Message as a whole and shoot me an email at(see above). I will definitely get back to you.
+Use my above public key to encrypt your message using this [link](https://www.igolder.com/pgp/encryption/) <br>Copy that encrypted PGP Message as a whole and shoot me an email at(see above).<br>I will definitely get back to you.
