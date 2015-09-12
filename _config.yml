@@ -1,7 +1,8 @@
-title:            <b>welcome to sh4's personal arena</b><br><br>you will find my notes on <b>life, travel, photography, <u>infosec</u></b> & almost everything I'd love to share.<br><br><sup>(Right now there are no blog posts, I will be publishing sooner or later)</sup>
-description:      y3t anoth3r h4ck3r
-logo:             logo.png
-disqus_shortname: sh4.in
+title:            <b><font size='3.75em'>welcome to sh4's personal arena</b></font><br><br><font size='2.75em'>you will find my notes on <b>life, travel, photography, <u>infosec</u></b> & almost everything I'd love to share.</font>
+description:      <font size='2.75em'>Inventor<font color='red' size='3.75em'>.</font> Developer<font color='red' size='3.75em'>.</font> Hacker<font color='red' size='3.75em'>.</font></font><br><font size='1.75em'>“A talented social engineer is considered to be the most dangerous hacker.” -shankar damodaran</font>
+
+logo:		logo.png
+disqus_shortname: sh4in
 share:            true
 dropcap:	   true
 # Change url to your domain. Leave localhost server or blank when working locally.
@@ -13,9 +14,9 @@ url:    ''
 owner:
   name:           Shankar Damodaran
   avatar:         shan.jpg
-  email:          shan (at) signalhack (dot) net
+  email:          shan@signalhack.net
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
-  description:    A down to earth guy.
+  description:    Inventor. Developer. Hacker.
   # Social networking links used in footer. Update and remove as you like.
   twitter:        sh4nx0r
   facebook:       sh4nx0r
@@ -38,10 +39,11 @@ links:
     url: /
     external: false
     icon: home
+  - title: Featured Posts
+    url: /featured
   - title: Touch Base
     url: /touchbase
-#  - title: Featured Posts
-#    url: /featured
+
 #  - title: Categories
 #    url: /categories
 #  - title: About
