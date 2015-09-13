@@ -199,7 +199,7 @@ main, .notepad-share-icons, .notepad-disqus {
       font-size: 1rem; }
     .notepad-site-head .notepad-site-head-content h2 {
       font-size: 4.375rem;
-      padding-bottom: 9.375rem;
+      padding-bottom: 1.375rem;
       font-weight: 700; } }
   @media only screen and (min-width: 90em) {
     .notepad-site-head .notepad-site-head-content h1 {
@@ -228,7 +228,7 @@ main, .notepad-share-icons, .notepad-disqus {
       padding-top: 4.375rem;
       padding-bottom: 4.375rem; }
       .notepad-content .notepad-index-post:first-of-type {
-        padding-top: 7.5rem; }
+        padding-top: 3.5rem; }
       .notepad-content .notepad-index-post .datetime {
         margin-bottom: 0; } }
   .notepad-content .notepad-index-post .notepad-post-meta {
