@@ -9,7 +9,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="/feed.xml" />
 <link rel="alternate" type="text/html" href="/" />
-<updated>2015-09-13T13:02:53+06:00</updated>
+<updated>2015-09-13T16:07:21+06:00</updated>
 <id>/</id>
 <author>
   <name>Shankar Damodaran</name>
@@ -107,7 +107,7 @@
 &lt;h1 id=&quot;the-bunny-game-2010&quot;&gt;14. The Bunny Game (2010)&lt;/h1&gt;
 
 &lt;figure&gt;
-&lt;img src=&quot;/images/blogimages/2015-09-08/bunnygame.jpg&quot; width=&quot;25%&quot; height=&quot;50%&quot; /&gt;
+&lt;img src=&quot;/images/blogimages/2015-09-08/bunnygame.jpg&quot; /&gt;
 &lt;/figure&gt;
 
 &lt;blockquote&gt;
@@ -168,7 +168,7 @@
 &lt;h1 id=&quot;irreversible-2002&quot;&gt;13. Irreversible (2002)&lt;/h1&gt;
 
 &lt;figure&gt;
-&lt;img src=&quot;/images/blogimages/2015-09-08/irreversible.jpg&quot; width=&quot;50%&quot; height=&quot;50%&quot; /&gt;
+&lt;img src=&quot;/images/blogimages/2015-09-08/irreversible.jpg&quot; /&gt;
 &lt;/figure&gt;
 
 &lt;blockquote&gt;
@@ -229,7 +229,7 @@
 &lt;h1 id=&quot;the-human-centipede-ii-2011&quot;&gt;12. The Human Centipede II (2011)&lt;/h1&gt;
 
 &lt;figure&gt;
-&lt;img src=&quot;/images/blogimages/2015-09-08/humancentipede2.jpg&quot; width=&quot;50%&quot; height=&quot;50%&quot; /&gt;
+&lt;img src=&quot;/images/blogimages/2015-09-08/humancentipede2.jpg&quot; /&gt;
 &lt;/figure&gt;
 
 &lt;blockquote&gt;
@@ -290,7 +290,7 @@
 &lt;h1 id=&quot;sal-or-120-days-of-sodom-1975&quot;&gt;11. Salò, or 120 Days of Sodom (1975)&lt;/h1&gt;
 
 &lt;figure&gt;
-&lt;img src=&quot;/images/blogimages/2015-09-08/salo.jpg&quot; width=&quot;30%&quot; height=&quot;50%&quot; /&gt;
+&lt;img src=&quot;/images/blogimages/2015-09-08/salo.jpg&quot; /&gt;
 &lt;/figure&gt;
 
 &lt;blockquote&gt;
@@ -351,7 +351,7 @@
 &lt;h1 id=&quot;cannibal-holocaust-1980&quot;&gt;10. Cannibal Holocaust (1980)&lt;/h1&gt;
 
 &lt;figure&gt;
-&lt;img src=&quot;/images/blogimages/2015-09-08/cannibalholocaust.jpg&quot; width=&quot;40%&quot; height=&quot;25%&quot; /&gt;
+&lt;img src=&quot;/images/blogimages/2015-09-08/cannibalholocaust.jpg&quot; /&gt;
 &lt;/figure&gt;
 
 &lt;blockquote&gt;
@@ -412,7 +412,7 @@
 &lt;h1 id=&quot;aftermath-1994&quot;&gt;9. Aftermath (1994)&lt;/h1&gt;
 
 &lt;figure&gt;
-&lt;img src=&quot;/images/blogimages/2015-09-08/aftermath.jpg&quot; width=&quot;25%&quot; height=&quot;20%&quot; /&gt;
+&lt;img src=&quot;/images/blogimages/2015-09-08/aftermath.jpg&quot; /&gt;
 &lt;/figure&gt;
 
 &lt;blockquote&gt;
@@ -473,7 +473,7 @@
 &lt;h1 id=&quot;antichrist-2009&quot;&gt;8. Antichrist (2009)&lt;/h1&gt;
 
 &lt;figure&gt;
-&lt;img src=&quot;/images/blogimages/2015-09-08/antichrist.jpg&quot; width=&quot;25%&quot; height=&quot;20%&quot; /&gt;
+&lt;img src=&quot;/images/blogimages/2015-09-08/antichrist.jpg&quot; /&gt;
 &lt;/figure&gt;
 
 &lt;blockquote&gt;
@@ -534,7 +534,7 @@
 &lt;h1 id=&quot;martyrs-2008&quot;&gt;7. Martyrs (2008)&lt;/h1&gt;
 
 &lt;figure&gt;
-&lt;img src=&quot;/images/blogimages/2015-09-08/martyrs.jpg&quot; width=&quot;40%&quot; height=&quot;25%&quot; /&gt;
+&lt;img src=&quot;/images/blogimages/2015-09-08/martyrs.jpg&quot; /&gt;
 &lt;/figure&gt;
 
 &lt;blockquote&gt;
@@ -595,7 +595,7 @@
 &lt;h1 id=&quot;snuff-102-2008&quot;&gt;6. Snuff 102 (2008)&lt;/h1&gt;
 
 &lt;figure&gt;
-&lt;img src=&quot;/images/blogimages/2015-09-08/snuff.jpg&quot; width=&quot;30%&quot; height=&quot;25%&quot; /&gt;
+&lt;img src=&quot;/images/blogimages/2015-09-08/snuff.jpg&quot; /&gt;
 &lt;/figure&gt;
 
 &lt;blockquote&gt;
@@ -656,7 +656,7 @@
 &lt;h1 id=&quot;the-angels-melancholia-2009&quot;&gt;5. The Angels’ Melancholia (2009)&lt;/h1&gt;
 
 &lt;figure&gt;
-&lt;img src=&quot;/images/blogimages/2015-09-08/angelmelancholy.jpg&quot; width=&quot;30%&quot; height=&quot;25%&quot; /&gt;
+&lt;img src=&quot;/images/blogimages/2015-09-08/angelmelancholy.jpg&quot; /&gt;
 &lt;/figure&gt;
 
 &lt;blockquote&gt;
@@ -713,7 +713,7 @@
 &lt;h1 id=&quot;a-serbian-film-2008&quot;&gt;4. A Serbian Film (2008)&lt;/h1&gt;
 
 &lt;figure&gt;
-&lt;img src=&quot;/images/blogimages/2015-09-08/serbianfilm.jpg&quot; width=&quot;30%&quot; height=&quot;25%&quot; /&gt;
+&lt;img src=&quot;/images/blogimages/2015-09-08/serbianfilm.jpg&quot; /&gt;
 &lt;/figure&gt;
 
 &lt;blockquote&gt;
@@ -774,7 +774,7 @@
 &lt;h1 id=&quot;slaughtered-vomit-dolls-2006&quot;&gt;3. Slaughtered Vomit Dolls (2006)&lt;/h1&gt;
 
 &lt;figure&gt;
-&lt;img src=&quot;/images/blogimages/2015-09-08/svd.jpg&quot; width=&quot;30%&quot; height=&quot;25%&quot; /&gt;
+&lt;img src=&quot;/images/blogimages/2015-09-08/svd.jpg&quot; /&gt;
 &lt;/figure&gt;
 
 &lt;blockquote&gt;
@@ -835,7 +835,7 @@
 &lt;h1 id=&quot;august-undergrounds-mordum-2003&quot;&gt;2. August Underground’s Mordum (2003)&lt;/h1&gt;
 
 &lt;figure&gt;
-&lt;img src=&quot;/images/blogimages/2015-09-08/augustmordum.jpg&quot; width=&quot;20%&quot; height=&quot;25%&quot; /&gt;
+&lt;img src=&quot;/images/blogimages/2015-09-08/augustmordum.jpg&quot; /&gt;
 &lt;/figure&gt;
 
 &lt;blockquote&gt;
@@ -896,6 +896,7 @@
 &lt;h3 id=&quot;some-other-honorable-mentions-that-wasnt-included-in-the-top-15&quot;&gt;Some other honorable mentions that wasn’t included in the top 15.&lt;/h3&gt;
 
 &lt;ul&gt;
+  &lt;li&gt;Debris Documentar (2012)&lt;/li&gt;
   &lt;li&gt;Dogtooth (2010)&lt;/li&gt;
   &lt;li&gt;Nekromantik (1987)&lt;/li&gt;
   &lt;li&gt;The Last House On The Left (1972 &amp;amp; 2009)&lt;/li&gt;
@@ -923,7 +924,7 @@
   &lt;p&gt;&lt;strong&gt;précis&lt;/strong&gt;: Over three hours of the most disgusting and disturbing shock clips ever caught on camera. Guaranteed to be the most sickest movie ever made in the history of cinema.&lt;b&gt;Banned in 131 Countries.&lt;/b&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;em&gt;This is the most disgusting, horrific, shocking content you will ever experience in your life. This documentary is a sequel to its original MDPOPE I. It took me two weeks to completely watch MDPOPE I (prequel), I couldn’t watch it continuosly for more than 7 minutes, so I had to break it up. Well, MDPOPE II took me one and half months to finish it completely. &lt;strong&gt;DO NOT WATCH ALONE.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This is the most disgusting, horrific, shocking content you will ever experience in your life. This documentary is a sequel to its original MDPOPE I. It took me two weeks to completely watch MDPOPE I (prequel), I couldn’t watch it continuosly for more than 7 minutes, so I had to break it up. Well, MDPOPE II took me one and half months to finish it off fully. &lt;strong&gt;DO NOT WATCH THIS ALONE.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 
 &lt;div class=&quot;row&quot;&gt;
     &lt;div class=&quot;large-12 columns&quot;&gt;

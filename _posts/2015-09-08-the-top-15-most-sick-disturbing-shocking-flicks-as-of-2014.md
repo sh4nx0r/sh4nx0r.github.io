@@ -92,7 +92,7 @@ _This movie is based on a true event that happened in Macau, China. When I saw t
 # 14. The Bunny Game (2010)
 
 <figure>
-<img src = '/images/blogimages/2015-09-08/bunnygame.jpg' width="25%" height="50%" />
+<img src = '/images/blogimages/2015-09-08/bunnygame.jpg'/>
 </figure>
 
 
@@ -155,7 +155,7 @@ _This movie was filmed in black and white, it wouldn't have made much difference
 # 13. Irreversible (2002)
 
 <figure>
-<img src = '/images/blogimages/2015-09-08/irreversible.jpg' width="50%" height="50%" />
+<img src = '/images/blogimages/2015-09-08/irreversible.jpg'/>
 </figure>
 
 > **précis**: Events over the course of one traumatic night in Paris unfold in reverse-chronological order as the beautiful Alex is brutally raped and beaten by a stranger in the underpass.
@@ -217,7 +217,7 @@ _"Excellent cinematography, amazing computer graphics & special effects on the f
 # 12. The Human Centipede II (2011)
 
 <figure>
-<img src = '/images/blogimages/2015-09-08/humancentipede2.jpg' width="50%" height="50%" />
+<img src = '/images/blogimages/2015-09-08/humancentipede2.jpg'/>
 </figure>
 
 > **précis**: Inspired by the fictional Dr. Heiter from the Movie **The Human Centipede (2009)**, disturbed loner Martin dreams of creating a 12-person centipede and sets out to realize his sick fantasy. He kidnaps and mutilates people in order to reassemble them into a human centipede, by stitching their mouths to each others rectums.
@@ -277,7 +277,7 @@ _This movie was intentionally shot in black and white and it is a sequel to the 
 # 11. Salò, or 120 Days of Sodom (1975)
 
 <figure>
-<img src = '/images/blogimages/2015-09-08/salo.jpg' width="30%" height="50%" />
+<img src = '/images/blogimages/2015-09-08/salo.jpg'/>
 </figure>
 
 > **précis**: Four fascist libertines round up nine adolescent boys and girls and subject them to 120 days of physical, mental and sexual torture.
@@ -338,7 +338,7 @@ _Sadomasochism is what Salò is about. Lot of graphical torture violence scenes 
 # 10. Cannibal Holocaust (1980)
 
 <figure>
-<img src = '/images/blogimages/2015-09-08/cannibalholocaust.jpg' width="40%" height="25%" />
+<img src = '/images/blogimages/2015-09-08/cannibalholocaust.jpg'/>
 </figure>
 
 
@@ -400,7 +400,7 @@ _Most controversial movie during the 80's era. Banned in Australia, Finland, New
 # 9. Aftermath (1994)
 
 <figure>
-<img src = '/images/blogimages/2015-09-08/aftermath.jpg' width="25%" height="20%" />
+<img src = '/images/blogimages/2015-09-08/aftermath.jpg'/>
 </figure>
 
 
@@ -461,7 +461,7 @@ _Isn't the précis shocking? This flick's runtime is just around 30 - 35 minutes
 # 8. Antichrist (2009)
 
 <figure>
-<img src = '/images/blogimages/2015-09-08/antichrist.jpg' width="25%" height="20%" />
+<img src = '/images/blogimages/2015-09-08/antichrist.jpg'/>
 </figure>
 
 > **précis**: While a married couple is having sex, their infant son in a nearby room falls out a window to his death. She becomes distraught and is hospitalized, but her husband, who is a psychiatrist, attempts to treat her. Deciding that she needs to face her fears, he takes her to a cabin in the woods (Eden) where she spent a previous summer with the boy. Once they are there, she becomes more unhinged and starts perpetrating sexual violence on her husband and herself.
@@ -521,7 +521,7 @@ _This movie is an epic artistic masterpiece. Though it has serious scenes of dis
 # 7. Martyrs (2008)
 
 <figure>
-<img src = '/images/blogimages/2015-09-08/martyrs.jpg' width="40%" height="25%" />
+<img src = '/images/blogimages/2015-09-08/martyrs.jpg'/>
 </figure>
 
 > **précis**: A young woman's quest for revenge against the people who kidnapped and tormented her as a child leads her and a friend, who is also a victim of child abuse, on a terrifying journey into a living hell of depravity.
@@ -581,7 +581,7 @@ _Viewers should possess a certain bit of endurance levels to withstand the prolo
 # 6. Snuff 102 (2008)
 
 <figure>
-<img src = '/images/blogimages/2015-09-08/snuff.jpg' width="30%" height="25%" />
+<img src = '/images/blogimages/2015-09-08/snuff.jpg'/>
 </figure>
 
 > **précis**: A young reporter begins to unravel the secrets of an underground myth "snuff flicks". Soon she falls in a gruesome spiral of shocking images, not suited for the faint hearted.
@@ -641,7 +641,7 @@ _The serial killer is an inhumane sadistic being who names his victims as 100, 1
 # 5. The Angels' Melancholia (2009)
 
 <figure>
-<img src = '/images/blogimages/2015-09-08/angelmelancholy.jpg' width="30%" height="25%" />
+<img src = '/images/blogimages/2015-09-08/angelmelancholy.jpg'/>
 </figure>
 
 > **précis**: Feeling his mortality and fearing that he's reaching the end of his life, Katze decides to meet up with his old friend Brauth at an old house in which they used to spend time delving into dark pleasures. He also finds that two other old acquaintances of his are attending, the group decides to allow Katze to go out in style as their fun turns increasingly more depraved and horrific.
@@ -699,7 +699,7 @@ _Intense graphic scenes, too much animal cruelty, masturbations and orgy followe
 # 4. A Serbian Film (2008)
 
 <figure>
-<img src = '/images/blogimages/2015-09-08/serbianfilm.jpg' width="30%" height="25%" />
+<img src = '/images/blogimages/2015-09-08/serbianfilm.jpg'/>
 </figure>
 
 > **précis**: An aging porn star agrees to participate in an "art film" in order to make a clean break from the business, only to discover that he has been drafted into making a pedophilia and necrophilia themed snuff film.
@@ -759,7 +759,7 @@ _Most disturbing and a shocking flick, definitely not for the squeamish. The fil
 # 3. Slaughtered Vomit Dolls (2006)
 
 <figure>
-<img src = '/images/blogimages/2015-09-08/svd.jpg' width="30%" height="25%" />
+<img src = '/images/blogimages/2015-09-08/svd.jpg'/>
 </figure>
 
 > **précis**: The gruesome tapestry of psychological manifestations of a nineteen year old bulimic runaway stripper-turned prostitute as she descends into a hellish pit of satanic nightmares and hallucinations.
@@ -819,7 +819,7 @@ _This flick lacks plot and involves humongous disturbing vomit gore sequences. H
 # 2. August Underground's Mordum (2003)
 
 <figure>
-<img src = '/images/blogimages/2015-09-08/augustmordum.jpg' width="20%" height="25%" />
+<img src = '/images/blogimages/2015-09-08/augustmordum.jpg'/>
 </figure>
 
 > **précis**: An intense anatomy of three serial delusional killers on a murderous spree.
@@ -877,6 +877,7 @@ _This flick maybe intentionally filmed through a crappy videocam inorder to make
 
 ### Some other honorable mentions that wasn't included in the top 15.
 
+* Debris Documentar (2012)
 * Dogtooth (2010)
 * Nekromantik (1987)
 * The Last House On The Left (1972 & 2009)
@@ -885,7 +886,7 @@ _This flick maybe intentionally filmed through a crappy videocam inorder to make
 * Cannibal (2006)
 * The Holy Mountain (1972)
 * I Never Left the White Room (2000)
-* 7 Days (2010) 
+* 7 Days (2010)
 
 
 ### <font color='red'><center>WARNING</center></font>
@@ -903,7 +904,7 @@ _This flick maybe intentionally filmed through a crappy videocam inorder to make
 
 > **précis**: Over three hours of the most disgusting and disturbing shock clips ever caught on camera. Guaranteed to be the most sickest movie ever made in the history of cinema.<b>Banned in 131 Countries.</b>
 
-_This is the most disgusting, horrific, shocking content you will ever experience in your life. This documentary is a sequel to its original MDPOPE I. It took me two weeks to completely watch MDPOPE I (prequel), I couldn't watch it continuosly for more than 7 minutes, so I had to break it up. Well, MDPOPE II took me one and half months to finish it completely. **DO NOT WATCH ALONE.**_
+_This is the most disgusting, horrific, shocking content you will ever experience in your life. This documentary is a sequel to its original MDPOPE I. It took me two weeks to completely watch MDPOPE I (prequel), I couldn't watch it continuosly for more than 7 minutes, so I had to break it up. Well, MDPOPE II took me one and half months to finish it off fully. **DO NOT WATCH THIS ALONE.**_
 
 <div class="row">
     <div class="large-12 columns">
