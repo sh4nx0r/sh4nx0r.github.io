@@ -19,7 +19,7 @@ owner:
   description:    Inventor. Developer. Hacker.
   # Social networking links used in footer. Update and remove as you like.
   twitter:        sh4nx0r
-  facebook:       sh4nx0r
+  #facebook:       sh4nx0r
   github:         sh4nx0r
   linkedin:	  shankardamodaran      
   #instagram:      ''
@@ -39,8 +39,8 @@ links:
     url: /
     external: false
     icon: home
-  - title: Hot Posts
-    url: /hot
+  - title: Sticky
+    url: /sticky
   - title: Touch Base
     url: /touchbase
 
