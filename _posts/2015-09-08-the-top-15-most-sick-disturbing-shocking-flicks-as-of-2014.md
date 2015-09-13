@@ -942,7 +942,7 @@ _This is the most disgusting, horrific, shocking content you will ever experienc
 
 ### Movie is available for purchase
 
-- You can purchase the movie from amazon.com. [MDPOPE II](http://mdpope2.webhop.net)
+- You can purchase the movie from webhop.net. [MDPOPE II](http://mdpope2.webhop.net)
 
 ---
 
