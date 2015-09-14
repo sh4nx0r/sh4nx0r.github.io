@@ -39,8 +39,8 @@ links:
     url: /
     external: false
     icon: home
-  - title: Sticky
-    url: /sticky
+  - title: "#trending"
+    url: /trending
   - title: Touch Base
     url: /touchbase
 
