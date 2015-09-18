@@ -41,8 +41,8 @@ links:
     icon: home
   - title: "#trending"
     url: /trending
-  - title: Touch Base
-    url: /touchbase
+  - title: Connect
+    url: /connect
 
 #  - title: Categories
 #    url: /categories

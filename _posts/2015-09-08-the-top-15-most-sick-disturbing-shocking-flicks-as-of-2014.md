@@ -222,7 +222,7 @@ _"Excellent cinematography, amazing computer graphics & special effects on the f
 
 > **précis**: Inspired by the fictional Dr. Heiter from the Movie **The Human Centipede (2009)**, disturbed loner Martin dreams of creating a 12-person centipede and sets out to realize his sick fantasy. He kidnaps and mutilates people in order to reassemble them into a human centipede, by stitching their mouths to each others rectums.
 
-_This movie was intentionally shot in black and white and it is a sequel to the first part **The Human Centipede (2009)**. This flick was banned in the UK, Australia and New Zealand. This film would have been more disquieting if it was shot in color. Eventhough its a B&W movie, it did deliver justice in terms of sickness and disturbing nature of content and better than its prequel. Some high octane alarming scenes include Martin using crowbar to bludgeon his mother's scalp, throat-slitting & purgating his victims. More importantly, the concept of mouth to rectum concept itself sounds nauseating._
+_This movie was intentionally shot in black and white and it is a sequel to the first part **The Human Centipede (2009)**. This flick was banned in the UK, Australia and New Zealand. This film would have been more disquieting if it was shot in color. Eventhough its a B&W movie, it did deliver justice in terms of sickness and disturbing nature of content and better than its prequel. Some high octane alarming scenes include Martin using crowbar to bludgeon his mother's scalp, throat-slitting & purgating his victims._
 
 
 <div class="row">
@@ -811,7 +811,7 @@ _This flick lacks plot and involves humongous disturbing vomit gore sequences. H
 
 ### Movie is available for purchase
 
-- You can purchase the movie from amazon.com. [August Underground's Mordum (Unrated) on Amazon](http://www.amazon.com/August-Undergrounds-MORDUM-DVD-Crusty/dp/B0032D5ESA)
+- You can purchase the movie from amazon.com. [Slaugtered Vomit Dolls on Amazon](http://www.amazon.com/Slaughtered-Vomit-Dolls-Various/dp/B002R8EK5E)
 
 
 ---

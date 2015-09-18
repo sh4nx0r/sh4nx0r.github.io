@@ -32,7 +32,7 @@ header, main, footer {
   z-index: 1; }
 
 main, .notepad-share-icons, .notepad-disqus {
-  background: white; }
+  background: #DEDEDE; }
 
 .animated-post {
   background: transparent; }

@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /touchbase/index.html
-title: Touch Base with Me
+title: Connect with Me
 tags: [shan, sh4, sh4nx0r, shanks, shankardamodaran]
 imagefeature: fourseasons.jpg
 chart: true
