@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /touchbase/index.html
+permalink: /connect/index.html
 title: Connect with Me
 tags: [shan, sh4, sh4nx0r, shanks, shankardamodaran]
 imagefeature: fourseasons.jpg
