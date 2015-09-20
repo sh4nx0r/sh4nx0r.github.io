@@ -34,4 +34,4 @@ PpHd9w==
 
 ### Huh? How does this shit work?
 
-Use my above public key to encrypt your message using this [link](https://www.igolder.com/pgp/encryption/) <br>Copy that encrypted PGP Message as a whole and shoot me an email at(see above).<br>I will definitely get back to you.
+Use my above public key to encrypt your message using this [link.](https://www.igolder.com/pgp/encryption/) <br>Copy that encrypted PGP Message as a whole and shoot me an email at (see above).<br>I will definitely get back to you.
