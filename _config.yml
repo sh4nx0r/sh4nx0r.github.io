@@ -41,6 +41,8 @@ links:
     icon: home
   - title: "#trending"
     url: /trending
+  - title: MyCV
+    url: /cv
   - title: Connect
     url: /connect
 
