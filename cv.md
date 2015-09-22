@@ -9,7 +9,7 @@ chart: true
 
 
 
-> I hope it will be worth your time, else you could curse me via the connect link on the header.
+> I hope it will be worth your time, else you could curse (**profanity allowed**) me via the connect link on the header.
 
 <iframe src="http://docs.google.com/gview?url=bit.ly/1KfwQRL&embedded=true" style="width:75%; height:700px; display:block; margin: 0 auto;" frameborder="0"></iframe>
 
