@@ -3,6 +3,11 @@ callback([
   {
     "text": "The top 15 most sick, disturbing & shocking flicks as of 2014.",
     "href": "/movies/the-top-15-most-sick-disturbing-shocking-flicks-as-of-2014"
+  } ,
+
+  {
+    "text": "Bachelor's Recipe #1: The exotic indo-chinese egg scramble.",
+    "href": "/recipe/hackers-diet-recipe-indo-chinese-egg-scramble"
   } 
 
 ])

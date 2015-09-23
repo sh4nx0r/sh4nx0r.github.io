@@ -1,6 +1,14 @@
 [
 	
 		{
+		  "title"      : "Bachelor's Recipe #1: The exotic indo-chinese egg scramble.",
+		  "category"   : "recipe",
+		  "url"        : "/recipe/hackers-diet-recipe-indo-chinese-egg-scramble",
+		  "date"       : "2015-09-22 00:00:00 +0600",
+		  "shortdate"  : "September 22, 2015"
+		} ,
+	
+		{
 		  "title"      : "The top 15 most sick, disturbing &amp; shocking flicks as of 2014.",
 		  "category"   : "movies",
 		  "url"        : "/movies/the-top-15-most-sick-disturbing-shocking-flicks-as-of-2014",

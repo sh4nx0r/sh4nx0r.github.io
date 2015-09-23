@@ -506,11 +506,11 @@ svg:not(:root) {
     overflow: hidden;
 }
 figcaption {
-    padding-top: 0.625rem;
-    padding-bottom: 2.125rem;
+    padding-top: 1.1rem;
+    padding-bottom: 0.125rem;
     text-align: center;
     font-size: 0.875rem;
-    font-style:italic;
+    font-weight:bold;
 }
 ::-webkit-scrollbar {
     width: 12px;
