@@ -14,7 +14,7 @@ featured: false
 ---
 
 
-I've been experimenting a variety of cooking for quite sometime and this dish turned out to be soooo exotic. Hey, I am not faking, you should definitely try this out and you will surely thank me later. This dish is not a main course, it's a side kick and can be considered a starter as well. I am not a pro at cooking, but this one tastes luscious.<br><br> The preparation time is hardly less than 5-7 minutes. You will find a brief step-by-step method on how to make this recipe. So let's get started.
+I've been experimenting a variety of cooking for quite sometime and this dish turned out to be **soooo exotic**. Hey, I am not faking, you should definitely try this out and you will surely thank me later. This dish is not a main course, it's a side kick and can be considered a starter as well. I am not a pro at cooking, but this one tastes luscious.<br><br> The preparation time is hardly less than 5-7 minutes. You will find a brief step-by-step method on how to make this recipe. So let's get started.
 
 ## Ingredients
 
@@ -92,7 +92,7 @@ Add the 45ml of Refined/Olive Oil to the pan. Place the pan on the gas stove to 
 
 ### 3. Finely chop the capsicum and green chilly.
 
-> <font color='red'><b>Keep in mind that the pan is heating up. Don't take too much time in chopping. Estimated time to chop < 1.5 minutes.</b></font>
+> <font color='red'><b>Keep in mind that the pan is heating up. Don't take too much time in chopping. <br>Estimated time to chop < 1.5 minutes.</b></font>
 
 Get your cutting board and knife ready. Chop the capsicum and the green chilly into very fine pieces and keep it aside on your cutting board. 
 
@@ -115,7 +115,7 @@ Get your cutting board and knife ready. Chop the capsicum and the green chilly i
 
 ### 4. Add the chopped green chilly and capsicum to the pan.
 
-Use your spatula to push the chopped green chilly and capsicum from the cutting board (don't use your hands, as green chillies are rumoured to burn like hell if it makes contact with your skin) to the heated oil pan. Saute it for a while till they become pale. (Estimated time to saute = 1 minute)
+Use your spatula to push the chopped green chilly and capsicum from the cutting board (don't use hands, as green chillies are rumoured to burn like hell if it makes contact with the skin) to the heated oil pan. Saute it for a while till they become pale. (Estimated time = 1 minute)
 
 
 <figure>
