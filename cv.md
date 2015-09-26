@@ -11,7 +11,7 @@ chart: true
 
 > I hope it will be worth your time, else you could curse (**profanity allowed**) me via the connect link on the header.
 
-<iframe src="https://docs.google.com/gview?url=https://sites.google.com/site/attackalertinc/Home/Shan_CV_Final.pdf?d=0&embedded=true" style="width:75%; height:700px; display:block; margin: 0 auto;" frameborder="0"></iframe>
+<iframe src="https://docs.google.com/gview?url=https://github.com/sh4nx0r/sh4nx0r.github.io/raw/master/cv.pdf&embedded=true" style="width:75%; height:700px; display:block; margin: 0 auto;" frameborder="0"></iframe>
 
 ---
 
