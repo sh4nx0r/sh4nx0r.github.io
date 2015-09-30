@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /cv/index.html
-title: My Professional CV
+title: My Pro-CV
 tags: [resume, curriculum vitae, profile]
 imagefeature: fourseasons.jpg
 chart: true
@@ -9,7 +9,7 @@ chart: true
 
 
 
-> I hope it will be worth your time, else you could curse (**profanity allowed**) me via the connect link on the header.
+> I hope it will be worth your time, else you could curse me (**profanity allowed**) via the connect link on the header.
 
 <iframe src="https://docs.google.com/gview?url=https://github.com/sh4nx0r/sh4nx0r.github.io/raw/master/cv.pdf&embedded=true" style="width:75%; height:700px; display:block; margin: 0 auto;" frameborder="0"></iframe>
 
