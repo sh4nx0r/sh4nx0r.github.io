@@ -70,7 +70,7 @@ I've been experimenting a variety of cooking for quite sometime and this dish tu
 
 ### 1. Turn on the gas burner.
 
-Turn the gas knob on to release the gas, use the lighter to hover over the gas stove and click to ignite the gas burner. If you have an automated gas burner that gets ignited by a twist of a knob then you are a one lucky **beep**
+Turn the gas knob on to release the gas, use the lighter to hover over the gas stove and click to ignite the gas burner. If you have an automated gas burner that gets ignited by a twist of a knob then you are a one lucky **beep**.
 
 <figure>
 	<figcaption>Whoa fire! We are faster than the neanderthal. Good job!</figcaption>
@@ -110,16 +110,16 @@ Get your cutting board and knife ready. Chop the capsicum and the green chilly i
 <img src="/images/blogimages/2015-09-22/chopped_gchilli.jpg">
 
 
-> **HINT:** If you notice a very mild smoke or bubbles popping on the pan, you are almost ready to proceed to the next step. If not, wait a bit.
+> **HINT:** If you notice a mild smoke or bubbles popping on the pan, you are almost ready to proceed to the next step. If not, wait a bit.
 
 
 ### 4. Add the chopped green chilly and capsicum to the pan.
 
-Use your spatula to push the chopped green chilly and capsicum from the cutting board (don't use hands, as green chillies are rumoured to burn like hell if it makes contact with the skin) to the heated oil pan. Saute it for a while till they become pale. (Estimated time = 1 minute)
+Use your spatula to push the chopped green chilly and capsicum from the cutting board (don't use hands, as green chillies are rumoured to burn like hell if it makes contact with the skin) to the heated oil pan. Mix it for a while till they become pale. (Estimated time = 1 minute)
 
 
 <figure>
-	<figcaption>After adding, keep sauting 'em till they become pale.</figcaption>
+	<figcaption>After adding, keep mixin 'em till they become pale.</figcaption>
 </figure>
 
 <img src="/images/blogimages/2015-09-22/capsicum_chilli.jpg">
