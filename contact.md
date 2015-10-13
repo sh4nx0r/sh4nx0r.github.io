@@ -9,7 +9,7 @@ chart: true
 
 
 
-> For a **strict & confidential** communication, use the below PGP key to encrypt your personalized messages and send it to my emailc(**shan@signalhack.net**), otherwise you could simply connect with me on linkedin or twitter (available on the footer).
+> For a **strict & confidential** communication, use the below PGP key to encrypt your personalized messages and send it to my email (**shan@signalhack.net**), otherwise you could simply connect with me on linkedin or twitter (available on the footer).
 
 <pre>
 -----BEGIN PGP PUBLIC KEY BLOCK-----
