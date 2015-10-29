@@ -1,7 +1,15 @@
 [
 	
 		{
-		  "title"      : "Bachelor's Recipe #1: The exotic indo-chinese egg scramble.",
+		  "title"      : "The Extreme 500 Tools of a Hacker (ahem) Pentester.",
+		  "category"   : "infosec",
+		  "url"        : "/infosec/hackers-arsenal-pentesting-tools",
+		  "date"       : "2015-10-14 00:00:00 +0600",
+		  "shortdate"  : "October 14, 2015"
+		} ,
+	
+		{
+		  "title"      : "Bachelor&#39;s Recipe #1: The exotic indo-chinese egg scramble.",
 		  "category"   : "recipe",
 		  "url"        : "/recipe/bachelors-recipe-indo-chinese-egg-scramble",
 		  "date"       : "2015-09-22 00:00:00 +0600",

@@ -6,7 +6,7 @@
     
     
     <url>
-        <loc>/404.html</loc>
+        <loc>/404</loc>
     </url>
     
     <url>
@@ -30,7 +30,7 @@
     </url>
     
     <url>
-        <loc>/index.html</loc>
+        <loc>/</loc>
     </url>
     
     <url>
@@ -54,6 +54,10 @@
     </url>
     
 
+    
+    <url>
+        <loc>/infosec/hackers-arsenal-pentesting-tools</loc>
+    </url>
     
     <url>
         <loc>/recipe/bachelors-recipe-indo-chinese-egg-scramble</loc>

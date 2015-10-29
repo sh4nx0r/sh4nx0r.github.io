@@ -8,6 +8,11 @@ callback([
   {
     "text": "Bachelor's Recipe #1: The exotic indo-chinese egg scramble.",
     "href": "/recipe/bachelors-recipe-indo-chinese-egg-scramble"
+  } ,
+
+  {
+    "text": "The Extreme 500 Tools of a Hacker (ahem) Pentester.",
+    "href": "/infosec/hackers-arsenal-pentesting-tools"
   } 
 
 ])
