@@ -7,7 +7,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="/feed.xml" />
 <link rel="alternate" type="text/html" href="/" />
-<updated>2015-10-29T21:18:41+06:00</updated>
+<updated>2015-10-29T21:27:39+06:00</updated>
 <id>/</id>
 <author>
   <name>Shankar Damodaran</name>
@@ -31,162 +31,166 @@
   <category scheme="/tags/#penetration%20tools" term="penetration tools" /><category scheme="/tags/#pentesting%20tools" term="pentesting tools" /><category scheme="/tags/#vulnerability%20scanners" term="vulnerability scanners" />
   <content type="html">
   
-    &lt;p&gt;Warning: This is a TLDR; post. This post can be considered as a manual/bible or whatever. I always wanted to make such a huge post on most of the awesome pentesting tools available. Some tools may contain demonstration and others may simply contain a shallow syntax on how to run the particular tool, but I had made sure that almost all of them have a clear-cut definition of what they exactly do.  If it helps you, I will be very much obliged to hear that and if you don’t like this, I seriously don’t care, you could google your butt off.&lt;/p&gt;
+    Warning: This is a TLDR; post. This post can be considered as a manual/bible or whatever. I always wanted to make such a huge post on most of the awesome pentesting tools available. Some tools may contain demonstration and others may simply contain a shallow syntax on how to run the particular tool, but I had made sure that almost all of them have a clear-cut definition of what they exactly do.  If it helps you, I will be very much obliged to hear that and if you don&#39;t like this, I seriously don&#39;t care, you could google your butt off.
 
-&lt;h2 id=&quot;ingredients&quot;&gt;Ingredients&lt;/h2&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;Refined Oil (45ml) - Use Olive Oil for best results&lt;/li&gt;
-  &lt;li&gt;3 Raw Eggs&lt;/li&gt;
-  &lt;li&gt;1 Green Chilli&lt;/li&gt;
-  &lt;li&gt;1/4&lt;sup&gt;th&lt;/sup&gt; Red Capsicum&lt;/li&gt;
-  &lt;li&gt;Soya Sauce&lt;/li&gt;
-  &lt;li&gt;Chilli Sauce&lt;/li&gt;
-  &lt;li&gt;Salt to taste&lt;/li&gt;
-&lt;/ul&gt;
+## Ingredients
 
-&lt;h2 id=&quot;raw-materials&quot;&gt;Raw Materials&lt;/h2&gt;
+- Refined Oil (45ml) - Use Olive Oil for best results 
+- 3 Raw Eggs
+- 1 Green Chilli
+- 1/4&lt;sup&gt;th&lt;/sup&gt; Red Capsicum
+- Soya Sauce
+- Chilli Sauce
+- Salt to taste
 
-&lt;ul&gt;
-  &lt;li&gt;A Non-Sticky Pan&lt;/li&gt;
-  &lt;li&gt;A Lighter&lt;/li&gt;
-  &lt;li&gt;Obviously, A Gas Burner&lt;/li&gt;
-  &lt;li&gt;A Knife&lt;/li&gt;
-  &lt;li&gt;A Spatula&lt;/li&gt;
-  &lt;li&gt;A Cutting Board&lt;/li&gt;
-&lt;/ul&gt;
+ 
+## Raw Materials
 
-&lt;hr /&gt;
+- A Non-Sticky Pan
+- A Lighter
+- Obviously, A Gas Burner
+- A Knife
+- A Spatula
+- A Cutting Board 
 
-&lt;h2 id=&quot;ingredients--raw-materials--thats-how-they-look-&quot;&gt;Ingredients &amp;amp; Raw Materials ( That’s how they look )&lt;/h2&gt;
+---
+
+## Ingredients &amp; Raw Materials ( That&#39;s how they look )
+
 
 &lt;figure&gt;
 	&lt;figcaption&gt;Capsicum | Green Chilli | Soya Sauce | Eggs | Chilli Sauce&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/blogimages/2015-09-22/capsicum.jpg&quot; /&gt;
-&lt;img src=&quot;/images/blogimages/2015-09-22/gchilli.jpg&quot; /&gt;
-&lt;img src=&quot;/images/blogimages/2015-09-22/soysauce.jpg&quot; /&gt;
-&lt;img src=&quot;/images/blogimages/2015-09-22/eggs.jpg&quot; /&gt;
-&lt;img src=&quot;/images/blogimages/2015-09-22/chillisauce.jpg&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;/images/blogimages/2015-09-22/capsicum.jpg&quot;&gt;
+&lt;img src=&quot;/images/blogimages/2015-09-22/gchilli.jpg&quot;&gt;
+&lt;img src=&quot;/images/blogimages/2015-09-22/soysauce.jpg&quot;&gt;
+&lt;img src=&quot;/images/blogimages/2015-09-22/eggs.jpg&quot;&gt;
+&lt;img src=&quot;/images/blogimages/2015-09-22/chillisauce.jpg&quot;&gt;
+
 
 &lt;figure&gt;
 	&lt;figcaption&gt;Gas Burner | Spatula | Knife | Non-Sticky Pan | Lighter&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/blogimages/2015-09-22/gasburner.jpg&quot; /&gt;
-&lt;img src=&quot;/images/blogimages/2015-09-22/spatula.jpg&quot; /&gt;
-&lt;img src=&quot;/images/blogimages/2015-09-22/knife.jpg&quot; /&gt;
-&lt;img src=&quot;/images/blogimages/2015-09-22/pan.jpg&quot; /&gt;
-&lt;img src=&quot;/images/blogimages/2015-09-22/lighter.jpg&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;/images/blogimages/2015-09-22/gasburner.jpg&quot;&gt;
+&lt;img src=&quot;/images/blogimages/2015-09-22/spatula.jpg&quot;&gt;
+&lt;img src=&quot;/images/blogimages/2015-09-22/knife.jpg&quot;&gt;
+&lt;img src=&quot;/images/blogimages/2015-09-22/pan.jpg&quot;&gt;
+&lt;img src=&quot;/images/blogimages/2015-09-22/lighter.jpg&quot;&gt;
 
-&lt;hr /&gt;
+---
 
-&lt;h2 id=&quot;the-preparation&quot;&gt;The Preparation.&lt;/h2&gt;
+## The Preparation.
 
-&lt;blockquote&gt;
-  &lt;p&gt;The process will be demonstrated step by step with screen captures so you won’t have any trouble following this. &lt;strong&gt;Off we go&lt;/strong&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
+&gt; The process will be demonstrated step by step with screen captures so you won&#39;t have any trouble following this. **Off we go**.
 
-&lt;h3 id=&quot;turn-on-the-gas-burner&quot;&gt;1. Turn on the gas burner.&lt;/h3&gt;
+### 1. Turn on the gas burner.
 
-&lt;p&gt;Turn the gas knob on to release the gas, use the lighter to hover over the gas stove and click to ignite the gas burner. If you have an automated gas burner that gets ignited by a twist of a knob then you are a one lucky &lt;strong&gt;beep&lt;/strong&gt;.&lt;/p&gt;
+Turn the gas knob on to release the gas, use the lighter to hover over the gas stove and click to ignite the gas burner. If you have an automated gas burner that gets ignited by a twist of a knob then you are a one lucky **beep**.
 
 &lt;figure&gt;
 	&lt;figcaption&gt;Whoa fire! We are faster than the neanderthal. Good job!&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/blogimages/2015-09-22/gason.jpg&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;/images/blogimages/2015-09-22/gason.jpg&quot;&gt;
 
-&lt;h3 id=&quot;add-oil-to-the-pan-and-place-it-on-the-burner&quot;&gt;2. Add Oil to the Pan and place it on the burner.&lt;/h3&gt;
 
-&lt;p&gt;Add the 45ml of Refined/Olive Oil to the pan. Place the pan on the gas stove to heat it up.&lt;/p&gt;
+### 2. Add Oil to the Pan and place it on the burner.
+
+Add the 45ml of Refined/Olive Oil to the pan. Place the pan on the gas stove to heat it up.
 
 &lt;figure&gt;
 	&lt;figcaption&gt;I twisted the pan such that the oil is evenly spread across.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/blogimages/2015-09-22/oilpan.jpg&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;/images/blogimages/2015-09-22/oilpan.jpg&quot;&gt;
 
-&lt;h3 id=&quot;finely-chop-the-capsicum-and-green-chilly&quot;&gt;3. Finely chop the capsicum and green chilly.&lt;/h3&gt;
 
-&lt;blockquote&gt;
-  &lt;font color=&quot;red&quot;&gt;&lt;b&gt;Keep in mind that the pan is heating up. Don&#39;t take too much time in chopping. &lt;br /&gt;Estimated time to chop &amp;lt; 1.5 minutes.&lt;/b&gt;&lt;/font&gt;
-&lt;/blockquote&gt;
+### 3. Finely chop the capsicum and green chilly.
 
-&lt;p&gt;Get your cutting board and knife ready. Chop the capsicum and the green chilly into very fine pieces and keep it aside on your cutting board.&lt;/p&gt;
+&gt; &lt;font color=&#39;red&#39;&gt;&lt;b&gt;Keep in mind that the pan is heating up. Don&#39;t take too much time in chopping. &lt;br&gt;Estimated time to chop &lt; 1.5 minutes.&lt;/b&gt;&lt;/font&gt;
+
+Get your cutting board and knife ready. Chop the capsicum and the green chilly into very fine pieces and keep it aside on your cutting board. 
 
 &lt;figure&gt;
 	&lt;figcaption&gt;Chopped Capsicum (Looks like a heart, right? ;)&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/blogimages/2015-09-22/chopped_capsicum.jpg&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;/images/blogimages/2015-09-22/chopped_capsicum.jpg&quot;&gt;
+
 
 &lt;figure&gt;
 	&lt;figcaption&gt;Chopped Green Chilly&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/blogimages/2015-09-22/chopped_gchilli.jpg&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;/images/blogimages/2015-09-22/chopped_gchilli.jpg&quot;&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;HINT:&lt;/strong&gt; If you notice a mild smoke or bubbles popping on the pan, you are almost ready to proceed to the next step. If not, wait a bit.&lt;/p&gt;
-&lt;/blockquote&gt;
 
-&lt;h3 id=&quot;add-the-chopped-green-chilly-and-capsicum-to-the-pan&quot;&gt;4. Add the chopped green chilly and capsicum to the pan.&lt;/h3&gt;
+&gt; **HINT:** If you notice a mild smoke or bubbles popping on the pan, you are almost ready to proceed to the next step. If not, wait a bit.
 
-&lt;p&gt;Use your spatula to push the chopped green chilly and capsicum from the cutting board (don’t use hands, as green chillies are rumoured to burn like hell if it makes contact with the skin) to the heated oil pan. Mix it for a while till they become pale. (Estimated time = 1 minute)&lt;/p&gt;
+
+### 4. Add the chopped green chilly and capsicum to the pan.
+
+Use your spatula to push the chopped green chilly and capsicum from the cutting board (don&#39;t use hands, as green chillies are rumoured to burn like hell if it makes contact with the skin) to the heated oil pan. Mix it for a while till they become pale. (Estimated time = 1 minute)
+
 
 &lt;figure&gt;
 	&lt;figcaption&gt;After adding, keep mixin &#39;em till they become pale.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/blogimages/2015-09-22/capsicum_chilli.jpg&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;/images/blogimages/2015-09-22/capsicum_chilli.jpg&quot;&gt;
 
-&lt;h3 id=&quot;add-the-3-eggs-to-the-mixture&quot;&gt;5. Add the 3 eggs to the mixture.&lt;/h3&gt;
 
-&lt;p&gt;Break the eggs (&lt;strong&gt;Hint:&lt;/strong&gt; I used the lighter to tap break the egg shells) and add them to the mixture in the pan. Keep whisking it for a while with the spatula.&lt;/p&gt;
+### 5. Add the 3 eggs to the mixture.
+
+Break the eggs (**Hint:** I used the lighter to tap break the egg shells) and add them to the mixture in the pan. Keep whisking it for a while with the spatula.
 
 &lt;figure&gt;
 	&lt;figcaption&gt;3 Eggs on the pan. RIP.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/blogimages/2015-09-22/egg_add.jpg&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;/images/blogimages/2015-09-22/egg_add.jpg&quot;&gt;
 
-&lt;p&gt;After 2 minutes of whisking, they should look like the below image capture. If so, you are ready to move on to the next step.&lt;/p&gt;
+After 2 minutes of whisking, they should look like the below image capture. If so, you are ready to move on to the next step.
 
 &lt;figure&gt;
 	&lt;figcaption&gt;Yeah it&#39;s almost cooked.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/blogimages/2015-09-22/egg_cooked.jpg&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;/images/blogimages/2015-09-22/egg_cooked.jpg&quot;&gt;
 
-&lt;h3 id=&quot;add-soya-sauce-and-chilli-sauce--salt-to-taste&quot;&gt;6. Add Soya Sauce and Chilli Sauce + Salt to Taste&lt;/h3&gt;
 
-&lt;p&gt;We have almost reached to the end of recipe. Add 60ml of Soya Sauce and 1.5 teaspoon of Chilli Sauce. Mix them and add a 1/2 teaspoon of salt. (It depends on your taste, you can add even less).&lt;/p&gt;
+### 6. Add Soya Sauce and Chilli Sauce + Salt to Taste
+
+We have almost reached to the end of recipe. Add 60ml of Soya Sauce and 1.5 teaspoon of Chilli Sauce. Mix them and add a 1/2 teaspoon of salt. (It depends on your taste, you can add even less).
 
 &lt;figure&gt;
 	&lt;figcaption&gt;60ml of Soya Sauce + 1.5 teaspoon of Chilli Sauce + Salt.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/blogimages/2015-09-22/pre_end.jpg&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;/images/blogimages/2015-09-22/pre_end.jpg&quot;&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;You need to keep whisking till the soya sauce is drained up. It hardly takes 2 minutes.&lt;/p&gt;
-&lt;/blockquote&gt;
 
-&lt;h3 id=&quot;the-exotic-indo-chinese-egg-scramble&quot;&gt;7. The Exotic Indo-Chinese Egg Scramble&lt;/h3&gt;
+&gt; You need to keep whisking till the soya sauce is drained up. It hardly takes 2 minutes.
 
-&lt;p&gt;So that’s it, the dish is waiting to be relished.&lt;/p&gt;
+
+### 7. The Exotic Indo-Chinese Egg Scramble
+
+So that&#39;s it, the dish is waiting to be relished.
 
 &lt;figure&gt;
 	&lt;figcaption&gt;The Exotic Indo-Chinese Egg Scramble is ready to rumble.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/blogimages/2015-09-22/final.jpg&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;/images/blogimages/2015-09-22/final.jpg&quot;&gt;
 
-&lt;p&gt;Try this recipe and let me know through the comments section if you liked/hated it.&lt;/p&gt;
 
-&lt;hr /&gt;
+Try this recipe and let me know through the comments section if you liked/hated it.
+
+
+---
 
   
   &lt;p&gt;&lt;a href=&quot;/infosec/hackers-arsenal-pentesting-tools&quot;&gt;The Extreme 500 Tools of a Hacker (ahem) Pentester.&lt;/a&gt; was originally published by Shankar Damodaran at &lt;a href=&quot;&quot;&gt;<b><font size='4.75em'>welcome to sh4's personal arena</b></font><br><br><font size='2.75em'>you will find my notes on <b>life, travel, photography, <u>infosec</u></b> & almost everything I'd love to share.</font>&lt;/a&gt; on October 14, 2015.&lt;/p&gt;</content>
