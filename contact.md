@@ -9,26 +9,26 @@ chart: true
 
 
 
-> For a **strict & confidential** communication, use the below PGP key to encrypt your personalized messages and send it to my email (**shan@signalhack.net**), otherwise you could simply connect with me on linkedin or twitter (available on the footer).
+> For a **strict & confidential** communication, use the below PGP key to encrypt your personalized messages and send it to my email (**d.shankarnarayana@gmail.com**), otherwise you could simply connect with me on linkedin or twitter (available on the footer).
 
 <pre>
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 Version: BCPG C# v1.6.1.0
 
-mQENBFXueM8BCADF2Sqiw/C7h2sxRX04KmgWuvUtva4Cm2hCwnOU3N1bRl3tg1CI
-ENqqoaoKktuPCa34e+ssgH0srnfwzUfuzUEY7omcvlOymxoNtsquIeqUCvL6qnPc
-tY+lVARmXLMLbcjppsbxMk1Bw4DX1ZLKntS/CU2YqX3WkZptkQWwHl8s5yFSYVQQ
-peGQCidb0ZB83TgCmh7mEsbLzwzfcgh0uBp1F5YPo/CzaeGIDAro8cCubDzhcBgM
-Wh/42ZCD+8BGuhwO10DQ3+KlSloRRTPioTGDP0ataEh8HZT+lI4BsSmd61HNswF3
-SrGqypMs3S4X6eWbXpOqtBbMCHIZHGdlDS3BABEBAAG0E3NoYW5Ac2lnbmFsaGFj
-ay5uZXSJARwEEAECAAYFAlXueM8ACgkQgrKgrpQUz5WKpAf/USstGkv0GW4aLI4s
-94pILqB7yckr4oZfYiDVuRwevl2wtf7ZRUDTh7iiSpAfgSF3HK5glZLBmI4ctdMA
-NkJD6is41tra8YXU5qVA8/DLE365xsxaJq2s5A8yv9eY5s5nnQOgX/ejCQpQ2XVg
-Z+hEjFuPeEq9tjXMi7HbOIAVNw/AyQfF29Yo63qLBwsfRAp99+joJPBSthVleAUo
-V1h37dhVu9jFqeiCP8srQscFbUKeLZCRZgXvZbBS9zLn/91nhgmlnYN1BDIKSJaO
-RZlD0DGW+OyOVgs7RLmLd88jvuqXQQOKlX4kgSbaW0WZN3Oa+WgAYScSgjHOci6D
-PpHd9w==
-=9PRw
+mQENBFg8CEUBCACiBmLnkMHU8fPFPcLxwpKK39mxppUtC9CJEWryz8ReJYUgNfko
+lBO2gNl73TdU2tyqJktZ4o0fssHmqSh+9vGiKqb/m42NIBWnVXnqADqHbafjSNpm
+BfdKpk84yPlPc9jkoAK+IQ0aXlIm8X4LpFfdm6HH6hWzjLSTZEcAux2igSGI+K1x
+OCiJ31ShDFoqHibo2DE4preNE76X/iV7y73Ne0q8qq8sCT6xDpLMgwsH6qSrXbOV
+sqY8cfVRbGtMU6IASy39KLbZ1Z6kvRSSlO3Vf/EDpB++wH5a+L3QCAEfCpB7ucP+
+GZH5xBYBk4mIGzX6iq7Fjmx3KGoYJpFTj3BZABEBAAG0G2Quc2hhbmthcm5hcmF5
+YW5hQGdtYWlsLmNvbYkBHAQQAQIABgUCWDwIRQAKCRAr4rVQllaR0g30B/4kQEv+
+IA9w3E/Yh6JgoAZn+F24jL0b+A8Wba77bVuv3VFjyyvKy5QfUJtRcaXgjNyaEy8T
+NYeD4JcjDWqFG9T3uMcfcETiUGkusbIW8NWfRlDzTp8vFaXLgjUdIOS30Ca8y2tP
+OHc+qVEKA4vVjaamdUkb9x1d5/cpJTGybnMX+UQOy5N7YLIwIRYDdEaIkkFpEOND
+McC1mgCEJdAwi4c613K/XrlkWOmNG8EPIS4K6qtqt/JmagkKjqawxcKv4f4sF1q7
+dZjdgAaSAQK8lv9AUm3jFfkJHmoM6PUFw9hScZ0upj4F6dmb+emAWKkW34MDGshu
+mDruCeucgxqALzdb
+=21YV
 -----END PGP PUBLIC KEY BLOCK-----
 </pre>
 
