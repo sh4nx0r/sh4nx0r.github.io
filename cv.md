@@ -9,7 +9,7 @@ chart: true
 
 
 
-> The profile is rendered through Google's PDF Viewer. (**Courtesy: Google**).
+> The profile is rendered through Google's PDF Viewer.<br> (**Courtesy: Google**).
 
 <iframe src="https://docs.google.com/gview?url=https://github.com/sh4nx0r/sh4nx0r.github.io/raw/master/cv.pdf&embedded=true" style="width:75%; height:700px; display:block; margin: 0 auto;" frameborder="0"></iframe>
 
