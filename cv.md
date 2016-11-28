@@ -17,4 +17,4 @@ chart: true
 
 ### CV can be downloaded from the below link.
 
-<a href='http://sh4.in/cv.pdf'>Download CV</a>
+<a href='http://sh4.in/cv.pdf' download='Shan_CV.pdf'>Download CV</a>
