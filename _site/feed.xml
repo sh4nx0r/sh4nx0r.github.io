@@ -7,7 +7,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://localhost:4000/" />
-<updated>2017-05-02T20:10:12+06:00</updated>
+<updated>2017-05-02T20:30:53+06:00</updated>
 <id>http://localhost:4000/</id>
 <author>
   <name>Shankar Damodaran</name>
@@ -39,8 +39,13 @@
 
 &lt;h3 id=&quot;2-what-is-a-false-positive-and-a-false-negative&quot;&gt;2. What is a False Positive and a False Negative?&lt;/h3&gt;
 
-&lt;p&gt;False Positive: An automated scanner scans a website and it shows the website is prone to some attack (say, SQLi, CSRF, etc), which actually isn’t. The site is safe.
-False Negative: An automated scanner scans a website and it shows the website is safe from attacks (say, SQLi, CSRF, etc), which actually isn’t. The site isn’t safe.&lt;/p&gt;
+&lt;p&gt;False Positive: An automated scanner scans a website and it shows the website is prone to some attack (say, SQLi, CSRF, etc), which actually isn’t. &lt;font color=&quot;green&quot;&gt;The site is safe.&lt;/font&gt;
+&lt;br /&gt;False Negative: An automated scanner scans a website and it shows the website is safe from attacks (say, SQLi, CSRF, etc), which actually isn’t. &lt;font color=&quot;red&quot;&gt;The site isn't safe.&lt;/font&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;3-what-is-key-difference-between-penetration-testing-and-vulnerability-assessment&quot;&gt;3. What is key difference between Penetration Testing and Vulnerability Assessment?&lt;/h3&gt;
+
+&lt;p&gt;Penetration Testing is a process of breaking into the system and trying to gain the maximum privilege on the network. The ultimatum here is to get to the deepest level inside a network. This process is more similar to how an intruder would penetrate except there will be no damage caused. The steps has to be properly documented on how the actions were performed to gain the highest privilege.
+&lt;br /&gt;Vulnerability Assessment is a process of listing out all weaknesses in the machine (either by using a tool/manual ways) that is being assessed and list out the vulnerabilities in the highest order of risk. This process stops with this and does not further delve as of Penetration Testing.&lt;/p&gt;
 
 &lt;hr /&gt;
 
