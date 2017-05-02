@@ -7,7 +7,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://localhost:4000/" />
-<updated>2017-05-02T18:33:20+06:00</updated>
+<updated>2017-05-02T20:10:12+06:00</updated>
 <id>http://localhost:4000/</id>
 <author>
   <name>Shankar Damodaran</name>
@@ -31,15 +31,16 @@
   <category scheme="http://localhost:4000/tags/#infosec" term="infosec" /><category scheme="http://localhost:4000/tags/#interview%20questions" term="interview questions" /><category scheme="http://localhost:4000/tags/#pentesting" term="pentesting" /><category scheme="http://localhost:4000/tags/#security%20analyst" term="security analyst" />
   <content type="html">
   
-    &lt;p&gt;As of now &lt;strong&gt;10&lt;/strong&gt; questions and counting, I’ve been contributing to this post on a regular basis for anyone who wants to recall their knowledge on information security topics. This can also be used as a &lt;strong&gt;Guide&lt;/strong&gt; to prepare for Information Security Openings.&lt;/p&gt;
+    &lt;p&gt;As of now &lt;strong&gt;2&lt;/strong&gt; questions and counting, I’ve been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a &lt;strong&gt;Guide&lt;/strong&gt; to prepare for Information Security Openings. The informational security topics were intentionally shuffled to achieve robustness to the reader.&lt;/p&gt;
 
-&lt;h2 id=&quot;1-what-is-a-repudiation-attack&quot;&gt;1. What is a Repudiation Attack?&lt;/h2&gt;
+&lt;h3 id=&quot;1-what-is-a-repudiation-attack&quot;&gt;1. What is a Repudiation Attack?&lt;/h3&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;An attacker can prove a vulnerability exists in an application without actually denying the attack made by him/her. This example can be compared with “Google Hacking”. The attacker would have used Google Dork to find a weakness in the website without directly penetrating it. One more classic example would be the same website may have an information disclosure vulnerability in one of their pages if the error wasn’t handled properly. Repudiation Attacks may also be termed as “Passive Attacks”.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;An attacker can prove a vulnerability exists in an application without actually denying the attack made by him/her. This example can be compared with “Google Hacking”. The attacker would have used Google Dork to find a weakness in the website without directly penetrating it. One more classic example would be the same website may have an information disclosure vulnerability in one of their pages if the error wasn’t handled properly. Repudiation Attacks may also be termed as “Passive Attacks”.&lt;/p&gt;
 
-&lt;p&gt;##&lt;/p&gt;
+&lt;h3 id=&quot;2-what-is-a-false-positive-and-a-false-negative&quot;&gt;2. What is a False Positive and a False Negative?&lt;/h3&gt;
+
+&lt;p&gt;False Positive: An automated scanner scans a website and it shows the website is prone to some attack (say, SQLi, CSRF, etc), which actually isn’t. The site is safe.
+False Negative: An automated scanner scans a website and it shows the website is safe from attacks (say, SQLi, CSRF, etc), which actually isn’t. The site isn’t safe.&lt;/p&gt;
 
 &lt;hr /&gt;
 

@@ -1,5 +1,5 @@
 title:            <b><font size='4.75em'>welcome to sh4's personal arena</b></font><br><br><font size='2.75em'>you will find my notes on <b>life, travel, photography, <u>infosec</u></b> & almost everything I'd love to share.</font>
-description:      <font size='3.75em'>Inventor<font color='red' size='4.75em'>.</font> Developer<font color='red' size='4.75em'>.</font> Hacker<font color='red' size='4.75em'>.</font></font><br><font size='2.75em'>Disclaimer - Views expressed throughout the site are my own, you may expect a mediocre profanity factor on the blog posts.</font><br><img src='images/scrollimg.png' />
+description:      <font size='3.75em'>Inventor<font color='red' size='4.75em'>.</font> Biker<font color='red' size='4.75em'>.</font> Foodie<font color='red' size='4.75em'>.</font> Traveller<font color='red' size='4.75em'>.</font> Hacker<font color='red' size='4.75em'>.</font> </font><br><font size='2.75em'>Disclaimer - Views expressed throughout the site are my own, you may expect a mediocre profanity factor on the blog posts.</font><br><img src='images/scrollimg.png' />
 
 logo:		logo.png
 disqus_shortname: sh4in
@@ -22,7 +22,7 @@ owner:
   facebook:       sh4nx0r
   github:         sh4nx0r
   linkedin:	  shankardamodaran      
-  #instagram:      ''
+  instagram:      shankardamodaran
   # For Google Authorship https://plus.google.com/authorship
   #google_plus:    https://plus.google.com/u/0/102602916593522619858
 
@@ -67,7 +67,7 @@ kramdown:
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 1..6
-  use_coderay: false
+  enable_coderay: false
 
   coderay:
     coderay_line_numbers: 
