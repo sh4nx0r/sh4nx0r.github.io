@@ -8,6 +8,11 @@ callback([
   {
     "text": "Bachelor's Recipe #1: The exotic indo-chinese egg scramble.",
     "href": "http://localhost:4000/recipe/bachelors-recipe-indo-chinese-egg-scramble"
+  } ,
+
+  {
+    "text": "The Mega Guide to Information Security Interview Questions.",
+    "href": "http://localhost:4000/infosec/mega-guide-information-security-interview-questions"
   } 
 
 ])

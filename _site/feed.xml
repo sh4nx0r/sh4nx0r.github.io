@@ -7,13 +7,45 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://localhost:4000/" />
-<updated>2017-05-02T17:25:32+06:00</updated>
+<updated>2017-05-02T18:25:19+06:00</updated>
 <id>http://localhost:4000/</id>
 <author>
   <name>Shankar Damodaran</name>
   <uri>http://localhost:4000/</uri>
   <email>d.shankarnarayana@gmail.com</email>
 </author>
+
+
+<entry>
+  <title type="html"><![CDATA[The Mega Guide to Information Security Interview Questions.]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/infosec/mega-guide-information-security-interview-questions"/>
+  <id>http://localhost:4000/infosec/mega-guide-information-security-interview-questions</id>
+  <published>2017-04-21T00:00:00+06:00</published>
+  <updated>2017-04-21T00:00:00-00:00</updated>
+  
+  <author>
+    <name>Shankar Damodaran</name>
+    <uri>http://localhost:4000</uri>
+    <email>d.shankarnarayana@gmail.com</email>
+  </author>
+  <category scheme="http://localhost:4000/tags/#infosec" term="infosec" /><category scheme="http://localhost:4000/tags/#interview%20questions" term="interview questions" /><category scheme="http://localhost:4000/tags/#pentesting" term="pentesting" /><category scheme="http://localhost:4000/tags/#security%20analyst" term="security analyst" />
+  <content type="html">
+  
+    &lt;p&gt;As of now &lt;strong&gt;10&lt;/strong&gt; questions and counting, I’ve been contributing to this post on a regular basis for anyone who wants to recall their knowledge on information security topics. This can also be used as a &lt;strong&gt;Guide&lt;/strong&gt; to prepare for Information Security Openings.&lt;/p&gt;
+
+&lt;h2 id=&quot;1-what-is-a-repudiation-attack&quot;&gt;1. What is a Repudiation Attack?&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;An attacker can prove a vulnerability exists in an application without actually denying the attack made by him/her. This example can be compared with “Google Hacking”. The attacker would have used Google Dork to find a weakness in the website without directly penetrating it. One more classic example would be the same website may have an information disclosure vulnerability in one of their pages if the error wasn’t handled properly. Repudiation Attacks may also be termed as “Passive Attacks”.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;hr /&gt;
+
+  
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/infosec/mega-guide-information-security-interview-questions&quot;&gt;The Mega Guide to Information Security Interview Questions.&lt;/a&gt; was originally published by Shankar Damodaran at &lt;a href=&quot;http://localhost:4000&quot;&gt;<b><font size='4.75em'>welcome to sh4's personal arena</b></font><br><br><font size='2.75em'>you will find my notes on <b>life, travel, photography, <u>infosec</u></b> & almost everything I'd love to share.</font>&lt;/a&gt; on April 21, 2017.&lt;/p&gt;</content>
+</entry>
 
 
 <entry>

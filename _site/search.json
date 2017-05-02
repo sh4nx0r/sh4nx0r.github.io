@@ -1,6 +1,14 @@
 [
 	
 		{
+		  "title"      : "The Mega Guide to Information Security Interview Questions.",
+		  "category"   : "infosec",
+		  "url"        : "http://localhost:4000/infosec/mega-guide-information-security-interview-questions",
+		  "date"       : "2017-04-21 00:00:00 +0600",
+		  "shortdate"  : "April 21, 2017"
+		} ,
+	
+		{
 		  "title"      : "Bachelor&#39;s Recipe #1: The exotic indo-chinese egg scramble.",
 		  "category"   : "recipe",
 		  "url"        : "http://localhost:4000/recipe/bachelors-recipe-indo-chinese-egg-scramble",
