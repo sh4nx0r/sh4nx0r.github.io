@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>sh4.in | The Mega Guide to Information Security Interview Questions.</title>
+<meta name="description" content="Most Commonly used Infosec Terms.">
+<meta name="keywords" content="infosec, interview questions, pentesting, security analyst">
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://localhost:4000/images/blogimages/2017-04-21/cover-2017-04-21.jpg">
+
+<meta name="twitter:title" content="The Mega Guide to Information Security Interview Questions.">
+<meta name="twitter:description" content="Most Commonly used Infosec Terms.">
+<meta name="twitter:creator" content="@sh4nx0r">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="The Mega Guide to Information Security Interview Questions.">
+<meta property="og:description" content="Most Commonly used Infosec Terms.">
+<meta property="og:url" content="http://localhost:4000/infosec/mega-guide-information-security-interview-questions">
+<meta property="og:site_name" content="<b><font size='4.75em'>welcome to sh4's personal arena</b></font><br><br><font size='2.75em'>you will find my notes on <b>life, travel, photography, <u>infosec</u></b> & almost everything I'd love to share.</font>">
+<meta property="og:image" content="http://localhost:4000/images/blogimages/2017-04-21/cover-2017-04-21.jpg">
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/infosec/mega-guide-information-security-interview-questions">
+<!-- <link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="<b><font size='4.75em'>welcome to sh4's personal arena</b></font><br><br><font size='2.75em'>you will find my notes on <b>life, travel, photography, <u>infosec</u></b> & almost everything I'd love to share.</font> Feed"> -->
+
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,600,300,800,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="http://localhost:4000/assets/css/vendor/font-awesome.min.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/vendor/normalize.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/vendor/nprogress.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/vendor/foundation.min.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/style.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/post.css">
+
+
+<!-- Fastest JQuery CDN Lib -->
+<script src="https://cdn.jsdelivr.net/jquery/3.0.0-alpha1/jquery.min.js"></script>
+<script>
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+
+
+
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144-precomposed.png">
+<div id="home"></div>
+<style type="text/css">@media only screen and (min-width:43.75em){.notepad-post-content div>p:first-child:first-letter{float:left;font-size:4.688rem;line-height:4.375rem;padding-top:.25rem;padding-right:.5rem;padding-left:.188rem;font-family:serif}}</style>
+</head>
+<body class="post-template" itemscope itemtype="http://schema.org/WebPage">  
+
+        <main id="notepad-post-container" class="notepad-post-container intro-effect-sliced" role="main">
+            <header class="notepad-post-header">
+                <div class="bg-img"></div>
+                
+                <div class="notepad-post-menu-header">
+
+                    <a class="notepad-blog-logo" href="http://sh4.in">
+                        <img src="http://localhost:4000/images/logo.png" alt="Blog Logo" />
+                    </a>
+
+                <div class="notepad-blog-menu">      
+    <div class="notepad-mobile-menu show-for-small">
+        <a href="#"><i class="fa fa-bars"></i></a>
+    </div>
+    <ul class="notepad-menu">
+        <li class="notepad-mobile-close-btn show-for-small text-right">
+            <a href="#"><i class="fa fa-times"></i></a>
+        </li>
+
+            <li>
+                    <a href="http://localhost:4000/">Home</a>
+                 </li>
+
+            <li>
+                    <a href="http://localhost:4000/trending">#trending</a>
+                 </li>
+
+            <li>
+                    <a href="http://localhost:4000/cv">MyCV</a>
+                 </li>
+
+            <li>
+                    <a href="http://localhost:4000/connect">Connect</a>
+                 </li>
+            
+           <!-- <li><a href="http://localhost:4000/feed.xml" title="Atom/RSS feed"><i class="icon-rss"></i> Feed</a></li> -->
+    </ul>
+
+</div>
+            </div>
+
+            <div class="notepad-post-title bg-check">
+                <h1>The Mega Guide to Information Security Interview Questions.</h1>
+                <p>by <strong>Shankar Damodaran</strong> &#8212; on <a href="http://localhost:4000/tags/index.html#infosec" data-toggle="tooltip" title="Posts tagged with infosec" rel="tag">infosec</a>&nbsp;&comma;&nbsp;<a href="http://localhost:4000/tags/index.html#interview questions" data-toggle="tooltip" title="Posts tagged with interview questions" rel="tag">interview questions</a>&nbsp;&comma;&nbsp;<a href="http://localhost:4000/tags/index.html#pentesting" data-toggle="tooltip" title="Posts tagged with pentesting" rel="tag">pentesting</a>&nbsp;&comma;&nbsp;<a href="http://localhost:4000/tags/index.html#security analyst" data-toggle="tooltip" title="Posts tagged with security analyst" rel="tag">security analyst</a> <strong><time datetime="2017-04-21T00:00:00+06:00">21 Apr 2017</time></strong></p>
+            </div>
+            <div class="bg-img"></div>
+        </header>
+        <button class="trigger bg-check" data-info="Read more"><span>Trigger</span></button>
+        <img src="http://localhost:4000/images/blogimages/2017-04-21/cover-2017-04-21.jpg" alt="cover-image" />
+
+        <article class="notepad-post-content post">
+            <div><p>As of now <strong>10</strong> questions and counting, I’ve been contributing to this post on a regular basis for anyone who wants to recall their knowledge on information security topics. This can also be used as a <strong>Guide</strong> to prepare for Information Security Openings.</p>
+
+<h2 id="1-what-is-a-repudiation-attack">1. What is a Repudiation Attack?</h2>
+
+<blockquote>
+  <p>An attacker can prove a vulnerability exists in an application without actually denying the attack made by him/her. This example can be compared with “Google Hacking”. The attacker would have used Google Dork to find a weakness in the website without directly penetrating it. One more classic example would be the same website may have an information disclosure vulnerability in one of their pages if the error wasn’t handled properly. Repudiation Attacks may also be termed as “Passive Attacks”.</p>
+</blockquote>
+
+<p>##</p>
+
+<hr />
+
+            </div>
+        </article>
+        <div class="cf"></div>
+        <div class="row text-center">
+            <section class="notepad-post-share">
+                <a class="twitter-icon" href="https://twitter.com/intent/tweet?text=&quot;The Mega Guide to Information Security Interview Questions.&quot;%20http://localhost:4000/infosec/mega-guide-information-security-interview-questions%20via%20&#64;sh4nx0r"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Share on Twitter">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a class="facebook-icon" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/infosec/mega-guide-information-security-interview-questions"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a class="google-icon" href="https://plus.google.com/share?url=http://localhost:4000/infosec/mega-guide-information-security-interview-questions"
+                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" title="Share on Google+">
+                    <i class="fa fa-google-plus"></i>
+                </a>
+            </section>
+        </div>
+        <div class="cf"></div>
+        
+            <div class="notepad-author-info">
+                <div class="row">
+                    <section class="notepad-post-author small-12 columns">
+                        
+                            <img src="http://localhost:4000/images/shan.jpg" class="notepad-post-author-avatar" alt="Shankar Damodaran's photo">
+                        
+                        
+                            <span class="author-label">Author</span>
+                            <h1>Shankar Damodaran</h1>
+                        
+                        
+                            <p><a href="mailto:d.shankarnarayana@gmail.com" class="author-website">d.shankarnarayana@gmail.com</a></p>
+                        
+                        
+                            <p>Inventor. Hacker. Foodie. Traveller. Biker.</p>
+                        
+                    </section>
+                </div>
+            </div> 
+        
+        <div class="cf"></div>
+        
+        <section class="notepad-disqus row">
+    <div class="small-12 columns">
+        <h1 class="notepad-comments-header">Comments</h1>
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'sh4in'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+</section>
+
+        <div class="cf"></div>
+
+    <footer class="notepad-site-footer">
+<div id="backtotop"><a href="#home" class="scroll"><img src="/images/up.png"></a></div>
+    <div class="copyright">
+         <section><a href="http://localhost:4000/about"><b>Shankar Damodaran</b></a> &copy; 2017 &bull; All Rights Reserved.</section>
+         <section>Proudly published via <a class="icon-ghost" href="https://jekyllrb.com/">Jekyll</a> and hosted through Github Pages and Godaddy DNS.</section>
+         <section>Theme powered by: HMFaysal</section>
+         <section>Visitor Count powered by StatCounter:
+         <!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=10616444; 
+var sc_invisible=0; 
+var sc_security="66d515ff"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="shopify
+analytics ecommerce" href="http://statcounter.com/shopify/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/10616444/0/66d515ff/0/"
+alt="shopify analytics ecommerce"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+| <a href="http://statcounter.com/p10616444/?guest=1">View Stats</a>
+
+<!-- SignalHack Configuration Begins -->
+<script type="text/javascript"> if("undefined"==typeof jQuery){var sh_jq_lib=document.createElement("script");sh_jq_lib.type="text/javascript",sh_jq_lib.src="//cdn.jsdelivr.net/jquery/1/jquery.min.js",sh_jq_lib.async=!0,document.getElementsByTagName("head")[0].appendChild(sh_jq_lib)} </script> <script id="sh_ev" async data-tkn="e3978e9e857295899293fd80180bb84292763ac2" src="https://signalhack.net/engine/sh_ev.js?b1"></script>
+<!-- SignalHack Configuration Ends -->
+
+<br><br>
+<!-- Cluster Maps -->
+<div id="clustrmaps-widget"></div><script type="text/javascript">var _clustrmaps = {'url' : 'http://sh4.in', 'user' : 1179997, 'server' : '3', 'id' : 'clustrmaps-widget', 'version' : 1, 'date' : '2015-10-01', 'lang' : 'en', 'corners' : 'square' };(function (){ var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'http://www3.clustrmaps.com/counter/map.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);})();</script><noscript><a href="http://www3.clustrmaps.com/user/fcb12015d"><img src="http://www3.clustrmaps.com/stats/maps-no_clusters/sh4.in-thumb.jpg" alt="Locations of visitors to this page" /></a></noscript>
+
+</section>
+    </div>
+    <div class="social-icons">
+        
+        
+        <a href="http://twitter.com/sh4nx0r">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-twitter fa-stack-1x"></i>
+            </span>
+        </a>
+        
+        
+         
+        <a href="https://linkedin.com/in/shankardamodaran">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-linkedin fa-stack-1x"></i>
+            </span>
+        </a>
+        
+        
+        
+        
+        
+        <a href="http://github.com/sh4nx0r">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-github fa-stack-1x"></i>
+            </span>
+        </a>
+        
+        
+        <a href="http://facebook.com/sh4nx0r">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-facebook fa-stack-1x"></i>
+            </span>
+        </a>
+        
+        
+        
+        
+    </div>
+    
+    <div class="cf"></div>
+</footer> 
+</main>    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="http://localhost:4000/assets/js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+    <script src="http://localhost:4000/assets/js/vendor/modernizr.js"></script>
+    <script src="http://localhost:4000/assets/js/foundation.min.js"></script>
+    <script src="http://localhost:4000/assets/js/vendor/background-check.js"></script>
+    <script src="http://localhost:4000/assets/js/vendor/post-header-animations.js"></script>
+    <script src="http://localhost:4000/assets/js/notepad.js"></script>
+    <script src="http://localhost:4000/assets/js/scripts.min.js"></script>
+    <script src="http://localhost:4000/assets/js/vendor/nprogress.js"></script>
+
+    <script>
+      $(document).foundation();
+    </script>
+    <script type='text/javascript'>console.log("HMFaysal Notepad Theme Version 2.0");</script>
+    <script type='text/javascript'>console.log("https://alum.mit.edu/www/hmfaysal");</script>
+
+
+<script>NProgress.start();var interval=setInterval(function(){NProgress.inc()},1000);jQuery(window).load(function(){clearInterval(interval);NProgress.done()});jQuery(window).unload(function(){NProgress.start()});</script> 
+</body>
+</html>
