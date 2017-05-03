@@ -13,7 +13,7 @@ comments: true
 featured: false
 ---
 
-**5** questions and still counting, I've been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a **Guide** to prepare for Information Security Openings. The informational security topics were intentionally shuffled to achieve robustness to the reader.
+**5** questions and still counting, I've been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a **Guide** to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness to the reader.
 
 
 ### 1. What is a Repudiation Attack?
@@ -36,7 +36,25 @@ An attacker can prove a vulnerability exists in an application without actually 
 
 ### 5. Which is more important to fix "Threat" or "Vulnerability"?
 
-Threats can be classified as "Inside Intruder", "Natural Disasters" etc whereas a Vulnerabilities can be classified as weaknesses such as "SQLi", "XSS", "CSRF", "Non Availability of Bunkers for protection against natural disasters", etc. A Threat **must** make use a Vulnerability to exploit or create damage to the data. So it is important to fix vulnerabilities first than to focus on threats. Sometimes this can also be counter-intuitive, an insider may pass vital information (eg: credentials) to an outside intruder. The outsider can directly login to the application with the credentials and cause damage to the data (in this case, the outsider did not make use of any vulnerability to exploit the application).
-<br>Hence, there is no exact answer that can be given to the above question.
+Threats can be classified as "Inside Intruder", "Natural Disasters", etc whereas Vulnerabilities can be classified as weaknesses such as "SQLi", "XSS", "CSRF", "Non Availability of Bunkers for protection against natural disasters", etc. A Threat **must** make use a Vulnerability to exploit or create damage to the data. So it is important to fix vulnerabilities first than to focus on threats. Sometimes this can also be counter-intuitive, an insider working for an organization may pass vital information (eg: admin credentials) to an outside intruder. The outsider can directly login to the application with the credentials and can cause damage to the data (in this case, the outsider did not make use of any vulnerability to exploit the application).
+<br>Hence, there is no prefect answer that can be provided to the above question.
+
+### 6. How do you stop Brute-Force Attacks?
+
+- Adding a CAPTCHA functionality to the login forms.
+- Enforce account lockout mechanism for a maximum of three to four wrong attempts.
+- Fastest fix for a temporary period would be blocking the particular ip address that is making the brute force attempts.
+
+### 7. What's the difference between an "Exploit" and a "Payload"?
+
+An exploit is the medium in the which the payload is contained.Both represent a "piece of code", but a payload does contain the actual attack whereas an exploit can be termed as a "carrier". To make the explanation more clear and precise, take a rifle/gun for an instance. The "Gun" is the exploit whereas the "bullet" is the actual payload.
+
+### 8. What is encryption used for confidentiality instead of encoding?
+
+Encryption and Encoding uses publicly available algorithms. Encoding is not used for confidentiality purposes since the content that has been encoded using algorithms like (Base64, UTF, etc) can be reversed with their available algorithms and there is no secret key involved. In an encryption scheme like an (AES, 3-DES, etc) they have corresponding encryption and decryption algorithms which involves a common secret key.
+
+
+
+
 
 ---

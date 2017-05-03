@@ -7,7 +7,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://localhost:4000/" />
-<updated>2017-05-03T13:03:12+06:00</updated>
+<updated>2017-05-03T20:35:32+06:00</updated>
 <id>http://localhost:4000/</id>
 <author>
   <name>Shankar Damodaran</name>
@@ -31,7 +31,7 @@
   <category scheme="http://localhost:4000/tags/#infosec" term="infosec" /><category scheme="http://localhost:4000/tags/#interview%20questions" term="interview questions" /><category scheme="http://localhost:4000/tags/#pentesting" term="pentesting" /><category scheme="http://localhost:4000/tags/#security%20analyst" term="security analyst" />
   <content type="html">
   
-    &lt;p&gt;&lt;strong&gt;5&lt;/strong&gt; questions and still counting, I’ve been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a &lt;strong&gt;Guide&lt;/strong&gt; to prepare for Information Security Openings. The informational security topics were intentionally shuffled to achieve robustness to the reader.&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;5&lt;/strong&gt; questions and still counting, I’ve been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a &lt;strong&gt;Guide&lt;/strong&gt; to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness to the reader.&lt;/p&gt;
 
 &lt;h3 id=&quot;1-what-is-a-repudiation-attack&quot;&gt;1. What is a Repudiation Attack?&lt;/h3&gt;
 
@@ -53,8 +53,24 @@
 
 &lt;h3 id=&quot;5-which-is-more-important-to-fix-threat-or-vulnerability&quot;&gt;5. Which is more important to fix “Threat” or “Vulnerability”?&lt;/h3&gt;
 
-&lt;p&gt;Threats can be classified as “Inside Intruder”, “Natural Disasters” etc whereas a Vulnerabilities can be classified as weaknesses such as “SQLi”, “XSS”, “CSRF”, “Non Availability of Bunkers for protection against natural disasters”, etc. A Threat &lt;strong&gt;must&lt;/strong&gt; make use a Vulnerability to exploit or create damage to the data. So it is important to fix vulnerabilities first than to focus on threats. Sometimes this can also be counter-intuitive, an insider may pass vital information (eg: credentials) to an outside intruder. The outsider can directly login to the application with the credentials and cause damage to the data (in this case, the outsider did not make use of any vulnerability to exploit the application).
-&lt;br /&gt;Hence, there is no exact answer that can be given to the above question.&lt;/p&gt;
+&lt;p&gt;Threats can be classified as “Inside Intruder”, “Natural Disasters”, etc whereas Vulnerabilities can be classified as weaknesses such as “SQLi”, “XSS”, “CSRF”, “Non Availability of Bunkers for protection against natural disasters”, etc. A Threat &lt;strong&gt;must&lt;/strong&gt; make use a Vulnerability to exploit or create damage to the data. So it is important to fix vulnerabilities first than to focus on threats. Sometimes this can also be counter-intuitive, an insider working for an organization may pass vital information (eg: admin credentials) to an outside intruder. The outsider can directly login to the application with the credentials and can cause damage to the data (in this case, the outsider did not make use of any vulnerability to exploit the application).
+&lt;br /&gt;Hence, there is no prefect answer that can be provided to the above question.&lt;/p&gt;
+
+&lt;h3 id=&quot;6-how-do-you-stop-brute-force-attacks&quot;&gt;6. How do you stop Brute-Force Attacks?&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Adding a CAPTCHA functionality to the login forms.&lt;/li&gt;
+  &lt;li&gt;Enforce account lockout mechanism for a maximum of three to four wrong attempts.&lt;/li&gt;
+  &lt;li&gt;Fastest fix for a temporary period would be blocking the particular ip address that is making the brute force attempts.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;7-whats-the-difference-between-an-exploit-and-a-payload&quot;&gt;7. What’s the difference between an “Exploit” and a “Payload”?&lt;/h3&gt;
+
+&lt;p&gt;An exploit is the medium in the which the payload is contained.Both represent a “piece of code”, but a payload does contain the actual attack whereas an exploit can be termed as a “carrier”. To make the explanation more clear and precise, take a rifle/gun for an instance. The “Gun” is the exploit whereas the “bullet” is the actual payload.&lt;/p&gt;
+
+&lt;h3 id=&quot;8-what-is-encryption-used-for-confidentiality-instead-of-encoding&quot;&gt;8. What is encryption used for confidentiality instead of encoding?&lt;/h3&gt;
+
+&lt;p&gt;Encryption and Encoding uses publicly available algorithms. Encoding is not used for confidentiality purposes since the content that has been encoded using algorithms like (Base64, UTF, etc) can be reversed with their available algorithms and there is no secret key involved. In an encryption scheme like an (AES, 3-DES, etc) they have corresponding encryption and decryption algorithms which involves a common secret key.&lt;/p&gt;
 
 &lt;hr /&gt;
 
