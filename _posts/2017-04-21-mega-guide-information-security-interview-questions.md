@@ -13,7 +13,7 @@ comments: true
 featured: false
 ---
 
-**5** questions and still counting, I've been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a **Guide** to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness to the reader.
+**8** questions and still counting, I've been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a **Guide** to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness to the reader.
 
 
 ### 1. What is a Repudiation Attack?
@@ -49,7 +49,7 @@ Threats can be classified as "Inside Intruder", "Natural Disasters", etc whereas
 
 An exploit is the medium in the which the payload is contained.Both represent a "piece of code", but a payload does contain the actual attack whereas an exploit can be termed as a "carrier". To make the explanation more clear and precise, take a rifle/gun for an instance. The "Gun" is the exploit whereas the "bullet" is the actual payload.
 
-### 8. What is encryption used for confidentiality instead of encoding?
+### 8. Why is encryption used for confidentiality instead of encoding?
 
 Encryption and Encoding uses publicly available algorithms. Encoding is not used for confidentiality purposes since the content that has been encoded using algorithms like (Base64, UTF, etc) can be reversed with their available algorithms and there is no secret key involved. In an encryption scheme like an (AES, 3-DES, etc) they have corresponding encryption and decryption algorithms which involves a common secret key.
 
