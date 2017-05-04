@@ -13,7 +13,7 @@ comments: true
 featured: false
 ---
 
-**8** questions and still counting, I've been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a **Guide** to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness to the reader.
+**11** questions and still counting, I've been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a **Guide** to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness to the reader.
 
 
 ### 1. What is a Repudiation Attack?
@@ -62,7 +62,10 @@ Nmap uses a "SYN" scan by default unless we specify anything. -sS will be the de
 
 **8834**. Nessus can be accessed through any browser by accessing https://127.0.0.1:8834.
 
+### 11.How do you differentiate "Bind Payloads" and "Reverse Payloads"?
 
+Bind Payloads are a piece of code which is sent by the attacker to the target machine. The exploit then runs on the machine as a process on a certain port say 4444 passively. The attacker can connect to this target by establishing connection to this particular port.
+<br>Reverse Payloads are also a piece of code that is sent by attacker and in the background the attacker runs another process that keeps listening to the port say 4444., when this exploit is executed, the target machine immediately sends a connection to the attacker machine that is passively listening on the background.
 
 
 
