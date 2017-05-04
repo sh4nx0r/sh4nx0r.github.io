@@ -7,7 +7,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://localhost:4000/" />
-<updated>2017-05-03T20:35:32+06:00</updated>
+<updated>2017-05-04T20:33:14+06:00</updated>
 <id>http://localhost:4000/</id>
 <author>
   <name>Shankar Damodaran</name>
@@ -31,7 +31,7 @@
   <category scheme="http://localhost:4000/tags/#infosec" term="infosec" /><category scheme="http://localhost:4000/tags/#interview%20questions" term="interview questions" /><category scheme="http://localhost:4000/tags/#pentesting" term="pentesting" /><category scheme="http://localhost:4000/tags/#security%20analyst" term="security analyst" />
   <content type="html">
   
-    &lt;p&gt;&lt;strong&gt;5&lt;/strong&gt; questions and still counting, I’ve been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a &lt;strong&gt;Guide&lt;/strong&gt; to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness to the reader.&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;11&lt;/strong&gt; questions and still counting, I’ve been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a &lt;strong&gt;Guide&lt;/strong&gt; to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness to the reader.&lt;/p&gt;
 
 &lt;h3 id=&quot;1-what-is-a-repudiation-attack&quot;&gt;1. What is a Repudiation Attack?&lt;/h3&gt;
 
@@ -62,15 +62,29 @@
   &lt;li&gt;Adding a CAPTCHA functionality to the login forms.&lt;/li&gt;
   &lt;li&gt;Enforce account lockout mechanism for a maximum of three to four wrong attempts.&lt;/li&gt;
   &lt;li&gt;Fastest fix for a temporary period would be blocking the particular ip address that is making the brute force attempts.&lt;/li&gt;
+  &lt;li&gt;Authentication Delays.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;7-whats-the-difference-between-an-exploit-and-a-payload&quot;&gt;7. What’s the difference between an “Exploit” and a “Payload”?&lt;/h3&gt;
 
 &lt;p&gt;An exploit is the medium in the which the payload is contained.Both represent a “piece of code”, but a payload does contain the actual attack whereas an exploit can be termed as a “carrier”. To make the explanation more clear and precise, take a rifle/gun for an instance. The “Gun” is the exploit whereas the “bullet” is the actual payload.&lt;/p&gt;
 
-&lt;h3 id=&quot;8-what-is-encryption-used-for-confidentiality-instead-of-encoding&quot;&gt;8. What is encryption used for confidentiality instead of encoding?&lt;/h3&gt;
+&lt;h3 id=&quot;8-why-is-encryption-used-for-confidentiality-instead-of-encoding&quot;&gt;8. Why is encryption used for confidentiality instead of encoding?&lt;/h3&gt;
 
 &lt;p&gt;Encryption and Encoding uses publicly available algorithms. Encoding is not used for confidentiality purposes since the content that has been encoded using algorithms like (Base64, UTF, etc) can be reversed with their available algorithms and there is no secret key involved. In an encryption scheme like an (AES, 3-DES, etc) they have corresponding encryption and decryption algorithms which involves a common secret key.&lt;/p&gt;
+
+&lt;h3 id=&quot;9-which-type-of-scan-is-performed-by-nmap-through-default-settings&quot;&gt;9. Which type of scan is performed by NMAP through default settings?&lt;/h3&gt;
+
+&lt;p&gt;Nmap uses a “SYN” scan by default unless we specify anything. -sS will be the default setting for Nmap. SYN scans are faster as they do not create the Three-way-handshake (SYN-&amp;gt;&amp;lt;-SYN-ACK-&amp;gt;ACK). Instead of the ACK, the SYN scan sends an RST packet, thus the connection will be closed and there won’t be any chances for DoS condition. SYN scans were previously called as “Stealth Scans” as the logging devices do not record activities since a three-way-handshake wasn’t established. Nowadays, the devices do record activity of SYN scans too, so it is not fair to call it as a “Stealth Scan” anymore.&lt;/p&gt;
+
+&lt;h3 id=&quot;10-on-which-port-does-nessus-runs&quot;&gt;10. On which port does Nessus runs?&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;8834&lt;/strong&gt;. Nessus can be accessed through any browser by accessing https://127.0.0.1:8834.&lt;/p&gt;
+
+&lt;h3 id=&quot;11how-do-you-differentiate-bind-payloads-and-reverse-payloads&quot;&gt;11.How do you differentiate “Bind Payloads” and “Reverse Payloads”?&lt;/h3&gt;
+
+&lt;p&gt;Bind Payloads are a piece of code which is sent by the attacker to the target machine. The exploit then runs on the machine as a process on a certain port say 4444 passively. The attacker can connect to this target by establishing connection to this particular port.
+&lt;br /&gt;Reverse Payloads are also a piece of code that is sent by attacker and in the background the attacker runs another process that keeps listening to the port say 4444., when this exploit is executed, the target machine immediately sends a connection to the attacker machine that is passively listening on the background.&lt;/p&gt;
 
 &lt;hr /&gt;
 
