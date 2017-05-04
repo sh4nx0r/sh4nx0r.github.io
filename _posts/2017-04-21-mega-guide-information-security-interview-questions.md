@@ -44,6 +44,7 @@ Threats can be classified as "Inside Intruder", "Natural Disasters", etc whereas
 - Adding a CAPTCHA functionality to the login forms.
 - Enforce account lockout mechanism for a maximum of three to four wrong attempts.
 - Fastest fix for a temporary period would be blocking the particular ip address that is making the brute force attempts.
+- Authentication Delays.
 
 ### 7. What's the difference between an "Exploit" and a "Payload"?
 
@@ -52,6 +53,16 @@ An exploit is the medium in the which the payload is contained.Both represent a 
 ### 8. Why is encryption used for confidentiality instead of encoding?
 
 Encryption and Encoding uses publicly available algorithms. Encoding is not used for confidentiality purposes since the content that has been encoded using algorithms like (Base64, UTF, etc) can be reversed with their available algorithms and there is no secret key involved. In an encryption scheme like an (AES, 3-DES, etc) they have corresponding encryption and decryption algorithms which involves a common secret key.
+
+### 9. Which type of scan is performed by NMAP through default settings?
+
+Nmap uses a "SYN" scan by default unless we specify anything. -sS will be the default setting for Nmap. SYN scans are faster as they do not create the Three-way-handshake (SYN-><-SYN-ACK->ACK). Instead of the ACK, the SYN scan sends an RST packet, thus the connection will be closed and there won't be any chances for DoS condition. SYN scans were previously called as "Stealth Scans" as the logging devices do not record activities since a three-way-handshake wasn't established. Nowadays, the devices do record activity of SYN scans too, so it is not fair to call it as a "Stealth Scan" anymore.
+
+### 10. On which port does Nessus runs?
+
+**8834**. Nessus can be accessed through any browser by accessing https://127.0.0.1:8834.
+
+
 
 
 
