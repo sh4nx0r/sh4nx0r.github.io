@@ -13,7 +13,7 @@ comments: true
 featured: false
 ---
 
-**11** questions and still counting, I've been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a **Guide** to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness to the reader.
+Almost **11** questions and still counting, I've been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a **Guide** to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness to the reader.
 
 
 ### 1. What is a Repudiation Attack?
@@ -58,7 +58,7 @@ Encryption and Encoding uses publicly available algorithms. Encoding is not used
 
 Nmap uses a "SYN" scan by default unless we specify anything. -sS will be the default setting for Nmap. SYN scans are faster as they do not create the Three-way-handshake (SYN-><-SYN-ACK->ACK). Instead of the ACK, the SYN scan sends an RST packet, thus the connection will be closed and there won't be any chances for DoS condition. SYN scans were previously called as "Stealth Scans" as the logging devices do not record activities since a three-way-handshake wasn't established. Nowadays, the devices do record activity of SYN scans too, so it is not fair to call it as a "Stealth Scan" anymore.
 
-### 10. On which port does Nessus runs?
+### 10. On which port does Nessus run?
 
 **8834**. Nessus can be accessed through any browser by accessing https://127.0.0.1:8834.
 
@@ -66,6 +66,11 @@ Nmap uses a "SYN" scan by default unless we specify anything. -sS will be the de
 
 Bind Payloads are a piece of code which is sent by the attacker to the target machine. The exploit then runs on the machine as a process on a certain port say 4444 passively. The attacker can connect to this target by establishing connection to this particular port.
 <br>Reverse Payloads are also a piece of code that is sent by attacker and in the background the attacker runs another process that keeps listening to the port say 4444., when this exploit is executed, the target machine immediately sends a connection to the attacker machine that is passively listening on the background.
+
+### 12. What is a "Promiscuous Mode and Non-Promiscuous Mode" while capturing packets with a packet sniffer?
+
+In a "Promiscuous Mode" whichever packets that reaches the Network Interface Card is compelled to accept eventhough it was not intended for that NIC's particular MAC address. That's one of the reason we mostly sniff traffic using this mode. In a "Non-Promiscuous Mode", the packets are processed only if they are intended for that NIC's MAC address, others are discarded as it is.
+
 
 
 

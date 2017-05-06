@@ -7,7 +7,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://localhost:4000/" />
-<updated>2017-05-04T20:33:14+06:00</updated>
+<updated>2017-05-06T14:04:06+06:00</updated>
 <id>http://localhost:4000/</id>
 <author>
   <name>Shankar Damodaran</name>
@@ -31,7 +31,7 @@
   <category scheme="http://localhost:4000/tags/#infosec" term="infosec" /><category scheme="http://localhost:4000/tags/#interview%20questions" term="interview questions" /><category scheme="http://localhost:4000/tags/#pentesting" term="pentesting" /><category scheme="http://localhost:4000/tags/#security%20analyst" term="security analyst" />
   <content type="html">
   
-    &lt;p&gt;&lt;strong&gt;11&lt;/strong&gt; questions and still counting, I’ve been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a &lt;strong&gt;Guide&lt;/strong&gt; to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness to the reader.&lt;/p&gt;
+    &lt;p&gt;Almost &lt;strong&gt;11&lt;/strong&gt; questions and still counting, I’ve been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a &lt;strong&gt;Guide&lt;/strong&gt; to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness to the reader.&lt;/p&gt;
 
 &lt;h3 id=&quot;1-what-is-a-repudiation-attack&quot;&gt;1. What is a Repudiation Attack?&lt;/h3&gt;
 
@@ -77,7 +77,7 @@
 
 &lt;p&gt;Nmap uses a “SYN” scan by default unless we specify anything. -sS will be the default setting for Nmap. SYN scans are faster as they do not create the Three-way-handshake (SYN-&amp;gt;&amp;lt;-SYN-ACK-&amp;gt;ACK). Instead of the ACK, the SYN scan sends an RST packet, thus the connection will be closed and there won’t be any chances for DoS condition. SYN scans were previously called as “Stealth Scans” as the logging devices do not record activities since a three-way-handshake wasn’t established. Nowadays, the devices do record activity of SYN scans too, so it is not fair to call it as a “Stealth Scan” anymore.&lt;/p&gt;
 
-&lt;h3 id=&quot;10-on-which-port-does-nessus-runs&quot;&gt;10. On which port does Nessus runs?&lt;/h3&gt;
+&lt;h3 id=&quot;10-on-which-port-does-nessus-run&quot;&gt;10. On which port does Nessus run?&lt;/h3&gt;
 
 &lt;p&gt;&lt;strong&gt;8834&lt;/strong&gt;. Nessus can be accessed through any browser by accessing https://127.0.0.1:8834.&lt;/p&gt;
 
@@ -85,6 +85,10 @@
 
 &lt;p&gt;Bind Payloads are a piece of code which is sent by the attacker to the target machine. The exploit then runs on the machine as a process on a certain port say 4444 passively. The attacker can connect to this target by establishing connection to this particular port.
 &lt;br /&gt;Reverse Payloads are also a piece of code that is sent by attacker and in the background the attacker runs another process that keeps listening to the port say 4444., when this exploit is executed, the target machine immediately sends a connection to the attacker machine that is passively listening on the background.&lt;/p&gt;
+
+&lt;h3 id=&quot;12-what-is-a-promiscuous-mode-and-non-promiscuous-mode-while-capturing-packets-with-a-packet-sniffer&quot;&gt;12. What is a “Promiscuous Mode and Non-Promiscuous Mode” while capturing packets with a packet sniffer?&lt;/h3&gt;
+
+&lt;p&gt;In a “Promiscuous Mode” whichever packets that reaches the Network Interface Card is compelled to accept eventhough it was not intended for that NIC’s particular MAC address. That’s one of the reason we mostly sniff traffic using this mode. In a “Non-Promiscuous Mode”, the packets are processed only if they are intended for that NIC’s MAC address, others are discarded as it is.&lt;/p&gt;
 
 &lt;hr /&gt;
 

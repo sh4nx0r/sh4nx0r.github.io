@@ -137,7 +137,7 @@ $(function() {
         <img src="http://localhost:4000/images/blogimages/2017-04-21/cover-2017-04-21.jpg" alt="cover-image" />
 
         <article class="notepad-post-content post">
-            <div><p><strong>11</strong> questions and still counting, I’ve been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a <strong>Guide</strong> to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness to the reader.</p>
+            <div><p>Almost <strong>11</strong> questions and still counting, I’ve been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a <strong>Guide</strong> to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness to the reader.</p>
 
 <h3 id="1-what-is-a-repudiation-attack">1. What is a Repudiation Attack?</h3>
 
@@ -183,7 +183,7 @@ $(function() {
 
 <p>Nmap uses a “SYN” scan by default unless we specify anything. -sS will be the default setting for Nmap. SYN scans are faster as they do not create the Three-way-handshake (SYN-&gt;&lt;-SYN-ACK-&gt;ACK). Instead of the ACK, the SYN scan sends an RST packet, thus the connection will be closed and there won’t be any chances for DoS condition. SYN scans were previously called as “Stealth Scans” as the logging devices do not record activities since a three-way-handshake wasn’t established. Nowadays, the devices do record activity of SYN scans too, so it is not fair to call it as a “Stealth Scan” anymore.</p>
 
-<h3 id="10-on-which-port-does-nessus-runs">10. On which port does Nessus runs?</h3>
+<h3 id="10-on-which-port-does-nessus-run">10. On which port does Nessus run?</h3>
 
 <p><strong>8834</strong>. Nessus can be accessed through any browser by accessing https://127.0.0.1:8834.</p>
 
@@ -191,6 +191,10 @@ $(function() {
 
 <p>Bind Payloads are a piece of code which is sent by the attacker to the target machine. The exploit then runs on the machine as a process on a certain port say 4444 passively. The attacker can connect to this target by establishing connection to this particular port.
 <br />Reverse Payloads are also a piece of code that is sent by attacker and in the background the attacker runs another process that keeps listening to the port say 4444., when this exploit is executed, the target machine immediately sends a connection to the attacker machine that is passively listening on the background.</p>
+
+<h3 id="12-what-is-a-promiscuous-mode-and-non-promiscuous-mode-while-capturing-packets-with-a-packet-sniffer">12. What is a “Promiscuous Mode and Non-Promiscuous Mode” while capturing packets with a packet sniffer?</h3>
+
+<p>In a “Promiscuous Mode” whichever packets that reaches the Network Interface Card is compelled to accept eventhough it was not intended for that NIC’s particular MAC address. That’s one of the reason we mostly sniff traffic using this mode. In a “Non-Promiscuous Mode”, the packets are processed only if they are intended for that NIC’s MAC address, others are discarded as it is.</p>
 
 <hr />
 
