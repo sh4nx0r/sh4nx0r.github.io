@@ -13,7 +13,7 @@ comments: true
 featured: false
 ---
 
-Almost **11** questions and still counting, I've been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a **Guide** to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness to the reader.
+Almost **15** questions and still counting, I've been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a **Guide** to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness to the reader.
 
 
 ### 1. What is a Repudiation Attack?
@@ -71,9 +71,16 @@ Bind Payloads are a piece of code which is sent by the attacker to the target ma
 
 In a "Promiscuous Mode" whichever packets that reaches the Network Interface Card is compelled to accept eventhough it was not intended for that NIC's particular MAC address. That's one of the reason we mostly sniff traffic using this mode. In a "Non-Promiscuous Mode", the packets are processed only if they are intended for that NIC's MAC address, others are discarded as it is.
 
+### 13. What is an Open Redirect?
 
+It resides in one of the OWASP Top 10, This happens in a site which does not properly validate parameters that happens during a redirect. For instance; Consider this URL http://www.example.com/login.aspx?redirect=profile.php. What an attacker does is that he could use this opportunity to redirect the logged in users to his/her site by crafting a URL like this. http://www.example.com/login.aspx?redirect=http://somemaliciouswebsite.com
 
+### 14. How would you rate or rank a vulnerability based on your findings?
 
+This depends on how much impact the vulnerability could affect your business. An example can answer this question., During your audit say you discover XSS and SQLi vulnerabilities. Both are equally dangerous, but in our scenario we rank XSS as the first most since the database that has the SQLi is not a production one and it is just holds some sample data. Thus we need to rank a vulnerability based on the risk factor.
 
+### 15. What is an Active Directory? How does LDAP differs from Active Directory?
+
+Active Directory is Microsoft's implementation of directory service that provides information about the system, user's activities, policies, etc. LDAP (LightWeight Directory Access Protocol) is a protocol that is used to query the directory services (in this case, the Actual Directory).
 
 ---

@@ -137,7 +137,7 @@ $(function() {
         <img src="http://localhost:4000/images/blogimages/2017-04-21/cover-2017-04-21.jpg" alt="cover-image" />
 
         <article class="notepad-post-content post">
-            <div><p>Almost <strong>11</strong> questions and still counting, I’ve been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a <strong>Guide</strong> to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness to the reader.</p>
+            <div><p>Almost <strong>15</strong> questions and still counting, I’ve been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a <strong>Guide</strong> to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness to the reader.</p>
 
 <h3 id="1-what-is-a-repudiation-attack">1. What is a Repudiation Attack?</h3>
 
@@ -195,6 +195,18 @@ $(function() {
 <h3 id="12-what-is-a-promiscuous-mode-and-non-promiscuous-mode-while-capturing-packets-with-a-packet-sniffer">12. What is a “Promiscuous Mode and Non-Promiscuous Mode” while capturing packets with a packet sniffer?</h3>
 
 <p>In a “Promiscuous Mode” whichever packets that reaches the Network Interface Card is compelled to accept eventhough it was not intended for that NIC’s particular MAC address. That’s one of the reason we mostly sniff traffic using this mode. In a “Non-Promiscuous Mode”, the packets are processed only if they are intended for that NIC’s MAC address, others are discarded as it is.</p>
+
+<h3 id="13-what-is-an-open-redirect">13. What is an Open Redirect?</h3>
+
+<p>It resides in one of the OWASP Top 10, This happens in a site which does not properly validate parameters that happens during a redirect. For instance; Consider this URL http://www.example.com/login.aspx?redirect=profile.php. What an attacker does is that he could use this opportunity to redirect the logged in users to his/her site by crafting a URL like this. http://www.example.com/login.aspx?redirect=http://somemaliciouswebsite.com</p>
+
+<h3 id="14-how-would-you-rate-or-rank-a-vulnerability-based-on-your-findings">14. How would you rate or rank a vulnerability based on your findings?</h3>
+
+<p>This depends on how much impact the vulnerability could affect your business. An example can answer this question., During your audit say you discover XSS and SQLi vulnerabilities. Both are equally dangerous, but in our scenario we rank XSS as the first most since the database that has the SQLi is not a production one and it is just holds some sample data. Thus we need to rank a vulnerability based on the risk factor.</p>
+
+<h3 id="15-what-is-an-active-directory-how-does-ldap-differs-from-active-directory">15. What is an Active Directory? How does LDAP differs from Active Directory?</h3>
+
+<p>Active Directory is Microsoft’s implementation of directory service that provides information about the system, user’s activities, policies, etc. LDAP (LightWeight Directory Access Protocol) is a protocol that is used to query the directory services (in this case, the Actual Directory).</p>
 
 <hr />
 
