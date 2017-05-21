@@ -345,6 +345,7 @@
                 align         = this._options('align'),
                 valign        = this._options('valign'),
                 cover         = this._options('cover'),
+				overlayText	  = this._options('overlayText'),
                 color         = this._options('color') || this.$elmt.css('background-color'),
                 self          = this,
                 total         = $slides.length,
@@ -448,7 +449,7 @@
             } else {
                 img = new Image();
 
-                $inner = $('<div class="vegas-slide-inner"></div>')
+                $inner = $('<div class="vegas-slide-inner"><strong>' + overlayText + '</strong></div>')
                     .css('background-image',    'url("' + src + '")')
                     .css('background-color',    color)
                     .css('background-position', align + ' ' + valign);
