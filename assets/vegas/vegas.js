@@ -449,7 +449,7 @@
             } else {
                 img = new Image();
 
-                $inner = $('<div class="vegas-slide-inner"><strong>' + overlayText + '</strong></div>')
+                $inner = $('<div class="vegas-slide-inner; z-index: 9999999;"><strong>' + overlayText + '</strong></div>')
                     .css('background-image',    'url("' + src + '")')
                     .css('background-color',    color)
                     .css('background-position', align + ' ' + valign);
