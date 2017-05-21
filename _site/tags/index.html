@@ -43,10 +43,32 @@
     <link rel="stylesheet" href="http://localhost:4000/assets/css/vendor/foundation.min.css">
     <link rel="stylesheet" href="http://localhost:4000/assets/css/style.css">
     <link rel="stylesheet" href="http://localhost:4000/assets/css/post.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/vegas/vegas.min.css">
 
 
 <!-- Fastest JQuery CDN Lib -->
 <script src="https://cdn.jsdelivr.net/jquery/3.0.0-alpha1/jquery.min.js"></script>
+
+<!-- Vegas Background Image Plugin -->
+<script src="http://localhost:4000/assets/vegas/vegas.min.js"></script>
+
+<script>
+				jQuery(document).ready(function($) {
+						$("#example, body").vegas({
+							autoplay: true,
+							transition: 'fade',
+							transitionDuration: 2000,
+							slides: [
+								{ src: "http://localhost:4000/images/cover1.jpg" },
+								{ src: "http://localhost:4000/images/cover3.jpg" },
+								{ src: "http://localhost:4000/images/cover6.jpg" }
+								],
+							loop: true
+						});
+					});
+			</script>
+
+
 <script>
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
