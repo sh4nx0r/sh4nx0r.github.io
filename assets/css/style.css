@@ -265,7 +265,8 @@ main, .notepad-share-icons, .notepad-disqus {
     padding: 0;
     line-height: 1.1; }
     .notepad-content .notepad-index-post .notepad-post-header .notepad-post-title a {
-      color: black; }
+      color: rgba(255, 255, 255, 0.94);
+	text-shadow: -1px -1px 1px rgba(0,0,0,0.3), 1px 1px 1px rgba(0,0,0,0.3), 0 0 10px #000 }
   @media only screen and (min-width: 40.063em) {
     .notepad-content .notepad-index-post .notepad-post-header .notepad-post-title {
       text-align: left;
