@@ -7,7 +7,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://localhost:4000/" />
-<updated>2017-05-12T20:27:33+06:00</updated>
+<updated>2017-05-21T11:28:59+06:00</updated>
 <id>http://localhost:4000/</id>
 <author>
   <name>Shankar Damodaran</name>
@@ -31,7 +31,7 @@
   <category scheme="http://localhost:4000/tags/#infosec" term="infosec" /><category scheme="http://localhost:4000/tags/#interview%20questions" term="interview questions" /><category scheme="http://localhost:4000/tags/#pentesting" term="pentesting" /><category scheme="http://localhost:4000/tags/#security%20analyst" term="security analyst" />
   <content type="html">
   
-    &lt;p&gt;Almost &lt;strong&gt;15&lt;/strong&gt; questions and still counting, I’ve been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a &lt;strong&gt;Guide&lt;/strong&gt; to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness to the reader.&lt;/p&gt;
+    &lt;p&gt;Almost &lt;strong&gt;16&lt;/strong&gt; questions and still counting, I’ve been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a &lt;strong&gt;Guide&lt;/strong&gt; to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness to the reader.&lt;/p&gt;
 
 &lt;h3 id=&quot;1-what-is-a-repudiation-attack&quot;&gt;1. What is a Repudiation Attack?&lt;/h3&gt;
 
@@ -101,6 +101,10 @@
 &lt;h3 id=&quot;15-what-is-an-active-directory-how-does-ldap-differs-from-active-directory&quot;&gt;15. What is an Active Directory? How does LDAP differs from Active Directory?&lt;/h3&gt;
 
 &lt;p&gt;Active Directory is Microsoft’s implementation of directory service that provides information about the system, user’s activities, policies, etc. LDAP (LightWeight Directory Access Protocol) is a protocol that is used to query the directory services (in this case, the Actual Directory).&lt;/p&gt;
+
+&lt;h3 id=&quot;16-give-a-simple-difference-between-authorization-and-authentication&quot;&gt;16. Give a simple difference between Authorization and Authentication?&lt;/h3&gt;
+
+&lt;p&gt;Authorization is a process whereas an Authentication is a method. Authorization takes place during Authentication. This can be made clear with an example, Consider an ATM, You use your card to “authenticate” to that machine and once you have entered the correct pin you are “authorized” to do transacations.&lt;/p&gt;
 
 &lt;hr /&gt;
 

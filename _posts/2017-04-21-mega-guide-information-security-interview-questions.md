@@ -13,7 +13,7 @@ comments: true
 featured: false
 ---
 
-Almost **15** questions and still counting, I've been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a **Guide** to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness to the reader.
+Almost **16** questions and still counting, I've been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a **Guide** to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness to the reader.
 
 
 ### 1. What is a Repudiation Attack?
@@ -82,5 +82,10 @@ This depends on how much impact the vulnerability could affect your business. An
 ### 15. What is an Active Directory? How does LDAP differs from Active Directory?
 
 Active Directory is Microsoft's implementation of directory service that provides information about the system, user's activities, policies, etc. LDAP (LightWeight Directory Access Protocol) is a protocol that is used to query the directory services (in this case, the Actual Directory).
+
+### 16. Give a simple difference between Authorization and Authentication?
+
+Authorization is a process whereas an Authentication is a method. Authorization takes place during Authentication. This can be made clear with an example, Consider an ATM, You use your card to "authenticate" to that machine and once you have entered the correct pin you are "authorized" to do transacations.
+
 
 ---
