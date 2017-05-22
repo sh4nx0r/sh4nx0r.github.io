@@ -85,7 +85,7 @@ Active Directory is Microsoft's implementation of directory service that provide
 
 ### 16. Give a simple difference between Authorization and Authentication?
 
-Authorization is a process whereas an Authentication is a method. Authorization takes place during Authentication. This can be made clear with an example, Consider an ATM, You use your card to "authenticate" to that machine and once you have entered the correct pin you are "authorized" to do transactions.
+Authorization is a process whereas an Authentication is a method. Authorization takes place during Authentication. This can be made clear with an example, Consider an ATM, You use your card to "authenticate" to that machine and once you have entered the correct pin you are "authorized" to do transacations.
 
 
 ---
