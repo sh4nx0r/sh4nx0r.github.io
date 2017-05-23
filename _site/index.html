@@ -19,7 +19,7 @@
 <meta property="og:title" content="Home">
 <meta property="og:description" content="Shankar Damodaran's Personal Blog.">
 <meta property="og:url" content="http://localhost:4000/">
-<meta property="og:site_name" content="<b><font size='5.75em'>Inventor<font color='yellow' size='6.75em'>.</font> Biker<font color='yellow' size='6.75em'>.</font> Foodie<font color='yellow' size='6.75em'>.</font> Hacker<font color='yellow' size='6.75em'>.</font> Wanderlust<font color='yellow' size='6.75em'>. </font> </font><br>">
+<meta property="og:site_name" content="<b><font size='5.75em'>Inventor<font color='yellow' size='6.75em'>.</font> Biker<font color='yellow' size='6.75em'>.</font> Foodie<font color='yellow' size='6.75em'>.</font> h4ck3r<font color='yellow' size='6.75em'>.</font> Wanderlust<font color='yellow' size='6.75em'>. </font> </font><br>">
 <meta property="og:image" content="http://localhost:4000/images/">
 
 
@@ -27,7 +27,7 @@
 
 
 <link rel="canonical" href="http://localhost:4000/">
-<!-- <link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="<b><font size='5.75em'>Inventor<font color='yellow' size='6.75em'>.</font> Biker<font color='yellow' size='6.75em'>.</font> Foodie<font color='yellow' size='6.75em'>.</font> Hacker<font color='yellow' size='6.75em'>.</font> Wanderlust<font color='yellow' size='6.75em'>. </font> </font><br> Feed"> -->
+<!-- <link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="<b><font size='5.75em'>Inventor<font color='yellow' size='6.75em'>.</font> Biker<font color='yellow' size='6.75em'>.</font> Foodie<font color='yellow' size='6.75em'>.</font> h4ck3r<font color='yellow' size='6.75em'>.</font> Wanderlust<font color='yellow' size='6.75em'>. </font> </font><br> Feed"> -->
 
 
 <!-- http://t.co/dKP3o1e -->
@@ -55,14 +55,15 @@
 
 <script>
 				jQuery(document).ready(function($) {
-						$("#example, body").vegas({
+						$("#exampleX").vegas({
 							autoplay: true,
+							preload: true,
 							transition: 'fade',
 							transitionDuration: 2000,
 							slides: [
-								{ src: "http://localhost:4000/images/cover1.jpg", overlayText: "This is the first photography | Beautiful Waves" },
-								{ src: "http://localhost:4000/images/cover3.jpg", overlayText: "This is the first photography | Beautiful Waves" },
-								{ src: "http://localhost:4000/images/cover6.jpg", overlayText: "This is the first photography | Beautiful Waves" }
+								{ src: "http://localhost:4000/images/cover1.jpg", overlayText: "<div style='text-align:left; font-family:Raleway;'>text 2</div>"},
+								{ src: "http://localhost:4000/images/cover3.jpg", overlayText: "<b>text 3</b>"},
+								{ src: "http://localhost:4000/images/cover6.jpg", overlayText: "<b>text 4</b>"}
 								],
 							loop: true
 						});
@@ -104,6 +105,7 @@ $(function() {
 <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144-precomposed.png">
 <div id="home"></div>
+
 </head>
 <body class="home-template" itemscope itemtype="http://schema.org/WebPage">
 <header class="notepad-site-head">
@@ -141,11 +143,11 @@ $(function() {
 </div>
         <div class="clearfix"></div>
     </div>
-    <div class="notepad-site-head-content" >
+    <div class="notepad-site-head-content"  id="example">
         <div class="notepad-site-head-bg"></div>
         <h1 class="notepad-blog-title">
             <span class="notepad-site-head-title-bg">
-                <b><font size='5.75em'>Inventor<font color='yellow' size='6.75em'>.</font> Biker<font color='yellow' size='6.75em'>.</font> Foodie<font color='yellow' size='6.75em'>.</font> Hacker<font color='yellow' size='6.75em'>.</font> Wanderlust<font color='yellow' size='6.75em'>. </font> </font><br>
+                <b><font size='5.75em'>Inventor<font color='yellow' size='6.75em'>.</font> Biker<font color='yellow' size='6.75em'>.</font> Foodie<font color='yellow' size='6.75em'>.</font> h4ck3r<font color='yellow' size='6.75em'>.</font> Wanderlust<font color='yellow' size='6.75em'>. </font> </font><br>
             </span>
         </h1>
         <h2 class="notepad-blog-description"><font size='2.75em'>[ Disclaimer - Views expressed throughout the site are my own. You may expect a mediocre profanity factor on the blog posts. ]</font></h2>
@@ -175,7 +177,8 @@ $(function() {
     <div class="copyright">
          <section><a href="http://localhost:4000/about"><b>Shankar Damodaran</b></a> &copy; 2017 &bull; All Rights Reserved.</section>
          <section>Proudly published via <a class="icon-ghost" href="https://jekyllrb.com/">Jekyll</a> and hosted through Github Pages and Godaddy DNS.</section>
-         <section>Theme powered by: HMFaysal</section>
+         <section>Jekyll Theme : HMFaysal</section>
+         <section>Image Slider : Jay Salvat</section>
          <section>Visitor Count powered by StatCounter:
          <!-- Start of StatCounter Code for Default Guide -->
 <script type="text/javascript">
@@ -254,6 +257,7 @@ alt="shopify analytics ecommerce"></a></div></noscript>
     
     <div class="cf"></div>
 </footer>
+
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="http://localhost:4000/assets/js/vendor/jquery-1.11.1.min.js"><\/script>')</script>

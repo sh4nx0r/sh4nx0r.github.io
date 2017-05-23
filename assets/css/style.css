@@ -178,6 +178,7 @@ main, .notepad-share-icons, .notepad-disqus {
     padding: 0.625rem;
     background: #e51843;
     line-height: 1.1;
+    opacity: 0.6;
 text-shadow: -1px -1px 1px rgba(0,0,0,0.3), 1px 1px 1px rgba(0,0,0,0.3), 0 0 10px #000; }
   .notepad-site-head .notepad-site-head-content h1, .notepad-site-head .notepad-site-head-content h2 {
     margin: 0;

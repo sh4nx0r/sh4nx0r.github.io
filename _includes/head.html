@@ -54,14 +54,15 @@
 
 <script>
 				jQuery(document).ready(function($) {
-						$("#example, body").vegas({
+						$("#exampleX").vegas({
 							autoplay: true,
+							preload: true,
 							transition: 'fade',
 							transitionDuration: 2000,
 							slides: [
-								{ src: "{{ site.url }}/images/cover1.jpg", overlayText: "This is the first photography | Beautiful Waves" },
-								{ src: "{{ site.url }}/images/cover3.jpg", overlayText: "This is the first photography | Beautiful Waves" },
-								{ src: "{{ site.url }}/images/cover6.jpg", overlayText: "This is the first photography | Beautiful Waves" }
+								{ src: "{{ site.url }}/images/cover1.jpg", overlayText: "<div style='text-align:left; font-family:Raleway;'>text 2</div>"},
+								{ src: "{{ site.url }}/images/cover3.jpg", overlayText: "<b>text 3</b>"},
+								{ src: "{{ site.url }}/images/cover6.jpg", overlayText: "<b>text 4</b>"}
 								],
 							loop: true
 						});
