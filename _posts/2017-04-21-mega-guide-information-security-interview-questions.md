@@ -13,7 +13,7 @@ comments: true
 featured: false
 ---
 
-Almost **16** questions and still counting, I've been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a **Guide** to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness to the reader.
+Almost **20** questions and still counting, I've been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a **Guide** to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness to the reader.
 
 
 ### 1. What is a Repudiation Attack?
@@ -87,5 +87,18 @@ Active Directory is Microsoft's implementation of directory service that provide
 
 Authorization is a process whereas an Authentication is a method. Authorization takes place during Authentication. This can be made clear with an example, Consider an ATM, You use your card to "authenticate" to that machine and once you have entered the correct pin you are "authorized" to do transacations.
 
+### 17. Can you perform a simple MiTM on a mobile phone?
+
+Spawn a rogue wireless access point. Wait for the victim to connect to your AP. You can now intercept the communication.
+
+### 18. When you deal with a stream of confidential data to be transferred across the channel, What would you do first. Encrypt or Compress?
+
+Any compression algorithm will look for certain patterns in the data to perform compression. When the data is encrypted, the compression algorithm will find it hard to compress the data (or it may not compress the data at all). So the good option would be. Compress and then Encrypt.
+
+### 19. How do you preventing CSRF Attacks?
+Use random tokens for each session and transaction. When a end-user logs to that application, let the application create a token for that particular session. That token should be included in every transaction.
+
+### 20. Which is better. Closed ports or Filtered Ports?
+During a scan, closed ports respond to scanners (port scanners like nmap) saying that the service is not running, whereas filtered ports do not respond to scanners. So it is sometimes better to have filtered ports as they increase scanner times by not responding., But it also gives a hint to hackers that a particular service is running on the port but it is being blocked.
 
 ---
