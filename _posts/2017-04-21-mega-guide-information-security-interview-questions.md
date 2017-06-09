@@ -13,7 +13,7 @@ comments: true
 featured: false
 ---
 
-Almost **20** questions and still counting, I've been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a **Guide** to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness to the reader.
+Almost **26** questions and still counting, I've been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a **Guide** to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness to the reader.
 
 
 ### 1. What is a Repudiation Attack?
@@ -100,5 +100,46 @@ Use random tokens for each session and transaction. When a end-user logs to that
 
 ### 20. Which is better. Closed ports or Filtered Ports?
 During a scan, closed ports respond to scanners (port scanners like nmap) saying that the service is not running, whereas filtered ports do not respond to scanners. So it is sometimes better to have filtered ports as they increase scanner times by not responding., But it also gives a hint to hackers that a particular service is running on the port but it is being blocked.
+
+### 21. What's a Rainbow Table and a Rainbow Cracker?
+Rainbow Tables are pre-computed hashes that was generated using cryptic or one-way hash algorithms. For instance., say we are subjecting a plaintext "secret" to a one-way hash algorithm and 
+it generates a hash "eabecfe". This hash and the corresponding plaintext will be stored in a table. This table is called as the Rainbow Table. It is just a repository that holds hashes that 
+were pre-computed and stored.
+<br>
+Rainbow Cracker makes use of Rainbow Tables to do the cracking process, it is a  time-memory tradeoff so the process will be faster.
+
+### 22. How do you use netcat to listen and connect through two different machines/VMs?
+
+Say there are two machines A and B, If you want connect to A from B, then start a listener in A by running the command `nc -l -p 2334` . Inorder to connect to A from B., execute `nc 
+192.168.1.2 2334` (where 192.168.1.2 is the IP address for machine A)
+
+### 23. State some differences between Netcat and Ncat.
+
+Netcat is available in almost all versions of linux. Ncat will replace Netcat in future versions on linux probably. Ncat has SSL support between connections, also supports Proxies and IPv6.
+
+### 24. Contrast Hubs. Switches and Routers
+
+**Hubs:** Not expensive. Data collision may occur as traffic intended for one machine will reach all the machines in the network. This also results in wastage of bandwidth. This may also 
+result in information leak as a packet sniffer can be used to capture packets that was not intended for the particular machine. They operate on the Physical layer as they deal with bits.
+
+**Switches:** They are bit expensive compared to Hubs but they are way more smarter. The switch uses a table within to make track of the MAC addresses associated with the computers on the 
+network. Switch acts as a hub in the begining (transmits data to all machines when the table is empty) and learns about the addresses and during the next data transfer, the switch refers to 
+the table, reads the route (address) and then transfers to the particular target without transmitting throughout the network. They operate of the Data Link layer as they deal with MAC 
+addresses.
+
+**Routers:** They are expensive than Switches. Ultimately they do Network Address Translation(NAT) which helps you connected to the Internet. They have support for DHCP and it helps in 
+automatically configuring ip addresses for multiple machines on the network. They operate on Network layer as they deal with IP addresses.
+
+### 25. Which protocol does DNS use?
+
+DNS requests make use of UDP protocol instead of TCP. UDP protocol are unreliable when compared to TCP, but they are faster when they are compared to TCP. The load factor is very important 
+when it comes to DNS, since TCP makes use of a three-way-handshake., it will be a little slower than UDP.
+
+### 26. State a few steps you would use to secure a Linux machine.
+- Use faillog command to set user account lockouts after certain failure attempts.
+- Ensure the linux kernel and software are up to date.
+- Never use root account to login, use sudo command whenever neccessary.
+- Disable unwanted services with high privileges. 
+- Check for world writeable files and disable it wherever neccessary.
 
 ---
