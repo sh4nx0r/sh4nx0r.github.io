@@ -7,7 +7,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://localhost:4000/" />
-<updated>2017-06-09T20:28:25+06:00</updated>
+<updated>2017-06-14T20:20:57+06:00</updated>
 <id>http://localhost:4000/</id>
 <author>
   <name>Shankar Damodaran</name>
@@ -31,7 +31,7 @@
   <category scheme="http://localhost:4000/tags/#infosec" term="infosec" /><category scheme="http://localhost:4000/tags/#interview%20questions" term="interview questions" /><category scheme="http://localhost:4000/tags/#pentesting" term="pentesting" /><category scheme="http://localhost:4000/tags/#security%20analyst" term="security analyst" />
   <content type="html">
   
-    &lt;p&gt;Almost &lt;strong&gt;26&lt;/strong&gt; questions and still counting, I’ve been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a &lt;strong&gt;Guide&lt;/strong&gt; to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness to the reader.&lt;/p&gt;
+    &lt;p&gt;Almost &lt;strong&gt;30&lt;/strong&gt; questions and still counting, I’ve been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a &lt;strong&gt;Guide&lt;/strong&gt; to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness to the reader.&lt;/p&gt;
 
 &lt;h3 id=&quot;1-what-is-a-repudiation-attack&quot;&gt;1. What is a Repudiation Attack?&lt;/h3&gt;
 
@@ -114,7 +114,7 @@
 
 &lt;p&gt;Any compression algorithm will look for certain patterns in the data to perform compression. When the data is encrypted, the compression algorithm will find it hard to compress the data (or it may not compress the data at all). So the good option would be. Compress and then Encrypt.&lt;/p&gt;
 
-&lt;h3 id=&quot;19-how-do-you-preventing-csrf-attacks&quot;&gt;19. How do you preventing CSRF Attacks?&lt;/h3&gt;
+&lt;h3 id=&quot;19-how-do-you-prevent-csrf-attacks&quot;&gt;19. How do you prevent CSRF Attacks?&lt;/h3&gt;
 &lt;p&gt;Use random tokens for each session and transaction. When a end-user logs to that application, let the application create a token for that particular session. That token should be included in every transaction.&lt;/p&gt;
 
 &lt;h3 id=&quot;20-which-is-better-closed-ports-or-filtered-ports&quot;&gt;20. Which is better. Closed ports or Filtered Ports?&lt;/h3&gt;
@@ -146,12 +146,12 @@ network. Switch acts as a hub in the begining (transmits data to all machines wh
 the table, reads the route (address) and then transfers to the particular target without transmitting throughout the network. They operate of the Data Link layer as they deal with MAC 
 addresses.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Routers:&lt;/strong&gt; They are expensive than Switches. Ultimately they do Network Address Translation(NAT) which helps you connected to the Internet. They have support for DHCP and it helps in 
+&lt;p&gt;&lt;strong&gt;Routers:&lt;/strong&gt; They are expensive than Switches. Ultimately they do Network Address Translation(NAT) which helps you connect to the Internet. They have support for DHCP and it helps in 
 automatically configuring ip addresses for multiple machines on the network. They operate on Network layer as they deal with IP addresses.&lt;/p&gt;
 
 &lt;h3 id=&quot;25-which-protocol-does-dns-use&quot;&gt;25. Which protocol does DNS use?&lt;/h3&gt;
 
-&lt;p&gt;DNS requests make use of UDP protocol instead of TCP. UDP protocol are unreliable when compared to TCP, but they are faster when they are compared to TCP. The load factor is very important 
+&lt;p&gt;DNS requests make use of UDP protocol instead of TCP. UDP protocol are unreliable when compared to TCP, but they are faster when compared to TCP. The load factor is very important 
 when it comes to DNS, since TCP makes use of a three-way-handshake., it will be a little slower than UDP.&lt;/p&gt;
 
 &lt;h3 id=&quot;26-state-a-few-steps-you-would-use-to-secure-a-linux-machine&quot;&gt;26. State a few steps you would use to secure a Linux machine.&lt;/h3&gt;
@@ -161,6 +161,41 @@ when it comes to DNS, since TCP makes use of a three-way-handshake., it will be 
   &lt;li&gt;Never use root account to login, use sudo command whenever neccessary.&lt;/li&gt;
   &lt;li&gt;Disable unwanted services with high privileges.&lt;/li&gt;
   &lt;li&gt;Check for world writeable files and disable it wherever neccessary.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;27-if-there-are-a-total-of-65535-tcp-ports-then-how-many-udp-ports-are-available&quot;&gt;27. If there are a total of 65535 TCP Ports, then how many UDP Ports are available?&lt;/h3&gt;
+&lt;p&gt;There are 65535 UDP ports as well.&lt;/p&gt;
+
+&lt;h3 id=&quot;28-how-to-check-for-click-jacking-and-state-atleast-one-method-to-prevent-it&quot;&gt;28. How to check for Click-Jacking and state atleast one method to prevent it?&lt;/h3&gt;
+
+&lt;p&gt;Write a normal html code, add an iframe something like this &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;iframe src=&quot;vulnerableCSRFwebsite.com&quot;&amp;gt;&lt;/code&gt;, save it as test.html. Open this html in the browser. If vulnerableCSRFwebsite.com 
+opens up within the iframe, then the site is vulnerable to Click-Jacking.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Prevention:&lt;/strong&gt; By configuring X-Frame Options Headers to &lt;code class=&quot;highlighter-rouge&quot;&gt;DENY&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;SAMEORIGIN&lt;/code&gt; or the site using &lt;code class=&quot;highlighter-rouge&quot;&gt;ALLOW-FROM&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;X-Frame-Options: DENY&lt;/code&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;X-Frame-Options: SAMEORIGIN&lt;/code&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;X-Frame-Options: ALLOW-FROM https://example.com/&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;29-list-some-steps-in-securing-any-web-application&quot;&gt;29. List some steps in securing any Web Application.&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Make sure “Security Testing” is part of the SDLC.&lt;/li&gt;
+  &lt;li&gt;If not, Immediately enforce VA on the application and find the vulnerabilities.&lt;/li&gt;
+  &lt;li&gt;Remediate the vulnerabilities and redo the VA to make sure they are gone.&lt;/li&gt;
+  &lt;li&gt;Go for PT of the web application, if required.&lt;/li&gt;
+  &lt;li&gt;Perform security checks every once in a while depending on the application active releases.&lt;/li&gt;
+  &lt;li&gt;Install a web-application firewall if neccessary.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;30-list-some-steps-in-securing-any-web-server&quot;&gt;30. List some steps in securing any Web Server.&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Check whether the webserver is up to date and does not contain any vulnerabilities.&lt;/li&gt;
+  &lt;li&gt;Install an application monitoring tool like New Relic to monitor the requests.&lt;/li&gt;
+  &lt;li&gt;Make sure certain services are not running with root/SYSTEM level privileges.&lt;/li&gt;
+  &lt;li&gt;Ensure PT is done on the webserver atleast once.&lt;/li&gt;
+  &lt;li&gt;Periodically check for available patches.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;hr /&gt;

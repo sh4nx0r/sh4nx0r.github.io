@@ -162,7 +162,7 @@ $(function() {
         <img src="http://localhost:4000/images/blogimages/2017-04-21/cover-2017-04-21.jpg" alt="cover-image" />
 
         <article class="notepad-post-content post">
-            <div><p>Almost <strong>26</strong> questions and still counting, I’ve been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a <strong>Guide</strong> to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness to the reader.</p>
+            <div><p>Almost <strong>30</strong> questions and still counting, I’ve been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a <strong>Guide</strong> to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness to the reader.</p>
 
 <h3 id="1-what-is-a-repudiation-attack">1. What is a Repudiation Attack?</h3>
 
@@ -245,7 +245,7 @@ $(function() {
 
 <p>Any compression algorithm will look for certain patterns in the data to perform compression. When the data is encrypted, the compression algorithm will find it hard to compress the data (or it may not compress the data at all). So the good option would be. Compress and then Encrypt.</p>
 
-<h3 id="19-how-do-you-preventing-csrf-attacks">19. How do you preventing CSRF Attacks?</h3>
+<h3 id="19-how-do-you-prevent-csrf-attacks">19. How do you prevent CSRF Attacks?</h3>
 <p>Use random tokens for each session and transaction. When a end-user logs to that application, let the application create a token for that particular session. That token should be included in every transaction.</p>
 
 <h3 id="20-which-is-better-closed-ports-or-filtered-ports">20. Which is better. Closed ports or Filtered Ports?</h3>
@@ -277,12 +277,12 @@ network. Switch acts as a hub in the begining (transmits data to all machines wh
 the table, reads the route (address) and then transfers to the particular target without transmitting throughout the network. They operate of the Data Link layer as they deal with MAC 
 addresses.</p>
 
-<p><strong>Routers:</strong> They are expensive than Switches. Ultimately they do Network Address Translation(NAT) which helps you connected to the Internet. They have support for DHCP and it helps in 
+<p><strong>Routers:</strong> They are expensive than Switches. Ultimately they do Network Address Translation(NAT) which helps you connect to the Internet. They have support for DHCP and it helps in 
 automatically configuring ip addresses for multiple machines on the network. They operate on Network layer as they deal with IP addresses.</p>
 
 <h3 id="25-which-protocol-does-dns-use">25. Which protocol does DNS use?</h3>
 
-<p>DNS requests make use of UDP protocol instead of TCP. UDP protocol are unreliable when compared to TCP, but they are faster when they are compared to TCP. The load factor is very important 
+<p>DNS requests make use of UDP protocol instead of TCP. UDP protocol are unreliable when compared to TCP, but they are faster when compared to TCP. The load factor is very important 
 when it comes to DNS, since TCP makes use of a three-way-handshake., it will be a little slower than UDP.</p>
 
 <h3 id="26-state-a-few-steps-you-would-use-to-secure-a-linux-machine">26. State a few steps you would use to secure a Linux machine.</h3>
@@ -292,6 +292,41 @@ when it comes to DNS, since TCP makes use of a three-way-handshake., it will be 
   <li>Never use root account to login, use sudo command whenever neccessary.</li>
   <li>Disable unwanted services with high privileges.</li>
   <li>Check for world writeable files and disable it wherever neccessary.</li>
+</ul>
+
+<h3 id="27-if-there-are-a-total-of-65535-tcp-ports-then-how-many-udp-ports-are-available">27. If there are a total of 65535 TCP Ports, then how many UDP Ports are available?</h3>
+<p>There are 65535 UDP ports as well.</p>
+
+<h3 id="28-how-to-check-for-click-jacking-and-state-atleast-one-method-to-prevent-it">28. How to check for Click-Jacking and state atleast one method to prevent it?</h3>
+
+<p>Write a normal html code, add an iframe something like this <code class="highlighter-rouge">&lt;iframe src="vulnerableCSRFwebsite.com"&gt;</code>, save it as test.html. Open this html in the browser. If vulnerableCSRFwebsite.com 
+opens up within the iframe, then the site is vulnerable to Click-Jacking.</p>
+
+<p><strong>Prevention:</strong> By configuring X-Frame Options Headers to <code class="highlighter-rouge">DENY</code> or <code class="highlighter-rouge">SAMEORIGIN</code> or the site using <code class="highlighter-rouge">ALLOW-FROM</code></p>
+
+<p><code class="highlighter-rouge">X-Frame-Options: DENY</code>
+<code class="highlighter-rouge">X-Frame-Options: SAMEORIGIN</code>
+<code class="highlighter-rouge">X-Frame-Options: ALLOW-FROM https://example.com/</code></p>
+
+<h3 id="29-list-some-steps-in-securing-any-web-application">29. List some steps in securing any Web Application.</h3>
+
+<ul>
+  <li>Make sure “Security Testing” is part of the SDLC.</li>
+  <li>If not, Immediately enforce VA on the application and find the vulnerabilities.</li>
+  <li>Remediate the vulnerabilities and redo the VA to make sure they are gone.</li>
+  <li>Go for PT of the web application, if required.</li>
+  <li>Perform security checks every once in a while depending on the application active releases.</li>
+  <li>Install a web-application firewall if neccessary.</li>
+</ul>
+
+<h3 id="30-list-some-steps-in-securing-any-web-server">30. List some steps in securing any Web Server.</h3>
+
+<ul>
+  <li>Check whether the webserver is up to date and does not contain any vulnerabilities.</li>
+  <li>Install an application monitoring tool like New Relic to monitor the requests.</li>
+  <li>Make sure certain services are not running with root/SYSTEM level privileges.</li>
+  <li>Ensure PT is done on the webserver atleast once.</li>
+  <li>Periodically check for available patches.</li>
 </ul>
 
 <hr />

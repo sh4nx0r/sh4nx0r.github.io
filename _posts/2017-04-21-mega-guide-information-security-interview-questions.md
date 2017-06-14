@@ -13,7 +13,7 @@ comments: true
 featured: false
 ---
 
-Almost **26** questions and still counting, I've been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a **Guide** to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness to the reader.
+Almost **30** questions and still counting, I've been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a **Guide** to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness to the reader.
 
 
 ### 1. What is a Repudiation Attack?
@@ -95,7 +95,7 @@ Spawn a rogue wireless access point. Wait for the victim to connect to your AP. 
 
 Any compression algorithm will look for certain patterns in the data to perform compression. When the data is encrypted, the compression algorithm will find it hard to compress the data (or it may not compress the data at all). So the good option would be. Compress and then Encrypt.
 
-### 19. How do you preventing CSRF Attacks?
+### 19. How do you prevent CSRF Attacks?
 Use random tokens for each session and transaction. When a end-user logs to that application, let the application create a token for that particular session. That token should be included in every transaction.
 
 ### 20. Which is better. Closed ports or Filtered Ports?
@@ -127,12 +127,12 @@ network. Switch acts as a hub in the begining (transmits data to all machines wh
 the table, reads the route (address) and then transfers to the particular target without transmitting throughout the network. They operate of the Data Link layer as they deal with MAC 
 addresses.
 
-**Routers:** They are expensive than Switches. Ultimately they do Network Address Translation(NAT) which helps you connected to the Internet. They have support for DHCP and it helps in 
+**Routers:** They are expensive than Switches. Ultimately they do Network Address Translation(NAT) which helps you connect to the Internet. They have support for DHCP and it helps in 
 automatically configuring ip addresses for multiple machines on the network. They operate on Network layer as they deal with IP addresses.
 
 ### 25. Which protocol does DNS use?
 
-DNS requests make use of UDP protocol instead of TCP. UDP protocol are unreliable when compared to TCP, but they are faster when they are compared to TCP. The load factor is very important 
+DNS requests make use of UDP protocol instead of TCP. UDP protocol are unreliable when compared to TCP, but they are faster when compared to TCP. The load factor is very important 
 when it comes to DNS, since TCP makes use of a three-way-handshake., it will be a little slower than UDP.
 
 ### 26. State a few steps you would use to secure a Linux machine.
@@ -141,5 +141,37 @@ when it comes to DNS, since TCP makes use of a three-way-handshake., it will be 
 - Never use root account to login, use sudo command whenever neccessary.
 - Disable unwanted services with high privileges. 
 - Check for world writeable files and disable it wherever neccessary.
+
+### 27. If there are a total of 65535 TCP Ports, then how many UDP Ports are available?
+There are 65535 UDP ports as well.
+
+### 28. How to check for Click-Jacking and state atleast one method to prevent it?
+
+Write a normal html code, add an iframe something like this `<iframe src="vulnerableCSRFwebsite.com">`, save it as test.html. Open this html in the browser. If vulnerableCSRFwebsite.com 
+opens up within the iframe, then the site is vulnerable to Click-Jacking.
+
+**Prevention:** By configuring X-Frame Options Headers to `DENY` or `SAMEORIGIN` or the site using `ALLOW-FROM`
+
+`X-Frame-Options: DENY`
+`X-Frame-Options: SAMEORIGIN`
+`X-Frame-Options: ALLOW-FROM https://example.com/`
+
+### 29. List some steps in securing any Web Application.
+
+- Make sure "Security Testing" is part of the SDLC.
+- If not, Immediately enforce VA on the application and find the vulnerabilities.
+- Remediate the vulnerabilities and redo the VA to make sure they are gone.
+- Go for PT of the web application, if required.
+- Perform security checks every once in a while depending on the application active releases.
+- Install a web-application firewall if neccessary.
+
+### 30. List some steps in securing any Web Server.
+
+- Check whether the webserver is up to date and does not contain any vulnerabilities.
+- Install an application monitoring tool like New Relic to monitor the requests.
+- Make sure certain services are not running with root/SYSTEM level privileges.
+- Ensure PT is done on the webserver atleast once.
+- Periodically check for available patches.
+
 
 ---
