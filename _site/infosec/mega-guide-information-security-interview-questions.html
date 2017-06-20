@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>sh4.in | The Mega Guide to Information Security Interview Questions.</title>
-<meta name="description" content="Information Security Terminologies and Interview Questions.">
+<meta name="description" content="Information Security Terminologies and Interview Questions for Security Enthusiasts.">
 <meta name="keywords" content="infosec, interview questions, pentesting, security analyst">
 
 <!-- Twitter Cards -->
@@ -11,14 +11,14 @@
 <meta name="twitter:image" content="http://localhost:4000/images/blogimages/2017-04-21/cover-2017-04-21.jpg">
 
 <meta name="twitter:title" content="The Mega Guide to Information Security Interview Questions.">
-<meta name="twitter:description" content="Information Security Terminologies and Interview Questions.">
+<meta name="twitter:description" content="Information Security Terminologies and Interview Questions for Security Enthusiasts.">
 <meta name="twitter:creator" content="@sh4nx0r">
 
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
 <meta property="og:title" content="The Mega Guide to Information Security Interview Questions.">
-<meta property="og:description" content="Information Security Terminologies and Interview Questions.">
+<meta property="og:description" content="Information Security Terminologies and Interview Questions for Security Enthusiasts.">
 <meta property="og:url" content="http://localhost:4000/infosec/mega-guide-information-security-interview-questions">
 <meta property="og:site_name" content="<b><font size='5.75em'>Inventor<font color='yellow' size='6.75em'>.</font> Biker<font color='yellow' size='6.75em'>.</font> Foodie<font color='yellow' size='6.75em'>.</font> h4ck3r<font color='yellow' size='6.75em'>.</font> Wanderlust<font color='yellow' size='6.75em'>. </font> </font><br>">
 <meta property="og:image" content="http://localhost:4000/images/blogimages/2017-04-21/cover-2017-04-21.jpg">
@@ -162,7 +162,7 @@ $(function() {
         <img src="http://localhost:4000/images/blogimages/2017-04-21/cover-2017-04-21.jpg" alt="cover-image" />
 
         <article class="notepad-post-content post">
-            <div><p>Almost <strong>30</strong> questions and still counting, I’ve been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a <strong>Guide</strong> to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness to the reader.</p>
+            <div><p>Almost <strong>40</strong> questions and still counting, I’ve been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a <strong>Guide</strong> to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness to the reader.</p>
 
 <h3 id="1-what-is-a-repudiation-attack">1. What is a Repudiation Attack?</h3>
 
@@ -302,10 +302,10 @@ when it comes to DNS, since TCP makes use of a three-way-handshake., it will be 
 <p>Write a normal html code, add an iframe something like this <code class="highlighter-rouge">&lt;iframe src="vulnerableCSRFwebsite.com"&gt;</code>, save it as test.html. Open this html in the browser. If vulnerableCSRFwebsite.com 
 opens up within the iframe, then the site is vulnerable to Click-Jacking.</p>
 
-<p><strong>Prevention:</strong> By configuring X-Frame Options Headers to <code class="highlighter-rouge">DENY</code> or <code class="highlighter-rouge">SAMEORIGIN</code> or the site using <code class="highlighter-rouge">ALLOW-FROM</code></p>
+<p><strong>Prevention:</strong> By configuring X-Frame Options Headers to <code class="highlighter-rouge">DENY</code> or <code class="highlighter-rouge">SAMEORIGIN</code> or the site using <code class="highlighter-rouge">ALLOW-FROM</code>. See the code below.</p>
 
-<p><code class="highlighter-rouge">X-Frame-Options: DENY</code>
-<code class="highlighter-rouge">X-Frame-Options: SAMEORIGIN</code>
+<p><code class="highlighter-rouge">X-Frame-Options: DENY</code> <br />
+<code class="highlighter-rouge">X-Frame-Options: SAMEORIGIN</code> <br />
 <code class="highlighter-rouge">X-Frame-Options: ALLOW-FROM https://example.com/</code></p>
 
 <h3 id="29-list-some-steps-in-securing-any-web-application">29. List some steps in securing any Web Application.</h3>
@@ -327,6 +327,73 @@ opens up within the iframe, then the site is vulnerable to Click-Jacking.</p>
   <li>Make sure certain services are not running with root/SYSTEM level privileges.</li>
   <li>Ensure PT is done on the webserver atleast once.</li>
   <li>Periodically check for available patches.</li>
+</ul>
+
+<h3 id="31-compare-and-contrast-nids-and-hids">31. Compare and Contrast NIDS and HIDS.</h3>
+
+<p>NIDS are deployed in “strategic points” like in DMZ and other inter connections of the network, whereas HIDS are deployed on individual hosts. NIDS are the first line of defence whereas HIDS are considered as the last line of defence. NIDS has a greater challenge to inspect encrypted packets whereas HIDS will be able to analyze those packets as well.</p>
+
+<h3 id="32-how-do-you-assess-security-stance-of-a-vpn">32. How do you assess security stance of a VPN?</h3>
+<ul>
+  <li>Scan for VPN gateways availability.</li>
+  <li>Fingerprint it and determine the vendor and configuration information.</li>
+  <li>Check for vulnerabilities associated with the VPN vendor.</li>
+  <li>Capture PSK (Pre-Shared Keys).</li>
+  <li>Perform offline PSK cracking.</li>
+  <li>Check for the default user account information.</li>
+</ul>
+
+<h3 id="33-why-a-methodology-for-pen-testing-is-important">33. Why a methodology for Pen-Testing is important?</h3>
+
+<ul>
+  <li>A methodology protects the assessing organization from legal and liability issues since the steps have already been preapproved by the client. It also effectively manage time and does not let the tester to miss any important engagement phases.</li>
+</ul>
+
+<h3 id="34-state-some-effective-pen-testing-methodologies-of-date">34. State some effective pen-testing methodologies of date.</h3>
+
+<ul>
+  <li>ISSAF: Information Systems Security Assessment Framework.</li>
+  <li>OSSTMM: Open Source Security Testing Methodology Manual.</li>
+  <li>OWASP: Open Web Application Security Project.</li>
+  <li>PTES: Penetration Testing Execution Standard.</li>
+  <li>OWTF: Offensive Web Testing Framework.</li>
+</ul>
+
+<h3 id="35-explain-osint">35. Explain OSINT</h3>
+
+<p><strong>Open Source Intelligence</strong> (OSINT) is a type of reconnaisance of the target that is available on public sources and on the internet. This can also be considered as collection of data about the target through Google Hacking, gathering DNS and other information through websites like Shodan, Netcraft. etc.</p>
+
+<h3 id="36-list-some-pointers-for-a-mobile-threat-model">36. List some pointers for a Mobile Threat Model.</h3>
+
+<ul>
+  <li>User may connect to a rogue wireless access point such that their sensitive information can be tapped.</li>
+  <li>User may download infected/malicious app from PlayStore/iStore (if they miss some security checks) and other unsigned and non-verified apps from the internet.</li>
+  <li>User may tap a link that was received through SMS or any IM which is considered to be malicious.</li>
+  <li>User may visit some sites that is serving infected scripts.</li>
+</ul>
+
+<h3 id="37-write-the-simple-nmap-command-to-invoke-a-general-vulnerability-assessment-script-on-any-domain">37. Write the simple Nmap command to invoke a general vulnerability assessment script on any domain.</h3>
+
+<p><code class="highlighter-rouge">nmap -sV --script=vuln www.somewebsitetoscan.com</code></p>
+
+<h3 id="38-contrast-some-important-dns-tools-for-pentesting">38. Contrast some important DNS tools for Pentesting</h3>
+
+<ul>
+  <li><strong>dnsrecon</strong> : Finds the A record, MX hosts, Nameservers, etc.</li>
+  <li><strong>dnstracer</strong> : Finds where the DNS gets its information from.</li>
+  <li><strong>dnswalk</strong> : More or like a debugger, checks the domains for consistency and precision.</li>
+  <li><strong>fierce</strong> : One of the most used DNS tools by the pentesters. Smartly attempts zone transfers and brute-force attacks to gain further DNS information.</li>
+</ul>
+
+<h3 id="39-how-different-is-the-tracert-command-in-windows-compared-to-the-traceroute-command-in-linux-distributions-like-kali">39. How different is the <code class="highlighter-rouge">tracert</code> command in Windows compared to the <code class="highlighter-rouge">traceroute</code> command in Linux distributions like Kali?</h3>
+<p>Windows <code class="highlighter-rouge">tracert</code> uses ICMP echo requests whereas Kali <code class="highlighter-rouge">traceroute</code> uses UDP datagrams.</p>
+
+<h3 id="40-list-some-types-of-mitm-attacks">40. List some types of MiTM attacks.</h3>
+<ul>
+  <li>ARP Poisoning</li>
+  <li>ICMP Redirection</li>
+  <li>Port Stealing</li>
+  <li>DHCP Spoofing</li>
 </ul>
 
 <hr />

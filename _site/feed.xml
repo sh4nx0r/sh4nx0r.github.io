@@ -7,7 +7,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://localhost:4000/" />
-<updated>2017-06-14T20:20:57+06:00</updated>
+<updated>2017-06-20T19:41:47+06:00</updated>
 <id>http://localhost:4000/</id>
 <author>
   <name>Shankar Damodaran</name>
@@ -31,7 +31,7 @@
   <category scheme="http://localhost:4000/tags/#infosec" term="infosec" /><category scheme="http://localhost:4000/tags/#interview%20questions" term="interview questions" /><category scheme="http://localhost:4000/tags/#pentesting" term="pentesting" /><category scheme="http://localhost:4000/tags/#security%20analyst" term="security analyst" />
   <content type="html">
   
-    &lt;p&gt;Almost &lt;strong&gt;30&lt;/strong&gt; questions and still counting, I’ve been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a &lt;strong&gt;Guide&lt;/strong&gt; to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness to the reader.&lt;/p&gt;
+    &lt;p&gt;Almost &lt;strong&gt;40&lt;/strong&gt; questions and still counting, I’ve been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a &lt;strong&gt;Guide&lt;/strong&gt; to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness to the reader.&lt;/p&gt;
 
 &lt;h3 id=&quot;1-what-is-a-repudiation-attack&quot;&gt;1. What is a Repudiation Attack?&lt;/h3&gt;
 
@@ -171,10 +171,10 @@ when it comes to DNS, since TCP makes use of a three-way-handshake., it will be 
 &lt;p&gt;Write a normal html code, add an iframe something like this &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;iframe src=&quot;vulnerableCSRFwebsite.com&quot;&amp;gt;&lt;/code&gt;, save it as test.html. Open this html in the browser. If vulnerableCSRFwebsite.com 
 opens up within the iframe, then the site is vulnerable to Click-Jacking.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Prevention:&lt;/strong&gt; By configuring X-Frame Options Headers to &lt;code class=&quot;highlighter-rouge&quot;&gt;DENY&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;SAMEORIGIN&lt;/code&gt; or the site using &lt;code class=&quot;highlighter-rouge&quot;&gt;ALLOW-FROM&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Prevention:&lt;/strong&gt; By configuring X-Frame Options Headers to &lt;code class=&quot;highlighter-rouge&quot;&gt;DENY&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;SAMEORIGIN&lt;/code&gt; or the site using &lt;code class=&quot;highlighter-rouge&quot;&gt;ALLOW-FROM&lt;/code&gt;. See the code below.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;X-Frame-Options: DENY&lt;/code&gt;
-&lt;code class=&quot;highlighter-rouge&quot;&gt;X-Frame-Options: SAMEORIGIN&lt;/code&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;X-Frame-Options: DENY&lt;/code&gt; &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;X-Frame-Options: SAMEORIGIN&lt;/code&gt; &lt;br /&gt;
 &lt;code class=&quot;highlighter-rouge&quot;&gt;X-Frame-Options: ALLOW-FROM https://example.com/&lt;/code&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;29-list-some-steps-in-securing-any-web-application&quot;&gt;29. List some steps in securing any Web Application.&lt;/h3&gt;
@@ -196,6 +196,73 @@ opens up within the iframe, then the site is vulnerable to Click-Jacking.&lt;/p&
   &lt;li&gt;Make sure certain services are not running with root/SYSTEM level privileges.&lt;/li&gt;
   &lt;li&gt;Ensure PT is done on the webserver atleast once.&lt;/li&gt;
   &lt;li&gt;Periodically check for available patches.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;31-compare-and-contrast-nids-and-hids&quot;&gt;31. Compare and Contrast NIDS and HIDS.&lt;/h3&gt;
+
+&lt;p&gt;NIDS are deployed in “strategic points” like in DMZ and other inter connections of the network, whereas HIDS are deployed on individual hosts. NIDS are the first line of defence whereas HIDS are considered as the last line of defence. NIDS has a greater challenge to inspect encrypted packets whereas HIDS will be able to analyze those packets as well.&lt;/p&gt;
+
+&lt;h3 id=&quot;32-how-do-you-assess-security-stance-of-a-vpn&quot;&gt;32. How do you assess security stance of a VPN?&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Scan for VPN gateways availability.&lt;/li&gt;
+  &lt;li&gt;Fingerprint it and determine the vendor and configuration information.&lt;/li&gt;
+  &lt;li&gt;Check for vulnerabilities associated with the VPN vendor.&lt;/li&gt;
+  &lt;li&gt;Capture PSK (Pre-Shared Keys).&lt;/li&gt;
+  &lt;li&gt;Perform offline PSK cracking.&lt;/li&gt;
+  &lt;li&gt;Check for the default user account information.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;33-why-a-methodology-for-pen-testing-is-important&quot;&gt;33. Why a methodology for Pen-Testing is important?&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A methodology protects the assessing organization from legal and liability issues since the steps have already been preapproved by the client. It also effectively manage time and does not let the tester to miss any important engagement phases.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;34-state-some-effective-pen-testing-methodologies-of-date&quot;&gt;34. State some effective pen-testing methodologies of date.&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;ISSAF: Information Systems Security Assessment Framework.&lt;/li&gt;
+  &lt;li&gt;OSSTMM: Open Source Security Testing Methodology Manual.&lt;/li&gt;
+  &lt;li&gt;OWASP: Open Web Application Security Project.&lt;/li&gt;
+  &lt;li&gt;PTES: Penetration Testing Execution Standard.&lt;/li&gt;
+  &lt;li&gt;OWTF: Offensive Web Testing Framework.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;35-explain-osint&quot;&gt;35. Explain OSINT&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Open Source Intelligence&lt;/strong&gt; (OSINT) is a type of reconnaisance of the target that is available on public sources and on the internet. This can also be considered as collection of data about the target through Google Hacking, gathering DNS and other information through websites like Shodan, Netcraft. etc.&lt;/p&gt;
+
+&lt;h3 id=&quot;36-list-some-pointers-for-a-mobile-threat-model&quot;&gt;36. List some pointers for a Mobile Threat Model.&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;User may connect to a rogue wireless access point such that their sensitive information can be tapped.&lt;/li&gt;
+  &lt;li&gt;User may download infected/malicious app from PlayStore/iStore (if they miss some security checks) and other unsigned and non-verified apps from the internet.&lt;/li&gt;
+  &lt;li&gt;User may tap a link that was received through SMS or any IM which is considered to be malicious.&lt;/li&gt;
+  &lt;li&gt;User may visit some sites that is serving infected scripts.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;37-write-the-simple-nmap-command-to-invoke-a-general-vulnerability-assessment-script-on-any-domain&quot;&gt;37. Write the simple Nmap command to invoke a general vulnerability assessment script on any domain.&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;nmap -sV --script=vuln www.somewebsitetoscan.com&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;38-contrast-some-important-dns-tools-for-pentesting&quot;&gt;38. Contrast some important DNS tools for Pentesting&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;dnsrecon&lt;/strong&gt; : Finds the A record, MX hosts, Nameservers, etc.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;dnstracer&lt;/strong&gt; : Finds where the DNS gets its information from.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;dnswalk&lt;/strong&gt; : More or like a debugger, checks the domains for consistency and precision.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;fierce&lt;/strong&gt; : One of the most used DNS tools by the pentesters. Smartly attempts zone transfers and brute-force attacks to gain further DNS information.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;39-how-different-is-the-tracert-command-in-windows-compared-to-the-traceroute-command-in-linux-distributions-like-kali&quot;&gt;39. How different is the &lt;code class=&quot;highlighter-rouge&quot;&gt;tracert&lt;/code&gt; command in Windows compared to the &lt;code class=&quot;highlighter-rouge&quot;&gt;traceroute&lt;/code&gt; command in Linux distributions like Kali?&lt;/h3&gt;
+&lt;p&gt;Windows &lt;code class=&quot;highlighter-rouge&quot;&gt;tracert&lt;/code&gt; uses ICMP echo requests whereas Kali &lt;code class=&quot;highlighter-rouge&quot;&gt;traceroute&lt;/code&gt; uses UDP datagrams.&lt;/p&gt;
+
+&lt;h3 id=&quot;40-list-some-types-of-mitm-attacks&quot;&gt;40. List some types of MiTM attacks.&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;ARP Poisoning&lt;/li&gt;
+  &lt;li&gt;ICMP Redirection&lt;/li&gt;
+  &lt;li&gt;Port Stealing&lt;/li&gt;
+  &lt;li&gt;DHCP Spoofing&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;hr /&gt;

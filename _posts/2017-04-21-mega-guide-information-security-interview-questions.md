@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Mega Guide to Information Security Interview Questions."
-description: Information Security Terminologies and Interview Questions.
+description: Information Security Terminologies and Interview Questions for Security Enthusiasts.
 headline: 
 modified: 2017-04-21
 category: infosec
@@ -13,7 +13,7 @@ comments: true
 featured: false
 ---
 
-Almost **30** questions and still counting, I've been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a **Guide** to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness to the reader.
+Almost **40** questions and still counting, I've been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a **Guide** to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness to the reader.
 
 
 ### 1. What is a Repudiation Attack?
@@ -150,10 +150,10 @@ There are 65535 UDP ports as well.
 Write a normal html code, add an iframe something like this `<iframe src="vulnerableCSRFwebsite.com">`, save it as test.html. Open this html in the browser. If vulnerableCSRFwebsite.com 
 opens up within the iframe, then the site is vulnerable to Click-Jacking.
 
-**Prevention:** By configuring X-Frame Options Headers to `DENY` or `SAMEORIGIN` or the site using `ALLOW-FROM`
+**Prevention:** By configuring X-Frame Options Headers to `DENY` or `SAMEORIGIN` or the site using `ALLOW-FROM`. See the code below.
 
-`X-Frame-Options: DENY`
-`X-Frame-Options: SAMEORIGIN`
+`X-Frame-Options: DENY` <br>
+`X-Frame-Options: SAMEORIGIN` <br>
 `X-Frame-Options: ALLOW-FROM https://example.com/`
 
 ### 29. List some steps in securing any Web Application.
@@ -172,6 +172,61 @@ opens up within the iframe, then the site is vulnerable to Click-Jacking.
 - Make sure certain services are not running with root/SYSTEM level privileges.
 - Ensure PT is done on the webserver atleast once.
 - Periodically check for available patches.
+
+### 31. Compare and Contrast NIDS and HIDS.
+
+NIDS are deployed in "strategic points" like in DMZ and other inter connections of the network, whereas HIDS are deployed on individual hosts. NIDS are the first line of defence whereas HIDS are considered as the last line of defence. NIDS has a greater challenge to inspect encrypted packets whereas HIDS will be able to analyze those packets as well.
+
+### 32. How do you assess security stance of a VPN?
+- Scan for VPN gateways availability.
+- Fingerprint it and determine the vendor and configuration information.
+- Check for vulnerabilities associated with the VPN vendor.
+- Capture PSK (Pre-Shared Keys).
+- Perform offline PSK cracking.
+- Check for the default user account information.
+
+### 33. Why a methodology for Pen-Testing is important?
+
+- A methodology protects the assessing organization from legal and liability issues since the steps have already been preapproved by the client. It also effectively manage time and does not let the tester to miss any important engagement phases.
+
+### 34. State some effective pen-testing methodologies of date.
+
+- ISSAF: Information Systems Security Assessment Framework.
+- OSSTMM: Open Source Security Testing Methodology Manual.
+- OWASP: Open Web Application Security Project.
+- PTES: Penetration Testing Execution Standard.
+- OWTF: Offensive Web Testing Framework.
+
+### 35. Explain OSINT
+
+**Open Source Intelligence** (OSINT) is a type of reconnaisance of the target that is available on public sources and on the internet. This can also be considered as collection of data about the target through Google Hacking, gathering DNS and other information through websites like Shodan, Netcraft. etc.
+
+### 36. List some pointers for a Mobile Threat Model.
+
+- User may connect to a rogue wireless access point such that their sensitive information can be tapped.
+- User may download infected/malicious app from PlayStore/iStore (if they miss some security checks) and other unsigned and non-verified apps from the internet.
+- User may tap a link that was received through SMS or any IM which is considered to be malicious.
+- User may visit some sites that is serving infected scripts.
+
+### 37. Write the simple Nmap command to invoke a general vulnerability assessment script on any domain.
+
+`nmap -sV --script=vuln www.somewebsitetoscan.com`
+
+### 38. Contrast some important DNS tools for Pentesting
+
+- **dnsrecon** : Finds the A record, MX hosts, Nameservers, etc.
+- **dnstracer** : Finds where the DNS gets its information from.
+- **dnswalk** : More or like a debugger, checks the domains for consistency and precision.
+- **fierce** : One of the most used DNS tools by the pentesters. Smartly attempts zone transfers and brute-force attacks to gain further DNS information.
+
+### 39. How different is the `tracert` command in Windows compared to the `traceroute` command in Linux distributions like Kali?
+Windows `tracert` uses ICMP echo requests whereas Kali `traceroute` uses UDP datagrams.
+
+### 40. List some types of MiTM attacks.
+- ARP Poisoning
+- ICMP Redirection
+- Port Stealing
+- DHCP Spoofing
 
 
 ---
