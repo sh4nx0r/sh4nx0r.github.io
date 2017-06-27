@@ -7,7 +7,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://localhost:4000/" />
-<updated>2017-06-20T19:59:44+06:00</updated>
+<updated>2017-06-27T21:05:13+06:00</updated>
 <id>http://localhost:4000/</id>
 <author>
   <name>Shankar Damodaran</name>
@@ -31,7 +31,7 @@
   <category scheme="http://localhost:4000/tags/#infosec" term="infosec" /><category scheme="http://localhost:4000/tags/#interview%20questions" term="interview questions" /><category scheme="http://localhost:4000/tags/#pentesting" term="pentesting" /><category scheme="http://localhost:4000/tags/#security%20analyst" term="security analyst" />
   <content type="html">
   
-    &lt;p&gt;Almost &lt;strong&gt;40&lt;/strong&gt; questions and still counting, I’ve been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a &lt;strong&gt;Guide&lt;/strong&gt; to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness to the reader.&lt;/p&gt;
+    &lt;p&gt;Almost &lt;strong&gt;47&lt;/strong&gt; questions and still counting, I’ve been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a &lt;strong&gt;Guide&lt;/strong&gt; to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness to the reader.&lt;/p&gt;
 
 &lt;h3 id=&quot;1-what-is-a-repudiation-attack&quot;&gt;1. What is a Repudiation Attack?&lt;/h3&gt;
 
@@ -54,7 +54,7 @@
 &lt;h3 id=&quot;5-which-is-more-important-to-fix-threat-or-vulnerability&quot;&gt;5. Which is more important to fix “Threat” or “Vulnerability”?&lt;/h3&gt;
 
 &lt;p&gt;Threats can be classified as “Inside Intruder”, “Natural Disasters”, etc whereas Vulnerabilities can be classified as weaknesses such as “SQLi”, “XSS”, “CSRF”, “Non Availability of Bunkers for protection against natural disasters”, etc. A Threat &lt;strong&gt;must&lt;/strong&gt; make use a Vulnerability to exploit or create damage to the data. So it is important to fix vulnerabilities first than to focus on threats. Sometimes this can also be counter-intuitive, an insider working for an organization may pass vital information (eg: admin credentials) to an outside intruder. The outsider can directly login to the application with the credentials and can cause damage to the data (in this case, the outsider did not make use of any vulnerability to exploit the application).
-&lt;br /&gt;Hence, there is no prefect answer that can be provided to the above question.&lt;/p&gt;
+&lt;br /&gt;Hence, there is no perfect answer that can be provided to the above question.&lt;/p&gt;
 
 &lt;h3 id=&quot;6-how-do-you-stop-brute-force-attacks&quot;&gt;6. How do you stop Brute-Force Attacks?&lt;/h3&gt;
 
@@ -263,6 +263,47 @@ opens up within the iframe, then the site is vulnerable to Click-Jacking.&lt;/p&
   &lt;li&gt;ICMP Redirection&lt;/li&gt;
   &lt;li&gt;Port Stealing&lt;/li&gt;
   &lt;li&gt;DHCP Spoofing&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;41-explain-stateless-and-stateful-firewalls&quot;&gt;41. Explain Stateless and Stateful Firewalls.&lt;/h3&gt;
+&lt;p&gt;Stateless Firewalls does not keep track of packet flow whereas Stateful Firewalls do, they can also tell if the packets are fragmented or changed. Stateless Firewalls are faster and they 
+can deal with heavy network traffic and their performance will be more effective. Stateful Firewalls will be more effective on less traffic scenario.&lt;/p&gt;
+
+&lt;h3 id=&quot;42-how-do-you-implement-security-in-the-software-development-life-cycle-sdlc&quot;&gt;42. How do you implement security in the Software Development Life Cycle (SDLC)?&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Secure Coding Practices document has to be followed by the development team. The security team should assist the development team if any queries raised.&lt;/li&gt;
+  &lt;li&gt;Security has to be implemented in test cases and use cases as well.&lt;/li&gt;
+  &lt;li&gt;Make use of code scanning tools to scan the application for vulnerabilities and remediate the same.&lt;/li&gt;
+  &lt;li&gt;Security awareness trainings and latest threats has to be kept informed to the development team.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;43-explain-xpath-injection-attack&quot;&gt;43. Explain XPath Injection Attack.&lt;/h3&gt;
+&lt;p&gt;XPath is a language that is very similar to SQL which is used to address XML documents. XML databases use XPath as their standard query language., Again similar to SQL Injection, there 
+exists XPath Injection. Even XPath Injection is done by the usage of a single quote (‘). The attack is carried out in depth by knowing the errors that the XML parser throws. There also 
+exists Blind XPath Injection Attack, which is carried out with the help of result set returned.&lt;/p&gt;
+
+&lt;h3 id=&quot;44-what-is-an-incident-response-plan-and-a-disaster-recovery-plan-are-they-same&quot;&gt;44. What is an Incident Response Plan and a Disaster Recovery Plan. Are they same?&lt;/h3&gt;
+&lt;p&gt;No they are not the same. An Incident Response Plan is a set of steps that has to be followed immediately when an incident happens., For instance; A fire outbreak in a building is an 
+incident, an incident plan would be: usage of fire extinguishers to douse the fire, call the fire personnel, use the stairs, etc. That would be a clear example for that. A Disaster Recovery 
+Plan comes in effect after the execution of Incident Response Plan. It also lists efficient steps that has to be followed after the Disaster has occured. For instance; Restore backups from 
+Cloud Storage, Refurnishing the office, etc.&lt;/p&gt;
+
+&lt;h3 id=&quot;45-how-to-prevent-website-from-google-hacking-or-getting-dorked&quot;&gt;45. How to prevent website from Google hacking or getting dorked?&lt;/h3&gt;
+&lt;p&gt;Use a robots.txt to tell the search engline which pages to crawl and what not to. Remove sensitive data from the web, if that’s not possible use better authorization schemes to protect it 
+from getting viewed from outside world. If site traffic does not matter to you, it’s better to remove your website from Google Indexing.&lt;/p&gt;
+
+&lt;h3 id=&quot;46-how-does-a-digital-signature-differ-from-a-digital-certificate&quot;&gt;46. How does a Digital Signature differ from a Digital Certificate?&lt;/h3&gt;
+&lt;p&gt;A digital signature is a mechanism that is used to verify that a particular digital document or a message is authentic. For eg: If you want to send some confidential mails to other party 
+confirming that you are actual sender. A digital certificate is a certificate issued by a trusted third party called a Certificate Authority (CA) to verify the identity of the certificate 
+holder. For eg: SSL certificate for a website.&lt;/p&gt;
+
+&lt;h3 id=&quot;47-list-the-type-of-security-frameworks&quot;&gt;47. List the type of Security Frameworks.&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;ISO&lt;/li&gt;
+  &lt;li&gt;NIST&lt;/li&gt;
+  &lt;li&gt;COBIT&lt;/li&gt;
+  &lt;li&gt;COSO&lt;/li&gt;
+  &lt;li&gt;HITRUST CSF&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;hr /&gt;

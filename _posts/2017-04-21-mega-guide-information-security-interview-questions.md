@@ -13,7 +13,7 @@ comments: true
 featured: false
 ---
 
-Almost **40** questions and still counting, I've been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a **Guide** to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness to the reader.
+Almost **47** questions and still counting, I've been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a **Guide** to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness to the reader.
 
 
 ### 1. What is a Repudiation Attack?
@@ -37,7 +37,7 @@ An attacker can prove a vulnerability exists in an application without actually 
 ### 5. Which is more important to fix "Threat" or "Vulnerability"?
 
 Threats can be classified as "Inside Intruder", "Natural Disasters", etc whereas Vulnerabilities can be classified as weaknesses such as "SQLi", "XSS", "CSRF", "Non Availability of Bunkers for protection against natural disasters", etc. A Threat **must** make use a Vulnerability to exploit or create damage to the data. So it is important to fix vulnerabilities first than to focus on threats. Sometimes this can also be counter-intuitive, an insider working for an organization may pass vital information (eg: admin credentials) to an outside intruder. The outsider can directly login to the application with the credentials and can cause damage to the data (in this case, the outsider did not make use of any vulnerability to exploit the application).
-<br>Hence, there is no prefect answer that can be provided to the above question.
+<br>Hence, there is no perfect answer that can be provided to the above question.
 
 ### 6. How do you stop Brute-Force Attacks?
 
@@ -227,6 +227,44 @@ Windows `tracert` uses ICMP echo requests whereas Kali `traceroute` uses UDP dat
 - ICMP Redirection
 - Port Stealing
 - DHCP Spoofing
+
+### 41. Explain Stateless and Stateful Firewalls.
+Stateless Firewalls does not keep track of packet flow whereas Stateful Firewalls do, they can also tell if the packets are fragmented or changed. Stateless Firewalls are faster and they 
+can deal with heavy network traffic and their performance will be more effective. Stateful Firewalls will be more effective on less traffic scenario.
+
+### 42. How do you implement security in the Software Development Life Cycle (SDLC)?
+- Secure Coding Practices document has to be followed by the development team. The security team should assist the development team if any queries raised.
+- Security has to be implemented in test cases and use cases as well.
+- Make use of code scanning tools to scan the application for vulnerabilities and remediate the same.
+- Security awareness trainings and latest threats has to be kept informed to the development team.
+
+### 43. Explain XPath Injection Attack.
+XPath is a language that is very similar to SQL which is used to address XML documents. XML databases use XPath as their standard query language., Again similar to SQL Injection, there 
+exists XPath Injection. Even XPath Injection is done by the usage of a single quote ('). The attack is carried out in depth by knowing the errors that the XML parser throws. There also 
+exists Blind XPath Injection Attack, which is carried out with the help of result set returned.
+
+### 44. What is an Incident Response Plan and a Disaster Recovery Plan. Are they same?
+No they are not the same. An Incident Response Plan is a set of steps that has to be followed immediately when an incident happens., For instance; A fire outbreak in a building is an 
+incident, an incident plan would be: usage of fire extinguishers to douse the fire, call the fire personnel, use the stairs, etc. That would be a clear example for that. A Disaster Recovery 
+Plan comes in effect after the execution of Incident Response Plan. It also lists efficient steps that has to be followed after the Disaster has occured. For instance; Restore backups from 
+Cloud Storage, Refurnishing the office, etc.
+
+### 45. How to prevent website from Google hacking or getting dorked?
+Use a robots.txt to tell the search engline which pages to crawl and what not to. Remove sensitive data from the web, if that's not possible use better authorization schemes to protect it 
+from getting viewed from outside world. If site traffic does not matter to you, it's better to remove your website from Google Indexing.
+
+### 46. How does a Digital Signature differ from a Digital Certificate?
+A digital signature is a mechanism that is used to verify that a particular digital document or a message is authentic. For eg: If you want to send some confidential mails to other party 
+confirming that you are actual sender. A digital certificate is a certificate issued by a trusted third party called a Certificate Authority (CA) to verify the identity of the certificate 
+holder. For eg: SSL certificate for a website.
+
+### 47. List the type of Security Frameworks.
+- ISO
+- NIST
+- COBIT
+- COSO
+- HITRUST CSF
+
 
 
 ---
