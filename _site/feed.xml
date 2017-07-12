@@ -7,13 +7,366 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://localhost:4000/" />
-<updated>2017-06-27T21:05:13+06:00</updated>
+<updated>2017-07-12T20:42:48+06:00</updated>
 <id>http://localhost:4000/</id>
 <author>
   <name>Shankar Damodaran</name>
   <uri>http://localhost:4000/</uri>
   <email>d.shankarnarayana@gmail.com</email>
 </author>
+
+
+<entry>
+  <title type="html"><![CDATA[Getting Started: Building a simple search engine with Apache Solr.]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/development/search-engine-with-solr-getting-started"/>
+  <id>http://localhost:4000/development/search-engine-with-solr-getting-started</id>
+  <published>2017-07-12T00:00:00+06:00</published>
+  <updated>2017-07-12T00:00:00-00:00</updated>
+  
+  <author>
+    <name>Shankar Damodaran</name>
+    <uri>http://localhost:4000</uri>
+    <email>d.shankarnarayana@gmail.com</email>
+  </author>
+  <category scheme="http://localhost:4000/tags/#searchengine" term="searchengine" /><category scheme="http://localhost:4000/tags/#development" term="development" /><category scheme="http://localhost:4000/tags/#solr" term="solr" /><category scheme="http://localhost:4000/tags/#apache" term="apache" /><category scheme="http://localhost:4000/tags/#mysql" term="mysql" /><category scheme="http://localhost:4000/tags/#linux" term="linux" /><category scheme="http://localhost:4000/tags/#windows" term="windows" /><category scheme="http://localhost:4000/tags/#web" term="web" />
+  <content type="html">
+  
+    &lt;h1 id=&quot;apache-solr&quot;&gt;&lt;a href=&quot;http://lucene.apache.org/solr/&quot;&gt;Apache &lt;em&gt;Solr&lt;/em&gt;&lt;/a&gt;&lt;/h1&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;This is a total rip-off post from my contribution to Stackoverflow on &lt;strong&gt;&lt;em&gt;Apache Solr&lt;/em&gt;&lt;/strong&gt; . This post begins from &lt;strong&gt;simple introduction&lt;/strong&gt; to &lt;strong&gt;detailed installation&lt;/strong&gt; and &lt;strong&gt;implementation&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h1 id=&quot;simple-introduction&quot;&gt;Simple Introduction&lt;/h1&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;h3 id=&quot;can-apache-solr-be-used-for-high-traffic-based-websites-does-it-utilize-more-cpu-resources&quot;&gt;Can Apache Solr be used for High Traffic based websites? Does it utilize more CPU resources?&lt;/h3&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;Solr&lt;/strong&gt; shouldn’t be used to solve real-time problems. For search engines, &lt;strong&gt;Solr&lt;/strong&gt; is pretty much game and works &lt;em&gt;flawlessly&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Solr&lt;/strong&gt; works fine on High Traffic web-applications. It utilizes the RAM, not the CPU.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;h3 id=&quot;how-does-apache-solr-scores-with-respect-to-results-relevance-and-ranking&quot;&gt;How does Apache Solr scores with respect to results, relevance and ranking?&lt;/h3&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The &lt;strong&gt;boost&lt;/strong&gt; helps you rank your results show up on top. Say, you’re trying to search for a name &lt;em&gt;john&lt;/em&gt; in the fields &lt;em&gt;firstname&lt;/em&gt; and &lt;em&gt;lastname&lt;/em&gt;, and you want to give relevancy to the &lt;em&gt;firstname&lt;/em&gt; field, then you need to &lt;strong&gt;boost&lt;/strong&gt; up the &lt;em&gt;firstname&lt;/em&gt; field as shown.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;http://localhost:8983/solr/collection1/select?q=firstname:john^2&amp;amp;lastname:john&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;As you can see, &lt;em&gt;firstname&lt;/em&gt; field is &lt;strong&gt;boosted&lt;/strong&gt; up with a score of 2.&lt;/p&gt;
+
+&lt;p&gt;More on &lt;a href=&quot;https://wiki.apache.org/solr/SolrRelevancyFAQ&quot;&gt;&lt;strong&gt;SolrRelevancy&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;h3 id=&quot;can-you-tell-me-about-the-indexing-speed-of-apache-solr&quot;&gt;Can you tell me about the indexing speed of Apache Solr?&lt;/h3&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The speed is unbelievably fast and no compromise on that.&lt;/p&gt;
+
+&lt;p&gt;Regarding the indexing speed, &lt;strong&gt;Solr&lt;/strong&gt; can also handle &lt;strong&gt;JOINS&lt;/strong&gt; from your database tables. A higher and complex &lt;strong&gt;JOIN&lt;/strong&gt; do affect the indexing speed. However, an enormous &lt;strong&gt;RAM&lt;/strong&gt; configuration can easily tackle this situation.&lt;/p&gt;
+
+&lt;p&gt;The higher the RAM, the faster the indexing speed of Solr is.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;h3 id=&quot;can-apache-solr-integrated-with-django&quot;&gt;Can Apache Solr integrated with Django?&lt;/h3&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Never had a chance to attempt that, however you can achieve that with &lt;a href=&quot;http://haystacksearch.org/&quot;&gt;Haystack&lt;/a&gt;. I found some interesting &lt;a href=&quot;http://www.alexanderinteractive.com/blog/2012/08/getting-started-with-solr-and-django/&quot;&gt;article&lt;/a&gt; on the same and here’s the &lt;a href=&quot;https://github.com/broderboy/django-solr-demo&quot;&gt;github&lt;/a&gt; for it.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;h3 id=&quot;i-have-a-question-on-resource-requirements---my-website-will-be-hosted-on-a-vps-so-ideally-the-search-engine-wouldnt-require-a-lot-of-ram-and-cpu&quot;&gt;I have a question on resource requirements - My website will be hosted on a VPS, so ideally the search engine wouldn’t require a lot of RAM and CPU?&lt;/h3&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;Solr&lt;/strong&gt; breeds on RAM, so if the RAM is high, you don’t to have to worry about it.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Solr’s&lt;/strong&gt; RAM usage shoots up on full-indexing if you have some billion of records, you could smartly make use of &lt;strong&gt;Delta Imports&lt;/strong&gt; to tackle this situation. As explained, &lt;strong&gt;Solr&lt;/strong&gt; is only a &lt;em&gt;near&lt;/em&gt; real-time solution.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;h3 id=&quot;heard-from-sources-that-solr-does-not-possess-scalability-factor-is-it-true&quot;&gt;Heard from sources that Solr does not possess scalability factor. Is it true?&lt;/h3&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;Solr&lt;/strong&gt; is highly scalable. Have a look on &lt;a href=&quot;https://cwiki.apache.org/confluence/display/solr/SolrCloud&quot;&gt;SolrCloud&lt;/a&gt;.
+Some key features of it.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Shards (or sharding is the concept of distributing the index among multiple machines, say if your index has grown too large)&lt;/li&gt;
+  &lt;li&gt;Load Balancing (if &lt;a href=&quot;http://wiki.apache.org/solr/Solrj&quot;&gt;Solrj&lt;/a&gt; is used with Solr cloud it automatically takes care of load-balancing using it’s Round-Robin mechanism)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://wiki.apache.org/solr/DistributedSearch&quot;&gt;Distributed Search&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;High Availability&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;h3 id=&quot;does-it-have-any-extra-features-like-google-does---such-as-did-you-mean-by-related-searches-etc&quot;&gt;Does it have any extra features like Google does - such as “did you mean by?”, related searches, etc?&lt;/h3&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;For the above scenario, you could use the &lt;a href=&quot;http://wiki.apache.org/solr/SpellCheckComponent&quot;&gt;SpellCheckComponent&lt;/a&gt; that is shipped with &lt;strong&gt;Solr&lt;/strong&gt;. There are a lot other features, The &lt;a href=&quot;http://lucene.apache.org/solr/3_6_1/org/apache/solr/analysis/SnowballPorterFilterFactory.html&quot;&gt;SnowballPorterFilterFactory&lt;/a&gt; helps to retrieve records say if you typed, &lt;em&gt;books&lt;/em&gt; instead of &lt;em&gt;book&lt;/em&gt;, you will be presented with results related to &lt;em&gt;book&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;this-answer-broadly-focuses-on-apache-solr--mysql&quot;&gt;This answer broadly focuses on &lt;strong&gt;Apache Solr&lt;/strong&gt; &amp;amp; &lt;strong&gt;MySQL&lt;/strong&gt;.&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Important&lt;/strong&gt;: Assuming that you are under &lt;strong&gt;LINUX&lt;/strong&gt; environment, you could proceed to this article further. (mine was an Ubuntu 14.04 version). Windows users. Sorry.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+  &lt;h1 id=&quot;detailed-installation&quot;&gt;Detailed Installation&lt;/h1&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;getting-started&quot;&gt;Getting Started&lt;/h3&gt;
+
+&lt;p&gt;Download &lt;strong&gt;Apache Solr&lt;/strong&gt; from &lt;a href=&quot;http://apache.mirrors.hoobly.com/lucene/solr/4.8.1/&quot;&gt;here&lt;/a&gt;. That would be version is &lt;strong&gt;4.8.1&lt;/strong&gt;. You could download new versions, I found this one pretty stable.&lt;/p&gt;
+
+&lt;p&gt;After downloading the archive, extract it to a folder of your choice. 
+Say ..  &lt;strong&gt;Downloads&lt;/strong&gt; or whatever.. So it will look like &lt;code class=&quot;highlighter-rouge&quot;&gt;Downloads/solr-4.8.1/&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;On your prompt..  Navigate inside the directory&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;shankar@shankar-lenovo: cd Downloads/solr-4.8.1&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;So now you are here ..&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;shankar@shankar-lenovo: ~/Downloads/solr-4.8.1$ &lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;start-the-jetty-application-server&quot;&gt;Start the Jetty Application Server&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Jetty&lt;/strong&gt; is available inside the examples folder of the &lt;strong&gt;solr-4.8.1&lt;/strong&gt; directory , so navigate inside that and start the Jetty Application Server.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;shankar@shankar-lenovo:~/Downloads/solr-4.8.1/example$ java -jar start.jar&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Do not close the terminal, minimize it and let it stay aside.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Tip&lt;/strong&gt; : Use &lt;strong&gt;&amp;amp;&lt;/strong&gt; after start.jar to make the Jetty Server run in the background&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;To check if &lt;strong&gt;Apache Solr&lt;/strong&gt; runs successfully, visit this URL on the browser. &lt;code class=&quot;highlighter-rouge&quot;&gt;http://localhost:8983/solr&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;running-jetty-on-custom-port&quot;&gt;Running Jetty on custom Port&lt;/h3&gt;
+
+&lt;p&gt;It runs on the port 8983 as default. You could change the port either here or directly inside the &lt;strong&gt;jetty.xml&lt;/strong&gt; file.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;java -Djetty.port=9091 -jar start.jar&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;download-the-jconnector&quot;&gt;Download the JConnector&lt;/h3&gt;
+
+&lt;p&gt;This JAR file acts as a bridge between &lt;strong&gt;MySQL&lt;/strong&gt; and JDBC , Download the Platform Independent Version &lt;a href=&quot;http://dev.mysql.com/downloads/connector/j/&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;After downloading it, extract the folder and copy the &lt;strong&gt;mysql-connector-java-5.1.31-bin.jar&lt;/strong&gt; and paste it to the &lt;strong&gt;lib&lt;/strong&gt; directory.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;shankar@shankar-lenovo:~/Downloads/solr-4.8.1/contrib/dataimporthandler/lib&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;creating-the-mysql-table-to-be-linked-to-apache-solr&quot;&gt;Creating the MySQL table to be linked to Apache Solr&lt;/h3&gt;
+
+&lt;p&gt;To put &lt;strong&gt;Solr&lt;/strong&gt; to use, You need to have some tables and data to search for. For that, we will use &lt;strong&gt;MySQL&lt;/strong&gt; for creating a table and pushing some random names and then we could use &lt;strong&gt;Solr&lt;/strong&gt; to connect to &lt;strong&gt;MySQL&lt;/strong&gt; and index that table and it’s entries.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h3 id=&quot;1-table-structure&quot;&gt;1. Table Structure&lt;/h3&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;CREATE TABLE test_solr_mysql
+ (
+  id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  name VARCHAR(45) NULL,
+  created TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (id)
+ );
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;h3 id=&quot;2-populate-the-above-table&quot;&gt;2. Populate the above table&lt;/h3&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;INSERT INTO `test_solr_mysql` (`name`) VALUES ('Jean');
+INSERT INTO `test_solr_mysql` (`name`) VALUES ('Jack');
+INSERT INTO `test_solr_mysql` (`name`) VALUES ('Jason');
+INSERT INTO `test_solr_mysql` (`name`) VALUES ('Vego');
+INSERT INTO `test_solr_mysql` (`name`) VALUES ('Grunt');
+INSERT INTO `test_solr_mysql` (`name`) VALUES ('Jasper');
+INSERT INTO `test_solr_mysql` (`name`) VALUES ('Fred');
+INSERT INTO `test_solr_mysql` (`name`) VALUES ('Jenna');
+INSERT INTO `test_solr_mysql` (`name`) VALUES ('Rebecca');
+INSERT INTO `test_solr_mysql` (`name`) VALUES ('Roland');
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;getting-inside-the-core-and-adding-the-lib-directives&quot;&gt;Getting inside the core and adding the lib directives&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;h3 id=&quot;1-navigate-to&quot;&gt;1. Navigate to&lt;/h3&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;shankar@shankar-lenovo: ~/Downloads/solr-4.8.1/example/solr/collection1/conf
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;h3 id=&quot;2-modifying-the-solrconfigxml&quot;&gt;2. Modifying the solrconfig.xml&lt;/h3&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Add these two directives to this file..&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &amp;lt;lib dir=&quot;../../../contrib/dataimporthandler/lib/&quot; regex=&quot;.*\.jar&quot; /&amp;gt;
+  &amp;lt;lib dir=&quot;../../../dist/&quot; regex=&quot;solr-dataimporthandler-\d.*\.jar&quot; /&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Now add the &lt;strong&gt;DIH&lt;/strong&gt; (Data Import Handler)&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;requestHandler name=&quot;/dataimport&quot; 
+  class=&quot;org.apache.solr.handler.dataimport.DataImportHandler&quot; &amp;gt;
+    &amp;lt;lst name=&quot;defaults&quot;&amp;gt;
+      &amp;lt;str name=&quot;config&quot;&amp;gt;db-data-config.xml&amp;lt;/str&amp;gt;
+    &amp;lt;/lst&amp;gt;
+&amp;lt;/requestHandler&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;h3 id=&quot;3-create-the-db-data-configxml-file&quot;&gt;3. Create the db-data-config.xml file&lt;/h3&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;If the file exists then ignore, add these lines to that file. As you can see the first line, you need to provide the credentials of your &lt;strong&gt;MySQL&lt;/strong&gt; database. The Database name, username and password.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;dataConfig&amp;gt;
+    &amp;lt;dataSource type=&quot;JdbcDataSource&quot; driver=&quot;com.mysql.jdbc.Driver&quot; url=&quot;jdbc:mysql://localhost/yourdbname&quot; user=&quot;dbuser&quot; password=&quot;dbpass&quot;/&amp;gt;
+    &amp;lt;document&amp;gt;
+   &amp;lt;entity name=&quot;test_solr&quot; query=&quot;select CONCAT('test_solr-',id) as rid,name from test_solr_mysql WHERE '${dataimporter.request.clean}' != 'false'
+      OR `created` &amp;gt; '${dataimporter.last_index_time}'&quot; &amp;gt;
+    &amp;lt;field name=&quot;id&quot; column=&quot;rid&quot; /&amp;gt;
+    &amp;lt;field name=&quot;solr_name&quot; column=&quot;name&quot; /&amp;gt;
+    &amp;lt;/entity&amp;gt;
+   &amp;lt;/document&amp;gt;
+&amp;lt;/dataConfig&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Tip&lt;/strong&gt; : You can have any number of entities but watch out for id field, if they are same then indexing will skipped.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;h3 id=&quot;4-modify-the-schemaxml-file&quot;&gt;4. Modify the schema.xml file&lt;/h3&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Add this to your &lt;strong&gt;schema.xml&lt;/strong&gt; as shown..&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;uniqueKey&amp;gt;id&amp;lt;/uniqueKey&amp;gt;
+&amp;lt;field name=&quot;solr_name&quot; type=&quot;string&quot; indexed=&quot;true&quot; stored=&quot;true&quot; /&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+  &lt;h1 id=&quot;implementation&quot;&gt;Implementation&lt;/h1&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;indexing&quot;&gt;Indexing&lt;/h3&gt;
+
+&lt;p&gt;This is where the real deal is. You need to do the indexing of data from &lt;strong&gt;MySQL&lt;/strong&gt; to &lt;strong&gt;Solr&lt;/strong&gt; inorder to make use of Solr Queries.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h3 id=&quot;step-1-go-to-solr-admin-panel&quot;&gt;Step 1: Go to Solr Admin Panel&lt;/h3&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Hit the URL &lt;strong&gt;http://localhost:8983/solr&lt;/strong&gt; on your browser. The screen opens like this.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.stack.imgur.com/8grrc.png&quot; alt=&quot;This is the main Apache Solr Administration Panel&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;As the marker indicates, go to &lt;strong&gt;Logging&lt;/strong&gt; inorder to check if any of the above configuration has led to errors.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h3 id=&quot;step-2-check-your-logs&quot;&gt;Step 2: Check your Logs&lt;/h3&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Ok so now you are here, As you can there are a lot of yellow messages (WARNINGS). Make sure you don’t have error messages marked in red. Earlier, on our configuration we had added a select query on our &lt;strong&gt;db-data-config.xml&lt;/strong&gt;, say if there were any errors on that query, it would have shown up here.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.stack.imgur.com/8l6n5.png&quot; alt=&quot;This is the logging section of your Apache Solr engine&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Fine, no errors. We are good to go. Let’s choose &lt;strong&gt;collection1&lt;/strong&gt; from the list as depicted and select &lt;strong&gt;Dataimport&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h3 id=&quot;step-3-dih-data-import-handler&quot;&gt;Step 3: DIH (Data Import Handler)&lt;/h3&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Using the DIH, you will be connecting to &lt;strong&gt;MySQL&lt;/strong&gt; from &lt;strong&gt;Solr&lt;/strong&gt; through the configuration file &lt;strong&gt;db-data-config.xml&lt;/strong&gt; from the &lt;strong&gt;Solr&lt;/strong&gt; interface and retrieve the 10 records from the database which gets indexed onto &lt;strong&gt;Solr&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;To do that, Choose &lt;strong&gt;full-import&lt;/strong&gt; , and check the options &lt;em&gt;Clean&lt;/em&gt; and &lt;em&gt;Commit&lt;/em&gt;. Now click &lt;strong&gt;Execute&lt;/strong&gt; as shown.&lt;/p&gt;
+
+&lt;p&gt;Alternatively, you could use a direct &lt;strong&gt;full-import&lt;/strong&gt; query like this too..&lt;/p&gt;
+
+&lt;p&gt;`http://localhost:8983/solr/collection1/dataimport?command=full-import&amp;amp;commit=true&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.stack.imgur.com/sHvSO.png&quot; alt=&quot;The Data Import Handler&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;After you clicked &lt;strong&gt;Execute&lt;/strong&gt;, &lt;strong&gt;Solr&lt;/strong&gt; begins to index the records, if there were any errors, it would say &lt;strong&gt;Indexing Failed&lt;/strong&gt; and you have to go back to the &lt;strong&gt;Logging&lt;/strong&gt; section to see what has gone wrong.&lt;/p&gt;
+
+&lt;p&gt;Assuming there are no errors with this configuration and if the indexing is successfully complete., you would get this notification.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.stack.imgur.com/WlD07.png&quot; alt=&quot;Indexing Success&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h3 id=&quot;step-4-running-solr-queries&quot;&gt;Step 4: Running Solr Queries&lt;/h3&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Seems like everything went well, now you could use &lt;strong&gt;Solr&lt;/strong&gt; Queries to query the data that was indexed. Click the &lt;strong&gt;Query&lt;/strong&gt; on the left and then press &lt;strong&gt;Execute&lt;/strong&gt; button on the bottom.&lt;/p&gt;
+
+&lt;p&gt;You will see the indexed records as shown.&lt;/p&gt;
+
+&lt;p&gt;The corresponding &lt;strong&gt;Solr&lt;/strong&gt; query for listing all the records is&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;http://localhost:8983/solr/collection1/select?q=*:*&amp;amp;wt=json&amp;amp;indent=true&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.stack.imgur.com/aZP9W.png&quot; alt=&quot;The indexed data&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Well, there goes all 10 indexed records. Say, we need only names starting with &lt;strong&gt;Ja&lt;/strong&gt; , in this case, you need to target the column name &lt;code class=&quot;highlighter-rouge&quot;&gt;solr_name&lt;/code&gt;, Hence your query goes like this.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;http://localhost:8983/solr/collection1/select?q=solr_name:Ja*&amp;amp;wt=json&amp;amp;indent=true&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.stack.imgur.com/qeArE.png&quot; alt=&quot;The JSON data starting with Ja*&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;That’s how you write &lt;strong&gt;Solr&lt;/strong&gt; Queries. To read more about it, Check this beautiful &lt;a href=&quot;http://lucene.apache.org/core/3_5_0/queryparsersyntax.html&quot;&gt;article&lt;/a&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+  
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/development/search-engine-with-solr-getting-started&quot;&gt;Getting Started: Building a simple search engine with Apache Solr.&lt;/a&gt; was originally published by Shankar Damodaran at &lt;a href=&quot;http://localhost:4000&quot;&gt;<b><font size='5.75em'>Inventor<font color='yellow' size='6.75em'>.</font> Biker<font color='yellow' size='6.75em'>.</font> Foodie<font color='yellow' size='6.75em'>.</font> h4ck3r<font color='yellow' size='6.75em'>.</font> Wanderlust<font color='yellow' size='6.75em'>. </font> </font><br>&lt;/a&gt; on July 12, 2017.&lt;/p&gt;</content>
+</entry>
 
 
 <entry>

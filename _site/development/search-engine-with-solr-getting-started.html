@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>sh4.in | Getting Started: Building a simple search engine with Apache Solr.</title>
+<meta name="description" content="An easy way to kick-start search engine development with Apache Solr.">
+<meta name="keywords" content="searchengine, development, solr, apache, mysql, linux, windows, web">
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://localhost:4000/images/blogimages/2017-07-12/cover-2017-07-12.png">
+
+<meta name="twitter:title" content="Getting Started: Building a simple search engine with Apache Solr.">
+<meta name="twitter:description" content="An easy way to kick-start search engine development with Apache Solr.">
+<meta name="twitter:creator" content="@sh4nx0r">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Getting Started: Building a simple search engine with Apache Solr.">
+<meta property="og:description" content="An easy way to kick-start search engine development with Apache Solr.">
+<meta property="og:url" content="http://localhost:4000/development/search-engine-with-solr-getting-started">
+<meta property="og:site_name" content="<b><font size='5.75em'>Inventor<font color='yellow' size='6.75em'>.</font> Biker<font color='yellow' size='6.75em'>.</font> Foodie<font color='yellow' size='6.75em'>.</font> h4ck3r<font color='yellow' size='6.75em'>.</font> Wanderlust<font color='yellow' size='6.75em'>. </font> </font><br>">
+<meta property="og:image" content="http://localhost:4000/images/blogimages/2017-07-12/cover-2017-07-12.png">
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/development/search-engine-with-solr-getting-started">
+<!-- <link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="<b><font size='5.75em'>Inventor<font color='yellow' size='6.75em'>.</font> Biker<font color='yellow' size='6.75em'>.</font> Foodie<font color='yellow' size='6.75em'>.</font> h4ck3r<font color='yellow' size='6.75em'>.</font> Wanderlust<font color='yellow' size='6.75em'>. </font> </font><br> Feed"> -->
+
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+
+    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,600,300,800,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/vendor/font-awesome.min.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/vendor/normalize.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/vendor/nprogress.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/vendor/foundation.min.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/style.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/post.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/vegas/vegas.min.css">
+
+<!-- Google ADS -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-2690919849601061",
+    enable_page_level_ads: true
+  });
+</script>
+
+
+
+<!-- Fastest JQuery CDN Lib -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Vegas Background Image Plugin -->
+<script src="http://localhost:4000/assets/vegas/vegas.js"></script>
+
+<script>
+				jQuery(document).ready(function($) {
+						$("#exampleX").vegas({
+							autoplay: true,
+							preload: true,
+							transition: 'fade',
+							transitionDuration: 2000,
+							slides: [
+								{ src: "http://localhost:4000/images/cover1.jpg", overlayText: "<div style='text-align:left; font-family:Raleway;'>text 2</div>"},
+								{ src: "http://localhost:4000/images/cover3.jpg", overlayText: "<b>text 3</b>"},
+								{ src: "http://localhost:4000/images/cover6.jpg", overlayText: "<b>text 4</b>"}
+								],
+							loop: true
+						});
+					});
+			</script>
+
+
+<script>
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+
+
+
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144-precomposed.png">
+<div id="home"></div>
+
+<style type="text/css">@media only screen and (min-width:43.75em){.notepad-post-content div>p:first-child:first-letter{float:left;font-size:4.688rem;line-height:4.375rem;padding-top:.25rem;padding-right:.5rem;padding-left:.188rem;font-family:serif}}</style>
+</head>
+<body class="post-template" itemscope itemtype="http://schema.org/WebPage">  
+
+        <main id="notepad-post-container" class="notepad-post-container intro-effect-sliced" role="main">
+            <header class="notepad-post-header">
+                <div class="bg-img"></div>
+                
+                <div class="notepad-post-menu-header">
+
+                    <a class="notepad-blog-logo" href="http://sh4.in">
+                        <img src="http://localhost:4000/images/logo.png" alt="Blog Logo" />
+                    </a>
+
+                <div class="notepad-blog-menu">      
+    <div class="notepad-mobile-menu show-for-small">
+        <a href="#"><i class="fa fa-bars"></i></a>
+    </div>
+    <ul class="notepad-menu">
+        <li class="notepad-mobile-close-btn show-for-small text-right">
+            <a href="#"><i class="fa fa-times"></i></a>
+        </li>
+
+            <li>
+                    <a href="http://localhost:4000/">Home</a>
+                 </li>
+
+            <li>
+                    <a href="http://localhost:4000/trending">#trending</a>
+                 </li>
+
+            <li>
+                    <a href="http://localhost:4000/cv">MyCV</a>
+                 </li>
+
+            <li>
+                    <a href="http://localhost:4000/connect">Connect</a>
+                 </li>
+            
+           <!-- <li><a href="http://localhost:4000/feed.xml" title="Atom/RSS feed"><i class="icon-rss"></i> Feed</a></li> -->
+    </ul>
+
+</div>
+            </div>
+
+            <div class="notepad-post-title bg-check">
+                <h1>Getting Started: Building a simple search engine with Apache Solr.</h1>
+                <p>by <strong>Shankar Damodaran</strong> &#8212; on <a href="http://localhost:4000/tags/index.html#searchengine" data-toggle="tooltip" title="Posts tagged with searchengine" rel="tag">searchengine</a>&nbsp;&comma;&nbsp;<a href="http://localhost:4000/tags/index.html#development" data-toggle="tooltip" title="Posts tagged with development" rel="tag">development</a>&nbsp;&comma;&nbsp;<a href="http://localhost:4000/tags/index.html#solr" data-toggle="tooltip" title="Posts tagged with solr" rel="tag">solr</a>&nbsp;&comma;&nbsp;<a href="http://localhost:4000/tags/index.html#apache" data-toggle="tooltip" title="Posts tagged with apache" rel="tag">apache</a>&nbsp;&comma;&nbsp;<a href="http://localhost:4000/tags/index.html#mysql" data-toggle="tooltip" title="Posts tagged with mysql" rel="tag">mysql</a>&nbsp;&comma;&nbsp;<a href="http://localhost:4000/tags/index.html#linux" data-toggle="tooltip" title="Posts tagged with linux" rel="tag">linux</a>&nbsp;&comma;&nbsp;<a href="http://localhost:4000/tags/index.html#windows" data-toggle="tooltip" title="Posts tagged with windows" rel="tag">windows</a>&nbsp;&comma;&nbsp;<a href="http://localhost:4000/tags/index.html#web" data-toggle="tooltip" title="Posts tagged with web" rel="tag">web</a> <strong><time datetime="2017-07-12T00:00:00+06:00">12 Jul 2017</time></strong></p>
+            </div>
+            <div class="bg-img"></div>
+        </header>
+        <button class="trigger bg-check" data-info="Read more"><span>Trigger</span></button>
+        <img src="http://localhost:4000/images/blogimages/2017-07-12/cover-2017-07-12.png" alt="cover-image" />
+
+        <article class="notepad-post-content post">
+            <div><h1 id="apache-solr"><a href="http://lucene.apache.org/solr/">Apache <em>Solr</em></a></h1>
+
+<hr />
+
+<p>This is a total rip-off post from my contribution to Stackoverflow on <strong><em>Apache Solr</em></strong> . This post begins from <strong>simple introduction</strong> to <strong>detailed installation</strong> and <strong>implementation</strong>.</p>
+
+<blockquote>
+  <h1 id="simple-introduction">Simple Introduction</h1>
+</blockquote>
+
+<hr />
+<blockquote>
+  <ul>
+    <li>
+      <h3 id="can-apache-solr-be-used-for-high-traffic-based-websites-does-it-utilize-more-cpu-resources">Can Apache Solr be used for High Traffic based websites? Does it utilize more CPU resources?</h3>
+    </li>
+  </ul>
+</blockquote>
+
+<p><strong>Solr</strong> shouldn’t be used to solve real-time problems. For search engines, <strong>Solr</strong> is pretty much game and works <em>flawlessly</em>.</p>
+
+<p><strong>Solr</strong> works fine on High Traffic web-applications. It utilizes the RAM, not the CPU.</p>
+
+<blockquote>
+  <ul>
+    <li>
+      <h3 id="how-does-apache-solr-scores-with-respect-to-results-relevance-and-ranking">How does Apache Solr scores with respect to results, relevance and ranking?</h3>
+    </li>
+  </ul>
+</blockquote>
+
+<p>The <strong>boost</strong> helps you rank your results show up on top. Say, you’re trying to search for a name <em>john</em> in the fields <em>firstname</em> and <em>lastname</em>, and you want to give relevancy to the <em>firstname</em> field, then you need to <strong>boost</strong> up the <em>firstname</em> field as shown.</p>
+
+<p><code class="highlighter-rouge">http://localhost:8983/solr/collection1/select?q=firstname:john^2&amp;lastname:john</code></p>
+
+<p>As you can see, <em>firstname</em> field is <strong>boosted</strong> up with a score of 2.</p>
+
+<p>More on <a href="https://wiki.apache.org/solr/SolrRelevancyFAQ"><strong>SolrRelevancy</strong></a></p>
+
+<blockquote>
+  <ul>
+    <li>
+      <h3 id="can-you-tell-me-about-the-indexing-speed-of-apache-solr">Can you tell me about the indexing speed of Apache Solr?</h3>
+    </li>
+  </ul>
+</blockquote>
+
+<p>The speed is unbelievably fast and no compromise on that.</p>
+
+<p>Regarding the indexing speed, <strong>Solr</strong> can also handle <strong>JOINS</strong> from your database tables. A higher and complex <strong>JOIN</strong> do affect the indexing speed. However, an enormous <strong>RAM</strong> configuration can easily tackle this situation.</p>
+
+<p>The higher the RAM, the faster the indexing speed of Solr is.</p>
+
+<blockquote>
+  <ul>
+    <li>
+      <h3 id="can-apache-solr-integrated-with-django">Can Apache Solr integrated with Django?</h3>
+    </li>
+  </ul>
+</blockquote>
+
+<p>Never had a chance to attempt that, however you can achieve that with <a href="http://haystacksearch.org/">Haystack</a>. I found some interesting <a href="http://www.alexanderinteractive.com/blog/2012/08/getting-started-with-solr-and-django/">article</a> on the same and here’s the <a href="https://github.com/broderboy/django-solr-demo">github</a> for it.</p>
+
+<blockquote>
+  <ul>
+    <li>
+      <h3 id="i-have-a-question-on-resource-requirements---my-website-will-be-hosted-on-a-vps-so-ideally-the-search-engine-wouldnt-require-a-lot-of-ram-and-cpu">I have a question on resource requirements - My website will be hosted on a VPS, so ideally the search engine wouldn’t require a lot of RAM and CPU?</h3>
+    </li>
+  </ul>
+</blockquote>
+
+<p><strong>Solr</strong> breeds on RAM, so if the RAM is high, you don’t to have to worry about it.</p>
+
+<p><strong>Solr’s</strong> RAM usage shoots up on full-indexing if you have some billion of records, you could smartly make use of <strong>Delta Imports</strong> to tackle this situation. As explained, <strong>Solr</strong> is only a <em>near</em> real-time solution.</p>
+
+<blockquote>
+  <ul>
+    <li>
+      <h3 id="heard-from-sources-that-solr-does-not-possess-scalability-factor-is-it-true">Heard from sources that Solr does not possess scalability factor. Is it true?</h3>
+    </li>
+  </ul>
+</blockquote>
+
+<p><strong>Solr</strong> is highly scalable. Have a look on <a href="https://cwiki.apache.org/confluence/display/solr/SolrCloud">SolrCloud</a>.
+Some key features of it.</p>
+
+<ul>
+  <li>Shards (or sharding is the concept of distributing the index among multiple machines, say if your index has grown too large)</li>
+  <li>Load Balancing (if <a href="http://wiki.apache.org/solr/Solrj">Solrj</a> is used with Solr cloud it automatically takes care of load-balancing using it’s Round-Robin mechanism)</li>
+  <li><a href="http://wiki.apache.org/solr/DistributedSearch">Distributed Search</a></li>
+  <li>High Availability</li>
+</ul>
+
+<blockquote>
+  <ul>
+    <li>
+      <h3 id="does-it-have-any-extra-features-like-google-does---such-as-did-you-mean-by-related-searches-etc">Does it have any extra features like Google does - such as “did you mean by?”, related searches, etc?</h3>
+    </li>
+  </ul>
+</blockquote>
+
+<p>For the above scenario, you could use the <a href="http://wiki.apache.org/solr/SpellCheckComponent">SpellCheckComponent</a> that is shipped with <strong>Solr</strong>. There are a lot other features, The <a href="http://lucene.apache.org/solr/3_6_1/org/apache/solr/analysis/SnowballPorterFilterFactory.html">SnowballPorterFilterFactory</a> helps to retrieve records say if you typed, <em>books</em> instead of <em>book</em>, you will be presented with results related to <em>book</em>.</p>
+
+<h3 id="this-answer-broadly-focuses-on-apache-solr--mysql">This answer broadly focuses on <strong>Apache Solr</strong> &amp; <strong>MySQL</strong>.</h3>
+
+<blockquote>
+  <p><strong>Important</strong>: Assuming that you are under <strong>LINUX</strong> environment, you could proceed to this article further. (mine was an Ubuntu 14.04 version). Windows users. Sorry.</p>
+</blockquote>
+
+<hr />
+
+<blockquote>
+  <h1 id="detailed-installation">Detailed Installation</h1>
+</blockquote>
+
+<h3 id="getting-started">Getting Started</h3>
+
+<p>Download <strong>Apache Solr</strong> from <a href="http://apache.mirrors.hoobly.com/lucene/solr/4.8.1/">here</a>. That would be version is <strong>4.8.1</strong>. You could download new versions, I found this one pretty stable.</p>
+
+<p>After downloading the archive, extract it to a folder of your choice. 
+Say ..  <strong>Downloads</strong> or whatever.. So it will look like <code class="highlighter-rouge">Downloads/solr-4.8.1/</code></p>
+
+<p>On your prompt..  Navigate inside the directory</p>
+
+<p><code class="highlighter-rouge">shankar@shankar-lenovo: cd Downloads/solr-4.8.1</code></p>
+
+<p>So now you are here ..</p>
+
+<p><code class="highlighter-rouge">shankar@shankar-lenovo: ~/Downloads/solr-4.8.1$ </code></p>
+
+<h3 id="start-the-jetty-application-server">Start the Jetty Application Server</h3>
+
+<p><strong>Jetty</strong> is available inside the examples folder of the <strong>solr-4.8.1</strong> directory , so navigate inside that and start the Jetty Application Server.</p>
+
+<p><code class="highlighter-rouge">shankar@shankar-lenovo:~/Downloads/solr-4.8.1/example$ java -jar start.jar</code></p>
+
+<p>Do not close the terminal, minimize it and let it stay aside.</p>
+
+<blockquote>
+  <p><strong>Tip</strong> : Use <strong>&amp;</strong> after start.jar to make the Jetty Server run in the background</p>
+</blockquote>
+
+<p>To check if <strong>Apache Solr</strong> runs successfully, visit this URL on the browser. <code class="highlighter-rouge">http://localhost:8983/solr</code></p>
+
+<h3 id="running-jetty-on-custom-port">Running Jetty on custom Port</h3>
+
+<p>It runs on the port 8983 as default. You could change the port either here or directly inside the <strong>jetty.xml</strong> file.</p>
+
+<p><code class="highlighter-rouge">java -Djetty.port=9091 -jar start.jar</code></p>
+
+<h3 id="download-the-jconnector">Download the JConnector</h3>
+
+<p>This JAR file acts as a bridge between <strong>MySQL</strong> and JDBC , Download the Platform Independent Version <a href="http://dev.mysql.com/downloads/connector/j/">here</a></p>
+
+<p>After downloading it, extract the folder and copy the <strong>mysql-connector-java-5.1.31-bin.jar</strong> and paste it to the <strong>lib</strong> directory.</p>
+
+<p><code class="highlighter-rouge">shankar@shankar-lenovo:~/Downloads/solr-4.8.1/contrib/dataimporthandler/lib</code></p>
+
+<h3 id="creating-the-mysql-table-to-be-linked-to-apache-solr">Creating the MySQL table to be linked to Apache Solr</h3>
+
+<p>To put <strong>Solr</strong> to use, You need to have some tables and data to search for. For that, we will use <strong>MySQL</strong> for creating a table and pushing some random names and then we could use <strong>Solr</strong> to connect to <strong>MySQL</strong> and index that table and it’s entries.</p>
+
+<blockquote>
+  <h3 id="1-table-structure">1. Table Structure</h3>
+</blockquote>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>CREATE TABLE test_solr_mysql
+ (
+  id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  name VARCHAR(45) NULL,
+  created TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (id)
+ );
+</code></pre>
+</div>
+
+<blockquote>
+  <h3 id="2-populate-the-above-table">2. Populate the above table</h3>
+</blockquote>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>INSERT INTO `test_solr_mysql` (`name`) VALUES ('Jean');
+INSERT INTO `test_solr_mysql` (`name`) VALUES ('Jack');
+INSERT INTO `test_solr_mysql` (`name`) VALUES ('Jason');
+INSERT INTO `test_solr_mysql` (`name`) VALUES ('Vego');
+INSERT INTO `test_solr_mysql` (`name`) VALUES ('Grunt');
+INSERT INTO `test_solr_mysql` (`name`) VALUES ('Jasper');
+INSERT INTO `test_solr_mysql` (`name`) VALUES ('Fred');
+INSERT INTO `test_solr_mysql` (`name`) VALUES ('Jenna');
+INSERT INTO `test_solr_mysql` (`name`) VALUES ('Rebecca');
+INSERT INTO `test_solr_mysql` (`name`) VALUES ('Roland');
+</code></pre>
+</div>
+
+<h3 id="getting-inside-the-core-and-adding-the-lib-directives">Getting inside the core and adding the lib directives</h3>
+
+<blockquote>
+  <h3 id="1-navigate-to">1. Navigate to</h3>
+</blockquote>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>shankar@shankar-lenovo: ~/Downloads/solr-4.8.1/example/solr/collection1/conf
+</code></pre>
+</div>
+
+<blockquote>
+  <h3 id="2-modifying-the-solrconfigxml">2. Modifying the solrconfig.xml</h3>
+</blockquote>
+
+<p>Add these two directives to this file..</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>  &lt;lib dir="../../../contrib/dataimporthandler/lib/" regex=".*\.jar" /&gt;
+  &lt;lib dir="../../../dist/" regex="solr-dataimporthandler-\d.*\.jar" /&gt;
+</code></pre>
+</div>
+
+<p>Now add the <strong>DIH</strong> (Data Import Handler)</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&lt;requestHandler name="/dataimport" 
+  class="org.apache.solr.handler.dataimport.DataImportHandler" &gt;
+    &lt;lst name="defaults"&gt;
+      &lt;str name="config"&gt;db-data-config.xml&lt;/str&gt;
+    &lt;/lst&gt;
+&lt;/requestHandler&gt;
+</code></pre>
+</div>
+
+<blockquote>
+  <h3 id="3-create-the-db-data-configxml-file">3. Create the db-data-config.xml file</h3>
+</blockquote>
+
+<p>If the file exists then ignore, add these lines to that file. As you can see the first line, you need to provide the credentials of your <strong>MySQL</strong> database. The Database name, username and password.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&lt;dataConfig&gt;
+    &lt;dataSource type="JdbcDataSource" driver="com.mysql.jdbc.Driver" url="jdbc:mysql://localhost/yourdbname" user="dbuser" password="dbpass"/&gt;
+    &lt;document&gt;
+   &lt;entity name="test_solr" query="select CONCAT('test_solr-',id) as rid,name from test_solr_mysql WHERE '${dataimporter.request.clean}' != 'false'
+      OR `created` &gt; '${dataimporter.last_index_time}'" &gt;
+    &lt;field name="id" column="rid" /&gt;
+    &lt;field name="solr_name" column="name" /&gt;
+    &lt;/entity&gt;
+   &lt;/document&gt;
+&lt;/dataConfig&gt;
+</code></pre>
+</div>
+
+<blockquote>
+  <p><strong>Tip</strong> : You can have any number of entities but watch out for id field, if they are same then indexing will skipped.</p>
+</blockquote>
+
+<blockquote>
+  <h3 id="4-modify-the-schemaxml-file">4. Modify the schema.xml file</h3>
+</blockquote>
+
+<p>Add this to your <strong>schema.xml</strong> as shown..</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&lt;uniqueKey&gt;id&lt;/uniqueKey&gt;
+&lt;field name="solr_name" type="string" indexed="true" stored="true" /&gt;
+</code></pre>
+</div>
+
+<hr />
+
+<blockquote>
+  <h1 id="implementation">Implementation</h1>
+</blockquote>
+
+<h3 id="indexing">Indexing</h3>
+
+<p>This is where the real deal is. You need to do the indexing of data from <strong>MySQL</strong> to <strong>Solr</strong> inorder to make use of Solr Queries.</p>
+
+<blockquote>
+  <h3 id="step-1-go-to-solr-admin-panel">Step 1: Go to Solr Admin Panel</h3>
+</blockquote>
+
+<p>Hit the URL <strong>http://localhost:8983/solr</strong> on your browser. The screen opens like this.</p>
+
+<p><img src="http://i.stack.imgur.com/8grrc.png" alt="This is the main Apache Solr Administration Panel" /></p>
+
+<p>As the marker indicates, go to <strong>Logging</strong> inorder to check if any of the above configuration has led to errors.</p>
+
+<blockquote>
+  <h3 id="step-2-check-your-logs">Step 2: Check your Logs</h3>
+</blockquote>
+
+<p>Ok so now you are here, As you can there are a lot of yellow messages (WARNINGS). Make sure you don’t have error messages marked in red. Earlier, on our configuration we had added a select query on our <strong>db-data-config.xml</strong>, say if there were any errors on that query, it would have shown up here.</p>
+
+<p><img src="http://i.stack.imgur.com/8l6n5.png" alt="This is the logging section of your Apache Solr engine" /></p>
+
+<p>Fine, no errors. We are good to go. Let’s choose <strong>collection1</strong> from the list as depicted and select <strong>Dataimport</strong></p>
+
+<blockquote>
+  <h3 id="step-3-dih-data-import-handler">Step 3: DIH (Data Import Handler)</h3>
+</blockquote>
+
+<p>Using the DIH, you will be connecting to <strong>MySQL</strong> from <strong>Solr</strong> through the configuration file <strong>db-data-config.xml</strong> from the <strong>Solr</strong> interface and retrieve the 10 records from the database which gets indexed onto <strong>Solr</strong>.</p>
+
+<p>To do that, Choose <strong>full-import</strong> , and check the options <em>Clean</em> and <em>Commit</em>. Now click <strong>Execute</strong> as shown.</p>
+
+<p>Alternatively, you could use a direct <strong>full-import</strong> query like this too..</p>
+
+<p>`http://localhost:8983/solr/collection1/dataimport?command=full-import&amp;commit=true</p>
+
+<p><img src="http://i.stack.imgur.com/sHvSO.png" alt="The Data Import Handler" /></p>
+
+<p>After you clicked <strong>Execute</strong>, <strong>Solr</strong> begins to index the records, if there were any errors, it would say <strong>Indexing Failed</strong> and you have to go back to the <strong>Logging</strong> section to see what has gone wrong.</p>
+
+<p>Assuming there are no errors with this configuration and if the indexing is successfully complete., you would get this notification.</p>
+
+<p><img src="http://i.stack.imgur.com/WlD07.png" alt="Indexing Success" /></p>
+
+<blockquote>
+  <h3 id="step-4-running-solr-queries">Step 4: Running Solr Queries</h3>
+</blockquote>
+
+<p>Seems like everything went well, now you could use <strong>Solr</strong> Queries to query the data that was indexed. Click the <strong>Query</strong> on the left and then press <strong>Execute</strong> button on the bottom.</p>
+
+<p>You will see the indexed records as shown.</p>
+
+<p>The corresponding <strong>Solr</strong> query for listing all the records is</p>
+
+<p><code class="highlighter-rouge">http://localhost:8983/solr/collection1/select?q=*:*&amp;wt=json&amp;indent=true</code></p>
+
+<p><img src="http://i.stack.imgur.com/aZP9W.png" alt="The indexed data" /></p>
+
+<p>Well, there goes all 10 indexed records. Say, we need only names starting with <strong>Ja</strong> , in this case, you need to target the column name <code class="highlighter-rouge">solr_name</code>, Hence your query goes like this.</p>
+
+<p><code class="highlighter-rouge">http://localhost:8983/solr/collection1/select?q=solr_name:Ja*&amp;wt=json&amp;indent=true</code></p>
+
+<p><img src="http://i.stack.imgur.com/qeArE.png" alt="The JSON data starting with Ja*" /></p>
+
+<p>That’s how you write <strong>Solr</strong> Queries. To read more about it, Check this beautiful <a href="http://lucene.apache.org/core/3_5_0/queryparsersyntax.html">article</a>.</p>
+
+<hr />
+
+            </div>
+        </article>
+        <div class="cf"></div>
+        <div class="row text-center">
+            <section class="notepad-post-share">
+                <a class="twitter-icon" href="https://twitter.com/intent/tweet?text=&quot;Getting Started: Building a simple search engine with Apache Solr.&quot;%20http://localhost:4000/development/search-engine-with-solr-getting-started%20via%20&#64;sh4nx0r"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Share on Twitter">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a class="facebook-icon" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/development/search-engine-with-solr-getting-started"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a class="google-icon" href="https://plus.google.com/share?url=http://localhost:4000/development/search-engine-with-solr-getting-started"
+                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" title="Share on Google+">
+                    <i class="fa fa-google-plus"></i>
+                </a>
+            </section>
+        </div>
+        <div class="cf"></div>
+        
+            <div class="notepad-author-info">
+                <div class="row">
+                    <section class="notepad-post-author small-12 columns">
+                        
+                            <img src="http://localhost:4000/images/shan.jpg" class="notepad-post-author-avatar" alt="Shankar Damodaran's photo">
+                        
+                        
+                            <span class="author-label">Author</span>
+                            <h1>Shankar Damodaran</h1>
+                        
+                        
+                            <p><a href="mailto:d.shankarnarayana@gmail.com" class="author-website">d.shankarnarayana@gmail.com</a></p>
+                        
+                        
+                            <p>Inventor. Hacker. Foodie. Traveller. Biker.</p>
+                        
+                    </section>
+                </div>
+            </div> 
+        
+        <div class="cf"></div>
+        
+        <section class="notepad-disqus row">
+    <div class="small-12 columns">
+        <h1 class="notepad-comments-header">Comments</h1>
+        <div id="disqus_thread"></div>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Text Ad 1 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-2690919849601061"
+     data-ad-slot="1843650630"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'sh4in'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+    </div>
+</section>
+
+        <div class="cf"></div>
+
+    <footer class="notepad-site-footer">
+<div id="backtotop"><a href="#home" class="scroll"><img src="/images/up.png"></a></div>
+    <div class="copyright">
+         <section><a href="http://localhost:4000/about"><b>Shankar Damodaran</b></a> &copy; 2017 &bull; All Rights Reserved.</section>
+         <section>Proudly published via <a class="icon-ghost" href="https://jekyllrb.com/">Jekyll</a> and hosted through Github Pages and Godaddy DNS.</section>
+         <section>Jekyll Theme : HMFaysal</section>
+         <section>Image Slider : Jay Salvat</section>
+         <section>Visitor Count powered by StatCounter:
+         <!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=10616444; 
+var sc_invisible=0; 
+var sc_security="66d515ff"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="shopify
+analytics ecommerce" href="http://statcounter.com/shopify/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/10616444/0/66d515ff/0/"
+alt="shopify analytics ecommerce"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+| <a href="http://statcounter.com/p10616444/?guest=1">View Stats</a>
+
+<br><br>
+<!-- Cluster Maps -->
+<div id="clustrmaps-widget"></div><script type="text/javascript">var _clustrmaps = {'url' : 'http://sh4.in', 'user' : 1179997, 'server' : '3', 'id' : 'clustrmaps-widget', 'version' : 1, 'date' : '2015-10-01', 'lang' : 'en', 'corners' : 'square' };(function (){ var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'http://www3.clustrmaps.com/counter/map.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);})();</script><noscript><a href="http://www3.clustrmaps.com/user/fcb12015d"><img src="http://www3.clustrmaps.com/stats/maps-no_clusters/sh4.in-thumb.jpg" alt="Locations of visitors to this page" /></a></noscript>
+
+</section>
+    </div>
+    <div class="social-icons">
+        
+        
+        <a href="http://twitter.com/sh4nx0r">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-twitter fa-stack-1x"></i>
+            </span>
+        </a>
+        
+        
+         
+        <a href="https://linkedin.com/in/shankardamodaran">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-linkedin fa-stack-1x"></i>
+            </span>
+        </a>
+        
+        
+        
+        
+        <a href="http://instagram.com/shankardamodaran">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-instagram fa-stack-1x"></i>
+            </span>
+        </a>
+        
+        
+        <a href="http://github.com/sh4nx0r">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-github fa-stack-1x"></i>
+            </span>
+        </a>
+        
+        
+        <a href="http://facebook.com/sh4nx0r">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-facebook fa-stack-1x"></i>
+            </span>
+        </a>
+        
+        
+        
+        
+    </div>
+    
+    <div class="cf"></div>
+</footer>
+ 
+</main>    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="http://localhost:4000/assets/js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+    <script src="http://localhost:4000/assets/js/vendor/modernizr.js"></script>
+    <script src="http://localhost:4000/assets/js/foundation.min.js"></script>
+    <script src="http://localhost:4000/assets/js/vendor/background-check.js"></script>
+    <script src="http://localhost:4000/assets/js/vendor/post-header-animations.js"></script>
+    <script src="http://localhost:4000/assets/js/notepad.js"></script>
+    <script src="http://localhost:4000/assets/js/scripts.min.js"></script>
+    <script src="http://localhost:4000/assets/js/vendor/nprogress.js"></script>
+
+    <script>
+      $(document).foundation();
+    </script>
+
+
+
+<script>NProgress.start();var interval=setInterval(function(){NProgress.inc()},1000);jQuery(window).load(function(){clearInterval(interval);NProgress.done()});jQuery(window).unload(function(){NProgress.start()});</script> 
+</body>
+</html>

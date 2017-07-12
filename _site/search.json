@@ -1,6 +1,14 @@
 [
 	
 		{
+		  "title"      : "Getting Started: Building a simple search engine with Apache Solr.",
+		  "category"   : "development",
+		  "url"        : "http://localhost:4000/development/search-engine-with-solr-getting-started",
+		  "date"       : "2017-07-12 00:00:00 +0600",
+		  "shortdate"  : "July 12, 2017"
+		} ,
+	
+		{
 		  "title"      : "The Mega Guide to Information Security Interview Questions.",
 		  "category"   : "infosec",
 		  "url"        : "http://localhost:4000/infosec/mega-guide-information-security-interview-questions",
