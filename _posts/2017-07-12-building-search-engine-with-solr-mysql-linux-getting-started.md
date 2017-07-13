@@ -33,8 +33,9 @@ This is a total rip-off post from my contribution to Stackoverflow on ***Apache 
 >  - ### How does Apache Solr scores with respect to results, relevance and ranking?
 
 The **boost** helps you rank your results show up on top. Say, you're trying to search for a name *john* in the fields *firstname* and *lastname*, and you want to give relevancy to the *firstname* field, then you need to **boost** up the *firstname* field as shown. 
+>
+<!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">http://localhost:8983/solr/collection1/select?q=firstname:john^2&amp;lastname:john</pre></div>
 
-`http://localhost:8983/solr/collection1/select?q=firstname:john^2&lastname:john`
 
 As you can see, *firstname* field is **boosted** up with a score of 2.
 
@@ -86,34 +87,38 @@ For the above scenario, you could use the [SpellCheckComponent][9] that is shipp
 Download **Apache Solr** from [here][11]. That would be version is **4.8.1**. You could download new versions, I found this one pretty stable.
 
 After downloading the archive, extract it to a folder of your choice. 
-Say ..  **Downloads** or whatever.. So it will look like `Downloads/solr-4.8.1/`
+Say ..  **Downloads** or whatever.. So it will look like 
+> <!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">Downloads/solr-4.8.1/</pre></div>
 
 On your prompt..  Navigate inside the directory
 
-`shankar@shankar-lenovo: cd Downloads/solr-4.8.1`
+> <!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">shankar@shankar-lenovo: cd Downloads/solr-4.8.1</pre></div>
 
-So now you are here .. 
 
-`shankar@shankar-lenovo: ~/Downloads/solr-4.8.1$ `
+So now you are here.. 
 
+> <!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">shankar@shankar-lenovo: ~/Downloads/solr-4.8.1$ </pre></div>
 
 ### Start the Jetty Application Server
 
 **Jetty** is available inside the examples folder of the **solr-4.8.1** directory , so navigate inside that and start the Jetty Application Server.
 
-`shankar@shankar-lenovo:~/Downloads/solr-4.8.1/example$ java -jar start.jar`
+> <!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">shankar@shankar-lenovo:~/Downloads/solr-4.8.1/example$ java -jar start.jar</pre></div>
 
 Do not close the terminal, minimize it and let it stay aside. 
 
 > **Tip** : Use **&** after start.jar to make the Jetty Server run in the background 
 
-To check if **Apache Solr** runs successfully, visit this URL on the browser. `http://localhost:8983/solr`
+To check if **Apache Solr** runs successfully, visit this URL on the browser.
+
+> <!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">http://localhost:8983/solr</pre></div>
+
 
 ### Running Jetty on custom Port 
 
 It runs on the port 8983 as default. You could change the port either here or directly inside the **jetty.xml** file.
 
-`java -Djetty.port=9091 -jar start.jar`
+> <!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">java -Djetty.port=9091 -jar start.jar</pre></div>
 
 
 ### Download the JConnector
@@ -122,7 +127,7 @@ This JAR file acts as a bridge between **MySQL** and JDBC , Download the Platfor
 
 After downloading it, extract the folder and copy the **mysql-connector-java-5.1.31-bin.jar** and paste it to the **lib** directory.
 
-`shankar@shankar-lenovo:~/Downloads/solr-4.8.1/contrib/dataimporthandler/lib`
+> <!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">shankar@shankar-lenovo:~/Downloads/solr-4.8.1/contrib/dataimporthandler/lib</pre></div>
 
 
 ### Creating the MySQL table to be linked to Apache Solr
@@ -133,63 +138,71 @@ To put **Solr** to use, You need to have some tables and data to search for. For
 
 > ### 1. Table Structure
 
-    CREATE TABLE test_solr_mysql
+>
+<!-- HTML generated using hilite.me (emacs syntax) --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="line-height: 125%"><span style="color: #AA22FF; font-weight: bold">CREATE</span> <span style="color: #AA22FF; font-weight: bold">TABLE</span> <span style="color: #00A000">test_solr_mysql</span>
      (
-      id INT UNSIGNED NOT NULL AUTO_INCREMENT,
-      name VARCHAR(45) NULL,
-      created TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
-      PRIMARY KEY (id)
-     );
+      id <span style="color: #00BB00; font-weight: bold">INT</span> <span style="color: #AA22FF; font-weight: bold">UNSIGNED</span> <span style="color: #AA22FF; font-weight: bold">NOT</span> <span style="color: #880000">NULL</span> <span style="color: #AA22FF">AUTO_INCREMENT</span>,
+      name <span style="color: #00BB00; font-weight: bold">VARCHAR</span>(<span style="color: #666666">45</span>) <span style="color: #880000">NULL</span>,
+      created <span style="color: #00BB00; font-weight: bold">TIMESTAMP</span> <span style="color: #880000">NULL</span> <span style="color: #AA22FF; font-weight: bold">DEFAULT</span> <span style="color: #AA22FF; font-weight: bold">CURRENT_TIMESTAMP</span>,
+      <span style="color: #AA22FF; font-weight: bold">PRIMARY</span> <span style="color: #AA22FF; font-weight: bold">KEY</span> (id)
+     );</pre></div>
+
 
 > ### 2. Populate the above table
 
-    INSERT INTO `test_solr_mysql` (`name`) VALUES ('Jean');
-    INSERT INTO `test_solr_mysql` (`name`) VALUES ('Jack');
-    INSERT INTO `test_solr_mysql` (`name`) VALUES ('Jason');
-    INSERT INTO `test_solr_mysql` (`name`) VALUES ('Vego');
-    INSERT INTO `test_solr_mysql` (`name`) VALUES ('Grunt');
-    INSERT INTO `test_solr_mysql` (`name`) VALUES ('Jasper');
-    INSERT INTO `test_solr_mysql` (`name`) VALUES ('Fred');
-    INSERT INTO `test_solr_mysql` (`name`) VALUES ('Jenna');
-    INSERT INTO `test_solr_mysql` (`name`) VALUES ('Rebecca');
-    INSERT INTO `test_solr_mysql` (`name`) VALUES ('Roland');
+>
+<!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">    <span style="color: #AA22FF; font-weight: bold">INSERT</span> <span style="color: #AA22FF; font-weight: bold">INTO</span> <span style="color: #B8860B">`test_solr_mysql`</span> (<span style="color: #B8860B">`name`</span>) <span style="color: #AA22FF; font-weight: bold">VALUES</span> (<span style="color: #BB4444">&#39;Jean&#39;</span>);
+    <span style="color: #AA22FF; font-weight: bold">INSERT</span> <span style="color: #AA22FF; font-weight: bold">INTO</span> <span style="color: #B8860B">`test_solr_mysql`</span> (<span style="color: #B8860B">`name`</span>) <span style="color: #AA22FF; font-weight: bold">VALUES</span> (<span style="color: #BB4444">&#39;Jack&#39;</span>);
+    <span style="color: #AA22FF; font-weight: bold">INSERT</span> <span style="color: #AA22FF; font-weight: bold">INTO</span> <span style="color: #B8860B">`test_solr_mysql`</span> (<span style="color: #B8860B">`name`</span>) <span style="color: #AA22FF; font-weight: bold">VALUES</span> (<span style="color: #BB4444">&#39;Jason&#39;</span>);
+    <span style="color: #AA22FF; font-weight: bold">INSERT</span> <span style="color: #AA22FF; font-weight: bold">INTO</span> <span style="color: #B8860B">`test_solr_mysql`</span> (<span style="color: #B8860B">`name`</span>) <span style="color: #AA22FF; font-weight: bold">VALUES</span> (<span style="color: #BB4444">&#39;Vego&#39;</span>);
+    <span style="color: #AA22FF; font-weight: bold">INSERT</span> <span style="color: #AA22FF; font-weight: bold">INTO</span> <span style="color: #B8860B">`test_solr_mysql`</span> (<span style="color: #B8860B">`name`</span>) <span style="color: #AA22FF; font-weight: bold">VALUES</span> (<span style="color: #BB4444">&#39;Grunt&#39;</span>);
+    <span style="color: #AA22FF; font-weight: bold">INSERT</span> <span style="color: #AA22FF; font-weight: bold">INTO</span> <span style="color: #B8860B">`test_solr_mysql`</span> (<span style="color: #B8860B">`name`</span>) <span style="color: #AA22FF; font-weight: bold">VALUES</span> (<span style="color: #BB4444">&#39;Jasper&#39;</span>);
+    <span style="color: #AA22FF; font-weight: bold">INSERT</span> <span style="color: #AA22FF; font-weight: bold">INTO</span> <span style="color: #B8860B">`test_solr_mysql`</span> (<span style="color: #B8860B">`name`</span>) <span style="color: #AA22FF; font-weight: bold">VALUES</span> (<span style="color: #BB4444">&#39;Fred&#39;</span>);
+    <span style="color: #AA22FF; font-weight: bold">INSERT</span> <span style="color: #AA22FF; font-weight: bold">INTO</span> <span style="color: #B8860B">`test_solr_mysql`</span> (<span style="color: #B8860B">`name`</span>) <span style="color: #AA22FF; font-weight: bold">VALUES</span> (<span style="color: #BB4444">&#39;Jenna&#39;</span>);
+    <span style="color: #AA22FF; font-weight: bold">INSERT</span> <span style="color: #AA22FF; font-weight: bold">INTO</span> <span style="color: #B8860B">`test_solr_mysql`</span> (<span style="color: #B8860B">`name`</span>) <span style="color: #AA22FF; font-weight: bold">VALUES</span> (<span style="color: #BB4444">&#39;Rebecca&#39;</span>);
+    <span style="color: #AA22FF; font-weight: bold">INSERT</span> <span style="color: #AA22FF; font-weight: bold">INTO</span> <span style="color: #B8860B">`test_solr_mysql`</span> (<span style="color: #B8860B">`name`</span>) <span style="color: #AA22FF; font-weight: bold">VALUES</span> (<span style="color: #BB4444">&#39;Roland&#39;</span>);</pre></div>
+
 
 ### Getting inside the core and adding the lib directives
 
 > ### 1. Navigate to 
 
-    shankar@shankar-lenovo: ~/Downloads/solr-4.8.1/example/solr/collection1/conf
+> <!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="line-height: 125%">shankar@shankar-lenovo: ~/Downloads/solr-4.8.1/example/solr/collection1/conf</pre></div>
+    
 
 > ### 2. Modifying the solrconfig.xml
 
 Add these two directives to this file..
 
-      <lib dir="../../../contrib/dataimporthandler/lib/" regex=".*\.jar" />
-      <lib dir="../../../dist/" regex="solr-dataimporthandler-\d.*\.jar" />
+> <!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;lib</span> <span style="color: #BB4444">dir=&quot;../../../contrib/dataimporthandler/lib/&quot;</span> <span style="color: #BB4444">regex=&quot;.*\.jar&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+      <span style="color: #008000; font-weight: bold">&lt;lib</span> <span style="color: #BB4444">dir=&quot;../../../dist/&quot;</span> <span style="color: #BB4444">regex=&quot;solr-dataimporthandler-\d.*\.jar&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span></pre></div>
+
 
 Now add the **DIH** (Data Import Handler)
 
-    <requestHandler name="/dataimport" 
-      class="org.apache.solr.handler.dataimport.DataImportHandler" >
-        <lst name="defaults">
-          <str name="config">db-data-config.xml</str>
-        </lst>
-    </requestHandler>
+> <!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="line-height: 125%">    <span style="color: #008000; font-weight: bold">&lt;requestHandler</span> <span style="color: #BB4444">name=&quot;/dataimport&quot;</span> 
+      <span style="color: #BB4444">class=&quot;org.apache.solr.handler.dataimport.DataImportHandler&quot;</span> <span style="color: #008000; font-weight: bold">&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;lst</span> <span style="color: #BB4444">name=&quot;defaults&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+          <span style="color: #008000; font-weight: bold">&lt;str</span> <span style="color: #BB4444">name=&quot;config&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>db-data-config.xml<span style="color: #008000; font-weight: bold">&lt;/str&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;/lst&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/requestHandler&gt;</span></pre></div>
+
 
 > ### 3. Create the db-data-config.xml file 
 
 If the file exists then ignore, add these lines to that file. As you can see the first line, you need to provide the credentials of your **MySQL** database. The Database name, username and password.
 
-    <dataConfig>
-        <dataSource type="JdbcDataSource" driver="com.mysql.jdbc.Driver" url="jdbc:mysql://localhost/yourdbname" user="dbuser" password="dbpass"/>
-        <document>
-       <entity name="test_solr" query="select CONCAT('test_solr-',id) as rid,name from test_solr_mysql WHERE '${dataimporter.request.clean}' != 'false'
-          OR `created` > '${dataimporter.last_index_time}'" >
-        <field name="id" column="rid" />
-        <field name="solr_name" column="name" />
-        </entity>
-       </document>
-    </dataConfig>
+> <!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="line-height: 125%">    <span style="color: #008000; font-weight: bold">&lt;dataConfig&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;dataSource</span> <span style="color: #BB4444">type=&quot;JdbcDataSource&quot;</span> <span style="color: #BB4444">driver=&quot;com.mysql.jdbc.Driver&quot;</span> <span style="color: #BB4444">url=&quot;jdbc:mysql://localhost/yourdbname&quot;</span> <span style="color: #BB4444">user=&quot;dbuser&quot;</span> <span style="color: #BB4444">password=&quot;dbpass&quot;</span><span style="color: #008000; font-weight: bold">/&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;document&gt;</span>
+       <span style="color: #008000; font-weight: bold">&lt;entity</span> <span style="color: #BB4444">name=&quot;test_solr&quot;</span> <span style="color: #BB4444">query=&quot;select CONCAT(&#39;test_solr-&#39;,id) as rid,name from test_solr_mysql WHERE &#39;${dataimporter.request.clean}&#39; != &#39;false&#39;</span>
+<span style="color: #BB4444">          OR `created` &gt; &#39;${dataimporter.last_index_time}&#39;&quot;</span> <span style="color: #008000; font-weight: bold">&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;field</span> <span style="color: #BB4444">name=&quot;id&quot;</span> <span style="color: #BB4444">column=&quot;rid&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;field</span> <span style="color: #BB4444">name=&quot;solr_name&quot;</span> <span style="color: #BB4444">column=&quot;name&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+        <span style="color: #008000; font-weight: bold">&lt;/entity&gt;</span>
+       <span style="color: #008000; font-weight: bold">&lt;/document&gt;</span>
+    <span style="color: #008000; font-weight: bold">&lt;/dataConfig&gt;</span></pre></div>
+
 
 > **Tip** : You can have any number of entities but watch out for id field, if they are same then indexing will skipped.
 
@@ -197,8 +210,10 @@ If the file exists then ignore, add these lines to that file. As you can see the
 
 Add this to your **schema.xml** as shown.. 
 
-    <uniqueKey>id</uniqueKey>
-    <field name="solr_name" type="string" indexed="true" stored="true" />
+> <!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">&lt;uniqueKey&gt;</span>id<span style="color: #008000; font-weight: bold">&lt;/uniqueKey&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;field</span> <span style="color: #BB4444">name=&quot;solr_name&quot;</span> <span style="color: #BB4444">type=&quot;string&quot;</span> <span style="color: #BB4444">indexed=&quot;true&quot;</span> <span style="color: #BB4444">stored=&quot;true&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span></pre></div>
+
+
 
 ---
 
@@ -233,7 +248,7 @@ To do that, Choose **full-import** , and check the options *Clean* and *Commit*.
 
 Alternatively, you could use a direct **full-import** query like this too..
 
-`http://localhost:8983/solr/collection1/dataimport?command=full-import&commit=true
+> <!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">http://localhost:8983/solr/collection1/dataimport?command=full-import&commit=true</pre></div>
 
 
 ![The Data Import Handler][15]
@@ -253,13 +268,14 @@ You will see the indexed records as shown.
 
 The corresponding **Solr** query for listing all the records is
 
-`http://localhost:8983/solr/collection1/select?q=*:*&wt=json&indent=true`
+> <!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">http://localhost:8983/solr/collection1/select?q=*:*&wt=json&indent=true</pre></div>
 
 ![The indexed data][17]
 
 Well, there goes all 10 indexed records. Say, we need only names starting with **Ja** , in this case, you need to target the column name `solr_name`, Hence your query goes like this.
 
-`http://localhost:8983/solr/collection1/select?q=solr_name:Ja*&wt=json&indent=true`
+> <!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">http://localhost:8983/solr/collection1/select?q=solr_name:Ja*&wt=json&indent=true</pre></div>
+
 
 ![The JSON data starting with Ja*][18]
 

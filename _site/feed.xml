@@ -7,7 +7,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://localhost:4000/" />
-<updated>2017-07-12T20:42:48+06:00</updated>
+<updated>2017-07-13T20:53:49+06:00</updated>
 <id>http://localhost:4000/</id>
 <author>
   <name>Shankar Damodaran</name>
@@ -18,8 +18,8 @@
 
 <entry>
   <title type="html"><![CDATA[Getting Started: Building a simple search engine with Apache Solr.]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/development/search-engine-with-solr-getting-started"/>
-  <id>http://localhost:4000/development/search-engine-with-solr-getting-started</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/development/building-search-engine-with-solr-mysql-linux-getting-started"/>
+  <id>http://localhost:4000/development/building-search-engine-with-solr-mysql-linux-getting-started</id>
   <published>2017-07-12T00:00:00+06:00</published>
   <updated>2017-07-12T00:00:00-00:00</updated>
   
@@ -63,8 +63,11 @@
 &lt;/blockquote&gt;
 
 &lt;p&gt;The &lt;strong&gt;boost&lt;/strong&gt; helps you rank your results show up on top. Say, you’re trying to search for a name &lt;em&gt;john&lt;/em&gt; in the fields &lt;em&gt;firstname&lt;/em&gt; and &lt;em&gt;lastname&lt;/em&gt;, and you want to give relevancy to the &lt;em&gt;firstname&lt;/em&gt; field, then you need to &lt;strong&gt;boost&lt;/strong&gt; up the &lt;em&gt;firstname&lt;/em&gt; field as shown.&lt;/p&gt;
+&lt;blockquote&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;http://localhost:8983/solr/collection1/select?q=firstname:john^2&amp;amp;lastname:john&lt;/code&gt;&lt;/p&gt;
+  &lt;!-- HTML generated using hilite.me --&gt;
+  &lt;div style=&quot;background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;&quot;&gt;&lt;pre style=&quot;margin: 0; line-height: 125%&quot;&gt;http://localhost:8983/solr/collection1/select?q=firstname:john^2&amp;amp;lastname:john&lt;/pre&gt;&lt;/div&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;As you can see, &lt;em&gt;firstname&lt;/em&gt; field is &lt;strong&gt;boosted&lt;/strong&gt; up with a score of 2.&lt;/p&gt;
 
@@ -151,21 +154,34 @@ Some key features of it.&lt;/p&gt;
 &lt;p&gt;Download &lt;strong&gt;Apache Solr&lt;/strong&gt; from &lt;a href=&quot;http://apache.mirrors.hoobly.com/lucene/solr/4.8.1/&quot;&gt;here&lt;/a&gt;. That would be version is &lt;strong&gt;4.8.1&lt;/strong&gt;. You could download new versions, I found this one pretty stable.&lt;/p&gt;
 
 &lt;p&gt;After downloading the archive, extract it to a folder of your choice. 
-Say ..  &lt;strong&gt;Downloads&lt;/strong&gt; or whatever.. So it will look like &lt;code class=&quot;highlighter-rouge&quot;&gt;Downloads/solr-4.8.1/&lt;/code&gt;&lt;/p&gt;
+Say ..  &lt;strong&gt;Downloads&lt;/strong&gt; or whatever.. So it will look like&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;!-- HTML generated using hilite.me --&gt;
+  &lt;div style=&quot;background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;&quot;&gt;&lt;pre style=&quot;margin: 0; line-height: 125%&quot;&gt;Downloads/solr-4.8.1/&lt;/pre&gt;&lt;/div&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;On your prompt..  Navigate inside the directory&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;shankar@shankar-lenovo: cd Downloads/solr-4.8.1&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;!-- HTML generated using hilite.me --&gt;
+  &lt;div style=&quot;background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;&quot;&gt;&lt;pre style=&quot;margin: 0; line-height: 125%&quot;&gt;shankar@shankar-lenovo: cd Downloads/solr-4.8.1&lt;/pre&gt;&lt;/div&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;So now you are here ..&lt;/p&gt;
+&lt;p&gt;So now you are here..&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;shankar@shankar-lenovo: ~/Downloads/solr-4.8.1$ &lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;!-- HTML generated using hilite.me --&gt;
+  &lt;div style=&quot;background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;&quot;&gt;&lt;pre style=&quot;margin: 0; line-height: 125%&quot;&gt;shankar@shankar-lenovo: ~/Downloads/solr-4.8.1$ &lt;/pre&gt;&lt;/div&gt;
+&lt;/blockquote&gt;
 
 &lt;h3 id=&quot;start-the-jetty-application-server&quot;&gt;Start the Jetty Application Server&lt;/h3&gt;
 
 &lt;p&gt;&lt;strong&gt;Jetty&lt;/strong&gt; is available inside the examples folder of the &lt;strong&gt;solr-4.8.1&lt;/strong&gt; directory , so navigate inside that and start the Jetty Application Server.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;shankar@shankar-lenovo:~/Downloads/solr-4.8.1/example$ java -jar start.jar&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;!-- HTML generated using hilite.me --&gt;
+  &lt;div style=&quot;background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;&quot;&gt;&lt;pre style=&quot;margin: 0; line-height: 125%&quot;&gt;shankar@shankar-lenovo:~/Downloads/solr-4.8.1/example$ java -jar start.jar&lt;/pre&gt;&lt;/div&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;Do not close the terminal, minimize it and let it stay aside.&lt;/p&gt;
 
@@ -173,13 +189,21 @@ Say ..  &lt;strong&gt;Downloads&lt;/strong&gt; or whatever.. So it will look lik
   &lt;p&gt;&lt;strong&gt;Tip&lt;/strong&gt; : Use &lt;strong&gt;&amp;amp;&lt;/strong&gt; after start.jar to make the Jetty Server run in the background&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;To check if &lt;strong&gt;Apache Solr&lt;/strong&gt; runs successfully, visit this URL on the browser. &lt;code class=&quot;highlighter-rouge&quot;&gt;http://localhost:8983/solr&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;To check if &lt;strong&gt;Apache Solr&lt;/strong&gt; runs successfully, visit this URL on the browser.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;!-- HTML generated using hilite.me --&gt;
+  &lt;div style=&quot;background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;&quot;&gt;&lt;pre style=&quot;margin: 0; line-height: 125%&quot;&gt;http://localhost:8983/solr&lt;/pre&gt;&lt;/div&gt;
+&lt;/blockquote&gt;
 
 &lt;h3 id=&quot;running-jetty-on-custom-port&quot;&gt;Running Jetty on custom Port&lt;/h3&gt;
 
 &lt;p&gt;It runs on the port 8983 as default. You could change the port either here or directly inside the &lt;strong&gt;jetty.xml&lt;/strong&gt; file.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;java -Djetty.port=9091 -jar start.jar&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;!-- HTML generated using hilite.me --&gt;
+  &lt;div style=&quot;background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;&quot;&gt;&lt;pre style=&quot;margin: 0; line-height: 125%&quot;&gt;java -Djetty.port=9091 -jar start.jar&lt;/pre&gt;&lt;/div&gt;
+&lt;/blockquote&gt;
 
 &lt;h3 id=&quot;download-the-jconnector&quot;&gt;Download the JConnector&lt;/h3&gt;
 
@@ -187,7 +211,10 @@ Say ..  &lt;strong&gt;Downloads&lt;/strong&gt; or whatever.. So it will look lik
 
 &lt;p&gt;After downloading it, extract the folder and copy the &lt;strong&gt;mysql-connector-java-5.1.31-bin.jar&lt;/strong&gt; and paste it to the &lt;strong&gt;lib&lt;/strong&gt; directory.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;shankar@shankar-lenovo:~/Downloads/solr-4.8.1/contrib/dataimporthandler/lib&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;!-- HTML generated using hilite.me --&gt;
+  &lt;div style=&quot;background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;&quot;&gt;&lt;pre style=&quot;margin: 0; line-height: 125%&quot;&gt;shankar@shankar-lenovo:~/Downloads/solr-4.8.1/contrib/dataimporthandler/lib&lt;/pre&gt;&lt;/div&gt;
+&lt;/blockquote&gt;
 
 &lt;h3 id=&quot;creating-the-mysql-table-to-be-linked-to-apache-solr&quot;&gt;Creating the MySQL table to be linked to Apache Solr&lt;/h3&gt;
 
@@ -197,32 +224,36 @@ Say ..  &lt;strong&gt;Downloads&lt;/strong&gt; or whatever.. So it will look lik
   &lt;h3 id=&quot;1-table-structure&quot;&gt;1. Table Structure&lt;/h3&gt;
 &lt;/blockquote&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;CREATE TABLE test_solr_mysql
- (
-  id INT UNSIGNED NOT NULL AUTO_INCREMENT,
-  name VARCHAR(45) NULL,
-  created TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
-  PRIMARY KEY (id)
- );
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;blockquote&gt;
+
+  &lt;!-- HTML generated using hilite.me (emacs syntax) --&gt;
+  &lt;div style=&quot;background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;&lt;span style=&quot;color: #AA22FF; font-weight: bold&quot;&gt;CREATE&lt;/span&gt; &lt;span style=&quot;color: #AA22FF; font-weight: bold&quot;&gt;TABLE&lt;/span&gt; &lt;span style=&quot;color: #00A000&quot;&gt;test_solr_mysql&lt;/span&gt;
+     (
+      id &lt;span style=&quot;color: #00BB00; font-weight: bold&quot;&gt;INT&lt;/span&gt; &lt;span style=&quot;color: #AA22FF; font-weight: bold&quot;&gt;UNSIGNED&lt;/span&gt; &lt;span style=&quot;color: #AA22FF; font-weight: bold&quot;&gt;NOT&lt;/span&gt; &lt;span style=&quot;color: #880000&quot;&gt;NULL&lt;/span&gt; &lt;span style=&quot;color: #AA22FF&quot;&gt;AUTO_INCREMENT&lt;/span&gt;,
+      name &lt;span style=&quot;color: #00BB00; font-weight: bold&quot;&gt;VARCHAR&lt;/span&gt;(&lt;span style=&quot;color: #666666&quot;&gt;45&lt;/span&gt;) &lt;span style=&quot;color: #880000&quot;&gt;NULL&lt;/span&gt;,
+      created &lt;span style=&quot;color: #00BB00; font-weight: bold&quot;&gt;TIMESTAMP&lt;/span&gt; &lt;span style=&quot;color: #880000&quot;&gt;NULL&lt;/span&gt; &lt;span style=&quot;color: #AA22FF; font-weight: bold&quot;&gt;DEFAULT&lt;/span&gt; &lt;span style=&quot;color: #AA22FF; font-weight: bold&quot;&gt;CURRENT_TIMESTAMP&lt;/span&gt;,
+      &lt;span style=&quot;color: #AA22FF; font-weight: bold&quot;&gt;PRIMARY&lt;/span&gt; &lt;span style=&quot;color: #AA22FF; font-weight: bold&quot;&gt;KEY&lt;/span&gt; (id)
+     );&lt;/pre&gt;&lt;/div&gt;
+&lt;/blockquote&gt;
 
 &lt;blockquote&gt;
   &lt;h3 id=&quot;2-populate-the-above-table&quot;&gt;2. Populate the above table&lt;/h3&gt;
 &lt;/blockquote&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;INSERT INTO `test_solr_mysql` (`name`) VALUES ('Jean');
-INSERT INTO `test_solr_mysql` (`name`) VALUES ('Jack');
-INSERT INTO `test_solr_mysql` (`name`) VALUES ('Jason');
-INSERT INTO `test_solr_mysql` (`name`) VALUES ('Vego');
-INSERT INTO `test_solr_mysql` (`name`) VALUES ('Grunt');
-INSERT INTO `test_solr_mysql` (`name`) VALUES ('Jasper');
-INSERT INTO `test_solr_mysql` (`name`) VALUES ('Fred');
-INSERT INTO `test_solr_mysql` (`name`) VALUES ('Jenna');
-INSERT INTO `test_solr_mysql` (`name`) VALUES ('Rebecca');
-INSERT INTO `test_solr_mysql` (`name`) VALUES ('Roland');
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;blockquote&gt;
+
+  &lt;!-- HTML generated using hilite.me --&gt;
+  &lt;div style=&quot;background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;&quot;&gt;&lt;pre style=&quot;margin: 0; line-height: 125%&quot;&gt;    &lt;span style=&quot;color: #AA22FF; font-weight: bold&quot;&gt;INSERT&lt;/span&gt; &lt;span style=&quot;color: #AA22FF; font-weight: bold&quot;&gt;INTO&lt;/span&gt; &lt;span style=&quot;color: #B8860B&quot;&gt;`test_solr_mysql`&lt;/span&gt; (&lt;span style=&quot;color: #B8860B&quot;&gt;`name`&lt;/span&gt;) &lt;span style=&quot;color: #AA22FF; font-weight: bold&quot;&gt;VALUES&lt;/span&gt; (&lt;span style=&quot;color: #BB4444&quot;&gt;&amp;#39;Jean&amp;#39;&lt;/span&gt;);
+    &lt;span style=&quot;color: #AA22FF; font-weight: bold&quot;&gt;INSERT&lt;/span&gt; &lt;span style=&quot;color: #AA22FF; font-weight: bold&quot;&gt;INTO&lt;/span&gt; &lt;span style=&quot;color: #B8860B&quot;&gt;`test_solr_mysql`&lt;/span&gt; (&lt;span style=&quot;color: #B8860B&quot;&gt;`name`&lt;/span&gt;) &lt;span style=&quot;color: #AA22FF; font-weight: bold&quot;&gt;VALUES&lt;/span&gt; (&lt;span style=&quot;color: #BB4444&quot;&gt;&amp;#39;Jack&amp;#39;&lt;/span&gt;);
+    &lt;span style=&quot;color: #AA22FF; font-weight: bold&quot;&gt;INSERT&lt;/span&gt; &lt;span style=&quot;color: #AA22FF; font-weight: bold&quot;&gt;INTO&lt;/span&gt; &lt;span style=&quot;color: #B8860B&quot;&gt;`test_solr_mysql`&lt;/span&gt; (&lt;span style=&quot;color: #B8860B&quot;&gt;`name`&lt;/span&gt;) &lt;span style=&quot;color: #AA22FF; font-weight: bold&quot;&gt;VALUES&lt;/span&gt; (&lt;span style=&quot;color: #BB4444&quot;&gt;&amp;#39;Jason&amp;#39;&lt;/span&gt;);
+    &lt;span style=&quot;color: #AA22FF; font-weight: bold&quot;&gt;INSERT&lt;/span&gt; &lt;span style=&quot;color: #AA22FF; font-weight: bold&quot;&gt;INTO&lt;/span&gt; &lt;span style=&quot;color: #B8860B&quot;&gt;`test_solr_mysql`&lt;/span&gt; (&lt;span style=&quot;color: #B8860B&quot;&gt;`name`&lt;/span&gt;) &lt;span style=&quot;color: #AA22FF; font-weight: bold&quot;&gt;VALUES&lt;/span&gt; (&lt;span style=&quot;color: #BB4444&quot;&gt;&amp;#39;Vego&amp;#39;&lt;/span&gt;);
+    &lt;span style=&quot;color: #AA22FF; font-weight: bold&quot;&gt;INSERT&lt;/span&gt; &lt;span style=&quot;color: #AA22FF; font-weight: bold&quot;&gt;INTO&lt;/span&gt; &lt;span style=&quot;color: #B8860B&quot;&gt;`test_solr_mysql`&lt;/span&gt; (&lt;span style=&quot;color: #B8860B&quot;&gt;`name`&lt;/span&gt;) &lt;span style=&quot;color: #AA22FF; font-weight: bold&quot;&gt;VALUES&lt;/span&gt; (&lt;span style=&quot;color: #BB4444&quot;&gt;&amp;#39;Grunt&amp;#39;&lt;/span&gt;);
+    &lt;span style=&quot;color: #AA22FF; font-weight: bold&quot;&gt;INSERT&lt;/span&gt; &lt;span style=&quot;color: #AA22FF; font-weight: bold&quot;&gt;INTO&lt;/span&gt; &lt;span style=&quot;color: #B8860B&quot;&gt;`test_solr_mysql`&lt;/span&gt; (&lt;span style=&quot;color: #B8860B&quot;&gt;`name`&lt;/span&gt;) &lt;span style=&quot;color: #AA22FF; font-weight: bold&quot;&gt;VALUES&lt;/span&gt; (&lt;span style=&quot;color: #BB4444&quot;&gt;&amp;#39;Jasper&amp;#39;&lt;/span&gt;);
+    &lt;span style=&quot;color: #AA22FF; font-weight: bold&quot;&gt;INSERT&lt;/span&gt; &lt;span style=&quot;color: #AA22FF; font-weight: bold&quot;&gt;INTO&lt;/span&gt; &lt;span style=&quot;color: #B8860B&quot;&gt;`test_solr_mysql`&lt;/span&gt; (&lt;span style=&quot;color: #B8860B&quot;&gt;`name`&lt;/span&gt;) &lt;span style=&quot;color: #AA22FF; font-weight: bold&quot;&gt;VALUES&lt;/span&gt; (&lt;span style=&quot;color: #BB4444&quot;&gt;&amp;#39;Fred&amp;#39;&lt;/span&gt;);
+    &lt;span style=&quot;color: #AA22FF; font-weight: bold&quot;&gt;INSERT&lt;/span&gt; &lt;span style=&quot;color: #AA22FF; font-weight: bold&quot;&gt;INTO&lt;/span&gt; &lt;span style=&quot;color: #B8860B&quot;&gt;`test_solr_mysql`&lt;/span&gt; (&lt;span style=&quot;color: #B8860B&quot;&gt;`name`&lt;/span&gt;) &lt;span style=&quot;color: #AA22FF; font-weight: bold&quot;&gt;VALUES&lt;/span&gt; (&lt;span style=&quot;color: #BB4444&quot;&gt;&amp;#39;Jenna&amp;#39;&lt;/span&gt;);
+    &lt;span style=&quot;color: #AA22FF; font-weight: bold&quot;&gt;INSERT&lt;/span&gt; &lt;span style=&quot;color: #AA22FF; font-weight: bold&quot;&gt;INTO&lt;/span&gt; &lt;span style=&quot;color: #B8860B&quot;&gt;`test_solr_mysql`&lt;/span&gt; (&lt;span style=&quot;color: #B8860B&quot;&gt;`name`&lt;/span&gt;) &lt;span style=&quot;color: #AA22FF; font-weight: bold&quot;&gt;VALUES&lt;/span&gt; (&lt;span style=&quot;color: #BB4444&quot;&gt;&amp;#39;Rebecca&amp;#39;&lt;/span&gt;);
+    &lt;span style=&quot;color: #AA22FF; font-weight: bold&quot;&gt;INSERT&lt;/span&gt; &lt;span style=&quot;color: #AA22FF; font-weight: bold&quot;&gt;INTO&lt;/span&gt; &lt;span style=&quot;color: #B8860B&quot;&gt;`test_solr_mysql`&lt;/span&gt; (&lt;span style=&quot;color: #B8860B&quot;&gt;`name`&lt;/span&gt;) &lt;span style=&quot;color: #AA22FF; font-weight: bold&quot;&gt;VALUES&lt;/span&gt; (&lt;span style=&quot;color: #BB4444&quot;&gt;&amp;#39;Roland&amp;#39;&lt;/span&gt;);&lt;/pre&gt;&lt;/div&gt;
+&lt;/blockquote&gt;
 
 &lt;h3 id=&quot;getting-inside-the-core-and-adding-the-lib-directives&quot;&gt;Getting inside the core and adding the lib directives&lt;/h3&gt;
 
@@ -230,9 +261,10 @@ INSERT INTO `test_solr_mysql` (`name`) VALUES ('Roland');
   &lt;h3 id=&quot;1-navigate-to&quot;&gt;1. Navigate to&lt;/h3&gt;
 &lt;/blockquote&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;shankar@shankar-lenovo: ~/Downloads/solr-4.8.1/example/solr/collection1/conf
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;blockquote&gt;
+  &lt;!-- HTML generated using hilite.me --&gt;
+  &lt;div style=&quot;background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;shankar@shankar-lenovo: ~/Downloads/solr-4.8.1/example/solr/collection1/conf&lt;/pre&gt;&lt;/div&gt;
+&lt;/blockquote&gt;
 
 &lt;blockquote&gt;
   &lt;h3 id=&quot;2-modifying-the-solrconfigxml&quot;&gt;2. Modifying the solrconfig.xml&lt;/h3&gt;
@@ -240,21 +272,23 @@ INSERT INTO `test_solr_mysql` (`name`) VALUES ('Roland');
 
 &lt;p&gt;Add these two directives to this file..&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &amp;lt;lib dir=&quot;../../../contrib/dataimporthandler/lib/&quot; regex=&quot;.*\.jar&quot; /&amp;gt;
-  &amp;lt;lib dir=&quot;../../../dist/&quot; regex=&quot;solr-dataimporthandler-\d.*\.jar&quot; /&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;blockquote&gt;
+  &lt;!-- HTML generated using hilite.me --&gt;
+  &lt;div style=&quot;background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;&lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;&amp;lt;lib&lt;/span&gt; &lt;span style=&quot;color: #BB4444&quot;&gt;dir=&amp;quot;../../../contrib/dataimporthandler/lib/&amp;quot;&lt;/span&gt; &lt;span style=&quot;color: #BB4444&quot;&gt;regex=&amp;quot;.*\.jar&amp;quot;&lt;/span&gt; &lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;&amp;lt;lib&lt;/span&gt; &lt;span style=&quot;color: #BB4444&quot;&gt;dir=&amp;quot;../../../dist/&amp;quot;&lt;/span&gt; &lt;span style=&quot;color: #BB4444&quot;&gt;regex=&amp;quot;solr-dataimporthandler-\d.*\.jar&amp;quot;&lt;/span&gt; &lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;/&amp;gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;Now add the &lt;strong&gt;DIH&lt;/strong&gt; (Data Import Handler)&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;requestHandler name=&quot;/dataimport&quot; 
-  class=&quot;org.apache.solr.handler.dataimport.DataImportHandler&quot; &amp;gt;
-    &amp;lt;lst name=&quot;defaults&quot;&amp;gt;
-      &amp;lt;str name=&quot;config&quot;&amp;gt;db-data-config.xml&amp;lt;/str&amp;gt;
-    &amp;lt;/lst&amp;gt;
-&amp;lt;/requestHandler&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;blockquote&gt;
+  &lt;!-- HTML generated using hilite.me --&gt;
+  &lt;div style=&quot;background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;    &lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;&amp;lt;requestHandler&lt;/span&gt; &lt;span style=&quot;color: #BB4444&quot;&gt;name=&amp;quot;/dataimport&amp;quot;&lt;/span&gt; 
+      &lt;span style=&quot;color: #BB4444&quot;&gt;class=&amp;quot;org.apache.solr.handler.dataimport.DataImportHandler&amp;quot;&lt;/span&gt; &lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;&amp;lt;lst&lt;/span&gt; &lt;span style=&quot;color: #BB4444&quot;&gt;name=&amp;quot;defaults&amp;quot;&lt;/span&gt;&lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;&amp;gt;&lt;/span&gt;
+          &lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;&amp;lt;str&lt;/span&gt; &lt;span style=&quot;color: #BB4444&quot;&gt;name=&amp;quot;config&amp;quot;&lt;/span&gt;&lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;&amp;gt;&lt;/span&gt;db-data-config.xml&lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;&amp;lt;/str&amp;gt;&lt;/span&gt;
+        &lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;&amp;lt;/lst&amp;gt;&lt;/span&gt;
+    &lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;&amp;lt;/requestHandler&amp;gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/blockquote&gt;
 
 &lt;blockquote&gt;
   &lt;h3 id=&quot;3-create-the-db-data-configxml-file&quot;&gt;3. Create the db-data-config.xml file&lt;/h3&gt;
@@ -262,18 +296,19 @@ INSERT INTO `test_solr_mysql` (`name`) VALUES ('Roland');
 
 &lt;p&gt;If the file exists then ignore, add these lines to that file. As you can see the first line, you need to provide the credentials of your &lt;strong&gt;MySQL&lt;/strong&gt; database. The Database name, username and password.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;dataConfig&amp;gt;
-    &amp;lt;dataSource type=&quot;JdbcDataSource&quot; driver=&quot;com.mysql.jdbc.Driver&quot; url=&quot;jdbc:mysql://localhost/yourdbname&quot; user=&quot;dbuser&quot; password=&quot;dbpass&quot;/&amp;gt;
-    &amp;lt;document&amp;gt;
-   &amp;lt;entity name=&quot;test_solr&quot; query=&quot;select CONCAT('test_solr-',id) as rid,name from test_solr_mysql WHERE '${dataimporter.request.clean}' != 'false'
-      OR `created` &amp;gt; '${dataimporter.last_index_time}'&quot; &amp;gt;
-    &amp;lt;field name=&quot;id&quot; column=&quot;rid&quot; /&amp;gt;
-    &amp;lt;field name=&quot;solr_name&quot; column=&quot;name&quot; /&amp;gt;
-    &amp;lt;/entity&amp;gt;
-   &amp;lt;/document&amp;gt;
-&amp;lt;/dataConfig&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;blockquote&gt;
+  &lt;!-- HTML generated using hilite.me --&gt;
+  &lt;div style=&quot;background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;    &lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;&amp;lt;dataConfig&amp;gt;&lt;/span&gt;
+        &lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;&amp;lt;dataSource&lt;/span&gt; &lt;span style=&quot;color: #BB4444&quot;&gt;type=&amp;quot;JdbcDataSource&amp;quot;&lt;/span&gt; &lt;span style=&quot;color: #BB4444&quot;&gt;driver=&amp;quot;com.mysql.jdbc.Driver&amp;quot;&lt;/span&gt; &lt;span style=&quot;color: #BB4444&quot;&gt;url=&amp;quot;jdbc:mysql://localhost/yourdbname&amp;quot;&lt;/span&gt; &lt;span style=&quot;color: #BB4444&quot;&gt;user=&amp;quot;dbuser&amp;quot;&lt;/span&gt; &lt;span style=&quot;color: #BB4444&quot;&gt;password=&amp;quot;dbpass&amp;quot;&lt;/span&gt;&lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;/&amp;gt;&lt;/span&gt;
+        &lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;&amp;lt;document&amp;gt;&lt;/span&gt;
+       &lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;&amp;lt;entity&lt;/span&gt; &lt;span style=&quot;color: #BB4444&quot;&gt;name=&amp;quot;test_solr&amp;quot;&lt;/span&gt; &lt;span style=&quot;color: #BB4444&quot;&gt;query=&amp;quot;select CONCAT(&amp;#39;test_solr-&amp;#39;,id) as rid,name from test_solr_mysql WHERE &amp;#39;${dataimporter.request.clean}&amp;#39; != &amp;#39;false&amp;#39;&lt;/span&gt;
+&lt;span style=&quot;color: #BB4444&quot;&gt;          OR `created` &amp;gt; &amp;#39;${dataimporter.last_index_time}&amp;#39;&amp;quot;&lt;/span&gt; &lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;&amp;lt;field&lt;/span&gt; &lt;span style=&quot;color: #BB4444&quot;&gt;name=&amp;quot;id&amp;quot;&lt;/span&gt; &lt;span style=&quot;color: #BB4444&quot;&gt;column=&amp;quot;rid&amp;quot;&lt;/span&gt; &lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;/&amp;gt;&lt;/span&gt;
+        &lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;&amp;lt;field&lt;/span&gt; &lt;span style=&quot;color: #BB4444&quot;&gt;name=&amp;quot;solr_name&amp;quot;&lt;/span&gt; &lt;span style=&quot;color: #BB4444&quot;&gt;column=&amp;quot;name&amp;quot;&lt;/span&gt; &lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;/&amp;gt;&lt;/span&gt;
+        &lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;&amp;lt;/entity&amp;gt;&lt;/span&gt;
+       &lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;&amp;lt;/document&amp;gt;&lt;/span&gt;
+    &lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;&amp;lt;/dataConfig&amp;gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/blockquote&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;&lt;strong&gt;Tip&lt;/strong&gt; : You can have any number of entities but watch out for id field, if they are same then indexing will skipped.&lt;/p&gt;
@@ -285,10 +320,11 @@ INSERT INTO `test_solr_mysql` (`name`) VALUES ('Roland');
 
 &lt;p&gt;Add this to your &lt;strong&gt;schema.xml&lt;/strong&gt; as shown..&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;uniqueKey&amp;gt;id&amp;lt;/uniqueKey&amp;gt;
-&amp;lt;field name=&quot;solr_name&quot; type=&quot;string&quot; indexed=&quot;true&quot; stored=&quot;true&quot; /&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;blockquote&gt;
+  &lt;!-- HTML generated using hilite.me --&gt;
+  &lt;div style=&quot;background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;&lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;&amp;lt;uniqueKey&amp;gt;&lt;/span&gt;id&lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;&amp;lt;/uniqueKey&amp;gt;&lt;/span&gt;
+&lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;&amp;lt;field&lt;/span&gt; &lt;span style=&quot;color: #BB4444&quot;&gt;name=&amp;quot;solr_name&amp;quot;&lt;/span&gt; &lt;span style=&quot;color: #BB4444&quot;&gt;type=&amp;quot;string&amp;quot;&lt;/span&gt; &lt;span style=&quot;color: #BB4444&quot;&gt;indexed=&amp;quot;true&amp;quot;&lt;/span&gt; &lt;span style=&quot;color: #BB4444&quot;&gt;stored=&amp;quot;true&amp;quot;&lt;/span&gt; &lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;/&amp;gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/blockquote&gt;
 
 &lt;hr /&gt;
 
@@ -330,7 +366,10 @@ INSERT INTO `test_solr_mysql` (`name`) VALUES ('Roland');
 
 &lt;p&gt;Alternatively, you could use a direct &lt;strong&gt;full-import&lt;/strong&gt; query like this too..&lt;/p&gt;
 
-&lt;p&gt;`http://localhost:8983/solr/collection1/dataimport?command=full-import&amp;amp;commit=true&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;!-- HTML generated using hilite.me --&gt;
+  &lt;div style=&quot;background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;&quot;&gt;&lt;pre style=&quot;margin: 0; line-height: 125%&quot;&gt;http://localhost:8983/solr/collection1/dataimport?command=full-import&amp;amp;commit=true&lt;/pre&gt;&lt;/div&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://i.stack.imgur.com/sHvSO.png&quot; alt=&quot;The Data Import Handler&quot; /&gt;&lt;/p&gt;
 
@@ -350,13 +389,19 @@ INSERT INTO `test_solr_mysql` (`name`) VALUES ('Roland');
 
 &lt;p&gt;The corresponding &lt;strong&gt;Solr&lt;/strong&gt; query for listing all the records is&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;http://localhost:8983/solr/collection1/select?q=*:*&amp;amp;wt=json&amp;amp;indent=true&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;!-- HTML generated using hilite.me --&gt;
+  &lt;div style=&quot;background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;&quot;&gt;&lt;pre style=&quot;margin: 0; line-height: 125%&quot;&gt;http://localhost:8983/solr/collection1/select?q=*:*&amp;amp;wt=json&amp;amp;indent=true&lt;/pre&gt;&lt;/div&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://i.stack.imgur.com/aZP9W.png&quot; alt=&quot;The indexed data&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Well, there goes all 10 indexed records. Say, we need only names starting with &lt;strong&gt;Ja&lt;/strong&gt; , in this case, you need to target the column name &lt;code class=&quot;highlighter-rouge&quot;&gt;solr_name&lt;/code&gt;, Hence your query goes like this.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;http://localhost:8983/solr/collection1/select?q=solr_name:Ja*&amp;amp;wt=json&amp;amp;indent=true&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;!-- HTML generated using hilite.me --&gt;
+  &lt;div style=&quot;background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;&quot;&gt;&lt;pre style=&quot;margin: 0; line-height: 125%&quot;&gt;http://localhost:8983/solr/collection1/select?q=solr_name:Ja*&amp;amp;wt=json&amp;amp;indent=true&lt;/pre&gt;&lt;/div&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://i.stack.imgur.com/qeArE.png&quot; alt=&quot;The JSON data starting with Ja*&quot; /&gt;&lt;/p&gt;
 
@@ -365,7 +410,7 @@ INSERT INTO `test_solr_mysql` (`name`) VALUES ('Roland');
 &lt;hr /&gt;
 
   
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/development/search-engine-with-solr-getting-started&quot;&gt;Getting Started: Building a simple search engine with Apache Solr.&lt;/a&gt; was originally published by Shankar Damodaran at &lt;a href=&quot;http://localhost:4000&quot;&gt;<b><font size='5.75em'>Inventor<font color='yellow' size='6.75em'>.</font> Biker<font color='yellow' size='6.75em'>.</font> Foodie<font color='yellow' size='6.75em'>.</font> h4ck3r<font color='yellow' size='6.75em'>.</font> Wanderlust<font color='yellow' size='6.75em'>. </font> </font><br>&lt;/a&gt; on July 12, 2017.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/development/building-search-engine-with-solr-mysql-linux-getting-started&quot;&gt;Getting Started: Building a simple search engine with Apache Solr.&lt;/a&gt; was originally published by Shankar Damodaran at &lt;a href=&quot;http://localhost:4000&quot;&gt;<b><font size='5.75em'>Inventor<font color='yellow' size='6.75em'>.</font> Biker<font color='yellow' size='6.75em'>.</font> Foodie<font color='yellow' size='6.75em'>.</font> h4ck3r<font color='yellow' size='6.75em'>.</font> Wanderlust<font color='yellow' size='6.75em'>. </font> </font><br>&lt;/a&gt; on July 12, 2017.&lt;/p&gt;</content>
 </entry>
 
 

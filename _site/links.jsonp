@@ -17,7 +17,7 @@ callback([
 
   {
     "text": "Getting Started: Building a simple search engine with Apache Solr.",
-    "href": "http://localhost:4000/development/search-engine-with-solr-getting-started"
+    "href": "http://localhost:4000/development/building-search-engine-with-solr-mysql-linux-getting-started"
   } 
 
 ])
