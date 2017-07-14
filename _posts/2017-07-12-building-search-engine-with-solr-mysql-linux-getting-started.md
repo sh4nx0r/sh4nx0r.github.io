@@ -233,7 +233,7 @@ As the marker indicates, go to **Logging** inorder to check if any of the above 
 
 > ### Step 2: Check your Logs
 
-Ok so now you are here, As you can there are a lot of yellow messages (WARNINGS). Make sure you don't have error messages marked in red. Earlier, on our configuration we had added a select query on our **db-data-config.xml**, say if there were any errors on that query, it would have shown up here.
+Ok so now you are here, As you can see there are a lot of yellow messages (WARNINGS). Make sure you don't have error messages marked in red. Earlier, on our configuration we had added a select query on our **db-data-config.xml**, say if there were any errors on that query, it would have shown up here.
 
 ![This is the logging section of your Apache Solr engine][14]
 

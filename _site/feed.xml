@@ -7,7 +7,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://localhost:4000/" />
-<updated>2017-07-13T20:53:49+06:00</updated>
+<updated>2017-07-14T12:48:48+06:00</updated>
 <id>http://localhost:4000/</id>
 <author>
   <name>Shankar Damodaran</name>
@@ -350,7 +350,7 @@ Say ..  &lt;strong&gt;Downloads&lt;/strong&gt; or whatever.. So it will look lik
   &lt;h3 id=&quot;step-2-check-your-logs&quot;&gt;Step 2: Check your Logs&lt;/h3&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Ok so now you are here, As you can there are a lot of yellow messages (WARNINGS). Make sure you don’t have error messages marked in red. Earlier, on our configuration we had added a select query on our &lt;strong&gt;db-data-config.xml&lt;/strong&gt;, say if there were any errors on that query, it would have shown up here.&lt;/p&gt;
+&lt;p&gt;Ok so now you are here, As you can see there are a lot of yellow messages (WARNINGS). Make sure you don’t have error messages marked in red. Earlier, on our configuration we had added a select query on our &lt;strong&gt;db-data-config.xml&lt;/strong&gt;, say if there were any errors on that query, it would have shown up here.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://i.stack.imgur.com/8l6n5.png&quot; alt=&quot;This is the logging section of your Apache Solr engine&quot; /&gt;&lt;/p&gt;
 
