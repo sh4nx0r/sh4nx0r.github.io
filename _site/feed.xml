@@ -7,7 +7,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://localhost:4000/" />
-<updated>2017-07-14T12:48:48+06:00</updated>
+<updated>2017-07-17T14:06:51+06:00</updated>
 <id>http://localhost:4000/</id>
 <author>
   <name>Shankar Damodaran</name>
@@ -702,6 +702,21 @@ holder. For eg: SSL certificate for a website.&lt;/p&gt;
   &lt;li&gt;COBIT&lt;/li&gt;
   &lt;li&gt;COSO&lt;/li&gt;
   &lt;li&gt;HITRUST CSF&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;48-consider-you-are-in-the-internal-network-of-a-organization-you-need-to-find-the-operating-system-of-another-machine-in-the-same-network-without-using-any-tools-what-command-would-you-use-under-a-windows-environment&quot;&gt;48. Consider you are in the internal network of a organization, you need to find the Operating System of another machine in the same network without using any tools. What command would you use under a Windows Environment?&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;systeminfo /s&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;49-state-byod-and-its-merits-and-demerits&quot;&gt;49. State BYOD and its merits and demerits.&lt;/h3&gt;
+&lt;p&gt;BYOD - Bring Your Own Device is a type of policy in any organization that lets employees to bring in their own computers, laptops or other devices that would let them connect to office’s network and do the official work. Employees personal devices maybe faster than that of the gadgets their companies provide. Worst part is if the personal gadget is affected by any virus or malware if will spread through the entire network.&lt;/p&gt;
+
+&lt;h3 id=&quot;50-what-are-the-different-modules-of-metasploit-architecture&quot;&gt;50. What are the different modules of Metasploit Architecture?&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Auxiliary&lt;/li&gt;
+  &lt;li&gt;Encoders&lt;/li&gt;
+  &lt;li&gt;Exploits&lt;/li&gt;
+  &lt;li&gt;Nops&lt;/li&gt;
+  &lt;li&gt;Payloads&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;hr /&gt;

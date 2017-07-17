@@ -265,6 +265,19 @@ holder. For eg: SSL certificate for a website.
 - COSO
 - HITRUST CSF
 
+### 48. Consider you are in the internal network of a organization, you need to find the Operating System of another machine in the same network without using any tools. What command would you use under a Windows Environment?
+`systeminfo /s`.
 
+
+### 49. State BYOD and its merits and demerits.
+BYOD - Bring Your Own Device is a type of policy in any organization that lets employees to bring in their own computers, laptops or other devices that would let them connect to office's network and do the official work. Employees personal devices maybe faster than that of the gadgets their companies provide. Worst part is if the personal gadget is affected by any virus or malware if will spread through the entire network.
+
+
+### 50. What are the different modules of Metasploit Architecture?
+- Auxiliary
+- Encoders
+- Exploits
+- Nops
+- Payloads
 
 ---
