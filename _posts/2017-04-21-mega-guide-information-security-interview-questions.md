@@ -13,7 +13,7 @@ comments: true
 featured: false
 ---
 
-Almost **50** questions and still counting, I've been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a **Guide** to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness to the reader.
+Almost **60** questions and still counting, I've been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a **Guide** to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness to the reader.
 
 
 ### 1. What is a Repudiation Attack?
@@ -279,5 +279,50 @@ BYOD - Bring Your Own Device is a type of policy in any organization that lets e
 - Exploits
 - Nops
 - Payloads
+
+### 51. Can you give a real-time example for a Threat, Risk, Vulnerability, Exploit and a Payload?
+This is my own example (correct me if am wrong). Let us consider an encounter between a Cop and a Gangster. The Cop is held by the Gangster in a Gunpoint situation and threatening him to 
+provide intel on the remaining cop's location. We can relate this scenario to our question.
+
+- Threat: The Gangster
+- Vulnerability: The Unarmed Cop.
+- Exploit: The Pistol the Gangster holds.
+- Payload: The loaded bullet in the Gun.
+- Risk: The Intel being disclosed.
+
+### 52. Explain the three different security controls.
+- Physical Controls: They are the first line of defense. Physical controls include Gates, Walls, Fences, Cameras, Locks, etc. This is the most critical aspect of Security Controls.
+- Logical Controls: Otherwise termed as technical controls, they constitute authentication schemes that are used to protect unauthorized access to terminals. (eg,. Passwords). Also 
+Firewalls, Intrusion Detection and Prevention Systems, etc.
+- Administrative Controls: They are more or like Policies, Procedures, Guidelines that are to be followed. (eg., A password policy stating that the password must be changed every 30 days)
+
+### 53. Contrast Defense in Depth.
+Defense in Depth is also known as Layered Security that enables multiple security countermeasures in each and every level to make sure CIA (Confidentiality, Integrity, Availability) of data is intact. It uses multiple approach to protect the data being penetrated by attackers. For eg. Having multiple security measures at the external network, internal network, etc.
+
+### 54. Name the attacks that affects the CIA Triad.
+Just listing a single attack for each type.
+- Confidentiality: Man in the Middle Attack
+- Integrity: SQL Injection Attack
+- Availability: Denial of Service Attack
+
+### 55. Which takes place first. Authentication or Authorization?
+Authentication takes place first and then followed by Authorization. Easiest way to remember is, You authenticate yourself to any terminal or device using authentication methods (what you are, what you have & what you know), thus the system checks whether you are authorized to use the terminal.
+
+### 56. How Deep Packet Inspection Firewalls are better than Packet Filtering Firewalls(Stateful & Stateless) and depict their challenges too.
+The DPI Firewalls not just inspects the traffic but the contents inside it which makes them very effective to block nefarious packets. They are relatively slow compared to packet filtering firewalls and also there is a privacy at stake since it can read almost any content. 
+
+### 57. What is an Endpoint Security and how does it work?
+A centralized approach to ensure protection on all endpoints like Desktops, Laptops, Tablets, Smartphones, IoT devices connected to corporate network is Endpoint Security. Endpoint Security works on a client-server model. In the network, the EndPoint Software will be installed on a centralized device like a Server and client software will be installed on End Point devices as mentioned above. An Endpoint Security model is very useful on a BYOD scenario., When a user brings his/her personal laptop with malware infection, the centralized server gets an alert. Endpoint Security Software Solutions does come with inbuilt Firewall, AntiVirus and AntiMalware Softwares, etc.,
+
+### 58. What does an SIEM device do?
+SIEM is the acronym for Security Information and Event Management (SIEM). These devices basically collect logs from all of the security devices like Firewalls, IDS, etc and lets you manage from a centralized dashboard. It helps you easily correlate, search, identify and investigate events and activities that is deemed to be critical.
+
+### 59. Does Active Directory Domain Services really neccessary for any organization?
+Definitely it is required for a business organization as it helps the administrators to collectively gather information about the network computers, users, policies, etc as a Centralized Desktop Management. Active Directory also provides support for Exchange and Sharepoint services.
+
+### 60. What's an Interactive Logon and what are the types associated with it?
+May sound confusing for some, An interactive logon is nothing but a method to logon to the computer or wokstation. A new session can be initiated by CTRL+ALT+DEL. Local Logon (SAM), Domain Logon (Active Directory) & Smartcard Logon (Hardware Token) are the types associated with it.
+
+
 
 ---

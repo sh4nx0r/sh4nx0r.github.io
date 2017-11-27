@@ -172,7 +172,7 @@ $(function() {
         <img src="http://localhost:4000/images/blogimages/2017-04-21/cover-2017-04-21.jpg" alt="cover-image" />
 
         <article class="notepad-post-content post">
-            <div><p>Almost <strong>50</strong> questions and still counting, I’ve been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a <strong>Guide</strong> to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness to the reader.</p>
+            <div><p>Almost <strong>60</strong> questions and still counting, I’ve been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a <strong>Guide</strong> to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness to the reader.</p>
 
 <h3 id="1-what-is-a-repudiation-attack">1. What is a Repudiation Attack?</h3>
 
@@ -461,6 +461,55 @@ holder. For eg: SSL certificate for a website.</p>
   <li>Nops</li>
   <li>Payloads</li>
 </ul>
+
+<h3 id="51-can-you-give-a-real-time-example-for-a-threat-risk-vulnerability-exploit-and-a-payload">51. Can you give a real-time example for a Threat, Risk, Vulnerability, Exploit and a Payload?</h3>
+<p>This is my own example (correct me if am wrong). Let us consider an encounter between a Cop and a Gangster. The Cop is held by the Gangster in a Gunpoint situation and threatening him to 
+provide intel on the remaining cop’s location. We can relate this scenario to our question.</p>
+
+<ul>
+  <li>Threat: The Gangster</li>
+  <li>Vulnerability: The Unarmed Cop.</li>
+  <li>Exploit: The Pistol the Gangster holds.</li>
+  <li>Payload: The loaded bullet in the Gun.</li>
+  <li>Risk: The Intel being disclosed.</li>
+</ul>
+
+<h3 id="52-explain-the-three-different-security-controls">52. Explain the three different security controls.</h3>
+<ul>
+  <li>Physical Controls: They are the first line of defense. Physical controls include Gates, Walls, Fences, Cameras, Locks, etc. This is the most critical aspect of Security Controls.</li>
+  <li>Logical Controls: Otherwise termed as technical controls, they constitute authentication schemes that are used to protect unauthorized access to terminals. (eg,. Passwords). Also 
+Firewalls, Intrusion Detection and Prevention Systems, etc.</li>
+  <li>Administrative Controls: They are more or like Policies, Procedures, Guidelines that are to be followed. (eg., A password policy stating that the password must be changed every 30 days)</li>
+</ul>
+
+<h3 id="53-contrast-defense-in-depth">53. Contrast Defense in Depth.</h3>
+<p>Defense in Depth is also known as Layered Security that enables multiple security countermeasures in each and every level to make sure CIA (Confidentiality, Integrity, Availability) of data is intact. It uses multiple approach to protect the data being penetrated by attackers. For eg. Having multiple security measures at the external network, internal network, etc.</p>
+
+<h3 id="54-name-the-attacks-that-affects-the-cia-triad">54. Name the attacks that affects the CIA Triad.</h3>
+<p>Just listing a single attack for each type.</p>
+<ul>
+  <li>Confidentiality: Man in the Middle Attack</li>
+  <li>Integrity: SQL Injection Attack</li>
+  <li>Availability: Denial of Service Attack</li>
+</ul>
+
+<h3 id="55-which-takes-place-first-authentication-or-authorization">55. Which takes place first. Authentication or Authorization?</h3>
+<p>Authentication takes place first and then followed by Authorization. Easiest way to remember is, You authenticate yourself to any terminal or device using authentication methods (what you are, what you have &amp; what you know), thus the system checks whether you are authorized to use the terminal.</p>
+
+<h3 id="56-how-deep-packet-inspection-firewalls-are-better-than-packet-filtering-firewallsstateful--stateless-and-depict-their-challenges-too">56. How Deep Packet Inspection Firewalls are better than Packet Filtering Firewalls(Stateful &amp; Stateless) and depict their challenges too.</h3>
+<p>The DPI Firewalls not just inspects the traffic but the contents inside it which makes them very effective to block nefarious packets. They are relatively slow compared to packet filtering firewalls and also there is a privacy at stake since it can read almost any content.</p>
+
+<h3 id="57-what-is-an-endpoint-security-and-how-does-it-work">57. What is an Endpoint Security and how does it work?</h3>
+<p>A centralized approach to ensure protection on all endpoints like Desktops, Laptops, Tablets, Smartphones, IoT devices connected to corporate network is Endpoint Security. Endpoint Security works on a client-server model. In the network, the EndPoint Software will be installed on a centralized device like a Server and client software will be installed on End Point devices as mentioned above. An Endpoint Security model is very useful on a BYOD scenario., When a user brings his/her personal laptop with malware infection, the centralized server gets an alert. Endpoint Security Software Solutions does come with inbuilt Firewall, AntiVirus and AntiMalware Softwares, etc.,</p>
+
+<h3 id="58-what-does-an-siem-device-do">58. What does an SIEM device do?</h3>
+<p>SIEM is the acronym for Security Information and Event Management (SIEM). These devices basically collect logs from all of the security devices like Firewalls, IDS, etc and lets you manage from a centralized dashboard. It helps you easily correlate, search, identify and investigate events and activities that is deemed to be critical.</p>
+
+<h3 id="59-does-active-directory-domain-services-really-neccessary-for-any-organization">59. Does Active Directory Domain Services really neccessary for any organization?</h3>
+<p>Definitely it is required for a business organization as it helps the administrators to collectively gather information about the network computers, users, policies, etc as a Centralized Desktop Management. Active Directory also provides support for Exchange and Sharepoint services.</p>
+
+<h3 id="60-whats-an-interactive-logon-and-what-are-the-types-associated-with-it">60. What’s an Interactive Logon and what are the types associated with it?</h3>
+<p>May sound confusing for some, An interactive logon is nothing but a method to logon to the computer or wokstation. A new session can be initiated by CTRL+ALT+DEL. Local Logon (SAM), Domain Logon (Active Directory) &amp; Smartcard Logon (Hardware Token) are the types associated with it.</p>
 
 <hr />
 

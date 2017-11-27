@@ -7,7 +7,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://localhost:4000/" />
-<updated>2017-08-26T13:51:26+06:00</updated>
+<updated>2017-11-27T17:29:57+06:00</updated>
 <id>http://localhost:4000/</id>
 <author>
   <name>Shankar Damodaran</name>
@@ -429,7 +429,7 @@ Say ..  &lt;strong&gt;Downloads&lt;/strong&gt; or whatever.. So it will look lik
   <category scheme="http://localhost:4000/tags/#infosec" term="infosec" /><category scheme="http://localhost:4000/tags/#interview%20questions" term="interview questions" /><category scheme="http://localhost:4000/tags/#pentesting" term="pentesting" /><category scheme="http://localhost:4000/tags/#security%20analyst" term="security analyst" />
   <content type="html">
   
-    &lt;p&gt;Almost &lt;strong&gt;50&lt;/strong&gt; questions and still counting, I’ve been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a &lt;strong&gt;Guide&lt;/strong&gt; to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness to the reader.&lt;/p&gt;
+    &lt;p&gt;Almost &lt;strong&gt;60&lt;/strong&gt; questions and still counting, I’ve been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a &lt;strong&gt;Guide&lt;/strong&gt; to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness to the reader.&lt;/p&gt;
 
 &lt;h3 id=&quot;1-what-is-a-repudiation-attack&quot;&gt;1. What is a Repudiation Attack?&lt;/h3&gt;
 
@@ -718,6 +718,55 @@ holder. For eg: SSL certificate for a website.&lt;/p&gt;
   &lt;li&gt;Nops&lt;/li&gt;
   &lt;li&gt;Payloads&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;h3 id=&quot;51-can-you-give-a-real-time-example-for-a-threat-risk-vulnerability-exploit-and-a-payload&quot;&gt;51. Can you give a real-time example for a Threat, Risk, Vulnerability, Exploit and a Payload?&lt;/h3&gt;
+&lt;p&gt;This is my own example (correct me if am wrong). Let us consider an encounter between a Cop and a Gangster. The Cop is held by the Gangster in a Gunpoint situation and threatening him to 
+provide intel on the remaining cop’s location. We can relate this scenario to our question.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Threat: The Gangster&lt;/li&gt;
+  &lt;li&gt;Vulnerability: The Unarmed Cop.&lt;/li&gt;
+  &lt;li&gt;Exploit: The Pistol the Gangster holds.&lt;/li&gt;
+  &lt;li&gt;Payload: The loaded bullet in the Gun.&lt;/li&gt;
+  &lt;li&gt;Risk: The Intel being disclosed.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;52-explain-the-three-different-security-controls&quot;&gt;52. Explain the three different security controls.&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Physical Controls: They are the first line of defense. Physical controls include Gates, Walls, Fences, Cameras, Locks, etc. This is the most critical aspect of Security Controls.&lt;/li&gt;
+  &lt;li&gt;Logical Controls: Otherwise termed as technical controls, they constitute authentication schemes that are used to protect unauthorized access to terminals. (eg,. Passwords). Also 
+Firewalls, Intrusion Detection and Prevention Systems, etc.&lt;/li&gt;
+  &lt;li&gt;Administrative Controls: They are more or like Policies, Procedures, Guidelines that are to be followed. (eg., A password policy stating that the password must be changed every 30 days)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;53-contrast-defense-in-depth&quot;&gt;53. Contrast Defense in Depth.&lt;/h3&gt;
+&lt;p&gt;Defense in Depth is also known as Layered Security that enables multiple security countermeasures in each and every level to make sure CIA (Confidentiality, Integrity, Availability) of data is intact. It uses multiple approach to protect the data being penetrated by attackers. For eg. Having multiple security measures at the external network, internal network, etc.&lt;/p&gt;
+
+&lt;h3 id=&quot;54-name-the-attacks-that-affects-the-cia-triad&quot;&gt;54. Name the attacks that affects the CIA Triad.&lt;/h3&gt;
+&lt;p&gt;Just listing a single attack for each type.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Confidentiality: Man in the Middle Attack&lt;/li&gt;
+  &lt;li&gt;Integrity: SQL Injection Attack&lt;/li&gt;
+  &lt;li&gt;Availability: Denial of Service Attack&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;55-which-takes-place-first-authentication-or-authorization&quot;&gt;55. Which takes place first. Authentication or Authorization?&lt;/h3&gt;
+&lt;p&gt;Authentication takes place first and then followed by Authorization. Easiest way to remember is, You authenticate yourself to any terminal or device using authentication methods (what you are, what you have &amp;amp; what you know), thus the system checks whether you are authorized to use the terminal.&lt;/p&gt;
+
+&lt;h3 id=&quot;56-how-deep-packet-inspection-firewalls-are-better-than-packet-filtering-firewallsstateful--stateless-and-depict-their-challenges-too&quot;&gt;56. How Deep Packet Inspection Firewalls are better than Packet Filtering Firewalls(Stateful &amp;amp; Stateless) and depict their challenges too.&lt;/h3&gt;
+&lt;p&gt;The DPI Firewalls not just inspects the traffic but the contents inside it which makes them very effective to block nefarious packets. They are relatively slow compared to packet filtering firewalls and also there is a privacy at stake since it can read almost any content.&lt;/p&gt;
+
+&lt;h3 id=&quot;57-what-is-an-endpoint-security-and-how-does-it-work&quot;&gt;57. What is an Endpoint Security and how does it work?&lt;/h3&gt;
+&lt;p&gt;A centralized approach to ensure protection on all endpoints like Desktops, Laptops, Tablets, Smartphones, IoT devices connected to corporate network is Endpoint Security. Endpoint Security works on a client-server model. In the network, the EndPoint Software will be installed on a centralized device like a Server and client software will be installed on End Point devices as mentioned above. An Endpoint Security model is very useful on a BYOD scenario., When a user brings his/her personal laptop with malware infection, the centralized server gets an alert. Endpoint Security Software Solutions does come with inbuilt Firewall, AntiVirus and AntiMalware Softwares, etc.,&lt;/p&gt;
+
+&lt;h3 id=&quot;58-what-does-an-siem-device-do&quot;&gt;58. What does an SIEM device do?&lt;/h3&gt;
+&lt;p&gt;SIEM is the acronym for Security Information and Event Management (SIEM). These devices basically collect logs from all of the security devices like Firewalls, IDS, etc and lets you manage from a centralized dashboard. It helps you easily correlate, search, identify and investigate events and activities that is deemed to be critical.&lt;/p&gt;
+
+&lt;h3 id=&quot;59-does-active-directory-domain-services-really-neccessary-for-any-organization&quot;&gt;59. Does Active Directory Domain Services really neccessary for any organization?&lt;/h3&gt;
+&lt;p&gt;Definitely it is required for a business organization as it helps the administrators to collectively gather information about the network computers, users, policies, etc as a Centralized Desktop Management. Active Directory also provides support for Exchange and Sharepoint services.&lt;/p&gt;
+
+&lt;h3 id=&quot;60-whats-an-interactive-logon-and-what-are-the-types-associated-with-it&quot;&gt;60. What’s an Interactive Logon and what are the types associated with it?&lt;/h3&gt;
+&lt;p&gt;May sound confusing for some, An interactive logon is nothing but a method to logon to the computer or wokstation. A new session can be initiated by CTRL+ALT+DEL. Local Logon (SAM), Domain Logon (Active Directory) &amp;amp; Smartcard Logon (Hardware Token) are the types associated with it.&lt;/p&gt;
 
 &lt;hr /&gt;
 
