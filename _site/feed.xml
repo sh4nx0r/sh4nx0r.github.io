@@ -7,7 +7,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://localhost:4000/" />
-<updated>2017-11-27T17:29:57+06:00</updated>
+<updated>2017-12-01T17:18:52+06:00</updated>
 <id>http://localhost:4000/</id>
 <author>
   <name>Shankar Damodaran</name>
@@ -429,7 +429,7 @@ Say ..  &lt;strong&gt;Downloads&lt;/strong&gt; or whatever.. So it will look lik
   <category scheme="http://localhost:4000/tags/#infosec" term="infosec" /><category scheme="http://localhost:4000/tags/#interview%20questions" term="interview questions" /><category scheme="http://localhost:4000/tags/#pentesting" term="pentesting" /><category scheme="http://localhost:4000/tags/#security%20analyst" term="security analyst" />
   <content type="html">
   
-    &lt;p&gt;Almost &lt;strong&gt;60&lt;/strong&gt; questions and still counting, I’ve been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a &lt;strong&gt;Guide&lt;/strong&gt; to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness to the reader.&lt;/p&gt;
+    &lt;p&gt;Almost &lt;strong&gt;70&lt;/strong&gt; questions and still counting, I’ve been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a &lt;strong&gt;Guide&lt;/strong&gt; to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness to the reader.&lt;/p&gt;
 
 &lt;h3 id=&quot;1-what-is-a-repudiation-attack&quot;&gt;1. What is a Repudiation Attack?&lt;/h3&gt;
 
@@ -457,7 +457,7 @@ Say ..  &lt;strong&gt;Downloads&lt;/strong&gt; or whatever.. So it will look lik
 &lt;h3 id=&quot;6-how-do-you-stop-brute-force-attacks&quot;&gt;6. How do you stop Brute-Force Attacks?&lt;/h3&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Adding a CAPTCHA functionality to the login forms.&lt;/li&gt;
+  &lt;li&gt;Adding a &lt;strong&gt;CAPTCHA&lt;/strong&gt; functionality to the login forms.&lt;/li&gt;
   &lt;li&gt;Enforce account lockout mechanism for a maximum of three to four wrong attempts.&lt;/li&gt;
   &lt;li&gt;Fastest fix for a temporary period would be blocking the particular ip address that is making the brute force attempts.&lt;/li&gt;
   &lt;li&gt;Authentication Delays.&lt;/li&gt;
@@ -465,7 +465,7 @@ Say ..  &lt;strong&gt;Downloads&lt;/strong&gt; or whatever.. So it will look lik
 
 &lt;h3 id=&quot;7-whats-the-difference-between-an-exploit-and-a-payload&quot;&gt;7. What’s the difference between an “Exploit” and a “Payload”?&lt;/h3&gt;
 
-&lt;p&gt;An exploit is the medium in the which the payload is contained.Both represent a “piece of code”, but a payload does contain the actual attack whereas an exploit can be termed as a “carrier”. To make the explanation more clear and precise, take a rifle/gun for an instance. The “Gun” is the exploit whereas the “bullet” is the actual payload.&lt;/p&gt;
+&lt;p&gt;An exploit is the medium in which the payload is contained. Both represent a &lt;em&gt;piece of code&lt;/em&gt;, but a payload does contain the actual attack whereas an exploit can be termed as a &lt;em&gt;carrier&lt;/em&gt;. To make the explanation more clear and precise, take a Gun for an instance. The “Gun” is the exploit whereas the “Bullet” is the actual payload.&lt;/p&gt;
 
 &lt;h3 id=&quot;8-why-is-encryption-used-for-confidentiality-instead-of-encoding&quot;&gt;8. Why is encryption used for confidentiality instead of encoding?&lt;/h3&gt;
 
@@ -490,11 +490,11 @@ Say ..  &lt;strong&gt;Downloads&lt;/strong&gt; or whatever.. So it will look lik
 
 &lt;h3 id=&quot;13-what-is-an-open-redirect&quot;&gt;13. What is an Open Redirect?&lt;/h3&gt;
 
-&lt;p&gt;It resides in one of the OWASP Top 10, This happens in a site which does not properly validate parameters that happens during a redirect. For instance; Consider this URL http://www.example.com/login.aspx?redirect=profile.php. What an attacker does is that he could use this opportunity to redirect the logged in users to his/her site by crafting a URL like this. http://www.example.com/login.aspx?redirect=http://somemaliciouswebsite.com&lt;/p&gt;
+&lt;p&gt;It resides in one of the OWASP Top 10, this happens in a site which does not properly validate parameters that happens during a redirect. For instance; Consider this URL http://www.example.com/login.aspx?redirect=profile.php. What an attacker does is that he could use this opportunity to redirect the logged in users to his/her site by crafting a URL like this. http://www.example.com/login.aspx?redirect=http://somemaliciouswebsite.com&lt;/p&gt;
 
 &lt;h3 id=&quot;14-how-would-you-rate-or-rank-a-vulnerability-based-on-your-findings&quot;&gt;14. How would you rate or rank a vulnerability based on your findings?&lt;/h3&gt;
 
-&lt;p&gt;This depends on how much impact the vulnerability could affect your business. An example can answer this question., During your audit say you discover XSS and SQLi vulnerabilities. Both are equally dangerous, but in our scenario we rank XSS as the first most since the database that has the SQLi is not a production one and it is just holds some sample data. Thus we need to rank a vulnerability based on the risk factor.&lt;/p&gt;
+&lt;p&gt;This depends on how much impact the vulnerability could affect your business. An example can answer this question, During an audit say you discover XSS and SQLi vulnerabilities. Both are equally dangerous, but in our scenario we rank XSS as the first most since the database that has the SQLi is not a production one and it is just holds some sample data. Thus we need to rank a vulnerability based on the risk factor.&lt;/p&gt;
 
 &lt;h3 id=&quot;15-what-is-an-active-directory-how-does-ldap-differs-from-active-directory&quot;&gt;15. What is an Active Directory? How does LDAP differs from Active Directory?&lt;/h3&gt;
 
@@ -502,28 +502,28 @@ Say ..  &lt;strong&gt;Downloads&lt;/strong&gt; or whatever.. So it will look lik
 
 &lt;h3 id=&quot;16-give-a-simple-difference-between-authorization-and-authentication&quot;&gt;16. Give a simple difference between Authorization and Authentication?&lt;/h3&gt;
 
-&lt;p&gt;Authorization is a process whereas an Authentication is a method. Authorization takes place during Authentication. This can be made clear with an example, Consider an ATM, You use your card to “authenticate” to that machine and once you have entered the correct pin you are “authorized” to do transacations.&lt;/p&gt;
+&lt;p&gt;Authorization is a process whereas an Authentication is a method. Authorization takes place during Authentication. This can be made clear with an example, Consider an ATM, You use your card to “authenticate” to that machine and once you have entered the correct pin you are “authorized” to do transactions.&lt;/p&gt;
 
 &lt;h3 id=&quot;17-can-you-perform-a-simple-mitm-on-a-mobile-phone&quot;&gt;17. Can you perform a simple MiTM on a mobile phone?&lt;/h3&gt;
 
 &lt;p&gt;Spawn a rogue wireless access point. Wait for the victim to connect to your AP. You can now intercept the communication.&lt;/p&gt;
 
-&lt;h3 id=&quot;18-when-you-deal-with-a-stream-of-confidential-data-to-be-transferred-across-the-channel-what-would-you-do-first-encrypt-or-compress&quot;&gt;18. When you deal with a stream of confidential data to be transferred across the channel, What would you do first. Encrypt or Compress?&lt;/h3&gt;
+&lt;h3 id=&quot;18-when-you-deal-with-a-stream-of-confidential-data-to-be-transferred-across-the-channel-what-would-you-do-first-encrypt-or-compress&quot;&gt;18. When you deal with a stream of confidential data to be transferred across the channel, what would you do first. Encrypt or Compress?&lt;/h3&gt;
 
 &lt;p&gt;Any compression algorithm will look for certain patterns in the data to perform compression. When the data is encrypted, the compression algorithm will find it hard to compress the data (or it may not compress the data at all). So the good option would be. Compress and then Encrypt.&lt;/p&gt;
 
 &lt;h3 id=&quot;19-how-do-you-prevent-csrf-attacks&quot;&gt;19. How do you prevent CSRF Attacks?&lt;/h3&gt;
-&lt;p&gt;Use random tokens for each session and transaction. When a end-user logs to that application, let the application create a token for that particular session. That token should be included in every transaction.&lt;/p&gt;
+&lt;p&gt;Use random tokens for each session and transaction. When an end-user logs to that application, let the application create a token for that particular session. That token should be included in every transaction. You can also use CAPTCHAs to prevent CSRF attacks.&lt;/p&gt;
 
 &lt;h3 id=&quot;20-which-is-better-closed-ports-or-filtered-ports&quot;&gt;20. Which is better. Closed ports or Filtered Ports?&lt;/h3&gt;
-&lt;p&gt;During a scan, closed ports respond to scanners (port scanners like nmap) saying that the service is not running, whereas filtered ports do not respond to scanners. So it is sometimes better to have filtered ports as they increase scanner times by not responding., But it also gives a hint to hackers that a particular service is running on the port but it is being blocked.&lt;/p&gt;
+&lt;p&gt;During a scan, closed ports respond to scanners (port scanners like nmap) saying that the service is not running, whereas filtered ports do not respond to scanners. So it is sometimes better to have filtered ports as they increase scanner times by not responding, but it also gives a hint to hackers that a particular service is running on the port but it is being blocked.&lt;/p&gt;
 
 &lt;h3 id=&quot;21-whats-a-rainbow-table-and-a-rainbow-cracker&quot;&gt;21. What’s a Rainbow Table and a Rainbow Cracker?&lt;/h3&gt;
-&lt;p&gt;Rainbow Tables are pre-computed hashes that was generated using cryptic or one-way hash algorithms. For instance., say we are subjecting a plaintext “secret” to a one-way hash algorithm and 
+&lt;p&gt;Rainbow Tables are pre-computed hashes that was generated using cryptic or one-way hash algorithms. For instance, say we are subjecting a plaintext “secret” to a one-way hash algorithm and 
 it generates a hash “eabecfe”. This hash and the corresponding plaintext will be stored in a table. This table is called as the Rainbow Table. It is just a repository that holds hashes that 
 were pre-computed and stored.
 &lt;br /&gt;
-Rainbow Cracker makes use of Rainbow Tables to do the cracking process, it is a  time-memory tradeoff so the process will be faster.&lt;/p&gt;
+Rainbow Cracker makes use of Rainbow Tables to do the cracking process, it is a time-memory tradeoff so the process will be faster.&lt;/p&gt;
 
 &lt;h3 id=&quot;22-how-do-you-use-netcat-to-listen-and-connect-through-two-different-machinesvms&quot;&gt;22. How do you use netcat to listen and connect through two different machines/VMs?&lt;/h3&gt;
 
@@ -554,11 +554,11 @@ when it comes to DNS, since TCP makes use of a three-way-handshake., it will be 
 
 &lt;h3 id=&quot;26-state-a-few-steps-you-would-use-to-secure-a-linux-machine&quot;&gt;26. State a few steps you would use to secure a Linux machine.&lt;/h3&gt;
 &lt;ul&gt;
-  &lt;li&gt;Use faillog command to set user account lockouts after certain failure attempts.&lt;/li&gt;
+  &lt;li&gt;Use &lt;code class=&quot;highlighter-rouge&quot;&gt;faillog&lt;/code&gt; command to set user account lockouts after certain failure attempts.&lt;/li&gt;
   &lt;li&gt;Ensure the linux kernel and software are up to date.&lt;/li&gt;
-  &lt;li&gt;Never use root account to login, use sudo command whenever neccessary.&lt;/li&gt;
+  &lt;li&gt;Never use root account to login, use sudo command whenever necessary.&lt;/li&gt;
   &lt;li&gt;Disable unwanted services with high privileges.&lt;/li&gt;
-  &lt;li&gt;Check for world writeable files and disable it wherever neccessary.&lt;/li&gt;
+  &lt;li&gt;Check for world writeable files and disable it wherever necessary.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;27-if-there-are-a-total-of-65535-tcp-ports-then-how-many-udp-ports-are-available&quot;&gt;27. If there are a total of 65535 TCP Ports, then how many UDP Ports are available?&lt;/h3&gt;
@@ -579,11 +579,11 @@ opens up within the iframe, then the site is vulnerable to Click-Jacking.&lt;/p&
 
 &lt;ul&gt;
   &lt;li&gt;Make sure “Security Testing” is part of the SDLC.&lt;/li&gt;
-  &lt;li&gt;If not, Immediately enforce VA on the application and find the vulnerabilities.&lt;/li&gt;
+  &lt;li&gt;If not, immediately enforce VA on the application and find the vulnerabilities.&lt;/li&gt;
   &lt;li&gt;Remediate the vulnerabilities and redo the VA to make sure they are gone.&lt;/li&gt;
   &lt;li&gt;Go for PT of the web application, if required.&lt;/li&gt;
   &lt;li&gt;Perform security checks every once in a while depending on the application active releases.&lt;/li&gt;
-  &lt;li&gt;Install a web-application firewall if neccessary.&lt;/li&gt;
+  &lt;li&gt;Install a web-application firewall if necessary.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;30-list-some-steps-in-securing-any-web-server&quot;&gt;30. List some steps in securing any Web Server.&lt;/h3&gt;
@@ -598,7 +598,7 @@ opens up within the iframe, then the site is vulnerable to Click-Jacking.&lt;/p&
 
 &lt;h3 id=&quot;31-compare-and-contrast-nids-and-hids&quot;&gt;31. Compare and Contrast NIDS and HIDS.&lt;/h3&gt;
 
-&lt;p&gt;NIDS are deployed in “strategic points” like in DMZ and other inter connections of the network, whereas HIDS are deployed on individual hosts. NIDS are the first line of defence whereas HIDS are considered as the last line of defence. NIDS has a greater challenge to inspect encrypted packets whereas HIDS will be able to analyze those packets as well.&lt;/p&gt;
+&lt;p&gt;NIDS are deployed in “strategic points” like in DMZ and other inter connections of the network, whereas HIDS are deployed on individual hosts. NIDS are the first line of defense whereas HIDS are considered as the last line of defense. NIDS has a greater challenge to inspect encrypted packets whereas HIDS will be able to analyze those packets as well.&lt;/p&gt;
 
 &lt;h3 id=&quot;32-how-do-you-assess-security-stance-of-a-vpn&quot;&gt;32. How do you assess security stance of a VPN?&lt;/h3&gt;
 &lt;ul&gt;
@@ -628,7 +628,7 @@ opens up within the iframe, then the site is vulnerable to Click-Jacking.&lt;/p&
 
 &lt;h3 id=&quot;35-explain-osint&quot;&gt;35. Explain OSINT&lt;/h3&gt;
 
-&lt;p&gt;&lt;strong&gt;Open Source Intelligence&lt;/strong&gt; (OSINT) is a type of reconnaisance of the target that is available on public sources and on the internet. This can also be considered as collection of data about the target through Google Hacking, gathering DNS and other information through websites like Shodan, Netcraft. etc.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Open Source Intelligence&lt;/strong&gt; (OSINT) is a type of reconnaissance of the target that is available on public sources and on the internet. This can also be considered as collection of data about the target through Google Hacking, gathering DNS and other information through websites like Shodan, Netcraft. etc.&lt;/p&gt;
 
 &lt;h3 id=&quot;36-list-some-pointers-for-a-mobile-threat-model&quot;&gt;36. List some pointers for a Mobile Threat Model.&lt;/h3&gt;
 
@@ -676,18 +676,18 @@ can deal with heavy network traffic and their performance will be more effective
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;43-explain-xpath-injection-attack&quot;&gt;43. Explain XPath Injection Attack.&lt;/h3&gt;
-&lt;p&gt;XPath is a language that is very similar to SQL which is used to address XML documents. XML databases use XPath as their standard query language., Again similar to SQL Injection, there 
+&lt;p&gt;XPath is a language that is very similar to SQL which is used to address XML documents. XML databases use XPath as their standard query language, Again similar to SQL Injection, there 
 exists XPath Injection. Even XPath Injection is done by the usage of a single quote (‘). The attack is carried out in depth by knowing the errors that the XML parser throws. There also 
 exists Blind XPath Injection Attack, which is carried out with the help of result set returned.&lt;/p&gt;
 
 &lt;h3 id=&quot;44-what-is-an-incident-response-plan-and-a-disaster-recovery-plan-are-they-same&quot;&gt;44. What is an Incident Response Plan and a Disaster Recovery Plan. Are they same?&lt;/h3&gt;
-&lt;p&gt;No they are not the same. An Incident Response Plan is a set of steps that has to be followed immediately when an incident happens., For instance; A fire outbreak in a building is an 
+&lt;p&gt;No they are not the same. An Incident Response Plan is a set of steps that has to be followed immediately when an incident happens, For instance, A fire outbreak in a building is an 
 incident, an incident plan would be: usage of fire extinguishers to douse the fire, call the fire personnel, use the stairs, etc. That would be a clear example for that. A Disaster Recovery 
-Plan comes in effect after the execution of Incident Response Plan. It also lists efficient steps that has to be followed after the Disaster has occured. For instance; Restore backups from 
+Plan comes in effect after the execution of Incident Response Plan. It also lists efficient steps that has to be followed after the Disaster has occurred. For instance; Restore backups from 
 Cloud Storage, Refurnishing the office, etc.&lt;/p&gt;
 
 &lt;h3 id=&quot;45-how-to-prevent-website-from-google-hacking-or-getting-dorked&quot;&gt;45. How to prevent website from Google hacking or getting dorked?&lt;/h3&gt;
-&lt;p&gt;Use a robots.txt to tell the search engline which pages to crawl and what not to. Remove sensitive data from the web, if that’s not possible use better authorization schemes to protect it 
+&lt;p&gt;Use a robots.txt to tell the search engine which pages to crawl and what not to. Remove sensitive data from the web, if that’s not possible use better authorization schemes to protect it 
 from getting viewed from outside world. If site traffic does not matter to you, it’s better to remove your website from Google Indexing.&lt;/p&gt;
 
 &lt;h3 id=&quot;46-how-does-a-digital-signature-differ-from-a-digital-certificate&quot;&gt;46. How does a Digital Signature differ from a Digital Certificate?&lt;/h3&gt;
@@ -708,7 +708,7 @@ holder. For eg: SSL certificate for a website.&lt;/p&gt;
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;systeminfo /s&lt;/code&gt;.&lt;/p&gt;
 
 &lt;h3 id=&quot;49-state-byod-and-its-merits-and-demerits&quot;&gt;49. State BYOD and its merits and demerits.&lt;/h3&gt;
-&lt;p&gt;BYOD - Bring Your Own Device is a type of policy in any organization that lets employees to bring in their own computers, laptops or other devices that would let them connect to office’s network and do the official work. Employees personal devices maybe faster than that of the gadgets their companies provide. Worst part is if the personal gadget is affected by any virus or malware if will spread through the entire network.&lt;/p&gt;
+&lt;p&gt;BYOD - Bring Your Own Device is a type of policy in any organization that lets employees to bring in their own computers, laptops or other devices that would let them connect to office’s network and do the official work. Employee’s personal devices maybe faster than that of the gadgets their companies provide. Worst part is if the personal gadget is affected by any virus or malware if will spread through the entire network.&lt;/p&gt;
 
 &lt;h3 id=&quot;50-what-are-the-different-modules-of-metasploit-architecture&quot;&gt;50. What are the different modules of Metasploit Architecture?&lt;/h3&gt;
 &lt;ul&gt;
@@ -736,7 +736,7 @@ provide intel on the remaining cop’s location. We can relate this scenario to 
   &lt;li&gt;Physical Controls: They are the first line of defense. Physical controls include Gates, Walls, Fences, Cameras, Locks, etc. This is the most critical aspect of Security Controls.&lt;/li&gt;
   &lt;li&gt;Logical Controls: Otherwise termed as technical controls, they constitute authentication schemes that are used to protect unauthorized access to terminals. (eg,. Passwords). Also 
 Firewalls, Intrusion Detection and Prevention Systems, etc.&lt;/li&gt;
-  &lt;li&gt;Administrative Controls: They are more or like Policies, Procedures, Guidelines that are to be followed. (eg., A password policy stating that the password must be changed every 30 days)&lt;/li&gt;
+  &lt;li&gt;Administrative Controls: They are more or like Policies, Procedures and Guidelines that are to be followed. (eg., A password policy stating that the password must be changed every 30 days)&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;53-contrast-defense-in-depth&quot;&gt;53. Contrast Defense in Depth.&lt;/h3&gt;
@@ -751,9 +751,9 @@ Firewalls, Intrusion Detection and Prevention Systems, etc.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;55-which-takes-place-first-authentication-or-authorization&quot;&gt;55. Which takes place first. Authentication or Authorization?&lt;/h3&gt;
-&lt;p&gt;Authentication takes place first and then followed by Authorization. Easiest way to remember is, You authenticate yourself to any terminal or device using authentication methods (what you are, what you have &amp;amp; what you know), thus the system checks whether you are authorized to use the terminal.&lt;/p&gt;
+&lt;p&gt;Authentication takes place first and then followed by Authorization. Easiest way to remember is, you authenticate yourself to any terminal or device using authentication methods (what you are, what you have &amp;amp; what you know), thus the system checks whether you are authorized to use the terminal.&lt;/p&gt;
 
-&lt;h3 id=&quot;56-how-deep-packet-inspection-firewalls-are-better-than-packet-filtering-firewallsstateful--stateless-and-depict-their-challenges-too&quot;&gt;56. How Deep Packet Inspection Firewalls are better than Packet Filtering Firewalls(Stateful &amp;amp; Stateless) and depict their challenges too.&lt;/h3&gt;
+&lt;h3 id=&quot;56-how-deep-packet-inspection-firewalls-are-better-than-packet-filtering-firewalls-stateful--stateless-and-depict-their-challenges-too&quot;&gt;56. How Deep Packet Inspection Firewalls are better than Packet Filtering Firewalls (Stateful &amp;amp; Stateless) and depict their challenges too.&lt;/h3&gt;
 &lt;p&gt;The DPI Firewalls not just inspects the traffic but the contents inside it which makes them very effective to block nefarious packets. They are relatively slow compared to packet filtering firewalls and also there is a privacy at stake since it can read almost any content.&lt;/p&gt;
 
 &lt;h3 id=&quot;57-what-is-an-endpoint-security-and-how-does-it-work&quot;&gt;57. What is an Endpoint Security and how does it work?&lt;/h3&gt;
@@ -766,7 +766,77 @@ Firewalls, Intrusion Detection and Prevention Systems, etc.&lt;/li&gt;
 &lt;p&gt;Definitely it is required for a business organization as it helps the administrators to collectively gather information about the network computers, users, policies, etc as a Centralized Desktop Management. Active Directory also provides support for Exchange and Sharepoint services.&lt;/p&gt;
 
 &lt;h3 id=&quot;60-whats-an-interactive-logon-and-what-are-the-types-associated-with-it&quot;&gt;60. What’s an Interactive Logon and what are the types associated with it?&lt;/h3&gt;
-&lt;p&gt;May sound confusing for some, An interactive logon is nothing but a method to logon to the computer or wokstation. A new session can be initiated by CTRL+ALT+DEL. Local Logon (SAM), Domain Logon (Active Directory) &amp;amp; Smartcard Logon (Hardware Token) are the types associated with it.&lt;/p&gt;
+&lt;p&gt;May sound confusing for some, An interactive logon is nothing but a method to logon to the computer or workstation. A new session can be initiated by CTRL+ALT+DEL. Local Logon (SAM), Domain Logon (Active Directory) &amp;amp; Smartcard Logon (Hardware Token) are the types associated with it.&lt;/p&gt;
+
+&lt;h3 id=&quot;61-list-the-attacks-associated-with-the-osi-layer-model&quot;&gt;61. List the attacks associated with the OSI Layer Model.&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Physical Layer: WarDriving, Physically plugging a Keylogger Device, WireTaps&lt;/li&gt;
+  &lt;li&gt;Data Link Layer: MAC Address Spoofing, Sniffing, Snorting, WEP/WPA Hacking&lt;/li&gt;
+  &lt;li&gt;Network Layer: Fragmentation Attacks, Ping Attacks, Routing Protocol Attacks, ARP Poisoning&lt;/li&gt;
+  &lt;li&gt;Transport Layer: DoS Attacks, MiTM Attacks, SYN/ACK/FIN Attacks, Port Scans&lt;/li&gt;
+  &lt;li&gt;Session Layer: Session Hijacks, DoS Attacks, NETBIOS Attacks.&lt;/li&gt;
+  &lt;li&gt;Presentation Layer: HTML Code Inspection and Corrupt or Malicious Controls&lt;/li&gt;
+  &lt;li&gt;Application Layer: Trojans, Worms, Viruses&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;62-how-does-port-security-works-on-a-switch&quot;&gt;62. How does Port Security works on a Switch?&lt;/h3&gt;
+&lt;p&gt;Port Security is a feature in which the MAC Addresses are cached. The communication takes place only if there is a match with the cached MAC table, if an attempt to connect to the port with 
+a different MAC is found then the administrator gets notified.&lt;/p&gt;
+
+&lt;h3 id=&quot;63-what-are-the-layers-of-tcpip-model-and-how-does-it-relate-to-osi-layer&quot;&gt;63. What are the layers of TCP/IP Model and how does it relate to OSI Layer?&lt;/h3&gt;
+&lt;p&gt;There are four layers when it comes to the TCP/IP Model. Application, Transport, Internet and Network. This is how the layers are associated with OSI Layer.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Application Layer: Application + Presentation + Session&lt;/li&gt;
+  &lt;li&gt;Transport Layer: Transport Layer&lt;/li&gt;
+  &lt;li&gt;Internet Layer: Network Layer&lt;/li&gt;
+  &lt;li&gt;Network Layer: Data Link + Physical&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;64-what-do-you-mean-by-least-privilege&quot;&gt;64. What do you mean by Least Privilege?&lt;/h3&gt;
+&lt;p&gt;Least Privilege can be a rule or policy in which a user has access to exactly what he/she needs for their current user role.&lt;/p&gt;
+
+&lt;h3 id=&quot;65-how-would-you-employ-defense-in-depth-security-on-the-osi-model&quot;&gt;65. How would you employ “Defense in Depth” security on the OSI Model?&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Physical Layer: Fences, Surveillance Cameras&lt;/li&gt;
+  &lt;li&gt;Data Link Layer: Port Security in the Switches&lt;/li&gt;
+  &lt;li&gt;Network Layer: Setting Access Lists in the Border Routers, IDS/IPS&lt;/li&gt;
+  &lt;li&gt;Transport Layer: VA, Setting DMZs and Enabling Packet Filtering in the Firewalls, IDS/IPS&lt;/li&gt;
+  &lt;li&gt;Session Layer: VA, IDS/IPS&lt;/li&gt;
+  &lt;li&gt;Presentation Layer: VA, IDS/IPS&lt;/li&gt;
+  &lt;li&gt;Application Layer: VA, IDS/IPS, Virus and Malware Scanning&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;66-what-is-a-unified-threat-management-utm-device&quot;&gt;66. What is a Unified Threat Management (UTM) Device?&lt;/h3&gt;
+&lt;p&gt;A UTM comprises of multiple software and hardware devices like Firewalls, IPS/IDS, AntiVirus, AntiMalware, Web Filtering etc in a single device.&lt;/p&gt;
+
+&lt;h3 id=&quot;67-list-the-steps-that-are-required-to-be-pci-compliant&quot;&gt;67. List the steps that are required to be PCI Compliant.&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Build and maintain a secure network (Proper firewall configuration and not using any default credentials)&lt;/li&gt;
+  &lt;li&gt;Protect the card holder data.&lt;/li&gt;
+  &lt;li&gt;Perform periodic VAPT assessments.&lt;/li&gt;
+  &lt;li&gt;Implementing strong access control measures. (Ensure Least Privilege properly)&lt;/li&gt;
+  &lt;li&gt;Regularly monitor and Test networks.&lt;/li&gt;
+  &lt;li&gt;Maintain an Infosec policy.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;68-whats-a-dmz&quot;&gt;68. What’s a DMZ?&lt;/h3&gt;
+&lt;p&gt;A DMZ (Demilitarized Zone) is otherwise referred to as a Perimeter Network, that exposes external facing servers like routers, firewalls, etc to the Internet. It can also be termed as a 
+segmented network whose access is secured by a Firewall.&lt;/p&gt;
+
+&lt;h3 id=&quot;69-state-the-six-step-approach-to-pentest-methodology-of-core-impact&quot;&gt;69. State the six step approach to Pentest Methodology of Core Impact.&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Passive Intelligence Gathering&lt;/li&gt;
+  &lt;li&gt;Active Intelligence Gathering&lt;/li&gt;
+  &lt;li&gt;Exploitation&lt;/li&gt;
+  &lt;li&gt;Privilege Escalation&lt;/li&gt;
+  &lt;li&gt;Cleanup&lt;/li&gt;
+  &lt;li&gt;Report Generation&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;70-does-firewall-affects-the-time-required-to-scan-a-target&quot;&gt;70. Does Firewall affects the time required to scan a target?&lt;/h3&gt;
+&lt;p&gt;Obviously. In most cases, the firewalls are configured to drop the unauthorized packet &lt;strong&gt;without&lt;/strong&gt; sending “connection refused” message. In this case, the host which is scanning the target 
+must have to wait for a minimum time before it knows that the connection will not be succeeded. Hence, this will affect the scanning time of that particular target. There are some smart 
+scanners that will tell you to increase timeouts depending on outcome of the scan.&lt;/p&gt;
 
 &lt;hr /&gt;
 
