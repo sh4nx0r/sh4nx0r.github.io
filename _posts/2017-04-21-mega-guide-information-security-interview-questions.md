@@ -13,7 +13,7 @@ comments: true
 featured: false
 ---
 
-Almost **60** questions and still counting, I've been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a **Guide** to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness to the reader.
+Almost **70** questions and still counting, I've been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a **Guide** to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness to the reader.
 
 
 ### 1. What is a Repudiation Attack?
@@ -41,14 +41,14 @@ Threats can be classified as "Inside Intruder", "Natural Disasters", etc whereas
 
 ### 6. How do you stop Brute-Force Attacks?
 
-- Adding a CAPTCHA functionality to the login forms.
+- Adding a **CAPTCHA** functionality to the login forms.
 - Enforce account lockout mechanism for a maximum of three to four wrong attempts.
 - Fastest fix for a temporary period would be blocking the particular ip address that is making the brute force attempts.
 - Authentication Delays.
 
 ### 7. What's the difference between an "Exploit" and a "Payload"?
 
-An exploit is the medium in which the payload is contained. Both represent a "piece of code", but a payload does contain the actual attack whereas an exploit can be termed as a "carrier". To make the explanation more clear and precise, take a rifle/gun for an instance. The "Gun" is the exploit whereas the "bullet" is the actual payload.
+An exploit is the medium in which the payload is contained. Both represent a _piece of code_, but a payload does contain the actual attack whereas an exploit can be termed as a _carrier_. To make the explanation more clear and precise, take a Gun for an instance. The "Gun" is the exploit whereas the "Bullet" is the actual payload.
 
 ### 8. Why is encryption used for confidentiality instead of encoding?
 
