@@ -48,7 +48,7 @@ Threats can be classified as "Inside Intruder", "Natural Disasters", etc whereas
 
 ### 7. What's the difference between an "Exploit" and a "Payload"?
 
-An exploit is the medium in the which the payload is contained.Both represent a "piece of code", but a payload does contain the actual attack whereas an exploit can be termed as a "carrier". To make the explanation more clear and precise, take a rifle/gun for an instance. The "Gun" is the exploit whereas the "bullet" is the actual payload.
+An exploit is the medium in which the payload is contained. Both represent a "piece of code", but a payload does contain the actual attack whereas an exploit can be termed as a "carrier". To make the explanation more clear and precise, take a rifle/gun for an instance. The "Gun" is the exploit whereas the "bullet" is the actual payload.
 
 ### 8. Why is encryption used for confidentiality instead of encoding?
 
@@ -73,11 +73,11 @@ In a "Promiscuous Mode" whichever packets that reaches the Network Interface Car
 
 ### 13. What is an Open Redirect?
 
-It resides in one of the OWASP Top 10, This happens in a site which does not properly validate parameters that happens during a redirect. For instance; Consider this URL http://www.example.com/login.aspx?redirect=profile.php. What an attacker does is that he could use this opportunity to redirect the logged in users to his/her site by crafting a URL like this. http://www.example.com/login.aspx?redirect=http://somemaliciouswebsite.com
+It resides in one of the OWASP Top 10, this happens in a site which does not properly validate parameters that happens during a redirect. For instance; Consider this URL http://www.example.com/login.aspx?redirect=profile.php. What an attacker does is that he could use this opportunity to redirect the logged in users to his/her site by crafting a URL like this. http://www.example.com/login.aspx?redirect=http://somemaliciouswebsite.com
 
 ### 14. How would you rate or rank a vulnerability based on your findings?
 
-This depends on how much impact the vulnerability could affect your business. An example can answer this question., During your audit say you discover XSS and SQLi vulnerabilities. Both are equally dangerous, but in our scenario we rank XSS as the first most since the database that has the SQLi is not a production one and it is just holds some sample data. Thus we need to rank a vulnerability based on the risk factor.
+This depends on how much impact the vulnerability could affect your business. An example can answer this question, During an audit say you discover XSS and SQLi vulnerabilities. Both are equally dangerous, but in our scenario we rank XSS as the first most since the database that has the SQLi is not a production one and it is just holds some sample data. Thus we need to rank a vulnerability based on the risk factor.
 
 ### 15. What is an Active Directory? How does LDAP differs from Active Directory?
 
@@ -85,28 +85,28 @@ Active Directory is Microsoft's implementation of directory service that provide
 
 ### 16. Give a simple difference between Authorization and Authentication?
 
-Authorization is a process whereas an Authentication is a method. Authorization takes place during Authentication. This can be made clear with an example, Consider an ATM, You use your card to "authenticate" to that machine and once you have entered the correct pin you are "authorized" to do transacations.
+Authorization is a process whereas an Authentication is a method. Authorization takes place during Authentication. This can be made clear with an example, Consider an ATM, You use your card to "authenticate" to that machine and once you have entered the correct pin you are "authorized" to do transactions.
 
 ### 17. Can you perform a simple MiTM on a mobile phone?
 
 Spawn a rogue wireless access point. Wait for the victim to connect to your AP. You can now intercept the communication.
 
-### 18. When you deal with a stream of confidential data to be transferred across the channel, What would you do first. Encrypt or Compress?
+### 18. When you deal with a stream of confidential data to be transferred across the channel, what would you do first. Encrypt or Compress?
 
 Any compression algorithm will look for certain patterns in the data to perform compression. When the data is encrypted, the compression algorithm will find it hard to compress the data (or it may not compress the data at all). So the good option would be. Compress and then Encrypt.
 
 ### 19. How do you prevent CSRF Attacks?
-Use random tokens for each session and transaction. When a end-user logs to that application, let the application create a token for that particular session. That token should be included in every transaction.
+Use random tokens for each session and transaction. When an end-user logs to that application, let the application create a token for that particular session. That token should be included in every transaction. You can also use CAPTCHAs to prevent CSRF attacks.
 
 ### 20. Which is better. Closed ports or Filtered Ports?
-During a scan, closed ports respond to scanners (port scanners like nmap) saying that the service is not running, whereas filtered ports do not respond to scanners. So it is sometimes better to have filtered ports as they increase scanner times by not responding., But it also gives a hint to hackers that a particular service is running on the port but it is being blocked.
+During a scan, closed ports respond to scanners (port scanners like nmap) saying that the service is not running, whereas filtered ports do not respond to scanners. So it is sometimes better to have filtered ports as they increase scanner times by not responding, but it also gives a hint to hackers that a particular service is running on the port but it is being blocked.
 
 ### 21. What's a Rainbow Table and a Rainbow Cracker?
-Rainbow Tables are pre-computed hashes that was generated using cryptic or one-way hash algorithms. For instance., say we are subjecting a plaintext "secret" to a one-way hash algorithm and 
+Rainbow Tables are pre-computed hashes that was generated using cryptic or one-way hash algorithms. For instance, say we are subjecting a plaintext "secret" to a one-way hash algorithm and 
 it generates a hash "eabecfe". This hash and the corresponding plaintext will be stored in a table. This table is called as the Rainbow Table. It is just a repository that holds hashes that 
 were pre-computed and stored.
 <br>
-Rainbow Cracker makes use of Rainbow Tables to do the cracking process, it is a  time-memory tradeoff so the process will be faster.
+Rainbow Cracker makes use of Rainbow Tables to do the cracking process, it is a time-memory tradeoff so the process will be faster.
 
 ### 22. How do you use netcat to listen and connect through two different machines/VMs?
 
@@ -136,11 +136,11 @@ DNS requests make use of UDP protocol instead of TCP. UDP protocol are unreliabl
 when it comes to DNS, since TCP makes use of a three-way-handshake., it will be a little slower than UDP.
 
 ### 26. State a few steps you would use to secure a Linux machine.
-- Use faillog command to set user account lockouts after certain failure attempts.
+- Use `faillog` command to set user account lockouts after certain failure attempts.
 - Ensure the linux kernel and software are up to date.
-- Never use root account to login, use sudo command whenever neccessary.
+- Never use root account to login, use sudo command whenever necessary.
 - Disable unwanted services with high privileges. 
-- Check for world writeable files and disable it wherever neccessary.
+- Check for world writeable files and disable it wherever necessary.
 
 ### 27. If there are a total of 65535 TCP Ports, then how many UDP Ports are available?
 There are 65535 UDP ports as well.
@@ -159,11 +159,11 @@ opens up within the iframe, then the site is vulnerable to Click-Jacking.
 ### 29. List some steps in securing any Web Application.
 
 - Make sure "Security Testing" is part of the SDLC.
-- If not, Immediately enforce VA on the application and find the vulnerabilities.
+- If not, immediately enforce VA on the application and find the vulnerabilities.
 - Remediate the vulnerabilities and redo the VA to make sure they are gone.
 - Go for PT of the web application, if required.
 - Perform security checks every once in a while depending on the application active releases.
-- Install a web-application firewall if neccessary.
+- Install a web-application firewall if necessary.
 
 ### 30. List some steps in securing any Web Server.
 
@@ -175,7 +175,7 @@ opens up within the iframe, then the site is vulnerable to Click-Jacking.
 
 ### 31. Compare and Contrast NIDS and HIDS.
 
-NIDS are deployed in "strategic points" like in DMZ and other inter connections of the network, whereas HIDS are deployed on individual hosts. NIDS are the first line of defence whereas HIDS are considered as the last line of defence. NIDS has a greater challenge to inspect encrypted packets whereas HIDS will be able to analyze those packets as well.
+NIDS are deployed in "strategic points" like in DMZ and other inter connections of the network, whereas HIDS are deployed on individual hosts. NIDS are the first line of defense whereas HIDS are considered as the last line of defense. NIDS has a greater challenge to inspect encrypted packets whereas HIDS will be able to analyze those packets as well.
 
 ### 32. How do you assess security stance of a VPN?
 - Scan for VPN gateways availability.
@@ -199,7 +199,7 @@ NIDS are deployed in "strategic points" like in DMZ and other inter connections 
 
 ### 35. Explain OSINT
 
-**Open Source Intelligence** (OSINT) is a type of reconnaisance of the target that is available on public sources and on the internet. This can also be considered as collection of data about the target through Google Hacking, gathering DNS and other information through websites like Shodan, Netcraft. etc.
+**Open Source Intelligence** (OSINT) is a type of reconnaissance of the target that is available on public sources and on the internet. This can also be considered as collection of data about the target through Google Hacking, gathering DNS and other information through websites like Shodan, Netcraft. etc.
 
 ### 36. List some pointers for a Mobile Threat Model.
 
@@ -239,18 +239,18 @@ can deal with heavy network traffic and their performance will be more effective
 - Security awareness trainings and latest threats has to be kept informed to the development team.
 
 ### 43. Explain XPath Injection Attack.
-XPath is a language that is very similar to SQL which is used to address XML documents. XML databases use XPath as their standard query language., Again similar to SQL Injection, there 
+XPath is a language that is very similar to SQL which is used to address XML documents. XML databases use XPath as their standard query language, Again similar to SQL Injection, there 
 exists XPath Injection. Even XPath Injection is done by the usage of a single quote ('). The attack is carried out in depth by knowing the errors that the XML parser throws. There also 
 exists Blind XPath Injection Attack, which is carried out with the help of result set returned.
 
 ### 44. What is an Incident Response Plan and a Disaster Recovery Plan. Are they same?
-No they are not the same. An Incident Response Plan is a set of steps that has to be followed immediately when an incident happens., For instance; A fire outbreak in a building is an 
+No they are not the same. An Incident Response Plan is a set of steps that has to be followed immediately when an incident happens, For instance, A fire outbreak in a building is an 
 incident, an incident plan would be: usage of fire extinguishers to douse the fire, call the fire personnel, use the stairs, etc. That would be a clear example for that. A Disaster Recovery 
-Plan comes in effect after the execution of Incident Response Plan. It also lists efficient steps that has to be followed after the Disaster has occured. For instance; Restore backups from 
+Plan comes in effect after the execution of Incident Response Plan. It also lists efficient steps that has to be followed after the Disaster has occurred. For instance; Restore backups from 
 Cloud Storage, Refurnishing the office, etc.
 
 ### 45. How to prevent website from Google hacking or getting dorked?
-Use a robots.txt to tell the search engline which pages to crawl and what not to. Remove sensitive data from the web, if that's not possible use better authorization schemes to protect it 
+Use a robots.txt to tell the search engine which pages to crawl and what not to. Remove sensitive data from the web, if that's not possible use better authorization schemes to protect it 
 from getting viewed from outside world. If site traffic does not matter to you, it's better to remove your website from Google Indexing.
 
 ### 46. How does a Digital Signature differ from a Digital Certificate?
@@ -270,7 +270,7 @@ holder. For eg: SSL certificate for a website.
 
 
 ### 49. State BYOD and its merits and demerits.
-BYOD - Bring Your Own Device is a type of policy in any organization that lets employees to bring in their own computers, laptops or other devices that would let them connect to office's network and do the official work. Employees personal devices maybe faster than that of the gadgets their companies provide. Worst part is if the personal gadget is affected by any virus or malware if will spread through the entire network.
+BYOD - Bring Your Own Device is a type of policy in any organization that lets employees to bring in their own computers, laptops or other devices that would let them connect to office's network and do the official work. Employee's personal devices maybe faster than that of the gadgets their companies provide. Worst part is if the personal gadget is affected by any virus or malware if will spread through the entire network.
 
 
 ### 50. What are the different modules of Metasploit Architecture?
@@ -294,7 +294,7 @@ provide intel on the remaining cop's location. We can relate this scenario to ou
 - Physical Controls: They are the first line of defense. Physical controls include Gates, Walls, Fences, Cameras, Locks, etc. This is the most critical aspect of Security Controls.
 - Logical Controls: Otherwise termed as technical controls, they constitute authentication schemes that are used to protect unauthorized access to terminals. (eg,. Passwords). Also 
 Firewalls, Intrusion Detection and Prevention Systems, etc.
-- Administrative Controls: They are more or like Policies, Procedures, Guidelines that are to be followed. (eg., A password policy stating that the password must be changed every 30 days)
+- Administrative Controls: They are more or like Policies, Procedures and Guidelines that are to be followed. (eg., A password policy stating that the password must be changed every 30 days)
 
 ### 53. Contrast Defense in Depth.
 Defense in Depth is also known as Layered Security that enables multiple security countermeasures in each and every level to make sure CIA (Confidentiality, Integrity, Availability) of data is intact. It uses multiple approach to protect the data being penetrated by attackers. For eg. Having multiple security measures at the external network, internal network, etc.
@@ -306,9 +306,9 @@ Just listing a single attack for each type.
 - Availability: Denial of Service Attack
 
 ### 55. Which takes place first. Authentication or Authorization?
-Authentication takes place first and then followed by Authorization. Easiest way to remember is, You authenticate yourself to any terminal or device using authentication methods (what you are, what you have & what you know), thus the system checks whether you are authorized to use the terminal.
+Authentication takes place first and then followed by Authorization. Easiest way to remember is, you authenticate yourself to any terminal or device using authentication methods (what you are, what you have & what you know), thus the system checks whether you are authorized to use the terminal.
 
-### 56. How Deep Packet Inspection Firewalls are better than Packet Filtering Firewalls(Stateful & Stateless) and depict their challenges too.
+### 56. How Deep Packet Inspection Firewalls are better than Packet Filtering Firewalls (Stateful & Stateless) and depict their challenges too.
 The DPI Firewalls not just inspects the traffic but the contents inside it which makes them very effective to block nefarious packets. They are relatively slow compared to packet filtering firewalls and also there is a privacy at stake since it can read almost any content. 
 
 ### 57. What is an Endpoint Security and how does it work?
@@ -321,7 +321,68 @@ SIEM is the acronym for Security Information and Event Management (SIEM). These 
 Definitely it is required for a business organization as it helps the administrators to collectively gather information about the network computers, users, policies, etc as a Centralized Desktop Management. Active Directory also provides support for Exchange and Sharepoint services.
 
 ### 60. What's an Interactive Logon and what are the types associated with it?
-May sound confusing for some, An interactive logon is nothing but a method to logon to the computer or wokstation. A new session can be initiated by CTRL+ALT+DEL. Local Logon (SAM), Domain Logon (Active Directory) & Smartcard Logon (Hardware Token) are the types associated with it.
+May sound confusing for some, An interactive logon is nothing but a method to logon to the computer or workstation. A new session can be initiated by CTRL+ALT+DEL. Local Logon (SAM), Domain Logon (Active Directory) & Smartcard Logon (Hardware Token) are the types associated with it.
+
+### 61. List the attacks associated with the OSI Layer Model.
+- Physical Layer: WarDriving, Physically plugging a Keylogger Device, WireTaps
+- Data Link Layer: MAC Address Spoofing, Sniffing, Snorting, WEP/WPA Hacking
+- Network Layer: Fragmentation Attacks, Ping Attacks, Routing Protocol Attacks, ARP Poisoning
+- Transport Layer: DoS Attacks, MiTM Attacks, SYN/ACK/FIN Attacks, Port Scans
+- Session Layer: Session Hijacks, DoS Attacks, NETBIOS Attacks.
+- Presentation Layer: HTML Code Inspection and Corrupt or Malicious Controls
+- Application Layer: Trojans, Worms, Viruses
+
+### 62. How does Port Security works on a Switch?
+Port Security is a feature in which the MAC Addresses are cached. The communication takes place only if there is a match with the cached MAC table, if an attempt to connect to the port with 
+a different MAC is found then the administrator gets notified.
+
+### 63. What are the layers of TCP/IP Model and how does it relate to OSI Layer?
+There are four layers when it comes to the TCP/IP Model. Application, Transport, Internet and Network. This is how the layers are associated with OSI Layer.
+- Application Layer: Application + Presentation + Session
+- Transport Layer: Transport Layer
+- Internet Layer: Network Layer
+- Network Layer: Data Link + Physical
+
+### 64. What do you mean by Least Privilege?
+Least Privilege can be a rule or policy in which a user has access to exactly what he/she needs for their current user role.
+
+### 65. How would you employ "Defense in Depth" security on the OSI Model?
+- Physical Layer: Fences, Surveillance Cameras
+- Data Link Layer: Port Security in the Switches
+- Network Layer: Setting Access Lists in the Border Routers, IDS/IPS
+- Transport Layer: VA, Setting DMZs and Enabling Packet Filtering in the Firewalls, IDS/IPS
+- Session Layer: VA, IDS/IPS
+- Presentation Layer: VA, IDS/IPS
+- Application Layer: VA, IDS/IPS, Virus and Malware Scanning
+
+### 66. What is a Unified Threat Management (UTM) Device?
+A UTM comprises of multiple software and hardware devices like Firewalls, IPS/IDS, AntiVirus, AntiMalware, Web Filtering etc in a single device. 
+
+### 67. List the steps that are required to be PCI Compliant.
+- Build and maintain a secure network (Proper firewall configuration and not using any default credentials)
+- Protect the card holder data.
+- Perform periodic VAPT assessments.
+- Implementing strong access control measures. (Ensure Least Privilege properly)
+- Regularly monitor and Test networks.
+- Maintain an Infosec policy.
+
+### 68. What's a DMZ?
+A DMZ (Demilitarized Zone) is otherwise referred to as a Perimeter Network, that exposes external facing servers like routers, firewalls, etc to the Internet. It can also be termed as a 
+segmented network whose access is secured by a Firewall.
+
+### 69. State the six step approach to Pentest Methodology of Core Impact.
+- Passive Intelligence Gathering
+- Active Intelligence Gathering
+- Exploitation
+- Privilege Escalation
+- Cleanup
+- Report Generation
+
+### 70. Does Firewall affects the time required to scan a target?
+Obviously. In most cases, the firewalls are configured to drop the unauthorized packet **without** sending "connection refused" message. In this case, the host which is scanning the target 
+must have to wait for a minimum time before it knows that the connection will not be succeeded. Hence, this will affect the scanning time of that particular target. There are some smart 
+scanners that will tell you to increase timeouts depending on outcome of the scan.
+
 
 
 
