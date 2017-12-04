@@ -134,6 +134,7 @@ main, .notepad-share-icons, .notepad-disqus {
           padding: 0; }
           .notepad-blog-menu ul li a {
             color: black;
+	    text-transform: uppercase;
             display: inline-block;
             border-bottom: 0.1875rem solid transparent;
             width: auto;
