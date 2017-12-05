@@ -1,5 +1,5 @@
 title:            <b><font size='5.75em'>Inventor<font color='yellow' size='6.75em'>.</font> Biker<font color='yellow' size='6.75em'>.</font> Foodie<font color='yellow' size='6.75em'>.</font> h4ck3r<font color='yellow' size='6.75em'>.</font> Wanderlust<font color='yellow' size='6.75em'>. </font> </font><br>
-description:      <font size='2.75em'>[ Disclaimer - Views expressed throughout the site are my own. You may expect a mediocre profanity factor on the blog posts. ]</font>
+description:      <font size='2.75em'>[ Disclaimer - Views expressed throughout the site are my own, not  of my employer. You may expect a mediocre profanity factor on the blog posts. ]</font>
 
 logo:		logo.png
 disqus_shortname: sh4in
@@ -41,7 +41,7 @@ links:
     icon: home
   - title: "#trending"
     url: /trending
-  - title: MyCV
+  - title: Profile
     url: /cv
   - title: Connect
     url: /connect
