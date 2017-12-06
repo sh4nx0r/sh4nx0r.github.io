@@ -1,7 +1,7 @@
 ---
 layout: page
-permalink: /cv/index.html
-title: Profile<font color='#e51843'>.</font>
+permalink: /connect/index.html
+title: Connect
 tags: [resume, curriculum vitae, profile]
 imagefeature: fourseasons.jpg
 chart: true
@@ -9,9 +9,12 @@ chart: true
 
 
 
-> (**Rendering Courtesy: Google's PDF Viewer**)
+
+> # Reach out to me at: [d (dot) shankarnarayana (at) gmail (dot) com | 99four0one99zero8three][1]
 
 <iframe src="https://docs.google.com/gview?url=https://github.com/sh4nx0r/sh4nx0r.github.io/raw/master/cv.pdf&embedded=true" style="width:75%; height:700px; display:block; margin: 0 auto;" frameborder="0"></iframe>
+
+(**Rendering Courtesy: Google's PDF Viewer**)
 
 ---
 
