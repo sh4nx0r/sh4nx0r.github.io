@@ -2,7 +2,9 @@
 
 #changingword {
   color:yellow;
+   font-style: italic;
   text-decoration:bold;
+  
 }
 
 /* Fly By Ends */
