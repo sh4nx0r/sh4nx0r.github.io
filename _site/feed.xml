@@ -7,7 +7,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://localhost:4000/" />
-<updated>2017-12-06T17:21:47+06:00</updated>
+<updated>2017-12-08T20:15:40+06:00</updated>
 <id>http://localhost:4000/</id>
 <author>
   <name>Shankar Damodaran</name>
@@ -429,7 +429,7 @@ Say ..  &lt;strong&gt;Downloads&lt;/strong&gt; or whatever.. So it will look lik
   <category scheme="http://localhost:4000/tags/#infosec" term="infosec" /><category scheme="http://localhost:4000/tags/#interview%20questions" term="interview questions" /><category scheme="http://localhost:4000/tags/#pentesting" term="pentesting" /><category scheme="http://localhost:4000/tags/#security%20analyst" term="security analyst" />
   <content type="html">
   
-    &lt;p&gt;Almost &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;70&lt;/code&gt;&lt;/strong&gt; questions and still counting, I’ve been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a &lt;strong&gt;Guide&lt;/strong&gt; to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness.&lt;/p&gt;
+    &lt;p&gt;Almost &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;80&lt;/code&gt;&lt;/strong&gt; questions and still counting, I’ve been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a &lt;strong&gt;Guide&lt;/strong&gt; to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness.&lt;/p&gt;
 
 &lt;h3 id=&quot;1-what-is-a-repudiation-attack&quot;&gt;1. What is a Repudiation Attack?&lt;/h3&gt;
 
@@ -837,6 +837,79 @@ segmented network whose access is secured by a Firewall.&lt;/p&gt;
 &lt;p&gt;Obviously. In most cases, the firewalls are configured to drop the unauthorized packet &lt;strong&gt;without&lt;/strong&gt; sending “connection refused” message. In this case, the host which is scanning the target 
 must have to wait for a minimum time before it knows that the connection will not be succeeded. Hence, this will affect the scanning time of that particular target. There are some smart 
 scanners that will tell you to increase timeouts depending on outcome of the scan.&lt;/p&gt;
+
+&lt;h3 id=&quot;71-how-authentic-is-banner-grabbing-can-you-go-by-the-results&quot;&gt;71. How authentic is Banner Grabbing? Can you go by the results?&lt;/h3&gt;
+&lt;p&gt;We cannot totally rely on Banner Grabbing results. Smart administrators try to fake the banner information by representing a linux webserver look like a Windows webserver. They can also 
+change the version information of certain services and applications and mislead the hackers by falling into their honeypot.&lt;/p&gt;
+
+&lt;h3 id=&quot;72-what-is-competitive-counterintelligence&quot;&gt;72. What is Competitive CounterIntelligence?&lt;/h3&gt;
+&lt;p&gt;Competitive Intelligence is not just the process of collecting information about competitors and their intelligence, but also about customers, stake holders, etc that aids in the decision 
+making process of the organization. More importantly this is an ethical process and does not relates to Industrial Espionage (spying an organization) which is considered to be unethical. 
+When it comes to our question, &lt;strong&gt;Competitive CounterIntelligence&lt;/strong&gt; mainly protects the organization publicly available information or data from being siphoned or tapped by its competitors.&lt;/p&gt;
+
+&lt;h3 id=&quot;73-how-do-you-crack-wep-explain-in-high-level&quot;&gt;73. How do you crack WEP. Explain in High Level.&lt;/h3&gt;
+&lt;p&gt;Assuming you have a Wireless Adapter that is capable of packet injection.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Use &lt;code class=&quot;highlighter-rouge&quot;&gt;airmon-ng&lt;/code&gt; to get to know your network interface cards.&lt;/li&gt;
+  &lt;li&gt;Enable the Wireless Adapter to Monitor Mode.&lt;/li&gt;
+  &lt;li&gt;Start capturing the traffic from the specific AP.&lt;/li&gt;
+  &lt;li&gt;Use &lt;code class=&quot;highlighter-rouge&quot;&gt;aireplay-ng&lt;/code&gt; to Inject ARP Traffic (Perform ARP Spoofing) and capture the IVs&lt;/li&gt;
+  &lt;li&gt;Use &lt;code class=&quot;highlighter-rouge&quot;&gt;aircrack-ng&lt;/code&gt; to crack the IVs. (More the IVs the faster the cracking process will be)&lt;/li&gt;
+  &lt;li&gt;The key will be displayed on the screen in a hexadecimal format.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;74-what-would-you-do-if-you-need-to-send-sensitive-data-over-an-untrusted-network&quot;&gt;74. What would you do if you need to send sensitive data over an untrusted network.?&lt;/h3&gt;
+&lt;p&gt;Encrypt the data using a strong data algorithm and send it across over the untrusted channel.&lt;/p&gt;
+
+&lt;h3 id=&quot;75-how-do-you-harden-a-server&quot;&gt;75. How do you harden a server?&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Removing uneccessary softwares.&lt;/li&gt;
+  &lt;li&gt;Removing unused services.&lt;/li&gt;
+  &lt;li&gt;Perform changes on default accounts.&lt;/li&gt;
+  &lt;li&gt;Use the principle of least privilege.&lt;/li&gt;
+  &lt;li&gt;Ensure timely software updates.&lt;/li&gt;
+  &lt;li&gt;Implementing logging and auditing.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;76-what-is-an-attack-surface&quot;&gt;76. What is an Attack Surface?&lt;/h3&gt;
+&lt;p&gt;The entry points where an attacker could reach the legitimate application is referred to as an “Attack Surface”. Say for instance, an organization serves FTP and Mail server that can be 
+accessed publicly, then the total attack surface value will be two.&lt;/p&gt;
+
+&lt;h3 id=&quot;77-why-do-you-need-a-host-based-firewall-when-you-already-have-a-network-level-firewall&quot;&gt;77. Why do you need a Host Based Firewall when you already have a Network Level Firewall?&lt;/h3&gt;
+&lt;p&gt;Network perimeter firewalls cannot provide protection for traffic generated inside a trusted network. For this reason, host-based firewalls running on individual computers are needed. 
+Host-based firewalls, of which Windows Firewall is an example, protect a host from unauthorized access and attack. In addition to blocking unwanted incoming traffic, you can configure 
+Windows Firewall to block specific types of outgoing traffic as well.&lt;/p&gt;
+
+&lt;h3 id=&quot;78-how-to-respond-to-a-malware-attack-on-a-corporate-network&quot;&gt;78. How to respond to a Malware Attack on a corporate network?&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Make sure the malware is quarantined by the AntiVirus/AntiMalware software.&lt;/li&gt;
+  &lt;li&gt;Check the name of the malware reported by the Software and note down their malicious activities.&lt;/li&gt;
+  &lt;li&gt;Ensure those malicious activities have not been in action.&lt;/li&gt;
+  &lt;li&gt;If suspiscious action found, try to unplug the device from the network to avoid further infection on the corporate network.&lt;/li&gt;
+  &lt;li&gt;Update the Antivirus or Install a better Endpoint security product and do a full scan on the machine.&lt;/li&gt;
+  &lt;li&gt;If the infection still persists, try to back up critical data (scan it and make sure they are not infected).&lt;/li&gt;
+  &lt;li&gt;Do a fresh install of the Operating System. Restore the non-infected data.&lt;/li&gt;
+  &lt;li&gt;Install all latest security patches, end point security, host-based firewall, Antivirus and Antimalware products.&lt;/li&gt;
+  &lt;li&gt;Plug the machine back to the network.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;79-explain-the-components-that-come-with-burp-suite&quot;&gt;79. Explain the components that come with Burp Suite.&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Target: In this tool/interface, the information regarding the scanning target is shown. This also includes the vulnerabilities and links discovered.&lt;/li&gt;
+  &lt;li&gt;Proxy: This acts as a web proxy between the browser (where you configure the proxy settings) and the web application server. Acts as a MiTM interface, that intercepts requests before sending it to the web application.&lt;/li&gt;
+  &lt;li&gt;Spider: It crawls the web application for links and pages and lists it out in the Target section.&lt;/li&gt;
+  &lt;li&gt;Scanner: This comes with the professional version of the Burp Suite tool. This is basically a web vulnerability scanner that is used find web related vulnerabilities in any application.&lt;/li&gt;
+  &lt;li&gt;Intruder: This tool can be highly customizable and can be even used to launch a brute-force attack.&lt;/li&gt;
+  &lt;li&gt;Repeater: This tool can be used to manually issue a HTTP request and analyze the response.&lt;/li&gt;
+  &lt;li&gt;Sequencer: The tool analyzes randomness of user session tokens as well as for CSRF tokens. By determining predictable sessions, the analyst will be able to impersonate users.&lt;/li&gt;
+  &lt;li&gt;Decoder: This tool is mostly used for quick operations like encoding and decoding of algorithms like Base64.&lt;/li&gt;
+  &lt;li&gt;Comparer: This tool is to compare chunks of data and see the difference in a “git” diff like viewable format.&lt;/li&gt;
+  &lt;li&gt;Extender: This interface lets you import plugins for Burp Suite.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;80-how-do-you-use-webgoat-to-find-vulnerabilities-in-a-website&quot;&gt;80. How do you use WebGoat to find vulnerabilities in a website?&lt;/h3&gt;
+&lt;p&gt;Well this was a honeypot question, WebGoat is not a vulnerability scanning tool., it is a deliberately built insecure web application by OWASP such that it can be made use by security 
+analysts or anyone who wants to test their information security skills.&lt;/p&gt;
 
 &lt;hr /&gt;
 

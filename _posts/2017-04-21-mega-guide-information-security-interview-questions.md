@@ -13,7 +13,7 @@ comments: true
 featured: true
 ---
 
-Almost **`70`** questions and still counting, I've been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a **Guide** to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness.
+Almost **`80`** questions and still counting, I've been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a **Guide** to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness.
 
 
 ### 1. What is a Repudiation Attack?
@@ -383,7 +383,70 @@ Obviously. In most cases, the firewalls are configured to drop the unauthorized 
 must have to wait for a minimum time before it knows that the connection will not be succeeded. Hence, this will affect the scanning time of that particular target. There are some smart 
 scanners that will tell you to increase timeouts depending on outcome of the scan.
 
+### 71. How authentic is Banner Grabbing? Can you go by the results?
+We cannot totally rely on Banner Grabbing results. Smart administrators try to fake the banner information by representing a linux webserver look like a Windows webserver. They can also 
+change the version information of certain services and applications and mislead the hackers by falling into their honeypot.
 
+### 72. What is Competitive CounterIntelligence?
+Competitive Intelligence is not just the process of collecting information about competitors and their intelligence, but also about customers, stake holders, etc that aids in the decision 
+making process of the organization. More importantly this is an ethical process and does not relates to Industrial Espionage (spying an organization) which is considered to be unethical. 
+When it comes to our question, **Competitive CounterIntelligence** mainly protects the organization publicly available information or data from being siphoned or tapped by its competitors. 
+
+### 73. How do you crack WEP. Explain in High Level.
+Assuming you have a Wireless Adapter that is capable of packet injection.
+- Use `airmon-ng` to get to know your network interface cards.
+- Enable the Wireless Adapter to Monitor Mode.
+- Start capturing the traffic from the specific AP.
+- Use `aireplay-ng` to Inject ARP Traffic (Perform ARP Spoofing) and capture the IVs
+- Use `aircrack-ng` to crack the IVs. (More the IVs the faster the cracking process will be)
+- The key will be displayed on the screen in a hexadecimal format.
+
+### 74. What would you do if you need to send sensitive data over an untrusted network.?
+Encrypt the data using a strong data algorithm and send it across over the untrusted channel.
+
+### 75. How do you harden a server?
+- Removing uneccessary softwares.
+- Removing unused services.
+- Perform changes on default accounts.
+- Use the principle of least privilege.
+- Ensure timely software updates.
+- Implementing logging and auditing.
+
+### 76. What is an Attack Surface?
+The entry points where an attacker could reach the legitimate application is referred to as an "Attack Surface". Say for instance, an organization serves FTP and Mail server that can be 
+accessed publicly, then the total attack surface value will be two.
+
+### 77. Why do you need a Host Based Firewall when you already have a Network Level Firewall?
+Network perimeter firewalls cannot provide protection for traffic generated inside a trusted network. For this reason, host-based firewalls running on individual computers are needed. 
+Host-based firewalls, of which Windows Firewall is an example, protect a host from unauthorized access and attack. In addition to blocking unwanted incoming traffic, you can configure 
+Windows Firewall to block specific types of outgoing traffic as well.
+
+### 78. How to respond to a Malware Attack on a corporate network?
+- Make sure the malware is quarantined by the AntiVirus/AntiMalware software.
+- Check the name of the malware reported by the Software and note down their malicious activities.
+- Ensure those malicious activities have not been in action.
+- If suspiscious action found, try to unplug the device from the network to avoid further infection on the corporate network.
+- Update the Antivirus or Install a better Endpoint security product and do a full scan on the machine.
+- If the infection still persists, try to back up critical data (scan it and make sure they are not infected).
+- Do a fresh install of the Operating System. Restore the non-infected data.
+- Install all latest security patches, end point security, host-based firewall, Antivirus and Antimalware products.
+- Plug the machine back to the network.
+
+### 79. Explain the components that come with Burp Suite.
+- Target: In this tool/interface, the information regarding the scanning target is shown. This also includes the vulnerabilities and links discovered.
+- Proxy: This acts as a web proxy between the browser (where you configure the proxy settings) and the web application server. Acts as a MiTM interface, that intercepts requests before sending it to the web application.
+- Spider: It crawls the web application for links and pages and lists it out in the Target section.
+- Scanner: This comes with the professional version of the Burp Suite tool. This is basically a web vulnerability scanner that is used find web related vulnerabilities in any application.
+- Intruder: This tool can be highly customizable and can be even used to launch a brute-force attack.
+- Repeater: This tool can be used to manually issue a HTTP request and analyze the response.
+- Sequencer: The tool analyzes randomness of user session tokens as well as for CSRF tokens. By determining predictable sessions, the analyst will be able to impersonate users.
+- Decoder: This tool is mostly used for quick operations like encoding and decoding of algorithms like Base64.
+- Comparer: This tool is to compare chunks of data and see the difference in a "git" diff like viewable format.
+- Extender: This interface lets you import plugins for Burp Suite.
+
+### 80. How do you use WebGoat to find vulnerabilities in a website?
+Well this was a honeypot question, WebGoat is not a vulnerability scanning tool., it is a deliberately built insecure web application by OWASP such that it can be made use by security 
+analysts or anyone who wants to test their information security skills.
 
 
 ---

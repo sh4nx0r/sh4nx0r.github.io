@@ -171,7 +171,7 @@ $(function() {
         <img src="http://localhost:4000/images/blogimages/2017-04-21/cover-2017-04-21.jpg" alt="cover-image" />
 
         <article class="notepad-post-content post">
-            <div><p>Almost <strong><code class="highlighter-rouge">70</code></strong> questions and still counting, I’ve been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a <strong>Guide</strong> to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness.</p>
+            <div><p>Almost <strong><code class="highlighter-rouge">80</code></strong> questions and still counting, I’ve been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a <strong>Guide</strong> to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness.</p>
 
 <h3 id="1-what-is-a-repudiation-attack">1. What is a Repudiation Attack?</h3>
 
@@ -579,6 +579,79 @@ segmented network whose access is secured by a Firewall.</p>
 <p>Obviously. In most cases, the firewalls are configured to drop the unauthorized packet <strong>without</strong> sending “connection refused” message. In this case, the host which is scanning the target 
 must have to wait for a minimum time before it knows that the connection will not be succeeded. Hence, this will affect the scanning time of that particular target. There are some smart 
 scanners that will tell you to increase timeouts depending on outcome of the scan.</p>
+
+<h3 id="71-how-authentic-is-banner-grabbing-can-you-go-by-the-results">71. How authentic is Banner Grabbing? Can you go by the results?</h3>
+<p>We cannot totally rely on Banner Grabbing results. Smart administrators try to fake the banner information by representing a linux webserver look like a Windows webserver. They can also 
+change the version information of certain services and applications and mislead the hackers by falling into their honeypot.</p>
+
+<h3 id="72-what-is-competitive-counterintelligence">72. What is Competitive CounterIntelligence?</h3>
+<p>Competitive Intelligence is not just the process of collecting information about competitors and their intelligence, but also about customers, stake holders, etc that aids in the decision 
+making process of the organization. More importantly this is an ethical process and does not relates to Industrial Espionage (spying an organization) which is considered to be unethical. 
+When it comes to our question, <strong>Competitive CounterIntelligence</strong> mainly protects the organization publicly available information or data from being siphoned or tapped by its competitors.</p>
+
+<h3 id="73-how-do-you-crack-wep-explain-in-high-level">73. How do you crack WEP. Explain in High Level.</h3>
+<p>Assuming you have a Wireless Adapter that is capable of packet injection.</p>
+<ul>
+  <li>Use <code class="highlighter-rouge">airmon-ng</code> to get to know your network interface cards.</li>
+  <li>Enable the Wireless Adapter to Monitor Mode.</li>
+  <li>Start capturing the traffic from the specific AP.</li>
+  <li>Use <code class="highlighter-rouge">aireplay-ng</code> to Inject ARP Traffic (Perform ARP Spoofing) and capture the IVs</li>
+  <li>Use <code class="highlighter-rouge">aircrack-ng</code> to crack the IVs. (More the IVs the faster the cracking process will be)</li>
+  <li>The key will be displayed on the screen in a hexadecimal format.</li>
+</ul>
+
+<h3 id="74-what-would-you-do-if-you-need-to-send-sensitive-data-over-an-untrusted-network">74. What would you do if you need to send sensitive data over an untrusted network.?</h3>
+<p>Encrypt the data using a strong data algorithm and send it across over the untrusted channel.</p>
+
+<h3 id="75-how-do-you-harden-a-server">75. How do you harden a server?</h3>
+<ul>
+  <li>Removing uneccessary softwares.</li>
+  <li>Removing unused services.</li>
+  <li>Perform changes on default accounts.</li>
+  <li>Use the principle of least privilege.</li>
+  <li>Ensure timely software updates.</li>
+  <li>Implementing logging and auditing.</li>
+</ul>
+
+<h3 id="76-what-is-an-attack-surface">76. What is an Attack Surface?</h3>
+<p>The entry points where an attacker could reach the legitimate application is referred to as an “Attack Surface”. Say for instance, an organization serves FTP and Mail server that can be 
+accessed publicly, then the total attack surface value will be two.</p>
+
+<h3 id="77-why-do-you-need-a-host-based-firewall-when-you-already-have-a-network-level-firewall">77. Why do you need a Host Based Firewall when you already have a Network Level Firewall?</h3>
+<p>Network perimeter firewalls cannot provide protection for traffic generated inside a trusted network. For this reason, host-based firewalls running on individual computers are needed. 
+Host-based firewalls, of which Windows Firewall is an example, protect a host from unauthorized access and attack. In addition to blocking unwanted incoming traffic, you can configure 
+Windows Firewall to block specific types of outgoing traffic as well.</p>
+
+<h3 id="78-how-to-respond-to-a-malware-attack-on-a-corporate-network">78. How to respond to a Malware Attack on a corporate network?</h3>
+<ul>
+  <li>Make sure the malware is quarantined by the AntiVirus/AntiMalware software.</li>
+  <li>Check the name of the malware reported by the Software and note down their malicious activities.</li>
+  <li>Ensure those malicious activities have not been in action.</li>
+  <li>If suspiscious action found, try to unplug the device from the network to avoid further infection on the corporate network.</li>
+  <li>Update the Antivirus or Install a better Endpoint security product and do a full scan on the machine.</li>
+  <li>If the infection still persists, try to back up critical data (scan it and make sure they are not infected).</li>
+  <li>Do a fresh install of the Operating System. Restore the non-infected data.</li>
+  <li>Install all latest security patches, end point security, host-based firewall, Antivirus and Antimalware products.</li>
+  <li>Plug the machine back to the network.</li>
+</ul>
+
+<h3 id="79-explain-the-components-that-come-with-burp-suite">79. Explain the components that come with Burp Suite.</h3>
+<ul>
+  <li>Target: In this tool/interface, the information regarding the scanning target is shown. This also includes the vulnerabilities and links discovered.</li>
+  <li>Proxy: This acts as a web proxy between the browser (where you configure the proxy settings) and the web application server. Acts as a MiTM interface, that intercepts requests before sending it to the web application.</li>
+  <li>Spider: It crawls the web application for links and pages and lists it out in the Target section.</li>
+  <li>Scanner: This comes with the professional version of the Burp Suite tool. This is basically a web vulnerability scanner that is used find web related vulnerabilities in any application.</li>
+  <li>Intruder: This tool can be highly customizable and can be even used to launch a brute-force attack.</li>
+  <li>Repeater: This tool can be used to manually issue a HTTP request and analyze the response.</li>
+  <li>Sequencer: The tool analyzes randomness of user session tokens as well as for CSRF tokens. By determining predictable sessions, the analyst will be able to impersonate users.</li>
+  <li>Decoder: This tool is mostly used for quick operations like encoding and decoding of algorithms like Base64.</li>
+  <li>Comparer: This tool is to compare chunks of data and see the difference in a “git” diff like viewable format.</li>
+  <li>Extender: This interface lets you import plugins for Burp Suite.</li>
+</ul>
+
+<h3 id="80-how-do-you-use-webgoat-to-find-vulnerabilities-in-a-website">80. How do you use WebGoat to find vulnerabilities in a website?</h3>
+<p>Well this was a honeypot question, WebGoat is not a vulnerability scanning tool., it is a deliberately built insecure web application by OWASP such that it can be made use by security 
+analysts or anyone who wants to test their information security skills.</p>
 
 <hr />
 
