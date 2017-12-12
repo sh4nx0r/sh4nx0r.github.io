@@ -41,8 +41,8 @@ links:
     icon: home
   - title: "#trending"
     url: /trending
-  - title: Connect
-    url: /connect
+  - title: Whoami
+    url: /whoami
 
 #  - title: Categories
 #    url: /categories

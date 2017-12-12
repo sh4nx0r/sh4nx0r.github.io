@@ -1,7 +1,7 @@
 ---
 layout: page
-permalink: /connect/index.html
-title: Connect
+permalink: /whoami/index.html
+title: whoami
 tags: [resume, curriculum vitae, profile]
 imagefeature: fourseasons.jpg
 chart: true
