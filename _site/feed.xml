@@ -7,13 +7,206 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://localhost:4000/" />
-<updated>2017-12-12T20:22:42+06:00</updated>
+<updated>2017-12-19T17:59:27+06:00</updated>
 <id>http://localhost:4000/</id>
 <author>
   <name>Shankar Damodaran</name>
   <uri>http://localhost:4000/</uri>
   <email>d.shankarnarayana@gmail.com</email>
 </author>
+
+
+<entry>
+  <title type="html"><![CDATA[Do not throw your Old TV, Convert it to a Smart TV instead!]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/installation/convert-old-crt-tv-to-smart-tv"/>
+  <id>http://localhost:4000/installation/convert-old-crt-tv-to-smart-tv</id>
+  <published>2017-12-19T00:00:00+06:00</published>
+  <updated>2017-12-19T00:00:00-00:00</updated>
+  
+  <author>
+    <name>Shankar Damodaran</name>
+    <uri>http://localhost:4000</uri>
+    <email>d.shankarnarayana@gmail.com</email>
+  </author>
+  <category scheme="http://localhost:4000/tags/#install" term="install" /><category scheme="http://localhost:4000/tags/#convert%20old%20tv%20to%20smart%20tv" term="convert old tv to smart tv" /><category scheme="http://localhost:4000/tags/#hdmi%20to%20avi" term="hdmi to avi" /><category scheme="http://localhost:4000/tags/#chromecast" term="chromecast" />
+  <content type="html">
+  
+    &lt;p&gt;Ever wondered what to do with your Old CRT (Cathode Ray Tube) Television? Well, even I had no idea what to do with my 25inch &lt;strong&gt;20&lt;/strong&gt; year old CRT TV (till date) and thought of giving it for 400 - 500 bucks. Well you know what? No one was ready to buy that either lol, Finally I realized Old is indeed Gold when I had it converted to a smart TV using a very simple process.&lt;/p&gt;
+
+&lt;h2 id=&quot;hey-will-i-be-able-to-convert-any-crt-tv-to-smart-tv&quot;&gt;Hey will I be able to convert any CRT TV to Smart TV?&lt;/h2&gt;
+&lt;p&gt;Hmmm… to give you a gist, mine is a Philips 25PT 4457 25” CRT TV. It has 3-RCA (Radio Corporation of America) Input &amp;amp; One IEC Connector. &lt;strong&gt;Any Old CRT TV with RCA Input can be converted to a Smart TV&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;rca-input-whats-that&quot;&gt;RCA Input? What’s that?&lt;/h2&gt;
+&lt;p&gt;Ahem. Check the picture below. Make sure you have that provision on your TV before proceeding with this guide.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;figcaption&gt;This is the one. Hope you had seen this on your TV.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2017-12-19/composite.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;things-you-need-high-level&quot;&gt;Things you need (High Level)&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Google Chromecast&lt;/li&gt;
+  &lt;li&gt;3-RCA Cable&lt;/li&gt;
+  &lt;li&gt;HDMI to AV Converter&lt;/li&gt;
+  &lt;li&gt;Powerbank&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The purchase links to all these devices is provided in the end section.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;things-in-detail--thats-how-they-look-&quot;&gt;Things in detail ( That’s how they look )&lt;/h2&gt;
+
+&lt;figure&gt;
+	&lt;figcaption&gt;Google Chromecast | 3-RCA Cable | HDMI to AV Converter| Powerbank&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2017-12-19/google_chromecast.jpg&quot; /&gt;
+&lt;img src=&quot;/images/blogimages/2017-12-19/rca_cable.jpg&quot; /&gt;
+&lt;img src=&quot;/images/blogimages/2017-12-19/hdmitoavi.jpg&quot; /&gt;
+&lt;img src=&quot;/images/blogimages/2017-12-19/lenovo_powerbank.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;google-chromecast&quot;&gt;Google Chromecast&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Google Chromecast plays a vital role in turning your CRT a Smart TV. We subject Chromecast’s HDMI port as an input to the converter which we will see soon. The device needs a low power supply. We are not going to use the power supply adapter that was shipped with Chromecast, instead we will make use of the powerbank’s source.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;3-rca-cable&quot;&gt;3-RCA Cable&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;It is recommended to go for a better quality and durable RCA cable. Do not compromise on the price. One end of this cable will be connected to the converter’s RCA slot and the other end of this cable will be connected to TV’s RCA slot.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;hdmi-to-av-converter&quot;&gt;HDMI to AV Converter&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;There are many converters available. MINI was the brand I purchased and I didn’t face any problems with it so far. Once again this converter requires a low power supply, in this case we will be using a power bank for the same. The product also comes with a power cable with this device.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;powerbank&quot;&gt;Powerbank&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;It is good to have a powerbank that can power up two devices at the same time. As you can see that I am using a Lenovo Powerbank with two slots.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;the-setup&quot;&gt;The Setup.&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The process will be demonstrated step by step with screen captures so you won’t have any trouble following this. &lt;strong&gt;Off we go&lt;/strong&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;1-connect-google-chromecast-to-the-hdmi2av-converter&quot;&gt;1. Connect Google Chromecast to the HDMI2AV Converter.&lt;/h3&gt;
+
+&lt;p&gt;Use the HDMI (male) end of the Google Chromecast and connect it to the HDMI (female) end of the HDMI2AV converter.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;figcaption&gt;Forget about the power source end of the Chromecast as of now.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2017-12-19/1_chrome_hdmi.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;2-connect-3-rca-cable-to-the-hdmi2av-converter&quot;&gt;2. Connect 3-RCA Cable to the HDMI2AV Converter.&lt;/h3&gt;
+
+&lt;p&gt;Plug one end of the 3-RCA Cable (male) to the 3-RCA Slots (female) of the HDMI2AV Converter.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;figcaption&gt;Doesn't matter which end of the cable you connect to the converter.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2017-12-19/2_hdmi_rca.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;3-connect-3-rca-cable-to-the-tv-3-rca-slots&quot;&gt;3. Connect 3-RCA Cable to the TV 3-RCA Slots.&lt;/h3&gt;
+
+&lt;p&gt;Plug the other end of the 3-RCA Cable (male) to the 3-RCA Slots (female) of the Television.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;figcaption&gt;(Before Connecting) TV is 20yrs old so please don't mind the dust ;)&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2017-12-19/3_tv_bc.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;figcaption&gt;(After Connecting) Now, both the ends of 3-RCA cables are fully connected.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2017-12-19/4_tv_ac.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;4-connect-google-chromecast-to-powerbank&quot;&gt;4. Connect Google Chromecast to Powerbank.&lt;/h3&gt;
+
+&lt;p&gt;Use the first power slot of the powerbank to power up the Chromecast. To confirm the setup, one end of the Chromecast should be connected to the HDMI2AV connector and the other end to the Powerbank.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;figcaption&gt;That's how it should look after connecting.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2017-12-19/5_chrome_pb.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;5-connect-hdmi2av-converter-to-powerbank&quot;&gt;5. Connect HDMI2AV Converter to Powerbank.&lt;/h3&gt;
+
+&lt;p&gt;Use the second power slot of the powerbank to power up the Converter.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;figcaption&gt;Use the powerbank to transfer the supply via this port. (Cable is provided with the device).&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2017-12-19/6_conv.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The white USB wire supplies power to the HDMI2AV converter and the black USB wire supplies power to the Chromecast.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;figcaption&gt;The final setup should look like this.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2017-12-19/7_conn.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;6-power-on-the-television&quot;&gt;6. Power on the Television&lt;/h3&gt;
+
+&lt;p&gt;After powering on the TV, go to the respective A/V channnel on your remote namely (AV1, AV2, etc). We had it connected on AV1, so let’s go there.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;figcaption&gt;We have fired the AV1 Channel. We see the welcome screen of Google's Chromecast&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2017-12-19/8_cc.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;figcaption&gt;Your CRT TV  is now ready to play Youtube videos.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2017-12-19/9_yt.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If you have any questions, feel free to discuss in below comment section.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;product-purchase-links&quot;&gt;Product Purchase Links&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Google Chromecast&lt;/strong&gt;: https://www.google.co.in/intl/en_in/chromecast/buy-tv/&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;3-RCA Cable&lt;/strong&gt;: https://www.amazon.in/dp/B00ECW6NLM/&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;HDMI to AV Converter&lt;/strong&gt;: https://www.amazon.in/AlexVyan-Composite-Converter-Adapter-Supporting/dp/B078BHJ8WJ&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Powerbank&lt;/strong&gt;: https://www.amazon.in/Lenovo-PA13000-13000-Powerbank-White/dp/B00WUGBBGY&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+  
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/installation/convert-old-crt-tv-to-smart-tv&quot;&gt;Do not throw your Old TV, Convert it to a Smart TV instead!&lt;/a&gt; was originally published by Shankar Damodaran at &lt;a href=&quot;http://localhost:4000&quot;&gt;<b><font size='5.75em'>Inventor<font color='yellow' size='6.75em'>.</font> Biker<font color='yellow' size='6.75em'>.</font> Foodie<font color='yellow' size='6.75em'>.</font> h4ck3r<font color='yellow' size='6.75em'>.</font> Wanderlust<font color='yellow' size='6.75em'>. </font> </font><p>Sometimes....<span id='changingword'>I wanna be just ME.</span></p>&lt;/a&gt; on December 19, 2017.&lt;/p&gt;</content>
+</entry>
 
 
 <entry>

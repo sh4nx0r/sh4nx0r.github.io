@@ -1,6 +1,14 @@
 [
 	
 		{
+		  "title"      : "Do not throw your Old TV, Convert it to a Smart TV instead!",
+		  "category"   : "installation",
+		  "url"        : "http://localhost:4000/installation/convert-old-crt-tv-to-smart-tv",
+		  "date"       : "2017-12-19 00:00:00 +0600",
+		  "shortdate"  : "December 19, 2017"
+		} ,
+	
+		{
 		  "title"      : "Getting Started: Building a simple search engine with Apache Solr.",
 		  "category"   : "development",
 		  "url"        : "http://localhost:4000/development/building-search-engine-with-solr-mysql-linux-getting-started",
