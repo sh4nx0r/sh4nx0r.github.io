@@ -12,8 +12,8 @@ chart: true
 
 > ### just another guy next door.....
 
-<img src="/cvx.jpg" style="width:1000px; height:1413px; display:block; margin: 0 auto;" frameborder="0">
 
+<iframe src="https://docs.google.com/gview?url=https://github.com/sh4nx0r/sh4nx0r.github.io/raw/master/cvx.pdf&amp;embedded=true" style="width:75%; height:700px; display:block; margin: 0 auto;" frameborder="0"></iframe>
 
 ---
 

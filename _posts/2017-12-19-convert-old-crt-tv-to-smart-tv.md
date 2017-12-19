@@ -6,14 +6,14 @@ headline:
 modified: 2017-12-19
 category: installation
 tags: [install, convert old tv to smart tv, hdmi to avi, chromecast ]
-imagefeature: blogimages/2017-12-19/cover-2017-12-19.png
+imagefeature: blogimages/2017-12-19/cover-2017-12-19.jpg
 mathjax: 
 chart: 
 comments: true
 featured: false
 ---
 
-Ever wondered what to do with your Old CRT (Cathode Ray Tube) Television? Well, even I had no idea what to do with my 25inch **20** year old CRT TV (till date) and thought of giving it for 400 - 500 bucks. Well you know what? No one was ready to buy that either lol, Finally I realized Old is indeed Gold when I had it converted to a smart TV using a very simple process.
+Ever wondered what to do with your Old CRT (Cathode Ray Tube) Television? Well, even I had no idea what to do with my 25inch **20** year old CRT TV (till date) and thought of selling it for 400 - 500 bucks which I had purchased for 30,000. Well the twist was no one was ready to buy it :\. Finally I realized **Old is indeed Gold** when I had it converted to a smart TV using a very simple process.
 
 ## Hey will I be able to convert any CRT TV to Smart TV?
 Hmmm... to give you a gist, mine is a Philips 25PT 4457 25" CRT TV. It has 3-RCA (Radio Corporation of America) Input & One IEC Connector. **Any Old CRT TV with RCA Input can be converted to a Smart TV**.
@@ -35,7 +35,7 @@ Ahem. Check the picture below. Make sure you have that provision on your TV befo
 - HDMI to AV Converter
 - Powerbank
 
-The purchase links to all these devices is provided in the end section.
+The purchase links to all these devices are provided in the end section.
 
 ---
 
@@ -165,12 +165,12 @@ If you have any questions, feel free to discuss in below comment section.
 
 ## Product Purchase Links
 
-> **Google Chromecast**: https://www.google.co.in/intl/en_in/chromecast/buy-tv/
+### **Google Chromecast**: https://www.google.co.in/intl/en_in/chromecast/buy-tv/
 
-> **3-RCA Cable**: https://www.amazon.in/dp/B00ECW6NLM/
+### **3-RCA Cable**: https://www.amazon.in/dp/B00ECW6NLM/
 
-> **HDMI to AV Converter**: https://www.amazon.in/AlexVyan-Composite-Converter-Adapter-Supporting/dp/B078BHJ8WJ
+### **HDMI to AV Converter**: https://www.amazon.in/AlexVyan-Composite-Converter-Adapter-Supporting/dp/B078BHJ8WJ
 
-> **Powerbank**: https://www.amazon.in/Lenovo-PA13000-13000-Powerbank-White/dp/B00WUGBBGY
+### **Powerbank**: https://www.amazon.in/Lenovo-PA13000-13000-Powerbank-White/dp/B00WUGBBGY
 
 
