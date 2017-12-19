@@ -165,12 +165,12 @@ If you have any questions, feel free to discuss in below comment section.
 
 ## Product Purchase Links
 
-### **Google Chromecast**: https://www.google.co.in/intl/en_in/chromecast/buy-tv/
+1. **Google Chromecast** | https://www.google.co.in/intl/en_in/chromecast/buy-tv/
 
-### **3-RCA Cable**: https://www.amazon.in/dp/B00ECW6NLM/
+2. **3-RCA Cable** | https://www.amazon.in/dp/B00ECW6NLM/
 
-### **HDMI to AV Converter**: https://www.amazon.in/AlexVyan-Composite-Converter-Adapter-Supporting/dp/B078BHJ8WJ
+3. **HDMI to AV Converter** | https://www.amazon.in/AlexVyan-Composite-Converter-Adapter-Supporting/dp/B078BHJ8WJ
 
-### **Powerbank**: https://www.amazon.in/Lenovo-PA13000-13000-Powerbank-White/dp/B00WUGBBGY
+4. **Powerbank** | https://www.amazon.in/Lenovo-PA13000-13000-Powerbank-White/dp/B00WUGBBGY
 
 

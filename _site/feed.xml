@@ -7,7 +7,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://localhost:4000/" />
-<updated>2017-12-19T18:19:40+06:00</updated>
+<updated>2017-12-19T18:44:28+06:00</updated>
 <id>http://localhost:4000/</id>
 <author>
   <name>Shankar Damodaran</name>
@@ -187,13 +187,48 @@
 
 &lt;h2 id=&quot;product-purchase-links&quot;&gt;Product Purchase Links&lt;/h2&gt;
 
-&lt;h3 id=&quot;google-chromecast-httpswwwgooglecoinintlen_inchromecastbuy-tv&quot;&gt;&lt;strong&gt;Google Chromecast&lt;/strong&gt;: https://www.google.co.in/intl/en_in/chromecast/buy-tv/&lt;/h3&gt;
-
-&lt;h3 id=&quot;3-rca-cable-httpswwwamazonindpb00ecw6nlm&quot;&gt;&lt;strong&gt;3-RCA Cable&lt;/strong&gt;: https://www.amazon.in/dp/B00ECW6NLM/&lt;/h3&gt;
-
-&lt;h3 id=&quot;hdmi-to-av-converter-httpswwwamazoninalexvyan-composite-converter-adapter-supportingdpb078bhj8wj&quot;&gt;&lt;strong&gt;HDMI to AV Converter&lt;/strong&gt;: https://www.amazon.in/AlexVyan-Composite-Converter-Adapter-Supporting/dp/B078BHJ8WJ&lt;/h3&gt;
-
-&lt;h3 id=&quot;powerbank-httpswwwamazoninlenovo-pa13000-13000-powerbank-whitedpb00wugbbgy&quot;&gt;&lt;strong&gt;Powerbank&lt;/strong&gt;: https://www.amazon.in/Lenovo-PA13000-13000-Powerbank-White/dp/B00WUGBBGY&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Google Chromecast&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;https://www.google.co.in/intl/en_in/chromecast/buy-tv/&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;3-RCA Cable&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;https://www.amazon.in/dp/B00ECW6NLM/&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;HDMI to AV Converter&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;https://www.amazon.in/AlexVyan-Composite-Converter-Adapter-Supporting/dp/B078BHJ8WJ&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Powerbank&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;https://www.amazon.in/Lenovo-PA13000-13000-Powerbank-White/dp/B00WUGBBGY&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
 
 
   
