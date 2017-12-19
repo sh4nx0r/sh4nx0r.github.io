@@ -7,7 +7,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://localhost:4000/" />
-<updated>2017-12-19T18:44:28+06:00</updated>
+<updated>2017-12-19T19:00:41+06:00</updated>
 <id>http://localhost:4000/</id>
 <author>
   <name>Shankar Damodaran</name>
@@ -31,7 +31,7 @@
   <category scheme="http://localhost:4000/tags/#install" term="install" /><category scheme="http://localhost:4000/tags/#convert%20old%20tv%20to%20smart%20tv" term="convert old tv to smart tv" /><category scheme="http://localhost:4000/tags/#hdmi%20to%20avi" term="hdmi to avi" /><category scheme="http://localhost:4000/tags/#chromecast" term="chromecast" />
   <content type="html">
   
-    &lt;p&gt;Ever wondered what to do with your Old CRT (Cathode Ray Tube) Television? Well, even I had no idea what to do with my 25inch &lt;strong&gt;20&lt;/strong&gt; year old CRT TV (till date) and thought of selling it for 400 - 500 bucks which I had purchased for 30,000. Well the twist was no one was ready to buy it :. Finally I realized &lt;strong&gt;Old is indeed Gold&lt;/strong&gt; when I had it converted to a smart TV using a very simple process.&lt;/p&gt;
+    &lt;p&gt;Ever wondered what to do with your Old CRT (Cathode Ray Tube) Television? Well, even I had no idea what to do with my 25inch &lt;strong&gt;20&lt;/strong&gt; year old CRT TV (till date) and thought of selling it for 400 - 500 bucks which I had purchased for 30,000. Well the twist was no one was ready to buy it. Finally I realized &lt;strong&gt;Old is indeed Gold&lt;/strong&gt; when I had it converted to a smart TV using a very simple process.&lt;/p&gt;
 
 &lt;h2 id=&quot;hey-will-i-be-able-to-convert-any-crt-tv-to-smart-tv&quot;&gt;Hey will I be able to convert any CRT TV to Smart TV?&lt;/h2&gt;
 &lt;p&gt;Hmmm… to give you a gist, mine is a Philips 25PT 4457 25” CRT TV. It has 3-RCA (Radio Corporation of America) Input &amp;amp; One IEC Connector. &lt;strong&gt;Any Old CRT TV with RCA Input can be converted to a Smart TV&lt;/strong&gt;.&lt;/p&gt;
@@ -72,25 +72,25 @@
 &lt;h3 id=&quot;google-chromecast&quot;&gt;Google Chromecast&lt;/h3&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Google Chromecast plays a vital role in turning your CRT a Smart TV. We subject Chromecast’s HDMI port as an input to the converter which we will see soon. The device needs a low power supply. We are not going to use the power supply adapter that was shipped with Chromecast, instead we will make use of the powerbank’s source.&lt;/p&gt;
+  &lt;p&gt;Google Chromecast plays a vital role in turning your CRT a Smart TV. We subject Chromecast’s HDMI port as an input to the converter which we will see soon. The device needs a &lt;strong&gt;low power supply&lt;/strong&gt;. We are not going to use the power supply adapter that was shipped with Chromecast, instead we will make use of the powerbank’s source.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h3 id=&quot;3-rca-cable&quot;&gt;3-RCA Cable&lt;/h3&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;It is recommended to go for a better quality and durable RCA cable. Do not compromise on the price. One end of this cable will be connected to the converter’s RCA slot and the other end of this cable will be connected to TV’s RCA slot.&lt;/p&gt;
+  &lt;p&gt;It is recommended to go for a better quality and durable RCA cable. &lt;strong&gt;Do not compromise on the price&lt;/strong&gt;. One end of this cable will be connected to the converter’s RCA slot and the other end of this cable will be connected to TV’s RCA slot.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h3 id=&quot;hdmi-to-av-converter&quot;&gt;HDMI to AV Converter&lt;/h3&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;There are many converters available. MINI was the brand I purchased and I didn’t face any problems with it so far. Once again this converter requires a low power supply, in this case we will be using a power bank for the same. The product also comes with a power cable with this device.&lt;/p&gt;
+  &lt;p&gt;There are many converters available. MINI was the brand I purchased and I didn’t face any problems with it so far. Once again this converter requires a &lt;strong&gt;low power supply&lt;/strong&gt;, in this case we will be using a power bank for the same. The product also comes with a power cable with this device.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h3 id=&quot;powerbank&quot;&gt;Powerbank&lt;/h3&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;It is good to have a powerbank that can power up two devices at the same time. As you can see that I am using a Lenovo Powerbank with two slots.&lt;/p&gt;
+  &lt;p&gt;It is good to have a &lt;strong&gt;powerbank that can power up two devices&lt;/strong&gt; at the same time. As you can see that I am using a Lenovo Powerbank with two slots.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;hr /&gt;
@@ -176,7 +176,7 @@
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2017-12-19/8_cc.jpg&quot; /&gt;&lt;/p&gt;
 
 &lt;figure&gt;
-	&lt;figcaption&gt;Your CRT TV  is now ready to play Youtube videos.&lt;/figcaption&gt;
+	&lt;figcaption&gt;Your CRT TV is now ready to play Youtube videos.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2017-12-19/9_yt.jpg&quot; /&gt;&lt;/p&gt;
@@ -185,48 +185,22 @@
 
 &lt;hr /&gt;
 
-&lt;h2 id=&quot;product-purchase-links&quot;&gt;Product Purchase Links&lt;/h2&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Product Purchase Links&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;ol&gt;
   &lt;li&gt;
-    &lt;table&gt;
-      &lt;tbody&gt;
-        &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;Google Chromecast&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;https://www.google.co.in/intl/en_in/chromecast/buy-tv/&lt;/td&gt;
-        &lt;/tr&gt;
-      &lt;/tbody&gt;
-    &lt;/table&gt;
+    &lt;p&gt;&lt;strong&gt;Google Chromecast&lt;/strong&gt; : https://www.google.co.in/intl/en_in/chromecast/buy-tv/&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;table&gt;
-      &lt;tbody&gt;
-        &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;3-RCA Cable&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;https://www.amazon.in/dp/B00ECW6NLM/&lt;/td&gt;
-        &lt;/tr&gt;
-      &lt;/tbody&gt;
-    &lt;/table&gt;
+    &lt;p&gt;&lt;strong&gt;3-RCA Cable&lt;/strong&gt; : https://www.amazon.in/dp/B00ECW6NLM/&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;table&gt;
-      &lt;tbody&gt;
-        &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;HDMI to AV Converter&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;https://www.amazon.in/AlexVyan-Composite-Converter-Adapter-Supporting/dp/B078BHJ8WJ&lt;/td&gt;
-        &lt;/tr&gt;
-      &lt;/tbody&gt;
-    &lt;/table&gt;
+    &lt;p&gt;&lt;strong&gt;HDMI to AV Converter&lt;/strong&gt; : https://www.amazon.in/AlexVyan-Composite-Converter-Adapter-Supporting/dp/B078BHJ8WJ&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;table&gt;
-      &lt;tbody&gt;
-        &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;Powerbank&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;https://www.amazon.in/Lenovo-PA13000-13000-Powerbank-White/dp/B00WUGBBGY&lt;/td&gt;
-        &lt;/tr&gt;
-      &lt;/tbody&gt;
-    &lt;/table&gt;
+    &lt;p&gt;&lt;strong&gt;Powerbank&lt;/strong&gt; : https://www.amazon.in/Lenovo-PA13000-13000-Powerbank-White/dp/B00WUGBBGY&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 

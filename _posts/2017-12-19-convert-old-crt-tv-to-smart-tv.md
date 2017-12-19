@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Do not throw your Old TV, Convert it to a Smart TV instead!"
-description: An awesome tasty recipe made by me.
+description: An easy installation guide to convert your old TV to smart TV.
 headline: 
 modified: 2017-12-19
 category: installation
@@ -13,7 +13,7 @@ comments: true
 featured: false
 ---
 
-Ever wondered what to do with your Old CRT (Cathode Ray Tube) Television? Well, even I had no idea what to do with my 25inch **20** year old CRT TV (till date) and thought of selling it for 400 - 500 bucks which I had purchased for 30,000. Well the twist was no one was ready to buy it :\. Finally I realized **Old is indeed Gold** when I had it converted to a smart TV using a very simple process.
+Ever wondered what to do with your Old CRT (Cathode Ray Tube) Television? Well, even I had no idea what to do with my 25inch **20** year old CRT TV (till date) and thought of selling it for 400 - 500 bucks which I had purchased for 30,000. Well the twist was no one was ready to buy it. Finally I realized **Old is indeed Gold** when I had it converted to a smart TV using a very simple process.
 
 ## Hey will I be able to convert any CRT TV to Smart TV?
 Hmmm... to give you a gist, mine is a Philips 25PT 4457 25" CRT TV. It has 3-RCA (Radio Corporation of America) Input & One IEC Connector. **Any Old CRT TV with RCA Input can be converted to a Smart TV**.
@@ -53,19 +53,19 @@ The purchase links to all these devices are provided in the end section.
 
 ### Google Chromecast
 
-> Google Chromecast plays a vital role in turning your CRT a Smart TV. We subject Chromecast's HDMI port as an input to the converter which we will see soon. The device needs a low power supply. We are not going to use the power supply adapter that was shipped with Chromecast, instead we will make use of the powerbank's source.
+> Google Chromecast plays a vital role in turning your CRT a Smart TV. We subject Chromecast's HDMI port as an input to the converter which we will see soon. The device needs a **low power supply**. We are not going to use the power supply adapter that was shipped with Chromecast, instead we will make use of the powerbank's source.
 
 ### 3-RCA Cable
 
-> It is recommended to go for a better quality and durable RCA cable. Do not compromise on the price. One end of this cable will be connected to the converter's RCA slot and the other end of this cable will be connected to TV's RCA slot.
+> It is recommended to go for a better quality and durable RCA cable. **Do not compromise on the price**. One end of this cable will be connected to the converter's RCA slot and the other end of this cable will be connected to TV's RCA slot.
 
 ### HDMI to AV Converter
 
-> There are many converters available. MINI was the brand I purchased and I didn't face any problems with it so far. Once again this converter requires a low power supply, in this case we will be using a power bank for the same. The product also comes with a power cable with this device.
+> There are many converters available. MINI was the brand I purchased and I didn't face any problems with it so far. Once again this converter requires a **low power supply**, in this case we will be using a power bank for the same. The product also comes with a power cable with this device.
 
 ### Powerbank
 
-> It is good to have a powerbank that can power up two devices at the same time. As you can see that I am using a Lenovo Powerbank with two slots.
+> It is good to have a **powerbank that can power up two devices** at the same time. As you can see that I am using a Lenovo Powerbank with two slots.
 
 ---
 
@@ -154,7 +154,7 @@ After powering on the TV, go to the respective A/V channnel on your remote namel
 <img src="/images/blogimages/2017-12-19/8_cc.jpg">
 
 <figure>
-	<figcaption>Your CRT TV  is now ready to play Youtube videos.</figcaption>
+	<figcaption>Your CRT TV is now ready to play Youtube videos.</figcaption>
 </figure>
 
 <img src="/images/blogimages/2017-12-19/9_yt.jpg">
@@ -163,14 +163,14 @@ If you have any questions, feel free to discuss in below comment section.
 
 ---
 
-## Product Purchase Links
+> Product Purchase Links
 
-1. **Google Chromecast** | https://www.google.co.in/intl/en_in/chromecast/buy-tv/
+1. **Google Chromecast** : https://www.google.co.in/intl/en_in/chromecast/buy-tv/
 
-2. **3-RCA Cable** | https://www.amazon.in/dp/B00ECW6NLM/
+2. **3-RCA Cable** : https://www.amazon.in/dp/B00ECW6NLM/
 
-3. **HDMI to AV Converter** | https://www.amazon.in/AlexVyan-Composite-Converter-Adapter-Supporting/dp/B078BHJ8WJ
+3. **HDMI to AV Converter** : https://www.amazon.in/AlexVyan-Composite-Converter-Adapter-Supporting/dp/B078BHJ8WJ
 
-4. **Powerbank** | https://www.amazon.in/Lenovo-PA13000-13000-Powerbank-White/dp/B00WUGBBGY
+4. **Powerbank** : https://www.amazon.in/Lenovo-PA13000-13000-Powerbank-White/dp/B00WUGBBGY
 
 
