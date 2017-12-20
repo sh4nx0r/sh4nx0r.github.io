@@ -15,9 +15,9 @@ featured: true
 
 Almost **`90`** questions and still counting, I've been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a **Guide** to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness.
 
-> **Errata**
+> ## **Errata**
 
-Eventhough I have taken every care to ensure the accuracy of the content, mistakes do happen. Incase if you come across any mistake, either you can write to me or you can pull the repository and make changes wherever neccessary.
+Eventhough I have taken every care to ensure the accuracy of the content, mistakes do happen. Incase if you come across any mistake or typos, either you can write to me or **you can pull the repository and make changes wherever neccessary**. Any one of that will be highly appreciated. Thank you.
 
 ---
 
@@ -480,18 +480,18 @@ Input Validation and Output Sanitization are the two important methods to ward o
 
 ### 88. How will you write a good penetration test report?
 A penetration test report will be read not just by technical managers but also by business managers whose technical knowledge will be limited or none. The report should have detailed steps 
-stating how the analyst/tester made attempts in reaching the highest level of access. It is not neccessary that certain technical steps have to explained in detail, however the **executive 
+stating how the analyst/tester made attempts in reaching the highest level of access. It is not neccessary that certain technical steps have to be explained in detail, however the **executive 
 summary** should be drafted very well in almost "layman terms".
 
 ### 89. Consider you are going to engage a security assessment with a client, list out some questions that you would ask them.
 - Make the client understand the difference between Vulnerability Assessment and Penetration Testing, this is where most of the organizations does mistakes. So will this be a VA or PT?
 - What is the scope of the assessment, IP ranges, Timeframe, Internal and External scans etc?
-- Will there be as Social Engineering assessment involved like Phishing, Fake calls, etc?
-- How the assessment be like Black Box or White Box, For instance, Will a Network Topology be provided for the devices in the scope of assessment?
+- Will there be a Social Engineering assessment involved like Phishing, Fake calls, etc?
+- How the assessment be like? Black Box or White Box, For instance, Will a Network Topology be provided for the devices in the scope of the assessment?
 - Should physical security assessments also performed? (This involves the assessing team visiting the client premises, If so the cost involved, what are the devices to be tested, 
 surveillance cameras, lockpicking, USB dropping, etc)
 
 ### 90. State the nmap command to scan a target and output it to an XML file without host discovery and no arp pings. (You have 10 seconds)
-`nmap -oX out.xml -Pn --disable-arp-ping 192.168.1.1`
+`nmap -oX out.xml -Pn --disable-arp-ping 127.0.0.1`
 
 ---
