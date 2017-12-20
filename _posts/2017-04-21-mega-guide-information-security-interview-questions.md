@@ -13,8 +13,13 @@ comments: true
 featured: true
 ---
 
-Almost **`80`** questions and still counting, I've been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a **Guide** to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness.
+Almost **`90`** questions and still counting, I've been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a **Guide** to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness.
 
+> **Errata**
+
+Eventhough I have taken every care to ensure the accuracy of the content, mistakes do happen. Incase if you come across any mistake, either you can write to me or you can pull the repository and make changes wherever neccessary.
+
+---
 
 ### 1. What is a Repudiation Attack?
 
@@ -448,5 +453,45 @@ Windows Firewall to block specific types of outgoing traffic as well.
 Well this was a honeypot question, WebGoat is not a vulnerability scanning tool., it is a deliberately built insecure web application by OWASP such that it can be made use by security 
 analysts or anyone who wants to test their information security skills.
 
+### 81. What would happen if an attacker gets hold of your website SSL's private key?
+The attacker would then be able to decrypt communications., there are even chances that the attacker would be able to read the previous SSL sessions by decrypting it using the private key, 
+unless forward secrecy is implemented.
+
+### 82. How to implement Forward Secrecy?
+Forward Secrecy can be implemented using the recommended Elliptic Curve Diffie Hellman Key Exchange Algorithm (ECDHE). ECDHE is faster than normal Diffie Hellman. Since the session keys are 
+not linked to the server's key pair, eventhough if the attacker gets hold of the private key, the SSL session cannot be decrypted.
+
+### 83. Can you state any one method to deface a website without using any tool?
+Assuming the website has a stored XSS vulnerability. An attacker can easily inject a javascript with `location.href` tag and redirect to any site of his/her choice.
+
+### 84. Given an IP Address how will you determine the Operating System it is running?
+There is no 100% effectiveness to determine the operating system of a remote machine. However certain tool like `xprobe2` is used to guess the operating system to a certain extent. It is 
+highly recommended over nmap.
+
+### 85. What happens if Computer A's NIC card is interchanged to Computer B's NIC card? Will the MAC Address be the same?
+No. Since the NICs are interchanged, Computer A will have Computer B's MAC Address and vice versa. MAC addresses are embedded in NIC cards not in the Motherboards or Microprocessors.
+
+### 86. On which port does ping command work and how do you ping a port?
+**Ping** does not work on TCP or UDP, so obviously it does not make use of any port. It uses ICMP. You cannot use ping command to ping a port, instead use Nmap for this purpose. To give a you 
+perfect illustration, ping works irrespective of port numbers. `ping sh4.in` is same as `ping sh4.in 80` or `ping sh4.in 2873687234`
+
+### 87. Explain a simple crucial method to mitigate XSS or the Cross-Site-Scripting attack.
+Input Validation and Output Sanitization are the two important methods to ward off XSS attacks.
+
+### 88. How will you write a good penetration test report?
+A penetration test report will be read not just by technical managers but also by business managers whose technical knowledge will be limited or none. The report should have detailed steps 
+stating how the analyst/tester made attempts in reaching the highest level of access. It is not neccessary that certain technical steps have to explained in detail, however the **executive 
+summary** should be drafted very well in almost "layman terms".
+
+### 89. Consider you are going to engage a security assessment with a client, list out some questions that you would ask them.
+- Make the client understand the difference between Vulnerability Assessment and Penetration Testing, this is where most of the organizations does mistakes. So will this be a VA or PT?
+- What is the scope of the assessment, IP ranges, Timeframe, Internal and External scans etc?
+- Will there be as Social Engineering assessment involved like Phishing, Fake calls, etc?
+- How the assessment be like Black Box or White Box, For instance, Will a Network Topology be provided for the devices in the scope of assessment?
+- Should physical security assessments also performed? (This involves the assessing team visiting the client premises, If so the cost involved, what are the devices to be tested, 
+surveillance cameras, lockpicking, USB dropping, etc)
+
+### 90. State the nmap command to scan a target and output it to an XML file without host discovery and no arp pings. (You have 10 seconds)
+`nmap -oX out.xml -Pn --disable-arp-ping 192.168.1.1`
 
 ---

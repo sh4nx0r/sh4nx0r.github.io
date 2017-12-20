@@ -62,12 +62,12 @@
 <script type="text/javascript" src="http://localhost:4000/assets/js/bug/bug.js"></script>
 		<script type='text/javascript'>
 			// default fruit fly bug:
-			new BugController({
-			});
+			//new BugController({
+			//});
 
 			// default spiders:
-			new SpiderController({
-			});
+			//new SpiderController({
+			//});
 		</script>
 
 
@@ -183,7 +183,15 @@ $(function() {
         <img src="http://localhost:4000/images/blogimages/2017-04-21/cover-2017-04-21.jpg" alt="cover-image" />
 
         <article class="notepad-post-content post">
-            <div><p>Almost <strong><code class="highlighter-rouge">80</code></strong> questions and still counting, I’ve been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a <strong>Guide</strong> to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness.</p>
+            <div><p>Almost <strong><code class="highlighter-rouge">90</code></strong> questions and still counting, I’ve been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a <strong>Guide</strong> to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness.</p>
+
+<blockquote>
+  <p><strong>Errata</strong></p>
+</blockquote>
+
+<p>Eventhough I have taken every care to ensure the accuracy of the content, mistakes do happen. Incase if you come across any mistake, either you can write to me or you can pull the repository and make changes wherever neccessary.</p>
+
+<hr />
 
 <h3 id="1-what-is-a-repudiation-attack">1. What is a Repudiation Attack?</h3>
 
@@ -664,6 +672,49 @@ Windows Firewall to block specific types of outgoing traffic as well.</p>
 <h3 id="80-how-do-you-use-webgoat-to-find-vulnerabilities-in-a-website">80. How do you use WebGoat to find vulnerabilities in a website?</h3>
 <p>Well this was a honeypot question, WebGoat is not a vulnerability scanning tool., it is a deliberately built insecure web application by OWASP such that it can be made use by security 
 analysts or anyone who wants to test their information security skills.</p>
+
+<h3 id="81-what-would-happen-if-an-attacker-gets-hold-of-your-website-ssls-private-key">81. What would happen if an attacker gets hold of your website SSL’s private key?</h3>
+<p>The attacker would then be able to decrypt communications., there are even chances that the attacker would be able to read the previous SSL sessions by decrypting it using the private key, 
+unless forward secrecy is implemented.</p>
+
+<h3 id="82-how-to-implement-forward-secrecy">82. How to implement Forward Secrecy?</h3>
+<p>Forward Secrecy can be implemented using the recommended Elliptic Curve Diffie Hellman Key Exchange Algorithm (ECDHE). ECDHE is faster than normal Diffie Hellman. Since the session keys are 
+not linked to the server’s key pair, eventhough if the attacker gets hold of the private key, the SSL session cannot be decrypted.</p>
+
+<h3 id="83-can-you-state-any-one-method-to-deface-a-website-without-using-any-tool">83. Can you state any one method to deface a website without using any tool?</h3>
+<p>Assuming the website has a stored XSS vulnerability. An attacker can easily inject a javascript with <code class="highlighter-rouge">location.href</code> tag and redirect to any site of his/her choice.</p>
+
+<h3 id="84-given-an-ip-address-how-will-you-determine-the-operating-system-it-is-running">84. Given an IP Address how will you determine the Operating System it is running?</h3>
+<p>There is no 100% effectiveness to determine the operating system of a remote machine. However certain tool like <code class="highlighter-rouge">xprobe2</code> is used to guess the operating system to a certain extent. It is 
+highly recommended over nmap.</p>
+
+<h3 id="85-what-happens-if-computer-as-nic-card-is-interchanged-to-computer-bs-nic-card-will-the-mac-address-be-the-same">85. What happens if Computer A’s NIC card is interchanged to Computer B’s NIC card? Will the MAC Address be the same?</h3>
+<p>No. Since the NICs are interchanged, Computer A will have Computer B’s MAC Address and vice versa. MAC addresses are embedded in NIC cards not in the Motherboards or Microprocessors.</p>
+
+<h3 id="86-on-which-port-does-ping-command-work-and-how-do-you-ping-a-port">86. On which port does ping command work and how do you ping a port?</h3>
+<p><strong>Ping</strong> does not work on TCP or UDP, so obviously it does not make use of any port. It uses ICMP. You cannot use ping command to ping a port, instead use Nmap for this purpose. To give a you 
+perfect illustration, ping works irrespective of port numbers. <code class="highlighter-rouge">ping sh4.in</code> is same as <code class="highlighter-rouge">ping sh4.in 80</code> or <code class="highlighter-rouge">ping sh4.in 2873687234</code></p>
+
+<h3 id="87-explain-a-simple-crucial-method-to-mitigate-xss-or-the-cross-site-scripting-attack">87. Explain a simple crucial method to mitigate XSS or the Cross-Site-Scripting attack.</h3>
+<p>Input Validation and Output Sanitization are the two important methods to ward off XSS attacks.</p>
+
+<h3 id="88-how-will-you-write-a-good-penetration-test-report">88. How will you write a good penetration test report?</h3>
+<p>A penetration test report will be read not just by technical managers but also by business managers whose technical knowledge will be limited or none. The report should have detailed steps 
+stating how the analyst/tester made attempts in reaching the highest level of access. It is not neccessary that certain technical steps have to explained in detail, however the <strong>executive 
+summary</strong> should be drafted very well in almost “layman terms”.</p>
+
+<h3 id="89-consider-you-are-going-to-engage-a-security-assessment-with-a-client-list-out-some-questions-that-you-would-ask-them">89. Consider you are going to engage a security assessment with a client, list out some questions that you would ask them.</h3>
+<ul>
+  <li>Make the client understand the difference between Vulnerability Assessment and Penetration Testing, this is where most of the organizations does mistakes. So will this be a VA or PT?</li>
+  <li>What is the scope of the assessment, IP ranges, Timeframe, Internal and External scans etc?</li>
+  <li>Will there be as Social Engineering assessment involved like Phishing, Fake calls, etc?</li>
+  <li>How the assessment be like Black Box or White Box, For instance, Will a Network Topology be provided for the devices in the scope of assessment?</li>
+  <li>Should physical security assessments also performed? (This involves the assessing team visiting the client premises, If so the cost involved, what are the devices to be tested, 
+surveillance cameras, lockpicking, USB dropping, etc)</li>
+</ul>
+
+<h3 id="90-state-the-nmap-command-to-scan-a-target-and-output-it-to-an-xml-file-without-host-discovery-and-no-arp-pings-you-have-10-seconds">90. State the nmap command to scan a target and output it to an XML file without host discovery and no arp pings. (You have 10 seconds)</h3>
+<p><code class="highlighter-rouge">nmap -oX out.xml -Pn --disable-arp-ping 192.168.1.1</code></p>
 
 <hr />
 
