@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title>sh4.in | The Mega Guide to Information Security Interview Questions.</title>
 <meta name="description" content="Information Security Terminologies and Interview Questions for Security Enthusiasts.">
-<meta name="keywords" content="infosec, interview questions, pentesting, security analyst">
+<meta name="keywords" content="infosec, interview questions, pentesting, security analyst, infosec questions">
 
 <!-- Twitter Cards -->
 <meta name="twitter:card" content="summary_large_image">
@@ -175,7 +175,7 @@ $(function() {
 
             <div class="notepad-post-title bg-check">
                 <h1>The Mega Guide to Information Security Interview Questions.</h1>
-                <p>by <strong>Shankar Damodaran</strong> &#8212; on <a href="http://localhost:4000/tags/index.html#infosec" data-toggle="tooltip" title="Posts tagged with infosec" rel="tag">infosec</a>&nbsp;&comma;&nbsp;<a href="http://localhost:4000/tags/index.html#interview questions" data-toggle="tooltip" title="Posts tagged with interview questions" rel="tag">interview questions</a>&nbsp;&comma;&nbsp;<a href="http://localhost:4000/tags/index.html#pentesting" data-toggle="tooltip" title="Posts tagged with pentesting" rel="tag">pentesting</a>&nbsp;&comma;&nbsp;<a href="http://localhost:4000/tags/index.html#security analyst" data-toggle="tooltip" title="Posts tagged with security analyst" rel="tag">security analyst</a> <strong><time datetime="2017-04-21T00:00:00+06:00">21 Apr 2017</time></strong></p>
+                <p>by <strong>Shankar Damodaran</strong> &#8212; on <a href="http://localhost:4000/tags/index.html#infosec" data-toggle="tooltip" title="Posts tagged with infosec" rel="tag">infosec</a>&nbsp;&comma;&nbsp;<a href="http://localhost:4000/tags/index.html#interview questions" data-toggle="tooltip" title="Posts tagged with interview questions" rel="tag">interview questions</a>&nbsp;&comma;&nbsp;<a href="http://localhost:4000/tags/index.html#pentesting" data-toggle="tooltip" title="Posts tagged with pentesting" rel="tag">pentesting</a>&nbsp;&comma;&nbsp;<a href="http://localhost:4000/tags/index.html#security analyst" data-toggle="tooltip" title="Posts tagged with security analyst" rel="tag">security analyst</a>&nbsp;&comma;&nbsp;<a href="http://localhost:4000/tags/index.html#infosec questions" data-toggle="tooltip" title="Posts tagged with infosec questions" rel="tag">infosec questions</a> <strong><time datetime="2017-04-21T00:00:00+06:00">21 Apr 2017</time></strong></p>
             </div>
             <div class="bg-img"></div>
         </header>
@@ -183,13 +183,13 @@ $(function() {
         <img src="http://localhost:4000/images/blogimages/2017-04-21/cover-2017-04-21.jpg" alt="cover-image" />
 
         <article class="notepad-post-content post">
-            <div><p>Almost <strong><code class="highlighter-rouge">90</code></strong> questions and still counting, I’ve been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a <strong>Guide</strong> to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness.</p>
+            <div><p>Almost <strong><code class="highlighter-rouge">100</code></strong> questions and still counting, I’ve been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a <strong>Guide</strong> to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness.</p>
 
 <blockquote>
   <h2 id="errata"><strong>Errata</strong></h2>
 </blockquote>
 
-<p>Eventhough I have taken every care to ensure the accuracy of the content, mistakes do happen. Incase if you come across any mistake or typos, either you can write to me or you can pull the repository and make changes wherever neccessary. Any one of that will be highly appreciated. Thank you.</p>
+<p class="notice">Eventhough I have taken every care to ensure the accuracy of the content, mistakes do happen. Incase if you come across any mistake or typos, either you can write to me or <strong>you can pull the repository and make changes wherever neccessary</strong>. Any one of that will be highly appreciated. Thank you.</p>
 
 <hr />
 
@@ -290,7 +290,7 @@ Rainbow Cracker makes use of Rainbow Tables to do the cracking process, it is a 
 <h3 id="22-how-do-you-use-netcat-to-listen-and-connect-through-two-different-machinesvms">22. How do you use netcat to listen and connect through two different machines/VMs?</h3>
 
 <p>Say there are two machines A and B, If you want connect to A from B, then start a listener in A by running the command <code class="highlighter-rouge">nc -l -p 2334</code> . Inorder to connect to A from B., execute <code class="highlighter-rouge">nc 
-192.168.1.2 2334</code> (where 192.168.1.2 is the IP address for machine A)</p>
+192.168.1.2 2334</code> (where 192.168.1.2 is the IP address for machine A) on machine B.</p>
 
 <h3 id="23-state-some-differences-between-netcat-and-ncat">23. State some differences between Netcat and Ncat.</h3>
 
@@ -715,6 +715,43 @@ surveillance cameras, lockpicking, USB dropping, etc)</li>
 
 <h3 id="90-state-the-nmap-command-to-scan-a-target-and-output-it-to-an-xml-file-without-host-discovery-and-no-arp-pings-you-have-10-seconds">90. State the nmap command to scan a target and output it to an XML file without host discovery and no arp pings. (You have 10 seconds)</h3>
 <p><code class="highlighter-rouge">nmap -oX out.xml -Pn --disable-arp-ping 127.0.0.1</code></p>
+
+<h3 id="91-whats-the-difference-between-301-and-302-http-status-codes">91. What’s the difference between 301 and 302 HTTP Status Codes?</h3>
+<p>They both constitute redirection status codes, However the former is permanent and the latter is temporary.</p>
+
+<h3 id="92-how-will-you-generate-html-scan-reports-from-nmap">92. How will you generate HTML scan reports from NMap?</h3>
+<p>As of 2017, NMap does not have the feature of writing the reports to HTML format. It can output the report to XML format and from there it is possible to convert to HTML using XSLT processors.</p>
+
+<h3 id="93-iptables-what-are-they-set-a-rule-to-block-googlecom-and-state-how-effective-it-is">93. IPTables. What are they? Set a rule to block google.com and state how effective it is.</h3>
+<p>IPTables is a Firewall Utility for Linux Operating System. You can set rules in it for the accepting, rejecting or dropping incoming, outgoing or forwarding connections. The following below rule sets the website google.com to be blocked. <code class="highlighter-rouge">iptables -A OUTPUT -p tcp -m string --string "google.com" --algo kmp -j DROP</code>. To be straightforward, this is not an effective way to block a website, there are better ways to do it by using certains HTTP Proxies. Any user can bypass this rule by simple typing “google.co.in” or “google.co.uk” to access the website.</p>
+
+<h3 id="94-whats-a-transparent-proxy">94. What’s a Transparent Proxy?</h3>
+<p>Transparent Proxy is a type of caching proxy that is configured to sit on the gateway and intercepts the WWW requests from the client and fetches the data for the first time and the consecutive requests are cached. A Transparent Proxy can be clearly understood with these two example.</p>
+<ul>
+  <li>You come to some restaurant and you want to access their WiFi Hotspot, Once you get the credentials and you connect to their WWW Gateway, You will be authorized to use the internet. Here all the data what you request and send will be routed through this proxy.</li>
+  <li>A Content Delivery Network or a CDN can also act as a Transparent Proxy.</li>
+</ul>
+
+<h3 id="95-how-do-you-access-splunk-web-interface-by-default-unless-specified">95. How do you access Splunk Web Interface by default unless specified?</h3>
+<p>Splunk Web Interface runs on port 8000 by default. It can be accessed by going to http://localhost:8000</p>
+
+<h3 id="96-can-you-suggest-an-effective-solution-for-encrypting-data-in-rest">96. Can you suggest an effective solution for encrypting data-in-rest?</h3>
+<p>I suggest investing in SEDs. SEDs are <strong>Self-Encrypting Drives</strong>, they provide hardware based security by continously scrambling data using a key and descrambles the data while being retrieved with the key.</p>
+
+<h3 id="97-assume-a-pki-scenario-you-have-a-public-and-a-private-key-and-you-often-perform-both-encryption-and-signing-functions-which-key-is-used-for-which-function">97. Assume a PKI Scenario, You have a public and a private key, and you often perform both encryption and signing functions. Which key is used for which function?</h3>
+<ul>
+  <li>To perform <strong>Signing</strong> and send a message to the recipient, You use your <strong>private key</strong> to sign and send the message. The recipient will use your <strong>public key</strong> to verify whether the message is originally from you.</li>
+  <li>To perform <strong>Encryption</strong> and send a message to the recipient, You use the recipient’s <strong>public key</strong> to encrypt the message and the recipient will use their <strong>private key</strong> to decrypt the message.</li>
+</ul>
+
+<h3 id="98-how-meterpreter-shell-is-better-than-normal-shell-on-an-exploited-machine">98. How Meterpreter shell is better than normal shell on an exploited machine?</h3>
+<p>Meterpreter is more advanced than normal shell as you can run many commands with ease. It is possible to dump hashes, migrate to process, easily send and receive files, take screenshots, access webcam, mouse and more.</p>
+
+<h3 id="99-whats-a-heartbeat-and-a-heartbleed">99. What’s a Heartbeat and a HeartBleed?</h3>
+<p>HeartBleed is the vulnerability that exploits a built-in feature of OpenSSL called the HeartBeat. When your browser connects to the website and requests data, the website responds back to your browser and responds with data, this is otherwise called the HeartBeat. In this particular vulnerability, the attacker is able to craft a request in such a manner that the server responds back with data from the server’s memory beyond the total data of the initial request, up to 65,536 bytes. These bytes may contain more sensitive information like server config, passwords, etc.</p>
+
+<h3 id="100-you-notice-some-brute-force-attempts-happening-on-your-server-every-five-minutes-as-you-can-infer-this-is-a-near-futile-attempt-can-you-guess-the-motive-behind-this-attacker">100. You notice some brute-force attempts happening on your server every five minutes, as you can infer this is a near futile attempt can you guess the motive behind this attacker?</h3>
+<p>The attacker is pretty smart, as he is playing in a defensive way by not triggering the lockout mechanisms. The other crucial part here is the attacker is not just brute forcing not just your system, there are chances that the attacker is brute-forcing multiple targets and that’s the reason for the idle time. The inference we assume from this scenario is the attacker’s main motive is to build an ultimate botnet.</p>
 
 <hr />
 

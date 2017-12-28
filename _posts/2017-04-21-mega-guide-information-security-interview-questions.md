@@ -5,7 +5,7 @@ description: Information Security Terminologies and Interview Questions for Secu
 headline: 
 modified: 2017-04-21
 category: infosec
-tags: [infosec, interview questions, pentesting, security analyst ]
+tags: [infosec, interview questions, pentesting, security analyst, infosec questions,  ]
 imagefeature: blogimages/2017-04-21/cover-2017-04-21.jpg
 mathjax: 
 chart: 
@@ -13,11 +13,12 @@ comments: true
 featured: true
 ---
 
-Almost **`90`** questions and still counting, I've been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a **Guide** to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness.
+Almost **`100`** questions and still counting, I've been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a **Guide** to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness.
 
 > ## **Errata**
 
 Eventhough I have taken every care to ensure the accuracy of the content, mistakes do happen. Incase if you come across any mistake or typos, either you can write to me or **you can pull the repository and make changes wherever neccessary**. Any one of that will be highly appreciated. Thank you.
+{: .notice}
 
 ---
 
@@ -116,7 +117,7 @@ Rainbow Cracker makes use of Rainbow Tables to do the cracking process, it is a 
 ### 22. How do you use netcat to listen and connect through two different machines/VMs?
 
 Say there are two machines A and B, If you want connect to A from B, then start a listener in A by running the command `nc -l -p 2334` . Inorder to connect to A from B., execute `nc 
-192.168.1.2 2334` (where 192.168.1.2 is the IP address for machine A)
+192.168.1.2 2334` (where 192.168.1.2 is the IP address for machine A) on machine B.
 
 ### 23. State some differences between Netcat and Ncat.
 
@@ -493,5 +494,38 @@ surveillance cameras, lockpicking, USB dropping, etc)
 
 ### 90. State the nmap command to scan a target and output it to an XML file without host discovery and no arp pings. (You have 10 seconds)
 `nmap -oX out.xml -Pn --disable-arp-ping 127.0.0.1`
+
+### 91. What's the difference between 301 and 302 HTTP Status Codes?
+They both constitute redirection status codes, However the former is permanent and the latter is temporary.
+
+### 92. How will you generate HTML scan reports from NMap?
+As of 2017, NMap does not have the feature of writing the reports to HTML format. It can output the report to XML format and from there it is possible to convert to HTML using XSLT processors.
+
+### 93. IPTables. What are they? Set a rule to block google.com and state how effective it is.
+IPTables is a Firewall Utility for Linux Operating System. You can set rules in it for the accepting, rejecting or dropping incoming, outgoing or forwarding connections. The following below rule sets the website google.com to be blocked. `iptables -A OUTPUT -p tcp -m string --string "google.com" --algo kmp -j DROP`. To be straightforward, this is not an effective way to block a website, there are better ways to do it by using certains HTTP Proxies. Any user can bypass this rule by simple typing "google.co.in" or "google.co.uk" to access the website.
+
+### 94. What's a Transparent Proxy?
+Transparent Proxy is a type of caching proxy that is configured to sit on the gateway and intercepts the WWW requests from the client and fetches the data for the first time and the consecutive requests are cached. A Transparent Proxy can be clearly understood with these two example.
+- You come to some restaurant and you want to access their WiFi Hotspot, Once you get the credentials and you connect to their WWW Gateway, You will be authorized to use the internet. Here all the data what you request and send will be routed through this proxy.
+- A Content Delivery Network or a CDN can also act as a Transparent Proxy.
+
+### 95. How do you access Splunk Web Interface by default unless specified?
+Splunk Web Interface runs on port 8000 by default. It can be accessed by going to http://localhost:8000
+
+### 96. Can you suggest an effective solution for encrypting data-in-rest?
+I suggest investing in SEDs. SEDs are **Self-Encrypting Drives**, they provide hardware based security by continously scrambling data using a key and descrambles the data while being retrieved with the key.
+
+### 97. Assume a PKI Scenario, You have a public and a private key, and you often perform both encryption and signing functions. Which key is used for which function? 
+- To perform **Signing** and send a message to the recipient, You use your **private key** to sign and send the message. The recipient will use your **public key** to verify whether the message is originally from you.
+- To perform **Encryption** and send a message to the recipient, You use the recipient's **public key** to encrypt the message and the recipient will use their **private key** to decrypt the message.
+
+### 98. How Meterpreter shell is better than normal shell on an exploited machine?
+Meterpreter is more advanced than normal shell as you can run many commands with ease. It is possible to dump hashes, migrate to process, easily send and receive files, take screenshots, access webcam, mouse and more.
+
+### 99. What's a Heartbeat and a HeartBleed?
+HeartBleed is the vulnerability that exploits a built-in feature of OpenSSL called the HeartBeat. When your browser connects to the website and requests data, the website responds back to your browser and responds with data, this is otherwise called the HeartBeat. In this particular vulnerability, the attacker is able to craft a request in such a manner that the server responds back with data from the server's memory beyond the total data of the initial request, up to 65,536 bytes. These bytes may contain more sensitive information like server config, passwords, etc.
+
+### 100. You notice some brute-force attempts happening on your server every five minutes, as you can infer this is a near futile attempt can you guess the motive behind this attacker?
+The attacker is pretty smart, as he is playing in a defensive way by not triggering the lockout mechanisms. The other crucial part here is the attacker is not just brute forcing not just your system, there are chances that the attacker is brute-forcing multiple targets and that's the reason for the idle time. The inference we assume from this scenario is the attacker's main motive is to build an ultimate botnet.
 
 ---

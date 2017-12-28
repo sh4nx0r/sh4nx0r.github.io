@@ -7,7 +7,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://localhost:4000/" />
-<updated>2017-12-20T18:13:16+06:00</updated>
+<updated>2017-12-28T14:49:02+06:00</updated>
 <id>http://localhost:4000/</id>
 <author>
   <name>Shankar Damodaran</name>
@@ -620,16 +620,16 @@ Say ..  &lt;strong&gt;Downloads&lt;/strong&gt; or whatever.. So it will look lik
     <uri>http://localhost:4000</uri>
     <email>d.shankarnarayana@gmail.com</email>
   </author>
-  <category scheme="http://localhost:4000/tags/#infosec" term="infosec" /><category scheme="http://localhost:4000/tags/#interview%20questions" term="interview questions" /><category scheme="http://localhost:4000/tags/#pentesting" term="pentesting" /><category scheme="http://localhost:4000/tags/#security%20analyst" term="security analyst" />
+  <category scheme="http://localhost:4000/tags/#infosec" term="infosec" /><category scheme="http://localhost:4000/tags/#interview%20questions" term="interview questions" /><category scheme="http://localhost:4000/tags/#pentesting" term="pentesting" /><category scheme="http://localhost:4000/tags/#security%20analyst" term="security analyst" /><category scheme="http://localhost:4000/tags/#infosec%20questions" term="infosec questions" />
   <content type="html">
   
-    &lt;p&gt;Almost &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;90&lt;/code&gt;&lt;/strong&gt; questions and still counting, I’ve been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a &lt;strong&gt;Guide&lt;/strong&gt; to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness.&lt;/p&gt;
+    &lt;p&gt;Almost &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;100&lt;/code&gt;&lt;/strong&gt; questions and still counting, I’ve been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a &lt;strong&gt;Guide&lt;/strong&gt; to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness.&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;h2 id=&quot;errata&quot;&gt;&lt;strong&gt;Errata&lt;/strong&gt;&lt;/h2&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Eventhough I have taken every care to ensure the accuracy of the content, mistakes do happen. Incase if you come across any mistake or typos, either you can write to me or you can pull the repository and make changes wherever neccessary. Any one of that will be highly appreciated. Thank you.&lt;/p&gt;
+&lt;p class=&quot;notice&quot;&gt;Eventhough I have taken every care to ensure the accuracy of the content, mistakes do happen. Incase if you come across any mistake or typos, either you can write to me or &lt;strong&gt;you can pull the repository and make changes wherever neccessary&lt;/strong&gt;. Any one of that will be highly appreciated. Thank you.&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -730,7 +730,7 @@ Rainbow Cracker makes use of Rainbow Tables to do the cracking process, it is a 
 &lt;h3 id=&quot;22-how-do-you-use-netcat-to-listen-and-connect-through-two-different-machinesvms&quot;&gt;22. How do you use netcat to listen and connect through two different machines/VMs?&lt;/h3&gt;
 
 &lt;p&gt;Say there are two machines A and B, If you want connect to A from B, then start a listener in A by running the command &lt;code class=&quot;highlighter-rouge&quot;&gt;nc -l -p 2334&lt;/code&gt; . Inorder to connect to A from B., execute &lt;code class=&quot;highlighter-rouge&quot;&gt;nc 
-192.168.1.2 2334&lt;/code&gt; (where 192.168.1.2 is the IP address for machine A)&lt;/p&gt;
+192.168.1.2 2334&lt;/code&gt; (where 192.168.1.2 is the IP address for machine A) on machine B.&lt;/p&gt;
 
 &lt;h3 id=&quot;23-state-some-differences-between-netcat-and-ncat&quot;&gt;23. State some differences between Netcat and Ncat.&lt;/h3&gt;
 
@@ -1155,6 +1155,43 @@ surveillance cameras, lockpicking, USB dropping, etc)&lt;/li&gt;
 
 &lt;h3 id=&quot;90-state-the-nmap-command-to-scan-a-target-and-output-it-to-an-xml-file-without-host-discovery-and-no-arp-pings-you-have-10-seconds&quot;&gt;90. State the nmap command to scan a target and output it to an XML file without host discovery and no arp pings. (You have 10 seconds)&lt;/h3&gt;
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;nmap -oX out.xml -Pn --disable-arp-ping 127.0.0.1&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;91-whats-the-difference-between-301-and-302-http-status-codes&quot;&gt;91. What’s the difference between 301 and 302 HTTP Status Codes?&lt;/h3&gt;
+&lt;p&gt;They both constitute redirection status codes, However the former is permanent and the latter is temporary.&lt;/p&gt;
+
+&lt;h3 id=&quot;92-how-will-you-generate-html-scan-reports-from-nmap&quot;&gt;92. How will you generate HTML scan reports from NMap?&lt;/h3&gt;
+&lt;p&gt;As of 2017, NMap does not have the feature of writing the reports to HTML format. It can output the report to XML format and from there it is possible to convert to HTML using XSLT processors.&lt;/p&gt;
+
+&lt;h3 id=&quot;93-iptables-what-are-they-set-a-rule-to-block-googlecom-and-state-how-effective-it-is&quot;&gt;93. IPTables. What are they? Set a rule to block google.com and state how effective it is.&lt;/h3&gt;
+&lt;p&gt;IPTables is a Firewall Utility for Linux Operating System. You can set rules in it for the accepting, rejecting or dropping incoming, outgoing or forwarding connections. The following below rule sets the website google.com to be blocked. &lt;code class=&quot;highlighter-rouge&quot;&gt;iptables -A OUTPUT -p tcp -m string --string &quot;google.com&quot; --algo kmp -j DROP&lt;/code&gt;. To be straightforward, this is not an effective way to block a website, there are better ways to do it by using certains HTTP Proxies. Any user can bypass this rule by simple typing “google.co.in” or “google.co.uk” to access the website.&lt;/p&gt;
+
+&lt;h3 id=&quot;94-whats-a-transparent-proxy&quot;&gt;94. What’s a Transparent Proxy?&lt;/h3&gt;
+&lt;p&gt;Transparent Proxy is a type of caching proxy that is configured to sit on the gateway and intercepts the WWW requests from the client and fetches the data for the first time and the consecutive requests are cached. A Transparent Proxy can be clearly understood with these two example.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;You come to some restaurant and you want to access their WiFi Hotspot, Once you get the credentials and you connect to their WWW Gateway, You will be authorized to use the internet. Here all the data what you request and send will be routed through this proxy.&lt;/li&gt;
+  &lt;li&gt;A Content Delivery Network or a CDN can also act as a Transparent Proxy.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;95-how-do-you-access-splunk-web-interface-by-default-unless-specified&quot;&gt;95. How do you access Splunk Web Interface by default unless specified?&lt;/h3&gt;
+&lt;p&gt;Splunk Web Interface runs on port 8000 by default. It can be accessed by going to http://localhost:8000&lt;/p&gt;
+
+&lt;h3 id=&quot;96-can-you-suggest-an-effective-solution-for-encrypting-data-in-rest&quot;&gt;96. Can you suggest an effective solution for encrypting data-in-rest?&lt;/h3&gt;
+&lt;p&gt;I suggest investing in SEDs. SEDs are &lt;strong&gt;Self-Encrypting Drives&lt;/strong&gt;, they provide hardware based security by continously scrambling data using a key and descrambles the data while being retrieved with the key.&lt;/p&gt;
+
+&lt;h3 id=&quot;97-assume-a-pki-scenario-you-have-a-public-and-a-private-key-and-you-often-perform-both-encryption-and-signing-functions-which-key-is-used-for-which-function&quot;&gt;97. Assume a PKI Scenario, You have a public and a private key, and you often perform both encryption and signing functions. Which key is used for which function?&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;To perform &lt;strong&gt;Signing&lt;/strong&gt; and send a message to the recipient, You use your &lt;strong&gt;private key&lt;/strong&gt; to sign and send the message. The recipient will use your &lt;strong&gt;public key&lt;/strong&gt; to verify whether the message is originally from you.&lt;/li&gt;
+  &lt;li&gt;To perform &lt;strong&gt;Encryption&lt;/strong&gt; and send a message to the recipient, You use the recipient’s &lt;strong&gt;public key&lt;/strong&gt; to encrypt the message and the recipient will use their &lt;strong&gt;private key&lt;/strong&gt; to decrypt the message.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;98-how-meterpreter-shell-is-better-than-normal-shell-on-an-exploited-machine&quot;&gt;98. How Meterpreter shell is better than normal shell on an exploited machine?&lt;/h3&gt;
+&lt;p&gt;Meterpreter is more advanced than normal shell as you can run many commands with ease. It is possible to dump hashes, migrate to process, easily send and receive files, take screenshots, access webcam, mouse and more.&lt;/p&gt;
+
+&lt;h3 id=&quot;99-whats-a-heartbeat-and-a-heartbleed&quot;&gt;99. What’s a Heartbeat and a HeartBleed?&lt;/h3&gt;
+&lt;p&gt;HeartBleed is the vulnerability that exploits a built-in feature of OpenSSL called the HeartBeat. When your browser connects to the website and requests data, the website responds back to your browser and responds with data, this is otherwise called the HeartBeat. In this particular vulnerability, the attacker is able to craft a request in such a manner that the server responds back with data from the server’s memory beyond the total data of the initial request, up to 65,536 bytes. These bytes may contain more sensitive information like server config, passwords, etc.&lt;/p&gt;
+
+&lt;h3 id=&quot;100-you-notice-some-brute-force-attempts-happening-on-your-server-every-five-minutes-as-you-can-infer-this-is-a-near-futile-attempt-can-you-guess-the-motive-behind-this-attacker&quot;&gt;100. You notice some brute-force attempts happening on your server every five minutes, as you can infer this is a near futile attempt can you guess the motive behind this attacker?&lt;/h3&gt;
+&lt;p&gt;The attacker is pretty smart, as he is playing in a defensive way by not triggering the lockout mechanisms. The other crucial part here is the attacker is not just brute forcing not just your system, there are chances that the attacker is brute-forcing multiple targets and that’s the reason for the idle time. The inference we assume from this scenario is the attacker’s main motive is to build an ultimate botnet.&lt;/p&gt;
 
 &lt;hr /&gt;
 
