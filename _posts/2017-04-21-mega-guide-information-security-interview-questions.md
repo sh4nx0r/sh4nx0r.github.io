@@ -505,7 +505,7 @@ As of 2017, NMap does not have the feature of writing the reports to HTML format
 IPTables is a Firewall Utility for Linux Operating System. You can set rules in it for the accepting, rejecting or dropping incoming, outgoing or forwarding connections. The following below rule sets the website google.com to be blocked. `iptables -A OUTPUT -p tcp -m string --string "google.com" --algo kmp -j DROP`. To be straightforward, this is not an effective way to block a website, there are better ways to do it by using certains HTTP Proxies. Any user can bypass this rule by simple typing "google.co.in" or "google.co.uk" to access the website.
 
 ### 94. What's a Transparent Proxy?
-Transparent Proxy is a type of caching proxy that is configured to sit on the gateway and intercepts the WWW requests from the client and fetches the data for the first time and the consecutive requests are cached. A Transparent Proxy can be clearly understood with these two example.
+Transparent Proxy is a type of caching proxy that is configured to sit on the gateway and intercepts the WWW requests from the client and fetches the data for the first time and the consecutive requests are cached. A Transparent Proxy can be clearly understood with these two examples.
 - You come to some restaurant and you want to access their WiFi Hotspot, Once you get the credentials and you connect to their WWW Gateway, You will be authorized to use the internet. Here all the data what you request and send will be routed through this proxy.
 - A Content Delivery Network or a CDN can also act as a Transparent Proxy.
 
@@ -526,6 +526,6 @@ Meterpreter is more advanced than normal shell as you can run many commands with
 HeartBleed is the vulnerability that exploits a built-in feature of OpenSSL called the HeartBeat. When your browser connects to the website and requests data, the website responds back to your browser and responds with data, this is otherwise called the HeartBeat. In this particular vulnerability, the attacker is able to craft a request in such a manner that the server responds back with data from the server's memory beyond the total data of the initial request, up to 65,536 bytes. These bytes may contain more sensitive information like server config, passwords, etc.
 
 ### 100. You notice some brute-force attempts happening on your server every five minutes, as you can infer this is a near futile attempt can you guess the motive behind this attacker?
-The attacker is pretty smart, as he is playing in a defensive way by not triggering the lockout mechanisms. The other crucial part here is the attacker is not just brute forcing not just your system, there are chances that the attacker is brute-forcing multiple targets and that's the reason for the idle time. The inference we assume from this scenario is the attacker's main motive is to build an ultimate botnet.
+The attacker is pretty smart, as he is playing in a defensive way by not triggering the lockout mechanisms. The other crucial part here is the attacker is not just brute forcing your system, there are chances that the attacker is brute-forcing multiple targets and that's the reason for the idle time. The inference we assume from this scenario is the attacker's main motive is to build an ultimate botnet.
 
 ---
