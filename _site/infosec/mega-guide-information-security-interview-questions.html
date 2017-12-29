@@ -183,13 +183,19 @@ $(function() {
         <img src="http://localhost:4000/images/blogimages/2017-04-21/cover-2017-04-21.jpg" alt="cover-image" />
 
         <article class="notepad-post-content post">
-            <div><p>Almost <strong><code class="highlighter-rouge">100</code></strong> questions and still counting, I’ve been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a <strong>Guide</strong> to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness.</p>
+            <div><p>Almost <strong><font color="red">100</font></strong> questions and still counting, I’ve been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a <strong>Guide</strong> to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness.</p>
 
 <blockquote>
   <h2 id="errata"><strong>Errata</strong></h2>
 </blockquote>
 
-<p class="notice">Eventhough I have taken every care to ensure the accuracy of the content, mistakes do happen. Incase if you come across any mistake or typos, either you can write to me or <strong>you can pull the repository and make changes wherever neccessary</strong>. Any one of that will be highly appreciated. Thank you.</p>
+<p class="notice">Eventhough I have taken every care to ensure the accuracy of the content, mistakes do happen. Incase if you come across any mistake or typos, either you can write to me or <strong>you can pull the repository and make changes wherever neccessary</strong>. Any one of that will be highly appreciated.</p>
+
+<blockquote>
+  <h2 id="contribution"><strong>Contribution</strong></h2>
+</blockquote>
+
+<p class="notice">Most of the questions are gathered from interviews taken and given by my colleagues and friends. Contribution to this guide is welcome. You can either write to me or <strong>you can pull this repository</strong>. Credits will definitely be given to your name aside the question.</p>
 
 <hr />
 
@@ -328,7 +334,7 @@ when it comes to DNS, since TCP makes use of a three-way-handshake., it will be 
 
 <h3 id="28-how-to-check-for-click-jacking-and-state-atleast-one-method-to-prevent-it">28. How to check for Click-Jacking and state atleast one method to prevent it?</h3>
 
-<p>Write a normal html code, add an iframe something like this <code class="highlighter-rouge">&lt;iframe src="vulnerableCSRFwebsite.com"&gt;</code>, save it as test.html. Open this html in the browser. If vulnerableCSRFwebsite.com 
+<p>Write a normal html code, add an iframe something like this <code class="highlighter-rouge">&lt;iframe src="vulnerableClickJackingSite.com"&gt;</code>, save it as test.html. Open this html in the browser. If vulnerableClickJackingSite.com 
 opens up within the iframe, then the site is vulnerable to Click-Jacking.</p>
 
 <p><strong>Prevention:</strong> By configuring X-Frame Options Headers to <code class="highlighter-rouge">DENY</code> or <code class="highlighter-rouge">SAMEORIGIN</code> or the site using <code class="highlighter-rouge">ALLOW-FROM</code>. See the code below.</p>

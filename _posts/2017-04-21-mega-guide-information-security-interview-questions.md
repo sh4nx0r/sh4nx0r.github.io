@@ -13,11 +13,16 @@ comments: true
 featured: true
 ---
 
-Almost **`100`** questions and still counting, I've been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a **Guide** to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness.
+Almost **<font color='red'>100</font>** questions and still counting, I've been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a **Guide** to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness.
 
 > ## **Errata**
 
-Eventhough I have taken every care to ensure the accuracy of the content, mistakes do happen. Incase if you come across any mistake or typos, either you can write to me or **you can pull the repository and make changes wherever neccessary**. Any one of that will be highly appreciated. Thank you.
+Eventhough I have taken every care to ensure the accuracy of the content, mistakes do happen. Incase if you come across any mistake or typos, either you can write to me or **you can pull the repository and make changes wherever neccessary**. Any one of that will be highly appreciated.
+{: .notice}
+
+> ## **Contribution**
+
+Most of the questions are gathered from interviews taken and given by my colleagues and friends. Contribution to this guide is welcome. You can either write to me or **you can pull this repository**. Credits will definitely be given to your name aside the question.
 {: .notice}
 
 ---
@@ -153,7 +158,7 @@ There are 65535 UDP ports as well.
 
 ### 28. How to check for Click-Jacking and state atleast one method to prevent it?
 
-Write a normal html code, add an iframe something like this `<iframe src="vulnerableCSRFwebsite.com">`, save it as test.html. Open this html in the browser. If vulnerableCSRFwebsite.com 
+Write a normal html code, add an iframe something like this `<iframe src="vulnerableClickJackingSite.com">`, save it as test.html. Open this html in the browser. If vulnerableClickJackingSite.com 
 opens up within the iframe, then the site is vulnerable to Click-Jacking.
 
 **Prevention:** By configuring X-Frame Options Headers to `DENY` or `SAMEORIGIN` or the site using `ALLOW-FROM`. See the code below.
@@ -274,10 +279,8 @@ holder. For eg: SSL certificate for a website.
 ### 48. Consider you are in the internal network of a organization, you need to find the Operating System of another machine in the same network without using any tools. What command would you use under a Windows Environment?
 `systeminfo /s`.
 
-
 ### 49. State BYOD and its merits and demerits.
 BYOD - Bring Your Own Device is a type of policy in any organization that lets employees to bring in their own computers, laptops or other devices that would let them connect to office's network and do the official work. Employee's personal devices maybe faster than that of the gadgets their companies provide. Worst part is if the personal gadget is affected by any virus or malware if will spread through the entire network.
-
 
 ### 50. What are the different modules of Metasploit Architecture?
 - Auxiliary
