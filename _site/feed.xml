@@ -7,7 +7,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://localhost:4000/" />
-<updated>2017-12-29T17:57:07+06:00</updated>
+<updated>2018-01-02T14:55:49+06:00</updated>
 <id>http://localhost:4000/</id>
 <author>
   <name>Shankar Damodaran</name>
@@ -635,7 +635,7 @@ Say ..  &lt;strong&gt;Downloads&lt;/strong&gt; or whatever.. So it will look lik
   &lt;h2 id=&quot;contribution&quot;&gt;&lt;strong&gt;Contribution&lt;/strong&gt;&lt;/h2&gt;
 &lt;/blockquote&gt;
 
-&lt;p class=&quot;notice&quot;&gt;Most of the questions are gathered from interviews taken and given by my colleagues and friends. Contribution to this guide is welcome. You can either write to me or &lt;strong&gt;you can pull this repository&lt;/strong&gt;. Credits will definitely be given to your name aside the question.&lt;/p&gt;
+&lt;p class=&quot;notice&quot;&gt;Contribution to this guide is welcome. You can either write to me or &lt;strong&gt;you can pull this repository&lt;/strong&gt;. Credits will definitely be given to your name aside the question.&lt;/p&gt;
 
 &lt;hr /&gt;
 

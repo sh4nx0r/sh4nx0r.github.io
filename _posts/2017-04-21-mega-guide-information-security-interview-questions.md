@@ -22,7 +22,7 @@ Eventhough I have taken every care to ensure the accuracy of the content, mistak
 
 > ## **Contribution**
 
-Most of the questions are gathered from interviews taken and given by my colleagues and friends. Contribution to this guide is welcome. You can either write to me or **you can pull this repository**. Credits will definitely be given to your name aside the question.
+Contribution to this guide is welcome. You can either write to me or **you can pull this repository**. Credits will definitely be given to your name aside the question.
 {: .notice}
 
 ---
