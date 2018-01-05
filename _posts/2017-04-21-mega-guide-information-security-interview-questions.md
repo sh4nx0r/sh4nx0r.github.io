@@ -531,4 +531,43 @@ HeartBleed is the vulnerability that exploits a built-in feature of OpenSSL call
 ### 100. You notice some brute-force attempts happening on your server every five minutes, as you can infer this is a near futile attempt can you guess the motive behind this attacker?
 The attacker is pretty smart, as he is playing in a defensive way by not triggering the lockout mechanisms. The other crucial part here is the attacker is not just brute forcing your system, there are chances that the attacker is brute-forcing multiple targets and that's the reason for the idle time. The inference we assume from this scenario is the attacker's main motive is to build an ultimate botnet.
 
+### 101. How will you find your internal IP address on your office network when your command prompt access is disabled?
+Go to Control Panel -> Network & Sharing Center -> Local Area Connection -> Details... 
+
+### 102. What is Malware and Spyware. Which is more of a threat?
+More of a threat? actually this is a brain teaser question, Malware is nothing but "Malicious Software", a software that tends to do malicious activities is termed as Malicious Software or Malware. Spyware (spies on your browsing activities, webcam, etc), Adware (annoying popup ads that redirects to some phishing sites) , Ransomware (Wannacry, sites that demand money to remove viruses) etc are grouped under Malware.
+
+### 103. How do you differentiate HotFix, Patch and Service Pack?
+
+- Hotfix: Say for instance, a few major clients are using a particular version of a software from a vendor and they feel that a particular important feature need is required and they can't wait for the next version of the product. In that case, the vendor releases a hotfix which is a add-on feature to that particular product. Make a note that this feature is not rolled out public.
+- Patch: Unlike hotfixes, the patches are rolled out public. A classic example would be WannaCry Patch.
+- Service Pack: This is a bundle that is inclusive of Hotfixes and Patches.
+
+### 104. Explain the four-way handshake on Wireless Protocols.
+- The Access Point sends a ANonce (Nonce is a number used only once) to the Client. (Basically a random integer)
+- Client uses the ANonce and PMK (Pairwise Master Key) (The PMK is generated from PSK) to construct the PTK (Pairwise Transient Key). The Client then sends the PTK, Client's SNonce and MIC to the Access Point.
+- The Access Point sends GTK (Group Temporal Key) (The GTK is mostly derived from Group Master Key (GMK) which inturn is derived from Authenticator) and MIC.
+- The Client sends the ACK along with MIC.
+
+### 105. What's the difference between XSS and CSRF attacks?
+Both are client-side attacks, XSS can be more devastating as you can embed executable arbitrary code but with CSRF this is not possible. To exploit a CSRF attack in a website, the attacker has to somehow forge a deceptive link and send it to the victim, the attack will take place only when the user clicks the link, In real world scenario this is pretty hard to carry out. However, in an XSS attack (in this case say a stored XSS vulnerability), the attacker simply has to inject a malicious script (say a cookie stealing script or redirection script) so any victim connects to that particular page will be affected.    
+
+### 106. Is it possible to leverage a CSRF attack using an XSS attack?
+Yes it is possible. Assume there are two websites Site A (a social networking site) and Site B (a banking application). The victim logs into Site B with credentials and after a while the user navigates to the Site A which has XSS payload that loads stuff in the background and exploits the CSRF vulnerability on Site A. So in this scenario, the attacker did not send any active link to the victim to exploit the CSRF vulnerability on Site B.
+
+### 107. What's a GreyBox approach in Pentesting, Is it better than BlackBox?
+The pentester is provided with _not so much_ information about the target. However, that information provided is quite essential. Some of these information include network diagrams, services, credentials, etc but the target owner may not disclose business critical information during a grey-box test to the pentester. Greybox is obviously better than Blackbox testing as this can be justified with a compact example. Let us assume a login panel that does not have a signup panel, in this case chances are quite faint to explore the internal dashboard and detect the vulnerabilities within. Well in this case, the greybox testing gets an upper hand over the blackbox testing.
+
+### 108. What's a Virus, Worm and a Trojan Horse? Are they all same?
+Virus, Worm and Trojan falls under the Malware set, but they are not the same. Virus cannot cause damage unless it is invoked by user. Mostly it comes in the form of an executable and it can attach itself to another executable, but does not execute automatically without human intervention. This is not in the case of a Worm, they are a subset of Virus but they have the tendency to attach themselves to other files and can make copies of themselves. Worms can automatically infect a machine without user intervention. A simple example for a worm scenario would be automatically sending a message to all of your contacts in your address book. Trojans are quite different and they are not meant to cause immediate havoc but their effects can be very devastating. Attackers make use of Trojan to place a backdoor in the exploited machine such that they can access the machine anytime or can also make the exploited machine act as a Bot in launching a DoS attack. Trojans give attackers full access over the machine and they behave as a command center. Trojans like Sub7 lets attacker to change the remote computer's windows settings, turn display upside down, open/close the DVD Drive, etc.
+
+### 109. What's a Forward proxy and a Reverse proxy?
+
+- A Forward proxy sits between the client and the server. Configuration has to be done on the client side. The requests from the client are routed through the proxy and then reaches the server. For better understanding a few examples can be listed out. Say a user in Sweden wants to connect to a website that is accessible only for US residents, the user can make use of a Tor client and change the location to US and then access the particular website. In this case, the ToR client acts a Forward Proxy. Another example would be, An organization may allow access to their application through their specified proxy and port, this restricts outside users to connect to the website unless they knew the proxy address and port. 
+- A Reverse proxy is quite different. Configuration has to be done on the server side. Load Balancing is one of the concepts that comes under Reverse proxies. A high traffic website make uses of CDNs (Content Delivery Network) to balance the load on their servers; for example certain images, css, javascript files etc are loaded from third party sites.
+
+### 110. Explain Buffer Overflow Attack in a simple way. How to prevent it?
+Improper and insecure coding practices leads to Buffer Overflow Attacks. By ensuring proper coding standards and secure code development the buffer overflow attacks can be totally mitigated. Buffer overflow involves lots of details but the summary of it can be easily understood with the help of an example. Consider a mobile phone number field in an application which is usually 10 characters of length, if an attacker sends 50 characters to that application, the application abruptly crashes by throwing excess data in the CPU memory. By using certain techniques if the attacker can able to predict where the buffer data is getting overwritten, the attacker will be able to execute arbitary code in the memory, else the program will result in a Denial of Service condition.
+
+
 ---
