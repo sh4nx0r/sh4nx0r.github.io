@@ -1,20 +1,74 @@
----
----
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-        <loc>{{ site.url }}</loc>
-    </url>
-    
-    {% for page in site.pages %}
-    <url>
-        <loc>{{ site.url }}{{ page.url }}</loc>
-    </url>
-    {% endfor %}
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-    {% for post in site.posts %}
-    <url>
-        <loc>{{ site.url }}{{ post.url }}</loc>
-    </url>
-    {% endfor %}
+<url>
+  <loc>http://sh4.in/</loc>
+  <lastmod>2018-01-05T05:17:16+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://sh4.in/trending/</loc>
+  <lastmod>2018-01-05T05:17:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://sh4.in/whoami/</loc>
+  <lastmod>2018-01-05T05:17:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://sh4.in/installation/convert-old-crt-tv-to-smart-tv</loc>
+  <lastmod>2018-01-05T05:17:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://sh4.in/categories/index.html</loc>
+  <lastmod>2018-01-05T05:17:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://sh4.in/development/building-search-engine-with-solr-mysql-linux-getting-started</loc>
+  <lastmod>2018-01-05T05:17:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://sh4.in/infosec/mega-guide-information-security-interview-questions</loc>
+  <lastmod>2018-01-05T05:17:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://sh4.in/page2/</loc>
+  <lastmod>2018-01-05T05:17:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://sh4.in/about/</loc>
+  <lastmod>2018-01-05T05:17:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://sh4.in/movies/the-top-15-most-sick-disturbing-shocking-flicks-as-of-2014</loc>
+  <lastmod>2018-01-05T05:17:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://sh4.in/cvx.pdf</loc>
+  <lastmod>2018-01-05T05:17:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://sh4.in/tags/index.html</loc>
+  <lastmod>2018-01-05T05:17:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://sh4.in/recipe/bachelors-recipe-indo-chinese-egg-scramble</loc>
+  <lastmod>2018-01-05T05:17:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
 </urlset>
