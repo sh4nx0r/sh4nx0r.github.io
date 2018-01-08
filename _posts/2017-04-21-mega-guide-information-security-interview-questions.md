@@ -15,15 +15,17 @@ featured: true
 
 Almost **<font color='red'>110</font>** questions and still counting, I've been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a **Guide** to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness.
 
-> ## **Errata**
+> ## ***Errata & Contributions***
 
-Eventhough I have taken every care to ensure the accuracy of the content, mistakes do happen. Incase if you come across any mistake or typos, either you can write to me or **you can pull the repository and make changes wherever neccessary**. Any one of that will be highly appreciated.
+Eventhough I have taken every care to ensure the accuracy of the content, mistakes do happen. Incase if you come across any mistake or typos, either you can write to me or **you can go to the repository and make changes wherever neccessary**. Any one of that will be highly appreciated. Contribution to this guide is welcome.
 {: .notice}
 
-> ## **Contribution**
 
-Contribution to this guide is welcome. You can either write to me or **you can pull this repository**. Credits will definitely be given to your name aside the question.
+> ## ***The Repository***
+
+You can find it [here](https://github.com/sh4nx0r/sh4nx0r.github.io)
 {: .notice}
+
 
 ---
 
