@@ -54,8 +54,9 @@ timezone:    Asia/Dhaka
 future:      true
 highlighter: rouge
 markdown:    kramdown
-paginate:    10
-paginate_path: "page:num"
+gems: [jekyll-paginate]
+paginate:    5
+paginate_path: "p:num"
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink:   /:categories/:title
