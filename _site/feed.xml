@@ -7,7 +7,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://localhost:4000/" />
-<updated>2018-01-10T12:33:52+06:00</updated>
+<updated>2018-01-10T14:36:57+06:00</updated>
 <id>http://localhost:4000/</id>
 <author>
   <name>Shankar Damodaran</name>
@@ -623,7 +623,7 @@ Say ..  &lt;strong&gt;Downloads&lt;/strong&gt; or whatever.. So it will look lik
   <category scheme="http://localhost:4000/tags/#infosec" term="infosec" /><category scheme="http://localhost:4000/tags/#interview%20questions" term="interview questions" /><category scheme="http://localhost:4000/tags/#pentesting" term="pentesting" /><category scheme="http://localhost:4000/tags/#security%20analyst" term="security analyst" /><category scheme="http://localhost:4000/tags/#infosec%20questions" term="infosec questions" />
   <content type="html">
   
-    &lt;p&gt;Almost &lt;strong&gt;&lt;font color=&quot;red&quot;&gt;110&lt;/font&gt;&lt;/strong&gt; questions and still counting, I’ve been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a &lt;strong&gt;Guide&lt;/strong&gt; to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness.&lt;/p&gt;
+    &lt;p&gt;Almost &lt;strong&gt;&lt;font color=&quot;red&quot;&gt;120&lt;/font&gt;&lt;/strong&gt; questions and still counting, I’ve been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a &lt;strong&gt;Guide&lt;/strong&gt; to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness.&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;h2 id=&quot;errata--contributions&quot;&gt;&lt;strong&gt;&lt;em&gt;Errata &amp;amp; Contributions&lt;/em&gt;&lt;/strong&gt;&lt;/h2&gt;
@@ -639,30 +639,30 @@ Say ..  &lt;strong&gt;Downloads&lt;/strong&gt; or whatever.. So it will look lik
 
 &lt;hr /&gt;
 
-&lt;h3 id=&quot;1-what-is-a-repudiation-attack&quot;&gt;1. What is a Repudiation Attack?&lt;/h3&gt;
+&lt;h3 id=&quot;1-what-is-a-repudiation-attack&quot;&gt;1. What is a &lt;strong&gt;&lt;em&gt;Repudiation Attack&lt;/em&gt;&lt;/strong&gt;?&lt;/h3&gt;
 
 &lt;p&gt;An attacker can prove a vulnerability exists in an application without actually denying the attack made by him/her. This example can be compared with &lt;em&gt;Google Hacking&lt;/em&gt;. The attacker would have used Google Dork to find a weakness in the website without directly penetrating it. One more classic example would be the same website may have an information disclosure vulnerability in one of their pages if the error wasn’t handled properly. Repudiation Attacks may also be termed as &lt;strong&gt;&lt;em&gt;Passive Attacks&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;h3 id=&quot;2-what-is-a-false-positive-and-a-false-negative&quot;&gt;2. What is a False Positive and a False Negative?&lt;/h3&gt;
+&lt;h3 id=&quot;2-what-is-a-false-positive-and-a-false-negative&quot;&gt;2. What is a &lt;strong&gt;&lt;em&gt;False Positive&lt;/em&gt;&lt;/strong&gt; and a &lt;strong&gt;&lt;em&gt;False Negative&lt;/em&gt;&lt;/strong&gt;?&lt;/h3&gt;
 
 &lt;p&gt;&lt;strong&gt;False Positive&lt;/strong&gt;: An automated scanner scans a website and it shows the website is prone to some attack (say, SQLi, CSRF, etc), which actually isn’t. &lt;font color=&quot;green&quot;&gt;The site is safe.&lt;/font&gt;
 &lt;br /&gt;&lt;strong&gt;False Negative&lt;/strong&gt;: An automated scanner scans a website and it shows the website is safe from attacks (say, SQLi, CSRF, etc), which actually isn’t. &lt;font color=&quot;red&quot;&gt;The site isn't safe.&lt;/font&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;3-what-is-the-key-difference-between-penetration-testing-and-vulnerability-assessment&quot;&gt;3. What is the key difference between Penetration Testing and Vulnerability Assessment?&lt;/h3&gt;
+&lt;h3 id=&quot;3-what-is-the-key-difference-between-penetration-testing-and-vulnerability-assessment&quot;&gt;3. What is the key difference between &lt;strong&gt;&lt;em&gt;Penetration Testing&lt;/em&gt;&lt;/strong&gt; and &lt;strong&gt;&lt;em&gt;Vulnerability Assessment&lt;/em&gt;&lt;/strong&gt;?&lt;/h3&gt;
 
 &lt;p&gt;&lt;strong&gt;Penetration Testing&lt;/strong&gt; is a process of breaking into the system and trying to gain the maximum privilege on the network. The ultimatum here is to get to the deepest level inside a network. This process is more similar to how an intruder would penetrate except there will be no damage caused. The steps has to be properly documented on how the actions were performed to gain the highest privilege.
 &lt;br /&gt;&lt;strong&gt;Vulnerability Assessment&lt;/strong&gt; is a process of listing out all weaknesses in the machine (either by using a tool/manual ways) that is being assessed and list out the vulnerabilities in the highest order of risk. This process stops with this and does not further delve as of Penetration Testing.&lt;/p&gt;
 
-&lt;h3 id=&quot;4-how-to-define-csrf-attack-in-an-easier-way&quot;&gt;4. How to define CSRF attack in an easier way?&lt;/h3&gt;
+&lt;h3 id=&quot;4-how-to-define-csrf-attack-in-an-easier-way&quot;&gt;4. How to define &lt;strong&gt;&lt;em&gt;CSRF&lt;/em&gt;&lt;/strong&gt; attack in an easier way?&lt;/h3&gt;
 
 &lt;p&gt;&lt;strong&gt;Cross Site Request Forgery&lt;/strong&gt; or &lt;strong&gt;CSRF&lt;/strong&gt; is a vulnerability in a website that allows an attacker to trick an end-user(victim in this case) into performing malicious operations without their knowledge in the background.&lt;/p&gt;
 
-&lt;h3 id=&quot;5-which-is-more-important-to-fix-threat-or-vulnerability&quot;&gt;5. Which is more important to fix “Threat” or “Vulnerability”?&lt;/h3&gt;
+&lt;h3 id=&quot;5-which-is-more-important-to-fix-threat-or-vulnerability&quot;&gt;5. Which is more important to fix &lt;strong&gt;&lt;em&gt;Threat&lt;/em&gt;&lt;/strong&gt; or &lt;strong&gt;&lt;em&gt;Vulnerability&lt;/em&gt;&lt;/strong&gt;?&lt;/h3&gt;
 
 &lt;p&gt;Threats can be classified as &lt;em&gt;Inside Intruder, Natural Disasters, etc.&lt;/em&gt; whereas Vulnerabilities can be classified as weaknesses such as &lt;em&gt;SQLi, XSS, CSRF, Non Availability of Bunkers for protection against natural disasters, etc.&lt;/em&gt; A Threat &lt;strong&gt;must&lt;/strong&gt; make use a Vulnerability to exploit or create damage to the data. So it is important to fix vulnerabilities first than to focus on threats. Sometimes this can also be counter-intuitive, an insider working for an organization may pass vital information (&lt;em&gt;eg: admin credentials&lt;/em&gt;) to an outside intruder. The outsider can directly login to the application with the credentials and can cause damage to the data (in this case, the outsider did not make use of any vulnerability to exploit the application).
 &lt;br /&gt;Hence, there is no perfect answer that can be provided to the above question.&lt;/p&gt;
 
-&lt;h3 id=&quot;6-how-do-you-stop-brute-force-attacks&quot;&gt;6. How do you stop Brute-Force Attacks?&lt;/h3&gt;
+&lt;h3 id=&quot;6-how-do-you-stop-brute-force-attacks&quot;&gt;6. How do you stop &lt;strong&gt;&lt;em&gt;Brute-Force Attacks&lt;/em&gt;&lt;/strong&gt;?&lt;/h3&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Adding a &lt;strong&gt;CAPTCHA&lt;/strong&gt; functionality to the login forms.&lt;/li&gt;
@@ -671,7 +671,7 @@ Say ..  &lt;strong&gt;Downloads&lt;/strong&gt; or whatever.. So it will look lik
   &lt;li&gt;&lt;strong&gt;Authentication Delays&lt;/strong&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;7-whats-the-difference-between-an-exploit-and-a-payload&quot;&gt;7. What’s the difference between an “Exploit” and a “Payload”?&lt;/h3&gt;
+&lt;h3 id=&quot;7-whats-the-difference-between-an-exploit-and-a-payload&quot;&gt;7. What’s the difference between an &lt;strong&gt;&lt;em&gt;Exploit&lt;/em&gt;&lt;/strong&gt; and a &lt;strong&gt;&lt;em&gt;Payload&lt;/em&gt;&lt;/strong&gt;?&lt;/h3&gt;
 
 &lt;p&gt;An &lt;strong&gt;exploit&lt;/strong&gt; is the medium in which the payload is contained. Both represent a &lt;em&gt;piece of code&lt;/em&gt;, but a payload does contain the actual attack whereas an exploit can be termed as a &lt;em&gt;carrier&lt;/em&gt;. To make the explanation more clear and precise, take a Gun for an instance. The &lt;em&gt;Gun&lt;/em&gt; is the exploit whereas the &lt;em&gt;Bullet&lt;/em&gt; is the actual payload.&lt;/p&gt;
 
@@ -1245,29 +1245,26 @@ surveillance cameras, lockpicking, USB dropping, etc)&lt;/li&gt;
 &lt;p&gt;Improper and insecure coding practices leads to Buffer Overflow Attacks. By ensuring proper coding standards and secure code development the buffer overflow attacks can be &lt;strong&gt;totally mitigated&lt;/strong&gt;. Buffer overflow involves lots of details but the summary of it can be easily understood with the help of an example. &lt;em&gt;Consider a mobile phone number field in an application which is usually 10 characters of length, if an attacker sends 50 characters to that application, the application abruptly crashes by throwing excess data in the CPU memory&lt;/em&gt;. By using certain techniques if the attacker can able to predict where the buffer data is getting overwritten, the attacker will be able to execute arbitary code in the memory, else the program will result in a Denial of Service condition.&lt;/p&gt;
 
 &lt;h3 id=&quot;111-can-you-list-out-the-18-security-controls&quot;&gt;111. Can you list out the 18 Security Controls?&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;Access Control
-    &lt;ul&gt;
-      &lt;li&gt;Awareness and Training&lt;/li&gt;
-      &lt;li&gt;Audit and Accountability&lt;/li&gt;
-      &lt;li&gt;Security Assessment and Authorization&lt;/li&gt;
-      &lt;li&gt;Configuration Management&lt;/li&gt;
-      &lt;li&gt;Contingency Planning&lt;/li&gt;
-      &lt;li&gt;Identification and Authentication&lt;/li&gt;
-      &lt;li&gt;Incident Response&lt;/li&gt;
-      &lt;li&gt;Maintenance&lt;/li&gt;
-      &lt;li&gt;Media Protection&lt;/li&gt;
-      &lt;li&gt;Physical and Environmental Protection&lt;/li&gt;
-      &lt;li&gt;Planning&lt;/li&gt;
-      &lt;li&gt;Personnel Security&lt;/li&gt;
-      &lt;li&gt;Risk Assessment&lt;/li&gt;
-      &lt;li&gt;System and Services Acquisition&lt;/li&gt;
-      &lt;li&gt;System and Communications Protection&lt;/li&gt;
-      &lt;li&gt;System and Information Integrity&lt;/li&gt;
-      &lt;li&gt;Program Management&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
+&lt;ul&gt;
+  &lt;li&gt;Access Control&lt;/li&gt;
+  &lt;li&gt;Awareness and Training&lt;/li&gt;
+  &lt;li&gt;Audit and Accountability&lt;/li&gt;
+  &lt;li&gt;Security Assessment and Authorization&lt;/li&gt;
+  &lt;li&gt;Configuration Management&lt;/li&gt;
+  &lt;li&gt;Contingency Planning&lt;/li&gt;
+  &lt;li&gt;Identification and Authentication&lt;/li&gt;
+  &lt;li&gt;Incident Response&lt;/li&gt;
+  &lt;li&gt;Maintenance&lt;/li&gt;
+  &lt;li&gt;Media Protection&lt;/li&gt;
+  &lt;li&gt;Physical and Environmental Protection&lt;/li&gt;
+  &lt;li&gt;Planning&lt;/li&gt;
+  &lt;li&gt;Personnel Security&lt;/li&gt;
+  &lt;li&gt;Risk Assessment&lt;/li&gt;
+  &lt;li&gt;System and Services Acquisition&lt;/li&gt;
+  &lt;li&gt;System and Communications Protection&lt;/li&gt;
+  &lt;li&gt;System and Information Integrity&lt;/li&gt;
+  &lt;li&gt;Program Management&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h3 id=&quot;112-what-are-the-sector-specific-regulations-and-standards-that-affect-the-information-security-professionals-who-work-in-organizations&quot;&gt;112. What are the sector specific regulations and standards that affect the information security professionals who work in organizations?&lt;/h3&gt;
 &lt;ul&gt;
@@ -1322,16 +1319,13 @@ surveillance cameras, lockpicking, USB dropping, etc)&lt;/li&gt;
 
 &lt;p&gt;&lt;em&gt;Let us assume a password policy, the password has to be changed as often as possible to prevent account getting compromised and should be consisting of numbers, symbols and capitalized alphabets. Again a more complex password is quite hard to crack and this is the ultimate &lt;strong&gt;purpose&lt;/strong&gt; of a password policy. &lt;strong&gt;Asset&lt;/strong&gt; is the user account. &lt;strong&gt;Rules&lt;/strong&gt; of the policy include setting a complex password, changing the password in every 90 days, etc.&lt;/em&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;118-can-you-list-the-steps-in-security-policy-devevlopment-life-cycle&quot;&gt;118. Can you list the steps in Security Policy Devevlopment Life Cycle?&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;Identify the project.
-    &lt;ul&gt;
-      &lt;li&gt;Develop Policies.&lt;/li&gt;
-      &lt;li&gt;Review &amp;amp; Publish Policies.&lt;/li&gt;
-      &lt;li&gt;Maintain Policies.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
+&lt;h3 id=&quot;118-can-you-list-the-steps-in-security-policy-development-life-cycle&quot;&gt;118. Can you list the steps in Security Policy Development Life Cycle?&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Identify the project.&lt;/li&gt;
+  &lt;li&gt;Develop Policies.&lt;/li&gt;
+  &lt;li&gt;Review &amp;amp; Publish Policies.&lt;/li&gt;
+  &lt;li&gt;Maintain Policies.&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h3 id=&quot;119-whats-a-kerberos-protocol&quot;&gt;119. What’s a Kerberos Protocol?&lt;/h3&gt;
 &lt;p&gt;Kerberos is a &lt;em&gt;ticket&lt;/em&gt; based network authentication protocol. The protocol was developed by MIT and the idea behind it is that this authentication protocol can be used under a hostile environment.&lt;/p&gt;

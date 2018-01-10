@@ -183,7 +183,7 @@ $(function() {
         <img src="http://localhost:4000/images/blogimages/2017-04-21/cover-2017-04-21.jpg" alt="cover-image" />
 
         <article class="notepad-post-content post">
-            <div><p>Almost <strong><font color="red">110</font></strong> questions and still counting, I’ve been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a <strong>Guide</strong> to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness.</p>
+            <div><p>Almost <strong><font color="red">120</font></strong> questions and still counting, I’ve been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a <strong>Guide</strong> to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness.</p>
 
 <blockquote>
   <h2 id="errata--contributions"><strong><em>Errata &amp; Contributions</em></strong></h2>
@@ -199,30 +199,30 @@ $(function() {
 
 <hr />
 
-<h3 id="1-what-is-a-repudiation-attack">1. What is a Repudiation Attack?</h3>
+<h3 id="1-what-is-a-repudiation-attack">1. What is a <strong><em>Repudiation Attack</em></strong>?</h3>
 
 <p>An attacker can prove a vulnerability exists in an application without actually denying the attack made by him/her. This example can be compared with <em>Google Hacking</em>. The attacker would have used Google Dork to find a weakness in the website without directly penetrating it. One more classic example would be the same website may have an information disclosure vulnerability in one of their pages if the error wasn’t handled properly. Repudiation Attacks may also be termed as <strong><em>Passive Attacks</em></strong>.</p>
 
-<h3 id="2-what-is-a-false-positive-and-a-false-negative">2. What is a False Positive and a False Negative?</h3>
+<h3 id="2-what-is-a-false-positive-and-a-false-negative">2. What is a <strong><em>False Positive</em></strong> and a <strong><em>False Negative</em></strong>?</h3>
 
 <p><strong>False Positive</strong>: An automated scanner scans a website and it shows the website is prone to some attack (say, SQLi, CSRF, etc), which actually isn’t. <font color="green">The site is safe.</font>
 <br /><strong>False Negative</strong>: An automated scanner scans a website and it shows the website is safe from attacks (say, SQLi, CSRF, etc), which actually isn’t. <font color="red">The site isn't safe.</font></p>
 
-<h3 id="3-what-is-the-key-difference-between-penetration-testing-and-vulnerability-assessment">3. What is the key difference between Penetration Testing and Vulnerability Assessment?</h3>
+<h3 id="3-what-is-the-key-difference-between-penetration-testing-and-vulnerability-assessment">3. What is the key difference between <strong><em>Penetration Testing</em></strong> and <strong><em>Vulnerability Assessment</em></strong>?</h3>
 
 <p><strong>Penetration Testing</strong> is a process of breaking into the system and trying to gain the maximum privilege on the network. The ultimatum here is to get to the deepest level inside a network. This process is more similar to how an intruder would penetrate except there will be no damage caused. The steps has to be properly documented on how the actions were performed to gain the highest privilege.
 <br /><strong>Vulnerability Assessment</strong> is a process of listing out all weaknesses in the machine (either by using a tool/manual ways) that is being assessed and list out the vulnerabilities in the highest order of risk. This process stops with this and does not further delve as of Penetration Testing.</p>
 
-<h3 id="4-how-to-define-csrf-attack-in-an-easier-way">4. How to define CSRF attack in an easier way?</h3>
+<h3 id="4-how-to-define-csrf-attack-in-an-easier-way">4. How to define <strong><em>CSRF</em></strong> attack in an easier way?</h3>
 
 <p><strong>Cross Site Request Forgery</strong> or <strong>CSRF</strong> is a vulnerability in a website that allows an attacker to trick an end-user(victim in this case) into performing malicious operations without their knowledge in the background.</p>
 
-<h3 id="5-which-is-more-important-to-fix-threat-or-vulnerability">5. Which is more important to fix “Threat” or “Vulnerability”?</h3>
+<h3 id="5-which-is-more-important-to-fix-threat-or-vulnerability">5. Which is more important to fix <strong><em>Threat</em></strong> or <strong><em>Vulnerability</em></strong>?</h3>
 
 <p>Threats can be classified as <em>Inside Intruder, Natural Disasters, etc.</em> whereas Vulnerabilities can be classified as weaknesses such as <em>SQLi, XSS, CSRF, Non Availability of Bunkers for protection against natural disasters, etc.</em> A Threat <strong>must</strong> make use a Vulnerability to exploit or create damage to the data. So it is important to fix vulnerabilities first than to focus on threats. Sometimes this can also be counter-intuitive, an insider working for an organization may pass vital information (<em>eg: admin credentials</em>) to an outside intruder. The outsider can directly login to the application with the credentials and can cause damage to the data (in this case, the outsider did not make use of any vulnerability to exploit the application).
 <br />Hence, there is no perfect answer that can be provided to the above question.</p>
 
-<h3 id="6-how-do-you-stop-brute-force-attacks">6. How do you stop Brute-Force Attacks?</h3>
+<h3 id="6-how-do-you-stop-brute-force-attacks">6. How do you stop <strong><em>Brute-Force Attacks</em></strong>?</h3>
 
 <ul>
   <li>Adding a <strong>CAPTCHA</strong> functionality to the login forms.</li>
@@ -231,7 +231,7 @@ $(function() {
   <li><strong>Authentication Delays</strong>.</li>
 </ul>
 
-<h3 id="7-whats-the-difference-between-an-exploit-and-a-payload">7. What’s the difference between an “Exploit” and a “Payload”?</h3>
+<h3 id="7-whats-the-difference-between-an-exploit-and-a-payload">7. What’s the difference between an <strong><em>Exploit</em></strong> and a <strong><em>Payload</em></strong>?</h3>
 
 <p>An <strong>exploit</strong> is the medium in which the payload is contained. Both represent a <em>piece of code</em>, but a payload does contain the actual attack whereas an exploit can be termed as a <em>carrier</em>. To make the explanation more clear and precise, take a Gun for an instance. The <em>Gun</em> is the exploit whereas the <em>Bullet</em> is the actual payload.</p>
 
@@ -805,29 +805,26 @@ surveillance cameras, lockpicking, USB dropping, etc)</li>
 <p>Improper and insecure coding practices leads to Buffer Overflow Attacks. By ensuring proper coding standards and secure code development the buffer overflow attacks can be <strong>totally mitigated</strong>. Buffer overflow involves lots of details but the summary of it can be easily understood with the help of an example. <em>Consider a mobile phone number field in an application which is usually 10 characters of length, if an attacker sends 50 characters to that application, the application abruptly crashes by throwing excess data in the CPU memory</em>. By using certain techniques if the attacker can able to predict where the buffer data is getting overwritten, the attacker will be able to execute arbitary code in the memory, else the program will result in a Denial of Service condition.</p>
 
 <h3 id="111-can-you-list-out-the-18-security-controls">111. Can you list out the 18 Security Controls?</h3>
-<ol>
-  <li>Access Control
-    <ul>
-      <li>Awareness and Training</li>
-      <li>Audit and Accountability</li>
-      <li>Security Assessment and Authorization</li>
-      <li>Configuration Management</li>
-      <li>Contingency Planning</li>
-      <li>Identification and Authentication</li>
-      <li>Incident Response</li>
-      <li>Maintenance</li>
-      <li>Media Protection</li>
-      <li>Physical and Environmental Protection</li>
-      <li>Planning</li>
-      <li>Personnel Security</li>
-      <li>Risk Assessment</li>
-      <li>System and Services Acquisition</li>
-      <li>System and Communications Protection</li>
-      <li>System and Information Integrity</li>
-      <li>Program Management</li>
-    </ul>
-  </li>
-</ol>
+<ul>
+  <li>Access Control</li>
+  <li>Awareness and Training</li>
+  <li>Audit and Accountability</li>
+  <li>Security Assessment and Authorization</li>
+  <li>Configuration Management</li>
+  <li>Contingency Planning</li>
+  <li>Identification and Authentication</li>
+  <li>Incident Response</li>
+  <li>Maintenance</li>
+  <li>Media Protection</li>
+  <li>Physical and Environmental Protection</li>
+  <li>Planning</li>
+  <li>Personnel Security</li>
+  <li>Risk Assessment</li>
+  <li>System and Services Acquisition</li>
+  <li>System and Communications Protection</li>
+  <li>System and Information Integrity</li>
+  <li>Program Management</li>
+</ul>
 
 <h3 id="112-what-are-the-sector-specific-regulations-and-standards-that-affect-the-information-security-professionals-who-work-in-organizations">112. What are the sector specific regulations and standards that affect the information security professionals who work in organizations?</h3>
 <ul>
@@ -882,16 +879,13 @@ surveillance cameras, lockpicking, USB dropping, etc)</li>
 
 <p><em>Let us assume a password policy, the password has to be changed as often as possible to prevent account getting compromised and should be consisting of numbers, symbols and capitalized alphabets. Again a more complex password is quite hard to crack and this is the ultimate <strong>purpose</strong> of a password policy. <strong>Asset</strong> is the user account. <strong>Rules</strong> of the policy include setting a complex password, changing the password in every 90 days, etc.</em></p>
 
-<h3 id="118-can-you-list-the-steps-in-security-policy-devevlopment-life-cycle">118. Can you list the steps in Security Policy Devevlopment Life Cycle?</h3>
-<ol>
-  <li>Identify the project.
-    <ul>
-      <li>Develop Policies.</li>
-      <li>Review &amp; Publish Policies.</li>
-      <li>Maintain Policies.</li>
-    </ul>
-  </li>
-</ol>
+<h3 id="118-can-you-list-the-steps-in-security-policy-development-life-cycle">118. Can you list the steps in Security Policy Development Life Cycle?</h3>
+<ul>
+  <li>Identify the project.</li>
+  <li>Develop Policies.</li>
+  <li>Review &amp; Publish Policies.</li>
+  <li>Maintain Policies.</li>
+</ul>
 
 <h3 id="119-whats-a-kerberos-protocol">119. What’s a Kerberos Protocol?</h3>
 <p>Kerberos is a <em>ticket</em> based network authentication protocol. The protocol was developed by MIT and the idea behind it is that this authentication protocol can be used under a hostile environment.</p>

@@ -13,7 +13,7 @@ comments: true
 featured: true
 ---
 
-Almost **<font color='red'>110</font>** questions and still counting, I've been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a **Guide** to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness.
+Almost **<font color='red'>120</font>** questions and still counting, I've been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a **Guide** to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness.
 
 > ## ***Errata & Contributions***
 
@@ -29,37 +29,37 @@ Eventhough I have taken every care to ensure the accuracy of the content, mistak
 
 ---
 
-### 1. What is a Repudiation Attack?
+### 1. What is a ***Repudiation Attack***?
 
 An attacker can prove a vulnerability exists in an application without actually denying the attack made by him/her. This example can be compared with _Google Hacking_. The attacker would have used Google Dork to find a weakness in the website without directly penetrating it. One more classic example would be the same website may have an information disclosure vulnerability in one of their pages if the error wasn't handled properly. Repudiation Attacks may also be termed as **_Passive Attacks_**.
 
-### 2. What is a False Positive and a False Negative?
+### 2. What is a ***False Positive*** and a ***False Negative***?
 
 **False Positive**: An automated scanner scans a website and it shows the website is prone to some attack (say, SQLi, CSRF, etc), which actually isn't. <font color='green'>The site is safe.</font>
 <br>**False Negative**: An automated scanner scans a website and it shows the website is safe from attacks (say, SQLi, CSRF, etc), which actually isn't. <font color='red'>The site isn't safe.</font>
 
-### 3. What is the key difference between Penetration Testing and Vulnerability Assessment?
+### 3. What is the key difference between ***Penetration Testing*** and ***Vulnerability Assessment***?
 
 **Penetration Testing** is a process of breaking into the system and trying to gain the maximum privilege on the network. The ultimatum here is to get to the deepest level inside a network. This process is more similar to how an intruder would penetrate except there will be no damage caused. The steps has to be properly documented on how the actions were performed to gain the highest privilege.
 <br>**Vulnerability Assessment** is a process of listing out all weaknesses in the machine (either by using a tool/manual ways) that is being assessed and list out the vulnerabilities in the highest order of risk. This process stops with this and does not further delve as of Penetration Testing.
 
-### 4. How to define CSRF attack in an easier way?
+### 4. How to define ***CSRF*** attack in an easier way?
 
 **Cross Site Request Forgery** or **CSRF** is a vulnerability in a website that allows an attacker to trick an end-user(victim in this case) into performing malicious operations without their knowledge in the background.
 
-### 5. Which is more important to fix "Threat" or "Vulnerability"?
+### 5. Which is more important to fix ***Threat*** or ***Vulnerability***?
 
 Threats can be classified as _Inside Intruder, Natural Disasters, etc._ whereas Vulnerabilities can be classified as weaknesses such as _SQLi, XSS, CSRF, Non Availability of Bunkers for protection against natural disasters, etc._ A Threat **must** make use a Vulnerability to exploit or create damage to the data. So it is important to fix vulnerabilities first than to focus on threats. Sometimes this can also be counter-intuitive, an insider working for an organization may pass vital information (_eg: admin credentials_) to an outside intruder. The outsider can directly login to the application with the credentials and can cause damage to the data (in this case, the outsider did not make use of any vulnerability to exploit the application).
 <br>Hence, there is no perfect answer that can be provided to the above question.
 
-### 6. How do you stop Brute-Force Attacks?
+### 6. How do you stop ***Brute-Force Attacks***?
 
 - Adding a **CAPTCHA** functionality to the login forms.
 - Enforce **account lockout mechanism** for a maximum of three to four wrong attempts.
 - Fastest fix for a temporary period would be **blocking the particular ip address** that is making the brute force attempts.
 - **Authentication Delays**.
 
-### 7. What's the difference between an "Exploit" and a "Payload"?
+### 7. What's the difference between an ***Exploit*** and a ***Payload***?
 
 An **exploit** is the medium in which the payload is contained. Both represent a _piece of code_, but a payload does contain the actual attack whereas an exploit can be termed as a _carrier_. To make the explanation more clear and precise, take a Gun for an instance. The _Gun_ is the exploit whereas the _Bullet_ is the actual payload.
 
@@ -572,8 +572,8 @@ The pentester is provided with ***not so much*** information about the target. H
 Improper and insecure coding practices leads to Buffer Overflow Attacks. By ensuring proper coding standards and secure code development the buffer overflow attacks can be **totally mitigated**. Buffer overflow involves lots of details but the summary of it can be easily understood with the help of an example. _Consider a mobile phone number field in an application which is usually 10 characters of length, if an attacker sends 50 characters to that application, the application abruptly crashes by throwing excess data in the CPU memory_. By using certain techniques if the attacker can able to predict where the buffer data is getting overwritten, the attacker will be able to execute arbitary code in the memory, else the program will result in a Denial of Service condition.
 
 ### 111. Can you list out the 18 Security Controls?
-1. Access Control
--  Awareness and Training
+- Access Control
+- Awareness and Training
 - Audit and Accountability
 - Security Assessment and Authorization
 - Configuration Management
@@ -632,8 +632,8 @@ The _most effective defense mechanism_ is to ***Combine Port Rate Limiting and D
 
 _Let us assume a password policy, the password has to be changed as often as possible to prevent account getting compromised and should be consisting of numbers, symbols and capitalized alphabets. Again a more complex password is quite hard to crack and this is the ultimate **purpose** of a password policy. **Asset** is the user account. **Rules** of the policy include setting a complex password, changing the password in every 90 days, etc._
 
-### 118. Can you list the steps in Security Policy Devevlopment Life Cycle?
-1. Identify the project.
+### 118. Can you list the steps in Security Policy Development Life Cycle?
+- Identify the project.
 - Develop Policies.
 - Review & Publish Policies.
 - Maintain Policies.
@@ -643,16 +643,6 @@ Kerberos is a _ticket_ based network authentication protocol. The protocol was d
 
 ### 120. What's a Password and a Passphrase? Which is secure and what do you suggest?
 Well, part of the answer is available there in the question. Pass_word_ can be a 8-10 digit long with mixed characters, symbols, capitalized text, etc. whereas a Pass_phrase_ is a sentence with spaces. A password is _only_ secure when it is a combination of symbols and numbers, whereas a passphrase can be stronger with a normal sentence. Passphrases are suggested when compared to passwords as they are easy to remember and obviously stronger.
-
-
-
-
-
-
-
-
-
-
 
 
 
