@@ -13,7 +13,7 @@ comments: true
 featured: true
 ---
 
-Almost **<font color='red'>120</font>** questions and still counting, I've been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a **Guide** to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness.
+Almost **<font color='red'>130</font>** questions and still counting, I've been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a **Guide** to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness.
 
 > ## ***Errata & Contributions***
 
@@ -641,9 +641,47 @@ _Let us assume a password policy, the password has to be changed as often as pos
 ### 119. What's a Kerberos Protocol?
 Kerberos is a _ticket_ based network authentication protocol. The protocol was developed by MIT and the idea behind it is that this authentication protocol can be used under a hostile environment.
 
-### 120. What's a Password and a Passphrase? Which is secure and what do you suggest?
-Well, part of the answer is available there in the question. Pass_word_ can be a 8-10 digit long with mixed characters, symbols, capitalized text, etc. whereas a Pass_phrase_ is a sentence with spaces. A password is _only_ secure when it is a combination of symbols and numbers, whereas a passphrase can be stronger with a normal sentence. Passphrases are suggested when compared to passwords as they are easy to remember and obviously stronger.
+### 120. What's a ***Password*** and a ***Passphrase*** ? Which is secure and what do you suggest?
+Well, part of the answer is available there in the question. **Password** can be a 8-10 digit long with mixed characters, symbols, capitalized text, etc. whereas a **Passphrase** is a sentence with spaces. A password is _only_ secure when it is a combination of symbols and numbers, whereas a passphrase can be stronger with a normal sentence. Passphrases are suggested when compared to passwords as they are easy to remember and obviously stronger.
 
+### 121. What's a DLP and state the types associated with it?
+**Data Loss Prevention** software detects potential data breaches and prevents them by monitoring, detecting and blocking sensitive data while in-use (_endpoint actions_), in-motion (_network traffic_), and at-rest (_data storage_). As of now, there are three types associated with DLP solutions.
+- Network DLP
+- Storage DLP
+- EndPoint DLP
 
+### 122. What can you say about ***Information Rights Management*** ?
+**Information Rights Management** is a technology that is a subset of Digital Rights Management, _a technology that is used in the entertainment industry by the copyright owners to protect movies and music_. Information Rights Management helps prevent sensitive information from being printed, forwarded, saved, edited, or copied by unauthorized people. It can also limit the privileges to set of users from downloading and even copying content.
+
+### 123. How ***Digital Rights Management *** is different from ***Information Rights Management*** ?
+IRM mainly deals with the protection of business related information typically that involves _documents and emails_. However, a DRM relates to consumer facing rich media viz _movies and audio_.
+
+### 124. How will you prevent packet sniffing?
+**Encrypt** _the data at rest as well as in transit_ through robust encryption techniques between the channels.
+
+### 125. How will you overcome data corruption and tampering?
+- Ensure data is protected by appropriate antivrus and antimalware products.
+- Utilize version control systems to keep track of data when and by whom the data is being modified.
+- Ensure Role-Based Access and Least Privileges Policy/Rules are deployed.
+
+### 126. What are the different types of backups for databases you could think of?
+- Full Backups
+- Differential Backups
+- Transaction Log Backups
+
+### 127. Why should you do ***OutPut Port Filtering***, is it really important from a security point of view?
+**Yes it is**. Say for instance, an employee is running a vulnerable version of a webserver or some other service that opens a port to the outside world, such that the webserver can be accessed like http://localhost:8000. This may seem that it is running only in the local machine, but certain applications can be accessed by http://1.1.1.1:8000 where 1.1.1.1 being the public ip (_just for illustration purposes_) of the internal user.
+
+### 128. How would you scan an IPv6 address using ***NPing***?
+There is no such big difference when it comes to IPv6 addresses. However, it is suggested to use `-6` or `--ipv6` options whilst scanning as this makes NPing to parse faster.
+
+### 129. What does ***2001:0db8:85a3:0000:0000:8a2e:0370:7334*** looks like to you?
+That's an IPv6 address.
+
+### 130. How will you perform an ***ARP Spoofing Attack***?
+- Using ARP Poisoning tools like Cain (_Windows_), Arpspoof (_Linux_), the attacker sets the tool’s IP address to match the IP subnet of a target.
+- The IP and MAC addresses of hosts on the target’s subnet are scanned by the attacker using the tool.
+- The victim's IP is noted and the attacker sends ARP packets across the network containing the attacker's MAC and victim's IP address.
+- With this, all the traffic that is supposed to go to the gateway from the machine, and the other way around, will go through our machine first, and only then forwarded to the real target. A packet capturing tool like tcpdump or wireshark will be able to read the data that was intended for the victim.
 
 ---

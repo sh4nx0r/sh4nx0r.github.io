@@ -183,7 +183,7 @@ $(function() {
         <img src="http://localhost:4000/images/blogimages/2017-04-21/cover-2017-04-21.jpg" alt="cover-image" />
 
         <article class="notepad-post-content post">
-            <div><p>Almost <strong><font color="red">120</font></strong> questions and still counting, I’ve been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a <strong>Guide</strong> to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness.</p>
+            <div><p>Almost <strong><font color="red">130</font></strong> questions and still counting, I’ve been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a <strong>Guide</strong> to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness.</p>
 
 <blockquote>
   <h2 id="errata--contributions"><strong><em>Errata &amp; Contributions</em></strong></h2>
@@ -890,8 +890,56 @@ surveillance cameras, lockpicking, USB dropping, etc)</li>
 <h3 id="119-whats-a-kerberos-protocol">119. What’s a Kerberos Protocol?</h3>
 <p>Kerberos is a <em>ticket</em> based network authentication protocol. The protocol was developed by MIT and the idea behind it is that this authentication protocol can be used under a hostile environment.</p>
 
-<h3 id="120-whats-a-password-and-a-passphrase-which-is-secure-and-what-do-you-suggest">120. What’s a Password and a Passphrase? Which is secure and what do you suggest?</h3>
-<p>Well, part of the answer is available there in the question. Pass_word_ can be a 8-10 digit long with mixed characters, symbols, capitalized text, etc. whereas a Pass_phrase_ is a sentence with spaces. A password is <em>only</em> secure when it is a combination of symbols and numbers, whereas a passphrase can be stronger with a normal sentence. Passphrases are suggested when compared to passwords as they are easy to remember and obviously stronger.</p>
+<h3 id="120-whats-a-password-and-a-passphrase--which-is-secure-and-what-do-you-suggest">120. What’s a <strong><em>Password</em></strong> and a <strong><em>Passphrase</em></strong> ? Which is secure and what do you suggest?</h3>
+<p>Well, part of the answer is available there in the question. <strong>Password</strong> can be a 8-10 digit long with mixed characters, symbols, capitalized text, etc. whereas a <strong>Passphrase</strong> is a sentence with spaces. A password is <em>only</em> secure when it is a combination of symbols and numbers, whereas a passphrase can be stronger with a normal sentence. Passphrases are suggested when compared to passwords as they are easy to remember and obviously stronger.</p>
+
+<h3 id="121-whats-a-dlp-and-state-the-types-associated-with-it">121. What’s a DLP and state the types associated with it?</h3>
+<p><strong>Data Loss Prevention</strong> software detects potential data breaches and prevents them by monitoring, detecting and blocking sensitive data while in-use (<em>endpoint actions</em>), in-motion (<em>network traffic</em>), and at-rest (<em>data storage</em>). As of now, there are three types associated with DLP solutions.</p>
+<ul>
+  <li>Network DLP</li>
+  <li>Storage DLP</li>
+  <li>EndPoint DLP</li>
+</ul>
+
+<h3 id="122-what-can-you-say-about-information-rights-management-">122. What can you say about <strong><em>Information Rights Management</em></strong> ?</h3>
+<p><strong>Information Rights Management</strong> is a technology that is a subset of Digital Rights Management, <em>a technology that is used in the entertainment industry by the copyright owners to protect movies and music</em>. Information Rights Management helps prevent sensitive information from being printed, forwarded, saved, edited, or copied by unauthorized people. It can also limit the privileges to set of users from downloading and even copying content.</p>
+
+<h3 id="123-how-digital-rights-management--is-different-from-information-rights-management-">123. How <strong><em>Digital Rights Management **</em> is different from **<em>Information Rights Management</em></strong> ?</h3>
+<p>IRM mainly deals with the protection of business related information typically that involves <em>documents and emails</em>. However, a DRM relates to consumer facing rich media viz <em>movies and audio</em>.</p>
+
+<h3 id="124-how-will-you-prevent-packet-sniffing">124. How will you prevent packet sniffing?</h3>
+<p><strong>Encrypt</strong> <em>the data at rest as well as in transit</em> through robust encryption techniques between the channels.</p>
+
+<h3 id="125-how-will-you-overcome-data-corruption-and-tampering">125. How will you overcome data corruption and tampering?</h3>
+<ul>
+  <li>Ensure data is protected by appropriate antivrus and antimalware products.</li>
+  <li>Utilize version control systems to keep track of data when and by whom the data is being modified.</li>
+  <li>Ensure Role-Based Access and Least Privileges Policy/Rules are deployed.</li>
+</ul>
+
+<h3 id="126-what-are-the-different-types-of-backups-for-databases-you-could-think-of">126. What are the different types of backups for databases you could think of?</h3>
+<ul>
+  <li>Full Backups</li>
+  <li>Differential Backups</li>
+  <li>Transaction Log Backups</li>
+</ul>
+
+<h3 id="127-why-should-you-do-output-port-filtering-is-it-really-important-from-a-security-point-of-view">127. Why should you do <strong><em>OutPut Port Filtering</em></strong>, is it really important from a security point of view?</h3>
+<p><strong>Yes it is</strong>. Say for instance, an employee is running a vulnerable version of a webserver or some other service that opens a port to the outside world, such that the webserver can be accessed like http://localhost:8000. This may seem that it is running only in the local machine, but certain applications can be accessed by http://1.1.1.1:8000 where 1.1.1.1 being the public ip (<em>just for illustration purposes</em>) of the internal user.</p>
+
+<h3 id="128-how-would-you-scan-an-ipv6-address-using-nping">128. How would you scan an IPv6 address using <strong><em>NPing</em></strong>?</h3>
+<p>There is no such big difference when it comes to IPv6 addresses. However, it is suggested to use <code class="highlighter-rouge">-6</code> or <code class="highlighter-rouge">--ipv6</code> options whilst scanning as this makes NPing to parse faster.</p>
+
+<h3 id="129-what-does-20010db885a3000000008a2e03707334-looks-like-to-you">129. What does <strong><em>2001:0db8:85a3:0000:0000:8a2e:0370:7334</em></strong> looks like to you?</h3>
+<p>That’s an IPv6 address.</p>
+
+<h3 id="130-how-will-you-perform-an-arp-spoofing-attack">130. How will you perform an <strong><em>ARP Spoofing Attack</em></strong>?</h3>
+<ul>
+  <li>Using ARP Poisoning tools like Cain (<em>Windows</em>), Arpspoof (<em>Linux</em>), the attacker sets the tool’s IP address to match the IP subnet of a target.</li>
+  <li>The IP and MAC addresses of hosts on the target’s subnet are scanned by the attacker using the tool.</li>
+  <li>The victim’s IP is noted and the attacker sends ARP packets across the network containing the attacker’s MAC and victim’s IP address.</li>
+  <li>With this, all the traffic that is supposed to go to the gateway from the machine, and the other way around, will go through our machine first, and only then forwarded to the real target. A packet capturing tool like tcpdump or wireshark will be able to read the data that was intended for the victim.</li>
+</ul>
 
 <hr />
 
