@@ -17,7 +17,7 @@ Almost **<font color='red'>130</font>** questions and still counting, I've been 
 
 > ## ***Errata & Contributions***
 
-Eventhough I have taken every care to ensure the accuracy of the content, mistakes do happen. Incase if you come across any mistake or typos, either you can write to me or **you can go to the repository and make changes wherever neccessary**. Any one of that will be highly appreciated. Contribution to this guide is welcome.
+Eventhough I have taken every care to ensure the accuracy of the content, mistakes do happen. Incase if you come across any errors or typos, either you can write to me or **make changes wherever neccessary in the below linked repository**. Any one of that will be highly appreciated. Contribution to this guide is welcome.
 {: .notice}
 
 
@@ -653,7 +653,7 @@ Well, part of the answer is available there in the question. **Password** can be
 ### 122. What can you say about ***Information Rights Management*** ?
 **Information Rights Management** is a technology that is a subset of Digital Rights Management, _a technology that is used in the entertainment industry by the copyright owners to protect movies and music_. Information Rights Management helps prevent sensitive information from being printed, forwarded, saved, edited, or copied by unauthorized people. It can also limit the privileges to set of users from downloading and even copying content.
 
-### 123. How ***Digital Rights Management *** is different from ***Information Rights Management*** ?
+### 123. How ***Digital Rights Management*** is different from ***Information Rights Management*** ?
 IRM mainly deals with the protection of business related information typically that involves _documents and emails_. However, a DRM relates to consumer facing rich media viz _movies and audio_.
 
 ### 124. How will you prevent packet sniffing?
