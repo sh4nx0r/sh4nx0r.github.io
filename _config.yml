@@ -35,13 +35,13 @@ owner:
 # Links to include in footer navigation
 # For external links add external: true
 links:
-  - title: Home
+  - title: HOME
     url: /
     external: false
     icon: home
-  - title: "#trending"
+  - title: "#TRENDING"
     url: /trending
-  - title: Whoami
+  - title: WHOAMI
     url: /whoami
 
 #  - title: Categories
@@ -77,8 +77,8 @@ kramdown:
 
 prose:
   rooturl: '_posts'
-  #siteurl: 'http://sh4nx0r.github.io/Notepad/'
-  #relativeLinks: 'http://sh4nx0r.github.io/Notepad/links.jsonp'
+  #siteurl: 'http://sh4nx0r.github.io/'
+  #relativeLinks: 'http://sh4nx0r.github.io/links.jsonp'
   media: 'images'
   metadata:
     _posts:
