@@ -23,9 +23,9 @@ chart: false
     {% endif %}
 {% endfor %}
 
-For the :heart: of Markdown, My name is **Shankar Damodaran**, and am glad you are here on my personal blog. Enjoy your stay.
+_for the :heart: of Markdown_, I, **Shankar Damodaran**, and am glad you are here on my personal blog. Enjoy your stay!.
 
-### Blog _Nerdy_ Stats
+### Blog's _Nerdy_ Stats
 
  The Blog currently has <b>{{ site.posts | size }}</b> posts in <b>{{ site.categories | size }}</b> categories that totally has <b>{{ total_words }}</b> words to be exact. This will take an average reader approximately <span class="time"><b>{{ total_readtime }}</b></span> minutes to read.
 
@@ -33,9 +33,6 @@ For the :heart: of Markdown, My name is **Shankar Damodaran**, and am glad you a
 
 ### Professional Front
 
-That's my CV.
-
 <figure>
 	<img src="{{ site.url }}/images/cvx.jpg" alt="Shankar Damodaran Resume">
-	<figcaption>Shankar Damodaran - CV</figcaption>
 </figure>
