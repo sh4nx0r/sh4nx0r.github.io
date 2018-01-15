@@ -23,7 +23,7 @@ chart: false
     {% endif %}
 {% endfor %}
 
-_for the :heart: of Markdown_, I, **Shankar Damodaran**, and am glad you are here on my personal blog. Enjoy your stay!.
+_for the :heart: of Markdown_ ..., I welcome you to my personal blog. Enjoy your stay!.
 
 ### Blog's _Nerdy_ Stats
 
