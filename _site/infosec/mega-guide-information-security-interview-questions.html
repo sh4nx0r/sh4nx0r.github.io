@@ -183,7 +183,7 @@ $(function() {
         <img src="http://localhost:4000/images/blogimages/2017-04-21/cover-2017-04-21.jpg" alt="cover-image" />
 
         <article class="notepad-post-content post">
-            <div><p>Almost <strong><font color="red">130</font></strong> questions and still counting, I’ve been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a <strong>Guide</strong> to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness.</p>
+            <div><p>Almost <strong><font color="red">140</font></strong> questions and still counting, I’ve been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a <strong>Guide</strong> to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness.</p>
 
 <blockquote>
   <h2 id="errata--contributions"><strong><em>Errata &amp; Contributions</em></strong></h2>
@@ -203,10 +203,17 @@ $(function() {
 
 <p>An attacker can prove a vulnerability exists in an application without actually denying the attack made by him/her. This example can be compared with <em>Google Hacking</em>. The attacker would have used Google Dork to find a weakness in the website without directly penetrating it. One more classic example would be the same website may have an information disclosure vulnerability in one of their pages if the error wasn’t handled properly. Repudiation Attacks may also be termed as <strong><em>Passive Attacks</em></strong>.</p>
 
-<h3 id="2-what-is-a-false-positive-and-a-false-negative">2. What is a <strong><em>False Positive</em></strong> and a <strong><em>False Negative</em></strong>?</h3>
+<h3 id="2-what-is-a-false-positive-false-negative-true-positive-and-a-true-negative">2. What is a <strong><em>False Positive, False Negative, True Positive</em></strong> and a <strong><em>True Negative</em></strong>?</h3>
 
-<p><strong>False Positive</strong>: An automated scanner scans a website and it shows the website is prone to some attack (say, SQLi, CSRF, etc), which actually isn’t. <font color="green">The site is safe.</font>
-<br /><strong>False Negative</strong>: An automated scanner scans a website and it shows the website is safe from attacks (say, SQLi, CSRF, etc), which actually isn’t. <font color="red">The site isn't safe.</font></p>
+<p>Let us consider we have an automated scanner and we use that to scan a website and it generates alerts. Using this scenario let us classify the above terms as below.</p>
+
+<p><strong>False Positive</strong>: The scanner finds some vulnerabilities and alerts. Actual case is the website is not prone to attacks the scanner found. <font color="green">The site is safe.</font> <em>This is an annoying alert as it eats away precious time of the security analyst to verify the vulnerabilities.</em></p>
+
+<p><strong>False Negative</strong>: The scanner does not finds any vulnerabilities and alerts no attacks found. Actual case is the website is prone to vulnerabilities. <font color="red">The site is unsafe.</font> This is a critical situtation as the scanner was not able to find out the vulnerabilities.</p>
+
+<p><strong>True Positive</strong>: The scanner finds vulnerabilities and alerts. Actual case is the website is prone to vulnerabilities. <em>Expected behavior of an automated scanner.</em></p>
+
+<p><strong>True Negative</strong>: The scanner does not find any vulnerabilities and does not alerts.</p>
 
 <h3 id="3-what-is-the-key-difference-between-penetration-testing-and-vulnerability-assessment">3. What is the key difference between <strong><em>Penetration Testing</em></strong> and <strong><em>Vulnerability Assessment</em></strong>?</h3>
 
@@ -919,9 +926,10 @@ surveillance cameras, lockpicking, USB dropping, etc)</li>
 
 <h3 id="126-what-are-the-different-types-of-backups-for-databases-you-could-think-of">126. What are the different types of backups for databases you could think of?</h3>
 <ul>
-  <li>Full Backups</li>
-  <li>Differential Backups</li>
-  <li>Transaction Log Backups</li>
+  <li><strong>Full Backups</strong> (<em>as the name states, it is supposed to take complete backup of a drive that is specified.</em>)</li>
+  <li><strong>Differential Backups</strong> (<em>backs up only the specific files that was changed from the full backed up image.</em>)</li>
+  <li><strong>Incremental Backups</strong> (<em>backs up only the specific files that was changed from the full backup image or differential backup image.</em>)</li>
+  <li><strong>Transaction Log Backups</strong></li>
 </ul>
 
 <h3 id="127-why-should-you-do-output-port-filtering-is-it-really-important-from-a-security-point-of-view">127. Why should you do <strong><em>OutPut Port Filtering</em></strong>, is it really important from a security point of view?</h3>
@@ -930,7 +938,7 @@ surveillance cameras, lockpicking, USB dropping, etc)</li>
 <h3 id="128-how-would-you-scan-an-ipv6-address-using-nping">128. How would you scan an IPv6 address using <strong><em>NPing</em></strong>?</h3>
 <p>There is no such big difference when it comes to IPv6 addresses. However, it is suggested to use <code class="highlighter-rouge">-6</code> or <code class="highlighter-rouge">--ipv6</code> options whilst scanning as this makes NPing to parse faster.</p>
 
-<h3 id="129-what-does-20010db885a3000000008a2e03707334-looks-like-to-you">129. What does <strong><em>2001:0db8:85a3:0000:0000:8a2e:0370:7334</em></strong> looks like to you?</h3>
+<h3 id="129-what-does-20010db885a3000000008a2e03707334-sounds-like-to-you">129. What does <strong><em>2001:0db8:85a3:0000:0000:8a2e:0370:7334</em></strong> sounds like to you?</h3>
 <p>That’s an IPv6 address.</p>
 
 <h3 id="130-how-will-you-perform-an-arp-spoofing-attack">130. How will you perform an <strong><em>ARP Spoofing Attack</em></strong>?</h3>
@@ -941,7 +949,77 @@ surveillance cameras, lockpicking, USB dropping, etc)</li>
   <li>With this, all the traffic that is supposed to go to the gateway from the machine, and the other way around, will go through our machine first, and only then forwarded to the real target. A packet capturing tool like tcpdump or wireshark will be able to read the data that was intended for the victim.</li>
 </ul>
 
-<hr />
+<h3 id="131-what-is-a-dns-rebinding-attack">131. What is a <strong><em>DNS Rebinding Attack</em></strong>?</h3>
+<p>This attack mainly targets home users. Home users who haven’t changed their router’s default password fall prey to this attack. The victim may accidentally visit an attacker’s website that has a javascript in the background which uses a default set of credentials for router models. Once authenticated, the attacker may create an alternate account incase the default credentials are changed to revisit and control the victim again.</p>
+
+<h3 id="132-can-you-list-the-available-network-routing-protocols">132. Can you list the available network routing protocols?</h3>
+<ul>
+  <li>Distance Vector Protocol Routing. (<em>better suited for smaller networks</em>)</li>
+  <li>Link State Protocol Routing. (<em>for larger networks</em>)</li>
+</ul>
+
+<h3 id="133-does-linux-gets-affected-by-viruses">133. Does Linux gets affected by Viruses?</h3>
+<p>Yes. However, it is quite difficult to exploit due to some reasons.</p>
+<ul>
+  <li>Virus programmers have to target mutliple flavours of linux operating systems namely (fedora, kali, suse, etc.) whereas for Windows it is pretty straight forward (Microsoft)</li>
+  <li>They (Virus Programmers) target a huge user-base and the OS that is very easier to write viruses and access resource (<em>which windows wins here again with hands down</em>)</li>
+</ul>
+
+<h3 id="134-whats-an-information-security-charter-what-should-they-contain">134. What’s an <strong><em>Information Security Charter</em></strong>? What should they contain?</h3>
+<p>It’s a key governance tool mainly used by the CISO. It clearly defines the objectives, process, guidelines, etc for any security leading to success. A perfect infosec charter should contain some of these</p>
+<ul>
+  <li>Timelines.</li>
+  <li>Approval &amp; Authority.</li>
+  <li>Key Players.</li>
+  <li>Roles and Responsibilities.</li>
+  <li>Milestones.</li>
+  <li>Budget.</li>
+</ul>
+
+<h3 id="135-what-are-the-advantages-and-disadvantages-of-firewalls">135. What are the <strong><em>advantages and disadvantages</em></strong> of firewalls?</h3>
+<ul>
+  <li><strong>Advantages</strong>
+    <ul>
+      <li>If properly configured with rules, it can totally lockdown external malicious attacks.</li>
+      <li>Some firewalls come with anti-malware, anti-virus softwares. Hence, it can be a cost effective solution.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>
+- **Disadvantages**
+  - Misconfiguring a rule may screw up the organization as it can lead external attackers to access internal servers.
+  - Social Engineering attacks cannot be stopped.
+  - Insider attacks cannot be averted.
+
+### 136. Where would you place the firewall?
+Typically has to sit between the internal network and external connections. Additional firewalls can also be implemented.
+
+### 137. Can you state some pointers on writing rules for a Firewall Configuration?
+- Almost all firewalls processes rules from top to bottom, hence it is recommended to write general rules on the top followed by specific rules after that. This is because some legitimate packets may get blocked.
+- Ensure the firewall rule is configured to drop "impossible" or "unroutable" packets from the internet with addresses matching the internal network (192.168.X.X or 10.1.X.X) pattern.
+
+### 138. What's a ***Split Tunnelling*** and are there any security concerns?
+**Split Tunnelling** falls under Remote Access VPN concepts. In this scenario, the VPN client is connected to both the corporate network as well as to the internet (not routed through the corporate network). So there are chances the client can spread malware to the corporate network. Hence, excessive care has to be emphasized under split tunnelling scenario.
+
+### 139. What do you mean by ***Client Isolation*** in a wireless network?
+An organization may have both wireless and wired connection. Connecting to either of them lets you access your internal corporate network data. Client Isolation, is a feature or setting, when enabled it will prevent a device (_laptop, mobile, etc._) which is already connected to the wireless network from accessing resources that are connected to the network by a wired connection.
+
+
+### 140. Explain ***Fragmentation*** and ***Reassembly*** attacks on an IDS.
+The concept of MTU (_Maximum Transmission Unit_) has to be discussed here. All available Routers have MTU, which is the maximum number of bytes can be allowed/sent in a single packet. A large packet (let us consider an attack in our case) can be broken down in small packets called _fragments._ An offset value in each and every fragment tells the destination IP host how to reassemble the other packets into a larger packet. If the IDS allows fragmentation and does not inspect the packet before reassembly, an attack may slip through it.
+
+
+
+
+
+
+
+
+
+
+---
+</p>
 
             </div>
         </article>

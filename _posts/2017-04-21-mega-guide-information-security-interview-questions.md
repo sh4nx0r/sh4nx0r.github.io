@@ -13,7 +13,7 @@ comments: true
 featured: true
 ---
 
-Almost **<font color='red'>130</font>** questions and still counting, I've been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a **Guide** to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness.
+Almost **<font color='red'>140</font>** questions and still counting, I've been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a **Guide** to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness.
 
 > ## ***Errata & Contributions***
 
@@ -33,10 +33,17 @@ Eventhough I have taken every care to ensure the accuracy of the content, mistak
 
 An attacker can prove a vulnerability exists in an application without actually denying the attack made by him/her. This example can be compared with _Google Hacking_. The attacker would have used Google Dork to find a weakness in the website without directly penetrating it. One more classic example would be the same website may have an information disclosure vulnerability in one of their pages if the error wasn't handled properly. Repudiation Attacks may also be termed as **_Passive Attacks_**.
 
-### 2. What is a ***False Positive*** and a ***False Negative***?
+### 2. What is a ***False Positive, False Negative, True Positive*** and a ***True Negative***?
 
-**False Positive**: An automated scanner scans a website and it shows the website is prone to some attack (say, SQLi, CSRF, etc), which actually isn't. <font color='green'>The site is safe.</font>
-<br>**False Negative**: An automated scanner scans a website and it shows the website is safe from attacks (say, SQLi, CSRF, etc), which actually isn't. <font color='red'>The site isn't safe.</font>
+Let us consider we have an automated scanner and we use that to scan a website and it generates alerts. Using this scenario let us classify the above terms as below.
+
+**False Positive**: The scanner finds some vulnerabilities and alerts. Actual case is the website is not prone to attacks the scanner found. <font color='green'>The site is safe.</font> _This is an annoying alert as it eats away precious time of the security analyst to verify the vulnerabilities._
+
+**False Negative**: The scanner does not finds any vulnerabilities and alerts no attacks found. Actual case is the website is prone to vulnerabilities. <font color='red'>The site is unsafe.</font> This is a critical situtation as the scanner was not able to find out the vulnerabilities.
+
+**True Positive**: The scanner finds vulnerabilities and alerts. Actual case is the website is prone to vulnerabilities. _Expected behavior of an automated scanner._
+
+**True Negative**: The scanner does not find any vulnerabilities and does not alerts.
 
 ### 3. What is the key difference between ***Penetration Testing*** and ***Vulnerability Assessment***?
 
@@ -665,9 +672,10 @@ IRM mainly deals with the protection of business related information typically t
 - Ensure Role-Based Access and Least Privileges Policy/Rules are deployed.
 
 ### 126. What are the different types of backups for databases you could think of?
-- Full Backups
-- Differential Backups
-- Transaction Log Backups
+- **Full Backups** (_as the name states, it is supposed to take complete backup of a drive that is specified._)
+- **Differential Backups** (_backs up only the specific files that was changed from the full backed up image._)
+- **Incremental Backups** (_backs up only the specific files that was changed from the full backup image or differential backup image._)
+- **Transaction Log Backups**
 
 ### 127. Why should you do ***OutPut Port Filtering***, is it really important from a security point of view?
 **Yes it is**. Say for instance, an employee is running a vulnerable version of a webserver or some other service that opens a port to the outside world, such that the webserver can be accessed like http://localhost:8000. This may seem that it is running only in the local machine, but certain applications can be accessed by http://1.1.1.1:8000 where 1.1.1.1 being the public ip (_just for illustration purposes_) of the internal user.
@@ -675,7 +683,7 @@ IRM mainly deals with the protection of business related information typically t
 ### 128. How would you scan an IPv6 address using ***NPing***?
 There is no such big difference when it comes to IPv6 addresses. However, it is suggested to use `-6` or `--ipv6` options whilst scanning as this makes NPing to parse faster.
 
-### 129. What does ***2001:0db8:85a3:0000:0000:8a2e:0370:7334*** looks like to you?
+### 129. What does ***2001:0db8:85a3:0000:0000:8a2e:0370:7334*** sounds like to you?
 That's an IPv6 address.
 
 ### 130. How will you perform an ***ARP Spoofing Attack***?
@@ -683,5 +691,63 @@ That's an IPv6 address.
 - The IP and MAC addresses of hosts on the target’s subnet are scanned by the attacker using the tool.
 - The victim's IP is noted and the attacker sends ARP packets across the network containing the attacker's MAC and victim's IP address.
 - With this, all the traffic that is supposed to go to the gateway from the machine, and the other way around, will go through our machine first, and only then forwarded to the real target. A packet capturing tool like tcpdump or wireshark will be able to read the data that was intended for the victim.
+
+### 131. What is a ***DNS Rebinding Attack***?
+This attack mainly targets home users. Home users who haven't changed their router's default password fall prey to this attack. The victim may accidentally visit an attacker's website that has a javascript in the background which uses a default set of credentials for router models. Once authenticated, the attacker may create an alternate account incase the default credentials are changed to revisit and control the victim again.
+
+### 132. Can you list the available network routing protocols?
+- Distance Vector Protocol Routing. (_better suited for smaller networks_)
+- Link State Protocol Routing. (_for larger networks_)
+
+### 133. Does Linux gets affected by Viruses?
+Yes. However, it is quite difficult to exploit due to some reasons.
+- Virus programmers have to target mutliple flavours of linux operating systems namely (fedora, kali, suse, etc.) whereas for Windows it is pretty straight forward (Microsoft)
+- They (Virus Programmers) target a huge user-base and the OS that is very easier to write viruses and access resource (_which windows wins here again with hands down_)
+
+### 134. What's an ***Information Security Charter***? What should they contain?
+It's a key governance tool mainly used by the CISO. It clearly defines the objectives, process, guidelines, etc for any security leading to success. A perfect infosec charter should contain some of these
+- Timelines.
+- Approval & Authority.
+- Key Players.
+- Roles and Responsibilities.
+- Milestones.
+- Budget.
+
+### 135. What are the ***advantages and disadvantages*** of firewalls?
+- **Advantages**
+  - If properly configured with rules, it can totally lockdown external malicious attacks.
+  - Some firewalls come with anti-malware, anti-virus softwares. Hence, it can be a cost effective solution.
+
+<p>
+- **Disadvantages**
+  - Misconfiguring a rule may screw up the organization as it can lead external attackers to access internal servers.
+  - Social Engineering attacks cannot be stopped.
+  - Insider attacks cannot be averted.
+
+### 136. Where would you place the firewall?
+Typically has to sit between the internal network and external connections. Additional firewalls can also be implemented.
+
+### 137. Can you state some pointers on writing rules for a Firewall Configuration?
+- Almost all firewalls processes rules from top to bottom, hence it is recommended to write general rules on the top followed by specific rules after that. This is because some legitimate packets may get blocked.
+- Ensure the firewall rule is configured to drop "impossible" or "unroutable" packets from the internet with addresses matching the internal network (192.168.X.X or 10.1.X.X) pattern.
+
+### 138. What's a ***Split Tunnelling*** and are there any security concerns?
+**Split Tunnelling** falls under Remote Access VPN concepts. In this scenario, the VPN client is connected to both the corporate network as well as to the internet (not routed through the corporate network). So there are chances the client can spread malware to the corporate network. Hence, excessive care has to be emphasized under split tunnelling scenario.
+
+### 139. What do you mean by ***Client Isolation*** in a wireless network?
+An organization may have both wireless and wired connection. Connecting to either of them lets you access your internal corporate network data. Client Isolation, is a feature or setting, when enabled it will prevent a device (_laptop, mobile, etc._) which is already connected to the wireless network from accessing resources that are connected to the network by a wired connection.
+
+
+### 140. Explain ***Fragmentation*** and ***Reassembly*** attacks on an IDS.
+The concept of MTU (_Maximum Transmission Unit_) has to be discussed here. All available Routers have MTU, which is the maximum number of bytes can be allowed/sent in a single packet. A large packet (let us consider an attack in our case) can be broken down in small packets called _fragments._ An offset value in each and every fragment tells the destination IP host how to reassemble the other packets into a larger packet. If the IDS allows fragmentation and does not inspect the packet before reassembly, an attack may slip through it.
+
+
+
+
+
+
+
+
+
 
 ---
