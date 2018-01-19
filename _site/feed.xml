@@ -7,7 +7,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://localhost:4000/" />
-<updated>2018-01-15T17:35:17+06:00</updated>
+<updated>2018-01-19T19:42:58+06:00</updated>
 <id>http://localhost:4000/</id>
 <author>
   <name>Shankar Damodaran</name>
@@ -982,7 +982,7 @@ Say ..  &lt;strong&gt;Downloads&lt;/strong&gt; or whatever.. So it will look lik
   <category scheme="http://localhost:4000/tags/#infosec" term="infosec" /><category scheme="http://localhost:4000/tags/#interview%20questions" term="interview questions" /><category scheme="http://localhost:4000/tags/#pentesting" term="pentesting" /><category scheme="http://localhost:4000/tags/#security%20analyst" term="security analyst" /><category scheme="http://localhost:4000/tags/#infosec%20questions" term="infosec questions" />
   <content type="html">
   
-    &lt;p&gt;Almost &lt;strong&gt;&lt;font color=&quot;red&quot;&gt;130&lt;/font&gt;&lt;/strong&gt; questions and still counting, I’ve been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a &lt;strong&gt;Guide&lt;/strong&gt; to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness.&lt;/p&gt;
+    &lt;p&gt;Almost &lt;strong&gt;&lt;font color=&quot;red&quot;&gt;140&lt;/font&gt;&lt;/strong&gt; questions and still counting, I’ve been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a &lt;strong&gt;Guide&lt;/strong&gt; to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness.&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;h2 id=&quot;errata--contributions&quot;&gt;&lt;strong&gt;&lt;em&gt;Errata &amp;amp; Contributions&lt;/em&gt;&lt;/strong&gt;&lt;/h2&gt;
@@ -1002,10 +1002,17 @@ Say ..  &lt;strong&gt;Downloads&lt;/strong&gt; or whatever.. So it will look lik
 
 &lt;p&gt;An attacker can prove a vulnerability exists in an application without actually denying the attack made by him/her. This example can be compared with &lt;em&gt;Google Hacking&lt;/em&gt;. The attacker would have used Google Dork to find a weakness in the website without directly penetrating it. One more classic example would be the same website may have an information disclosure vulnerability in one of their pages if the error wasn’t handled properly. Repudiation Attacks may also be termed as &lt;strong&gt;&lt;em&gt;Passive Attacks&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;h3 id=&quot;2-what-is-a-false-positive-and-a-false-negative&quot;&gt;2. What is a &lt;strong&gt;&lt;em&gt;False Positive&lt;/em&gt;&lt;/strong&gt; and a &lt;strong&gt;&lt;em&gt;False Negative&lt;/em&gt;&lt;/strong&gt;?&lt;/h3&gt;
+&lt;h3 id=&quot;2-what-is-a-false-positive-false-negative-true-positive-and-a-true-negative&quot;&gt;2. What is a &lt;strong&gt;&lt;em&gt;False Positive, False Negative, True Positive&lt;/em&gt;&lt;/strong&gt; and a &lt;strong&gt;&lt;em&gt;True Negative&lt;/em&gt;&lt;/strong&gt;?&lt;/h3&gt;
 
-&lt;p&gt;&lt;strong&gt;False Positive&lt;/strong&gt;: An automated scanner scans a website and it shows the website is prone to some attack (say, SQLi, CSRF, etc), which actually isn’t. &lt;font color=&quot;green&quot;&gt;The site is safe.&lt;/font&gt;
-&lt;br /&gt;&lt;strong&gt;False Negative&lt;/strong&gt;: An automated scanner scans a website and it shows the website is safe from attacks (say, SQLi, CSRF, etc), which actually isn’t. &lt;font color=&quot;red&quot;&gt;The site isn't safe.&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;Let us consider we have an automated scanner and we use that to scan a website and it generates alerts. Using this scenario let us classify the above terms as below.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;False Positive&lt;/strong&gt;: The scanner finds some vulnerabilities and alerts. Actual case is the website is not prone to attacks the scanner found. &lt;font color=&quot;green&quot;&gt;The site is safe.&lt;/font&gt; &lt;em&gt;This is an annoying alert as it eats away precious time of the security analyst to verify the vulnerabilities.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;False Negative&lt;/strong&gt;: The scanner does not finds any vulnerabilities and alerts no attacks found. Actual case is the website is prone to vulnerabilities. &lt;font color=&quot;red&quot;&gt;The site is unsafe.&lt;/font&gt; This is a critical situtation as the scanner was not able to find out the vulnerabilities.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;True Positive&lt;/strong&gt;: The scanner finds vulnerabilities and alerts. Actual case is the website is prone to vulnerabilities. &lt;em&gt;Expected behavior of an automated scanner.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;True Negative&lt;/strong&gt;: The scanner does not find any vulnerabilities and does not alerts.&lt;/p&gt;
 
 &lt;h3 id=&quot;3-what-is-the-key-difference-between-penetration-testing-and-vulnerability-assessment&quot;&gt;3. What is the key difference between &lt;strong&gt;&lt;em&gt;Penetration Testing&lt;/em&gt;&lt;/strong&gt; and &lt;strong&gt;&lt;em&gt;Vulnerability Assessment&lt;/em&gt;&lt;/strong&gt;?&lt;/h3&gt;
 
@@ -1718,9 +1725,10 @@ surveillance cameras, lockpicking, USB dropping, etc)&lt;/li&gt;
 
 &lt;h3 id=&quot;126-what-are-the-different-types-of-backups-for-databases-you-could-think-of&quot;&gt;126. What are the different types of backups for databases you could think of?&lt;/h3&gt;
 &lt;ul&gt;
-  &lt;li&gt;Full Backups&lt;/li&gt;
-  &lt;li&gt;Differential Backups&lt;/li&gt;
-  &lt;li&gt;Transaction Log Backups&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Full Backups&lt;/strong&gt; (&lt;em&gt;as the name states, it is supposed to take complete backup of a drive that is specified.&lt;/em&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Differential Backups&lt;/strong&gt; (&lt;em&gt;backs up only the specific files that was changed from the full backed up image.&lt;/em&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Incremental Backups&lt;/strong&gt; (&lt;em&gt;backs up only the specific files that was changed from the full backup image or differential backup image.&lt;/em&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Transaction Log Backups&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;127-why-should-you-do-output-port-filtering-is-it-really-important-from-a-security-point-of-view&quot;&gt;127. Why should you do &lt;strong&gt;&lt;em&gt;OutPut Port Filtering&lt;/em&gt;&lt;/strong&gt;, is it really important from a security point of view?&lt;/h3&gt;
@@ -1729,7 +1737,7 @@ surveillance cameras, lockpicking, USB dropping, etc)&lt;/li&gt;
 &lt;h3 id=&quot;128-how-would-you-scan-an-ipv6-address-using-nping&quot;&gt;128. How would you scan an IPv6 address using &lt;strong&gt;&lt;em&gt;NPing&lt;/em&gt;&lt;/strong&gt;?&lt;/h3&gt;
 &lt;p&gt;There is no such big difference when it comes to IPv6 addresses. However, it is suggested to use &lt;code class=&quot;highlighter-rouge&quot;&gt;-6&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;--ipv6&lt;/code&gt; options whilst scanning as this makes NPing to parse faster.&lt;/p&gt;
 
-&lt;h3 id=&quot;129-what-does-20010db885a3000000008a2e03707334-looks-like-to-you&quot;&gt;129. What does &lt;strong&gt;&lt;em&gt;2001:0db8:85a3:0000:0000:8a2e:0370:7334&lt;/em&gt;&lt;/strong&gt; looks like to you?&lt;/h3&gt;
+&lt;h3 id=&quot;129-what-does-20010db885a3000000008a2e03707334-sounds-like-to-you&quot;&gt;129. What does &lt;strong&gt;&lt;em&gt;2001:0db8:85a3:0000:0000:8a2e:0370:7334&lt;/em&gt;&lt;/strong&gt; sounds like to you?&lt;/h3&gt;
 &lt;p&gt;That’s an IPv6 address.&lt;/p&gt;
 
 &lt;h3 id=&quot;130-how-will-you-perform-an-arp-spoofing-attack&quot;&gt;130. How will you perform an &lt;strong&gt;&lt;em&gt;ARP Spoofing Attack&lt;/em&gt;&lt;/strong&gt;?&lt;/h3&gt;
@@ -1740,7 +1748,77 @@ surveillance cameras, lockpicking, USB dropping, etc)&lt;/li&gt;
   &lt;li&gt;With this, all the traffic that is supposed to go to the gateway from the machine, and the other way around, will go through our machine first, and only then forwarded to the real target. A packet capturing tool like tcpdump or wireshark will be able to read the data that was intended for the victim.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;hr /&gt;
+&lt;h3 id=&quot;131-what-is-a-dns-rebinding-attack&quot;&gt;131. What is a &lt;strong&gt;&lt;em&gt;DNS Rebinding Attack&lt;/em&gt;&lt;/strong&gt;?&lt;/h3&gt;
+&lt;p&gt;This attack mainly targets home users. Home users who haven’t changed their router’s default password fall prey to this attack. The victim may accidentally visit an attacker’s website that has a javascript in the background which uses a default set of credentials for router models. Once authenticated, the attacker may create an alternate account incase the default credentials are changed to revisit and control the victim again.&lt;/p&gt;
+
+&lt;h3 id=&quot;132-can-you-list-the-available-network-routing-protocols&quot;&gt;132. Can you list the available network routing protocols?&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Distance Vector Protocol Routing. (&lt;em&gt;better suited for smaller networks&lt;/em&gt;)&lt;/li&gt;
+  &lt;li&gt;Link State Protocol Routing. (&lt;em&gt;for larger networks&lt;/em&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;133-does-linux-gets-affected-by-viruses&quot;&gt;133. Does Linux gets affected by Viruses?&lt;/h3&gt;
+&lt;p&gt;Yes. However, it is quite difficult to exploit due to some reasons.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Virus programmers have to target mutliple flavours of linux operating systems namely (fedora, kali, suse, etc.) whereas for Windows it is pretty straight forward (Microsoft)&lt;/li&gt;
+  &lt;li&gt;They (Virus Programmers) target a huge user-base and the OS that is very easier to write viruses and access resource (&lt;em&gt;which windows wins here again with hands down&lt;/em&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;134-whats-an-information-security-charter-what-should-they-contain&quot;&gt;134. What’s an &lt;strong&gt;&lt;em&gt;Information Security Charter&lt;/em&gt;&lt;/strong&gt;? What should they contain?&lt;/h3&gt;
+&lt;p&gt;It’s a key governance tool mainly used by the CISO. It clearly defines the objectives, process, guidelines, etc for any security leading to success. A perfect infosec charter should contain some of these&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Timelines.&lt;/li&gt;
+  &lt;li&gt;Approval &amp;amp; Authority.&lt;/li&gt;
+  &lt;li&gt;Key Players.&lt;/li&gt;
+  &lt;li&gt;Roles and Responsibilities.&lt;/li&gt;
+  &lt;li&gt;Milestones.&lt;/li&gt;
+  &lt;li&gt;Budget.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;135-what-are-the-advantages-and-disadvantages-of-firewalls&quot;&gt;135. What are the &lt;strong&gt;&lt;em&gt;advantages and disadvantages&lt;/em&gt;&lt;/strong&gt; of firewalls?&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Advantages&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;If properly configured with rules, it can totally lockdown external malicious attacks.&lt;/li&gt;
+      &lt;li&gt;Some firewalls come with anti-malware, anti-virus softwares. Hence, it can be a cost effective solution.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+- **Disadvantages**
+  - Misconfiguring a rule may screw up the organization as it can lead external attackers to access internal servers.
+  - Social Engineering attacks cannot be stopped.
+  - Insider attacks cannot be averted.
+
+### 136. Where would you place the firewall?
+Typically has to sit between the internal network and external connections. Additional firewalls can also be implemented.
+
+### 137. Can you state some pointers on writing rules for a Firewall Configuration?
+- Almost all firewalls processes rules from top to bottom, hence it is recommended to write general rules on the top followed by specific rules after that. This is because some legitimate packets may get blocked.
+- Ensure the firewall rule is configured to drop &quot;impossible&quot; or &quot;unroutable&quot; packets from the internet with addresses matching the internal network (192.168.X.X or 10.1.X.X) pattern.
+
+### 138. What's a ***Split Tunnelling*** and are there any security concerns?
+**Split Tunnelling** falls under Remote Access VPN concepts. In this scenario, the VPN client is connected to both the corporate network as well as to the internet (not routed through the corporate network). So there are chances the client can spread malware to the corporate network. Hence, excessive care has to be emphasized under split tunnelling scenario.
+
+### 139. What do you mean by ***Client Isolation*** in a wireless network?
+An organization may have both wireless and wired connection. Connecting to either of them lets you access your internal corporate network data. Client Isolation, is a feature or setting, when enabled it will prevent a device (_laptop, mobile, etc._) which is already connected to the wireless network from accessing resources that are connected to the network by a wired connection.
+
+
+### 140. Explain ***Fragmentation*** and ***Reassembly*** attacks on an IDS.
+The concept of MTU (_Maximum Transmission Unit_) has to be discussed here. All available Routers have MTU, which is the maximum number of bytes can be allowed/sent in a single packet. A large packet (let us consider an attack in our case) can be broken down in small packets called _fragments._ An offset value in each and every fragment tells the destination IP host how to reassemble the other packets into a larger packet. If the IDS allows fragmentation and does not inspect the packet before reassembly, an attack may slip through it.
+
+
+
+
+
+
+
+
+
+
+---
+&lt;/p&gt;
 
   
   &lt;p&gt;&lt;a href=&quot;http://localhost:4000/infosec/mega-guide-information-security-interview-questions&quot;&gt;The Mega Guide to Information Security Interview Questions.&lt;/a&gt; was originally published by Shankar Damodaran at &lt;a href=&quot;http://localhost:4000&quot;&gt;<b><font size='5.75em'>Inventor<font color='yellow' size='6.75em'>.</font> Biker<font color='yellow' size='6.75em'>.</font> Foodie<font color='yellow' size='6.75em'>.</font> h4ck3r<font color='yellow' size='6.75em'>.</font> Wanderlust<font color='yellow' size='6.75em'>. </font> </font><p>Sometimes....<span id='changingword'>I wanna be just ME.</span></p>&lt;/a&gt; on April 21, 2017.&lt;/p&gt;</content>
