@@ -717,8 +717,7 @@ It's a key governance tool mainly used by the CISO. It clearly defines the objec
 - **Advantages**
   - If properly configured with rules, it can totally lockdown external malicious attacks.
   - Some firewalls come with anti-malware, anti-virus softwares. Hence, it can be a cost effective solution.
-
-<p>
+<br>
 - **Disadvantages**
   - Misconfiguring a rule may screw up the organization as it can lead external attackers to access internal servers.
   - Social Engineering attacks cannot be stopped.

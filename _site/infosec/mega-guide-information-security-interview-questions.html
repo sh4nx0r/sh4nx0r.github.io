@@ -981,45 +981,38 @@ surveillance cameras, lockpicking, USB dropping, etc)</li>
   <li><strong>Advantages</strong>
     <ul>
       <li>If properly configured with rules, it can totally lockdown external malicious attacks.</li>
-      <li>Some firewalls come with anti-malware, anti-virus softwares. Hence, it can be a cost effective solution.</li>
+      <li>Some firewalls come with anti-malware, anti-virus softwares. Hence, it can be a cost effective solution.
+<br /></li>
+    </ul>
+  </li>
+  <li><strong>Disadvantages</strong>
+    <ul>
+      <li>Misconfiguring a rule may screw up the organization as it can lead external attackers to access internal servers.</li>
+      <li>Social Engineering attacks cannot be stopped.</li>
+      <li>Insider attacks cannot be averted.</li>
     </ul>
   </li>
 </ul>
 
-<p>
-- **Disadvantages**
-  - Misconfiguring a rule may screw up the organization as it can lead external attackers to access internal servers.
-  - Social Engineering attacks cannot be stopped.
-  - Insider attacks cannot be averted.
+<h3 id="136-where-would-you-place-the-firewall">136. Where would you place the firewall?</h3>
+<p>Typically has to sit between the internal network and external connections. Additional firewalls can also be implemented.</p>
 
-### 136. Where would you place the firewall?
-Typically has to sit between the internal network and external connections. Additional firewalls can also be implemented.
+<h3 id="137-can-you-state-some-pointers-on-writing-rules-for-a-firewall-configuration">137. Can you state some pointers on writing rules for a Firewall Configuration?</h3>
+<ul>
+  <li>Almost all firewalls processes rules from top to bottom, hence it is recommended to write general rules on the top followed by specific rules after that. This is because some legitimate packets may get blocked.</li>
+  <li>Ensure the firewall rule is configured to drop “impossible” or “unroutable” packets from the internet with addresses matching the internal network (192.168.X.X or 10.1.X.X) pattern.</li>
+</ul>
 
-### 137. Can you state some pointers on writing rules for a Firewall Configuration?
-- Almost all firewalls processes rules from top to bottom, hence it is recommended to write general rules on the top followed by specific rules after that. This is because some legitimate packets may get blocked.
-- Ensure the firewall rule is configured to drop "impossible" or "unroutable" packets from the internet with addresses matching the internal network (192.168.X.X or 10.1.X.X) pattern.
+<h3 id="138-whats-a-split-tunnelling-and-are-there-any-security-concerns">138. What’s a <strong><em>Split Tunnelling</em></strong> and are there any security concerns?</h3>
+<p><strong>Split Tunnelling</strong> falls under Remote Access VPN concepts. In this scenario, the VPN client is connected to both the corporate network as well as to the internet (not routed through the corporate network). So there are chances the client can spread malware to the corporate network. Hence, excessive care has to be emphasized under split tunnelling scenario.</p>
 
-### 138. What's a ***Split Tunnelling*** and are there any security concerns?
-**Split Tunnelling** falls under Remote Access VPN concepts. In this scenario, the VPN client is connected to both the corporate network as well as to the internet (not routed through the corporate network). So there are chances the client can spread malware to the corporate network. Hence, excessive care has to be emphasized under split tunnelling scenario.
+<h3 id="139-what-do-you-mean-by-client-isolation-in-a-wireless-network">139. What do you mean by <strong><em>Client Isolation</em></strong> in a wireless network?</h3>
+<p>An organization may have both wireless and wired connection. Connecting to either of them lets you access your internal corporate network data. Client Isolation, is a feature or setting, when enabled it will prevent a device (<em>laptop, mobile, etc.</em>) which is already connected to the wireless network from accessing resources that are connected to the network by a wired connection.</p>
 
-### 139. What do you mean by ***Client Isolation*** in a wireless network?
-An organization may have both wireless and wired connection. Connecting to either of them lets you access your internal corporate network data. Client Isolation, is a feature or setting, when enabled it will prevent a device (_laptop, mobile, etc._) which is already connected to the wireless network from accessing resources that are connected to the network by a wired connection.
+<h3 id="140-explain-fragmentation-and-reassembly-attacks-on-an-ids">140. Explain <strong><em>Fragmentation</em></strong> and <strong><em>Reassembly</em></strong> attacks on an IDS.</h3>
+<p>The concept of MTU (<em>Maximum Transmission Unit</em>) has to be discussed here. All available Routers have MTU, which is the maximum number of bytes can be allowed/sent in a single packet. A large packet (let us consider an attack in our case) can be broken down in small packets called <em>fragments.</em> An offset value in each and every fragment tells the destination IP host how to reassemble the other packets into a larger packet. If the IDS allows fragmentation and does not inspect the packet before reassembly, an attack may slip through it.</p>
 
-
-### 140. Explain ***Fragmentation*** and ***Reassembly*** attacks on an IDS.
-The concept of MTU (_Maximum Transmission Unit_) has to be discussed here. All available Routers have MTU, which is the maximum number of bytes can be allowed/sent in a single packet. A large packet (let us consider an attack in our case) can be broken down in small packets called _fragments._ An offset value in each and every fragment tells the destination IP host how to reassemble the other packets into a larger packet. If the IDS allows fragmentation and does not inspect the packet before reassembly, an attack may slip through it.
-
-
-
-
-
-
-
-
-
-
----
-</p>
+<hr />
 
             </div>
         </article>
