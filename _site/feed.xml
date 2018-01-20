@@ -7,7 +7,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://localhost:4000/" />
-<updated>2018-01-19T19:42:58+06:00</updated>
+<updated>2018-01-20T09:06:10+06:00</updated>
 <id>http://localhost:4000/</id>
 <author>
   <name>Shankar Damodaran</name>
@@ -1780,45 +1780,38 @@ surveillance cameras, lockpicking, USB dropping, etc)&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Advantages&lt;/strong&gt;
     &lt;ul&gt;
       &lt;li&gt;If properly configured with rules, it can totally lockdown external malicious attacks.&lt;/li&gt;
-      &lt;li&gt;Some firewalls come with anti-malware, anti-virus softwares. Hence, it can be a cost effective solution.&lt;/li&gt;
+      &lt;li&gt;Some firewalls come with anti-malware, anti-virus softwares. Hence, it can be a cost effective solution.
+&lt;br /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Disadvantages&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Misconfiguring a rule may screw up the organization as it can lead external attackers to access internal servers.&lt;/li&gt;
+      &lt;li&gt;Social Engineering attacks cannot be stopped.&lt;/li&gt;
+      &lt;li&gt;Insider attacks cannot be averted.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;
-- **Disadvantages**
-  - Misconfiguring a rule may screw up the organization as it can lead external attackers to access internal servers.
-  - Social Engineering attacks cannot be stopped.
-  - Insider attacks cannot be averted.
+&lt;h3 id=&quot;136-where-would-you-place-the-firewall&quot;&gt;136. Where would you place the firewall?&lt;/h3&gt;
+&lt;p&gt;Typically has to sit between the internal network and external connections. Additional firewalls can also be implemented.&lt;/p&gt;
 
-### 136. Where would you place the firewall?
-Typically has to sit between the internal network and external connections. Additional firewalls can also be implemented.
+&lt;h3 id=&quot;137-can-you-state-some-pointers-on-writing-rules-for-a-firewall-configuration&quot;&gt;137. Can you state some pointers on writing rules for a Firewall Configuration?&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Almost all firewalls processes rules from top to bottom, hence it is recommended to write general rules on the top followed by specific rules after that. This is because some legitimate packets may get blocked.&lt;/li&gt;
+  &lt;li&gt;Ensure the firewall rule is configured to drop “impossible” or “unroutable” packets from the internet with addresses matching the internal network (192.168.X.X or 10.1.X.X) pattern.&lt;/li&gt;
+&lt;/ul&gt;
 
-### 137. Can you state some pointers on writing rules for a Firewall Configuration?
-- Almost all firewalls processes rules from top to bottom, hence it is recommended to write general rules on the top followed by specific rules after that. This is because some legitimate packets may get blocked.
-- Ensure the firewall rule is configured to drop &quot;impossible&quot; or &quot;unroutable&quot; packets from the internet with addresses matching the internal network (192.168.X.X or 10.1.X.X) pattern.
+&lt;h3 id=&quot;138-whats-a-split-tunnelling-and-are-there-any-security-concerns&quot;&gt;138. What’s a &lt;strong&gt;&lt;em&gt;Split Tunnelling&lt;/em&gt;&lt;/strong&gt; and are there any security concerns?&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Split Tunnelling&lt;/strong&gt; falls under Remote Access VPN concepts. In this scenario, the VPN client is connected to both the corporate network as well as to the internet (not routed through the corporate network). So there are chances the client can spread malware to the corporate network. Hence, excessive care has to be emphasized under split tunnelling scenario.&lt;/p&gt;
 
-### 138. What's a ***Split Tunnelling*** and are there any security concerns?
-**Split Tunnelling** falls under Remote Access VPN concepts. In this scenario, the VPN client is connected to both the corporate network as well as to the internet (not routed through the corporate network). So there are chances the client can spread malware to the corporate network. Hence, excessive care has to be emphasized under split tunnelling scenario.
+&lt;h3 id=&quot;139-what-do-you-mean-by-client-isolation-in-a-wireless-network&quot;&gt;139. What do you mean by &lt;strong&gt;&lt;em&gt;Client Isolation&lt;/em&gt;&lt;/strong&gt; in a wireless network?&lt;/h3&gt;
+&lt;p&gt;An organization may have both wireless and wired connection. Connecting to either of them lets you access your internal corporate network data. Client Isolation, is a feature or setting, when enabled it will prevent a device (&lt;em&gt;laptop, mobile, etc.&lt;/em&gt;) which is already connected to the wireless network from accessing resources that are connected to the network by a wired connection.&lt;/p&gt;
 
-### 139. What do you mean by ***Client Isolation*** in a wireless network?
-An organization may have both wireless and wired connection. Connecting to either of them lets you access your internal corporate network data. Client Isolation, is a feature or setting, when enabled it will prevent a device (_laptop, mobile, etc._) which is already connected to the wireless network from accessing resources that are connected to the network by a wired connection.
+&lt;h3 id=&quot;140-explain-fragmentation-and-reassembly-attacks-on-an-ids&quot;&gt;140. Explain &lt;strong&gt;&lt;em&gt;Fragmentation&lt;/em&gt;&lt;/strong&gt; and &lt;strong&gt;&lt;em&gt;Reassembly&lt;/em&gt;&lt;/strong&gt; attacks on an IDS.&lt;/h3&gt;
+&lt;p&gt;The concept of MTU (&lt;em&gt;Maximum Transmission Unit&lt;/em&gt;) has to be discussed here. All available Routers have MTU, which is the maximum number of bytes can be allowed/sent in a single packet. A large packet (let us consider an attack in our case) can be broken down in small packets called &lt;em&gt;fragments.&lt;/em&gt; An offset value in each and every fragment tells the destination IP host how to reassemble the other packets into a larger packet. If the IDS allows fragmentation and does not inspect the packet before reassembly, an attack may slip through it.&lt;/p&gt;
 
-
-### 140. Explain ***Fragmentation*** and ***Reassembly*** attacks on an IDS.
-The concept of MTU (_Maximum Transmission Unit_) has to be discussed here. All available Routers have MTU, which is the maximum number of bytes can be allowed/sent in a single packet. A large packet (let us consider an attack in our case) can be broken down in small packets called _fragments._ An offset value in each and every fragment tells the destination IP host how to reassemble the other packets into a larger packet. If the IDS allows fragmentation and does not inspect the packet before reassembly, an attack may slip through it.
-
-
-
-
-
-
-
-
-
-
----
-&lt;/p&gt;
+&lt;hr /&gt;
 
   
   &lt;p&gt;&lt;a href=&quot;http://localhost:4000/infosec/mega-guide-information-security-interview-questions&quot;&gt;The Mega Guide to Information Security Interview Questions.&lt;/a&gt; was originally published by Shankar Damodaran at &lt;a href=&quot;http://localhost:4000&quot;&gt;<b><font size='5.75em'>Inventor<font color='yellow' size='6.75em'>.</font> Biker<font color='yellow' size='6.75em'>.</font> Foodie<font color='yellow' size='6.75em'>.</font> h4ck3r<font color='yellow' size='6.75em'>.</font> Wanderlust<font color='yellow' size='6.75em'>. </font> </font><p>Sometimes....<span id='changingword'>I wanna be just ME.</span></p>&lt;/a&gt; on April 21, 2017.&lt;/p&gt;</content>
