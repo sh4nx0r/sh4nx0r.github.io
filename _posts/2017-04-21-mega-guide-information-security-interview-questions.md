@@ -740,6 +740,12 @@ An organization may have both wireless and wired connection. Connecting to eithe
 ### 140. Explain ***Fragmentation*** and ***Reassembly*** attacks on an IDS.
 The concept of MTU (_Maximum Transmission Unit_) has to be discussed here. All available Routers have MTU, which is the maximum number of bytes can be allowed/sent in a single packet. A large packet (let us consider an attack in our case) can be broken down in small packets called _fragments._ An offset value in each and every fragment tells the destination IP host how to reassemble the other packets into a larger packet. If the IDS allows fragmentation and does not inspect the packet before reassembly, an attack may slip through it.
 
+> ## ***Books, Sources, Links and References***
+
+- **The Basics of Information Security** - _Jason Andress_
+- **IT Security Interviews Exposed** - _Chris Butler, Russ Rogers, Mason Ferratt, Greg Miles, Ed Fuller, Chris Hurley, Rob Cameron, Brian Kirouac_
+{: .notice}
+
 
 
 
