@@ -183,7 +183,7 @@ $(function() {
         <img src="http://localhost:4000/images/blogimages/2017-04-21/cover-2017-04-21.jpg" alt="cover-image" />
 
         <article class="notepad-post-content post">
-            <div><p>Almost <strong><font color="red">140</font></strong> questions and still counting, I’ve been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a <strong>Guide</strong> to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness.</p>
+            <div><p>Almost <strong><font color="red">150</font></strong> questions and still counting, I’ve been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a <strong>Guide</strong> to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness.</p>
 
 <blockquote>
   <h2 id="errata--contributions"><strong><em>Errata &amp; Contributions</em></strong></h2>
@@ -213,7 +213,7 @@ $(function() {
 
 <p><strong>True Positive</strong>: The scanner finds vulnerabilities and alerts. Actual case is the website is prone to vulnerabilities. <em>Expected behavior of an automated scanner.</em></p>
 
-<p><strong>True Negative</strong>: The scanner does not find any vulnerabilities and does not alerts.</p>
+<p><strong>True Negative</strong>: The scanner does not find any vulnerabilities and alerts.</p>
 
 <h3 id="3-what-is-the-key-difference-between-penetration-testing-and-vulnerability-assessment">3. What is the key difference between <strong><em>Penetration Testing</em></strong> and <strong><em>Vulnerability Assessment</em></strong>?</h3>
 
@@ -779,15 +779,12 @@ surveillance cameras, lockpicking, USB dropping, etc)</li>
 </ul>
 
 <h3 id="104-explain-the-four-way-handshake-on-wireless-protocols">104. Explain the four-way handshake on Wireless Protocols.</h3>
-<ol>
-  <li>The <strong>Access Point</strong> sends a ANonce (<em>Nonce is a number used only once</em>) to the <strong>Client</strong>. (<em>Basically a random integer</em>)
-    <ul>
-      <li><strong>Client</strong> uses the ANonce and PMK (Pairwise Master Key) (<em>The PMK is generated from PSK</em>) to construct the PTK (Pairwise Transient Key). The Client then sends the PTK, Client’s SNonce and MIC to the <strong>Access Point</strong>.</li>
-      <li>The <strong>Access Point</strong> sends GTK (Group Temporal Key) (<em>The GTK is mostly derived from Group Master Key (GMK) which inturn is derived from Authenticator</em>) and MIC.</li>
-      <li>The <strong>Client</strong> sends the ACK along with MIC.</li>
-    </ul>
-  </li>
-</ol>
+<ul>
+  <li>The <strong>Access Point</strong> sends a ANonce (<em>Nonce is a number used only once</em>) to the <strong>Client</strong>. (<em>Basically a random integer</em>)</li>
+  <li><strong>Client</strong> uses the ANonce and PMK (Pairwise Master Key) (<em>The PMK is generated from PSK</em>) to construct the PTK (Pairwise Transient Key). The Client then sends the PTK, Client’s SNonce and MIC to the <strong>Access Point</strong>.</li>
+  <li>The <strong>Access Point</strong> sends GTK (Group Temporal Key) (<em>The GTK is mostly derived from Group Master Key (GMK) which inturn is derived from Authenticator</em>) and MIC.</li>
+  <li>The <strong>Client</strong> sends the ACK along with MIC.</li>
+</ul>
 
 <h3 id="105-whats-the-difference-between-xss-and-csrf-attacks">105. What’s the difference between XSS and CSRF attacks?</h3>
 <p>Both are client-side attacks, <strong>XSS</strong> can be more devastating as you can embed executable arbitrary code but with <strong>CSRF</strong> this is not possible. To exploit a <strong>CSRF</strong> attack in a website, the attacker has to somehow forge a deceptive link and send it to the victim, the attack will take place only when the user clicks the link, In real world scenario this is pretty hard to carry out. However, in an <strong>XSS</strong> attack (<em>in this case say a stored XSS vulnerability</em>), the attacker simply has to inject a malicious script (<em>say a cookie stealing script or redirection script</em>) so any victim connects to that particular page will be affected.</p>
@@ -1011,6 +1008,73 @@ surveillance cameras, lockpicking, USB dropping, etc)</li>
 
 <h3 id="140-explain-fragmentation-and-reassembly-attacks-on-an-ids">140. Explain <strong><em>Fragmentation</em></strong> and <strong><em>Reassembly</em></strong> attacks on an IDS.</h3>
 <p>The concept of MTU (<em>Maximum Transmission Unit</em>) has to be discussed here. All available Routers have MTU, which is the maximum number of bytes can be allowed/sent in a single packet. A large packet (let us consider an attack in our case) can be broken down in small packets called <em>fragments.</em> An offset value in each and every fragment tells the destination IP host how to reassemble the other packets into a larger packet. If the IDS allows fragmentation and does not inspect the packet before reassembly, an attack may slip through it.</p>
+
+<h3 id="141-how-does-a-signature-based-ids-work">141. How does a <strong><em>Signature-Based</em></strong> IDS work?</h3>
+<p>The Signature based IDS works on available database of malware patterns or so-called signatures. The IDS compares the packets with the database to check for a match in the available database. If a match is found, an alert is dispatched. <em>It works in a similar way as of an anti-virus software.</em></p>
+
+<h3 id="142-how-does-an-anomaly-based-ids-work">142. How does an <strong><em>Anomaly-Based</em></strong> IDS work?</h3>
+<p>The Anomaly based IDS does not compares any database, but instead maintains one of its own. It profiles the normal activities of the softwares it monitors and if something unusual activities like High CPU Usage, Unexpected Escalation of the process, Unusual code changes in the memory, etc it immediately alerts.</p>
+
+<h3 id="143-what-are-the-advantages-and-disadvantages-of-signature-based-ids">143. What are the advantages and disadvantages of Signature based IDS?</h3>
+<ul>
+  <li><strong>Advantages</strong>
+    <ul>
+      <li>They can exactly detect a threat which is available on their available signature detection database/engine.</li>
+      <li>They can also tell you precisely which exploit was used.
+<br /></li>
+    </ul>
+  </li>
+  <li><strong>Disadvantages</strong>
+    <ul>
+      <li>They can detect malicious activities those are available only on the defined database. The are still prone to new attacks.</li>
+      <li>There will be a performance hit as the signatures in the database keep growing.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="144-what-are-the-advantages-and-disadvantages-of-anomaly-based-ids">144. What are the advantages and disadvantages of Anomaly based IDS?</h3>
+<ul>
+  <li><strong>Advantages</strong>
+    <ul>
+      <li>They are very effective against 0-day attacks sometimes. Say an exploit causes severe consumption of CPU resources, this IDS definitely kicks in and preventing that from happening further as this was an intentional behaviour of that particular program.</li>
+      <li>They can also detect fuzzing techniques. A particular field is not expected to have more than 10 characters, when a large packet is sent the IDS gets kicked in.
+<br /></li>
+    </ul>
+  </li>
+  <li><strong>Disadvantages</strong>
+    <ul>
+      <li>Throws a lot of <em><strong>false-positives</strong></em> on a dynamic environment. (<em>where the activities of the assets keep changing, the profiling becomes a tough job for the IDS</em>).</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="145-whats-a-smurf-attack-and-how-is-it-different-from-ping-of-death-attack-are-they-a-serious-threat">145. What’s a <strong><em>Smurf</em></strong> attack and how is it different from <strong><em>Ping-of-Death</em></strong> attack? Are they a serious threat?</h3>
+<p>In a <strong>smurf attack</strong>, the attacker sends a massive number of ICMP requests to the victim server using the spoofed addresses from the network the target is situated. A <strong>ping-of-death</strong> happens when attacker sends multiple ICMP packets as large as 65,535 bytes (allowable size) to the victim server, fragmentation occurs and during reassembly it exceeds the size limit leading to a buffer overflow which in turn causes the target to freeze, crash or restart. <em>Both the attacks are not considered a threat as of now</em>, since most firewalls can prevent these attacks by default.</p>
+
+<h3 id="146-explain-event-aggregation-and-event-correlation">146. Explain <strong><em>Event Aggregation</em></strong> and <strong><em>Event Correlation</em></strong></h3>
+<p><strong>Event Aggregation</strong> is a collection of multiple similar events that are combined and put together.
+<strong>Event Correlation</strong> is a technique that takes only important <strong>aggregated events</strong> into account and remaining others are skipped.</p>
+
+<h3 id="147-whats-a-land-attack">147. What’s a <strong><em>Land Attack</em></strong>?</h3>
+<p><strong>Land Attack</strong> is quite similar to the SYN flood attack and is a type of Denial of Service (DoS) attack. The attacker uses the target’s (victim) ip address as the spoofed address. In doing so, this creates an infinite loop between the target system and the target system itself.</p>
+
+<h3 id="148-how-would-you-deploy-an-idsips-solution-on-a-corporate-network">148. How would you deploy an IDS/IPS solution on a corporate network?</h3>
+<ul>
+  <li>Ensure you are in par with company’s security policy.</li>
+  <li>Choose both hardware and software versions of IDS/IPS whichever neccessary.</li>
+  <li>Locate where the IDS/IPS and Sensors to be placed between assets.</li>
+  <li>Configure the detection, logging, alerting, prevention and reporting mechanisms.</li>
+  <li>Test the deployment using broad rules to make sure everything is working as expected.</li>
+  <li>Encrypt communications between sensors and console.</li>
+  <li>Analyse the results and troubleshoot.</li>
+  <li>Keep adding the rules and refine them whenever needed.</li>
+</ul>
+
+<h3 id="149-whats-a-teardrop-attack">149. What’s a <strong><em>Teardrop</em></strong> attack?</h3>
+<p><strong>Teardrop</strong> attack is a type of Denial of Service (DoS) attack that exploits fragment offset field in the IP header to produce erroneous fragments which are then delivered to the target machine. Unable to rearrange the buggy fragments, the victim keeps on accumulating the fragments until it crashes.</p>
+
+<h3 id="150-whats-a-pbx-why-would-an-attacker-try-to-hack-it">150. What’s a <strong><em>PBX</em></strong>? Why would an attacker try to hack it?</h3>
+<p>PBX, Private Branch Exchange is a private telephone network that is used within an organization that uses communication channels like VoIP, ISDN etc. The employees can make use of the PBX to communicate internally with the employees of the organization (extensions) and also externally, depends on how the service is configured. An attacker once compromises the PBX, will be able to <em>make long distance calls with free of charge and imposing it on the organization</em>.</p>
 
 <blockquote>
   <h2 id="books-sources-links-and-references"><strong><em>Books, Sources, Links and References</em></strong></h2>

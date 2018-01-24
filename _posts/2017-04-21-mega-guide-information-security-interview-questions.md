@@ -13,7 +13,7 @@ comments: true
 featured: true
 ---
 
-Almost **<font color='red'>140</font>** questions and still counting, I've been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a **Guide** to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness.
+Almost **<font color='red'>150</font>** questions and still counting, I've been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a **Guide** to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness.
 
 > ## ***Errata & Contributions***
 
@@ -43,7 +43,7 @@ Let us consider we have an automated scanner and we use that to scan a website a
 
 **True Positive**: The scanner finds vulnerabilities and alerts. Actual case is the website is prone to vulnerabilities. _Expected behavior of an automated scanner._
 
-**True Negative**: The scanner does not find any vulnerabilities and does not alerts.
+**True Negative**: The scanner does not find any vulnerabilities and alerts.
 
 ### 3. What is the key difference between ***Penetration Testing*** and ***Vulnerability Assessment***?
 
@@ -553,7 +553,7 @@ More of a threat? _actually this is a brain teaser question_, Malware is nothing
 - **Service Pack**: This is a bundle that is inclusive of Hotfixes and Patches.
 
 ### 104. Explain the four-way handshake on Wireless Protocols.
-1. The **Access Point** sends a ANonce (_Nonce is a number used only once_) to the **Client**. (_Basically a random integer_)
+- The **Access Point** sends a ANonce (_Nonce is a number used only once_) to the **Client**. (_Basically a random integer_)
 - **Client** uses the ANonce and PMK (Pairwise Master Key) (_The PMK is generated from PSK_) to construct the PTK (Pairwise Transient Key). The Client then sends the PTK, Client's SNonce and MIC to the **Access Point**.
 - The **Access Point** sends GTK (Group Temporal Key) (_The GTK is mostly derived from Group Master Key (GMK) which inturn is derived from Authenticator_) and MIC.
 - The **Client** sends the ACK along with MIC.
@@ -740,19 +740,61 @@ An organization may have both wireless and wired connection. Connecting to eithe
 ### 140. Explain ***Fragmentation*** and ***Reassembly*** attacks on an IDS.
 The concept of MTU (_Maximum Transmission Unit_) has to be discussed here. All available Routers have MTU, which is the maximum number of bytes can be allowed/sent in a single packet. A large packet (let us consider an attack in our case) can be broken down in small packets called _fragments._ An offset value in each and every fragment tells the destination IP host how to reassemble the other packets into a larger packet. If the IDS allows fragmentation and does not inspect the packet before reassembly, an attack may slip through it.
 
+### 141. How does a ***Signature-Based*** IDS work?
+The Signature based IDS works on available database of malware patterns or so-called signatures. The IDS compares the packets with the database to check for a match in the available database. If a match is found, an alert is dispatched. _It works in a similar way as of an anti-virus software._
+
+### 142. How does an ***Anomaly-Based*** IDS work?
+The Anomaly based IDS does not compares any database, but instead maintains one of its own. It profiles the normal activities of the softwares it monitors and if something unusual activities like High CPU Usage, Unexpected Escalation of the process, Unusual code changes in the memory, etc it immediately alerts.
+
+### 143. What are the advantages and disadvantages of Signature based IDS?
+- **Advantages**
+  - They can exactly detect a threat which is available on their available signature detection database/engine.
+  - They can also tell you precisely which exploit was used.
+<br>
+- **Disadvantages**
+  - They can detect malicious activities those are available only on the defined database. The are still prone to new attacks.
+  - There will be a performance hit as the signatures in the database keep growing.
+
+### 144. What are the advantages and disadvantages of Anomaly based IDS?
+- **Advantages**
+  - They are very effective against 0-day attacks sometimes. Say an exploit causes severe consumption of CPU resources, this IDS definitely kicks in and preventing that from happening further as this was an intentional behaviour of that particular program.
+  - They can also detect fuzzing techniques. A particular field is not expected to have more than 10 characters, when a large packet is sent the IDS gets kicked in.
+<br>
+- **Disadvantages**
+  - Throws a lot of _**false-positives**_ on a dynamic environment. (_where the activities of the assets keep changing, the profiling becomes a tough job for the IDS_).
+
+### 145. What's a ***Smurf*** attack and how is it different from ***Ping-of-Death*** attack? Are they a serious threat?
+In a **smurf attack**, the attacker sends a massive number of ICMP requests to the victim server using the spoofed addresses from the network the target is situated. A **ping-of-death** happens when attacker sends multiple ICMP packets as large as 65,535 bytes (allowable size) to the victim server, fragmentation occurs and during reassembly it exceeds the size limit leading to a buffer overflow which in turn causes the target to freeze, crash or restart. _Both the attacks are not considered a threat as of now_, since most firewalls can prevent these attacks by default.
+
+### 146. Explain ***Event Aggregation*** and ***Event Correlation***
+**Event Aggregation** is a collection of multiple similar events that are combined and put together.
+**Event Correlation** is a technique that takes only important **aggregated events** into account and remaining others are skipped.
+
+### 147. What's a ***Land Attack***?
+**Land Attack** is quite similar to the SYN flood attack and is a type of Denial of Service (DoS) attack. The attacker uses the target's (victim) ip address as the spoofed address. In doing so, this creates an infinite loop between the target system and the target system itself.
+
+### 148. How would you deploy an IDS/IPS solution on a corporate network?
+- Ensure you are in par with company's security policy.
+- Choose both hardware and software versions of IDS/IPS whichever neccessary.
+- Locate where the IDS/IPS and Sensors to be placed between assets.
+- Configure the detection, logging, alerting, prevention and reporting mechanisms.
+- Test the deployment using broad rules to make sure everything is working as expected.
+- Encrypt communications between sensors and console.
+- Analyse the results and troubleshoot.
+- Keep adding the rules and refine them whenever needed.
+
+### 149. What's a ***Teardrop*** attack?
+**Teardrop** attack is a type of Denial of Service (DoS) attack that exploits fragment offset field in the IP header to produce erroneous fragments which are then delivered to the target machine. Unable to rearrange the buggy fragments, the victim keeps on accumulating the fragments until it crashes.
+
+### 150. What's a ***PBX***? Why would an attacker try to hack it? 
+PBX, Private Branch Exchange is a private telephone network that is used within an organization that uses communication channels like VoIP, ISDN etc. The employees can make use of the PBX to communicate internally with the employees of the organization (extensions) and also externally, depends on how the service is configured. An attacker once compromises the PBX, will be able to _make long distance calls with free of charge and imposing it on the organization_.
+
+
 > ## ***Books, Sources, Links and References***
 
 - **The Basics of Information Security** - _Jason Andress_
 - **IT Security Interviews Exposed** - _Chris Butler, Russ Rogers, Mason Ferratt, Greg Miles, Ed Fuller, Chris Hurley, Rob Cameron, Brian Kirouac_
 {: .notice}
-
-
-
-
-
-
-
-
 
 
 ---

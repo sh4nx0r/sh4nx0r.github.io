@@ -7,7 +7,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://localhost:4000/" />
-<updated>2018-01-22T17:11:22+06:00</updated>
+<updated>2018-01-24T12:26:12+06:00</updated>
 <id>http://localhost:4000/</id>
 <author>
   <name>Shankar Damodaran</name>
@@ -982,7 +982,7 @@ Say ..  &lt;strong&gt;Downloads&lt;/strong&gt; or whatever.. So it will look lik
   <category scheme="http://localhost:4000/tags/#infosec" term="infosec" /><category scheme="http://localhost:4000/tags/#interview%20questions" term="interview questions" /><category scheme="http://localhost:4000/tags/#pentesting" term="pentesting" /><category scheme="http://localhost:4000/tags/#security%20analyst" term="security analyst" /><category scheme="http://localhost:4000/tags/#infosec%20questions" term="infosec questions" />
   <content type="html">
   
-    &lt;p&gt;Almost &lt;strong&gt;&lt;font color=&quot;red&quot;&gt;140&lt;/font&gt;&lt;/strong&gt; questions and still counting, I’ve been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a &lt;strong&gt;Guide&lt;/strong&gt; to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness.&lt;/p&gt;
+    &lt;p&gt;Almost &lt;strong&gt;&lt;font color=&quot;red&quot;&gt;150&lt;/font&gt;&lt;/strong&gt; questions and still counting, I’ve been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a &lt;strong&gt;Guide&lt;/strong&gt; to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness.&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;h2 id=&quot;errata--contributions&quot;&gt;&lt;strong&gt;&lt;em&gt;Errata &amp;amp; Contributions&lt;/em&gt;&lt;/strong&gt;&lt;/h2&gt;
@@ -1012,7 +1012,7 @@ Say ..  &lt;strong&gt;Downloads&lt;/strong&gt; or whatever.. So it will look lik
 
 &lt;p&gt;&lt;strong&gt;True Positive&lt;/strong&gt;: The scanner finds vulnerabilities and alerts. Actual case is the website is prone to vulnerabilities. &lt;em&gt;Expected behavior of an automated scanner.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;True Negative&lt;/strong&gt;: The scanner does not find any vulnerabilities and does not alerts.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;True Negative&lt;/strong&gt;: The scanner does not find any vulnerabilities and alerts.&lt;/p&gt;
 
 &lt;h3 id=&quot;3-what-is-the-key-difference-between-penetration-testing-and-vulnerability-assessment&quot;&gt;3. What is the key difference between &lt;strong&gt;&lt;em&gt;Penetration Testing&lt;/em&gt;&lt;/strong&gt; and &lt;strong&gt;&lt;em&gt;Vulnerability Assessment&lt;/em&gt;&lt;/strong&gt;?&lt;/h3&gt;
 
@@ -1578,15 +1578,12 @@ surveillance cameras, lockpicking, USB dropping, etc)&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;104-explain-the-four-way-handshake-on-wireless-protocols&quot;&gt;104. Explain the four-way handshake on Wireless Protocols.&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;The &lt;strong&gt;Access Point&lt;/strong&gt; sends a ANonce (&lt;em&gt;Nonce is a number used only once&lt;/em&gt;) to the &lt;strong&gt;Client&lt;/strong&gt;. (&lt;em&gt;Basically a random integer&lt;/em&gt;)
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;Client&lt;/strong&gt; uses the ANonce and PMK (Pairwise Master Key) (&lt;em&gt;The PMK is generated from PSK&lt;/em&gt;) to construct the PTK (Pairwise Transient Key). The Client then sends the PTK, Client’s SNonce and MIC to the &lt;strong&gt;Access Point&lt;/strong&gt;.&lt;/li&gt;
-      &lt;li&gt;The &lt;strong&gt;Access Point&lt;/strong&gt; sends GTK (Group Temporal Key) (&lt;em&gt;The GTK is mostly derived from Group Master Key (GMK) which inturn is derived from Authenticator&lt;/em&gt;) and MIC.&lt;/li&gt;
-      &lt;li&gt;The &lt;strong&gt;Client&lt;/strong&gt; sends the ACK along with MIC.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
+&lt;ul&gt;
+  &lt;li&gt;The &lt;strong&gt;Access Point&lt;/strong&gt; sends a ANonce (&lt;em&gt;Nonce is a number used only once&lt;/em&gt;) to the &lt;strong&gt;Client&lt;/strong&gt;. (&lt;em&gt;Basically a random integer&lt;/em&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Client&lt;/strong&gt; uses the ANonce and PMK (Pairwise Master Key) (&lt;em&gt;The PMK is generated from PSK&lt;/em&gt;) to construct the PTK (Pairwise Transient Key). The Client then sends the PTK, Client’s SNonce and MIC to the &lt;strong&gt;Access Point&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;The &lt;strong&gt;Access Point&lt;/strong&gt; sends GTK (Group Temporal Key) (&lt;em&gt;The GTK is mostly derived from Group Master Key (GMK) which inturn is derived from Authenticator&lt;/em&gt;) and MIC.&lt;/li&gt;
+  &lt;li&gt;The &lt;strong&gt;Client&lt;/strong&gt; sends the ACK along with MIC.&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h3 id=&quot;105-whats-the-difference-between-xss-and-csrf-attacks&quot;&gt;105. What’s the difference between XSS and CSRF attacks?&lt;/h3&gt;
 &lt;p&gt;Both are client-side attacks, &lt;strong&gt;XSS&lt;/strong&gt; can be more devastating as you can embed executable arbitrary code but with &lt;strong&gt;CSRF&lt;/strong&gt; this is not possible. To exploit a &lt;strong&gt;CSRF&lt;/strong&gt; attack in a website, the attacker has to somehow forge a deceptive link and send it to the victim, the attack will take place only when the user clicks the link, In real world scenario this is pretty hard to carry out. However, in an &lt;strong&gt;XSS&lt;/strong&gt; attack (&lt;em&gt;in this case say a stored XSS vulnerability&lt;/em&gt;), the attacker simply has to inject a malicious script (&lt;em&gt;say a cookie stealing script or redirection script&lt;/em&gt;) so any victim connects to that particular page will be affected.&lt;/p&gt;
@@ -1810,6 +1807,73 @@ surveillance cameras, lockpicking, USB dropping, etc)&lt;/li&gt;
 
 &lt;h3 id=&quot;140-explain-fragmentation-and-reassembly-attacks-on-an-ids&quot;&gt;140. Explain &lt;strong&gt;&lt;em&gt;Fragmentation&lt;/em&gt;&lt;/strong&gt; and &lt;strong&gt;&lt;em&gt;Reassembly&lt;/em&gt;&lt;/strong&gt; attacks on an IDS.&lt;/h3&gt;
 &lt;p&gt;The concept of MTU (&lt;em&gt;Maximum Transmission Unit&lt;/em&gt;) has to be discussed here. All available Routers have MTU, which is the maximum number of bytes can be allowed/sent in a single packet. A large packet (let us consider an attack in our case) can be broken down in small packets called &lt;em&gt;fragments.&lt;/em&gt; An offset value in each and every fragment tells the destination IP host how to reassemble the other packets into a larger packet. If the IDS allows fragmentation and does not inspect the packet before reassembly, an attack may slip through it.&lt;/p&gt;
+
+&lt;h3 id=&quot;141-how-does-a-signature-based-ids-work&quot;&gt;141. How does a &lt;strong&gt;&lt;em&gt;Signature-Based&lt;/em&gt;&lt;/strong&gt; IDS work?&lt;/h3&gt;
+&lt;p&gt;The Signature based IDS works on available database of malware patterns or so-called signatures. The IDS compares the packets with the database to check for a match in the available database. If a match is found, an alert is dispatched. &lt;em&gt;It works in a similar way as of an anti-virus software.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;142-how-does-an-anomaly-based-ids-work&quot;&gt;142. How does an &lt;strong&gt;&lt;em&gt;Anomaly-Based&lt;/em&gt;&lt;/strong&gt; IDS work?&lt;/h3&gt;
+&lt;p&gt;The Anomaly based IDS does not compares any database, but instead maintains one of its own. It profiles the normal activities of the softwares it monitors and if something unusual activities like High CPU Usage, Unexpected Escalation of the process, Unusual code changes in the memory, etc it immediately alerts.&lt;/p&gt;
+
+&lt;h3 id=&quot;143-what-are-the-advantages-and-disadvantages-of-signature-based-ids&quot;&gt;143. What are the advantages and disadvantages of Signature based IDS?&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Advantages&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;They can exactly detect a threat which is available on their available signature detection database/engine.&lt;/li&gt;
+      &lt;li&gt;They can also tell you precisely which exploit was used.
+&lt;br /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Disadvantages&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;They can detect malicious activities those are available only on the defined database. The are still prone to new attacks.&lt;/li&gt;
+      &lt;li&gt;There will be a performance hit as the signatures in the database keep growing.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;144-what-are-the-advantages-and-disadvantages-of-anomaly-based-ids&quot;&gt;144. What are the advantages and disadvantages of Anomaly based IDS?&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Advantages&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;They are very effective against 0-day attacks sometimes. Say an exploit causes severe consumption of CPU resources, this IDS definitely kicks in and preventing that from happening further as this was an intentional behaviour of that particular program.&lt;/li&gt;
+      &lt;li&gt;They can also detect fuzzing techniques. A particular field is not expected to have more than 10 characters, when a large packet is sent the IDS gets kicked in.
+&lt;br /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Disadvantages&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Throws a lot of &lt;em&gt;&lt;strong&gt;false-positives&lt;/strong&gt;&lt;/em&gt; on a dynamic environment. (&lt;em&gt;where the activities of the assets keep changing, the profiling becomes a tough job for the IDS&lt;/em&gt;).&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;145-whats-a-smurf-attack-and-how-is-it-different-from-ping-of-death-attack-are-they-a-serious-threat&quot;&gt;145. What’s a &lt;strong&gt;&lt;em&gt;Smurf&lt;/em&gt;&lt;/strong&gt; attack and how is it different from &lt;strong&gt;&lt;em&gt;Ping-of-Death&lt;/em&gt;&lt;/strong&gt; attack? Are they a serious threat?&lt;/h3&gt;
+&lt;p&gt;In a &lt;strong&gt;smurf attack&lt;/strong&gt;, the attacker sends a massive number of ICMP requests to the victim server using the spoofed addresses from the network the target is situated. A &lt;strong&gt;ping-of-death&lt;/strong&gt; happens when attacker sends multiple ICMP packets as large as 65,535 bytes (allowable size) to the victim server, fragmentation occurs and during reassembly it exceeds the size limit leading to a buffer overflow which in turn causes the target to freeze, crash or restart. &lt;em&gt;Both the attacks are not considered a threat as of now&lt;/em&gt;, since most firewalls can prevent these attacks by default.&lt;/p&gt;
+
+&lt;h3 id=&quot;146-explain-event-aggregation-and-event-correlation&quot;&gt;146. Explain &lt;strong&gt;&lt;em&gt;Event Aggregation&lt;/em&gt;&lt;/strong&gt; and &lt;strong&gt;&lt;em&gt;Event Correlation&lt;/em&gt;&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Event Aggregation&lt;/strong&gt; is a collection of multiple similar events that are combined and put together.
+&lt;strong&gt;Event Correlation&lt;/strong&gt; is a technique that takes only important &lt;strong&gt;aggregated events&lt;/strong&gt; into account and remaining others are skipped.&lt;/p&gt;
+
+&lt;h3 id=&quot;147-whats-a-land-attack&quot;&gt;147. What’s a &lt;strong&gt;&lt;em&gt;Land Attack&lt;/em&gt;&lt;/strong&gt;?&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Land Attack&lt;/strong&gt; is quite similar to the SYN flood attack and is a type of Denial of Service (DoS) attack. The attacker uses the target’s (victim) ip address as the spoofed address. In doing so, this creates an infinite loop between the target system and the target system itself.&lt;/p&gt;
+
+&lt;h3 id=&quot;148-how-would-you-deploy-an-idsips-solution-on-a-corporate-network&quot;&gt;148. How would you deploy an IDS/IPS solution on a corporate network?&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Ensure you are in par with company’s security policy.&lt;/li&gt;
+  &lt;li&gt;Choose both hardware and software versions of IDS/IPS whichever neccessary.&lt;/li&gt;
+  &lt;li&gt;Locate where the IDS/IPS and Sensors to be placed between assets.&lt;/li&gt;
+  &lt;li&gt;Configure the detection, logging, alerting, prevention and reporting mechanisms.&lt;/li&gt;
+  &lt;li&gt;Test the deployment using broad rules to make sure everything is working as expected.&lt;/li&gt;
+  &lt;li&gt;Encrypt communications between sensors and console.&lt;/li&gt;
+  &lt;li&gt;Analyse the results and troubleshoot.&lt;/li&gt;
+  &lt;li&gt;Keep adding the rules and refine them whenever needed.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;149-whats-a-teardrop-attack&quot;&gt;149. What’s a &lt;strong&gt;&lt;em&gt;Teardrop&lt;/em&gt;&lt;/strong&gt; attack?&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Teardrop&lt;/strong&gt; attack is a type of Denial of Service (DoS) attack that exploits fragment offset field in the IP header to produce erroneous fragments which are then delivered to the target machine. Unable to rearrange the buggy fragments, the victim keeps on accumulating the fragments until it crashes.&lt;/p&gt;
+
+&lt;h3 id=&quot;150-whats-a-pbx-why-would-an-attacker-try-to-hack-it&quot;&gt;150. What’s a &lt;strong&gt;&lt;em&gt;PBX&lt;/em&gt;&lt;/strong&gt;? Why would an attacker try to hack it?&lt;/h3&gt;
+&lt;p&gt;PBX, Private Branch Exchange is a private telephone network that is used within an organization that uses communication channels like VoIP, ISDN etc. The employees can make use of the PBX to communicate internally with the employees of the organization (extensions) and also externally, depends on how the service is configured. An attacker once compromises the PBX, will be able to &lt;em&gt;make long distance calls with free of charge and imposing it on the organization&lt;/em&gt;.&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;h2 id=&quot;books-sources-links-and-references&quot;&gt;&lt;strong&gt;&lt;em&gt;Books, Sources, Links and References&lt;/em&gt;&lt;/strong&gt;&lt;/h2&gt;
