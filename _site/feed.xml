@@ -7,7 +7,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://localhost:4000/" />
-<updated>2018-01-24T12:26:12+06:00</updated>
+<updated>2018-01-24T12:10:49+05:30</updated>
 <id>http://localhost:4000/</id>
 <author>
   <name>Shankar Damodaran</name>
@@ -20,7 +20,7 @@
   <title type="html"><![CDATA[The top 25 movies hero/protagonist(s) dies in a shootout.]]></title>
   <link rel="alternate" type="text/html" href="http://localhost:4000/movies/the-top-25-movies-hero-protoganist-dies-in-a-shootout"/>
   <id>http://localhost:4000/movies/the-top-25-movies-hero-protoganist-dies-in-a-shootout</id>
-  <published>2018-01-14T00:00:00+06:00</published>
+  <published>2018-01-14T00:00:00+05:30</published>
   <updated>2018-01-14T00:00:00-00:00</updated>
   
   <author>
@@ -379,7 +379,7 @@ Each flick is rated from the bottom to top (the usual countdown paraphernalia), 
   <title type="html"><![CDATA[Do not throw your Old TV, Convert it to a Smart TV instead!]]></title>
   <link rel="alternate" type="text/html" href="http://localhost:4000/installation/convert-old-crt-tv-to-smart-tv"/>
   <id>http://localhost:4000/installation/convert-old-crt-tv-to-smart-tv</id>
-  <published>2017-12-19T00:00:00+06:00</published>
+  <published>2017-12-19T00:00:00+05:30</published>
   <updated>2017-12-19T00:00:00-00:00</updated>
   
   <author>
@@ -573,7 +573,7 @@ Each flick is rated from the bottom to top (the usual countdown paraphernalia), 
   <title type="html"><![CDATA[Getting Started: Building a simple search engine with Apache Solr.]]></title>
   <link rel="alternate" type="text/html" href="http://localhost:4000/development/building-search-engine-with-solr-mysql-linux-getting-started"/>
   <id>http://localhost:4000/development/building-search-engine-with-solr-mysql-linux-getting-started</id>
-  <published>2017-07-12T00:00:00+06:00</published>
+  <published>2017-07-12T00:00:00+05:30</published>
   <updated>2017-07-12T00:00:00-00:00</updated>
   
   <author>
@@ -971,7 +971,7 @@ Say ..  &lt;strong&gt;Downloads&lt;/strong&gt; or whatever.. So it will look lik
   <title type="html"><![CDATA[The Mega Guide to Information Security Interview Questions.]]></title>
   <link rel="alternate" type="text/html" href="http://localhost:4000/infosec/mega-guide-information-security-interview-questions"/>
   <id>http://localhost:4000/infosec/mega-guide-information-security-interview-questions</id>
-  <published>2017-04-21T00:00:00+06:00</published>
+  <published>2017-04-21T00:00:00+05:30</published>
   <updated>2017-04-21T00:00:00-00:00</updated>
   
   <author>
@@ -1895,7 +1895,7 @@ surveillance cameras, lockpicking, USB dropping, etc)&lt;/li&gt;
   <title type="html"><![CDATA[Bachelor's Recipe #1: The exotic indo-chinese egg scramble.]]></title>
   <link rel="alternate" type="text/html" href="http://localhost:4000/recipe/bachelors-recipe-indo-chinese-egg-scramble"/>
   <id>http://localhost:4000/recipe/bachelors-recipe-indo-chinese-egg-scramble</id>
-  <published>2015-09-22T00:00:00+06:00</published>
+  <published>2015-09-22T00:00:00+05:30</published>
   <updated>2015-09-22T00:00:00-00:00</updated>
   
   <author>
@@ -2072,7 +2072,7 @@ surveillance cameras, lockpicking, USB dropping, etc)&lt;/li&gt;
   <title type="html"><![CDATA[The top 15 most sick, disturbing & shocking flicks as of 2014.]]></title>
   <link rel="alternate" type="text/html" href="http://localhost:4000/movies/the-top-15-most-sick-disturbing-shocking-flicks-as-of-2014"/>
   <id>http://localhost:4000/movies/the-top-15-most-sick-disturbing-shocking-flicks-as-of-2014</id>
-  <published>2015-09-08T00:00:00+06:00</published>
+  <published>2015-09-08T00:00:00+05:30</published>
   <updated>2015-09-13T00:00:00-00:00</updated>
   
   <author>

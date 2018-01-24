@@ -10,7 +10,7 @@ imagefeature: blogimages/2018-01-14/cover-2018-01-14.jpg
 mathjax:
 chart:
 comments: true
-featured: false
+featured: true
 ---
 
 
