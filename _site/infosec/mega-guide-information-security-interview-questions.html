@@ -189,7 +189,7 @@ $(function() {
   <h2 id="errata--contributions"><strong><em>Errata &amp; Contributions</em></strong></h2>
 </blockquote>
 
-<p class="notice">Eventhough I have taken every care to ensure the accuracy of the content, mistakes do happen. Incase if you come across any errors or typos, either you can write to me or <strong>make changes wherever neccessary in the below linked repository</strong>. Any one of that will be highly appreciated. Contribution to this guide is welcome.</p>
+<p class="notice">Even though I have taken every care to ensure the accuracy of the content, mistakes do happen. Incase if you come across any errors or typos, either you can write to me or <strong>make changes wherever necessary in the below linked repository</strong>. Any one of that will be highly appreciated. Contribution to this guide is welcome.</p>
 
 <blockquote>
   <h2 id="the-repository"><strong><em>The Repository</em></strong></h2>
@@ -209,7 +209,7 @@ $(function() {
 
 <p><strong>False Positive</strong>: The scanner finds some vulnerabilities and alerts. Actual case is the website is not prone to attacks the scanner found. <font color="green">The site is safe.</font> <em>This is an annoying alert as it eats away precious time of the security analyst to verify the vulnerabilities.</em></p>
 
-<p><strong>False Negative</strong>: The scanner does not finds any vulnerabilities and alerts no attacks found. Actual case is the website is prone to vulnerabilities. <font color="red">The site is unsafe.</font> This is a critical situtation as the scanner was not able to find out the vulnerabilities.</p>
+<p><strong>False Negative</strong>: The scanner does not find any vulnerabilities and alerts no attacks found. Actual case is the website is prone to vulnerabilities. <font color="red">The site is unsafe.</font> This is a critical situtation as the scanner was not able to find out the vulnerabilities.</p>
 
 <p><strong>True Positive</strong>: The scanner finds vulnerabilities and alerts. Actual case is the website is prone to vulnerabilities. <em>Expected behavior of an automated scanner.</em></p>
 
@@ -217,16 +217,16 @@ $(function() {
 
 <h3 id="3-what-is-the-key-difference-between-penetration-testing-and-vulnerability-assessment">3. What is the key difference between <strong><em>Penetration Testing</em></strong> and <strong><em>Vulnerability Assessment</em></strong>?</h3>
 
-<p><strong>Penetration Testing</strong> is a process of breaking into the system and trying to gain the maximum privilege on the network. The ultimatum here is to get to the deepest level inside a network. This process is more similar to how an intruder would penetrate except there will be no damage caused. The steps has to be properly documented on how the actions were performed to gain the highest privilege.
+<p><strong>Penetration Testing</strong> is a process of breaking into the system and trying to gain the maximum privilege on the network. The ultimatum here is to get to the deepest level inside a network. This process is more like how an intruder would penetrate except there will be no damage caused. The steps must be properly documented on how the actions were performed to gain the highest privilege.
 <br /><strong>Vulnerability Assessment</strong> is a process of listing out all weaknesses in the machine (either by using a tool/manual ways) that is being assessed and list out the vulnerabilities in the highest order of risk. This process stops with this and does not further delve as of Penetration Testing.</p>
 
 <h3 id="4-how-to-define-csrf-attack-in-an-easier-way">4. How to define <strong><em>CSRF</em></strong> attack in an easier way?</h3>
 
-<p><strong>Cross Site Request Forgery</strong> or <strong>CSRF</strong> is a vulnerability in a website that allows an attacker to trick an end-user(victim in this case) into performing malicious operations without their knowledge in the background.</p>
+<p><strong>Cross Site Request Forgery</strong> or <strong>CSRF</strong> is a vulnerability in a website that allows an attacker to trick an end-user (victim in this case) into performing malicious operations without their knowledge in the background.</p>
 
 <h3 id="5-which-is-more-important-to-fix-threat-or-vulnerability">5. Which is more important to fix <strong><em>Threat</em></strong> or <strong><em>Vulnerability</em></strong>?</h3>
 
-<p>Threats can be classified as <em>Inside Intruder, Natural Disasters, etc.</em> whereas Vulnerabilities can be classified as weaknesses such as <em>SQLi, XSS, CSRF, Non Availability of Bunkers for protection against natural disasters, etc.</em> A Threat <strong>must</strong> make use a Vulnerability to exploit or create damage to the data. So it is important to fix vulnerabilities first than to focus on threats. Sometimes this can also be counter-intuitive, an insider working for an organization may pass vital information (<em>eg: admin credentials</em>) to an outside intruder. The outsider can directly login to the application with the credentials and can cause damage to the data (in this case, the outsider did not make use of any vulnerability to exploit the application).
+<p>Threats can be classified as <em>Inside Intruder, Natural Disasters, etc.</em> whereas Vulnerabilities can be classified as weaknesses such as <em>SQLi, XSS, CSRF, Non-Availability of Bunkers for protection against natural disasters, etc.</em> A Threat <strong>must</strong> make use a Vulnerability to exploit or create damage to the data. So, it is important to fix vulnerabilities first than to focus on threats. Sometimes this can also be counter-intuitive, an insider working for an organization may pass vital information (<em>eg: admin credentials</em>) to an outside intruder. The outsider can directly login to the application with the credentials and can cause damage to the data (in this case, the outsider did not make use of any vulnerability to exploit the application).
 <br />Hence, there is no perfect answer that can be provided to the above question.</p>
 
 <h3 id="6-how-do-you-stop-brute-force-attacks">6. How do you stop <strong><em>Brute-Force Attacks</em></strong>?</h3>
@@ -234,7 +234,7 @@ $(function() {
 <ul>
   <li>Adding a <strong>CAPTCHA</strong> functionality to the login forms.</li>
   <li>Enforce <strong>account lockout mechanism</strong> for a maximum of three to four wrong attempts.</li>
-  <li>Fastest fix for a temporary period would be <strong>blocking the particular ip address</strong> that is making the brute force attempts.</li>
+  <li>Fastest fix for a temporary period would be <strong>blocking the ip address</strong> that is making the brute force attempts.</li>
   <li><strong>Authentication Delays</strong>.</li>
 </ul>
 
@@ -250,18 +250,18 @@ $(function() {
 
 <p>Nmap uses a <strong>SYN</strong> scan by default unless we specify anything. -sS will be the default setting for Nmap. SYN scans are faster as they do not create the Three-way-handshake (SYN-&gt;&lt;-SYN-ACK-&gt;ACK). Instead of the ACK, the SYN scan sends an RST packet, thus the connection will be closed and there won’t be any chances for DoS condition. SYN scans were previously called as <em>Stealth Scans</em> as the logging devices do not record activities since a three-way-handshake wasn’t established. Nowadays, the devices do record activity of SYN scans too, so it is not fair to call it as a <em>Stealth Scan</em> anymore.</p>
 
-<h3 id="10-on-which-port-does-nessus-run">10. On which port does Nessus run?</h3>
+<h3 id="10-on-which-port-does-nessus-run">10. On which port, does Nessus run?</h3>
 
 <p><strong>8834</strong>. Nessus can be accessed through any browser by accessing https://127.0.0.1:8834.</p>
 
-<h3 id="11how-do-you-differentiate-bind-payloads-and-reverse-payloads">11.How do you differentiate <strong><em>Bind Payloads</em></strong> and <strong><em>Reverse Payloads</em></strong>?</h3>
+<h3 id="11-how-do-you-differentiate-bind-payloads-and-reverse-payloads">11. How do you differentiate <strong><em>Bind Payloads</em></strong> and <strong><em>Reverse Payloads</em></strong>?</h3>
 
-<p><strong>Bind Payloads</strong> are a piece of code which is sent by the attacker to the target machine. The exploit then runs on the machine as a process on a certain port say 4444 passively. The attacker can connect to this target by establishing connection to this particular port.
+<p><strong>Bind Payloads</strong> are a piece of code which is sent by the attacker to the target machine. The exploit then runs on the machine as a process on a certain port say 4444 passively. The attacker can connect to this target by establishing connection to this port.
 <br /><strong>Reverse Payloads</strong> are also a piece of code that is sent by attacker and in the background the attacker runs another process that keeps listening to the port say 4444., when this exploit is executed, the target machine immediately sends a connection to the attacker machine that is passively listening on the background.</p>
 
 <h3 id="12-what-is-a-promiscuous-mode-and-non-promiscuous-mode-while-capturing-packets-with-a-packet-sniffer">12. What is a <strong><em>Promiscuous Mode</em></strong> and <strong><em>Non-Promiscuous Mode</em></strong> while capturing packets with a packet sniffer?</h3>
 
-<p>In a <strong>Promiscuous Mode</strong> whichever packets that reaches the Network Interface Card is compelled to accept eventhough it was not intended for that NIC’s particular MAC address. That’s one of the reason we mostly sniff traffic using this mode. In a <strong>Non-Promiscuous Mode</strong>, the packets are processed only if they are intended for that NIC’s MAC address, others are discarded as it is.</p>
+<p>In a <strong>Promiscuous Mode</strong> whichever packets that reaches the Network Interface Card is compelled to accept eventhough it was not intended for that NIC’s MAC address. That’s one of the reason we mostly sniff traffic using this mode. In a <strong>Non-Promiscuous Mode</strong>, the packets are processed only if they are intended for that NIC’s MAC address, others are discarded as it is.</p>
 
 <h3 id="13-what-is-an-open-redirect">13. What is an Open Redirect?</h3>
 
@@ -269,15 +269,15 @@ $(function() {
 
 <h3 id="14-how-would-you-rate-or-rank-a-vulnerability-based-on-your-findings">14. How would you rate or rank a vulnerability based on your findings?</h3>
 
-<p>This depends on how much impact the vulnerability could affect your business. An example can answer this question, <em>During an audit say you discover XSS and SQLi vulnerabilities. Both are equally dangerous, but in our scenario we rank XSS as the first most since the database that has the SQLi is not a production one and it is just holds some sample data. Thus we need to rank a vulnerability based on the risk factor.</em></p>
+<p>This depends on how much impact the vulnerability could affect your business. An example can answer this question, <em>During an audit say you discover XSS and SQLi vulnerabilities. Both are equally dangerous, but in our scenario, we rank XSS as the first most since the database that has the SQLi is not a production one and it is just holds some sample data. Thus we need to rank a vulnerability based on the risk factor.</em></p>
 
-<h3 id="15-what-is-an-active-directory-how-does-ldap-differs-from-active-directory">15. What is an Active Directory? How does LDAP differs from Active Directory?</h3>
+<h3 id="15-what-is-an-active-directory-how-does-ldap-differ-from-active-directory">15. What is an Active Directory? How does LDAP differ from Active Directory?</h3>
 
 <p><strong>Active Directory</strong> is Microsoft’s implementation of directory service that provides information about the system, user’s activities, policies, etc. <strong>LDAP</strong> (<em>LightWeight Directory Access Protocol</em>) is a protocol that is used to query the directory services (<em>in this case, the Actual Directory</em>).</p>
 
 <h3 id="16-give-a-simple-difference-between-authorization-and-authentication">16. Give a simple difference between Authorization and Authentication?</h3>
 
-<p><em>Authorization</em> is a process whereas an <em>Authentication</em> is a method. Authorization takes place during Authentication. This can be made clear with an example, Consider an ATM, You use your card to <strong>authenticate</strong> to that machine and once you have entered the correct pin you are <strong>authorized</strong> to do transactions.</p>
+<p><em>Authorization</em> is a process whereas an <em>Authentication</em> is a method. Authorization takes place during Authentication. This can be made clear with an example, Consider an ATM, you use your card to <strong>authenticate</strong> to that machine and once you have entered the correct pin you are <strong>authorized</strong> to do transactions.</p>
 
 <h3 id="17-can-you-perform-a-simple-mitm-on-a-mobile-phone">17. Can you perform a simple MiTM on a mobile phone?</h3>
 
@@ -285,13 +285,13 @@ $(function() {
 
 <h3 id="18-when-you-deal-with-a-stream-of-confidential-data-to-be-transferred-across-the-channel-what-would-you-do-first-encrypt-or-compress">18. When you deal with a stream of confidential data to be transferred across the channel, what would you do first. Encrypt or Compress?</h3>
 
-<p>Any compression algorithm will look for certain patterns in the data to perform compression. When the data is encrypted, the compression algorithm will find it hard to compress the data (or it may not compress the data at all). So the good option would be. <strong>Compress and then Encrypt</strong>.</p>
+<p>Any compression algorithm will look for certain patterns in the data to perform compression. When the data is encrypted, the compression algorithm will find it hard to compress the data (or it may not compress the data at all). So, the better option would be. <strong>Compress and then Encrypt</strong>.</p>
 
 <h3 id="19-how-do-you-prevent-csrf-attacks">19. How do you prevent CSRF Attacks?</h3>
-<p>Use <strong>random tokens</strong> for each session and transaction. When an end-user logs to that application, let the application create a token for that particular session. That token should be included in every transaction. You can also use <strong>CAPTCHAs</strong> to prevent CSRF attacks.</p>
+<p>Use <strong>random tokens</strong> for each session and transaction. When an end-user logs to that application, let the application create a token for that session. That token should be included in every transaction. You can also use <strong>CAPTCHAs</strong> to prevent CSRF attacks.</p>
 
 <h3 id="20-which-is-better-closed-ports-or-filtered-ports">20. Which is better. Closed ports or Filtered Ports?</h3>
-<p>During a scan, closed ports respond to scanners (<em>port scanners like nmap</em>) saying that the service is not running, whereas filtered ports do not respond to scanners. So it is sometimes better to have filtered ports as they increase scanner times by not responding, but it also gives a hint to hackers that a particular service is running on the port but it is being blocked.</p>
+<p>During a scan, closed ports respond to scanners (<em>port scanners like nmap</em>) saying that the service is not running, whereas filtered ports do not respond to scanners. So, it is sometimes better to have filtered ports as they increase scanner times by not responding, but it also gives a hint to hackers that a service is running on the port but it is being blocked.</p>
 
 <h3 id="21-whats-a-rainbow-table-and-a-rainbow-cracker">21. What’s a Rainbow Table and a Rainbow Cracker?</h3>
 <p>Rainbow Tables are pre-computed hashes that was generated using cryptic or one-way hash algorithms. For instance, say we are subjecting a plaintext <em>secret</em> to a one-way hash algorithm and
@@ -312,11 +312,11 @@ Rainbow Cracker makes use of Rainbow Tables to do the cracking process, it is a 
 <h3 id="24-contrast-hubs-switches-and-routers">24. Contrast Hubs. Switches and Routers</h3>
 
 <p><strong>Hubs:</strong> Not expensive. Data collision may occur as traffic intended for one machine will reach all the machines in the network. This also results in wastage of bandwidth. This may also
-result in information leak as a packet sniffer can be used to capture packets that was not intended for the particular machine. They operate on the Physical layer as they deal with bits.</p>
+result in information leak as a packet sniffer can be used to capture packets that was not intended for the machine. They operate on the Physical layer as they deal with bits.</p>
 
 <p><strong>Switches:</strong> They are bit expensive compared to Hubs but they are way more smarter. The switch uses a table within to make track of the MAC addresses associated with the computers on the
-network. Switch acts as a hub in the begining (transmits data to all machines when the table is empty) and learns about the addresses and during the next data transfer, the switch refers to
-the table, reads the route (address) and then transfers to the particular target without transmitting throughout the network. They operate of the Data Link layer as they deal with MAC
+network. Switch acts as a hub in the beginning (transmits data to all machines when the table is empty) and learns about the addresses and during the next data transfer, the switch refers to
+the table, reads the route (address) and then transfers to the target without transmitting throughout the network. They operate of the Data Link layer as they deal with MAC
 addresses.</p>
 
 <p><strong>Routers:</strong> They are expensive than Switches. Ultimately they do Network Address Translation(NAT) which helps you connect to the Internet. They have support for DHCP and it helps in
@@ -342,7 +342,7 @@ when it comes to DNS, since TCP makes use of a <em>three-way-handshake</em>., it
 <h3 id="28-how-to-check-for-click-jacking-and-state-atleast-one-method-to-prevent-it">28. How to check for Click-Jacking and state atleast one method to prevent it?</h3>
 
 <p>Write a normal html code, add an iframe something like this <code class="highlighter-rouge">&lt;iframe src="vulnerableClickJackingSite.com"&gt;</code>, save it as test.html. Open this html in the browser. If vulnerableClickJackingSite.com
-opens up within the iframe, then the site is vulnerable to Click-Jacking.</p>
+opens within the iframe, then the site is vulnerable to Click-Jacking.</p>
 
 <p><strong>Prevention:</strong> By configuring X-Frame Options Headers to <code class="highlighter-rouge">DENY</code> or <code class="highlighter-rouge">SAMEORIGIN</code> or the site using <code class="highlighter-rouge">ALLOW-FROM</code>. See the code below.</p>
 
@@ -357,7 +357,7 @@ opens up within the iframe, then the site is vulnerable to Click-Jacking.</p>
   <li>If not, immediately <em>enforce VA</em> on the application and find the vulnerabilities.</li>
   <li>Remediate the vulnerabilities and redo the VA to make sure they are gone.</li>
   <li>Go for PT of the web application, if required.</li>
-  <li>Perform security checks every once in a while depending on the application active releases.</li>
+  <li>Perform security checks every once in a while, depending on the application active releases.</li>
   <li>Install a web-application firewall if necessary.</li>
 </ul>
 
@@ -408,7 +408,7 @@ opens up within the iframe, then the site is vulnerable to Click-Jacking.</p>
 <ul>
   <li>User may connect to a rogue wireless access point such that their sensitive information can be tapped.</li>
   <li>User may download infected/malicious app from PlayStore/iStore (if they miss some security checks) and other unsigned and non-verified apps from the internet.</li>
-  <li>User may tap a link that was received through SMS or any IM which is considered to be malicious.</li>
+  <li>User may tap a link that was received through SMS or any IM which is malicious.</li>
   <li>User may visit some sites that is serving infected scripts.</li>
 </ul>
 
@@ -442,10 +442,10 @@ can deal with heavy network traffic and their performance will be more effective
 
 <h3 id="42-how-do-you-implement-security-in-the-software-development-life-cycle-sdlc">42. How do you implement security in the Software Development Life Cycle (SDLC)?</h3>
 <ul>
-  <li>Secure Coding Practices document has to be followed by the development team. The security team should assist the development team if any queries raised.</li>
-  <li>Security has to be implemented in test cases and use cases as well.</li>
+  <li>Secure Coding Practices document must be followed by the development team. The security team should assist the development team if any queries raised.</li>
+  <li>Security must be implemented in test cases and use cases as well.</li>
   <li>Make use of code scanning tools to scan the application for vulnerabilities and remediate the same.</li>
-  <li>Security awareness trainings and latest threats has to be kept informed to the development team.</li>
+  <li>Security awareness trainings and latest threats should be kept informed to the development team.</li>
 </ul>
 
 <h3 id="43-explain-xpath-injection-attack">43. Explain XPath Injection Attack.</h3>
@@ -453,10 +453,10 @@ can deal with heavy network traffic and their performance will be more effective
 exists XPath Injection. Even <strong>XPath Injection</strong> <em>is done by the usage of a single quote (‘)</em>. The attack is carried out in depth by knowing the errors that the XML parser throws. There also
 exists Blind XPath Injection Attack, which is carried out with the help of result set returned.</p>
 
-<h3 id="44-what-is-an-incident-response-plan-and-a-disaster-recovery-plan-are-they-same">44. What is an Incident Response Plan and a Disaster Recovery Plan. Are they same?</h3>
-<p><strong>No</strong><em>, they are not the same</em>. An <em>Incident Response Plan</em> is a set of steps that has to be followed immediately when an incident happens, For instance, A fire outbreak in a building is an
+<h3 id="44-what-is-an-incident-response-plan-and-a-disaster-recovery-plan-are-they-same">44. What is an Incident Response Plan and a Disaster Recovery Plan? Are they same?</h3>
+<p><strong>No</strong><em>, they are not the same</em>. An <em>Incident Response Plan</em> is a set of steps that must be followed immediately when an incident happens, for instance, A fire outbreak in a building is an
 incident, an incident plan would be: usage of fire extinguishers to douse the fire, call the fire personnel, use the stairs, etc. That would be a clear example for that. <em>A Disaster Recovery
-Plan</em> comes in effect after the execution of Incident Response Plan. It also lists efficient steps that has to be followed after the Disaster has occurred. For instance; Restore backups from
+Plan</em> comes in effect after the execution of Incident Response Plan. It also lists efficient steps that must be followed once the disaster has occurred. For instance; Restore backups from
 Cloud Storage, Refurnishing the office, etc.</p>
 
 <h3 id="45-how-to-prevent-website-from-google-hacking-or-getting-dorked">45. How to prevent website from <strong><em>Google hacking</em></strong> or getting dorked?</h3>
@@ -464,7 +464,7 @@ Cloud Storage, Refurnishing the office, etc.</p>
 from getting viewed from outside world. <em>If site traffic does not matter to you, it’s better to remove your website from Google Indexing</em>.</p>
 
 <h3 id="46-how-does-a-digital-signature-differ-from-a-digital-certificate">46. How does a Digital Signature differ from a Digital Certificate?</h3>
-<p>A <strong>digital signature</strong> is a mechanism that is used to verify that a particular digital document or a message is authentic. For eg: <em>If you want to send some confidential mails to other party
+<p>A <strong>digital signature</strong> is a mechanism that is used to verify that a digital document or a message is authentic. For eg: <em>If you want to send some confidential mails to other party
 confirming that you are actual sender</em>. A <strong>digital certificate</strong> is a certificate issued by a trusted third party called a Certificate Authority (CA) to verify the identity of the certificate
 holder. For eg: <em>SSL certificate for a website</em>.</p>
 
@@ -477,7 +477,7 @@ holder. For eg: <em>SSL certificate for a website</em>.</p>
   <li>HITRUST CSF</li>
 </ul>
 
-<h3 id="48-consider-you-are-in-the-internal-network-of-a-organization-you-need-to-find-the-operating-system-of-another-machine-in-the-same-network-without-using-any-tools-what-command-would-you-use-under-a-windows-environment">48. Consider you are in the internal network of a organization, you need to find the Operating System of another machine in the same network without using any tools. What command would you use under a Windows Environment?</h3>
+<h3 id="48-consider-you-are-in-the-internal-network-of-an-organization-you-need-to-find-the-operating-system-of-another-machine-in-the-same-network-without-using-any-tools-what-command-would-you-use-under-a-windows-environment">48. Consider you are in the internal network of an organization, you need to find the Operating System of another machine in the same network without using any tools. What command would you use under a Windows Environment?</h3>
 <p><code class="highlighter-rouge">systeminfo /s</code>.</p>
 
 <h3 id="49-state-byod-and-its-merits-and-demerits">49. State BYOD and its merits and demerits.</h3>
@@ -513,7 +513,7 @@ Firewalls, Intrusion Detection and Prevention Systems, etc.</li>
 </ul>
 
 <h3 id="53-contrast-defense-in-depth">53. Contrast <strong><em>Defense in Depth</em></strong>.</h3>
-<p><strong>Defense in Depth</strong> is also known as Layered Security that enables multiple security countermeasures in each and every level to make sure CIA (<em>Confidentiality, Integrity, Availability</em>) of data is intact. It uses multiple approach to protect the data being penetrated by attackers. For eg. Having multiple security measures at the external network, internal network, etc.</p>
+<p><strong>Defense in Depth</strong> is also known as Layered Security that enables multiple security countermeasures in every level to make sure CIA (<em>Confidentiality, Integrity, Availability</em>) of data is intact. It uses multiple approach to protect the data being penetrated by attackers. For eg. Having multiple security measures at the external network, internal network, etc.</p>
 
 <h3 id="54-name-the-attacks-that-affects-the-cia-triad">54. Name the attacks that affects the CIA Triad.</h3>
 <p>Just listing a single attack for each type.</p>
@@ -539,11 +539,11 @@ Firewalls, Intrusion Detection and Prevention Systems, etc.</li>
 <p><em>Definitely</em> it is required for a business organization as it helps the administrators to collectively gather information about the network computers, users, policies, etc as a Centralized Desktop Management. Active Directory also provides support for Exchange and Sharepoint services.</p>
 
 <h3 id="60-whats-an-interactive-logon-and-what-are-the-types-associated-with-it">60. What’s an Interactive Logon and what are the types associated with it?</h3>
-<p>May sound confusing for some, An interactive logon is nothing but a method to logon to the computer or workstation. A new session can be initiated by <strong>CTRL+ALT+DEL</strong>. Local Logon (SAM), Domain Logon (Active Directory) &amp; Smartcard Logon (Hardware Token) are the types associated with it.</p>
+<p>May sound confusing for some, an interactive logon is nothing but a method to logon to the computer or workstation. A new session can be initiated by <strong>CTRL+ALT+DEL</strong>. Local Logon (SAM), Domain Logon (Active Directory) &amp; Smartcard Logon (Hardware Token) are the types associated with it.</p>
 
 <h3 id="61-list-the-attacks-associated-with-the-osi-layer-model">61. List the attacks associated with the OSI Layer Model.</h3>
 <ul>
-  <li><strong>Physical Layer</strong>: WarDriving, Physically plugging a Keylogger Device, WireTaps</li>
+  <li><strong>Physical Layer</strong>: WarDriving, physically plugging a Keylogger Device, WireTaps</li>
   <li><strong>Data Link Layer</strong>: MAC Address Spoofing, Sniffing, Snorting, WEP/WPA Hacking</li>
   <li><strong>Network Layer</strong>: Fragmentation Attacks, Ping Attacks, Routing Protocol Attacks, ARP Poisoning</li>
   <li><strong>Transport Layer</strong>: DoS Attacks, MiTM Attacks, SYN/ACK/FIN Attacks, Port Scans</li>
@@ -596,7 +596,7 @@ a different MAC is found then the administrator gets notified.</p>
 <p>A DMZ (<em>Demilitarized Zone</em>) is otherwise referred to as a Perimeter Network, that exposes external facing servers like routers, firewalls, etc to the Internet. It can also be termed as a
 segmented network whose access is secured by a Firewall.</p>
 
-<h3 id="69-state-the-six-step-approach-to-pentest-methodology-of-core-impact">69. State the six step approach to Pentest Methodology of <strong><em>Core Impact</em></strong>.</h3>
+<h3 id="69-state-the-six-step-approach-to-pentest-methodology-of-core-impact">69. State the six-step approach to Pentest Methodology of <strong><em>Core Impact</em></strong>.</h3>
 <ul>
   <li>Passive Intelligence Gathering</li>
   <li>Active Intelligence Gathering</li>
@@ -606,9 +606,9 @@ segmented network whose access is secured by a Firewall.</p>
   <li>Report Generation</li>
 </ul>
 
-<h3 id="70-does-firewall-affects-the-time-required-to-scan-a-target">70. Does Firewall affects the time required to scan a target?</h3>
+<h3 id="70-does-firewall-affect-the-time-required-to-scan-a-target">70. Does Firewall affect the time required to scan a target?</h3>
 <p><strong>Obviously</strong>. In most cases, the firewalls are configured to drop the unauthorized packet <strong>without</strong> sending <em>connection refused</em> message. In this case, the host which is scanning the target
-must have to wait for a minimum time before it knows that the connection will not be succeeded. Hence, this will affect the scanning time of that particular target. There are some smart
+must have to wait for a minimum time before it knows that the connection will not be succeeded. Hence, this will affect the scanning time of the target. There are some smart
 scanners that will tell you to increase timeouts depending on outcome of the scan.</p>
 
 <h3 id="71-how-authentic-is-banner-grabbing-can-you-go-by-the-results">71. How authentic is <strong><em>Banner Grabbing</em></strong>? Can you go by the results?</h3>
@@ -617,7 +617,7 @@ change the version information of certain services and applications and mislead 
 
 <h3 id="72-what-is-competitive-counterintelligence">72. What is <strong><em>Competitive CounterIntelligence</em></strong>?</h3>
 <p>Competitive Intelligence is not just the process of collecting information about competitors and their intelligence, but also about customers, stake holders, etc that aids in the decision
-making process of the organization. More importantly this is an ethical process and does not relates to Industrial Espionage (spying an organization) which is considered to be unethical.
+making process of the organization. More importantly this is an ethical process and does not relates to Industrial Espionage (spying an organization) which is unethical.
 When it comes to our question, <strong>Competitive CounterIntelligence</strong> mainly protects the organization publicly available information or data from being siphoned or tapped by its competitors.</p>
 
 <h3 id="73-how-do-you-crack-wep-explain-in-high-level">73. How do you crack <strong><em>WEP</em></strong>. Explain in High Level.</h3>
@@ -660,7 +660,7 @@ Windows Firewall to block specific types of outgoing traffic as well.</p>
   <li>Ensure those malicious activities have not been in action.</li>
   <li>If suspiscious action found, try to unplug the device from the network to avoid further infection on the corporate network.</li>
   <li>Update the Antivirus or Install a better Endpoint security product and do a full scan on the machine.</li>
-  <li>If the infection still persists, try to back up critical data (scan it and make sure they are not infected).</li>
+  <li>If the infection persists, try to back up critical data (scan it and make sure they are not infected).</li>
   <li>Do a fresh install of the Operating System. Restore the non-infected data.</li>
   <li>Install all latest security patches, end point security, host-based firewall, Antivirus and Antimalware products.</li>
   <li>Plug the machine back to the network.</li>
@@ -702,8 +702,8 @@ highly recommended over nmap.</p>
 <h3 id="85-what-happens-if-computer-as-nic-card-is-interchanged-to-computer-bs-nic-card-will-the-mac-address-be-the-same">85. What happens if Computer A’s NIC card is interchanged to Computer B’s NIC card? Will the MAC Address be the same?</h3>
 <p><strong>No</strong>. Since the NICs are interchanged, Computer A will have Computer B’s MAC Address and vice versa. MAC addresses are embedded in NIC cards not in the Motherboards or Microprocessors.</p>
 
-<h3 id="86-on-which-port-does-ping-command-work-and-how-do-you-ping-a-port">86. On which port does <strong><em>ping</em></strong> command work and how do you ping a port?</h3>
-<p><strong>Ping</strong> does not work on TCP or UDP, so obviously it does not make use of any port. It uses ICMP. You cannot use ping command to ping a port, instead use Nmap for this purpose. To give a you
+<h3 id="86-on-which-port-does-ping-command-work-and-how-do-you-ping-a-port">86. On which port, does <strong><em>ping</em></strong> command work and how do you ping a port?</h3>
+<p><strong>Ping</strong> does not work on TCP or UDP, so obviously, it does not make use of any port. It uses ICMP. You cannot use ping command to ping a port, instead use Nmap for this purpose. To give a you
 perfect illustration, ping works irrespective of port numbers. <code class="highlighter-rouge">ping sh4.in</code> is same as <code class="highlighter-rouge">ping sh4.in 80</code> or <code class="highlighter-rouge">ping sh4.in 2873687234</code></p>
 
 <h3 id="87-explain-a-simple-crucial-method-to-mitigate-xss-or-the-cross-site-scripting-attack">87. Explain a simple crucial method to mitigate XSS or the Cross-Site-Scripting attack.</h3>
@@ -711,15 +711,15 @@ perfect illustration, ping works irrespective of port numbers. <code class="high
 
 <h3 id="88-how-will-you-write-a-good-penetration-test-report">88. How will you write a good penetration test report?</h3>
 <p>A penetration test report will be read not just by technical managers but also by business managers whose technical knowledge will be limited or none. The report should have detailed steps
-stating how the analyst/tester made attempts in reaching the highest level of access. It is not neccessary that certain technical steps have to be explained in detail, however the <strong>executive
+stating how the analyst/tester made attempts in reaching the highest level of access. It is not neccessary that certain technical steps should be explained in detail, however the <strong>executive
 summary</strong> should be drafted very well in almost <em>layman terms</em>.</p>
 
 <h3 id="89-consider-you-are-going-to-engage-a-security-assessment-with-a-client-list-out-some-questions-that-you-would-ask-them">89. Consider you are going to engage a security assessment with a client, list out some questions that you would ask them.</h3>
 <ul>
-  <li>Make the client understand the difference between Vulnerability Assessment and Penetration Testing, this is where most of the organizations does mistakes. So will this be a VA or PT?</li>
+  <li>Make the client understand the difference between Vulnerability Assessment and Penetration Testing, this is where most of the organizations does mistakes. So, will this be a VA or PT?</li>
   <li>What is the scope of the assessment, IP ranges, Timeframe, Internal and External scans etc?</li>
   <li>Will there be a Social Engineering assessment involved like Phishing, Fake calls, etc?</li>
-  <li>How the assessment be like? Black Box or White Box, For instance, Will a Network Topology be provided for the devices in the scope of the assessment?</li>
+  <li>How the assessment be like? Black Box or White Box, for instance, will a Network Topology be provided for the devices in the scope of the assessment?</li>
   <li>Should physical security assessments also performed? (This involves the assessing team visiting the client premises, If so the cost involved, what are the devices to be tested,
 surveillance cameras, lockpicking, USB dropping, etc)</li>
 </ul>
@@ -728,7 +728,7 @@ surveillance cameras, lockpicking, USB dropping, etc)</li>
 <p><code class="highlighter-rouge">nmap -oX out.xml -Pn --disable-arp-ping 127.0.0.1</code></p>
 
 <h3 id="91-whats-the-difference-between-301-and-302-http-status-codes">91. What’s the difference between 301 and 302 HTTP Status Codes?</h3>
-<p>They both constitute redirection status codes, However the former is permanent and the latter is temporary.</p>
+<p>They both constitute redirection status codes; However, the former is permanent and the latter is temporary.</p>
 
 <h3 id="92-how-will-you-generate-html-scan-reports-from-nmap">92. How will you generate HTML scan reports from NMap?</h3>
 <p>As of 2017, NMap does not have the feature of writing the reports to HTML format. It can output the report to XML format and from there it is possible to convert to HTML using XSLT processors.</p>
@@ -739,7 +739,7 @@ surveillance cameras, lockpicking, USB dropping, etc)</li>
 <h3 id="94-whats-a-transparent-proxy">94. What’s a <strong><em>Transparent Proxy</em></strong>?</h3>
 <p><strong>Transparent Proxy</strong> is a type of caching proxy that is configured to sit on the gateway and intercepts the WWW requests from the client and fetches the data for the first time and the consecutive requests are cached. A Transparent Proxy can be clearly understood with these two examples.</p>
 <ul>
-  <li>You come to some restaurant and you want to access their WiFi Hotspot, Once you get the credentials and you connect to their WWW Gateway, You will be authorized to use the internet. Here all the data what you request and send will be routed through this proxy.</li>
+  <li>You come to some restaurant and you want to access their WiFi Hotspot, once you get the credentials and you connect to their WWW Gateway, You will be authorized to use the internet. Here all the data what you request and send will be routed through this proxy.</li>
   <li>A Content Delivery Network or a CDN can also act as a Transparent Proxy.</li>
 </ul>
 
@@ -751,29 +751,29 @@ surveillance cameras, lockpicking, USB dropping, etc)</li>
 
 <h3 id="97-assume-a-pki-scenario-you-have-a-public-and-a-private-key-and-you-often-perform-both-encryption-and-signing-functions-which-key-is-used-for-which-function">97. Assume a <strong><em>PKI Scenario</em></strong>, You have a public and a private key, and you often perform both encryption and signing functions. Which key is used for which function?</h3>
 <ul>
-  <li>To perform <strong>Signing</strong> and send a message to the recipient, You use your <strong>private key</strong> to sign and send the message. The recipient will use your <strong>public key</strong> to verify whether the message is originally from you.</li>
-  <li>To perform <strong>Encryption</strong> and send a message to the recipient, You use the recipient’s <strong>public key</strong> to encrypt the message and the recipient will use their <strong>private key</strong> to decrypt the message.</li>
+  <li>To perform <strong>Signing</strong> and send a message to the recipient, you use your <strong>private key</strong> to sign and send the message. The recipient will use your <strong>public key</strong> to verify whether the message is originally from you.</li>
+  <li>To perform <strong>Encryption</strong> and send a message to the recipient, you use the recipient’s <strong>public key</strong> to encrypt the message and the recipient will use their <strong>private key</strong> to decrypt the message.</li>
 </ul>
 
 <h3 id="98-how-meterpreter-shell-is-better-than-normal-shell-on-an-exploited-machine">98. How <strong><em>Meterpreter shell</em></strong> is better than normal shell on an exploited machine?</h3>
 <p><strong>Meterpreter</strong> is more advanced than normal shell as you can run many commands with ease. It is <em>possible to dump hashes, migrate to process, easily send and receive files, take screenshots, access webcam, mouse and more</em>.</p>
 
 <h3 id="99-whats-a-heartbeat-and-a-heartbleed">99. What’s a <strong><em>Heartbeat</em></strong> and a <strong><em>HeartBleed</em></strong>?</h3>
-<p><strong>HeartBleed</strong> <em>is the vulnerability that exploits a built-in feature of OpenSSL called the <strong>HeartBeat</strong></em>. When your browser connects to the website and requests data, the website responds back to your browser and responds with data, this is otherwise called the HeartBeat. In this particular vulnerability, the attacker is able to craft a request in such a manner that the server responds back with data from the server’s memory beyond the total data of the initial request, up to 65,536 bytes. These bytes may contain more sensitive information like server config, passwords, etc.</p>
+<p><strong>HeartBleed</strong> <em>is the vulnerability that exploits a built-in feature of OpenSSL called the <strong>HeartBeat</strong></em>. When your browser connects to the website and requests data, the website responds back to your browser and responds with data, this is otherwise called the HeartBeat. In this vulnerability, the attacker can craft a request in such a manner that the server responds back with data from the server’s memory beyond the total data of the initial request, up to 65,536 bytes. These bytes may contain more sensitive information like server config, passwords, etc.</p>
 
 <h3 id="100-you-notice-some-brute-force-attempts-happening-on-your-server-every-five-minutes-as-you-can-infer-this-is-a-near-futile-attempt-can-you-guess-the-motive-behind-this-attacker">100. You notice some brute-force attempts happening on your server every five minutes, as you can infer this is a near futile attempt can you guess the motive behind this attacker?</h3>
-<p>The attacker is pretty smart, as he is playing in a <em>defensive way</em> by not triggering the lockout mechanisms. The other crucial part here is the attacker is not just brute forcing your system, there are chances that the attacker is brute-forcing multiple targets and that’s the reason for the idle time. The inference we assume from this scenario is the attacker’s main motive is to build an <strong>ultimate botnet</strong>.</p>
+<p>The attacker is smart, as he is playing in a <em>defensive way</em> by not triggering the lockout mechanisms. The other crucial part here is the attacker is not just brute forcing your system, there are chances that the attacker is brute-forcing multiple targets and that’s the reason for the idle time. The inference we assume from this scenario is the attacker’s main motive is to build an <strong>ultimate botnet</strong>.</p>
 
 <h3 id="101-how-will-you-find-your-internal-ip-address-on-your-office-network-when-your-command-prompt-access-is-disabled">101. How will you find your internal IP address on your office network when your command prompt access is disabled?</h3>
 <p>Go to Control Panel -&gt; Network &amp; Sharing Center -&gt; Local Area Connection -&gt; Details…</p>
 
 <h3 id="102-what-is-malware-and-spyware-which-is-more-of-a-threat">102. What is <strong><em>Malware</em></strong> and <strong><em>Spyware</em></strong>. Which is more of a threat?</h3>
-<p>More of a threat? <em>actually this is a brain teaser question</em>, Malware is nothing but <em>Malicious Software</em>, a software that tends to do malicious activities is termed as Malicious Software or Malware. <strong>Spyware</strong> (<em>spies on your browsing activities, webcam, etc</em>), Adware (<em>annoying popup ads that redirects to some phishing sites</em>) , Ransomware (<em>Wannacry, sites that demand money to remove viruses</em>) etc are grouped under Malware.</p>
+<p>More of a threat? <em>actually this is a brain teaser question</em>, Malware is nothing but <em>Malicious Software</em>, a software that tends to do malicious activities is termed as Malicious Software or Malware. <strong>Spyware</strong> (<em>spies on your browsing activities, webcam, etc</em>), Adware (<em>annoying popup ads that redirects to some phishing sites</em>), Ransomware (<em>Wannacry, sites that demand money to remove viruses</em>) etc are grouped under Malware.</p>
 
 <h3 id="103-how-do-you-differentiate-hotfix-patch-and-service-pack">103. How do you differentiate <strong><em>HotFix, Patch and Service Pack</em></strong>?</h3>
 
 <ul>
-  <li><strong>Hotfix</strong>: Say for instance, a few major clients are using a particular version of a software from a vendor and they feel that a particular important feature need is required and they can’t wait for the next version of the product. In that case, the vendor releases a hotfix which is a add-on feature to that particular product. Make a note that this feature is not rolled out public.</li>
+  <li><strong>Hotfix</strong>: Say for instance, a few major clients are using a version of a software from a vendor and they feel that an important feature need is required and they can’t wait for the next version of the product. In that case, the vendor releases a hotfix which is an add-on feature to that product. Make a note that this feature is not rolled out public.</li>
   <li><strong>Patch</strong>: Unlike hotfixes, the patches are rolled out public. <em>A classic example would be WannaCry Patch</em>.</li>
   <li><strong>Service Pack</strong>: This is a bundle that is inclusive of Hotfixes and Patches.</li>
 </ul>
@@ -787,26 +787,26 @@ surveillance cameras, lockpicking, USB dropping, etc)</li>
 </ul>
 
 <h3 id="105-whats-the-difference-between-xss-and-csrf-attacks">105. What’s the difference between XSS and CSRF attacks?</h3>
-<p>Both are client-side attacks, <strong>XSS</strong> can be more devastating as you can embed executable arbitrary code but with <strong>CSRF</strong> this is not possible. To exploit a <strong>CSRF</strong> attack in a website, the attacker has to somehow forge a deceptive link and send it to the victim, the attack will take place only when the user clicks the link, In real world scenario this is pretty hard to carry out. However, in an <strong>XSS</strong> attack (<em>in this case say a stored XSS vulnerability</em>), the attacker simply has to inject a malicious script (<em>say a cookie stealing script or redirection script</em>) so any victim connects to that particular page will be affected.</p>
+<p>Both are client-side attacks, <strong>XSS</strong> can be more devastating as you can embed executable arbitrary code but with <strong>CSRF</strong> this is not possible. To exploit a <strong>CSRF</strong> attack in a website, the attacker must somehow forge a deceptive link and send it to the victim, the attack will take place only when the user clicks the link, in a real-world scenario this is hard to carry out. However, in an <strong>XSS</strong> attack (<em>in this case say a stored XSS vulnerability</em>), the attacker simply must inject a malicious script (<em>say a cookie stealing script or redirection script</em>) so any victim connects to that page will be affected.</p>
 
 <h3 id="106-is-it-possible-to-leverage-a-csrf-attack-using-an-xss-attack">106. Is it possible to leverage a CSRF attack using an XSS attack?</h3>
-<p><strong>Yes</strong> it is possible. Assume there are two websites <strong>Site A</strong> (a social networking site) and <strong>Site B</strong> (a banking application). The victim logs into <strong>Site B</strong> with credentials and after a while the user navigates to the <strong>Site A</strong> which has XSS payload that loads stuff in the background and exploits the CSRF vulnerability on <strong>Site A</strong>. So in this scenario, the attacker did not send any active link to the victim to exploit the CSRF vulnerability on <strong>Site B</strong>.</p>
+<p><strong>Yes</strong> it is possible. Assume there are two websites <strong>Site A</strong> (a social networking site) and <strong>Site B</strong> (a banking application). The victim logs into <strong>Site B</strong> with credentials and after a while the user navigates to the <strong>Site A</strong> which has XSS payload that loads stuff in the background and exploits the CSRF vulnerability on <strong>Site A</strong>. So, in this scenario, the attacker did not send any active link to the victim to exploit the CSRF vulnerability on <strong>Site B</strong>.</p>
 
 <h3 id="107-whats-a-greybox-approach-in-pentesting-is-it-better-than-blackbox">107. What’s a GreyBox approach in Pentesting, Is it better than BlackBox?</h3>
-<p>The pentester is provided with <strong><em>not so much</em></strong> information about the target. However, that information provided is quite essential. Some of these information include network diagrams, services, credentials, etc but the target owner may not disclose business critical information during a grey-box test to the pentester. Greybox is obviously better than Blackbox testing as this can be justified with a compact example. <em>Let us assume a login panel that does not have a signup panel, in this case chances are quite faint to explore the internal dashboard and detect the vulnerabilities within</em>. Well in this case, the greybox testing gets an upper hand over the blackbox testing.</p>
+<p>The pentester is provided with <strong><em>not so much</em></strong> information about the target. However, that information provided is quite essential. Some of this information include network diagrams, services, credentials, etc but the target owner may not disclose business critical information during a grey-box test to the pentester. Greybox is obviously better than Blackbox testing as this can be justified with a compact example. <em>Let us assume a login panel that does not have a signup panel, in this case chances are quite faint to explore the internal dashboard and detect the vulnerabilities within</em>. Well in this case, the greybox testing gets an upper hand over the blackbox testing.</p>
 
 <h3 id="108-whats-a-virus-worm-and-a-trojan-horse-are-they-all-same">108. What’s a Virus, Worm and a Trojan Horse? Are they all same?</h3>
-<p><strong><em>Virus, Worm and Trojan falls under the Malware set</em></strong>, but they are not the same. <strong>Virus</strong> cannot cause damage unless it is invoked by user. Mostly it comes in the form of an executable and it can attach itself to another executable, but does not execute automatically without human intervention. This is not in the case of a Worm, they are a subset of Virus but they have the tendency to attach themselves to other files and can make copies of themselves. <strong>Worms</strong> can automatically infect a machine without user intervention. <em>A simple example for a worm scenario would be automatically sending a message to all of your contacts in your address book</em>. <strong>Trojans</strong> are quite different and they are not meant to cause immediate havoc but their effects can be very devastating. Attackers make use of Trojan to place a backdoor in the exploited machine such that they can access the machine anytime or can also make the exploited machine act as a Bot in launching a DoS attack. Trojans give attackers full access over the machine and they behave as a command center. Trojans like Sub7 lets attacker to change the remote computer’s windows settings, turn display upside down, open/close the DVD Drive, etc.</p>
+<p><strong><em>Virus, Worm and Trojan falls under the Malware set</em></strong>, but they are not the same. <strong>Virus</strong> cannot cause damage unless it is invoked by user. Mostly it comes in the form of an executable and it can attach itself to another executable, but does not execute automatically without human intervention. This is not in the case of a Worm; they are a subset of Virus but they have the tendency to attach themselves to other files and can make copies of themselves. <strong>Worms</strong> can automatically infect a machine without user intervention. <em>A simple example for a worm scenario would be automatically sending a message to all your contacts in your address book</em>. <strong>Trojans</strong> are quite different and they are not meant to cause immediate havoc but their effects can be very devastating. Attackers make use of Trojan to place a backdoor in the exploited machine such that they can access the machine anytime or can also make the exploited machine act as a Bot in launching a DoS attack. Trojans give attackers full access over the machine and they behave as a command center. Trojans like Sub7 lets attacker to change the remote computer’s windows settings, turn display upside down, open/close the DVD Drive, etc.</p>
 
 <h3 id="109-whats-a-forward-proxy-and-a-reverse-proxy">109. What’s a Forward proxy and a Reverse proxy?</h3>
 
 <ul>
-  <li>A <strong>Forward proxy</strong> sits between the client and the server. Configuration has to be done on the client side. The requests from the client are routed through the proxy and then reaches the server. For better understanding a few examples can be listed out. <em>Say a user in Sweden wants to connect to a website that is accessible only for US residents, the user can make use of a Tor client and change the location to US and then access the particular website</em>. In this case, the ToR client acts a Forward Proxy. Another example would be, <em>An organization may allow access to their application through their specified proxy and port</em>, this restricts outside users to connect to the website unless they knew the proxy address and port.</li>
-  <li>A <strong>Reverse proxy</strong> is quite different. Configuration has to be done on the server side. Load Balancing is one of the concepts that comes under Reverse proxies. A high traffic website make uses of CDNs (Content Delivery Network) to balance the load on their servers; for example <em>certain images, css, javascript files</em> etc are loaded from third party sites.</li>
+  <li>A <strong>Forward proxy</strong> sits between the client and the server. Configuration should be done on the client side. The requests from the client are routed through the proxy and then reaches the server. For better understanding, a few examples can be listed out. <em>Say a user in Sweden wants to connect to a website that is accessible only for US residents, the user can make use of a Tor client and change the location to US and then access the website</em>. In this case, the ToR client acts a Forward Proxy. Another example would be, <em>An organization may allow access to their application through their specified proxy and port</em>, this restricts outside users to connect to the website unless they knew the proxy address and port.</li>
+  <li>A <strong>Reverse proxy</strong> is quite different. Configuration must be done on the server side. Load Balancing is one of the concepts that comes under Reverse proxies. A high traffic website make uses of CDNs (Content Delivery Network) to balance the load on their servers; for example, <em>certain images, css, javascript files</em> etc are loaded from third party sites.</li>
 </ul>
 
 <h3 id="110-explain-buffer-overflow-attack-in-a-simple-way-how-to-prevent-it">110. Explain Buffer Overflow Attack in a simple way. How to prevent it?</h3>
-<p>Improper and insecure coding practices leads to Buffer Overflow Attacks. By ensuring proper coding standards and secure code development the buffer overflow attacks can be <strong>totally mitigated</strong>. Buffer overflow involves lots of details but the summary of it can be easily understood with the help of an example. <em>Consider a mobile phone number field in an application which is usually 10 characters of length, if an attacker sends 50 characters to that application, the application abruptly crashes by throwing excess data in the CPU memory</em>. By using certain techniques if the attacker can able to predict where the buffer data is getting overwritten, the attacker will be able to execute arbitary code in the memory, else the program will result in a Denial of Service condition.</p>
+<p>Improper and insecure coding practices leads to Buffer Overflow Attacks. By ensuring proper coding standards and secure code development the buffer overflow attacks can be <strong>totally mitigated</strong>. Buffer overflow involves lots of details but the summary of it can be easily understood with the help of an example. <em>Consider a mobile phone number field in an application which is usually 10 characters of length, if an attacker sends 50 characters to that application, the application abruptly crashes by throwing excess data in the CPU memory</em>. By using certain techniques if the attacker can able to predict where the buffer data is getting overwritten, the attacker will be able to execute arbitrary code in the memory, else the program will result in a Denial of Service condition.</p>
 
 <h3 id="111-can-you-list-out-the-18-security-controls">111. Can you list out the 18 Security Controls?</h3>
 <ul>
@@ -843,7 +843,7 @@ surveillance cameras, lockpicking, USB dropping, etc)</li>
 <ul>
   <li>Make a list of the assets that ought to be protected.</li>
   <li>Assign a value to each asset <em>say on a scale of 1-5</em> on how critical that asset is and also assign the value in which the asset can likely be compromised.</li>
-  <li>Once all assets are identified, the security measures has to be implied. Critical assets with higher exposure risk has to be given utmost importance and the remaining assets should be provided with baseline security measures.</li>
+  <li>Once all assets are identified, the security measures has to be implied. Critical assets with higher exposure risk must be given utmost importance and the remaining assets should be provided with baseline security measures.</li>
   <li>Perimeter Security should be tightened and all the internal devices must have Endpoint Security implemented.</li>
   <li>All the policies and procedures should be implemented properly.</li>
   <li>It is better to deploy an SIEM solution and get alerts and notifications about the devices on the network. If SIEM is out of scope, use good vulnerability scanning tools to make sure all the security holes are plugged.</li>
@@ -874,14 +874,14 @@ surveillance cameras, lockpicking, USB dropping, etc)</li>
   <li>For a <strong>Normal User</strong>, the policy should specify how they should use the computers, mobiles, and BYOD.</li>
 </ul>
 
-<h3 id="117-when-you-are-assigned-to-create-a-policy-what-are-the-factors-you-take-into-account-can-you-relate-your-points-with-an-existing-policy">117. When you are assigned to create a policy, what are the factors you take into account, can you relate your points with an existing policy?</h3>
+<h3 id="117-when-you-are-assigned-to-create-a-policy-what-are-the-factors-you-consider-can-you-relate-your-points-with-an-existing-policy">117. When you are assigned to create a policy, what are the factors you consider, can you relate your points with an existing policy?</h3>
 <ul>
   <li>The ultimate <strong>purpose</strong> of the policy.</li>
-  <li>To which <strong>asset</strong> the policy has to be applied.</li>
+  <li>To which <strong>asset</strong> the policy should be applied.</li>
   <li>The <strong>rules</strong> of the policy.</li>
 </ul>
 
-<p><em>Let us assume a password policy, the password has to be changed as often as possible to prevent account getting compromised and should be consisting of numbers, symbols and capitalized alphabets. Again a more complex password is quite hard to crack and this is the ultimate <strong>purpose</strong> of a password policy. <strong>Asset</strong> is the user account. <strong>Rules</strong> of the policy include setting a complex password, changing the password in every 90 days, etc.</em></p>
+<p><em>Let us assume a password policy, the password should be changed as often as possible to prevent account getting compromised and should be consisting of numbers, symbols and capitalized alphabets. Again, a more complex password is quite hard to crack and this is the ultimate <strong>purpose</strong> of a password policy. <strong>Asset</strong> is the user account. <strong>Rules</strong> of the policy include setting a complex password, changing the password in every 90 days, etc.</em></p>
 
 <h3 id="118-can-you-list-the-steps-in-security-policy-development-life-cycle">118. Can you list the steps in Security Policy Development Life Cycle?</h3>
 <ul>
@@ -894,8 +894,8 @@ surveillance cameras, lockpicking, USB dropping, etc)</li>
 <h3 id="119-whats-a-kerberos-protocol">119. What’s a Kerberos Protocol?</h3>
 <p>Kerberos is a <em>ticket</em> based network authentication protocol. The protocol was developed by MIT and the idea behind it is that this authentication protocol can be used under a hostile environment.</p>
 
-<h3 id="120-whats-a-password-and-a-passphrase--which-is-secure-and-what-do-you-suggest">120. What’s a <strong><em>Password</em></strong> and a <strong><em>Passphrase</em></strong> ? Which is secure and what do you suggest?</h3>
-<p>Well, part of the answer is available there in the question. <strong>Password</strong> can be a 8-10 digit long with mixed characters, symbols, capitalized text, etc. whereas a <strong>Passphrase</strong> is a sentence with spaces. A password is <em>only</em> secure when it is a combination of symbols and numbers, whereas a passphrase can be stronger with a normal sentence. Passphrases are suggested when compared to passwords as they are easy to remember and obviously stronger.</p>
+<h3 id="120-whats-a-password-and-a-passphrase-which-is-secure-and-what-do-you-suggest">120. What’s a <strong><em>Password</em></strong> and a <strong><em>Passphrase</em></strong>? Which is secure and what do you suggest?</h3>
+<p>Well, part of the answer is available there in the question. <strong>Password</strong> can be an 8-10 digit long with mixed characters, symbols, capitalized text, etc. whereas a <strong>Passphrase</strong> is a sentence with spaces. A password is <em>only</em> secure when it is a combination of symbols and numbers, whereas a passphrase can be stronger with a normal sentence. Passphrases are suggested when compared to passwords as they are easy to remember and obviously stronger.</p>
 
 <h3 id="121-whats-a-dlp-and-state-the-types-associated-with-it">121. What’s a DLP and state the types associated with it?</h3>
 <p><strong>Data Loss Prevention</strong> software detects potential data breaches and prevents them by monitoring, detecting and blocking sensitive data while in-use (<em>endpoint actions</em>), in-motion (<em>network traffic</em>), and at-rest (<em>data storage</em>). As of now, there are three types associated with DLP solutions.</p>
@@ -905,10 +905,10 @@ surveillance cameras, lockpicking, USB dropping, etc)</li>
   <li>EndPoint DLP</li>
 </ul>
 
-<h3 id="122-what-can-you-say-about-information-rights-management-">122. What can you say about <strong><em>Information Rights Management</em></strong> ?</h3>
+<h3 id="122-what-can-you-say-about-information-rights-management">122. What can you say about <strong><em>Information Rights Management</em></strong>?</h3>
 <p><strong>Information Rights Management</strong> is a technology that is a subset of Digital Rights Management, <em>a technology that is used in the entertainment industry by the copyright owners to protect movies and music</em>. Information Rights Management helps prevent sensitive information from being printed, forwarded, saved, edited, or copied by unauthorized people. It can also limit the privileges to set of users from downloading and even copying content.</p>
 
-<h3 id="123-how-digital-rights-management-is-different-from-information-rights-management-">123. How <strong><em>Digital Rights Management</em></strong> is different from <strong><em>Information Rights Management</em></strong> ?</h3>
+<h3 id="123-how-digital-rights-management-is-different-from-information-rights-management">123. How <strong><em>Digital Rights Management</em></strong> is different from <strong><em>Information Rights Management</em></strong>?</h3>
 <p>IRM mainly deals with the protection of business related information typically that involves <em>documents and emails</em>. However, a DRM relates to consumer facing rich media viz <em>movies and audio</em>.</p>
 
 <h3 id="124-how-will-you-prevent-packet-sniffing">124. How will you prevent packet sniffing?</h3>
@@ -916,7 +916,7 @@ surveillance cameras, lockpicking, USB dropping, etc)</li>
 
 <h3 id="125-how-will-you-overcome-data-corruption-and-tampering">125. How will you overcome data corruption and tampering?</h3>
 <ul>
-  <li>Ensure data is protected by appropriate antivrus and antimalware products.</li>
+  <li>Ensure data is protected by appropriate antivirus and antimalware products.</li>
   <li>Utilize version control systems to keep track of data when and by whom the data is being modified.</li>
   <li>Ensure Role-Based Access and Least Privileges Policy/Rules are deployed.</li>
 </ul>
@@ -929,8 +929,8 @@ surveillance cameras, lockpicking, USB dropping, etc)</li>
   <li><strong>Transaction Log Backups</strong></li>
 </ul>
 
-<h3 id="127-why-should-you-do-output-port-filtering-is-it-really-important-from-a-security-point-of-view">127. Why should you do <strong><em>OutPut Port Filtering</em></strong>, is it really important from a security point of view?</h3>
-<p><strong>Yes it is</strong>. Say for instance, an employee is running a vulnerable version of a webserver or some other service that opens a port to the outside world, such that the webserver can be accessed like http://localhost:8000. This may seem that it is running only in the local machine, but certain applications can be accessed by http://1.1.1.1:8000 where 1.1.1.1 being the public ip (<em>just for illustration purposes</em>) of the internal user.</p>
+<h3 id="127-why-should-you-do-output-port-filtering-is-it-important-from-a-security-point-of-view">127. Why should you do <strong><em>OutPut Port Filtering</em></strong>, is it important from a security point of view?</h3>
+<p><strong>Yes, it is</strong>. Say for instance, an employee is running a vulnerable version of a webserver or some other service that opens a port to the outside world, such that the webserver can be accessed like http://localhost:8000. This may seem that it is running only in the local machine, but certain applications can be accessed by http://1.1.1.1:8000 where 1.1.1.1 being the public ip (<em>just for illustration purposes</em>) of the internal user.</p>
 
 <h3 id="128-how-would-you-scan-an-ipv6-address-using-nping">128. How would you scan an IPv6 address using <strong><em>NPing</em></strong>?</h3>
 <p>There is no such big difference when it comes to IPv6 addresses. However, it is suggested to use <code class="highlighter-rouge">-6</code> or <code class="highlighter-rouge">--ipv6</code> options whilst scanning as this makes NPing to parse faster.</p>
@@ -947,7 +947,7 @@ surveillance cameras, lockpicking, USB dropping, etc)</li>
 </ul>
 
 <h3 id="131-what-is-a-dns-rebinding-attack">131. What is a <strong><em>DNS Rebinding Attack</em></strong>?</h3>
-<p>This attack mainly targets home users. Home users who haven’t changed their router’s default password fall prey to this attack. The victim may accidentally visit an attacker’s website that has a javascript in the background which uses a default set of credentials for router models. Once authenticated, the attacker may create an alternate account incase the default credentials are changed to revisit and control the victim again.</p>
+<p>This attack mainly targets home users. Home users who haven’t changed their router’s default password fall prey to this attack. The victim may accidentally visit an attacker’s website that has a javascript in the background which uses a default set of credentials for router models. Once authenticated, the attacker may create an alternate account in case the default credentials are changed to revisit and control the victim again.</p>
 
 <h3 id="132-can-you-list-the-available-network-routing-protocols">132. Can you list the available network routing protocols?</h3>
 <ul>
@@ -958,12 +958,12 @@ surveillance cameras, lockpicking, USB dropping, etc)</li>
 <h3 id="133-does-linux-gets-affected-by-viruses">133. Does Linux gets affected by Viruses?</h3>
 <p>Yes. However, it is quite difficult to exploit due to some reasons.</p>
 <ul>
-  <li>Virus programmers have to target mutliple flavours of linux operating systems namely (fedora, kali, suse, etc.) whereas for Windows it is pretty straight forward (Microsoft)</li>
-  <li>They (Virus Programmers) target a huge user-base and the OS that is very easier to write viruses and access resource (<em>which windows wins here again with hands down</em>)</li>
+  <li>Virus programmers must target mutliple flavours of linux operating systems namely (fedora, kali, suse, etc.) whereas for Windows it is straight forward (Microsoft)</li>
+  <li>They (Virus Programmers) target a huge user-base and the OS that is very easier to write viruses and access resource (<em>which windows wins here again hands down</em>)</li>
 </ul>
 
 <h3 id="134-whats-an-information-security-charter-what-should-they-contain">134. What’s an <strong><em>Information Security Charter</em></strong>? What should they contain?</h3>
-<p>It’s a key governance tool mainly used by the CISO. It clearly defines the objectives, process, guidelines, etc for any security leading to success. A perfect infosec charter should contain some of these</p>
+<p>It’s a key governance tool mainly used by the CISO. It clearly defines the objectives, process, guidelines, etc for any security leading to success. A perfect InfoSec charter should contain some of these</p>
 <ul>
   <li>Timelines.</li>
   <li>Approval &amp; Authority.</li>
@@ -978,7 +978,7 @@ surveillance cameras, lockpicking, USB dropping, etc)</li>
   <li><strong>Advantages</strong>
     <ul>
       <li>If properly configured with rules, it can totally lockdown external malicious attacks.</li>
-      <li>Some firewalls come with anti-malware, anti-virus softwares. Hence, it can be a cost effective solution.
+      <li>Some firewalls come with anti-malware, anti-virus softwares. Hence, it can be a cost-effective solution.
 <br /></li>
     </ul>
   </li>
@@ -992,28 +992,28 @@ surveillance cameras, lockpicking, USB dropping, etc)</li>
 </ul>
 
 <h3 id="136-where-would-you-place-the-firewall">136. Where would you place the firewall?</h3>
-<p>Typically has to sit between the internal network and external connections. Additional firewalls can also be implemented.</p>
+<p>Typically, should sit between the internal network and external connections. Additional firewalls can also be implemented.</p>
 
 <h3 id="137-can-you-state-some-pointers-on-writing-rules-for-a-firewall-configuration">137. Can you state some pointers on writing rules for a Firewall Configuration?</h3>
 <ul>
   <li>Almost all firewalls processes rules from top to bottom, hence it is recommended to write general rules on the top followed by specific rules after that. This is because some legitimate packets may get blocked.</li>
-  <li>Ensure the firewall rule is configured to drop “impossible” or “unroutable” packets from the internet with addresses matching the internal network (192.168.X.X or 10.1.X.X) pattern.</li>
+  <li>Ensure the firewall rule is configured to drop “impossible” or “unrouteable” packets from the internet with addresses matching the internal network (192.168.X.X or 10.1.X.X) pattern.</li>
 </ul>
 
-<h3 id="138-whats-a-split-tunnelling-and-are-there-any-security-concerns">138. What’s a <strong><em>Split Tunnelling</em></strong> and are there any security concerns?</h3>
-<p><strong>Split Tunnelling</strong> falls under Remote Access VPN concepts. In this scenario, the VPN client is connected to both the corporate network as well as to the internet (not routed through the corporate network). So there are chances the client can spread malware to the corporate network. Hence, excessive care has to be emphasized under split tunnelling scenario.</p>
+<h3 id="138-whats-a-split-tunneling-and-are-there-any-security-concerns">138. What’s a <strong><em>Split Tunneling</em></strong> and are there any security concerns?</h3>
+<p><strong>Split Tunneling</strong> falls under Remote Access VPN concepts. In this scenario, the VPN client is connected to both the corporate network as well as to the internet (not routed through the corporate network). So, there are chances the client can spread malware to the corporate network. Hence, excessive care must be emphasized under split tunneling scenario.</p>
 
 <h3 id="139-what-do-you-mean-by-client-isolation-in-a-wireless-network">139. What do you mean by <strong><em>Client Isolation</em></strong> in a wireless network?</h3>
 <p>An organization may have both wireless and wired connection. Connecting to either of them lets you access your internal corporate network data. Client Isolation, is a feature or setting, when enabled it will prevent a device (<em>laptop, mobile, etc.</em>) which is already connected to the wireless network from accessing resources that are connected to the network by a wired connection.</p>
 
 <h3 id="140-explain-fragmentation-and-reassembly-attacks-on-an-ids">140. Explain <strong><em>Fragmentation</em></strong> and <strong><em>Reassembly</em></strong> attacks on an IDS.</h3>
-<p>The concept of MTU (<em>Maximum Transmission Unit</em>) has to be discussed here. All available Routers have MTU, which is the maximum number of bytes can be allowed/sent in a single packet. A large packet (let us consider an attack in our case) can be broken down in small packets called <em>fragments.</em> An offset value in each and every fragment tells the destination IP host how to reassemble the other packets into a larger packet. If the IDS allows fragmentation and does not inspect the packet before reassembly, an attack may slip through it.</p>
+<p>The concept of MTU (<em>Maximum Transmission Unit</em>) should be discussed here. All available Routers have MTU, which is the maximum number of bytes can be allowed/sent in a single packet. A large packet (let us consider an attack in our case) can be broken down in small packets called <em>fragments.</em> An offset value in each and every fragment tells the destination IP host how to reassemble the other packets into a larger packet. If the IDS allows fragmentation and does not inspect the packet before reassembly, an attack may slip through it.</p>
 
 <h3 id="141-how-does-a-signature-based-ids-work">141. How does a <strong><em>Signature-Based</em></strong> IDS work?</h3>
 <p>The Signature based IDS works on available database of malware patterns or so-called signatures. The IDS compares the packets with the database to check for a match in the available database. If a match is found, an alert is dispatched. <em>It works in a similar way as of an anti-virus software.</em></p>
 
 <h3 id="142-how-does-an-anomaly-based-ids-work">142. How does an <strong><em>Anomaly-Based</em></strong> IDS work?</h3>
-<p>The Anomaly based IDS does not compares any database, but instead maintains one of its own. It profiles the normal activities of the softwares it monitors and if something unusual activities like High CPU Usage, Unexpected Escalation of the process, Unusual code changes in the memory, etc it immediately alerts.</p>
+<p>The Anomaly based IDS does not compares any database, but instead maintains one of its own. It profiles the normal activities of the software’s it monitors and if something unusual activities like High CPU Usage, Unexpected Escalation of the process, Unusual code changes in the memory, etc. it immediately alerts.</p>
 
 <h3 id="143-what-are-the-advantages-and-disadvantages-of-signature-based-ids">143. What are the advantages and disadvantages of Signature based IDS?</h3>
 <ul>
@@ -1026,7 +1026,7 @@ surveillance cameras, lockpicking, USB dropping, etc)</li>
   </li>
   <li><strong>Disadvantages</strong>
     <ul>
-      <li>They can detect malicious activities those are available only on the defined database. The are still prone to new attacks.</li>
+      <li>They can detect malicious activities those are available only on the defined database. They are still prone to new attacks.</li>
       <li>There will be a performance hit as the signatures in the database keep growing.</li>
     </ul>
   </li>
@@ -1036,8 +1036,8 @@ surveillance cameras, lockpicking, USB dropping, etc)</li>
 <ul>
   <li><strong>Advantages</strong>
     <ul>
-      <li>They are very effective against 0-day attacks sometimes. Say an exploit causes severe consumption of CPU resources, this IDS definitely kicks in and preventing that from happening further as this was an intentional behaviour of that particular program.</li>
-      <li>They can also detect fuzzing techniques. A particular field is not expected to have more than 10 characters, when a large packet is sent the IDS gets kicked in.
+      <li>They are very effective against 0-day attacks sometimes. Say an exploit causes severe consumption of CPU resources, this IDS kicks in and preventing that from happening further as this was an intentional behavior of that program.</li>
+      <li>They can also detect fuzzing techniques. A field is not expected to have more than 10 characters, when a large packet is sent the IDS gets kicked in.
 <br /></li>
     </ul>
   </li>
@@ -1061,12 +1061,12 @@ surveillance cameras, lockpicking, USB dropping, etc)</li>
 <h3 id="148-how-would-you-deploy-an-idsips-solution-on-a-corporate-network">148. How would you deploy an IDS/IPS solution on a corporate network?</h3>
 <ul>
   <li>Ensure you are in par with company’s security policy.</li>
-  <li>Choose both hardware and software versions of IDS/IPS whichever neccessary.</li>
+  <li>Choose both hardware and software versions of IDS/IPS whichever necessary.</li>
   <li>Locate where the IDS/IPS and Sensors to be placed between assets.</li>
   <li>Configure the detection, logging, alerting, prevention and reporting mechanisms.</li>
   <li>Test the deployment using broad rules to make sure everything is working as expected.</li>
   <li>Encrypt communications between sensors and console.</li>
-  <li>Analyse the results and troubleshoot.</li>
+  <li>Analyze the results and troubleshoot.</li>
   <li>Keep adding the rules and refine them whenever needed.</li>
 </ul>
 
@@ -1074,7 +1074,7 @@ surveillance cameras, lockpicking, USB dropping, etc)</li>
 <p><strong>Teardrop</strong> attack is a type of Denial of Service (DoS) attack that exploits fragment offset field in the IP header to produce erroneous fragments which are then delivered to the target machine. Unable to rearrange the buggy fragments, the victim keeps on accumulating the fragments until it crashes.</p>
 
 <h3 id="150-whats-a-pbx-why-would-an-attacker-try-to-hack-it">150. What’s a <strong><em>PBX</em></strong>? Why would an attacker try to hack it?</h3>
-<p>PBX, Private Branch Exchange is a private telephone network that is used within an organization that uses communication channels like VoIP, ISDN etc. The employees can make use of the PBX to communicate internally with the employees of the organization (extensions) and also externally, depends on how the service is configured. An attacker once compromises the PBX, will be able to <em>make long distance calls with free of charge and imposing it on the organization</em>.</p>
+<p>PBX, Private Branch Exchange is a private telephone network that is used within an organization that uses communication channels like VoIP, ISDN etc. The employees can make use of the PBX to communicate internally with the employees of the organization (extensions) and externally, depends on how the service is configured. An attacker once compromises the PBX, will be able to <em>make long distance calls with free of charge and imposing it on the organization</em>.</p>
 
 <blockquote>
   <h2 id="books-sources-links-and-references"><strong><em>Books, Sources, Links and References</em></strong></h2>
