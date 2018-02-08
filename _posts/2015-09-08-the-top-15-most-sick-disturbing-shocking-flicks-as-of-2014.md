@@ -947,5 +947,5 @@ _This is the most disgusting, horrific, shocking content you will ever experienc
 
 ---
 
-## End of review. Comments and critics are welcome.
+## End of review. Comments and criticisms are welcome.
 

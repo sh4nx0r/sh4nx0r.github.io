@@ -301,4 +301,4 @@ Each flick is rated from the bottom to top (the usual countdown paraphernalia), 
 
 ---
 
-## End. Comments and critics are welcome.
+## End. Comments and criticisms are welcome.
