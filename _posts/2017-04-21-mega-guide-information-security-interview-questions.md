@@ -130,7 +130,7 @@ Rainbow Cracker makes use of Rainbow Tables to do the cracking process, it is a 
 
 ### 22. How do you use netcat to listen and connect through two different machines/VMs?
 
-Say there are two machines A and B, If you want connect to A from B, then start a listener in A by running the command `nc -l -p 2334` . Inorder to connect to A from B., execute `nc
+Say there are two machines A and B, If you want connect to A from B, then start a listener in A by running the command `nc -vvlp 2334` and execute `nc
 192.168.1.2 2334` (_where 192.168.1.2 is the IP address for machine A_) on machine B.
 
 ### 23. State some differences between Netcat and Ncat.
@@ -219,7 +219,7 @@ A methodology protects the assessing organization from _legal and liability_ iss
 
 ### 35. Explain OSINT
 
-**Open Source Intelligence** (OSINT) is a type of reconnaissance of the target that is available on public sources and on the internet. This can also be considered as collection of data about the target through Google Hacking, gathering DNS and other information through websites like _Shodan, Netcraft. etc._
+**Open Source Intelligence** (OSINT) is a type of reconnaissance of the target that is available on public sources and on the internet. This can also be considered as collection of data about the target through Google Hacking, gathering DNS and other information through websites like _Shodan, Netcraft. etc._ Mostly, this would be a passive reconnaissance.
 
 ### 36. List some pointers for a Mobile Threat Model.
 
@@ -785,8 +785,47 @@ In a **smurf attack**, the attacker sends a massive number of ICMP requests to t
 ### 149. What's a ***Teardrop*** attack?
 **Teardrop** attack is a type of Denial of Service (DoS) attack that exploits fragment offset field in the IP header to produce erroneous fragments which are then delivered to the target machine. Unable to rearrange the buggy fragments, the victim keeps on accumulating the fragments until it crashes.
 
-### 150. What's a ***PBX***? Why would an attacker try to hack it? 
-PBX, Private Branch Exchange is a private telephone network that is used within an organization that uses communication channels like VoIP, ISDN etc. The employees can make use of the PBX to communicate internally with the employees of the organization (extensions) and externally, depends on how the service is configured. An attacker once compromises the PBX, will be able to _make long distance calls with free of charge and imposing it on the organization_.
+### 150. What's a ***PBX***? Why would an attacker try to hack it?
+**PBX**, Private Branch Exchange is a private telephone network that is used within an organization that uses communication channels like VoIP, ISDN etc. The employees can make use of the PBX to communicate internally with the employees of the organization (extensions) and externally, depends on how the service is configured. An attacker once compromises the PBX, will be able to _make long distance calls with free of charge and imposing it on the organization_.
+
+### 151. What's a ***Kernel*** and a ***Distribution***?
+A kernel is a piece of software that handles interactions between hardware and end-user applications. A distribution is an operating system that is built over the kernel that includes an installation program and applications.
+
+### 152. What's an **ARM Processor**?
+**ARM** stands for Advanced RISC Machines, where RISC is the acronym for (Reduced Instruction Set Computer). ARM processor is designed to perform smaller operations and they are mainly used in wearable technology.
+
+### 153. ***Live ISOs***. Explain.
+Mostly they refer to bootable operating system that does not require any prior installations procedure. They are mostly used in forensics, pentesting where installation is not required or for installing a newer version on the drive.
+
+### 154. How do you change a **User-Agent** in a Chrome Browser?
+Go to the Developer Tools or Press `Ctrl`+`Shift`+`I` to open the Panel. To your extreme bottom left, click the three dots and choose "Network Condtions". Search for the User Agent section. You can choose existing UAs or create your custom one.
+
+### 155. Explain **SAST** & **DAST**
+SAST (_Static Application Security Testing_), otherwise referred to as White Box Pentesting of an application. Complete access to the source code will be available and it can be introduced in any SDLC models like (Agile (CICD), WaterFall) whereas in DAST (_Dynamic Application Security Testing_), otherwise called as Black Box Pentesting, can only be applied to WaterFall SDLC model, that too only after the development phase of the software. Some of these factors are analyzed from these two models.
+ - SAST has high rate of success in finding the vulnerabilities as they have access to code directly.
+ - Security vulnerabilities can be detected earlier in SAST, whereas in DAST the vulnerabilities can only be discovered after the end of development or the deployment phase.
+
+### 156. How does **LDAP Injection** work?
+The LDAP (_Light Weight Directory Access Protocol_) Injection works similar to that of an SQL injection. The untrusted input from the attacker can perform unauthorized queries and there are chances to execute arbitrary commands in the AD Tree.
+
+### 157. What's an **SSL Strip** attack?
+Basically, this is a MiTM attack in which the attacker sits between the client and the web server (the victim is communicating to). In this case, the attacker strips off the HTTPs communication between the victim and the web server. The attacker will be sending the HTTPs requests on the victim's behalf such that the attacker will be able access to the plain text communication of the victim. This can be illustrated by Victim -> HTTP -> Attacker -> HTTPs -> Web Server. **HSTS** (HTTP Strict Transport Security) header can be used to mitigate such an attack.
+
+### 158. Could you state the main sections in the **PTES** (_Penetration Testing Execution Standard_) ?
+- Pre-Engagement Interactions (_scope of the scan, type of assessments, when to perform the scan, etc_)
+- Intelligence Gathering (_do research on the organization passively, can be netcraft, google dorking, unsuspecting social engineering, etc_)
+- Threat Modeling (_know the application and analyzing the attack surface_)
+- Vulnerability Analysis (_finding out all the attacks and vulnerabilities and listing out as per criticality_)
+- Exploitation (_with the discovered vulnerabilities, performing the actual penetration in the network without disrupting services_)
+- Post-Exploitation (_finding business critical data_)
+- Reporting (_listing out all the vulnerabilities, the approach used to find them out, listing out the vulnerable machines, what threat the vulnerability can pose and detailed steps to re-mediate the vulnerability_)
+
+### 159. Why does Nmap results vary when executed as a privileged user and a non-privileged user?
+Nmap uses **raw sockets** which only an account with elevated privileges can perform.
+
+### 160. What's a **Drive-By Attack**?
+An attacker may spread malware through a compromised website or through any web location that intentionally serves malware. End-user gets affected by malware when they visit those websites. In such cases, it can termed as the machine is affected via a **drive-by attack** Most of the ransomewares make use of **drive-by** attack as a means of infecting computers.
+
 
 
 > ## ***Books, Sources, Links and References***
