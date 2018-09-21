@@ -7,13 +7,248 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://localhost:4000/" />
-<updated>2018-02-08T17:31:30+05:30</updated>
+<updated>2018-09-22T03:25:28+05:30</updated>
 <id>http://localhost:4000/</id>
 <author>
   <name>Shankar Damodaran</name>
   <uri>http://localhost:4000/</uri>
   <email>d.shankarnarayana@gmail.com</email>
 </author>
+
+
+<entry>
+  <title type="html"><![CDATA[Bachelor's Recipe #2: The Delicious Dried Anchovies Pickle.]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/recipe/bachelors-recipe-anchovies-pickle-curry"/>
+  <id>http://localhost:4000/recipe/bachelors-recipe-anchovies-pickle-curry</id>
+  <published>2018-09-21T00:00:00+05:30</published>
+  <updated>2018-09-21T00:00:00-00:00</updated>
+  
+  <author>
+    <name>Shankar Damodaran</name>
+    <uri>http://localhost:4000</uri>
+    <email>d.shankarnarayana@gmail.com</email>
+  </author>
+  <category scheme="http://localhost:4000/tags/#cooking" term="cooking" /><category scheme="http://localhost:4000/tags/#bachelor's%20recipe" term="bachelor's recipe" /><category scheme="http://localhost:4000/tags/#anchovies" term="anchovies" /><category scheme="http://localhost:4000/tags/#indian%20recipe" term="indian recipe" /><category scheme="http://localhost:4000/tags/#pickle" term="pickle" />
+  <content type="html">
+  
+    &lt;p&gt;Sadly till rowing the bachelor’s boat and this is a self made south indian recipe, &lt;strong&gt;The exclusive dried anchovies pickle curry&lt;/strong&gt;. This goes well with boiled rice as a main course and also as a side dish for chapathis and parathas. A typical &lt;strong&gt;Tamil&lt;/strong&gt; dish by heart. Give it a try! &lt;br /&gt;&lt;br /&gt;The preparation time is approximately 20 minutes. You will find a brief step-by-step method on how to make this recipe. So let’s get started.&lt;/p&gt;
+
+&lt;h2 id=&quot;ingredients&quot;&gt;Ingredients&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Dried Anchovies (50 - 100 gms)&lt;/li&gt;
+  &lt;li&gt;Olive Oil - 3 Tbsp&lt;/li&gt;
+  &lt;li&gt;Ginger Garlic Paste - 1 Tbsp&lt;/li&gt;
+  &lt;li&gt;Onions x2&lt;/li&gt;
+  &lt;li&gt;Tomatoes x2&lt;/li&gt;
+  &lt;li&gt;Chillies x3&lt;/li&gt;
+  &lt;li&gt;Curry Leaves x7&lt;/li&gt;
+  &lt;li&gt;Fennel Seeds - 1 Tsp&lt;/li&gt;
+  &lt;li&gt;Cumin Seeds - 1 Tsp&lt;/li&gt;
+  &lt;li&gt;Mustard Seeds - 1 Tbsp&lt;/li&gt;
+  &lt;li&gt;Tumeric Powder - 1/2 Tsp&lt;/li&gt;
+  &lt;li&gt;Chilli Powder - 3/4 Tsp&lt;/li&gt;
+  &lt;li&gt;Coriander Powder - 1/4 Tsp&lt;/li&gt;
+  &lt;li&gt;Salt to Taste&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;ingredients-thats-how-they-look&quot;&gt;Ingredients (that’s how they look)&lt;/h2&gt;
+
+&lt;figure&gt;
+	&lt;figcaption&gt;Dried Anchovies | Olive Oil | Ginger Garlic Paste | Onions | Tomatoes | Chillies | Curry Leaves&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2018-09-21/1.Anchovies.jpg&quot; /&gt;
+&lt;img src=&quot;/images/blogimages/2018-09-21/2.Olive_Oil.jpg&quot; /&gt;
+&lt;img src=&quot;/images/blogimages/2018-09-21/3.Ginger_Garlic_Paste.jpg&quot; /&gt;
+&lt;img src=&quot;/images/blogimages/2018-09-21/4.Onions.jpg&quot; /&gt;
+&lt;img src=&quot;/images/blogimages/2018-09-21/5.Tomatoes.jpg&quot; /&gt;
+&lt;img src=&quot;/images/blogimages/2018-09-21/6.Chillies.jpg&quot; /&gt;
+&lt;img src=&quot;/images/blogimages/2018-09-21/7.Curry_Leaves.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;figcaption&gt;Fennel Seeds | Cumin Seeds | Mustard Seeds | Turmeric Powder | Chilli Powder | Coriander Powder | Salt&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2018-09-21/8.Fennel_Seeds.jpg&quot; /&gt;
+&lt;img src=&quot;/images/blogimages/2018-09-21/9.Cumin_Seeds.jpg&quot; /&gt;
+&lt;img src=&quot;/images/blogimages/2018-09-21/10.Mustard_Seeds.jpg&quot; /&gt;
+&lt;img src=&quot;/images/blogimages/2018-09-21/11.Turmeric_Powder.jpg&quot; /&gt;
+&lt;img src=&quot;/images/blogimages/2018-09-21/12.Chilli_Powder.jpg&quot; /&gt;
+&lt;img src=&quot;/images/blogimages/2018-09-21/13.Coriander_Powder.jpg&quot; /&gt;
+&lt;img src=&quot;/images/blogimages/2018-09-21/14.Salt.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;the-preparation&quot;&gt;The Preparation.&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The process will be demonstrated step by step with screen captures so you won’t have any trouble following this. &lt;strong&gt;Off we go&lt;/strong&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;1-severe-the-heads-from-anchovies&quot;&gt;1. Severe the Heads from Anchovies.&lt;/h3&gt;
+
+&lt;p&gt;Unwrap the dried anchovies from the pack in a bowl. Start severing the heads from them.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;figcaption&gt;Beheading a dead fish is totally fine. Please don't take it too personal ;).&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2018-09-21/1.Severe_the_Anchovies_Head.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;2-wash-the-severed-anchovies-with-boiled-water--keep-them-aside&quot;&gt;2. Wash the Severed Anchovies with Boiled Water &amp;amp; Keep them Aside.&lt;/h3&gt;
+
+&lt;p&gt;Thoroughly wash the anchovies with boiled water to remove dirt and other particles. After cleaning them, keep them separately.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;figcaption&gt;Mmm they do shine! Do not eat yet!.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2018-09-21/3.Keep_aside.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;3-finely-chop-the-onions-tomatoes-and-green-chillies&quot;&gt;3. Finely Chop the Onions, Tomatoes and Green Chillies.&lt;/h3&gt;
+
+&lt;p&gt;Get your cutting board and knife ready. Chop the onions, tomatoes and green chillies into very fine pieces and keep it aside on a plate.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;figcaption&gt;Chop finely (my chopping standards suck tbh)&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2018-09-21/4.Cut_Onions.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2018-09-21/5.Cut_Tomatoes.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2018-09-21/6.Cut_Chillies.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;4-add-olive-oil-to-the-pan&quot;&gt;4. Add Olive Oil to the Pan.&lt;/h3&gt;
+
+&lt;p&gt;Light your gas stove (medium flame) and keep the pan over it. Add the olive oil to the pan.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;figcaption&gt;Believe me that's olive oil!.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2018-09-21/7.Add_Oil.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;HINT:&lt;/strong&gt; Let it for a while. If you notice a mild smoke or bubbles popping on the pan, you are almost ready to proceed to the next step. If not, wait a bit.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;5-add-spices-part-1-to-the-pan&quot;&gt;5. Add Spices (Part-1) to the Pan.&lt;/h3&gt;
+
+&lt;p&gt;Add all the spices viz mustard seeds, cumin seeds and fennel seeds to the pan and saute well.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;figcaption&gt;mustard popping scene makes me fall in love.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2018-09-21/9.AddSpices1.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;6-add-onions-and-saute-well-4-minutes&quot;&gt;6. Add Onions and Saute Well (4 minutes)&lt;/h3&gt;
+
+&lt;p&gt;Add the finely chopped onions to the pan and saute them for approximately 4 minutes, till they become pale.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;figcaption&gt;Saute till they become little pale.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2018-09-21/10.Add_Onions.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2018-09-21/11.Saute_Onions.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;7-add-green-chillies--curry-leaves-and-saute-well-2-minutes&quot;&gt;7. Add Green Chillies &amp;amp; Curry Leaves and Saute Well (2 minutes)&lt;/h3&gt;
+
+&lt;p&gt;Add the finely chopped green chillies and curry leaves to the pan and saute them for approximately 2 minutes.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2018-09-21/12.Add_Green_Chillies.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2018-09-21/13.Add_Curry_Leaves.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;figcaption&gt;Saute! 2x!.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2018-09-21/14.Saute_GC_CL.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;8-add-tomatoes-and-saute-well-5-minutes&quot;&gt;8. Add Tomatoes and Saute Well (5 minutes)&lt;/h3&gt;
+
+&lt;p&gt;Add the finely chopped tomatoes to the pan and saute them for approximately 5 minutes, till they become pale.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;figcaption&gt;Saute till Pale! Yes! ... Pfff.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2018-09-21/15.Add_Tomatoes.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2018-09-21/16.Saute_Tomatoes.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;9-add-spices-part-2-to-the-pan-1-minute&quot;&gt;9. Add Spices (Part-2) to the Pan (1 minute)&lt;/h3&gt;
+
+&lt;p&gt;Add all the spices viz turmeric powder, chilli powder, coriander powder and ginger garlic paste to the pan and saute well.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;figcaption&gt;Yeah sauting is the key to this recipe -_-.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2018-09-21/17.AddSpices2.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2018-09-21/18.Saute_Spices.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;10-add-anchovies-to-the-mixture&quot;&gt;10. Add Anchovies to the Mixture.&lt;/h3&gt;
+
+&lt;p&gt;Add the cleansed anchovies to the mixture.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;figcaption&gt;make hay while the sun shines!!!&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2018-09-21/19.Add_Anchovies.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;11-add-water-and-saute-well-8-minutes-and-salt-to-taste&quot;&gt;11. Add Water and Saute Well (8 minutes) and Salt to Taste&lt;/h3&gt;
+
+&lt;p&gt;To the mixture, add 50ml of water and let it boil and simultaneously keep whisking for 8 minutes approximately or till they become semi thick fluidic. Add Salt and mix well. Move them to a bowl once they’re done.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;figcaption&gt;add 50ml water &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2018-09-21/21.AddWater.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;figcaption&gt;mix them and wait till you see the bubbles pop up&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2018-09-21/22.Boil.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;figcaption&gt;add salt and saute well till the water become semi solid&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2018-09-21/23.Saute_Well.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;P.S.&lt;/strong&gt; Once the dish is in a semi fluidic form, move it to a large bowl and of course turn off the gas stove.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;12-the-delicious-dried-anchovies-pickle&quot;&gt;12. The Delicious Dried Anchovies Pickle&lt;/h3&gt;
+
+&lt;p&gt;The dish is ready. Tastes amazing when served with boiled rice.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;figcaption&gt;That would be a lovely meal.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2018-09-21/25.Serve_with_Rice.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Try this recipe and let me know through the comments section if you liked/hated it.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+  
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/recipe/bachelors-recipe-anchovies-pickle-curry&quot;&gt;Bachelor's Recipe #2: The Delicious Dried Anchovies Pickle.&lt;/a&gt; was originally published by Shankar Damodaran at &lt;a href=&quot;http://localhost:4000&quot;&gt;<b><font size='5.75em'>Inventor<font color='yellow' size='6.75em'>.</font> Biker<font color='yellow' size='6.75em'>.</font> Foodie<font color='yellow' size='6.75em'>.</font> h4ck3r<font color='yellow' size='6.75em'>.</font> Wanderlust<font color='yellow' size='6.75em'>. </font> </font><p>Sometimes....<span id='changingword'>I wanna be just ME.</span></p>&lt;/a&gt; on September 21, 2018.&lt;/p&gt;</content>
+</entry>
 
 
 <entry>
@@ -1101,7 +1336,7 @@ Rainbow Cracker makes use of Rainbow Tables to do the cracking process, it is a 
 
 &lt;h3 id=&quot;22-how-do-you-use-netcat-to-listen-and-connect-through-two-different-machinesvms&quot;&gt;22. How do you use netcat to listen and connect through two different machines/VMs?&lt;/h3&gt;
 
-&lt;p&gt;Say there are two machines A and B, If you want connect to A from B, then start a listener in A by running the command &lt;code class=&quot;highlighter-rouge&quot;&gt;nc -l -p 2334&lt;/code&gt; . Inorder to connect to A from B., execute &lt;code class=&quot;highlighter-rouge&quot;&gt;nc
+&lt;p&gt;Say there are two machines A and B, If you want connect to A from B, then start a listener in A by running the command &lt;code class=&quot;highlighter-rouge&quot;&gt;nc -vvlp 2334&lt;/code&gt; and execute &lt;code class=&quot;highlighter-rouge&quot;&gt;nc
 192.168.1.2 2334&lt;/code&gt; (&lt;em&gt;where 192.168.1.2 is the IP address for machine A&lt;/em&gt;) on machine B.&lt;/p&gt;
 
 &lt;h3 id=&quot;23-state-some-differences-between-netcat-and-ncat&quot;&gt;23. State some differences between Netcat and Ncat.&lt;/h3&gt;
@@ -1200,7 +1435,7 @@ opens within the iframe, then the site is vulnerable to Click-Jacking.&lt;/p&gt;
 
 &lt;h3 id=&quot;35-explain-osint&quot;&gt;35. Explain OSINT&lt;/h3&gt;
 
-&lt;p&gt;&lt;strong&gt;Open Source Intelligence&lt;/strong&gt; (OSINT) is a type of reconnaissance of the target that is available on public sources and on the internet. This can also be considered as collection of data about the target through Google Hacking, gathering DNS and other information through websites like &lt;em&gt;Shodan, Netcraft. etc.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Open Source Intelligence&lt;/strong&gt; (OSINT) is a type of reconnaissance of the target that is available on public sources and on the internet. This can also be considered as collection of data about the target through Google Hacking, gathering DNS and other information through websites like &lt;em&gt;Shodan, Netcraft. etc.&lt;/em&gt; Mostly, this would be a passive reconnaissance.&lt;/p&gt;
 
 &lt;h3 id=&quot;36-list-some-pointers-for-a-mobile-threat-model&quot;&gt;36. List some pointers for a Mobile Threat Model.&lt;/h3&gt;
 
@@ -1873,7 +2108,49 @@ surveillance cameras, lockpicking, USB dropping, etc)&lt;/li&gt;
 &lt;p&gt;&lt;strong&gt;Teardrop&lt;/strong&gt; attack is a type of Denial of Service (DoS) attack that exploits fragment offset field in the IP header to produce erroneous fragments which are then delivered to the target machine. Unable to rearrange the buggy fragments, the victim keeps on accumulating the fragments until it crashes.&lt;/p&gt;
 
 &lt;h3 id=&quot;150-whats-a-pbx-why-would-an-attacker-try-to-hack-it&quot;&gt;150. What’s a &lt;strong&gt;&lt;em&gt;PBX&lt;/em&gt;&lt;/strong&gt;? Why would an attacker try to hack it?&lt;/h3&gt;
-&lt;p&gt;PBX, Private Branch Exchange is a private telephone network that is used within an organization that uses communication channels like VoIP, ISDN etc. The employees can make use of the PBX to communicate internally with the employees of the organization (extensions) and externally, depends on how the service is configured. An attacker once compromises the PBX, will be able to &lt;em&gt;make long distance calls with free of charge and imposing it on the organization&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;PBX&lt;/strong&gt;, Private Branch Exchange is a private telephone network that is used within an organization that uses communication channels like VoIP, ISDN etc. The employees can make use of the PBX to communicate internally with the employees of the organization (extensions) and externally, depends on how the service is configured. An attacker once compromises the PBX, will be able to &lt;em&gt;make long distance calls with free of charge and imposing it on the organization&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;151-whats-a-kernel-and-a-distribution&quot;&gt;151. What’s a &lt;strong&gt;&lt;em&gt;Kernel&lt;/em&gt;&lt;/strong&gt; and a &lt;strong&gt;&lt;em&gt;Distribution&lt;/em&gt;&lt;/strong&gt;?&lt;/h3&gt;
+&lt;p&gt;A kernel is a piece of software that handles interactions between hardware and end-user applications. A distribution is an operating system that is built over the kernel that includes an installation program and applications.&lt;/p&gt;
+
+&lt;h3 id=&quot;152-whats-an-arm-processor&quot;&gt;152. What’s an &lt;strong&gt;ARM Processor&lt;/strong&gt;?&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;ARM&lt;/strong&gt; stands for Advanced RISC Machines, where RISC is the acronym for (Reduced Instruction Set Computer). ARM processor is designed to perform smaller operations and they are mainly used in wearable technology.&lt;/p&gt;
+
+&lt;h3 id=&quot;153-live-isos-explain&quot;&gt;153. &lt;strong&gt;&lt;em&gt;Live ISOs&lt;/em&gt;&lt;/strong&gt;. Explain.&lt;/h3&gt;
+&lt;p&gt;Mostly they refer to bootable operating system that does not require any prior installations procedure. They are mostly used in forensics, pentesting where installation is not required or for installing a newer version on the drive.&lt;/p&gt;
+
+&lt;h3 id=&quot;154-how-do-you-change-a-user-agent-in-a-chrome-browser&quot;&gt;154. How do you change a &lt;strong&gt;User-Agent&lt;/strong&gt; in a Chrome Browser?&lt;/h3&gt;
+&lt;p&gt;Go to the Developer Tools or Press &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl&lt;/code&gt;+&lt;code class=&quot;highlighter-rouge&quot;&gt;Shift&lt;/code&gt;+&lt;code class=&quot;highlighter-rouge&quot;&gt;I&lt;/code&gt; to open the Panel. To your extreme bottom left, click the three dots and choose “Network Condtions”. Search for the User Agent section. You can choose existing UAs or create your custom one.&lt;/p&gt;
+
+&lt;h3 id=&quot;155-explain-sast--dast&quot;&gt;155. Explain &lt;strong&gt;SAST&lt;/strong&gt; &amp;amp; &lt;strong&gt;DAST&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;SAST (&lt;em&gt;Static Application Security Testing&lt;/em&gt;), otherwise referred to as White Box Pentesting of an application. Complete access to the source code will be available and it can be introduced in any SDLC models like (Agile (CICD), WaterFall) whereas in DAST (&lt;em&gt;Dynamic Application Security Testing&lt;/em&gt;), otherwise called as Black Box Pentesting, can only be applied to WaterFall SDLC model, that too only after the development phase of the software. Some of these factors are analyzed from these two models.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;SAST has high rate of success in finding the vulnerabilities as they have access to code directly.&lt;/li&gt;
+  &lt;li&gt;Security vulnerabilities can be detected earlier in SAST, whereas in DAST the vulnerabilities can only be discovered after the end of development or the deployment phase.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;156-how-does-ldap-injection-work&quot;&gt;156. How does &lt;strong&gt;LDAP Injection&lt;/strong&gt; work?&lt;/h3&gt;
+&lt;p&gt;The LDAP (&lt;em&gt;Light Weight Directory Access Protocol&lt;/em&gt;) Injection works similar to that of an SQL injection. The untrusted input from the attacker can perform unauthorized queries and there are chances to execute arbitrary commands in the AD Tree.&lt;/p&gt;
+
+&lt;h3 id=&quot;157-whats-an-ssl-strip-attack&quot;&gt;157. What’s an &lt;strong&gt;SSL Strip&lt;/strong&gt; attack?&lt;/h3&gt;
+&lt;p&gt;Basically, this is a MiTM attack in which the attacker sits between the client and the web server (the victim is communicating to). In this case, the attacker strips off the HTTPs communication between the victim and the web server. The attacker will be sending the HTTPs requests on the victim’s behalf such that the attacker will be able access to the plain text communication of the victim. This can be illustrated by Victim -&amp;gt; HTTP -&amp;gt; Attacker -&amp;gt; HTTPs -&amp;gt; Web Server. &lt;strong&gt;HSTS&lt;/strong&gt; (HTTP Strict Transport Security) header can be used to mitigate such an attack.&lt;/p&gt;
+
+&lt;h3 id=&quot;158-could-you-state-the-main-sections-in-the-ptes-penetration-testing-execution-standard-&quot;&gt;158. Could you state the main sections in the &lt;strong&gt;PTES&lt;/strong&gt; (&lt;em&gt;Penetration Testing Execution Standard&lt;/em&gt;) ?&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Pre-Engagement Interactions (&lt;em&gt;scope of the scan, type of assessments, when to perform the scan, etc&lt;/em&gt;)&lt;/li&gt;
+  &lt;li&gt;Intelligence Gathering (&lt;em&gt;do research on the organization passively, can be netcraft, google dorking, unsuspecting social engineering, etc&lt;/em&gt;)&lt;/li&gt;
+  &lt;li&gt;Threat Modeling (&lt;em&gt;know the application and analyzing the attack surface&lt;/em&gt;)&lt;/li&gt;
+  &lt;li&gt;Vulnerability Analysis (&lt;em&gt;finding out all the attacks and vulnerabilities and listing out as per criticality&lt;/em&gt;)&lt;/li&gt;
+  &lt;li&gt;Exploitation (&lt;em&gt;with the discovered vulnerabilities, performing the actual penetration in the network without disrupting services&lt;/em&gt;)&lt;/li&gt;
+  &lt;li&gt;Post-Exploitation (&lt;em&gt;finding business critical data&lt;/em&gt;)&lt;/li&gt;
+  &lt;li&gt;Reporting (&lt;em&gt;listing out all the vulnerabilities, the approach used to find them out, listing out the vulnerable machines, what threat the vulnerability can pose and detailed steps to re-mediate the vulnerability&lt;/em&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;159-why-does-nmap-results-vary-when-executed-as-a-privileged-user-and-a-non-privileged-user&quot;&gt;159. Why does Nmap results vary when executed as a privileged user and a non-privileged user?&lt;/h3&gt;
+&lt;p&gt;Nmap uses &lt;strong&gt;raw sockets&lt;/strong&gt; which only an account with elevated privileges can perform.&lt;/p&gt;
+
+&lt;h3 id=&quot;160-whats-a-drive-by-attack&quot;&gt;160. What’s a &lt;strong&gt;Drive-By Attack&lt;/strong&gt;?&lt;/h3&gt;
+&lt;p&gt;An attacker may spread malware through a compromised website or through any web location that intentionally serves malware. End-user gets affected by malware when they visit those websites. In such cases, it can termed as the machine is affected via a &lt;strong&gt;drive-by attack&lt;/strong&gt; Most of the ransomewares make use of &lt;strong&gt;drive-by&lt;/strong&gt; attack as a means of infecting computers.&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;h2 id=&quot;books-sources-links-and-references&quot;&gt;&lt;strong&gt;&lt;em&gt;Books, Sources, Links and References&lt;/em&gt;&lt;/strong&gt;&lt;/h2&gt;

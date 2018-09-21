@@ -302,7 +302,7 @@ Rainbow Cracker makes use of Rainbow Tables to do the cracking process, it is a 
 
 <h3 id="22-how-do-you-use-netcat-to-listen-and-connect-through-two-different-machinesvms">22. How do you use netcat to listen and connect through two different machines/VMs?</h3>
 
-<p>Say there are two machines A and B, If you want connect to A from B, then start a listener in A by running the command <code class="highlighter-rouge">nc -l -p 2334</code> . Inorder to connect to A from B., execute <code class="highlighter-rouge">nc
+<p>Say there are two machines A and B, If you want connect to A from B, then start a listener in A by running the command <code class="highlighter-rouge">nc -vvlp 2334</code> and execute <code class="highlighter-rouge">nc
 192.168.1.2 2334</code> (<em>where 192.168.1.2 is the IP address for machine A</em>) on machine B.</p>
 
 <h3 id="23-state-some-differences-between-netcat-and-ncat">23. State some differences between Netcat and Ncat.</h3>
@@ -401,7 +401,7 @@ opens within the iframe, then the site is vulnerable to Click-Jacking.</p>
 
 <h3 id="35-explain-osint">35. Explain OSINT</h3>
 
-<p><strong>Open Source Intelligence</strong> (OSINT) is a type of reconnaissance of the target that is available on public sources and on the internet. This can also be considered as collection of data about the target through Google Hacking, gathering DNS and other information through websites like <em>Shodan, Netcraft. etc.</em></p>
+<p><strong>Open Source Intelligence</strong> (OSINT) is a type of reconnaissance of the target that is available on public sources and on the internet. This can also be considered as collection of data about the target through Google Hacking, gathering DNS and other information through websites like <em>Shodan, Netcraft. etc.</em> Mostly, this would be a passive reconnaissance.</p>
 
 <h3 id="36-list-some-pointers-for-a-mobile-threat-model">36. List some pointers for a Mobile Threat Model.</h3>
 
@@ -1074,7 +1074,49 @@ surveillance cameras, lockpicking, USB dropping, etc)</li>
 <p><strong>Teardrop</strong> attack is a type of Denial of Service (DoS) attack that exploits fragment offset field in the IP header to produce erroneous fragments which are then delivered to the target machine. Unable to rearrange the buggy fragments, the victim keeps on accumulating the fragments until it crashes.</p>
 
 <h3 id="150-whats-a-pbx-why-would-an-attacker-try-to-hack-it">150. What’s a <strong><em>PBX</em></strong>? Why would an attacker try to hack it?</h3>
-<p>PBX, Private Branch Exchange is a private telephone network that is used within an organization that uses communication channels like VoIP, ISDN etc. The employees can make use of the PBX to communicate internally with the employees of the organization (extensions) and externally, depends on how the service is configured. An attacker once compromises the PBX, will be able to <em>make long distance calls with free of charge and imposing it on the organization</em>.</p>
+<p><strong>PBX</strong>, Private Branch Exchange is a private telephone network that is used within an organization that uses communication channels like VoIP, ISDN etc. The employees can make use of the PBX to communicate internally with the employees of the organization (extensions) and externally, depends on how the service is configured. An attacker once compromises the PBX, will be able to <em>make long distance calls with free of charge and imposing it on the organization</em>.</p>
+
+<h3 id="151-whats-a-kernel-and-a-distribution">151. What’s a <strong><em>Kernel</em></strong> and a <strong><em>Distribution</em></strong>?</h3>
+<p>A kernel is a piece of software that handles interactions between hardware and end-user applications. A distribution is an operating system that is built over the kernel that includes an installation program and applications.</p>
+
+<h3 id="152-whats-an-arm-processor">152. What’s an <strong>ARM Processor</strong>?</h3>
+<p><strong>ARM</strong> stands for Advanced RISC Machines, where RISC is the acronym for (Reduced Instruction Set Computer). ARM processor is designed to perform smaller operations and they are mainly used in wearable technology.</p>
+
+<h3 id="153-live-isos-explain">153. <strong><em>Live ISOs</em></strong>. Explain.</h3>
+<p>Mostly they refer to bootable operating system that does not require any prior installations procedure. They are mostly used in forensics, pentesting where installation is not required or for installing a newer version on the drive.</p>
+
+<h3 id="154-how-do-you-change-a-user-agent-in-a-chrome-browser">154. How do you change a <strong>User-Agent</strong> in a Chrome Browser?</h3>
+<p>Go to the Developer Tools or Press <code class="highlighter-rouge">Ctrl</code>+<code class="highlighter-rouge">Shift</code>+<code class="highlighter-rouge">I</code> to open the Panel. To your extreme bottom left, click the three dots and choose “Network Condtions”. Search for the User Agent section. You can choose existing UAs or create your custom one.</p>
+
+<h3 id="155-explain-sast--dast">155. Explain <strong>SAST</strong> &amp; <strong>DAST</strong></h3>
+<p>SAST (<em>Static Application Security Testing</em>), otherwise referred to as White Box Pentesting of an application. Complete access to the source code will be available and it can be introduced in any SDLC models like (Agile (CICD), WaterFall) whereas in DAST (<em>Dynamic Application Security Testing</em>), otherwise called as Black Box Pentesting, can only be applied to WaterFall SDLC model, that too only after the development phase of the software. Some of these factors are analyzed from these two models.</p>
+<ul>
+  <li>SAST has high rate of success in finding the vulnerabilities as they have access to code directly.</li>
+  <li>Security vulnerabilities can be detected earlier in SAST, whereas in DAST the vulnerabilities can only be discovered after the end of development or the deployment phase.</li>
+</ul>
+
+<h3 id="156-how-does-ldap-injection-work">156. How does <strong>LDAP Injection</strong> work?</h3>
+<p>The LDAP (<em>Light Weight Directory Access Protocol</em>) Injection works similar to that of an SQL injection. The untrusted input from the attacker can perform unauthorized queries and there are chances to execute arbitrary commands in the AD Tree.</p>
+
+<h3 id="157-whats-an-ssl-strip-attack">157. What’s an <strong>SSL Strip</strong> attack?</h3>
+<p>Basically, this is a MiTM attack in which the attacker sits between the client and the web server (the victim is communicating to). In this case, the attacker strips off the HTTPs communication between the victim and the web server. The attacker will be sending the HTTPs requests on the victim’s behalf such that the attacker will be able access to the plain text communication of the victim. This can be illustrated by Victim -&gt; HTTP -&gt; Attacker -&gt; HTTPs -&gt; Web Server. <strong>HSTS</strong> (HTTP Strict Transport Security) header can be used to mitigate such an attack.</p>
+
+<h3 id="158-could-you-state-the-main-sections-in-the-ptes-penetration-testing-execution-standard-">158. Could you state the main sections in the <strong>PTES</strong> (<em>Penetration Testing Execution Standard</em>) ?</h3>
+<ul>
+  <li>Pre-Engagement Interactions (<em>scope of the scan, type of assessments, when to perform the scan, etc</em>)</li>
+  <li>Intelligence Gathering (<em>do research on the organization passively, can be netcraft, google dorking, unsuspecting social engineering, etc</em>)</li>
+  <li>Threat Modeling (<em>know the application and analyzing the attack surface</em>)</li>
+  <li>Vulnerability Analysis (<em>finding out all the attacks and vulnerabilities and listing out as per criticality</em>)</li>
+  <li>Exploitation (<em>with the discovered vulnerabilities, performing the actual penetration in the network without disrupting services</em>)</li>
+  <li>Post-Exploitation (<em>finding business critical data</em>)</li>
+  <li>Reporting (<em>listing out all the vulnerabilities, the approach used to find them out, listing out the vulnerable machines, what threat the vulnerability can pose and detailed steps to re-mediate the vulnerability</em>)</li>
+</ul>
+
+<h3 id="159-why-does-nmap-results-vary-when-executed-as-a-privileged-user-and-a-non-privileged-user">159. Why does Nmap results vary when executed as a privileged user and a non-privileged user?</h3>
+<p>Nmap uses <strong>raw sockets</strong> which only an account with elevated privileges can perform.</p>
+
+<h3 id="160-whats-a-drive-by-attack">160. What’s a <strong>Drive-By Attack</strong>?</h3>
+<p>An attacker may spread malware through a compromised website or through any web location that intentionally serves malware. End-user gets affected by malware when they visit those websites. In such cases, it can termed as the machine is affected via a <strong>drive-by attack</strong> Most of the ransomewares make use of <strong>drive-by</strong> attack as a means of infecting computers.</p>
 
 <blockquote>
   <h2 id="books-sources-links-and-references"><strong><em>Books, Sources, Links and References</em></strong></h2>

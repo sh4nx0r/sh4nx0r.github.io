@@ -28,6 +28,11 @@ callback([
   {
     "text": "The top 25 movies hero/protagonist(s) dies in a shootout.",
     "href": "http://localhost:4000/movies/the-top-25-movies-hero-protoganist-dies-in-a-shootout"
+  } ,
+
+  {
+    "text": "Bachelor's Recipe #2: The Delicious Dried Anchovies Pickle.",
+    "href": "http://localhost:4000/recipe/bachelors-recipe-anchovies-pickle-curry"
   } 
 
 ])
