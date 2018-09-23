@@ -92,7 +92,8 @@ main, .notepad-share-icons, .notepad-disqus {
     -webkit-transition: -webkit-transform .3s;
     transition: transform .3s;
     padding-top: 0;
-    padding-bottom: 3.125rem; }
+    padding-bottom: 3.125rem;
+    z-index: 9; }
     .notepad-blog-menu ul li {
       display: block;
       margin: 0;
