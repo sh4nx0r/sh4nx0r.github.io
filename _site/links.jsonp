@@ -33,6 +33,11 @@ callback([
   {
     "text": "Bachelor's Recipe #2: The Delicious Dried Anchovies Pickle.",
     "href": "http://localhost:4000/recipe/bachelors-recipe-anchovies-pickle-curry"
+  } ,
+
+  {
+    "text": "CaptureTheFlag #1: 'Bandit' Walkthrough for OverTheWire.Org",
+    "href": "http://localhost:4000/infosec/capture-the-flag-bandit-overthewireorg"
   } 
 
 ])

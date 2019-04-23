@@ -1,6 +1,14 @@
 [
 	
 		{
+		  "title"      : "CaptureTheFlag #1: &#39;Bandit&#39; Walkthrough for OverTheWire.Org",
+		  "category"   : "infosec",
+		  "url"        : "http://localhost:4000/infosec/capture-the-flag-bandit-overthewireorg",
+		  "date"       : "2019-04-19 00:00:00 +0530",
+		  "shortdate"  : "April 19, 2019"
+		} ,
+	
+		{
 		  "title"      : "Bachelor&#39;s Recipe #2: The Delicious Dried Anchovies Pickle.",
 		  "category"   : "recipe",
 		  "url"        : "http://localhost:4000/recipe/bachelors-recipe-anchovies-pickle-curry",

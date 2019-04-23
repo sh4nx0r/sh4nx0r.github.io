@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>sh4.in | CaptureTheFlag #1: 'Bandit' Walkthrough for OverTheWire.Org</title>
+<meta name="description" content="Bandit CaptureTheFlag Walkthrough.">
+<meta name="keywords" content="linux, bash, code, sh, capturetheflag, walkthrough, bandit">
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://localhost:4000/images/blogimages/2019-04-24/cover-2019-04-24.jpg">
+
+<meta name="twitter:title" content="CaptureTheFlag #1: 'Bandit' Walkthrough for OverTheWire.Org">
+<meta name="twitter:description" content="Bandit CaptureTheFlag Walkthrough.">
+<meta name="twitter:creator" content="@sh4nx0r">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CaptureTheFlag #1: 'Bandit' Walkthrough for OverTheWire.Org">
+<meta property="og:description" content="Bandit CaptureTheFlag Walkthrough.">
+<meta property="og:url" content="http://localhost:4000/infosec/capture-the-flag-bandit-overthewireorg">
+<meta property="og:site_name" content="<b><font size='5.75em'>Inventor<font color='yellow' size='6.75em'>.</font> Biker<font color='yellow' size='6.75em'>.</font> Foodie<font color='yellow' size='6.75em'>.</font> h4ck3r<font color='yellow' size='6.75em'>.</font> Wanderlust<font color='yellow' size='6.75em'>. </font> </font><p>Sometimes....<span id='changingword'>I wanna be just ME.</span></p>">
+<meta property="og:image" content="http://localhost:4000/images/blogimages/2019-04-24/cover-2019-04-24.jpg">
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/infosec/capture-the-flag-bandit-overthewireorg">
+<!-- <link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="<b><font size='5.75em'>Inventor<font color='yellow' size='6.75em'>.</font> Biker<font color='yellow' size='6.75em'>.</font> Foodie<font color='yellow' size='6.75em'>.</font> h4ck3r<font color='yellow' size='6.75em'>.</font> Wanderlust<font color='yellow' size='6.75em'>. </font> </font><p>Sometimes....<span id='changingword'>I wanna be just ME.</span></p> Feed"> -->
+
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=PT%20Sans%20Narrow' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,600,300,800,700' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/vendor/font-awesome.min.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/vendor/normalize.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/vendor/nprogress.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/vendor/foundation.min.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/style.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/post.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/vegas/vegas.min.css">
+
+<!-- Google ADS
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-2690919849601061",
+    enable_page_level_ads: true
+  });
+</script>
+-->
+
+<script type="text/javascript" src="http://localhost:4000/assets/js/bug/bug.js"></script>
+		<script type='text/javascript'>
+			// default fruit fly bug:
+			//new BugController({
+			//});
+
+			// default spiders:
+			//new SpiderController({
+			//});
+		</script>
+
+
+
+
+<!-- Fastest JQuery CDN Lib -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Vegas Background Image Plugin -->
+<script src="http://localhost:4000/assets/vegas/vegas.js"></script>
+
+<script>
+				jQuery(document).ready(function($) {
+						$("#exampleX").vegas({
+							autoplay: true,
+							preload: true,
+							transition: 'fade',
+							transitionDuration: 2000,
+							slides: [
+								{ src: "http://localhost:4000/images/cover1.jpg", overlayText: "<div style='text-align:left; font-family:Raleway;'>text 2</div>"},
+								{ src: "http://localhost:4000/images/cover3.jpg", overlayText: "<b>text 3</b>"},
+								{ src: "http://localhost:4000/images/cover6.jpg", overlayText: "<b>text 4</b>"}
+								],
+							loop: true
+						});
+					});
+			</script>
+
+
+<script>
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+
+
+
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144-precomposed.png">
+<div id="home"></div>
+
+<style type="text/css">@media only screen and (min-width:43.75em){.notepad-post-content div>p:first-child:first-letter{float:left;font-size:4.688rem;line-height:4.375rem;padding-top:.25rem;padding-right:.5rem;padding-left:.188rem;font-family:serif}}</style>
+</head>
+<body class="post-template" itemscope itemtype="http://schema.org/WebPage">  
+
+        <main id="notepad-post-container" class="notepad-post-container intro-effect-sliced" role="main">
+            <header class="notepad-post-header">
+                <div class="bg-img"></div>
+                
+                <div class="notepad-post-menu-header">
+
+                    <a class="notepad-blog-logo" href="https://sh4.in">
+                        <img src="http://localhost:4000/images/logo.png" alt="Blog Logo" />
+                    </a>
+
+                <div class="notepad-blog-menu">      
+    <div class="notepad-mobile-menu show-for-small">
+        <a href="#"><i class="fa fa-bars"></i></a>
+    </div>
+    <ul class="notepad-menu">
+        <li class="notepad-mobile-close-btn show-for-small text-right">
+            <a href="#"><i class="fa fa-times"></i></a>
+        </li>
+
+            <li>
+                    <a href="http://localhost:4000/">HOME</a>
+                 </li>
+
+            <li>
+                    <a href="http://localhost:4000/trending">#TRENDING</a>
+                 </li>
+
+            <li>
+                    <a href="http://localhost:4000/whoami">WHOAMI</a>
+                 </li>
+            
+           <!-- <li><a href="http://localhost:4000/feed.xml" title="Atom/RSS feed"><i class="icon-rss"></i> Feed</a></li> -->
+    </ul>
+
+</div>
+            </div>
+
+            <div class="notepad-post-title bg-check">
+                <h1>CaptureTheFlag #1: 'Bandit' Walkthrough for OverTheWire.Org</h1>
+                <p>by <strong>Shankar Damodaran</strong> &#8212; on <a href="http://localhost:4000/tags/index.html#linux" data-toggle="tooltip" title="Posts tagged with linux" rel="tag">linux</a>&nbsp;&comma;&nbsp;<a href="http://localhost:4000/tags/index.html#bash" data-toggle="tooltip" title="Posts tagged with bash" rel="tag">bash</a>&nbsp;&comma;&nbsp;<a href="http://localhost:4000/tags/index.html#code" data-toggle="tooltip" title="Posts tagged with code" rel="tag">code</a>&nbsp;&comma;&nbsp;<a href="http://localhost:4000/tags/index.html#sh" data-toggle="tooltip" title="Posts tagged with sh" rel="tag">sh</a>&nbsp;&comma;&nbsp;<a href="http://localhost:4000/tags/index.html#capturetheflag" data-toggle="tooltip" title="Posts tagged with capturetheflag" rel="tag">capturetheflag</a>&nbsp;&comma;&nbsp;<a href="http://localhost:4000/tags/index.html#walkthrough" data-toggle="tooltip" title="Posts tagged with walkthrough" rel="tag">walkthrough</a>&nbsp;&comma;&nbsp;<a href="http://localhost:4000/tags/index.html#bandit" data-toggle="tooltip" title="Posts tagged with bandit" rel="tag">bandit</a> <strong><time datetime="2019-04-19T00:00:00+05:30">19 Apr 2019</time></strong></p>
+            </div>
+            <div class="bg-img"></div>
+        </header>
+        <button class="trigger bg-check" data-info="Read more"><span>Trigger</span></button>
+        <img src="http://localhost:4000/images/blogimages/2019-04-24/cover-2019-04-24.jpg" alt="cover-image" />
+
+        <article class="notepad-post-content post">
+            <div><p>This is one of the first <strong><em>CaptureTheFlag</em></strong> challenges of OverTheWire.Org Team. This writeup contains information on how to solve the challenges of <strong>Bandit</strong> box, most importantly, this post <strong>does</strong> contain spoilers so use this walkthrough only if you <em>really</em> need to. However, I strongly suggest not to read this walkthrough if you are planning to take up the challenge.</p>
+
+<p>Kindly use this walkthrough only if you had already completed the challenges and lost access to the passwords you use to level up at <strong>WeChall</strong>.</p>
+
+<hr />
+
+<h2 id="bandit-level---1">Bandit Level - 1</h2>
+
+<p>Simply SSH with the login credentials that was provided on Level 0. Use the below command to SSH to the host and once you have successfully logged in, do an <code class="highlighter-rouge">ls</code> command to find out any files laying around the current directory. As you discover a file named <strong>readme</strong>, run the <code class="highlighter-rouge">cat</code> command to display the contents of the file. The following commands let you complete the first level.</p>
+
+<p><code class="highlighter-rouge">ssh bandit0@bandit.labs.overthewire.org -p 2220</code>
+<br />
+<code class="highlighter-rouge">ls</code>
+<br />
+<code class="highlighter-rouge">cat readme</code></p>
+
+<p><img src="/images/blogimages/2019-04-24/bandit1.PNG" /></p>
+
+<blockquote>
+  <p>Password: <code class="highlighter-rouge">boJ9jbbUNNfktd78OOpsqOltutMc3MY1</code></p>
+</blockquote>
+
+<h2 id="bandit-level---2">Bandit Level - 2</h2>
+
+<p>Use the above password to SSH in as user <code class="highlighter-rouge">bandit1</code>. Your password to the next level will be stored in the same directory with a filename <code class="highlighter-rouge">-</code> (just a dash or hyphen). Well, if you do a <code class="highlighter-rouge">cat</code> command or <code class="highlighter-rouge">vi</code> on the <code class="highlighter-rouge">-</code>, you will be getting an indefinitely waiting prompt. The linux kernel does not recognize when a <code class="highlighter-rouge">-</code> is in conjunction with <code class="highlighter-rouge">cat</code> or <code class="highlighter-rouge">vi</code> commands. To solve this challenge, try to access this file with the full path name. Use <code class="highlighter-rouge">pwd</code> command to know the current directory you are in. Copy the full path of the <code class="highlighter-rouge">pwd</code> output and concatenate along with <code class="highlighter-rouge">-</code> filename and run the command to get the password.</p>
+
+<p><img src="/images/blogimages/2019-04-24/bandit2.PNG" /></p>
+
+<blockquote>
+  <p>Password: <code class="highlighter-rouge">CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9</code></p>
+</blockquote>
+
+<h2 id="bandit-level---3">Bandit Level - 3</h2>
+
+<p>This challenge is pretty straightforward as the filename that has password has <strong>spaces</strong> in between. To use the <code class="highlighter-rouge">cat</code> command on this filename, wrap the filename with single quotes or double quotes and run the command to get the password for the next level.</p>
+
+<p><img src="/images/blogimages/2019-04-24/bandit3.PNG" /></p>
+
+<blockquote>
+  <p>Password: <code class="highlighter-rouge">UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK</code></p>
+</blockquote>
+
+<h2 id="bandit-level---4">Bandit Level - 4</h2>
+
+<p>In this challenge, the password file is stored inside the same directory named <strong>inhere</strong>. This directory has a hidden file inside this <strong>inhere</strong> directory. Run the command <code class="highlighter-rouge">ls</code> with <code class="highlighter-rouge">-a</code> flag to view the hidden files present in the directory.</p>
+
+<p><img src="/images/blogimages/2019-04-24/bandit4.PNG" /></p>
+
+<blockquote>
+  <p>Password: <code class="highlighter-rouge">pIwrPrtPN36QITSp3EQaw936yaFoFgAB</code></p>
+</blockquote>
+
+<h2 id="bandit-level---5">Bandit Level - 5</h2>
+
+<p>You will find a directory named <strong>inhere</strong> which has a couple of files laying around. If you do a <code class="highlighter-rouge">cat</code> on the first file to check the password, you will be presented with some non-readable characters. Doing a <code class="highlighter-rouge">cat</code> on each and every file is one way to get the password, but consider if there are a million files then the above will not be an ideal solution. In this case, let us write a small code to inspect the file type of the files using the <code class="highlighter-rouge">file</code> command and check whether the file has <code class="highlighter-rouge">ASCII</code> property (in other ways readable files as the challenge suggests).</p>
+
+<p><code class="highlighter-rouge">find -exec file {} + | grep ASCII</code></p>
+
+<p><img src="/images/blogimages/2019-04-24/bandit5.PNG" /></p>
+
+<blockquote>
+  <p>Password: <code class="highlighter-rouge">koReBOKuIDDepwhWk7jZC0RTdopnAYKh</code></p>
+</blockquote>
+
+<h2 id="bandit-level---6">Bandit Level - 6</h2>
+
+<p>This challenge has certain rules to retrieve the password, to my luck one of the rule was more than enough to solve the challenge. (<em>One of the criteria is the filesize should be around 1033 bytes in size</em>)</p>
+
+<p><code class="highlighter-rouge">find . -size 1033c</code></p>
+
+<p><img src="/images/blogimages/2019-04-24/bandit6.PNG" /></p>
+
+<blockquote>
+  <p>Password: <code class="highlighter-rouge">DXjZPULLxYr17uwoI01bNLQbtFemEgo7</code></p>
+</blockquote>
+
+<h2 id="bandit-level---7">Bandit Level - 7</h2>
+
+<p>Almost a similar challenge to the above, all you need is to give greater importance to <code class="highlighter-rouge">man</code> for <code class="highlighter-rouge">find</code> command to know what attributes to be used for retrieving the password.</p>
+
+<p>The below code finds all files which are 33 in bytes and is owned by the user <strong>bandit7</strong> and belongs to the group <strong>bandit6</strong>. Now go to the root directory by entering the command <code class="highlighter-rouge">cd /</code> and then run the below command.</p>
+
+<p><code class="highlighter-rouge">find . -size 33c -user 'bandit7' -group 'bandit6'</code></p>
+
+<p><img src="/images/blogimages/2019-04-24/bandit7_1.PNG" /></p>
+<p></p>
+<p><img src="/images/blogimages/2019-04-24/bandit7_2.PNG" /></p>
+<p></p>
+<p><img src="/images/blogimages/2019-04-24/bandit7_3.PNG" /></p>
+<p></p>
+
+<blockquote>
+  <p>Password: <code class="highlighter-rouge">HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs</code></p>
+</blockquote>
+
+<h2 id="bandit-level---8">Bandit Level - 8</h2>
+
+<p>You need to find the password hidden inside the file <strong>data.txt</strong> which is rightfully available under the very same directory. The only hint available is the password is next to the word <em>millionth</em> , thus by doing by simple <code class="highlighter-rouge">grep</code> command we would be able to retrieve the password.</p>
+
+<p>The code: <code class="highlighter-rouge">grep 'millionth' data.txt</code></p>
+
+<p><img src="/images/blogimages/2019-04-24/bandit8.PNG" /></p>
+
+<blockquote>
+  <p>Password: <code class="highlighter-rouge">cvX2JJa4CFALtqS87jk27qwqGhBM9plV</code></p>
+</blockquote>
+
+<h2 id="bandit-level---9">Bandit Level - 9</h2>
+
+<p>Once again the password is hidden under the file <strong>data.txt</strong> which has almost 1000 lines with patterns similar to level passwords. The challenge gives us a single hint, saying that the password to next level which is stored inside the file is repeated only once. This gives us an opportunity to use the <code class="highlighter-rouge">uniq</code> command which displays unique results from any file that is provided as input. However, <code class="highlighter-rouge">sort</code> command is first used to sort out the results and we then pipe the input to the <code class="highlighter-rouge">uniq</code> command to get the results. The below code gets you the password.</p>
+
+<p>The code: <code class="highlighter-rouge">sort data.txt | uniq -u</code></p>
+
+<p><img src="/images/blogimages/2019-04-24/bandit9.PNG" /></p>
+
+<blockquote>
+  <p>Password: <code class="highlighter-rouge">UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR</code></p>
+</blockquote>
+
+<h2 id="bandit-level---10">Bandit Level - 10</h2>
+
+<p>Almost a straightforward challenge, you can even issue a <code class="highlighter-rouge">cat</code> command on the <strong>data.txt</strong> file to view the contents and search for a series of <em>=</em>. The password will be right next there. However, for better readability, I recommend using <code class="highlighter-rouge">xxd</code> command on the data file.</p>
+
+<p>The code: <code class="highlighter-rouge">xxd data.txt</code></p>
+
+<p><img src="/images/blogimages/2019-04-24/bandit10.PNG" /></p>
+
+<blockquote>
+  <p>Password: <code class="highlighter-rouge">truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk</code></p>
+</blockquote>
+
+<h2 id="bandit-level---11">Bandit Level - 11</h2>
+
+<p>Another simpler challenge, this is about encoding and decoding. The file that contains the password is encoded using Base64 Algorithm. As we all know, Base64 has a decoding algorithm as well, make use of the command <code class="highlighter-rouge">base64</code> with <code class="highlighter-rouge">-d</code> flag on the encoded file to retrieve the password.</p>
+
+<p>The Code: <code class="highlighter-rouge">base64 -d data.txt</code></p>
+
+<p><img src="/images/blogimages/2019-04-24/bandit11.PNG" /></p>
+
+<blockquote>
+  <p>Password: <code class="highlighter-rouge">IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR</code></p>
+</blockquote>
+
+<h2 id="bandit-level---12">Bandit Level - 12</h2>
+
+<p>This challenge is based on substitution algorithm known as <strong>ROT-13</strong>. The password contained with the file <strong>data.txt</strong> has been encoded using the ROT-13 algorithm. The below command makes use of the <code class="highlighter-rouge">tr</code> command to retrieve the plain text from the file. As we have  26 alphabets, dividing by 2 gives 13 (2 Sets). Set 1: A-M and Set 2: N-Z. Working of the ROT-13 algorithm is very simple, For encoding purposes, the characters from the first set (Set 1) is replaced with the characters in (Set 2), and the decoding process is as simple as it is. For eg: A will be encoded to N, G will be encoded to T, vice-versa. Make use of the below code to solve the challenge.</p>
+
+<p><code class="highlighter-rouge">cat data.txt |  tr '[A-Za-z]' '[N-ZA-Mn-za-m]'</code></p>
+
+<p><img src="/images/blogimages/2019-04-24/bandit12.PNG" /></p>
+
+<blockquote>
+  <p>Password: <code class="highlighter-rouge">5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu</code></p>
+</blockquote>
+
+<h2 id="bandit-level---13">Bandit Level - 13</h2>
+
+<p>It was quite a good challenge. After logging in, you will have the file <strong>data.txt</strong> on the home directory. You will be making use of <strong>/tmp</strong> directory because, it has world-writable access, as you need to do some decompression according to the algorithm. (<em>Guess I gave some hint</em>).</p>
+
+<p>By doing a <code class="highlighter-rouge">cat</code> command on the file, it seems like that the file is garbled up with some hex related data. Let us make use of the <code class="highlighter-rouge">xxd</code> command we used it <strong>Bandit Level - 10</strong> challenge.</p>
+
+<p>Well, why are making use of <code class="highlighter-rouge">xxd</code> command? <em>When you did a <code class="highlighter-rouge">cat</code> command on the file, the contents of the file revealed <strong>data2.bin</strong> and this is the ultimate reason we are using this.</em></p>
+
+<p>Since we need a directory to work with, Let us create a directory on the <strong>/tmp</strong> folder. <em>Follow the commands to get the password</em></p>
+
+<p>The crux behind the challenge is we analyze the file with <code class="highlighter-rouge">file</code> command and notice the algorithm used for the compression and we then use the appropriate decompression algorithm to unravel the password.</p>
+
+<p><img src="/images/blogimages/2019-04-24/bandit13_1.PNG" /></p>
+<p></p>
+<p><img src="/images/blogimages/2019-04-24/bandit13_2.PNG" /></p>
+<p></p>
+
+<blockquote>
+  <p>Password: <code class="highlighter-rouge">8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL</code></p>
+</blockquote>
+
+<h2 id="bandit-level---14">Bandit Level - 14</h2>
+
+<p>Pretty straightforward, your home directory will be having the private key of user <strong>bandit14</strong>, all you need is to connect to the local SSH server with the private key file provided. After logging in, <code class="highlighter-rouge">cat</code> the password from the usual <strong>/etc/bandit_pass/</strong> directory.</p>
+
+<p><img src="/images/blogimages/2019-04-24/bandit14_1.PNG" /></p>
+<p></p>
+<p><img src="/images/blogimages/2019-04-24/bandit14_2.PNG" /></p>
+<p></p>
+
+<blockquote>
+  <p>Password: <code class="highlighter-rouge">4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e</code></p>
+</blockquote>
+
+<h2 id="bandit-level---15">Bandit Level - 15</h2>
+
+<p>There seems a service running on the port 30000, it reveals the password for <strong>Bandit Level - 15</strong> when the password of <strong>Bandit Level - 14</strong> is subjected. This challenge lets you understand how to connect to any service and run commands. This challenge can be completed by using many tools like <code class="highlighter-rouge">nc</code>, <code class="highlighter-rouge">telnet</code>, etc.</p>
+
+<p><img src="/images/blogimages/2019-04-24/bandit15.PNG" /></p>
+<p></p>
+
+<blockquote>
+  <p>Password: <code class="highlighter-rouge">BfMYroe26WYalil77FoDi9qh59eK5xNr</code></p>
+</blockquote>
+
+<h2 id="bandit-level---16">Bandit Level - 16</h2>
+
+<p>As the challenge clearly points out that a service is running on port 30001 that can speak SSL, make use of <code class="highlighter-rouge">openssl</code> command to complete the challenge. Connect to localhost using <code class="highlighter-rouge">openssl</code> on the port and provide the password of <strong>Bandit Level - 15</strong> to unravel the password for <strong>Bandit Level - 16</strong></p>
+
+<p><img src="/images/blogimages/2019-04-24/bandit16_1.PNG" /></p>
+<p></p>
+<p><img src="/images/blogimages/2019-04-24/bandit16_2.PNG" /></p>
+
+<blockquote>
+  <p>Password: <code class="highlighter-rouge">cluFn7wTiGryunymYOu4RcffSxQluehd</code></p>
+</blockquote>
+
+<h2 id="bandit-level---17">Bandit Level - 17</h2>
+
+<p>As per the challenge, you need to find out the service that is running between the port 31000 to 32000 that speaks to SSL. Better off with <code class="highlighter-rouge">nmap</code> and with <code class="highlighter-rouge">--open</code> flag, the open ports can be found. After finding the open port, connect to the service using <code class="highlighter-rouge">openssl</code> and then paste the password of <strong>Bandit Level - 16</strong> to obtain the RSA Private Key for the user <strong><em>bandit17</em></strong>. Once you retrieve the private key, copy the private key file to the <strong>/tmp</strong> directory and connect to localhost using SSH private key file you just copied and login as user <strong><em>bandit17</em></strong>. As you try to do this step, your request will be rejected as precautionary safety measure. Since your private key file is in the <strong>/tmp</strong> directory and is readable by other users, you should make sure that is readable only by <strong>you</strong>. For this, you will be using the <code class="highlighter-rouge">chmod</code> command as shown. After assigning the appropriate permissions for your private key file, you will be able to authenticate as <strong><em>bandit17</em></strong>. After logging, the password for the user can be read from the usual <strong>/etc/bandit_pass/</strong> directory.</p>
+
+<p><img src="/images/blogimages/2019-04-24/bandit17_1.PNG" /></p>
+<p></p>
+<p><img src="/images/blogimages/2019-04-24/bandit17_2.PNG" /></p>
+<p></p>
+<p><img src="/images/blogimages/2019-04-24/bandit17_3.PNG" /></p>
+<p></p>
+<p><img src="/images/blogimages/2019-04-24/bandit17_4.PNG" /></p>
+<p></p>
+
+<blockquote>
+  <p>Password: <code class="highlighter-rouge">xLYVMN9WE5zQ5vHacb0sZEVqbrp7nBTn</code></p>
+</blockquote>
+
+<h2 id="bandit-level---18">Bandit Level - 18</h2>
+
+<p>Your home directory consists of two files, the password to the next level is stored in the <strong>passwords.new</strong> file and there is a condition regarding a <em>change</em>. So we use a <code class="highlighter-rouge">diff</code> command to reveal the password for the next level.</p>
+
+<p><img src="/images/blogimages/2019-04-24/bandit18.PNG" /></p>
+
+<blockquote>
+  <p>Password: <code class="highlighter-rouge">kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd</code></p>
+</blockquote>
+
+<h2 id="bandit-level---19">Bandit Level - 19</h2>
+
+<p>With the above password you will be able to SSH as user <strong><em>bandit19</em></strong> , but as soon as you authenticate the code under ~/.bashrc on the home directory of the <strong><em>bandit19</em></strong> executes and terminates the connection. Also, it seems that there is file named <strong>readme</strong> on the home directory which has the password to the next level. To tackle this, make use of <code class="highlighter-rouge">-t</code> argument along with the SSH connection.</p>
+
+<p><em>For WeChall Users Only:</em> If you are playing <strong>wechall</strong> challenges, then you could also so run the <code class="highlighter-rouge">wechall</code> command  along with the <code class="highlighter-rouge">-t</code> argument to add to the score board.</p>
+
+<p><img src="/images/blogimages/2019-04-24/bandit19.PNG" /></p>
+
+<blockquote>
+  <p>Password: <code class="highlighter-rouge">IueksS7Ubh8G3DCwVzrTd8rAVOwq3M5x</code></p>
+</blockquote>
+
+<h2 id="bandit-level---20">Bandit Level - 20</h2>
+
+<p>You will find a Self-Executable file under your home directory. This can be found when you run the <code class="highlighter-rouge">file</code> command on it. When you do <code class="highlighter-rouge">id</code> command with that you see that the file has EID (Effective ID as a different user ID <strong><em>bandit20</em></strong> , which gives you a pointer that this file can run commands as user <strong><em>bandit20</em></strong>). So make use of this opportunity and <code class="highlighter-rouge">cat</code> the password file to reveal the password for next level.</p>
+
+<p><img src="/images/blogimages/2019-04-24/bandit20.PNG" /></p>
+
+<blockquote>
+  <p>Password: <code class="highlighter-rouge">GbKksEFF4yrVs6il55v6gwY5aVje5f0j</code></p>
+</blockquote>
+
+<h2 id="bandit-level---21">Bandit Level - 21</h2>
+
+<p>To complete this challenge, make yourself comfortable with the <code class="highlighter-rouge">screen</code> command. The target is running a service which will connect to any port on the localhost that you specify.</p>
+<ol>
+  <li>First run <code class="highlighter-rouge">screen</code> command, now you are inside separate process so run a <code class="highlighter-rouge">netcat</code> listening service as <code class="highlighter-rouge">nc localhost -p9090 -vvl</code></li>
+  <li>Press <code class="highlighter-rouge">Enter</code> key and paste the previous level (<strong>Bandit Level - 20</strong>) password on the console.</li>
+  <li>Press <code class="highlighter-rouge">Ctrl+A</code> to come out of the screen. (Eg. type <code class="highlighter-rouge">screen -r &lt;id&gt;</code> to get into that screen session)</li>
+  <li>From the home directory, run the <code class="highlighter-rouge">./suconnect 9090</code></li>
+  <li>Now press <code class="highlighter-rouge">Ctrl+A</code> to go back to the screen session to retrieve the password from the <code class="highlighter-rouge">netcat</code> service.</li>
+</ol>
+
+<p><img src="/images/blogimages/2019-04-24/bandit21_1.PNG" /></p>
+<p></p>
+<p><img src="/images/blogimages/2019-04-24/bandit21_2.PNG" /></p>
+<p></p>
+<p><img src="/images/blogimages/2019-04-24/bandit21_3.PNG" /></p>
+<p></p>
+
+<blockquote>
+  <p>Password: <code class="highlighter-rouge">gE269g2h3mw3pwgrj0Ha9Uoqen1c9DGr</code></p>
+</blockquote>
+
+<h2 id="bandit-level---22">Bandit Level - 22</h2>
+
+<p>All you need is to read and analyze the cron job file. Since you need the password for <strong>Bandit Level - 22</strong>, you ought to look into the file <strong>cronjob_bandit22.sh</strong>. From the cron job file you see that, the password is being written to a file in the <strong>/tmp</strong> directory. Everything here is straightforward and no twists.</p>
+
+<p><img src="/images/blogimages/2019-04-24/bandit22.PNG" /></p>
+
+<blockquote>
+  <p>Password: <code class="highlighter-rouge">Yk7owGAcWjwMVRwrTesJEwB7WVOiILLI</code></p>
+</blockquote>
+
+<h2 id="bandit-level---23">Bandit Level - 23</h2>
+
+<p>As the challenge suggests, make a copy of the bash script <strong>cronjob_bandit23.sh</strong> that is under the <strong>/usr/bin</strong> directory. Copy the contents of the script, create a folder under for you under the <strong>/tmp</strong> directory and paste the contents of the script under a test script named <strong>test.sh</strong>, give it executable permission using <code class="highlighter-rouge">chmod +x</code>. Run the script and note the output hash after the <strong>/tmp</strong> directory. Now, doing a <code class="highlighter-rouge">cat</code> on the file which was created by the script under the <strong>/tmp</strong> directory reveals the password of <strong>Bandit Level - 22</strong> , so in this case by replacing the <code class="highlighter-rouge">whoami</code> command to <code class="highlighter-rouge">bandit23</code> will reveal the path of the hash that will be created under the <strong>/tmp</strong> directory. By doing a <code class="highlighter-rouge">cat</code> command on that particular hash will lead to the password for the next level.</p>
+
+<p><img src="/images/blogimages/2019-04-24/bandit23.PNG" /></p>
+
+<blockquote>
+  <p>Password: <code class="highlighter-rouge">jc1udXuA1tiHqjIsL8yaapX5XIAI6i0n</code></p>
+</blockquote>
+
+<h2 id="bandit-level---24">Bandit Level - 24</h2>
+
+<p>An interesting level. The cron job executes this file <strong>cronjob_bandit24.sh</strong> that is under the <strong>/usr/bin</strong> directory, that frequently deletes the user created scripts under the folder <strong>/var/spool/bandit24</strong> directory.</p>
+
+<p>Copy the below script and paste it in on the command line of the directory <strong>/var/spool/bandit24</strong></p>
+
+<p><code class="highlighter-rouge">echo '#!/bin/bash</code>
+<br />
+<code class="highlighter-rouge">myname=$(cat /etc/bandit_pass/bandit24)</code>
+<br />
+<code class="highlighter-rouge">mkdir "/tmp/sh423"</code>
+<br />
+<code class="highlighter-rouge">touch "/tmp/sh423/$myname"</code>
+<br />
+<code class="highlighter-rouge">cp "/etc/bandit_pass/bandit24 /tmp/sh423/"' &gt; sh4.sh | chmod +x sh4.sh</code></p>
+
+<p>Code Explained: Since the cron job will make the code run with the privileges of <strong><em>bandit24</em></strong>, our code makes a copy of the password and pastes it to the <strong>/tmp</strong> directory.</p>
+
+<p><img src="/images/blogimages/2019-04-24/bandit24.PNG" /></p>
+
+<blockquote>
+  <p>Password: <code class="highlighter-rouge">UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ</code></p>
+</blockquote>
+
+<h2 id="bandit-level---25">Bandit Level - 25</h2>
+
+<p>Another beautiful level that lets you under the concept of <strong>Brute-Forcing</strong>. A service is running on the port 30002 that takes the password of <strong>Bandit Level - 24</strong>  and a four digit number ranging from <strong>0000</strong> to <strong>9999</strong> separated by a space in between. So you need to write a program that generates all the <strong>10000</strong> numbers to a file and subject that file as input to the service that is running on the port 30002.</p>
+
+<p>As I am more comfortable with <strong>PHP</strong> than <strong>Bash</strong>, I had to write a program in PHP to generate all the number combinations and the password of the previous level has to be concatenated along with it.</p>
+
+<p><code class="highlighter-rouge">&lt;?php</code>
+<br />
+<code class="highlighter-rouge">ini_set('display_errors', 1);</code>
+<br />
+<code class="highlighter-rouge">ini_set('display_startup_errors', 1);</code>
+<br />
+<code class="highlighter-rouge">error_reporting(E_ALL);</code>
+<br />
+<code class="highlighter-rouge">set_time_limit(0);</code>
+<br />
+<code class="highlighter-rouge">ini_set('max_execution_time', 1600); //300 seconds = 5 minutes</code>
+<br />
+<code class="highlighter-rouge">ini_set('max_execution_time', 0); // for infinite time of execution </code></p>
+<p></p>
+
+<p><code class="highlighter-rouge">for($i=0;$i&lt;10000;$i++)</code>
+<br />
+<code class="highlighter-rouge">{</code>
+<br />
+            <code class="highlighter-rouge">if(strlen($i)==1)</code>
+	<br />
+            <code class="highlighter-rouge">{</code>
+	<br />
+                      <code class="highlighter-rouge">echo "UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ "."000".$i."\n";</code>
+	<br />
+            <code class="highlighter-rouge">}</code>
+	<br />
+            <code class="highlighter-rouge">else if(strlen($i)==2)</code>
+	<br />
+            <code class="highlighter-rouge">{</code>
+	<br />
+                      <code class="highlighter-rouge">echo "UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ "."00".$i."\n";</code>
+	<br />
+            <code class="highlighter-rouge">}</code>
+	<br />
+            <code class="highlighter-rouge">else if(strlen($i)==3)</code>
+	<br />
+            <code class="highlighter-rouge">{</code>
+	<br />
+                      <code class="highlighter-rouge">echo "UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ "."0".$i."\n";</code>
+	<br />
+            <code class="highlighter-rouge">}</code>
+	<br />
+            <code class="highlighter-rouge">else</code>
+	<br />
+	    <code class="highlighter-rouge">{</code>
+	<br />
+		      <code class="highlighter-rouge">echo "UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ ".$i."\n";</code>
+	<br />
+	    <code class="highlighter-rouge">}</code>
+	<br />
+<code class="highlighter-rouge">}</code></p>
+
+<p>Now copy the output and paste it a file.</p>
+
+<p>I had issues sending the whole 10000 entries to the service on port  30002 while using the command <code class="highlighter-rouge">cat numberfile | nc 127.0.0.1 30002 &gt; output.txt</code> as it was timing out at <strong>7178</strong><sup>th</sup> entry. (The above specified command will try all the 10000 entries starting from 0000 to 10000, it pipes each and every entry to the <code class="highlighter-rouge">nc</code> command and then appends the output to that file named <strong>output.txt</strong>)</p>
+
+<p>Another tip to avoid timeouts is to check the combinations in sets, Use <code class="highlighter-rouge">uniq</code> command to find the password in the file. <code class="highlighter-rouge">uniq output.txt</code>. If you are getting timeouts, send inputs in 4000, such that    such that the password can be found in 2-3 attempts.</p>
+
+<p>After running the command <code class="highlighter-rouge">cat numberfile | nc 127.0.0.1 30002 &gt; output.txt</code>, we will be left with <strong>output.txt</strong>. On doing a <code class="highlighter-rouge">cat</code>
+ command we see that the timeout occurred at <strong>7178</strong>, in this case we subject last <strong>4000</strong> entries using <code class="highlighter-rouge">tail '4000q' | nc 127.0.0.1 30002 &gt; final_result.txt</code></p>
+
+<p><img src="/images/blogimages/2019-04-24/bandit25_1.PNG" /></p>
+<p></p>
+<p><img src="/images/blogimages/2019-04-24/bandit25_2.PNG" /></p>
+<p></p>
+<p><img src="/images/blogimages/2019-04-24/bandit25_3.PNG" /></p>
+<p></p>
+
+<blockquote>
+  <p>Password: <code class="highlighter-rouge">uNG9O58gUE7snukf3bvZ0rxhtnjzSGzG</code></p>
+</blockquote>
+
+<h2 id="bandit-level---26">Bandit Level - 26</h2>
+
+<p>Honestly, this was the toughest challenge for me on the whole <strong>Bandit</strong> box, took me a couple of days to think <em><strong>laterally</strong></em> and overcome this challenge.</p>
+
+<p>In the home directory of bandit25, you will find the private key of user <strong><em>bandit26</em></strong>, when you login with <code class="highlighter-rouge">ssh bandit26@localhost -i bandit26.sshkey</code> , you will authenticated and immediately logged out. You will see a certain amount of text before you logout. Even if you add the <code class="highlighter-rouge">-t</code> argument while doing SSH, still you won’t be able to complete this level. This is where you need to think <strong>more</strong>.</p>
+
+<p>You need to make use of <code class="highlighter-rouge">more</code> command. Follow these steps to complete the challenge.</p>
+<ol>
+  <li>Before doing the SSH, try to resize your terminal screen as smaller as possible. such that you could see only one line of what you are typing.</li>
+  <li>After doing that and while you do the SSH command, you will be presented with <code class="highlighter-rouge">more</code> prompt.</li>
+  <li>Now type <code class="highlighter-rouge">v</code> to get into the <code class="highlighter-rouge">vi</code> edit mode. You will be presented with the editing mode for <strong>text1.txt</strong> file that is available on the <strong><em>bandit26</em></strong>’s home directory.</li>
+  <li>Now press <code class="highlighter-rouge">Esc</code> key and run the command to read the password file <code class="highlighter-rouge">:vi /etc/bandit_pass/bandit26</code> and press enter. You will now able to view the password of the file.</li>
+  <li>Now you need to <strong>JailBreak</strong> to obtain a proper shell. Again type <code class="highlighter-rouge">Esc</code> key and enter these commands.
+<br />
+<code class="highlighter-rouge">:set shell=/bin/bash</code>
+<br />
+<code class="highlighter-rouge">:shell</code></li>
+</ol>
+
+<p><img src="/images/blogimages/2019-04-24/bandit26_1.PNG" /></p>
+<p></p>
+<p><img src="/images/blogimages/2019-04-24/bandit26_2.PNG" /></p>
+<p></p>
+<p><img src="/images/blogimages/2019-04-24/bandit26_3.PNG" /></p>
+<p></p>
+<p><img src="/images/blogimages/2019-04-24/bandit26_4.PNG" /></p>
+<p></p>
+<p><img src="/images/blogimages/2019-04-24/bandit26_5.PNG" /></p>
+<p></p>
+<p><img src="/images/blogimages/2019-04-24/bandit26_6.PNG" /></p>
+<p></p>
+<p><img src="/images/blogimages/2019-04-24/bandit26_7.PNG" /></p>
+<p></p>
+<p><img src="/images/blogimages/2019-04-24/bandit26_8.PNG" /></p>
+<p></p>
+
+<blockquote>
+  <p>Password: <code class="highlighter-rouge">5czgV9L3Xx8JPOyRbXh6lQbmIOWvPT6Z</code></p>
+</blockquote>
+
+<h2 id="bandit-level---27">Bandit Level - 27</h2>
+
+<p>This is a straightforward level and is similar to <strong>Bandit Level - 18</strong>, use the Self-Executable binary to <code class="highlighter-rouge">cat</code> the password from the usual <strong>/etc/bandit_pass</strong> directory.</p>
+
+<p><img src="/images/blogimages/2019-04-24/bandit27.PNG" /></p>
+
+<blockquote>
+  <p>Password: <code class="highlighter-rouge">3ba3118a22e93127a4ed485be72ef5ea</code></p>
+</blockquote>
+
+<h2 id="bandit-level---28">Bandit Level - 28</h2>
+
+<p>Hail Git! The upcoming four to five consecutive challenges will be totally focused towards <code class="highlighter-rouge">git</code> commands. So if you have been contributing to open-source community in the past, these forthcoming levels would be a glide in the air.</p>
+
+<p>The task is to clone the remote repository and then open the file to find the password. Pretty straightforward if you know the right command. Use the <strong>/tmp</strong> directory to clone your repository as it has the world-writable access.</p>
+
+<p>The <code class="highlighter-rouge">git clone</code> command lets you complete the level. It clones the repository to your local directory as it is. You could then enter the password of <strong>Bandit Level - 27</strong> to clone the repository from the remote space.</p>
+
+<p><code class="highlighter-rouge">git clone ssh://bandit27-git@localhost/home/bandit27-git/repo</code></p>
+
+<p><img src="/images/blogimages/2019-04-24/bandit28.PNG" /></p>
+
+<blockquote>
+  <p>Password: <code class="highlighter-rouge">0ef186ac70e04ea33b4c1853d2526fa2</code></p>
+</blockquote>
+
+<h2 id="bandit-level---29">Bandit Level - 29</h2>
+
+<p>After downloading the repository and doing a <code class="highlighter-rouge">cat</code> command on <strong>README.md</strong>, you notice that the password has been masked.
+As you know GIT is a version system and it keeps track of all changes to the file as <strong><em>commits</em></strong>. You can view list of commits done to the file by issuing the command <code class="highlighter-rouge">git log</code>.</p>
+
+<p>You can see there are 3 different commits done to the file. Inspect each of the commits by running the command. <code class="highlighter-rouge">git show &lt;commithashid&gt;</code> or simply do <code class="highlighter-rouge">git show</code> to directly get the password.</p>
+
+<p><img src="/images/blogimages/2019-04-24/bandit29_1.PNG" /></p>
+<p></p>
+<p><img src="/images/blogimages/2019-04-24/bandit29_2.PNG" /></p>
+<p></p>
+
+<blockquote>
+  <p>Password: <code class="highlighter-rouge">bbc96594b4e001778eee9975372716b2</code></p>
+</blockquote>
+
+<h2 id="bandit-level---30">Bandit Level - 30</h2>
+
+<p>After downloading the repository and doing a <code class="highlighter-rouge">cat</code> command on <strong>README.md</strong>, it shows that <em>password is not in the production</em>. This clearly tells us to see elsewhere in the development branch areas.</p>
+<ol>
+  <li>Run the command <code class="highlighter-rouge">ls -lia</code> to find the hidden directory <strong>.git</strong>.</li>
+  <li>Get into the directory</li>
+  <li>Read the file <strong>packed-refs</strong> to get the hashes of the branches.</li>
+  <li>Cycle the hash ids the branches to get the password for the next level.</li>
+  <li>Use the command, <code class="highlighter-rouge">git show &lt;commithashid&gt;</code> to find the password to the next level.</li>
+</ol>
+
+<p><img src="/images/blogimages/2019-04-24/bandit30_1.PNG" /></p>
+<p></p>
+<p><img src="/images/blogimages/2019-04-24/bandit30_2.PNG" /></p>
+<p></p>
+
+<blockquote>
+  <p>Password: <code class="highlighter-rouge">5b90576bedb2cc04c86a9e924ce42faf</code></p>
+</blockquote>
+
+<h2 id="bandit-level---31">Bandit Level - 31</h2>
+
+<p>I totally don’t understand the purpose of this challenge as it is very similar to <strong>Bandit Level - 30</strong> challenge. Follow the same procedure the obtain the password for the next level.</p>
+
+<p><img src="/images/blogimages/2019-04-24/bandit31.PNG" /></p>
+
+<blockquote>
+  <p>Password: <code class="highlighter-rouge">47e603bb428404d265f59c42920d81e5</code></p>
+</blockquote>
+
+<h2 id="bandit-level---32">Bandit Level - 32</h2>
+
+<p>In this challenge, you need to push a file named <strong>key.txt</strong> to the root directory of the remote git using the content provided. You could follow these commands.</p>
+<ol>
+  <li>This command <code class="highlighter-rouge">echo 'May I come in?' &gt; key.txt</code> creates a file <strong>key.txt</strong> and writes the content inside it.</li>
+  <li>The <code class="highlighter-rouge">git status</code> command lets you know that if any files have been added, deleted, updated in the current repository. So after creating the file and as you run <code class="highlighter-rouge">git status</code> command, nothing shows up. However, if you create any other file for instance <code class="highlighter-rouge">touch bla</code> and do a <code class="highlighter-rouge">git status</code> command, it shows that a new file named <strong>bla</strong> has been added to the repository.</li>
+  <li>So this has something to do with the file <strong>.gitignore</strong> which is a hidden file in the current directory. Inspecting the file <code class="highlighter-rouge">cat .gitignore</code> shows that it has <strong>*.txt</strong> in it. (which means the file changes for <strong>txt</strong> files will not be shown)</li>
+  <li>All you have to do is edit the <strong>.gitignore</strong> file and replace the <strong>*.txt</strong> with <strong>*.gitignore</strong>.</li>
+  <li>Now add the file using the command <code class="highlighter-rouge">git add key.txt</code></li>
+  <li>Now commit the changes using the command <code class="highlighter-rouge">git commit -m 'Adding key.txt'</code></li>
+  <li>At last push the changes to the remote repository by using the command <code class="highlighter-rouge">git push origin</code></li>
+  <li>You will be providing the password of <strong>Bandit Level - 31</strong> during the push operation.</li>
+  <li>The password will be revealed as the push operation completes.</li>
+</ol>
+
+<p><img src="/images/blogimages/2019-04-24/bandit32.PNG" /></p>
+
+<blockquote>
+  <p>Password: <code class="highlighter-rouge">56a9bf19c63d650ce78e6ec0354ee45e</code></p>
+</blockquote>
+
+<h2 id="bandit-level---33">Bandit Level - 33</h2>
+
+<p>The final level of Bandit box as of April 2019. Interesting level as it converts all the commands to uppercase rendering the output useless. This challenge can be solved by making use of one of the <strong>Bash Special Parameters</strong> listed below.</p>
+<ul>
+  <li><code class="highlighter-rouge">$*</code></li>
+  <li><code class="highlighter-rouge">$@</code></li>
+  <li><code class="highlighter-rouge">$#</code></li>
+  <li><code class="highlighter-rouge">$?</code></li>
+  <li><code class="highlighter-rouge">$-</code></li>
+  <li><code class="highlighter-rouge">$$</code></li>
+  <li><code class="highlighter-rouge">$_</code></li>
+  <li><code class="highlighter-rouge">$!</code></li>
+  <li><code class="highlighter-rouge">$0</code></li>
+</ul>
+
+<p>The special parameter <code class="highlighter-rouge">$0</code> helped to me to break out from the upper shell prompt and finding the password was again straightforward.</p>
+
+<p><img src="/images/blogimages/2019-04-24/bandit33.PNG" /></p>
+
+<blockquote>
+  <p>Password: <code class="highlighter-rouge">c9c3199ddf4121b10cf581a98d51caee</code></p>
+</blockquote>
+
+<hr />
+
+<h3 id="if-you-have-better-ways-to-solve-the-challenges-feel-free-to-postdiscuss-it-over-the-comments-section">If you have better ways to solve the challenges, feel free to post/discuss it over the comments section.</h3>
+<p></p>
+<h3 id="thank-you-for-being-here">Thank you for being here.</h3>
+
+            </div>
+        </article>
+        <div class="cf"></div>
+        <div class="row text-center">
+            <section class="notepad-post-share">
+                <a class="twitter-icon" href="https://twitter.com/intent/tweet?text=&quot;CaptureTheFlag #1: 'Bandit' Walkthrough for OverTheWire.Org&quot;%20http://localhost:4000/infosec/capture-the-flag-bandit-overthewireorg%20via%20&#64;sh4nx0r"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Share on Twitter">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a class="facebook-icon" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/infosec/capture-the-flag-bandit-overthewireorg"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a class="google-icon" href="https://plus.google.com/share?url=http://localhost:4000/infosec/capture-the-flag-bandit-overthewireorg"
+                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" title="Share on Google+">
+                    <i class="fa fa-google-plus"></i>
+                </a>
+            </section>
+        </div>
+        <div class="cf"></div>
+        
+            <div class="notepad-author-info">
+                <div class="row">
+                    <section class="notepad-post-author small-12 columns">
+                        
+                            <img src="http://localhost:4000/images/shanks_cover.jpg" class="notepad-post-author-avatar" alt="Shankar Damodaran's photo">
+                        
+                        
+                            <span class="author-label">Author</span>
+                            <h1>Shankar Damodaran</h1>
+                        
+                        
+                            <p><a href="mailto:d.shankarnarayana@gmail.com" class="author-website">d.shankarnarayana@gmail.com</a></p>
+                        
+                        
+                            <p>Inventor. Hacker. Foodie. Traveller. Biker.</p>
+                        
+                    </section>
+                </div>
+            </div> 
+        
+        <div class="cf"></div>
+        
+        <section class="notepad-disqus row">
+    <div class="small-12 columns">
+        <h1 class="notepad-comments-header">Comments</h1>
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'sh4in'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+    </div>
+</section>
+
+        <div class="cf"></div>
+
+    <footer class="notepad-site-footer">
+<div id="backtotop"><a href="#home" class="scroll"><img src="/images/up.png"></a></div>
+    <div class="copyright">
+         <section><a href="http://localhost:4000/whoami"><b>Shankar Damodaran</b></a> &copy; 2015 - 2019 &bull; All Rights Reserved.</section>
+         <section>Proudly published via <a class="icon-ghost" href="https://jekyllrb.com/">Jekyll</a> and hosted through Github Pages and Godaddy DNS.</section>
+         <section>Jekyll Theme : HMFaysal</section>
+         <!-- <section>Image Slider : Jay Salvat</section> -->
+         <section>Visitor Count powered by StatCounter:
+         <!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=10616444; 
+var sc_invisible=0; 
+var sc_security="66d515ff"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "https://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="shopify
+analytics ecommerce" href="http://statcounter.com/shopify/"
+target="_blank"><img class="statcounter"
+src="https://c.statcounter.com/10616444/0/66d515ff/0/"
+alt="shopify analytics ecommerce"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+| <a href="https://statcounter.com/p10616444/?guest=1">View Stats</a>
+
+<br><br>
+<!-- Cluster Maps -->
+<div id="clustrmaps-widget"></div><script type="text/javascript">var _clustrmaps = {'url' : 'https://sh4.in', 'user' : 1179997, 'server' : '3', 'id' : 'clustrmaps-widget', 'version' : 1, 'date' : '2015-10-01', 'lang' : 'en', 'corners' : 'square' };(function (){ var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'https://www3.clustrmaps.com/counter/map.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);})();</script><noscript><a href="https://www3.clustrmaps.com/user/fcb12015d"><img src="https://www3.clustrmaps.com/stats/maps-no_clusters/sh4.in-thumb.jpg" alt="Locations of visitors to this page" /></a></noscript>
+
+</section>
+    </div>
+    <div class="social-icons">
+        
+        
+        <a href="https://twitter.com/sh4nx0r">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-twitter fa-stack-1x"></i>
+            </span>
+        </a>
+        
+        
+         
+        <a href="https://linkedin.com/in/shankardamodaran">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-linkedin fa-stack-1x"></i>
+            </span>
+        </a>
+        
+        
+        
+        
+        <a href="https://instagram.com/shankardamodaran">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-instagram fa-stack-1x"></i>
+            </span>
+        </a>
+        
+        
+        <a href="https://github.com/sh4nx0r">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-github fa-stack-1x"></i>
+            </span>
+        </a>
+        
+        
+        <a href="https://facebook.com/sh4nx0r">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-facebook fa-stack-1x"></i>
+            </span>
+        </a>
+        
+        
+        
+        
+    </div>
+    
+    <div class="cf"></div>
+</footer>
+ 
+</main>    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="http://localhost:4000/assets/js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+    <script src="http://localhost:4000/assets/js/vendor/modernizr.js"></script>
+    <script src="http://localhost:4000/assets/js/foundation.min.js"></script>
+    <script src="http://localhost:4000/assets/js/vendor/background-check.js"></script>
+    <script src="http://localhost:4000/assets/js/vendor/post-header-animations.js"></script>
+    <script src="http://localhost:4000/assets/js/notepad.js"></script>
+    <script src="http://localhost:4000/assets/js/scripts.min.js"></script>
+    <script src="http://localhost:4000/assets/js/vendor/nprogress.js"></script>
+
+    <script>
+      $(document).foundation();
+    </script>
+
+
+
+<script>NProgress.start();var interval=setInterval(function(){NProgress.inc()},1000);jQuery(window).load(function(){clearInterval(interval);NProgress.done()});jQuery(window).unload(function(){NProgress.start()});</script>
+
+<script>
+(function(){
+      var words = [
+          'I want to change the world.',
+          'I am all of the above.',
+          'I am none of the above.',
+          'I want to quit everything.',
+          'I just gaze',
+          'I wonder why this society is so fucked up',
+          'I want to run away.'
+          ], i = 0;
+      setInterval(function(){
+          $('#changingword').fadeOut(function(){
+              $(this).html( words[Math.floor(Math.random() * words.length)]).fadeIn();            
+          });
+      }, 2000);        
+  })();
+</script>
+ 
+</body>
+</html>
