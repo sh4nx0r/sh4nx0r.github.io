@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>sh4.in | CaptureTheFlag #1: 'Bandit' Walkthrough for OverTheWire.Org</title>
-<meta name="description" content="Bandit CaptureTheFlag Walkthrough.">
+<meta name="description" content="Wargames - Bandit CaptureTheFlag Walkthrough.">
 <meta name="keywords" content="linux, bash, code, sh, capturetheflag, walkthrough, bandit">
 
 <!-- Twitter Cards -->
@@ -11,14 +11,14 @@
 <meta name="twitter:image" content="http://localhost:4000/images/blogimages/2019-04-24/cover-2019-04-24.jpg">
 
 <meta name="twitter:title" content="CaptureTheFlag #1: 'Bandit' Walkthrough for OverTheWire.Org">
-<meta name="twitter:description" content="Bandit CaptureTheFlag Walkthrough.">
+<meta name="twitter:description" content="Wargames - Bandit CaptureTheFlag Walkthrough.">
 <meta name="twitter:creator" content="@sh4nx0r">
 
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CaptureTheFlag #1: 'Bandit' Walkthrough for OverTheWire.Org">
-<meta property="og:description" content="Bandit CaptureTheFlag Walkthrough.">
+<meta property="og:description" content="Wargames - Bandit CaptureTheFlag Walkthrough.">
 <meta property="og:url" content="http://localhost:4000/infosec/capture-the-flag-bandit-overthewireorg">
 <meta property="og:site_name" content="<b><font size='5.75em'>Inventor<font color='yellow' size='6.75em'>.</font> Biker<font color='yellow' size='6.75em'>.</font> Foodie<font color='yellow' size='6.75em'>.</font> h4ck3r<font color='yellow' size='6.75em'>.</font> Wanderlust<font color='yellow' size='6.75em'>. </font> </font><p>Sometimes....<span id='changingword'>I wanna be just ME.</span></p>">
 <meta property="og:image" content="http://localhost:4000/images/blogimages/2019-04-24/cover-2019-04-24.jpg">
@@ -183,13 +183,17 @@ $(function() {
         <img src="http://localhost:4000/images/blogimages/2019-04-24/cover-2019-04-24.jpg" alt="cover-image" />
 
         <article class="notepad-post-content post">
-            <div><p>This is one of the first <strong><em>CaptureTheFlag</em></strong> challenges of OverTheWire.Org Team. This writeup contains information on how to solve the challenges of <strong>Bandit</strong> box, most importantly, this post <strong>does</strong> contain spoilers so use this walkthrough only if you <em>really</em> need to. However, I strongly suggest not to read this walkthrough if you are planning to take up the challenge.</p>
+            <div><p>This is one of the first <strong><em>CaptureTheFlag</em></strong> challenges of <a href="http://www.overthewire.org">OverTheWire.org</a> Team. This write-up contains information on how to solve the challenges of <strong><a href="http://www.overthewire.org/wargames/bandit/">Bandit</a></strong> wargames, most importantly this post <strong>does</strong> contain spoilers so use this walkthrough only if you <em>really</em> need to. However, I strongly suggest not to read this write-up if you are planning to take up the challenge.</p>
 
-<p>Kindly use this walkthrough only if you had already completed the challenges and lost access to the passwords you use to level up at <strong>WeChall</strong>.</p>
+<p>Kindly use this walkthrough only if you had already completed the challenges and lost access to the passwords you use to level up at <strong><a href="http://www.wechall.net">WeChall</a></strong>.</p>
+
+<p>If you are looking to take up the challenges for <strong><a href="http://www.overthewire.org/wargames/bandit/">Bandit</a></strong> or you could visit <strong><a href="http://www.overthewire.org">OverTheWire.org</a></strong> for more challenges. To record, track your scores and complete more wargames visit <strong><a href="http://www.wechall.net">WeChall</a></strong></p>
 
 <hr />
 
 <h2 id="bandit-level---1">Bandit Level - 1</h2>
+
+<p><img src="/images/blogimages/2019-04-24/bandit1q.PNG" /></p>
 
 <p>Simply SSH with the login credentials that was provided on Level 0. Use the below command to SSH to the host and once you have successfully logged in, do an <code class="highlighter-rouge">ls</code> command to find out any files laying around the current directory. As you discover a file named <strong>readme</strong>, run the <code class="highlighter-rouge">cat</code> command to display the contents of the file. The following commands let you complete the first level.</p>
 
@@ -207,6 +211,8 @@ $(function() {
 
 <h2 id="bandit-level---2">Bandit Level - 2</h2>
 
+<p><img src="/images/blogimages/2019-04-24/bandit2q.PNG" /></p>
+
 <p>Use the above password to SSH in as user <code class="highlighter-rouge">bandit1</code>. Your password to the next level will be stored in the same directory with a filename <code class="highlighter-rouge">-</code> (just a dash or hyphen). Well, if you do a <code class="highlighter-rouge">cat</code> command or <code class="highlighter-rouge">vi</code> on the <code class="highlighter-rouge">-</code>, you will be getting an indefinitely waiting prompt. The linux kernel does not recognize when a <code class="highlighter-rouge">-</code> is in conjunction with <code class="highlighter-rouge">cat</code> or <code class="highlighter-rouge">vi</code> commands. To solve this challenge, try to access this file with the full path name. Use <code class="highlighter-rouge">pwd</code> command to know the current directory you are in. Copy the full path of the <code class="highlighter-rouge">pwd</code> output and concatenate along with <code class="highlighter-rouge">-</code> filename and run the command to get the password.</p>
 
 <p><img src="/images/blogimages/2019-04-24/bandit2.PNG" /></p>
@@ -216,6 +222,8 @@ $(function() {
 </blockquote>
 
 <h2 id="bandit-level---3">Bandit Level - 3</h2>
+
+<p><img src="/images/blogimages/2019-04-24/bandit3q.PNG" /></p>
 
 <p>This challenge is pretty straightforward as the filename that has password has <strong>spaces</strong> in between. To use the <code class="highlighter-rouge">cat</code> command on this filename, wrap the filename with single quotes or double quotes and run the command to get the password for the next level.</p>
 
@@ -227,6 +235,8 @@ $(function() {
 
 <h2 id="bandit-level---4">Bandit Level - 4</h2>
 
+<p><img src="/images/blogimages/2019-04-24/bandit4q.PNG" /></p>
+
 <p>In this challenge, the password file is stored inside the same directory named <strong>inhere</strong>. This directory has a hidden file inside this <strong>inhere</strong> directory. Run the command <code class="highlighter-rouge">ls</code> with <code class="highlighter-rouge">-a</code> flag to view the hidden files present in the directory.</p>
 
 <p><img src="/images/blogimages/2019-04-24/bandit4.PNG" /></p>
@@ -236,6 +246,8 @@ $(function() {
 </blockquote>
 
 <h2 id="bandit-level---5">Bandit Level - 5</h2>
+
+<p><img src="/images/blogimages/2019-04-24/bandit5q.PNG" /></p>
 
 <p>You will find a directory named <strong>inhere</strong> which has a couple of files laying around. If you do a <code class="highlighter-rouge">cat</code> on the first file to check the password, you will be presented with some non-readable characters. Doing a <code class="highlighter-rouge">cat</code> on each and every file is one way to get the password, but consider if there are a million files then the above will not be an ideal solution. In this case, let us write a small code to inspect the file type of the files using the <code class="highlighter-rouge">file</code> command and check whether the file has <code class="highlighter-rouge">ASCII</code> property (in other ways readable files as the challenge suggests).</p>
 
@@ -249,6 +261,8 @@ $(function() {
 
 <h2 id="bandit-level---6">Bandit Level - 6</h2>
 
+<p><img src="/images/blogimages/2019-04-24/bandit6q.PNG" /></p>
+
 <p>This challenge has certain rules to retrieve the password, to my luck one of the rule was more than enough to solve the challenge. (<em>One of the criteria is the filesize should be around 1033 bytes in size</em>)</p>
 
 <p><code class="highlighter-rouge">find . -size 1033c</code></p>
@@ -260,6 +274,8 @@ $(function() {
 </blockquote>
 
 <h2 id="bandit-level---7">Bandit Level - 7</h2>
+
+<p><img src="/images/blogimages/2019-04-24/bandit7q.PNG" /></p>
 
 <p>Almost a similar challenge to the above, all you need is to give greater importance to <code class="highlighter-rouge">man</code> for <code class="highlighter-rouge">find</code> command to know what attributes to be used for retrieving the password.</p>
 
@@ -280,6 +296,8 @@ $(function() {
 
 <h2 id="bandit-level---8">Bandit Level - 8</h2>
 
+<p><img src="/images/blogimages/2019-04-24/bandit8q.PNG" /></p>
+
 <p>You need to find the password hidden inside the file <strong>data.txt</strong> which is rightfully available under the very same directory. The only hint available is the password is next to the word <em>millionth</em> , thus by doing by simple <code class="highlighter-rouge">grep</code> command we would be able to retrieve the password.</p>
 
 <p>The code: <code class="highlighter-rouge">grep 'millionth' data.txt</code></p>
@@ -291,6 +309,8 @@ $(function() {
 </blockquote>
 
 <h2 id="bandit-level---9">Bandit Level - 9</h2>
+
+<p><img src="/images/blogimages/2019-04-24/bandit9q.PNG" /></p>
 
 <p>Once again the password is hidden under the file <strong>data.txt</strong> which has almost 1000 lines with patterns similar to level passwords. The challenge gives us a single hint, saying that the password to next level which is stored inside the file is repeated only once. This gives us an opportunity to use the <code class="highlighter-rouge">uniq</code> command which displays unique results from any file that is provided as input. However, <code class="highlighter-rouge">sort</code> command is first used to sort out the results and we then pipe the input to the <code class="highlighter-rouge">uniq</code> command to get the results. The below code gets you the password.</p>
 
@@ -304,6 +324,8 @@ $(function() {
 
 <h2 id="bandit-level---10">Bandit Level - 10</h2>
 
+<p><img src="/images/blogimages/2019-04-24/bandit10q.PNG" /></p>
+
 <p>Almost a straightforward challenge, you can even issue a <code class="highlighter-rouge">cat</code> command on the <strong>data.txt</strong> file to view the contents and search for a series of <em>=</em>. The password will be right next there. However, for better readability, I recommend using <code class="highlighter-rouge">xxd</code> command on the data file.</p>
 
 <p>The code: <code class="highlighter-rouge">xxd data.txt</code></p>
@@ -315,6 +337,8 @@ $(function() {
 </blockquote>
 
 <h2 id="bandit-level---11">Bandit Level - 11</h2>
+
+<p><img src="/images/blogimages/2019-04-24/bandit11q.PNG" /></p>
 
 <p>Another simpler challenge, this is about encoding and decoding. The file that contains the password is encoded using Base64 Algorithm. As we all know, Base64 has a decoding algorithm as well, make use of the command <code class="highlighter-rouge">base64</code> with <code class="highlighter-rouge">-d</code> flag on the encoded file to retrieve the password.</p>
 
@@ -328,6 +352,8 @@ $(function() {
 
 <h2 id="bandit-level---12">Bandit Level - 12</h2>
 
+<p><img src="/images/blogimages/2019-04-24/bandit12q.PNG" /></p>
+
 <p>This challenge is based on substitution algorithm known as <strong>ROT-13</strong>. The password contained with the file <strong>data.txt</strong> has been encoded using the ROT-13 algorithm. The below command makes use of the <code class="highlighter-rouge">tr</code> command to retrieve the plain text from the file. As we have  26 alphabets, dividing by 2 gives 13 (2 Sets). Set 1: A-M and Set 2: N-Z. Working of the ROT-13 algorithm is very simple, For encoding purposes, the characters from the first set (Set 1) is replaced with the characters in (Set 2), and the decoding process is as simple as it is. For eg: A will be encoded to N, G will be encoded to T, vice-versa. Make use of the below code to solve the challenge.</p>
 
 <p><code class="highlighter-rouge">cat data.txt |  tr '[A-Za-z]' '[N-ZA-Mn-za-m]'</code></p>
@@ -339,6 +365,8 @@ $(function() {
 </blockquote>
 
 <h2 id="bandit-level---13">Bandit Level - 13</h2>
+
+<p><img src="/images/blogimages/2019-04-24/bandit13q.PNG" /></p>
 
 <p>It was quite a good challenge. After logging in, you will have the file <strong>data.txt</strong> on the home directory. You will be making use of <strong>/tmp</strong> directory because, it has world-writable access, as you need to do some decompression according to the algorithm. (<em>Guess I gave some hint</em>).</p>
 
@@ -361,6 +389,8 @@ $(function() {
 
 <h2 id="bandit-level---14">Bandit Level - 14</h2>
 
+<p><img src="/images/blogimages/2019-04-24/bandit14q.PNG" /></p>
+
 <p>Pretty straightforward, your home directory will be having the private key of user <strong>bandit14</strong>, all you need is to connect to the local SSH server with the private key file provided. After logging in, <code class="highlighter-rouge">cat</code> the password from the usual <strong>/etc/bandit_pass/</strong> directory.</p>
 
 <p><img src="/images/blogimages/2019-04-24/bandit14_1.PNG" /></p>
@@ -374,6 +404,8 @@ $(function() {
 
 <h2 id="bandit-level---15">Bandit Level - 15</h2>
 
+<p><img src="/images/blogimages/2019-04-24/bandit15q.PNG" /></p>
+
 <p>There seems a service running on the port 30000, it reveals the password for <strong>Bandit Level - 15</strong> when the password of <strong>Bandit Level - 14</strong> is subjected. This challenge lets you understand how to connect to any service and run commands. This challenge can be completed by using many tools like <code class="highlighter-rouge">nc</code>, <code class="highlighter-rouge">telnet</code>, etc.</p>
 
 <p><img src="/images/blogimages/2019-04-24/bandit15.PNG" /></p>
@@ -384,6 +416,8 @@ $(function() {
 </blockquote>
 
 <h2 id="bandit-level---16">Bandit Level - 16</h2>
+
+<p><img src="/images/blogimages/2019-04-24/bandit16q.PNG" /></p>
 
 <p>As the challenge clearly points out that a service is running on port 30001 that can speak SSL, make use of <code class="highlighter-rouge">openssl</code> command to complete the challenge. Connect to localhost using <code class="highlighter-rouge">openssl</code> on the port and provide the password of <strong>Bandit Level - 15</strong> to unravel the password for <strong>Bandit Level - 16</strong></p>
 
@@ -396,6 +430,8 @@ $(function() {
 </blockquote>
 
 <h2 id="bandit-level---17">Bandit Level - 17</h2>
+
+<p><img src="/images/blogimages/2019-04-24/bandit17q.PNG" /></p>
 
 <p>As per the challenge, you need to find out the service that is running between the port 31000 to 32000 that speaks to SSL. Better off with <code class="highlighter-rouge">nmap</code> and with <code class="highlighter-rouge">--open</code> flag, the open ports can be found. After finding the open port, connect to the service using <code class="highlighter-rouge">openssl</code> and then paste the password of <strong>Bandit Level - 16</strong> to obtain the RSA Private Key for the user <strong><em>bandit17</em></strong>. Once you retrieve the private key, copy the private key file to the <strong>/tmp</strong> directory and connect to localhost using SSH private key file you just copied and login as user <strong><em>bandit17</em></strong>. As you try to do this step, your request will be rejected as precautionary safety measure. Since your private key file is in the <strong>/tmp</strong> directory and is readable by other users, you should make sure that is readable only by <strong>you</strong>. For this, you will be using the <code class="highlighter-rouge">chmod</code> command as shown. After assigning the appropriate permissions for your private key file, you will be able to authenticate as <strong><em>bandit17</em></strong>. After logging, the password for the user can be read from the usual <strong>/etc/bandit_pass/</strong> directory.</p>
 
@@ -414,6 +450,8 @@ $(function() {
 
 <h2 id="bandit-level---18">Bandit Level - 18</h2>
 
+<p><img src="/images/blogimages/2019-04-24/bandit18q.PNG" /></p>
+
 <p>Your home directory consists of two files, the password to the next level is stored in the <strong>passwords.new</strong> file and there is a condition regarding a <em>change</em>. So we use a <code class="highlighter-rouge">diff</code> command to reveal the password for the next level.</p>
 
 <p><img src="/images/blogimages/2019-04-24/bandit18.PNG" /></p>
@@ -423,6 +461,8 @@ $(function() {
 </blockquote>
 
 <h2 id="bandit-level---19">Bandit Level - 19</h2>
+
+<p><img src="/images/blogimages/2019-04-24/bandit19q.PNG" /></p>
 
 <p>With the above password you will be able to SSH as user <strong><em>bandit19</em></strong> , but as soon as you authenticate the code under ~/.bashrc on the home directory of the <strong><em>bandit19</em></strong> executes and terminates the connection. Also, it seems that there is file named <strong>readme</strong> on the home directory which has the password to the next level. To tackle this, make use of <code class="highlighter-rouge">-t</code> argument along with the SSH connection.</p>
 
@@ -436,6 +476,8 @@ $(function() {
 
 <h2 id="bandit-level---20">Bandit Level - 20</h2>
 
+<p><img src="/images/blogimages/2019-04-24/bandit20q.PNG" /></p>
+
 <p>You will find a Self-Executable file under your home directory. This can be found when you run the <code class="highlighter-rouge">file</code> command on it. When you do <code class="highlighter-rouge">id</code> command with that you see that the file has EID (Effective ID as a different user ID <strong><em>bandit20</em></strong> , which gives you a pointer that this file can run commands as user <strong><em>bandit20</em></strong>). So make use of this opportunity and <code class="highlighter-rouge">cat</code> the password file to reveal the password for next level.</p>
 
 <p><img src="/images/blogimages/2019-04-24/bandit20.PNG" /></p>
@@ -445,6 +487,8 @@ $(function() {
 </blockquote>
 
 <h2 id="bandit-level---21">Bandit Level - 21</h2>
+
+<p><img src="/images/blogimages/2019-04-24/bandit21q.PNG" /></p>
 
 <p>To complete this challenge, make yourself comfortable with the <code class="highlighter-rouge">screen</code> command. The target is running a service which will connect to any port on the localhost that you specify.</p>
 <ol>
@@ -468,6 +512,8 @@ $(function() {
 
 <h2 id="bandit-level---22">Bandit Level - 22</h2>
 
+<p><img src="/images/blogimages/2019-04-24/bandit22q.PNG" /></p>
+
 <p>All you need is to read and analyze the cron job file. Since you need the password for <strong>Bandit Level - 22</strong>, you ought to look into the file <strong>cronjob_bandit22.sh</strong>. From the cron job file you see that, the password is being written to a file in the <strong>/tmp</strong> directory. Everything here is straightforward and no twists.</p>
 
 <p><img src="/images/blogimages/2019-04-24/bandit22.PNG" /></p>
@@ -478,6 +524,8 @@ $(function() {
 
 <h2 id="bandit-level---23">Bandit Level - 23</h2>
 
+<p><img src="/images/blogimages/2019-04-24/bandit23q.PNG" /></p>
+
 <p>As the challenge suggests, make a copy of the bash script <strong>cronjob_bandit23.sh</strong> that is under the <strong>/usr/bin</strong> directory. Copy the contents of the script, create a folder under for you under the <strong>/tmp</strong> directory and paste the contents of the script under a test script named <strong>test.sh</strong>, give it executable permission using <code class="highlighter-rouge">chmod +x</code>. Run the script and note the output hash after the <strong>/tmp</strong> directory. Now, doing a <code class="highlighter-rouge">cat</code> on the file which was created by the script under the <strong>/tmp</strong> directory reveals the password of <strong>Bandit Level - 22</strong> , so in this case by replacing the <code class="highlighter-rouge">whoami</code> command to <code class="highlighter-rouge">bandit23</code> will reveal the path of the hash that will be created under the <strong>/tmp</strong> directory. By doing a <code class="highlighter-rouge">cat</code> command on that particular hash will lead to the password for the next level.</p>
 
 <p><img src="/images/blogimages/2019-04-24/bandit23.PNG" /></p>
@@ -487,6 +535,8 @@ $(function() {
 </blockquote>
 
 <h2 id="bandit-level---24">Bandit Level - 24</h2>
+
+<p><img src="/images/blogimages/2019-04-24/bandit24q.PNG" /></p>
 
 <p>An interesting level. The cron job executes this file <strong>cronjob_bandit24.sh</strong> that is under the <strong>/usr/bin</strong> directory, that frequently deletes the user created scripts under the folder <strong>/var/spool/bandit24</strong> directory.</p>
 
@@ -511,6 +561,8 @@ $(function() {
 </blockquote>
 
 <h2 id="bandit-level---25">Bandit Level - 25</h2>
+
+<p><img src="/images/blogimages/2019-04-24/bandit25q.PNG" /></p>
 
 <p>Another beautiful level that lets you under the concept of <strong>Brute-Forcing</strong>. A service is running on the port 30002 that takes the password of <strong>Bandit Level - 24</strong>  and a four digit number ranging from <strong>0000</strong> to <strong>9999</strong> separated by a space in between. So you need to write a program that generates all the <strong>10000</strong> numbers to a file and subject that file as input to the service that is running on the port 30002.</p>
 
@@ -591,6 +643,8 @@ $(function() {
 
 <h2 id="bandit-level---26">Bandit Level - 26</h2>
 
+<p><img src="/images/blogimages/2019-04-24/bandit26q.PNG" /></p>
+
 <p>Honestly, this was the toughest challenge for me on the whole <strong>Bandit</strong> box, took me a couple of days to think <em><strong>laterally</strong></em> and overcome this challenge.</p>
 
 <p>In the home directory of bandit25, you will find the private key of user <strong><em>bandit26</em></strong>, when you login with <code class="highlighter-rouge">ssh bandit26@localhost -i bandit26.sshkey</code> , you will authenticated and immediately logged out. You will see a certain amount of text before you logout. Even if you add the <code class="highlighter-rouge">-t</code> argument while doing SSH, still you won’t be able to complete this level. This is where you need to think <strong>more</strong>.</p>
@@ -631,6 +685,8 @@ $(function() {
 
 <h2 id="bandit-level---27">Bandit Level - 27</h2>
 
+<p><img src="/images/blogimages/2019-04-24/bandit27q.PNG" /></p>
+
 <p>This is a straightforward level and is similar to <strong>Bandit Level - 18</strong>, use the Self-Executable binary to <code class="highlighter-rouge">cat</code> the password from the usual <strong>/etc/bandit_pass</strong> directory.</p>
 
 <p><img src="/images/blogimages/2019-04-24/bandit27.PNG" /></p>
@@ -640,6 +696,8 @@ $(function() {
 </blockquote>
 
 <h2 id="bandit-level---28">Bandit Level - 28</h2>
+
+<p><img src="/images/blogimages/2019-04-24/bandit28q.PNG" /></p>
 
 <p>Hail Git! The upcoming four to five consecutive challenges will be totally focused towards <code class="highlighter-rouge">git</code> commands. So if you have been contributing to open-source community in the past, these forthcoming levels would be a glide in the air.</p>
 
@@ -657,6 +715,8 @@ $(function() {
 
 <h2 id="bandit-level---29">Bandit Level - 29</h2>
 
+<p><img src="/images/blogimages/2019-04-24/bandit29q.PNG" /></p>
+
 <p>After downloading the repository and doing a <code class="highlighter-rouge">cat</code> command on <strong>README.md</strong>, you notice that the password has been masked.
 As you know GIT is a version system and it keeps track of all changes to the file as <strong><em>commits</em></strong>. You can view list of commits done to the file by issuing the command <code class="highlighter-rouge">git log</code>.</p>
 
@@ -672,6 +732,8 @@ As you know GIT is a version system and it keeps track of all changes to the fil
 </blockquote>
 
 <h2 id="bandit-level---30">Bandit Level - 30</h2>
+
+<p><img src="/images/blogimages/2019-04-24/bandit30q.PNG" /></p>
 
 <p>After downloading the repository and doing a <code class="highlighter-rouge">cat</code> command on <strong>README.md</strong>, it shows that <em>password is not in the production</em>. This clearly tells us to see elsewhere in the development branch areas.</p>
 <ol>
@@ -693,6 +755,8 @@ As you know GIT is a version system and it keeps track of all changes to the fil
 
 <h2 id="bandit-level---31">Bandit Level - 31</h2>
 
+<p><img src="/images/blogimages/2019-04-24/bandit31q.PNG" /></p>
+
 <p>I totally don’t understand the purpose of this challenge as it is very similar to <strong>Bandit Level - 30</strong> challenge. Follow the same procedure the obtain the password for the next level.</p>
 
 <p><img src="/images/blogimages/2019-04-24/bandit31.PNG" /></p>
@@ -702,6 +766,8 @@ As you know GIT is a version system and it keeps track of all changes to the fil
 </blockquote>
 
 <h2 id="bandit-level---32">Bandit Level - 32</h2>
+
+<p><img src="/images/blogimages/2019-04-24/bandit32q.PNG" /></p>
 
 <p>In this challenge, you need to push a file named <strong>key.txt</strong> to the root directory of the remote git using the content provided. You could follow these commands.</p>
 <ol>
@@ -723,6 +789,8 @@ As you know GIT is a version system and it keeps track of all changes to the fil
 </blockquote>
 
 <h2 id="bandit-level---33">Bandit Level - 33</h2>
+
+<p><img src="/images/blogimages/2019-04-24/bandit33q.PNG" /></p>
 
 <p>The final level of Bandit box as of April 2019. Interesting level as it converts all the commands to uppercase rendering the output useless. This challenge can be solved by making use of one of the <strong>Bash Special Parameters</strong> listed below.</p>
 <ul>

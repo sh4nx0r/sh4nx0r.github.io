@@ -7,7 +7,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://localhost:4000/" />
-<updated>2019-04-24T00:04:54+05:30</updated>
+<updated>2019-04-24T22:20:57+05:30</updated>
 <id>http://localhost:4000/</id>
 <author>
   <name>Shankar Damodaran</name>
@@ -31,13 +31,17 @@
   <category scheme="http://localhost:4000/tags/#linux" term="linux" /><category scheme="http://localhost:4000/tags/#bash" term="bash" /><category scheme="http://localhost:4000/tags/#code" term="code" /><category scheme="http://localhost:4000/tags/#sh" term="sh" /><category scheme="http://localhost:4000/tags/#capturetheflag" term="capturetheflag" /><category scheme="http://localhost:4000/tags/#walkthrough" term="walkthrough" /><category scheme="http://localhost:4000/tags/#bandit" term="bandit" />
   <content type="html">
   
-    &lt;p&gt;This is one of the first &lt;strong&gt;&lt;em&gt;CaptureTheFlag&lt;/em&gt;&lt;/strong&gt; challenges of OverTheWire.Org Team. This writeup contains information on how to solve the challenges of &lt;strong&gt;Bandit&lt;/strong&gt; box, most importantly, this post &lt;strong&gt;does&lt;/strong&gt; contain spoilers so use this walkthrough only if you &lt;em&gt;really&lt;/em&gt; need to. However, I strongly suggest not to read this walkthrough if you are planning to take up the challenge.&lt;/p&gt;
+    &lt;p&gt;This is one of the first &lt;strong&gt;&lt;em&gt;CaptureTheFlag&lt;/em&gt;&lt;/strong&gt; challenges of &lt;a href=&quot;http://www.overthewire.org&quot;&gt;OverTheWire.org&lt;/a&gt; Team. This write-up contains information on how to solve the challenges of &lt;strong&gt;&lt;a href=&quot;http://www.overthewire.org/wargames/bandit/&quot;&gt;Bandit&lt;/a&gt;&lt;/strong&gt; wargames, most importantly this post &lt;strong&gt;does&lt;/strong&gt; contain spoilers so use this walkthrough only if you &lt;em&gt;really&lt;/em&gt; need to. However, I strongly suggest not to read this write-up if you are planning to take up the challenge.&lt;/p&gt;
 
-&lt;p&gt;Kindly use this walkthrough only if you had already completed the challenges and lost access to the passwords you use to level up at &lt;strong&gt;WeChall&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Kindly use this walkthrough only if you had already completed the challenges and lost access to the passwords you use to level up at &lt;strong&gt;&lt;a href=&quot;http://www.wechall.net&quot;&gt;WeChall&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you are looking to take up the challenges for &lt;strong&gt;&lt;a href=&quot;http://www.overthewire.org/wargames/bandit/&quot;&gt;Bandit&lt;/a&gt;&lt;/strong&gt; or you could visit &lt;strong&gt;&lt;a href=&quot;http://www.overthewire.org&quot;&gt;OverTheWire.org&lt;/a&gt;&lt;/strong&gt; for more challenges. To record, track your scores and complete more wargames visit &lt;strong&gt;&lt;a href=&quot;http://www.wechall.net&quot;&gt;WeChall&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
 &lt;h2 id=&quot;bandit-level---1&quot;&gt;Bandit Level - 1&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit1q.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Simply SSH with the login credentials that was provided on Level 0. Use the below command to SSH to the host and once you have successfully logged in, do an &lt;code class=&quot;highlighter-rouge&quot;&gt;ls&lt;/code&gt; command to find out any files laying around the current directory. As you discover a file named &lt;strong&gt;readme&lt;/strong&gt;, run the &lt;code class=&quot;highlighter-rouge&quot;&gt;cat&lt;/code&gt; command to display the contents of the file. The following commands let you complete the first level.&lt;/p&gt;
 
@@ -55,6 +59,8 @@
 
 &lt;h2 id=&quot;bandit-level---2&quot;&gt;Bandit Level - 2&lt;/h2&gt;
 
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit2q.PNG&quot; /&gt;&lt;/p&gt;
+
 &lt;p&gt;Use the above password to SSH in as user &lt;code class=&quot;highlighter-rouge&quot;&gt;bandit1&lt;/code&gt;. Your password to the next level will be stored in the same directory with a filename &lt;code class=&quot;highlighter-rouge&quot;&gt;-&lt;/code&gt; (just a dash or hyphen). Well, if you do a &lt;code class=&quot;highlighter-rouge&quot;&gt;cat&lt;/code&gt; command or &lt;code class=&quot;highlighter-rouge&quot;&gt;vi&lt;/code&gt; on the &lt;code class=&quot;highlighter-rouge&quot;&gt;-&lt;/code&gt;, you will be getting an indefinitely waiting prompt. The linux kernel does not recognize when a &lt;code class=&quot;highlighter-rouge&quot;&gt;-&lt;/code&gt; is in conjunction with &lt;code class=&quot;highlighter-rouge&quot;&gt;cat&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;vi&lt;/code&gt; commands. To solve this challenge, try to access this file with the full path name. Use &lt;code class=&quot;highlighter-rouge&quot;&gt;pwd&lt;/code&gt; command to know the current directory you are in. Copy the full path of the &lt;code class=&quot;highlighter-rouge&quot;&gt;pwd&lt;/code&gt; output and concatenate along with &lt;code class=&quot;highlighter-rouge&quot;&gt;-&lt;/code&gt; filename and run the command to get the password.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit2.PNG&quot; /&gt;&lt;/p&gt;
@@ -64,6 +70,8 @@
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;bandit-level---3&quot;&gt;Bandit Level - 3&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit3q.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;This challenge is pretty straightforward as the filename that has password has &lt;strong&gt;spaces&lt;/strong&gt; in between. To use the &lt;code class=&quot;highlighter-rouge&quot;&gt;cat&lt;/code&gt; command on this filename, wrap the filename with single quotes or double quotes and run the command to get the password for the next level.&lt;/p&gt;
 
@@ -75,6 +83,8 @@
 
 &lt;h2 id=&quot;bandit-level---4&quot;&gt;Bandit Level - 4&lt;/h2&gt;
 
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit4q.PNG&quot; /&gt;&lt;/p&gt;
+
 &lt;p&gt;In this challenge, the password file is stored inside the same directory named &lt;strong&gt;inhere&lt;/strong&gt;. This directory has a hidden file inside this &lt;strong&gt;inhere&lt;/strong&gt; directory. Run the command &lt;code class=&quot;highlighter-rouge&quot;&gt;ls&lt;/code&gt; with &lt;code class=&quot;highlighter-rouge&quot;&gt;-a&lt;/code&gt; flag to view the hidden files present in the directory.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit4.PNG&quot; /&gt;&lt;/p&gt;
@@ -84,6 +94,8 @@
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;bandit-level---5&quot;&gt;Bandit Level - 5&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit5q.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;You will find a directory named &lt;strong&gt;inhere&lt;/strong&gt; which has a couple of files laying around. If you do a &lt;code class=&quot;highlighter-rouge&quot;&gt;cat&lt;/code&gt; on the first file to check the password, you will be presented with some non-readable characters. Doing a &lt;code class=&quot;highlighter-rouge&quot;&gt;cat&lt;/code&gt; on each and every file is one way to get the password, but consider if there are a million files then the above will not be an ideal solution. In this case, let us write a small code to inspect the file type of the files using the &lt;code class=&quot;highlighter-rouge&quot;&gt;file&lt;/code&gt; command and check whether the file has &lt;code class=&quot;highlighter-rouge&quot;&gt;ASCII&lt;/code&gt; property (in other ways readable files as the challenge suggests).&lt;/p&gt;
 
@@ -97,6 +109,8 @@
 
 &lt;h2 id=&quot;bandit-level---6&quot;&gt;Bandit Level - 6&lt;/h2&gt;
 
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit6q.PNG&quot; /&gt;&lt;/p&gt;
+
 &lt;p&gt;This challenge has certain rules to retrieve the password, to my luck one of the rule was more than enough to solve the challenge. (&lt;em&gt;One of the criteria is the filesize should be around 1033 bytes in size&lt;/em&gt;)&lt;/p&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;find . -size 1033c&lt;/code&gt;&lt;/p&gt;
@@ -108,6 +122,8 @@
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;bandit-level---7&quot;&gt;Bandit Level - 7&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit7q.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Almost a similar challenge to the above, all you need is to give greater importance to &lt;code class=&quot;highlighter-rouge&quot;&gt;man&lt;/code&gt; for &lt;code class=&quot;highlighter-rouge&quot;&gt;find&lt;/code&gt; command to know what attributes to be used for retrieving the password.&lt;/p&gt;
 
@@ -128,6 +144,8 @@
 
 &lt;h2 id=&quot;bandit-level---8&quot;&gt;Bandit Level - 8&lt;/h2&gt;
 
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit8q.PNG&quot; /&gt;&lt;/p&gt;
+
 &lt;p&gt;You need to find the password hidden inside the file &lt;strong&gt;data.txt&lt;/strong&gt; which is rightfully available under the very same directory. The only hint available is the password is next to the word &lt;em&gt;millionth&lt;/em&gt; , thus by doing by simple &lt;code class=&quot;highlighter-rouge&quot;&gt;grep&lt;/code&gt; command we would be able to retrieve the password.&lt;/p&gt;
 
 &lt;p&gt;The code: &lt;code class=&quot;highlighter-rouge&quot;&gt;grep 'millionth' data.txt&lt;/code&gt;&lt;/p&gt;
@@ -139,6 +157,8 @@
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;bandit-level---9&quot;&gt;Bandit Level - 9&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit9q.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Once again the password is hidden under the file &lt;strong&gt;data.txt&lt;/strong&gt; which has almost 1000 lines with patterns similar to level passwords. The challenge gives us a single hint, saying that the password to next level which is stored inside the file is repeated only once. This gives us an opportunity to use the &lt;code class=&quot;highlighter-rouge&quot;&gt;uniq&lt;/code&gt; command which displays unique results from any file that is provided as input. However, &lt;code class=&quot;highlighter-rouge&quot;&gt;sort&lt;/code&gt; command is first used to sort out the results and we then pipe the input to the &lt;code class=&quot;highlighter-rouge&quot;&gt;uniq&lt;/code&gt; command to get the results. The below code gets you the password.&lt;/p&gt;
 
@@ -152,6 +172,8 @@
 
 &lt;h2 id=&quot;bandit-level---10&quot;&gt;Bandit Level - 10&lt;/h2&gt;
 
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit10q.PNG&quot; /&gt;&lt;/p&gt;
+
 &lt;p&gt;Almost a straightforward challenge, you can even issue a &lt;code class=&quot;highlighter-rouge&quot;&gt;cat&lt;/code&gt; command on the &lt;strong&gt;data.txt&lt;/strong&gt; file to view the contents and search for a series of &lt;em&gt;=&lt;/em&gt;. The password will be right next there. However, for better readability, I recommend using &lt;code class=&quot;highlighter-rouge&quot;&gt;xxd&lt;/code&gt; command on the data file.&lt;/p&gt;
 
 &lt;p&gt;The code: &lt;code class=&quot;highlighter-rouge&quot;&gt;xxd data.txt&lt;/code&gt;&lt;/p&gt;
@@ -163,6 +185,8 @@
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;bandit-level---11&quot;&gt;Bandit Level - 11&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit11q.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Another simpler challenge, this is about encoding and decoding. The file that contains the password is encoded using Base64 Algorithm. As we all know, Base64 has a decoding algorithm as well, make use of the command &lt;code class=&quot;highlighter-rouge&quot;&gt;base64&lt;/code&gt; with &lt;code class=&quot;highlighter-rouge&quot;&gt;-d&lt;/code&gt; flag on the encoded file to retrieve the password.&lt;/p&gt;
 
@@ -176,6 +200,8 @@
 
 &lt;h2 id=&quot;bandit-level---12&quot;&gt;Bandit Level - 12&lt;/h2&gt;
 
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit12q.PNG&quot; /&gt;&lt;/p&gt;
+
 &lt;p&gt;This challenge is based on substitution algorithm known as &lt;strong&gt;ROT-13&lt;/strong&gt;. The password contained with the file &lt;strong&gt;data.txt&lt;/strong&gt; has been encoded using the ROT-13 algorithm. The below command makes use of the &lt;code class=&quot;highlighter-rouge&quot;&gt;tr&lt;/code&gt; command to retrieve the plain text from the file. As we have  26 alphabets, dividing by 2 gives 13 (2 Sets). Set 1: A-M and Set 2: N-Z. Working of the ROT-13 algorithm is very simple, For encoding purposes, the characters from the first set (Set 1) is replaced with the characters in (Set 2), and the decoding process is as simple as it is. For eg: A will be encoded to N, G will be encoded to T, vice-versa. Make use of the below code to solve the challenge.&lt;/p&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;cat data.txt |  tr '[A-Za-z]' '[N-ZA-Mn-za-m]'&lt;/code&gt;&lt;/p&gt;
@@ -187,6 +213,8 @@
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;bandit-level---13&quot;&gt;Bandit Level - 13&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit13q.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;It was quite a good challenge. After logging in, you will have the file &lt;strong&gt;data.txt&lt;/strong&gt; on the home directory. You will be making use of &lt;strong&gt;/tmp&lt;/strong&gt; directory because, it has world-writable access, as you need to do some decompression according to the algorithm. (&lt;em&gt;Guess I gave some hint&lt;/em&gt;).&lt;/p&gt;
 
@@ -209,6 +237,8 @@
 
 &lt;h2 id=&quot;bandit-level---14&quot;&gt;Bandit Level - 14&lt;/h2&gt;
 
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit14q.PNG&quot; /&gt;&lt;/p&gt;
+
 &lt;p&gt;Pretty straightforward, your home directory will be having the private key of user &lt;strong&gt;bandit14&lt;/strong&gt;, all you need is to connect to the local SSH server with the private key file provided. After logging in, &lt;code class=&quot;highlighter-rouge&quot;&gt;cat&lt;/code&gt; the password from the usual &lt;strong&gt;/etc/bandit_pass/&lt;/strong&gt; directory.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit14_1.PNG&quot; /&gt;&lt;/p&gt;
@@ -222,6 +252,8 @@
 
 &lt;h2 id=&quot;bandit-level---15&quot;&gt;Bandit Level - 15&lt;/h2&gt;
 
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit15q.PNG&quot; /&gt;&lt;/p&gt;
+
 &lt;p&gt;There seems a service running on the port 30000, it reveals the password for &lt;strong&gt;Bandit Level - 15&lt;/strong&gt; when the password of &lt;strong&gt;Bandit Level - 14&lt;/strong&gt; is subjected. This challenge lets you understand how to connect to any service and run commands. This challenge can be completed by using many tools like &lt;code class=&quot;highlighter-rouge&quot;&gt;nc&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;telnet&lt;/code&gt;, etc.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit15.PNG&quot; /&gt;&lt;/p&gt;
@@ -232,6 +264,8 @@
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;bandit-level---16&quot;&gt;Bandit Level - 16&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit16q.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;As the challenge clearly points out that a service is running on port 30001 that can speak SSL, make use of &lt;code class=&quot;highlighter-rouge&quot;&gt;openssl&lt;/code&gt; command to complete the challenge. Connect to localhost using &lt;code class=&quot;highlighter-rouge&quot;&gt;openssl&lt;/code&gt; on the port and provide the password of &lt;strong&gt;Bandit Level - 15&lt;/strong&gt; to unravel the password for &lt;strong&gt;Bandit Level - 16&lt;/strong&gt;&lt;/p&gt;
 
@@ -244,6 +278,8 @@
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;bandit-level---17&quot;&gt;Bandit Level - 17&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit17q.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;As per the challenge, you need to find out the service that is running between the port 31000 to 32000 that speaks to SSL. Better off with &lt;code class=&quot;highlighter-rouge&quot;&gt;nmap&lt;/code&gt; and with &lt;code class=&quot;highlighter-rouge&quot;&gt;--open&lt;/code&gt; flag, the open ports can be found. After finding the open port, connect to the service using &lt;code class=&quot;highlighter-rouge&quot;&gt;openssl&lt;/code&gt; and then paste the password of &lt;strong&gt;Bandit Level - 16&lt;/strong&gt; to obtain the RSA Private Key for the user &lt;strong&gt;&lt;em&gt;bandit17&lt;/em&gt;&lt;/strong&gt;. Once you retrieve the private key, copy the private key file to the &lt;strong&gt;/tmp&lt;/strong&gt; directory and connect to localhost using SSH private key file you just copied and login as user &lt;strong&gt;&lt;em&gt;bandit17&lt;/em&gt;&lt;/strong&gt;. As you try to do this step, your request will be rejected as precautionary safety measure. Since your private key file is in the &lt;strong&gt;/tmp&lt;/strong&gt; directory and is readable by other users, you should make sure that is readable only by &lt;strong&gt;you&lt;/strong&gt;. For this, you will be using the &lt;code class=&quot;highlighter-rouge&quot;&gt;chmod&lt;/code&gt; command as shown. After assigning the appropriate permissions for your private key file, you will be able to authenticate as &lt;strong&gt;&lt;em&gt;bandit17&lt;/em&gt;&lt;/strong&gt;. After logging, the password for the user can be read from the usual &lt;strong&gt;/etc/bandit_pass/&lt;/strong&gt; directory.&lt;/p&gt;
 
@@ -262,6 +298,8 @@
 
 &lt;h2 id=&quot;bandit-level---18&quot;&gt;Bandit Level - 18&lt;/h2&gt;
 
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit18q.PNG&quot; /&gt;&lt;/p&gt;
+
 &lt;p&gt;Your home directory consists of two files, the password to the next level is stored in the &lt;strong&gt;passwords.new&lt;/strong&gt; file and there is a condition regarding a &lt;em&gt;change&lt;/em&gt;. So we use a &lt;code class=&quot;highlighter-rouge&quot;&gt;diff&lt;/code&gt; command to reveal the password for the next level.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit18.PNG&quot; /&gt;&lt;/p&gt;
@@ -271,6 +309,8 @@
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;bandit-level---19&quot;&gt;Bandit Level - 19&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit19q.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;With the above password you will be able to SSH as user &lt;strong&gt;&lt;em&gt;bandit19&lt;/em&gt;&lt;/strong&gt; , but as soon as you authenticate the code under ~/.bashrc on the home directory of the &lt;strong&gt;&lt;em&gt;bandit19&lt;/em&gt;&lt;/strong&gt; executes and terminates the connection. Also, it seems that there is file named &lt;strong&gt;readme&lt;/strong&gt; on the home directory which has the password to the next level. To tackle this, make use of &lt;code class=&quot;highlighter-rouge&quot;&gt;-t&lt;/code&gt; argument along with the SSH connection.&lt;/p&gt;
 
@@ -284,6 +324,8 @@
 
 &lt;h2 id=&quot;bandit-level---20&quot;&gt;Bandit Level - 20&lt;/h2&gt;
 
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit20q.PNG&quot; /&gt;&lt;/p&gt;
+
 &lt;p&gt;You will find a Self-Executable file under your home directory. This can be found when you run the &lt;code class=&quot;highlighter-rouge&quot;&gt;file&lt;/code&gt; command on it. When you do &lt;code class=&quot;highlighter-rouge&quot;&gt;id&lt;/code&gt; command with that you see that the file has EID (Effective ID as a different user ID &lt;strong&gt;&lt;em&gt;bandit20&lt;/em&gt;&lt;/strong&gt; , which gives you a pointer that this file can run commands as user &lt;strong&gt;&lt;em&gt;bandit20&lt;/em&gt;&lt;/strong&gt;). So make use of this opportunity and &lt;code class=&quot;highlighter-rouge&quot;&gt;cat&lt;/code&gt; the password file to reveal the password for next level.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit20.PNG&quot; /&gt;&lt;/p&gt;
@@ -293,6 +335,8 @@
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;bandit-level---21&quot;&gt;Bandit Level - 21&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit21q.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;To complete this challenge, make yourself comfortable with the &lt;code class=&quot;highlighter-rouge&quot;&gt;screen&lt;/code&gt; command. The target is running a service which will connect to any port on the localhost that you specify.&lt;/p&gt;
 &lt;ol&gt;
@@ -316,6 +360,8 @@
 
 &lt;h2 id=&quot;bandit-level---22&quot;&gt;Bandit Level - 22&lt;/h2&gt;
 
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit22q.PNG&quot; /&gt;&lt;/p&gt;
+
 &lt;p&gt;All you need is to read and analyze the cron job file. Since you need the password for &lt;strong&gt;Bandit Level - 22&lt;/strong&gt;, you ought to look into the file &lt;strong&gt;cronjob_bandit22.sh&lt;/strong&gt;. From the cron job file you see that, the password is being written to a file in the &lt;strong&gt;/tmp&lt;/strong&gt; directory. Everything here is straightforward and no twists.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit22.PNG&quot; /&gt;&lt;/p&gt;
@@ -326,6 +372,8 @@
 
 &lt;h2 id=&quot;bandit-level---23&quot;&gt;Bandit Level - 23&lt;/h2&gt;
 
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit23q.PNG&quot; /&gt;&lt;/p&gt;
+
 &lt;p&gt;As the challenge suggests, make a copy of the bash script &lt;strong&gt;cronjob_bandit23.sh&lt;/strong&gt; that is under the &lt;strong&gt;/usr/bin&lt;/strong&gt; directory. Copy the contents of the script, create a folder under for you under the &lt;strong&gt;/tmp&lt;/strong&gt; directory and paste the contents of the script under a test script named &lt;strong&gt;test.sh&lt;/strong&gt;, give it executable permission using &lt;code class=&quot;highlighter-rouge&quot;&gt;chmod +x&lt;/code&gt;. Run the script and note the output hash after the &lt;strong&gt;/tmp&lt;/strong&gt; directory. Now, doing a &lt;code class=&quot;highlighter-rouge&quot;&gt;cat&lt;/code&gt; on the file which was created by the script under the &lt;strong&gt;/tmp&lt;/strong&gt; directory reveals the password of &lt;strong&gt;Bandit Level - 22&lt;/strong&gt; , so in this case by replacing the &lt;code class=&quot;highlighter-rouge&quot;&gt;whoami&lt;/code&gt; command to &lt;code class=&quot;highlighter-rouge&quot;&gt;bandit23&lt;/code&gt; will reveal the path of the hash that will be created under the &lt;strong&gt;/tmp&lt;/strong&gt; directory. By doing a &lt;code class=&quot;highlighter-rouge&quot;&gt;cat&lt;/code&gt; command on that particular hash will lead to the password for the next level.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit23.PNG&quot; /&gt;&lt;/p&gt;
@@ -335,6 +383,8 @@
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;bandit-level---24&quot;&gt;Bandit Level - 24&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit24q.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;An interesting level. The cron job executes this file &lt;strong&gt;cronjob_bandit24.sh&lt;/strong&gt; that is under the &lt;strong&gt;/usr/bin&lt;/strong&gt; directory, that frequently deletes the user created scripts under the folder &lt;strong&gt;/var/spool/bandit24&lt;/strong&gt; directory.&lt;/p&gt;
 
@@ -359,6 +409,8 @@
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;bandit-level---25&quot;&gt;Bandit Level - 25&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit25q.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Another beautiful level that lets you under the concept of &lt;strong&gt;Brute-Forcing&lt;/strong&gt;. A service is running on the port 30002 that takes the password of &lt;strong&gt;Bandit Level - 24&lt;/strong&gt;  and a four digit number ranging from &lt;strong&gt;0000&lt;/strong&gt; to &lt;strong&gt;9999&lt;/strong&gt; separated by a space in between. So you need to write a program that generates all the &lt;strong&gt;10000&lt;/strong&gt; numbers to a file and subject that file as input to the service that is running on the port 30002.&lt;/p&gt;
 
@@ -439,6 +491,8 @@
 
 &lt;h2 id=&quot;bandit-level---26&quot;&gt;Bandit Level - 26&lt;/h2&gt;
 
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit26q.PNG&quot; /&gt;&lt;/p&gt;
+
 &lt;p&gt;Honestly, this was the toughest challenge for me on the whole &lt;strong&gt;Bandit&lt;/strong&gt; box, took me a couple of days to think &lt;em&gt;&lt;strong&gt;laterally&lt;/strong&gt;&lt;/em&gt; and overcome this challenge.&lt;/p&gt;
 
 &lt;p&gt;In the home directory of bandit25, you will find the private key of user &lt;strong&gt;&lt;em&gt;bandit26&lt;/em&gt;&lt;/strong&gt;, when you login with &lt;code class=&quot;highlighter-rouge&quot;&gt;ssh bandit26@localhost -i bandit26.sshkey&lt;/code&gt; , you will authenticated and immediately logged out. You will see a certain amount of text before you logout. Even if you add the &lt;code class=&quot;highlighter-rouge&quot;&gt;-t&lt;/code&gt; argument while doing SSH, still you won’t be able to complete this level. This is where you need to think &lt;strong&gt;more&lt;/strong&gt;.&lt;/p&gt;
@@ -479,6 +533,8 @@
 
 &lt;h2 id=&quot;bandit-level---27&quot;&gt;Bandit Level - 27&lt;/h2&gt;
 
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit27q.PNG&quot; /&gt;&lt;/p&gt;
+
 &lt;p&gt;This is a straightforward level and is similar to &lt;strong&gt;Bandit Level - 18&lt;/strong&gt;, use the Self-Executable binary to &lt;code class=&quot;highlighter-rouge&quot;&gt;cat&lt;/code&gt; the password from the usual &lt;strong&gt;/etc/bandit_pass&lt;/strong&gt; directory.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit27.PNG&quot; /&gt;&lt;/p&gt;
@@ -488,6 +544,8 @@
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;bandit-level---28&quot;&gt;Bandit Level - 28&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit28q.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Hail Git! The upcoming four to five consecutive challenges will be totally focused towards &lt;code class=&quot;highlighter-rouge&quot;&gt;git&lt;/code&gt; commands. So if you have been contributing to open-source community in the past, these forthcoming levels would be a glide in the air.&lt;/p&gt;
 
@@ -505,6 +563,8 @@
 
 &lt;h2 id=&quot;bandit-level---29&quot;&gt;Bandit Level - 29&lt;/h2&gt;
 
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit29q.PNG&quot; /&gt;&lt;/p&gt;
+
 &lt;p&gt;After downloading the repository and doing a &lt;code class=&quot;highlighter-rouge&quot;&gt;cat&lt;/code&gt; command on &lt;strong&gt;README.md&lt;/strong&gt;, you notice that the password has been masked.
 As you know GIT is a version system and it keeps track of all changes to the file as &lt;strong&gt;&lt;em&gt;commits&lt;/em&gt;&lt;/strong&gt;. You can view list of commits done to the file by issuing the command &lt;code class=&quot;highlighter-rouge&quot;&gt;git log&lt;/code&gt;.&lt;/p&gt;
 
@@ -520,6 +580,8 @@ As you know GIT is a version system and it keeps track of all changes to the fil
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;bandit-level---30&quot;&gt;Bandit Level - 30&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit30q.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;After downloading the repository and doing a &lt;code class=&quot;highlighter-rouge&quot;&gt;cat&lt;/code&gt; command on &lt;strong&gt;README.md&lt;/strong&gt;, it shows that &lt;em&gt;password is not in the production&lt;/em&gt;. This clearly tells us to see elsewhere in the development branch areas.&lt;/p&gt;
 &lt;ol&gt;
@@ -541,6 +603,8 @@ As you know GIT is a version system and it keeps track of all changes to the fil
 
 &lt;h2 id=&quot;bandit-level---31&quot;&gt;Bandit Level - 31&lt;/h2&gt;
 
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit31q.PNG&quot; /&gt;&lt;/p&gt;
+
 &lt;p&gt;I totally don’t understand the purpose of this challenge as it is very similar to &lt;strong&gt;Bandit Level - 30&lt;/strong&gt; challenge. Follow the same procedure the obtain the password for the next level.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit31.PNG&quot; /&gt;&lt;/p&gt;
@@ -550,6 +614,8 @@ As you know GIT is a version system and it keeps track of all changes to the fil
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;bandit-level---32&quot;&gt;Bandit Level - 32&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit32q.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;In this challenge, you need to push a file named &lt;strong&gt;key.txt&lt;/strong&gt; to the root directory of the remote git using the content provided. You could follow these commands.&lt;/p&gt;
 &lt;ol&gt;
@@ -571,6 +637,8 @@ As you know GIT is a version system and it keeps track of all changes to the fil
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;bandit-level---33&quot;&gt;Bandit Level - 33&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit33q.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The final level of Bandit box as of April 2019. Interesting level as it converts all the commands to uppercase rendering the output useless. This challenge can be solved by making use of one of the &lt;strong&gt;Bash Special Parameters&lt;/strong&gt; listed below.&lt;/p&gt;
 &lt;ul&gt;

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "CaptureTheFlag #1: 'Bandit' Walkthrough for OverTheWire.Org"
-description: Bandit CaptureTheFlag Walkthrough.
+description: Wargames - Bandit CaptureTheFlag Walkthrough.
 headline:
 modified: 2019-04-24
 category: infosec
@@ -14,14 +14,17 @@ featured: false
 ---
 
 
-This is one of the first **_CaptureTheFlag_** challenges of OverTheWire.Org Team. This writeup contains information on how to solve the challenges of **Bandit** box, most importantly, this post **does** contain spoilers so use this walkthrough only if you _really_ need to. However, I strongly suggest not to read this walkthrough if you are planning to take up the challenge.
+This is one of the first **_CaptureTheFlag_** challenges of [OverTheWire.org](http://www.overthewire.org) Team. This write-up contains information on how to solve the challenges of **[Bandit](http://www.overthewire.org/wargames/bandit/)** wargames, most importantly this post **does** contain spoilers so use this walkthrough only if you _really_ need to. However, I strongly suggest not to read this write-up if you are planning to take up the challenge.
 
-Kindly use this walkthrough only if you had already completed the challenges and lost access to the passwords you use to level up at **WeChall**.
+Kindly use this walkthrough only if you had already completed the challenges and lost access to the passwords you use to level up at **[WeChall](http://www.wechall.net)**.
 
+If you are looking to take up the challenges for **[Bandit](http://www.overthewire.org/wargames/bandit/)** or you could visit **[OverTheWire.org](http://www.overthewire.org)** for more challenges. To record, track your scores and complete more wargames visit **[WeChall](http://www.wechall.net)**
 
 ---
 
 ## Bandit Level - 1
+
+<img src="/images/blogimages/2019-04-24/bandit1q.PNG">
 
 Simply SSH with the login credentials that was provided on Level 0. Use the below command to SSH to the host and once you have successfully logged in, do an `ls` command to find out any files laying around the current directory. As you discover a file named **readme**, run the `cat` command to display the contents of the file. The following commands let you complete the first level.
 
@@ -37,6 +40,8 @@ Simply SSH with the login credentials that was provided on Level 0. Use the belo
 
 ## Bandit Level - 2
 
+<img src="/images/blogimages/2019-04-24/bandit2q.PNG">
+
 Use the above password to SSH in as user `bandit1`. Your password to the next level will be stored in the same directory with a filename `-` (just a dash or hyphen). Well, if you do a `cat` command or `vi` on the `-`, you will be getting an indefinitely waiting prompt. The linux kernel does not recognize when a `-` is in conjunction with `cat` or `vi` commands. To solve this challenge, try to access this file with the full path name. Use `pwd` command to know the current directory you are in. Copy the full path of the `pwd` output and concatenate along with `-` filename and run the command to get the password.
 
 <img src="/images/blogimages/2019-04-24/bandit2.PNG">
@@ -44,6 +49,8 @@ Use the above password to SSH in as user `bandit1`. Your password to the next le
 > Password: `CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9`
 
 ## Bandit Level - 3
+
+<img src="/images/blogimages/2019-04-24/bandit3q.PNG">
 
 This challenge is pretty straightforward as the filename that has password has **spaces** in between. To use the `cat` command on this filename, wrap the filename with single quotes or double quotes and run the command to get the password for the next level.
 
@@ -53,6 +60,8 @@ This challenge is pretty straightforward as the filename that has password has *
 
 ## Bandit Level - 4
 
+<img src="/images/blogimages/2019-04-24/bandit4q.PNG">
+
 In this challenge, the password file is stored inside the same directory named **inhere**. This directory has a hidden file inside this **inhere** directory. Run the command `ls` with `-a` flag to view the hidden files present in the directory.
 
 <img src="/images/blogimages/2019-04-24/bandit4.PNG">
@@ -60,6 +69,8 @@ In this challenge, the password file is stored inside the same directory named *
 > Password: `pIwrPrtPN36QITSp3EQaw936yaFoFgAB`
 
 ## Bandit Level - 5
+
+<img src="/images/blogimages/2019-04-24/bandit5q.PNG">
 
 You will find a directory named **inhere** which has a couple of files laying around. If you do a `cat` on the first file to check the password, you will be presented with some non-readable characters. Doing a `cat` on each and every file is one way to get the password, but consider if there are a million files then the above will not be an ideal solution. In this case, let us write a small code to inspect the file type of the files using the `file` command and check whether the file has `ASCII` property (in other ways readable files as the challenge suggests).
 
@@ -71,6 +82,8 @@ You will find a directory named **inhere** which has a couple of files laying ar
 
 ## Bandit Level - 6
 
+<img src="/images/blogimages/2019-04-24/bandit6q.PNG">
+
 This challenge has certain rules to retrieve the password, to my luck one of the rule was more than enough to solve the challenge. (_One of the criteria is the filesize should be around 1033 bytes in size_)
 
 `find . -size 1033c`
@@ -80,6 +93,8 @@ This challenge has certain rules to retrieve the password, to my luck one of the
 > Password: `DXjZPULLxYr17uwoI01bNLQbtFemEgo7`
 
 ## Bandit Level - 7
+
+<img src="/images/blogimages/2019-04-24/bandit7q.PNG">
 
 Almost a similar challenge to the above, all you need is to give greater importance to `man` for `find` command to know what attributes to be used for retrieving the password.
 
@@ -98,6 +113,8 @@ The below code finds all files which are 33 in bytes and is owned by the user **
 
 ## Bandit Level - 8
 
+<img src="/images/blogimages/2019-04-24/bandit8q.PNG">
+
 You need to find the password hidden inside the file **data.txt** which is rightfully available under the very same directory. The only hint available is the password is next to the word _millionth_ , thus by doing by simple `grep` command we would be able to retrieve the password.
 
 The code: `grep 'millionth' data.txt`
@@ -107,6 +124,8 @@ The code: `grep 'millionth' data.txt`
 > Password: `cvX2JJa4CFALtqS87jk27qwqGhBM9plV`
 
 ## Bandit Level - 9
+
+<img src="/images/blogimages/2019-04-24/bandit9q.PNG">
 
 Once again the password is hidden under the file **data.txt** which has almost 1000 lines with patterns similar to level passwords. The challenge gives us a single hint, saying that the password to next level which is stored inside the file is repeated only once. This gives us an opportunity to use the `uniq` command which displays unique results from any file that is provided as input. However, `sort` command is first used to sort out the results and we then pipe the input to the `uniq` command to get the results. The below code gets you the password.
 
@@ -118,6 +137,8 @@ The code: `sort data.txt | uniq -u`
 
 ## Bandit Level - 10
 
+<img src="/images/blogimages/2019-04-24/bandit10q.PNG">
+
 Almost a straightforward challenge, you can even issue a `cat` command on the **data.txt** file to view the contents and search for a series of *=*. The password will be right next there. However, for better readability, I recommend using `xxd` command on the data file.
 
 The code: `xxd data.txt`
@@ -127,6 +148,8 @@ The code: `xxd data.txt`
 > Password: `truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk`
 
 ## Bandit Level - 11
+
+<img src="/images/blogimages/2019-04-24/bandit11q.PNG">
 
 Another simpler challenge, this is about encoding and decoding. The file that contains the password is encoded using Base64 Algorithm. As we all know, Base64 has a decoding algorithm as well, make use of the command `base64` with `-d` flag on the encoded file to retrieve the password.
 
@@ -138,6 +161,8 @@ The Code: `base64 -d data.txt`
 
 ## Bandit Level - 12
 
+<img src="/images/blogimages/2019-04-24/bandit12q.PNG">
+
 This challenge is based on substitution algorithm known as **ROT-13**. The password contained with the file **data.txt** has been encoded using the ROT-13 algorithm. The below command makes use of the `tr` command to retrieve the plain text from the file. As we have  26 alphabets, dividing by 2 gives 13 (2 Sets). Set 1: A-M and Set 2: N-Z. Working of the ROT-13 algorithm is very simple, For encoding purposes, the characters from the first set (Set 1) is replaced with the characters in (Set 2), and the decoding process is as simple as it is. For eg: A will be encoded to N, G will be encoded to T, vice-versa. Make use of the below code to solve the challenge.
 
 `cat data.txt |  tr '[A-Za-z]' '[N-ZA-Mn-za-m]'`
@@ -147,6 +172,8 @@ This challenge is based on substitution algorithm known as **ROT-13**. The passw
 > Password: `5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu`
 
 ## Bandit Level - 13
+
+<img src="/images/blogimages/2019-04-24/bandit13q.PNG">
 
 It was quite a good challenge. After logging in, you will have the file **data.txt** on the home directory. You will be making use of **/tmp** directory because, it has world-writable access, as you need to do some decompression according to the algorithm. (_Guess I gave some hint_).
 
@@ -167,6 +194,8 @@ The crux behind the challenge is we analyze the file with `file` command and not
 
 ## Bandit Level - 14
 
+<img src="/images/blogimages/2019-04-24/bandit14q.PNG">
+
 Pretty straightforward, your home directory will be having the private key of user **bandit14**, all you need is to connect to the local SSH server with the private key file provided. After logging in, `cat` the password from the usual **/etc/bandit_pass/** directory.
 
 <img src="/images/blogimages/2019-04-24/bandit14_1.PNG">
@@ -178,6 +207,8 @@ Pretty straightforward, your home directory will be having the private key of us
 
 ## Bandit Level - 15
 
+<img src="/images/blogimages/2019-04-24/bandit15q.PNG">
+
 There seems a service running on the port 30000, it reveals the password for **Bandit Level - 15** when the password of **Bandit Level - 14** is subjected. This challenge lets you understand how to connect to any service and run commands. This challenge can be completed by using many tools like `nc`, `telnet`, etc.
 
 <img src="/images/blogimages/2019-04-24/bandit15.PNG">
@@ -186,6 +217,8 @@ There seems a service running on the port 30000, it reveals the password for **B
 > Password: `BfMYroe26WYalil77FoDi9qh59eK5xNr`
 
 ## Bandit Level - 16
+
+<img src="/images/blogimages/2019-04-24/bandit16q.PNG">
 
 As the challenge clearly points out that a service is running on port 30001 that can speak SSL, make use of `openssl` command to complete the challenge. Connect to localhost using `openssl` on the port and provide the password of **Bandit Level - 15** to unravel the password for **Bandit Level - 16**
 
@@ -197,6 +230,8 @@ As the challenge clearly points out that a service is running on port 30001 that
 
 
 ## Bandit Level - 17
+
+<img src="/images/blogimages/2019-04-24/bandit17q.PNG">
 
 As per the challenge, you need to find out the service that is running between the port 31000 to 32000 that speaks to SSL. Better off with `nmap` and with `--open` flag, the open ports can be found. After finding the open port, connect to the service using `openssl` and then paste the password of **Bandit Level - 16** to obtain the RSA Private Key for the user **_bandit17_**. Once you retrieve the private key, copy the private key file to the **/tmp** directory and connect to localhost using SSH private key file you just copied and login as user **_bandit17_**. As you try to do this step, your request will be rejected as precautionary safety measure. Since your private key file is in the **/tmp** directory and is readable by other users, you should make sure that is readable only by **you**. For this, you will be using the `chmod` command as shown. After assigning the appropriate permissions for your private key file, you will be able to authenticate as **_bandit17_**. After logging, the password for the user can be read from the usual **/etc/bandit_pass/** directory.
 
@@ -213,6 +248,8 @@ As per the challenge, you need to find out the service that is running between t
 
 ## Bandit Level - 18
 
+<img src="/images/blogimages/2019-04-24/bandit18q.PNG">
+
 Your home directory consists of two files, the password to the next level is stored in the **passwords.new** file and there is a condition regarding a _change_. So we use a `diff` command to reveal the password for the next level.
 
 <img src="/images/blogimages/2019-04-24/bandit18.PNG">
@@ -220,6 +257,8 @@ Your home directory consists of two files, the password to the next level is sto
 > Password: `kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd`
 
 ## Bandit Level - 19
+
+<img src="/images/blogimages/2019-04-24/bandit19q.PNG">
 
 With the above password you will be able to SSH as user **_bandit19_** , but as soon as you authenticate the code under ~/.bashrc on the home directory of the **_bandit19_** executes and terminates the connection. Also, it seems that there is file named **readme** on the home directory which has the password to the next level. To tackle this, make use of `-t` argument along with the SSH connection.
 
@@ -231,6 +270,8 @@ _For WeChall Users Only:_ If you are playing **wechall** challenges, then you co
 
 ## Bandit Level - 20
 
+<img src="/images/blogimages/2019-04-24/bandit20q.PNG">
+
 You will find a Self-Executable file under your home directory. This can be found when you run the `file` command on it. When you do `id` command with that you see that the file has EID (Effective ID as a different user ID **_bandit20_** , which gives you a pointer that this file can run commands as user **_bandit20_**). So make use of this opportunity and `cat` the password file to reveal the password for next level.
 
 <img src="/images/blogimages/2019-04-24/bandit20.PNG">
@@ -238,6 +279,8 @@ You will find a Self-Executable file under your home directory. This can be foun
 > Password: `GbKksEFF4yrVs6il55v6gwY5aVje5f0j`
 
 ## Bandit Level - 21
+
+<img src="/images/blogimages/2019-04-24/bandit21q.PNG">
 
 To complete this challenge, make yourself comfortable with the `screen` command. The target is running a service which will connect to any port on the localhost that you specify.
 1. First run `screen` command, now you are inside separate process so run a `netcat` listening service as `nc localhost -p9090 -vvl`
@@ -258,6 +301,8 @@ To complete this challenge, make yourself comfortable with the `screen` command.
 
 ## Bandit Level - 22
 
+<img src="/images/blogimages/2019-04-24/bandit22q.PNG">
+
 All you need is to read and analyze the cron job file. Since you need the password for **Bandit Level - 22**, you ought to look into the file **cronjob_bandit22.sh**. From the cron job file you see that, the password is being written to a file in the **/tmp** directory. Everything here is straightforward and no twists.
 
 <img src="/images/blogimages/2019-04-24/bandit22.PNG">
@@ -266,6 +311,8 @@ All you need is to read and analyze the cron job file. Since you need the passwo
 
 ## Bandit Level - 23
 
+<img src="/images/blogimages/2019-04-24/bandit23q.PNG">
+
 As the challenge suggests, make a copy of the bash script **cronjob_bandit23.sh** that is under the **/usr/bin** directory. Copy the contents of the script, create a folder under for you under the **/tmp** directory and paste the contents of the script under a test script named **test.sh**, give it executable permission using `chmod +x`. Run the script and note the output hash after the **/tmp** directory. Now, doing a `cat` on the file which was created by the script under the **/tmp** directory reveals the password of **Bandit Level - 22** , so in this case by replacing the `whoami` command to `bandit23` will reveal the path of the hash that will be created under the **/tmp** directory. By doing a `cat` command on that particular hash will lead to the password for the next level.
 
 <img src="/images/blogimages/2019-04-24/bandit23.PNG">
@@ -273,6 +320,8 @@ As the challenge suggests, make a copy of the bash script **cronjob_bandit23.sh*
 > Password: `jc1udXuA1tiHqjIsL8yaapX5XIAI6i0n`
 
 ## Bandit Level - 24
+
+<img src="/images/blogimages/2019-04-24/bandit24q.PNG">
 
 An interesting level. The cron job executes this file **cronjob_bandit24.sh** that is under the **/usr/bin** directory, that frequently deletes the user created scripts under the folder **/var/spool/bandit24** directory.
 
@@ -296,6 +345,8 @@ Code Explained: Since the cron job will make the code run with the privileges of
 
 
 ## Bandit Level - 25
+
+<img src="/images/blogimages/2019-04-24/bandit25q.PNG">
 
 Another beautiful level that lets you under the concept of **Brute-Forcing**. A service is running on the port 30002 that takes the password of **Bandit Level - 24**  and a four digit number ranging from **0000** to **9999** separated by a space in between. So you need to write a program that generates all the **10000** numbers to a file and subject that file as input to the service that is running on the port 30002.
 
@@ -375,6 +426,8 @@ After running the command `cat numberfile | nc 127.0.0.1 30002 > output.txt`, we
 
 ## Bandit Level - 26
 
+<img src="/images/blogimages/2019-04-24/bandit26q.PNG">
+
 Honestly, this was the toughest challenge for me on the whole **Bandit** box, took me a couple of days to think _**laterally**_ and overcome this challenge.
 
 In the home directory of bandit25, you will find the private key of user **_bandit26_**, when you login with `ssh bandit26@localhost -i bandit26.sshkey` , you will authenticated and immediately logged out. You will see a certain amount of text before you logout. Even if you add the `-t` argument while doing SSH, still you won't be able to complete this level. This is where you need to think **more**.
@@ -412,6 +465,8 @@ You need to make use of `more` command. Follow these steps to complete the chall
 
 ## Bandit Level - 27
 
+<img src="/images/blogimages/2019-04-24/bandit27q.PNG">
+
 This is a straightforward level and is similar to **Bandit Level - 18**, use the Self-Executable binary to `cat` the password from the usual **/etc/bandit_pass** directory.
 
 <img src="/images/blogimages/2019-04-24/bandit27.PNG">
@@ -419,6 +474,8 @@ This is a straightforward level and is similar to **Bandit Level - 18**, use the
 > Password: `3ba3118a22e93127a4ed485be72ef5ea`
 
 ## Bandit Level - 28
+
+<img src="/images/blogimages/2019-04-24/bandit28q.PNG">
 
 Hail Git! The upcoming four to five consecutive challenges will be totally focused towards `git` commands. So if you have been contributing to open-source community in the past, these forthcoming levels would be a glide in the air.
 
@@ -434,6 +491,8 @@ The `git clone` command lets you complete the level. It clones the repository to
 
 ## Bandit Level - 29
 
+<img src="/images/blogimages/2019-04-24/bandit29q.PNG">
+
 After downloading the repository and doing a `cat` command on **README.md**, you notice that the password has been masked.
 As you know GIT is a version system and it keeps track of all changes to the file as **_commits_**. You can view list of commits done to the file by issuing the command `git log`.
 
@@ -447,6 +506,8 @@ You can see there are 3 different commits done to the file. Inspect each of the 
 > Password: `bbc96594b4e001778eee9975372716b2`
 
 ## Bandit Level - 30
+
+<img src="/images/blogimages/2019-04-24/bandit30q.PNG">
 
 After downloading the repository and doing a `cat` command on **README.md**, it shows that _password is not in the production_. This clearly tells us to see elsewhere in the development branch areas.
 1. Run the command `ls -lia` to find the hidden directory **.git**.
@@ -464,6 +525,8 @@ After downloading the repository and doing a `cat` command on **README.md**, it 
 
 ## Bandit Level - 31
 
+<img src="/images/blogimages/2019-04-24/bandit31q.PNG">
+
 I totally don't understand the purpose of this challenge as it is very similar to **Bandit Level - 30** challenge. Follow the same procedure the obtain the password for the next level.
 
 <img src="/images/blogimages/2019-04-24/bandit31.PNG">
@@ -471,6 +534,8 @@ I totally don't understand the purpose of this challenge as it is very similar t
 > Password: `47e603bb428404d265f59c42920d81e5`
 
 ## Bandit Level - 32
+
+<img src="/images/blogimages/2019-04-24/bandit32q.PNG">
 
 In this challenge, you need to push a file named **key.txt** to the root directory of the remote git using the content provided. You could follow these commands.
 1. This command `echo 'May I come in?' > key.txt` creates a file **key.txt** and writes the content inside it.
@@ -488,6 +553,8 @@ In this challenge, you need to push a file named **key.txt** to the root directo
 > Password: `56a9bf19c63d650ce78e6ec0354ee45e`
 
 ## Bandit Level - 33
+
+<img src="/images/blogimages/2019-04-24/bandit33q.PNG">
 
 The final level of Bandit box as of April 2019. Interesting level as it converts all the commands to uppercase rendering the output useless. This challenge can be solved by making use of one of the **Bash Special Parameters** listed below.
 - `$*`
