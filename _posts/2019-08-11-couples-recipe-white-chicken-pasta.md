@@ -13,7 +13,7 @@ comments: true
 featured: false
 ---
 
-No more a bachelor now :D, this is one of the first recipes my [Wifey](https://www.instagram.com/bhava_dhaarani) and I had tried out. As it turned out to be delicious and quite easy to prepare, we thought of sharing it with the community. So let's get started.
+No more a bachelor now :D, this is one of the first recipes my [Wifey](https://www.instagram.com/bhava_dhaarani) @bhava_dhaarani and I had tried out. As it turned out to be delicious and quite easy to prepare, we thought of sharing it with the community. So let's get started.
 
 ## Ingredients
 
