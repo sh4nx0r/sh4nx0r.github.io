@@ -38,6 +38,11 @@ callback([
   {
     "text": "CaptureTheFlag #1: 'Bandit' Walkthrough for OverTheWire.Org",
     "href": "http://localhost:4000/infosec/capture-the-flag-bandit-overthewireorg"
+  } ,
+
+  {
+    "text": "Couple's Recipe #3: The Luscious White Chicken Pasta.",
+    "href": "http://localhost:4000/recipe/couples-recipe-white-chicken-pasta"
   } 
 
 ])

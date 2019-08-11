@@ -1,6 +1,14 @@
 [
 	
 		{
+		  "title"      : "Couple&#39;s Recipe #3: The Luscious White Chicken Pasta.",
+		  "category"   : "recipe",
+		  "url"        : "http://localhost:4000/recipe/couples-recipe-white-chicken-pasta",
+		  "date"       : "2019-08-11 00:00:00 +0530",
+		  "shortdate"  : "August 11, 2019"
+		} ,
+	
+		{
 		  "title"      : "CaptureTheFlag #1: &#39;Bandit&#39; Walkthrough for OverTheWire.Org",
 		  "category"   : "infosec",
 		  "url"        : "http://localhost:4000/infosec/capture-the-flag-bandit-overthewireorg",
