@@ -5,30 +5,30 @@
 
 <title type="text"><b><font size='5.75em'>Inventor<font color='yellow' size='6.75em'>.</font> Biker<font color='yellow' size='6.75em'>.</font> Foodie<font color='yellow' size='6.75em'>.</font> h4ck3r<font color='yellow' size='6.75em'>.</font> Wanderlust<font color='yellow' size='6.75em'>. </font> </font><p>Sometimes....<span id='changingword'>I wanna be just ME.</span></p></title>
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
-<link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
-<link rel="alternate" type="text/html" href="http://localhost:4000/" />
-<updated>2019-08-11T20:53:00+05:30</updated>
-<id>http://localhost:4000/</id>
+<link rel="self" type="application/atom+xml" href="/feed.xml" />
+<link rel="alternate" type="text/html" href="/" />
+<updated>2022-08-30T16:06:57+05:30</updated>
+<id>/</id>
 <author>
   <name>Shankar Damodaran</name>
-  <uri>http://localhost:4000/</uri>
+  <uri>/</uri>
   <email>d.shankarnarayana@gmail.com</email>
 </author>
 
 
 <entry>
   <title type="html"><![CDATA[Couple's Recipe #3: The Luscious White Chicken Pasta.]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/recipe/couples-recipe-white-chicken-pasta"/>
-  <id>http://localhost:4000/recipe/couples-recipe-white-chicken-pasta</id>
+  <link rel="alternate" type="text/html" href="/recipe/couples-recipe-white-chicken-pasta"/>
+  <id>/recipe/couples-recipe-white-chicken-pasta</id>
   <published>2019-08-11T00:00:00+05:30</published>
   <updated>2019-08-11T00:00:00-00:00</updated>
   
   <author>
     <name>Shankar Damodaran</name>
-    <uri>http://localhost:4000</uri>
+    <uri></uri>
     <email>d.shankarnarayana@gmail.com</email>
   </author>
-  <category scheme="http://localhost:4000/tags/#cooking" term="cooking" /><category scheme="http://localhost:4000/tags/#couple's%20recipe" term="couple's recipe" /><category scheme="http://localhost:4000/tags/#chicken" term="chicken" /><category scheme="http://localhost:4000/tags/#italian%20recipe" term="italian recipe" /><category scheme="http://localhost:4000/tags/#recipe" term="recipe" /><category scheme="http://localhost:4000/tags/#pasta" term="pasta" />
+  <category scheme="/tags/#cooking" term="cooking" /><category scheme="/tags/#couple's%20recipe" term="couple's recipe" /><category scheme="/tags/#chicken" term="chicken" /><category scheme="/tags/#italian%20recipe" term="italian recipe" /><category scheme="/tags/#recipe" term="recipe" /><category scheme="/tags/#pasta" term="pasta" />
   <content type="html">
   
     &lt;p&gt;No more a bachelor now :D, this is one of the first recipes my &lt;a href=&quot;https://www.instagram.com/bhava_dhaarani&quot;&gt;Wifey&lt;/a&gt; @bhava_dhaarani and I had tried out. As it turned out to be delicious and quite easy to prepare, we thought of sharing it with the community. So let’s get started.&lt;/p&gt;
@@ -260,23 +260,23 @@ Keep sautéing till the mixture turns to a thick fluidized form.&lt;/p&gt;
 &lt;hr /&gt;
 
   
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/recipe/couples-recipe-white-chicken-pasta&quot;&gt;Couple's Recipe #3: The Luscious White Chicken Pasta.&lt;/a&gt; was originally published by Shankar Damodaran at &lt;a href=&quot;http://localhost:4000&quot;&gt;<b><font size='5.75em'>Inventor<font color='yellow' size='6.75em'>.</font> Biker<font color='yellow' size='6.75em'>.</font> Foodie<font color='yellow' size='6.75em'>.</font> h4ck3r<font color='yellow' size='6.75em'>.</font> Wanderlust<font color='yellow' size='6.75em'>. </font> </font><p>Sometimes....<span id='changingword'>I wanna be just ME.</span></p>&lt;/a&gt; on August 11, 2019.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;/recipe/couples-recipe-white-chicken-pasta&quot;&gt;Couple's Recipe #3: The Luscious White Chicken Pasta.&lt;/a&gt; was originally published by Shankar Damodaran at &lt;a href=&quot;&quot;&gt;<b><font size='5.75em'>Inventor<font color='yellow' size='6.75em'>.</font> Biker<font color='yellow' size='6.75em'>.</font> Foodie<font color='yellow' size='6.75em'>.</font> h4ck3r<font color='yellow' size='6.75em'>.</font> Wanderlust<font color='yellow' size='6.75em'>. </font> </font><p>Sometimes....<span id='changingword'>I wanna be just ME.</span></p>&lt;/a&gt; on August 11, 2019.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[CaptureTheFlag #1: 'Bandit' Walkthrough for OverTheWire.Org]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/infosec/capture-the-flag-bandit-overthewireorg"/>
-  <id>http://localhost:4000/infosec/capture-the-flag-bandit-overthewireorg</id>
+  <link rel="alternate" type="text/html" href="/infosec/capture-the-flag-bandit-overthewireorg"/>
+  <id>/infosec/capture-the-flag-bandit-overthewireorg</id>
   <published>2019-04-19T00:00:00+05:30</published>
   <updated>2019-04-24T00:00:00-00:00</updated>
   
   <author>
     <name>Shankar Damodaran</name>
-    <uri>http://localhost:4000</uri>
+    <uri></uri>
     <email>d.shankarnarayana@gmail.com</email>
   </author>
-  <category scheme="http://localhost:4000/tags/#linux" term="linux" /><category scheme="http://localhost:4000/tags/#bash" term="bash" /><category scheme="http://localhost:4000/tags/#code" term="code" /><category scheme="http://localhost:4000/tags/#sh" term="sh" /><category scheme="http://localhost:4000/tags/#capturetheflag" term="capturetheflag" /><category scheme="http://localhost:4000/tags/#walkthrough" term="walkthrough" /><category scheme="http://localhost:4000/tags/#bandit" term="bandit" />
+  <category scheme="/tags/#linux" term="linux" /><category scheme="/tags/#bash" term="bash" /><category scheme="/tags/#code" term="code" /><category scheme="/tags/#sh" term="sh" /><category scheme="/tags/#capturetheflag" term="capturetheflag" /><category scheme="/tags/#walkthrough" term="walkthrough" /><category scheme="/tags/#bandit" term="bandit" />
   <content type="html">
   
     &lt;p&gt;This is one of the first &lt;strong&gt;&lt;em&gt;CaptureTheFlag&lt;/em&gt;&lt;/strong&gt; challenges of &lt;a href=&quot;http://www.overthewire.org&quot;&gt;OverTheWire.org&lt;/a&gt; Team. This write-up contains information on how to solve the challenges of &lt;strong&gt;&lt;a href=&quot;http://www.overthewire.org/wargames/bandit/&quot;&gt;Bandit&lt;/a&gt;&lt;/strong&gt; wargames, most importantly this post &lt;strong&gt;does&lt;/strong&gt; contain spoilers so use this walkthrough only if you &lt;em&gt;really&lt;/em&gt; need to. However, I strongly suggest not to read this write-up if you are planning to take up the challenge.&lt;/p&gt;
@@ -291,68 +291,68 @@ Keep sautéing till the mixture turns to a thick fluidized form.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit1q.PNG&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Simply SSH with the login credentials that was provided on Level 0. Use the below command to SSH to the host and once you have successfully logged in, do an &lt;code class=&quot;highlighter-rouge&quot;&gt;ls&lt;/code&gt; command to find out any files laying around the current directory. As you discover a file named &lt;strong&gt;readme&lt;/strong&gt;, run the &lt;code class=&quot;highlighter-rouge&quot;&gt;cat&lt;/code&gt; command to display the contents of the file. The following commands let you complete the first level.&lt;/p&gt;
+&lt;p&gt;Simply SSH with the login credentials that was provided on Level 0. Use the below command to SSH to the host and once you have successfully logged in, do an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ls&lt;/code&gt; command to find out any files laying around the current directory. As you discover a file named &lt;strong&gt;readme&lt;/strong&gt;, run the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cat&lt;/code&gt; command to display the contents of the file. The following commands let you complete the first level.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ssh bandit0@bandit.labs.overthewire.org -p 2220&lt;/code&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ssh bandit0@bandit.labs.overthewire.org -p 2220&lt;/code&gt;
 &lt;br /&gt;
-&lt;code class=&quot;highlighter-rouge&quot;&gt;ls&lt;/code&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ls&lt;/code&gt;
 &lt;br /&gt;
-&lt;code class=&quot;highlighter-rouge&quot;&gt;cat readme&lt;/code&gt;&lt;/p&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cat readme&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit1.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Password: &lt;code class=&quot;highlighter-rouge&quot;&gt;boJ9jbbUNNfktd78OOpsqOltutMc3MY1&lt;/code&gt;&lt;/p&gt;
+  &lt;p&gt;Password: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;boJ9jbbUNNfktd78OOpsqOltutMc3MY1&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;bandit-level---2&quot;&gt;Bandit Level - 2&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit2q.PNG&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Use the above password to SSH in as user &lt;code class=&quot;highlighter-rouge&quot;&gt;bandit1&lt;/code&gt;. Your password to the next level will be stored in the same directory with a filename &lt;code class=&quot;highlighter-rouge&quot;&gt;-&lt;/code&gt; (just a dash or hyphen). Well, if you do a &lt;code class=&quot;highlighter-rouge&quot;&gt;cat&lt;/code&gt; command or &lt;code class=&quot;highlighter-rouge&quot;&gt;vi&lt;/code&gt; on the &lt;code class=&quot;highlighter-rouge&quot;&gt;-&lt;/code&gt;, you will be getting an indefinitely waiting prompt. The linux kernel does not recognize when a &lt;code class=&quot;highlighter-rouge&quot;&gt;-&lt;/code&gt; is in conjunction with &lt;code class=&quot;highlighter-rouge&quot;&gt;cat&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;vi&lt;/code&gt; commands. To solve this challenge, try to access this file with the full path name. Use &lt;code class=&quot;highlighter-rouge&quot;&gt;pwd&lt;/code&gt; command to know the current directory you are in. Copy the full path of the &lt;code class=&quot;highlighter-rouge&quot;&gt;pwd&lt;/code&gt; output and concatenate along with &lt;code class=&quot;highlighter-rouge&quot;&gt;-&lt;/code&gt; filename and run the command to get the password.&lt;/p&gt;
+&lt;p&gt;Use the above password to SSH in as user &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bandit1&lt;/code&gt;. Your password to the next level will be stored in the same directory with a filename &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-&lt;/code&gt; (just a dash or hyphen). Well, if you do a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cat&lt;/code&gt; command or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vi&lt;/code&gt; on the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-&lt;/code&gt;, you will be getting an indefinitely waiting prompt. The linux kernel does not recognize when a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-&lt;/code&gt; is in conjunction with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cat&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vi&lt;/code&gt; commands. To solve this challenge, try to access this file with the full path name. Use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pwd&lt;/code&gt; command to know the current directory you are in. Copy the full path of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pwd&lt;/code&gt; output and concatenate along with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-&lt;/code&gt; filename and run the command to get the password.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit2.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Password: &lt;code class=&quot;highlighter-rouge&quot;&gt;CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9&lt;/code&gt;&lt;/p&gt;
+  &lt;p&gt;Password: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;bandit-level---3&quot;&gt;Bandit Level - 3&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit3q.PNG&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;This challenge is pretty straightforward as the filename that has password has &lt;strong&gt;spaces&lt;/strong&gt; in between. To use the &lt;code class=&quot;highlighter-rouge&quot;&gt;cat&lt;/code&gt; command on this filename, wrap the filename with single quotes or double quotes and run the command to get the password for the next level.&lt;/p&gt;
+&lt;p&gt;This challenge is pretty straightforward as the filename that has password has &lt;strong&gt;spaces&lt;/strong&gt; in between. To use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cat&lt;/code&gt; command on this filename, wrap the filename with single quotes or double quotes and run the command to get the password for the next level.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit3.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Password: &lt;code class=&quot;highlighter-rouge&quot;&gt;UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK&lt;/code&gt;&lt;/p&gt;
+  &lt;p&gt;Password: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;bandit-level---4&quot;&gt;Bandit Level - 4&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit4q.PNG&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;In this challenge, the password file is stored inside the same directory named &lt;strong&gt;inhere&lt;/strong&gt;. This directory has a hidden file inside this &lt;strong&gt;inhere&lt;/strong&gt; directory. Run the command &lt;code class=&quot;highlighter-rouge&quot;&gt;ls&lt;/code&gt; with &lt;code class=&quot;highlighter-rouge&quot;&gt;-a&lt;/code&gt; flag to view the hidden files present in the directory.&lt;/p&gt;
+&lt;p&gt;In this challenge, the password file is stored inside the same directory named &lt;strong&gt;inhere&lt;/strong&gt;. This directory has a hidden file inside this &lt;strong&gt;inhere&lt;/strong&gt; directory. Run the command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ls&lt;/code&gt; with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-a&lt;/code&gt; flag to view the hidden files present in the directory.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit4.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Password: &lt;code class=&quot;highlighter-rouge&quot;&gt;pIwrPrtPN36QITSp3EQaw936yaFoFgAB&lt;/code&gt;&lt;/p&gt;
+  &lt;p&gt;Password: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pIwrPrtPN36QITSp3EQaw936yaFoFgAB&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;bandit-level---5&quot;&gt;Bandit Level - 5&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit5q.PNG&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;You will find a directory named &lt;strong&gt;inhere&lt;/strong&gt; which has a couple of files laying around. If you do a &lt;code class=&quot;highlighter-rouge&quot;&gt;cat&lt;/code&gt; on the first file to check the password, you will be presented with some non-readable characters. Doing a &lt;code class=&quot;highlighter-rouge&quot;&gt;cat&lt;/code&gt; on each and every file is one way to get the password, but consider if there are a million files then the above will not be an ideal solution. In this case, let us write a small code to inspect the file type of the files using the &lt;code class=&quot;highlighter-rouge&quot;&gt;file&lt;/code&gt; command and check whether the file has &lt;code class=&quot;highlighter-rouge&quot;&gt;ASCII&lt;/code&gt; property (in other ways readable files as the challenge suggests).&lt;/p&gt;
+&lt;p&gt;You will find a directory named &lt;strong&gt;inhere&lt;/strong&gt; which has a couple of files laying around. If you do a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cat&lt;/code&gt; on the first file to check the password, you will be presented with some non-readable characters. Doing a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cat&lt;/code&gt; on each and every file is one way to get the password, but consider if there are a million files then the above will not be an ideal solution. In this case, let us write a small code to inspect the file type of the files using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;file&lt;/code&gt; command and check whether the file has &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ASCII&lt;/code&gt; property (in other ways readable files as the challenge suggests).&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;find -exec file {} + | grep ASCII&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;find -exec file {} + | grep ASCII&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit5.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Password: &lt;code class=&quot;highlighter-rouge&quot;&gt;koReBOKuIDDepwhWk7jZC0RTdopnAYKh&lt;/code&gt;&lt;/p&gt;
+  &lt;p&gt;Password: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;koReBOKuIDDepwhWk7jZC0RTdopnAYKh&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;bandit-level---6&quot;&gt;Bandit Level - 6&lt;/h2&gt;
@@ -361,23 +361,23 @@ Keep sautéing till the mixture turns to a thick fluidized form.&lt;/p&gt;
 
 &lt;p&gt;This challenge has certain rules to retrieve the password, to my luck one of the rule was more than enough to solve the challenge. (&lt;em&gt;One of the criteria is the filesize should be around 1033 bytes in size&lt;/em&gt;)&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;find . -size 1033c&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;find . -size 1033c&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit6.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Password: &lt;code class=&quot;highlighter-rouge&quot;&gt;DXjZPULLxYr17uwoI01bNLQbtFemEgo7&lt;/code&gt;&lt;/p&gt;
+  &lt;p&gt;Password: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DXjZPULLxYr17uwoI01bNLQbtFemEgo7&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;bandit-level---7&quot;&gt;Bandit Level - 7&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit7q.PNG&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Almost a similar challenge to the above, all you need is to give greater importance to &lt;code class=&quot;highlighter-rouge&quot;&gt;man&lt;/code&gt; for &lt;code class=&quot;highlighter-rouge&quot;&gt;find&lt;/code&gt; command to know what attributes to be used for retrieving the password.&lt;/p&gt;
+&lt;p&gt;Almost a similar challenge to the above, all you need is to give greater importance to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;man&lt;/code&gt; for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;find&lt;/code&gt; command to know what attributes to be used for retrieving the password.&lt;/p&gt;
 
-&lt;p&gt;The below code finds all files which are 33 in bytes and is owned by the user &lt;strong&gt;bandit7&lt;/strong&gt; and belongs to the group &lt;strong&gt;bandit6&lt;/strong&gt;. Now go to the root directory by entering the command &lt;code class=&quot;highlighter-rouge&quot;&gt;cd /&lt;/code&gt; and then run the below command.&lt;/p&gt;
+&lt;p&gt;The below code finds all files which are 33 in bytes and is owned by the user &lt;strong&gt;bandit7&lt;/strong&gt; and belongs to the group &lt;strong&gt;bandit6&lt;/strong&gt;. Now go to the root directory by entering the command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cd /&lt;/code&gt; and then run the below command.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;find . -size 33c -user 'bandit7' -group 'bandit6'&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;find . -size 33c -user 'bandit7' -group 'bandit6'&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit7_1.PNG&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;
@@ -387,77 +387,77 @@ Keep sautéing till the mixture turns to a thick fluidized form.&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Password: &lt;code class=&quot;highlighter-rouge&quot;&gt;HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs&lt;/code&gt;&lt;/p&gt;
+  &lt;p&gt;Password: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;bandit-level---8&quot;&gt;Bandit Level - 8&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit8q.PNG&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;You need to find the password hidden inside the file &lt;strong&gt;data.txt&lt;/strong&gt; which is rightfully available under the very same directory. The only hint available is the password is next to the word &lt;em&gt;millionth&lt;/em&gt; , thus by doing by simple &lt;code class=&quot;highlighter-rouge&quot;&gt;grep&lt;/code&gt; command we would be able to retrieve the password.&lt;/p&gt;
+&lt;p&gt;You need to find the password hidden inside the file &lt;strong&gt;data.txt&lt;/strong&gt; which is rightfully available under the very same directory. The only hint available is the password is next to the word &lt;em&gt;millionth&lt;/em&gt; , thus by doing by simple &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;grep&lt;/code&gt; command we would be able to retrieve the password.&lt;/p&gt;
 
-&lt;p&gt;The code: &lt;code class=&quot;highlighter-rouge&quot;&gt;grep 'millionth' data.txt&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The code: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;grep 'millionth' data.txt&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit8.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Password: &lt;code class=&quot;highlighter-rouge&quot;&gt;cvX2JJa4CFALtqS87jk27qwqGhBM9plV&lt;/code&gt;&lt;/p&gt;
+  &lt;p&gt;Password: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cvX2JJa4CFALtqS87jk27qwqGhBM9plV&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;bandit-level---9&quot;&gt;Bandit Level - 9&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit9q.PNG&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Once again the password is hidden under the file &lt;strong&gt;data.txt&lt;/strong&gt; which has almost 1000 lines with patterns similar to level passwords. The challenge gives us a single hint, saying that the password to next level which is stored inside the file is repeated only once. This gives us an opportunity to use the &lt;code class=&quot;highlighter-rouge&quot;&gt;uniq&lt;/code&gt; command which displays unique results from any file that is provided as input. However, &lt;code class=&quot;highlighter-rouge&quot;&gt;sort&lt;/code&gt; command is first used to sort out the results and we then pipe the input to the &lt;code class=&quot;highlighter-rouge&quot;&gt;uniq&lt;/code&gt; command to get the results. The below code gets you the password.&lt;/p&gt;
+&lt;p&gt;Once again the password is hidden under the file &lt;strong&gt;data.txt&lt;/strong&gt; which has almost 1000 lines with patterns similar to level passwords. The challenge gives us a single hint, saying that the password to next level which is stored inside the file is repeated only once. This gives us an opportunity to use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;uniq&lt;/code&gt; command which displays unique results from any file that is provided as input. However, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sort&lt;/code&gt; command is first used to sort out the results and we then pipe the input to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;uniq&lt;/code&gt; command to get the results. The below code gets you the password.&lt;/p&gt;
 
-&lt;p&gt;The code: &lt;code class=&quot;highlighter-rouge&quot;&gt;sort data.txt | uniq -u&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The code: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sort data.txt | uniq -u&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit9.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Password: &lt;code class=&quot;highlighter-rouge&quot;&gt;UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR&lt;/code&gt;&lt;/p&gt;
+  &lt;p&gt;Password: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;bandit-level---10&quot;&gt;Bandit Level - 10&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit10q.PNG&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Almost a straightforward challenge, you can even issue a &lt;code class=&quot;highlighter-rouge&quot;&gt;cat&lt;/code&gt; command on the &lt;strong&gt;data.txt&lt;/strong&gt; file to view the contents and search for a series of &lt;em&gt;=&lt;/em&gt;. The password will be right next there. However, for better readability, I recommend using &lt;code class=&quot;highlighter-rouge&quot;&gt;xxd&lt;/code&gt; command on the data file.&lt;/p&gt;
+&lt;p&gt;Almost a straightforward challenge, you can even issue a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cat&lt;/code&gt; command on the &lt;strong&gt;data.txt&lt;/strong&gt; file to view the contents and search for a series of &lt;em&gt;=&lt;/em&gt;. The password will be right next there. However, for better readability, I recommend using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xxd&lt;/code&gt; command on the data file.&lt;/p&gt;
 
-&lt;p&gt;The code: &lt;code class=&quot;highlighter-rouge&quot;&gt;xxd data.txt&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The code: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xxd data.txt&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit10.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Password: &lt;code class=&quot;highlighter-rouge&quot;&gt;truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk&lt;/code&gt;&lt;/p&gt;
+  &lt;p&gt;Password: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;bandit-level---11&quot;&gt;Bandit Level - 11&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit11q.PNG&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Another simpler challenge, this is about encoding and decoding. The file that contains the password is encoded using Base64 Algorithm. As we all know, Base64 has a decoding algorithm as well, make use of the command &lt;code class=&quot;highlighter-rouge&quot;&gt;base64&lt;/code&gt; with &lt;code class=&quot;highlighter-rouge&quot;&gt;-d&lt;/code&gt; flag on the encoded file to retrieve the password.&lt;/p&gt;
+&lt;p&gt;Another simpler challenge, this is about encoding and decoding. The file that contains the password is encoded using Base64 Algorithm. As we all know, Base64 has a decoding algorithm as well, make use of the command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;base64&lt;/code&gt; with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-d&lt;/code&gt; flag on the encoded file to retrieve the password.&lt;/p&gt;
 
-&lt;p&gt;The Code: &lt;code class=&quot;highlighter-rouge&quot;&gt;base64 -d data.txt&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The Code: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;base64 -d data.txt&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit11.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Password: &lt;code class=&quot;highlighter-rouge&quot;&gt;IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR&lt;/code&gt;&lt;/p&gt;
+  &lt;p&gt;Password: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;bandit-level---12&quot;&gt;Bandit Level - 12&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit12q.PNG&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;This challenge is based on substitution algorithm known as &lt;strong&gt;ROT-13&lt;/strong&gt;. The password contained with the file &lt;strong&gt;data.txt&lt;/strong&gt; has been encoded using the ROT-13 algorithm. The below command makes use of the &lt;code class=&quot;highlighter-rouge&quot;&gt;tr&lt;/code&gt; command to retrieve the plain text from the file. As we have  26 alphabets, dividing by 2 gives 13 (2 Sets). Set 1: A-M and Set 2: N-Z. Working of the ROT-13 algorithm is very simple, For encoding purposes, the characters from the first set (Set 1) is replaced with the characters in (Set 2), and the decoding process is as simple as it is. For eg: A will be encoded to N, G will be encoded to T, vice-versa. Make use of the below code to solve the challenge.&lt;/p&gt;
+&lt;p&gt;This challenge is based on substitution algorithm known as &lt;strong&gt;ROT-13&lt;/strong&gt;. The password contained with the file &lt;strong&gt;data.txt&lt;/strong&gt; has been encoded using the ROT-13 algorithm. The below command makes use of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tr&lt;/code&gt; command to retrieve the plain text from the file. As we have  26 alphabets, dividing by 2 gives 13 (2 Sets). Set 1: A-M and Set 2: N-Z. Working of the ROT-13 algorithm is very simple, For encoding purposes, the characters from the first set (Set 1) is replaced with the characters in (Set 2), and the decoding process is as simple as it is. For eg: A will be encoded to N, G will be encoded to T, vice-versa. Make use of the below code to solve the challenge.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;cat data.txt |  tr '[A-Za-z]' '[N-ZA-Mn-za-m]'&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cat data.txt |  tr '[A-Za-z]' '[N-ZA-Mn-za-m]'&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit12.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Password: &lt;code class=&quot;highlighter-rouge&quot;&gt;5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu&lt;/code&gt;&lt;/p&gt;
+  &lt;p&gt;Password: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;bandit-level---13&quot;&gt;Bandit Level - 13&lt;/h2&gt;
@@ -466,13 +466,13 @@ Keep sautéing till the mixture turns to a thick fluidized form.&lt;/p&gt;
 
 &lt;p&gt;It was quite a good challenge. After logging in, you will have the file &lt;strong&gt;data.txt&lt;/strong&gt; on the home directory. You will be making use of &lt;strong&gt;/tmp&lt;/strong&gt; directory because, it has world-writable access, as you need to do some decompression according to the algorithm. (&lt;em&gt;Guess I gave some hint&lt;/em&gt;).&lt;/p&gt;
 
-&lt;p&gt;By doing a &lt;code class=&quot;highlighter-rouge&quot;&gt;cat&lt;/code&gt; command on the file, it seems like that the file is garbled up with some hex related data. Let us make use of the &lt;code class=&quot;highlighter-rouge&quot;&gt;xxd&lt;/code&gt; command we used it &lt;strong&gt;Bandit Level - 10&lt;/strong&gt; challenge.&lt;/p&gt;
+&lt;p&gt;By doing a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cat&lt;/code&gt; command on the file, it seems like that the file is garbled up with some hex related data. Let us make use of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xxd&lt;/code&gt; command we used it &lt;strong&gt;Bandit Level - 10&lt;/strong&gt; challenge.&lt;/p&gt;
 
-&lt;p&gt;Well, why are making use of &lt;code class=&quot;highlighter-rouge&quot;&gt;xxd&lt;/code&gt; command? &lt;em&gt;When you did a &lt;code class=&quot;highlighter-rouge&quot;&gt;cat&lt;/code&gt; command on the file, the contents of the file revealed &lt;strong&gt;data2.bin&lt;/strong&gt; and this is the ultimate reason we are using this.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Well, why are making use of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xxd&lt;/code&gt; command? &lt;em&gt;When you did a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cat&lt;/code&gt; command on the file, the contents of the file revealed &lt;strong&gt;data2.bin&lt;/strong&gt; and this is the ultimate reason we are using this.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;Since we need a directory to work with, Let us create a directory on the &lt;strong&gt;/tmp&lt;/strong&gt; folder. &lt;em&gt;Follow the commands to get the password&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;The crux behind the challenge is we analyze the file with &lt;code class=&quot;highlighter-rouge&quot;&gt;file&lt;/code&gt; command and notice the algorithm used for the compression and we then use the appropriate decompression algorithm to unravel the password.&lt;/p&gt;
+&lt;p&gt;The crux behind the challenge is we analyze the file with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;file&lt;/code&gt; command and notice the algorithm used for the compression and we then use the appropriate decompression algorithm to unravel the password.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit13_1.PNG&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;
@@ -480,14 +480,14 @@ Keep sautéing till the mixture turns to a thick fluidized form.&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Password: &lt;code class=&quot;highlighter-rouge&quot;&gt;8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL&lt;/code&gt;&lt;/p&gt;
+  &lt;p&gt;Password: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;bandit-level---14&quot;&gt;Bandit Level - 14&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit14q.PNG&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Pretty straightforward, your home directory will be having the private key of user &lt;strong&gt;bandit14&lt;/strong&gt;, all you need is to connect to the local SSH server with the private key file provided. After logging in, &lt;code class=&quot;highlighter-rouge&quot;&gt;cat&lt;/code&gt; the password from the usual &lt;strong&gt;/etc/bandit_pass/&lt;/strong&gt; directory.&lt;/p&gt;
+&lt;p&gt;Pretty straightforward, your home directory will be having the private key of user &lt;strong&gt;bandit14&lt;/strong&gt;, all you need is to connect to the local SSH server with the private key file provided. After logging in, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cat&lt;/code&gt; the password from the usual &lt;strong&gt;/etc/bandit_pass/&lt;/strong&gt; directory.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit14_1.PNG&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;
@@ -495,41 +495,41 @@ Keep sautéing till the mixture turns to a thick fluidized form.&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Password: &lt;code class=&quot;highlighter-rouge&quot;&gt;4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e&lt;/code&gt;&lt;/p&gt;
+  &lt;p&gt;Password: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;bandit-level---15&quot;&gt;Bandit Level - 15&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit15q.PNG&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;There seems a service running on the port 30000, it reveals the password for &lt;strong&gt;Bandit Level - 15&lt;/strong&gt; when the password of &lt;strong&gt;Bandit Level - 14&lt;/strong&gt; is subjected. This challenge lets you understand how to connect to any service and run commands. This challenge can be completed by using many tools like &lt;code class=&quot;highlighter-rouge&quot;&gt;nc&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;telnet&lt;/code&gt;, etc.&lt;/p&gt;
+&lt;p&gt;There seems a service running on the port 30000, it reveals the password for &lt;strong&gt;Bandit Level - 15&lt;/strong&gt; when the password of &lt;strong&gt;Bandit Level - 14&lt;/strong&gt; is subjected. This challenge lets you understand how to connect to any service and run commands. This challenge can be completed by using many tools like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nc&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;telnet&lt;/code&gt;, etc.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit15.PNG&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Password: &lt;code class=&quot;highlighter-rouge&quot;&gt;BfMYroe26WYalil77FoDi9qh59eK5xNr&lt;/code&gt;&lt;/p&gt;
+  &lt;p&gt;Password: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;BfMYroe26WYalil77FoDi9qh59eK5xNr&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;bandit-level---16&quot;&gt;Bandit Level - 16&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit16q.PNG&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;As the challenge clearly points out that a service is running on port 30001 that can speak SSL, make use of &lt;code class=&quot;highlighter-rouge&quot;&gt;openssl&lt;/code&gt; command to complete the challenge. Connect to localhost using &lt;code class=&quot;highlighter-rouge&quot;&gt;openssl&lt;/code&gt; on the port and provide the password of &lt;strong&gt;Bandit Level - 15&lt;/strong&gt; to unravel the password for &lt;strong&gt;Bandit Level - 16&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;As the challenge clearly points out that a service is running on port 30001 that can speak SSL, make use of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;openssl&lt;/code&gt; command to complete the challenge. Connect to localhost using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;openssl&lt;/code&gt; on the port and provide the password of &lt;strong&gt;Bandit Level - 15&lt;/strong&gt; to unravel the password for &lt;strong&gt;Bandit Level - 16&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit16_1.PNG&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit16_2.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Password: &lt;code class=&quot;highlighter-rouge&quot;&gt;cluFn7wTiGryunymYOu4RcffSxQluehd&lt;/code&gt;&lt;/p&gt;
+  &lt;p&gt;Password: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cluFn7wTiGryunymYOu4RcffSxQluehd&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;bandit-level---17&quot;&gt;Bandit Level - 17&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit17q.PNG&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;As per the challenge, you need to find out the service that is running between the port 31000 to 32000 that speaks to SSL. Better off with &lt;code class=&quot;highlighter-rouge&quot;&gt;nmap&lt;/code&gt; and with &lt;code class=&quot;highlighter-rouge&quot;&gt;--open&lt;/code&gt; flag, the open ports can be found. After finding the open port, connect to the service using &lt;code class=&quot;highlighter-rouge&quot;&gt;openssl&lt;/code&gt; and then paste the password of &lt;strong&gt;Bandit Level - 16&lt;/strong&gt; to obtain the RSA Private Key for the user &lt;strong&gt;&lt;em&gt;bandit17&lt;/em&gt;&lt;/strong&gt;. Once you retrieve the private key, copy the private key file to the &lt;strong&gt;/tmp&lt;/strong&gt; directory and connect to localhost using SSH private key file you just copied and login as user &lt;strong&gt;&lt;em&gt;bandit17&lt;/em&gt;&lt;/strong&gt;. As you try to do this step, your request will be rejected as precautionary safety measure. Since your private key file is in the &lt;strong&gt;/tmp&lt;/strong&gt; directory and is readable by other users, you should make sure that is readable only by &lt;strong&gt;you&lt;/strong&gt;. For this, you will be using the &lt;code class=&quot;highlighter-rouge&quot;&gt;chmod&lt;/code&gt; command as shown. After assigning the appropriate permissions for your private key file, you will be able to authenticate as &lt;strong&gt;&lt;em&gt;bandit17&lt;/em&gt;&lt;/strong&gt;. After logging, the password for the user can be read from the usual &lt;strong&gt;/etc/bandit_pass/&lt;/strong&gt; directory.&lt;/p&gt;
+&lt;p&gt;As per the challenge, you need to find out the service that is running between the port 31000 to 32000 that speaks to SSL. Better off with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nmap&lt;/code&gt; and with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--open&lt;/code&gt; flag, the open ports can be found. After finding the open port, connect to the service using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;openssl&lt;/code&gt; and then paste the password of &lt;strong&gt;Bandit Level - 16&lt;/strong&gt; to obtain the RSA Private Key for the user &lt;strong&gt;&lt;em&gt;bandit17&lt;/em&gt;&lt;/strong&gt;. Once you retrieve the private key, copy the private key file to the &lt;strong&gt;/tmp&lt;/strong&gt; directory and connect to localhost using SSH private key file you just copied and login as user &lt;strong&gt;&lt;em&gt;bandit17&lt;/em&gt;&lt;/strong&gt;. As you try to do this step, your request will be rejected as precautionary safety measure. Since your private key file is in the &lt;strong&gt;/tmp&lt;/strong&gt; directory and is readable by other users, you should make sure that is readable only by &lt;strong&gt;you&lt;/strong&gt;. For this, you will be using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;chmod&lt;/code&gt; command as shown. After assigning the appropriate permissions for your private key file, you will be able to authenticate as &lt;strong&gt;&lt;em&gt;bandit17&lt;/em&gt;&lt;/strong&gt;. After logging, the password for the user can be read from the usual &lt;strong&gt;/etc/bandit_pass/&lt;/strong&gt; directory.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit17_1.PNG&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;
@@ -541,58 +541,58 @@ Keep sautéing till the mixture turns to a thick fluidized form.&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Password: &lt;code class=&quot;highlighter-rouge&quot;&gt;xLYVMN9WE5zQ5vHacb0sZEVqbrp7nBTn&lt;/code&gt;&lt;/p&gt;
+  &lt;p&gt;Password: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xLYVMN9WE5zQ5vHacb0sZEVqbrp7nBTn&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;bandit-level---18&quot;&gt;Bandit Level - 18&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit18q.PNG&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Your home directory consists of two files, the password to the next level is stored in the &lt;strong&gt;passwords.new&lt;/strong&gt; file and there is a condition regarding a &lt;em&gt;change&lt;/em&gt;. So we use a &lt;code class=&quot;highlighter-rouge&quot;&gt;diff&lt;/code&gt; command to reveal the password for the next level.&lt;/p&gt;
+&lt;p&gt;Your home directory consists of two files, the password to the next level is stored in the &lt;strong&gt;passwords.new&lt;/strong&gt; file and there is a condition regarding a &lt;em&gt;change&lt;/em&gt;. So we use a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;diff&lt;/code&gt; command to reveal the password for the next level.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit18.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Password: &lt;code class=&quot;highlighter-rouge&quot;&gt;kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd&lt;/code&gt;&lt;/p&gt;
+  &lt;p&gt;Password: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;bandit-level---19&quot;&gt;Bandit Level - 19&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit19q.PNG&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;With the above password you will be able to SSH as user &lt;strong&gt;&lt;em&gt;bandit19&lt;/em&gt;&lt;/strong&gt; , but as soon as you authenticate the code under ~/.bashrc on the home directory of the &lt;strong&gt;&lt;em&gt;bandit19&lt;/em&gt;&lt;/strong&gt; executes and terminates the connection. Also, it seems that there is file named &lt;strong&gt;readme&lt;/strong&gt; on the home directory which has the password to the next level. To tackle this, make use of &lt;code class=&quot;highlighter-rouge&quot;&gt;-t&lt;/code&gt; argument along with the SSH connection.&lt;/p&gt;
+&lt;p&gt;With the above password you will be able to SSH as user &lt;strong&gt;&lt;em&gt;bandit19&lt;/em&gt;&lt;/strong&gt; , but as soon as you authenticate the code under ~/.bashrc on the home directory of the &lt;strong&gt;&lt;em&gt;bandit19&lt;/em&gt;&lt;/strong&gt; executes and terminates the connection. Also, it seems that there is file named &lt;strong&gt;readme&lt;/strong&gt; on the home directory which has the password to the next level. To tackle this, make use of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-t&lt;/code&gt; argument along with the SSH connection.&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;For WeChall Users Only:&lt;/em&gt; If you are playing &lt;strong&gt;wechall&lt;/strong&gt; challenges, then you could also so run the &lt;code class=&quot;highlighter-rouge&quot;&gt;wechall&lt;/code&gt; command  along with the &lt;code class=&quot;highlighter-rouge&quot;&gt;-t&lt;/code&gt; argument to add to the score board.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;For WeChall Users Only:&lt;/em&gt; If you are playing &lt;strong&gt;wechall&lt;/strong&gt; challenges, then you could also so run the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;wechall&lt;/code&gt; command  along with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-t&lt;/code&gt; argument to add to the score board.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit19.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Password: &lt;code class=&quot;highlighter-rouge&quot;&gt;IueksS7Ubh8G3DCwVzrTd8rAVOwq3M5x&lt;/code&gt;&lt;/p&gt;
+  &lt;p&gt;Password: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IueksS7Ubh8G3DCwVzrTd8rAVOwq3M5x&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;bandit-level---20&quot;&gt;Bandit Level - 20&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit20q.PNG&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;You will find a Self-Executable file under your home directory. This can be found when you run the &lt;code class=&quot;highlighter-rouge&quot;&gt;file&lt;/code&gt; command on it. When you do &lt;code class=&quot;highlighter-rouge&quot;&gt;id&lt;/code&gt; command with that you see that the file has EID (Effective ID as a different user ID &lt;strong&gt;&lt;em&gt;bandit20&lt;/em&gt;&lt;/strong&gt; , which gives you a pointer that this file can run commands as user &lt;strong&gt;&lt;em&gt;bandit20&lt;/em&gt;&lt;/strong&gt;). So make use of this opportunity and &lt;code class=&quot;highlighter-rouge&quot;&gt;cat&lt;/code&gt; the password file to reveal the password for next level.&lt;/p&gt;
+&lt;p&gt;You will find a Self-Executable file under your home directory. This can be found when you run the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;file&lt;/code&gt; command on it. When you do &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;id&lt;/code&gt; command with that you see that the file has EID (Effective ID as a different user ID &lt;strong&gt;&lt;em&gt;bandit20&lt;/em&gt;&lt;/strong&gt; , which gives you a pointer that this file can run commands as user &lt;strong&gt;&lt;em&gt;bandit20&lt;/em&gt;&lt;/strong&gt;). So make use of this opportunity and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cat&lt;/code&gt; the password file to reveal the password for next level.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit20.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Password: &lt;code class=&quot;highlighter-rouge&quot;&gt;GbKksEFF4yrVs6il55v6gwY5aVje5f0j&lt;/code&gt;&lt;/p&gt;
+  &lt;p&gt;Password: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GbKksEFF4yrVs6il55v6gwY5aVje5f0j&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;bandit-level---21&quot;&gt;Bandit Level - 21&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit21q.PNG&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;To complete this challenge, make yourself comfortable with the &lt;code class=&quot;highlighter-rouge&quot;&gt;screen&lt;/code&gt; command. The target is running a service which will connect to any port on the localhost that you specify.&lt;/p&gt;
+&lt;p&gt;To complete this challenge, make yourself comfortable with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;screen&lt;/code&gt; command. The target is running a service which will connect to any port on the localhost that you specify.&lt;/p&gt;
 &lt;ol&gt;
-  &lt;li&gt;First run &lt;code class=&quot;highlighter-rouge&quot;&gt;screen&lt;/code&gt; command, now you are inside separate process so run a &lt;code class=&quot;highlighter-rouge&quot;&gt;netcat&lt;/code&gt; listening service as &lt;code class=&quot;highlighter-rouge&quot;&gt;nc localhost -p9090 -vvl&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Press &lt;code class=&quot;highlighter-rouge&quot;&gt;Enter&lt;/code&gt; key and paste the previous level (&lt;strong&gt;Bandit Level - 20&lt;/strong&gt;) password on the console.&lt;/li&gt;
-  &lt;li&gt;Press &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl+A&lt;/code&gt; to come out of the screen. (Eg. type &lt;code class=&quot;highlighter-rouge&quot;&gt;screen -r &amp;lt;id&amp;gt;&lt;/code&gt; to get into that screen session)&lt;/li&gt;
-  &lt;li&gt;From the home directory, run the &lt;code class=&quot;highlighter-rouge&quot;&gt;./suconnect 9090&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Now press &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl+A&lt;/code&gt; to go back to the screen session to retrieve the password from the &lt;code class=&quot;highlighter-rouge&quot;&gt;netcat&lt;/code&gt; service.&lt;/li&gt;
+  &lt;li&gt;First run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;screen&lt;/code&gt; command, now you are inside separate process so run a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;netcat&lt;/code&gt; listening service as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nc localhost -p9090 -vvl&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Press &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Enter&lt;/code&gt; key and paste the previous level (&lt;strong&gt;Bandit Level - 20&lt;/strong&gt;) password on the console.&lt;/li&gt;
+  &lt;li&gt;Press &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ctrl+A&lt;/code&gt; to come out of the screen. (Eg. type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;screen -r &amp;lt;id&amp;gt;&lt;/code&gt; to get into that screen session)&lt;/li&gt;
+  &lt;li&gt;From the home directory, run the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;./suconnect 9090&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Now press &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ctrl+A&lt;/code&gt; to go back to the screen session to retrieve the password from the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;netcat&lt;/code&gt; service.&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit21_1.PNG&quot; /&gt;&lt;/p&gt;
@@ -603,7 +603,7 @@ Keep sautéing till the mixture turns to a thick fluidized form.&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Password: &lt;code class=&quot;highlighter-rouge&quot;&gt;gE269g2h3mw3pwgrj0Ha9Uoqen1c9DGr&lt;/code&gt;&lt;/p&gt;
+  &lt;p&gt;Password: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gE269g2h3mw3pwgrj0Ha9Uoqen1c9DGr&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;bandit-level---22&quot;&gt;Bandit Level - 22&lt;/h2&gt;
@@ -615,19 +615,19 @@ Keep sautéing till the mixture turns to a thick fluidized form.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit22.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Password: &lt;code class=&quot;highlighter-rouge&quot;&gt;Yk7owGAcWjwMVRwrTesJEwB7WVOiILLI&lt;/code&gt;&lt;/p&gt;
+  &lt;p&gt;Password: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Yk7owGAcWjwMVRwrTesJEwB7WVOiILLI&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;bandit-level---23&quot;&gt;Bandit Level - 23&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit23q.PNG&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;As the challenge suggests, make a copy of the bash script &lt;strong&gt;cronjob_bandit23.sh&lt;/strong&gt; that is under the &lt;strong&gt;/usr/bin&lt;/strong&gt; directory. Copy the contents of the script, create a folder under for you under the &lt;strong&gt;/tmp&lt;/strong&gt; directory and paste the contents of the script under a test script named &lt;strong&gt;test.sh&lt;/strong&gt;, give it executable permission using &lt;code class=&quot;highlighter-rouge&quot;&gt;chmod +x&lt;/code&gt;. Run the script and note the output hash after the &lt;strong&gt;/tmp&lt;/strong&gt; directory. Now, doing a &lt;code class=&quot;highlighter-rouge&quot;&gt;cat&lt;/code&gt; on the file which was created by the script under the &lt;strong&gt;/tmp&lt;/strong&gt; directory reveals the password of &lt;strong&gt;Bandit Level - 22&lt;/strong&gt; , so in this case by replacing the &lt;code class=&quot;highlighter-rouge&quot;&gt;whoami&lt;/code&gt; command to &lt;code class=&quot;highlighter-rouge&quot;&gt;bandit23&lt;/code&gt; will reveal the path of the hash that will be created under the &lt;strong&gt;/tmp&lt;/strong&gt; directory. By doing a &lt;code class=&quot;highlighter-rouge&quot;&gt;cat&lt;/code&gt; command on that particular hash will lead to the password for the next level.&lt;/p&gt;
+&lt;p&gt;As the challenge suggests, make a copy of the bash script &lt;strong&gt;cronjob_bandit23.sh&lt;/strong&gt; that is under the &lt;strong&gt;/usr/bin&lt;/strong&gt; directory. Copy the contents of the script, create a folder under for you under the &lt;strong&gt;/tmp&lt;/strong&gt; directory and paste the contents of the script under a test script named &lt;strong&gt;test.sh&lt;/strong&gt;, give it executable permission using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;chmod +x&lt;/code&gt;. Run the script and note the output hash after the &lt;strong&gt;/tmp&lt;/strong&gt; directory. Now, doing a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cat&lt;/code&gt; on the file which was created by the script under the &lt;strong&gt;/tmp&lt;/strong&gt; directory reveals the password of &lt;strong&gt;Bandit Level - 22&lt;/strong&gt; , so in this case by replacing the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;whoami&lt;/code&gt; command to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bandit23&lt;/code&gt; will reveal the path of the hash that will be created under the &lt;strong&gt;/tmp&lt;/strong&gt; directory. By doing a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cat&lt;/code&gt; command on that particular hash will lead to the password for the next level.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit23.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Password: &lt;code class=&quot;highlighter-rouge&quot;&gt;jc1udXuA1tiHqjIsL8yaapX5XIAI6i0n&lt;/code&gt;&lt;/p&gt;
+  &lt;p&gt;Password: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jc1udXuA1tiHqjIsL8yaapX5XIAI6i0n&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;bandit-level---24&quot;&gt;Bandit Level - 24&lt;/h2&gt;
@@ -638,22 +638,22 @@ Keep sautéing till the mixture turns to a thick fluidized form.&lt;/p&gt;
 
 &lt;p&gt;Copy the below script and paste it in on the command line of the directory &lt;strong&gt;/var/spool/bandit24&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;echo '#!/bin/bash&lt;/code&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;echo '#!/bin/bash&lt;/code&gt;
 &lt;br /&gt;
-&lt;code class=&quot;highlighter-rouge&quot;&gt;myname=$(cat /etc/bandit_pass/bandit24)&lt;/code&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;myname=$(cat /etc/bandit_pass/bandit24)&lt;/code&gt;
 &lt;br /&gt;
-&lt;code class=&quot;highlighter-rouge&quot;&gt;mkdir &quot;/tmp/sh423&quot;&lt;/code&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mkdir &quot;/tmp/sh423&quot;&lt;/code&gt;
 &lt;br /&gt;
-&lt;code class=&quot;highlighter-rouge&quot;&gt;touch &quot;/tmp/sh423/$myname&quot;&lt;/code&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;touch &quot;/tmp/sh423/$myname&quot;&lt;/code&gt;
 &lt;br /&gt;
-&lt;code class=&quot;highlighter-rouge&quot;&gt;cp &quot;/etc/bandit_pass/bandit24 /tmp/sh423/&quot;' &amp;gt; sh4.sh | chmod +x sh4.sh&lt;/code&gt;&lt;/p&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cp &quot;/etc/bandit_pass/bandit24 /tmp/sh423/&quot;' &amp;gt; sh4.sh | chmod +x sh4.sh&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;Code Explained: Since the cron job will make the code run with the privileges of &lt;strong&gt;&lt;em&gt;bandit24&lt;/em&gt;&lt;/strong&gt;, our code makes a copy of the password and pastes it to the &lt;strong&gt;/tmp&lt;/strong&gt; directory.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit24.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Password: &lt;code class=&quot;highlighter-rouge&quot;&gt;UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ&lt;/code&gt;&lt;/p&gt;
+  &lt;p&gt;Password: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;bandit-level---25&quot;&gt;Bandit Level - 25&lt;/h2&gt;
@@ -664,67 +664,67 @@ Keep sautéing till the mixture turns to a thick fluidized form.&lt;/p&gt;
 
 &lt;p&gt;As I am more comfortable with &lt;strong&gt;PHP&lt;/strong&gt; than &lt;strong&gt;Bash&lt;/strong&gt;, I had to write a program in PHP to generate all the number combinations and the password of the previous level has to be concatenated along with it.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;?php&lt;/code&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;?php&lt;/code&gt;
 &lt;br /&gt;
-&lt;code class=&quot;highlighter-rouge&quot;&gt;ini_set('display_errors', 1);&lt;/code&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ini_set('display_errors', 1);&lt;/code&gt;
 &lt;br /&gt;
-&lt;code class=&quot;highlighter-rouge&quot;&gt;ini_set('display_startup_errors', 1);&lt;/code&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ini_set('display_startup_errors', 1);&lt;/code&gt;
 &lt;br /&gt;
-&lt;code class=&quot;highlighter-rouge&quot;&gt;error_reporting(E_ALL);&lt;/code&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;error_reporting(E_ALL);&lt;/code&gt;
 &lt;br /&gt;
-&lt;code class=&quot;highlighter-rouge&quot;&gt;set_time_limit(0);&lt;/code&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;set_time_limit(0);&lt;/code&gt;
 &lt;br /&gt;
-&lt;code class=&quot;highlighter-rouge&quot;&gt;ini_set('max_execution_time', 1600); //300 seconds = 5 minutes&lt;/code&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ini_set('max_execution_time', 1600); //300 seconds = 5 minutes&lt;/code&gt;
 &lt;br /&gt;
-&lt;code class=&quot;highlighter-rouge&quot;&gt;ini_set('max_execution_time', 0); // for infinite time of execution &lt;/code&gt;&lt;/p&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ini_set('max_execution_time', 0); // for infinite time of execution &lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;for($i=0;$i&amp;lt;10000;$i++)&lt;/code&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;for($i=0;$i&amp;lt;10000;$i++)&lt;/code&gt;
 &lt;br /&gt;
-&lt;code class=&quot;highlighter-rouge&quot;&gt;{&lt;/code&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{&lt;/code&gt;
 &lt;br /&gt;
-            &lt;code class=&quot;highlighter-rouge&quot;&gt;if(strlen($i)==1)&lt;/code&gt;
+            &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;if(strlen($i)==1)&lt;/code&gt;
 	&lt;br /&gt;
-            &lt;code class=&quot;highlighter-rouge&quot;&gt;{&lt;/code&gt;
+            &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{&lt;/code&gt;
 	&lt;br /&gt;
-                      &lt;code class=&quot;highlighter-rouge&quot;&gt;echo &quot;UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ &quot;.&quot;000&quot;.$i.&quot;\n&quot;;&lt;/code&gt;
+                      &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;echo &quot;UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ &quot;.&quot;000&quot;.$i.&quot;\n&quot;;&lt;/code&gt;
 	&lt;br /&gt;
-            &lt;code class=&quot;highlighter-rouge&quot;&gt;}&lt;/code&gt;
+            &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;}&lt;/code&gt;
 	&lt;br /&gt;
-            &lt;code class=&quot;highlighter-rouge&quot;&gt;else if(strlen($i)==2)&lt;/code&gt;
+            &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;else if(strlen($i)==2)&lt;/code&gt;
 	&lt;br /&gt;
-            &lt;code class=&quot;highlighter-rouge&quot;&gt;{&lt;/code&gt;
+            &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{&lt;/code&gt;
 	&lt;br /&gt;
-                      &lt;code class=&quot;highlighter-rouge&quot;&gt;echo &quot;UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ &quot;.&quot;00&quot;.$i.&quot;\n&quot;;&lt;/code&gt;
+                      &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;echo &quot;UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ &quot;.&quot;00&quot;.$i.&quot;\n&quot;;&lt;/code&gt;
 	&lt;br /&gt;
-            &lt;code class=&quot;highlighter-rouge&quot;&gt;}&lt;/code&gt;
+            &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;}&lt;/code&gt;
 	&lt;br /&gt;
-            &lt;code class=&quot;highlighter-rouge&quot;&gt;else if(strlen($i)==3)&lt;/code&gt;
+            &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;else if(strlen($i)==3)&lt;/code&gt;
 	&lt;br /&gt;
-            &lt;code class=&quot;highlighter-rouge&quot;&gt;{&lt;/code&gt;
+            &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{&lt;/code&gt;
 	&lt;br /&gt;
-                      &lt;code class=&quot;highlighter-rouge&quot;&gt;echo &quot;UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ &quot;.&quot;0&quot;.$i.&quot;\n&quot;;&lt;/code&gt;
+                      &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;echo &quot;UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ &quot;.&quot;0&quot;.$i.&quot;\n&quot;;&lt;/code&gt;
 	&lt;br /&gt;
-            &lt;code class=&quot;highlighter-rouge&quot;&gt;}&lt;/code&gt;
+            &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;}&lt;/code&gt;
 	&lt;br /&gt;
-            &lt;code class=&quot;highlighter-rouge&quot;&gt;else&lt;/code&gt;
+            &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;else&lt;/code&gt;
 	&lt;br /&gt;
-	    &lt;code class=&quot;highlighter-rouge&quot;&gt;{&lt;/code&gt;
+	    &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{&lt;/code&gt;
 	&lt;br /&gt;
-		      &lt;code class=&quot;highlighter-rouge&quot;&gt;echo &quot;UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ &quot;.$i.&quot;\n&quot;;&lt;/code&gt;
+		      &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;echo &quot;UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ &quot;.$i.&quot;\n&quot;;&lt;/code&gt;
 	&lt;br /&gt;
-	    &lt;code class=&quot;highlighter-rouge&quot;&gt;}&lt;/code&gt;
+	    &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;}&lt;/code&gt;
 	&lt;br /&gt;
-&lt;code class=&quot;highlighter-rouge&quot;&gt;}&lt;/code&gt;&lt;/p&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;}&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;Now copy the output and paste it a file.&lt;/p&gt;
 
-&lt;p&gt;I had issues sending the whole 10000 entries to the service on port  30002 while using the command &lt;code class=&quot;highlighter-rouge&quot;&gt;cat numberfile | nc 127.0.0.1 30002 &amp;gt; output.txt&lt;/code&gt; as it was timing out at &lt;strong&gt;7178&lt;/strong&gt;&lt;sup&gt;th&lt;/sup&gt; entry. (The above specified command will try all the 10000 entries starting from 0000 to 10000, it pipes each and every entry to the &lt;code class=&quot;highlighter-rouge&quot;&gt;nc&lt;/code&gt; command and then appends the output to that file named &lt;strong&gt;output.txt&lt;/strong&gt;)&lt;/p&gt;
+&lt;p&gt;I had issues sending the whole 10000 entries to the service on port  30002 while using the command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cat numberfile | nc 127.0.0.1 30002 &amp;gt; output.txt&lt;/code&gt; as it was timing out at &lt;strong&gt;7178&lt;/strong&gt;&lt;sup&gt;th&lt;/sup&gt; entry. (The above specified command will try all the 10000 entries starting from 0000 to 10000, it pipes each and every entry to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nc&lt;/code&gt; command and then appends the output to that file named &lt;strong&gt;output.txt&lt;/strong&gt;)&lt;/p&gt;
 
-&lt;p&gt;Another tip to avoid timeouts is to check the combinations in sets, Use &lt;code class=&quot;highlighter-rouge&quot;&gt;uniq&lt;/code&gt; command to find the password in the file. &lt;code class=&quot;highlighter-rouge&quot;&gt;uniq output.txt&lt;/code&gt;. If you are getting timeouts, send inputs in 4000, such that    such that the password can be found in 2-3 attempts.&lt;/p&gt;
+&lt;p&gt;Another tip to avoid timeouts is to check the combinations in sets, Use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;uniq&lt;/code&gt; command to find the password in the file. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;uniq output.txt&lt;/code&gt;. If you are getting timeouts, send inputs in 4000, such that    such that the password can be found in 2-3 attempts.&lt;/p&gt;
 
-&lt;p&gt;After running the command &lt;code class=&quot;highlighter-rouge&quot;&gt;cat numberfile | nc 127.0.0.1 30002 &amp;gt; output.txt&lt;/code&gt;, we will be left with &lt;strong&gt;output.txt&lt;/strong&gt;. On doing a &lt;code class=&quot;highlighter-rouge&quot;&gt;cat&lt;/code&gt;
- command we see that the timeout occurred at &lt;strong&gt;7178&lt;/strong&gt;, in this case we subject last &lt;strong&gt;4000&lt;/strong&gt; entries using &lt;code class=&quot;highlighter-rouge&quot;&gt;tail '4000q' | nc 127.0.0.1 30002 &amp;gt; final_result.txt&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;After running the command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cat numberfile | nc 127.0.0.1 30002 &amp;gt; output.txt&lt;/code&gt;, we will be left with &lt;strong&gt;output.txt&lt;/strong&gt;. On doing a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cat&lt;/code&gt;
+ command we see that the timeout occurred at &lt;strong&gt;7178&lt;/strong&gt;, in this case we subject last &lt;strong&gt;4000&lt;/strong&gt; entries using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tail '4000q' | nc 127.0.0.1 30002 &amp;gt; final_result.txt&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit25_1.PNG&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;
@@ -734,7 +734,7 @@ Keep sautéing till the mixture turns to a thick fluidized form.&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Password: &lt;code class=&quot;highlighter-rouge&quot;&gt;uNG9O58gUE7snukf3bvZ0rxhtnjzSGzG&lt;/code&gt;&lt;/p&gt;
+  &lt;p&gt;Password: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;uNG9O58gUE7snukf3bvZ0rxhtnjzSGzG&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;bandit-level---26&quot;&gt;Bandit Level - 26&lt;/h2&gt;
@@ -743,19 +743,19 @@ Keep sautéing till the mixture turns to a thick fluidized form.&lt;/p&gt;
 
 &lt;p&gt;Honestly, this was the toughest challenge for me on the whole &lt;strong&gt;Bandit&lt;/strong&gt; box, took me a couple of days to think &lt;em&gt;&lt;strong&gt;laterally&lt;/strong&gt;&lt;/em&gt; and overcome this challenge.&lt;/p&gt;
 
-&lt;p&gt;In the home directory of bandit25, you will find the private key of user &lt;strong&gt;&lt;em&gt;bandit26&lt;/em&gt;&lt;/strong&gt;, when you login with &lt;code class=&quot;highlighter-rouge&quot;&gt;ssh bandit26@localhost -i bandit26.sshkey&lt;/code&gt; , you will authenticated and immediately logged out. You will see a certain amount of text before you logout. Even if you add the &lt;code class=&quot;highlighter-rouge&quot;&gt;-t&lt;/code&gt; argument while doing SSH, still you won’t be able to complete this level. This is where you need to think &lt;strong&gt;more&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;In the home directory of bandit25, you will find the private key of user &lt;strong&gt;&lt;em&gt;bandit26&lt;/em&gt;&lt;/strong&gt;, when you login with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ssh bandit26@localhost -i bandit26.sshkey&lt;/code&gt; , you will authenticated and immediately logged out. You will see a certain amount of text before you logout. Even if you add the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-t&lt;/code&gt; argument while doing SSH, still you won’t be able to complete this level. This is where you need to think &lt;strong&gt;more&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;You need to make use of &lt;code class=&quot;highlighter-rouge&quot;&gt;more&lt;/code&gt; command. Follow these steps to complete the challenge.&lt;/p&gt;
+&lt;p&gt;You need to make use of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;more&lt;/code&gt; command. Follow these steps to complete the challenge.&lt;/p&gt;
 &lt;ol&gt;
   &lt;li&gt;Before doing the SSH, try to resize your terminal screen as smaller as possible. such that you could see only one line of what you are typing.&lt;/li&gt;
-  &lt;li&gt;After doing that and while you do the SSH command, you will be presented with &lt;code class=&quot;highlighter-rouge&quot;&gt;more&lt;/code&gt; prompt.&lt;/li&gt;
-  &lt;li&gt;Now type &lt;code class=&quot;highlighter-rouge&quot;&gt;v&lt;/code&gt; to get into the &lt;code class=&quot;highlighter-rouge&quot;&gt;vi&lt;/code&gt; edit mode. You will be presented with the editing mode for &lt;strong&gt;text1.txt&lt;/strong&gt; file that is available on the &lt;strong&gt;&lt;em&gt;bandit26&lt;/em&gt;&lt;/strong&gt;’s home directory.&lt;/li&gt;
-  &lt;li&gt;Now press &lt;code class=&quot;highlighter-rouge&quot;&gt;Esc&lt;/code&gt; key and run the command to read the password file &lt;code class=&quot;highlighter-rouge&quot;&gt;:vi /etc/bandit_pass/bandit26&lt;/code&gt; and press enter. You will now able to view the password of the file.&lt;/li&gt;
-  &lt;li&gt;Now you need to &lt;strong&gt;JailBreak&lt;/strong&gt; to obtain a proper shell. Again type &lt;code class=&quot;highlighter-rouge&quot;&gt;Esc&lt;/code&gt; key and enter these commands.
+  &lt;li&gt;After doing that and while you do the SSH command, you will be presented with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;more&lt;/code&gt; prompt.&lt;/li&gt;
+  &lt;li&gt;Now type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v&lt;/code&gt; to get into the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vi&lt;/code&gt; edit mode. You will be presented with the editing mode for &lt;strong&gt;text1.txt&lt;/strong&gt; file that is available on the &lt;strong&gt;&lt;em&gt;bandit26&lt;/em&gt;&lt;/strong&gt;’s home directory.&lt;/li&gt;
+  &lt;li&gt;Now press &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Esc&lt;/code&gt; key and run the command to read the password file &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;:vi /etc/bandit_pass/bandit26&lt;/code&gt; and press enter. You will now able to view the password of the file.&lt;/li&gt;
+  &lt;li&gt;Now you need to &lt;strong&gt;JailBreak&lt;/strong&gt; to obtain a proper shell. Again type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Esc&lt;/code&gt; key and enter these commands.
 &lt;br /&gt;
-&lt;code class=&quot;highlighter-rouge&quot;&gt;:set shell=/bin/bash&lt;/code&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;:set shell=/bin/bash&lt;/code&gt;
 &lt;br /&gt;
-&lt;code class=&quot;highlighter-rouge&quot;&gt;:shell&lt;/code&gt;&lt;/li&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;:shell&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit26_1.PNG&quot; /&gt;&lt;/p&gt;
@@ -776,47 +776,47 @@ Keep sautéing till the mixture turns to a thick fluidized form.&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Password: &lt;code class=&quot;highlighter-rouge&quot;&gt;5czgV9L3Xx8JPOyRbXh6lQbmIOWvPT6Z&lt;/code&gt;&lt;/p&gt;
+  &lt;p&gt;Password: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;5czgV9L3Xx8JPOyRbXh6lQbmIOWvPT6Z&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;bandit-level---27&quot;&gt;Bandit Level - 27&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit27q.PNG&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;This is a straightforward level and is similar to &lt;strong&gt;Bandit Level - 18&lt;/strong&gt;, use the Self-Executable binary to &lt;code class=&quot;highlighter-rouge&quot;&gt;cat&lt;/code&gt; the password from the usual &lt;strong&gt;/etc/bandit_pass&lt;/strong&gt; directory.&lt;/p&gt;
+&lt;p&gt;This is a straightforward level and is similar to &lt;strong&gt;Bandit Level - 18&lt;/strong&gt;, use the Self-Executable binary to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cat&lt;/code&gt; the password from the usual &lt;strong&gt;/etc/bandit_pass&lt;/strong&gt; directory.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit27.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Password: &lt;code class=&quot;highlighter-rouge&quot;&gt;3ba3118a22e93127a4ed485be72ef5ea&lt;/code&gt;&lt;/p&gt;
+  &lt;p&gt;Password: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;3ba3118a22e93127a4ed485be72ef5ea&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;bandit-level---28&quot;&gt;Bandit Level - 28&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit28q.PNG&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Hail Git! The upcoming four to five consecutive challenges will be totally focused towards &lt;code class=&quot;highlighter-rouge&quot;&gt;git&lt;/code&gt; commands. So if you have been contributing to open-source community in the past, these forthcoming levels would be a glide in the air.&lt;/p&gt;
+&lt;p&gt;Hail Git! The upcoming four to five consecutive challenges will be totally focused towards &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git&lt;/code&gt; commands. So if you have been contributing to open-source community in the past, these forthcoming levels would be a glide in the air.&lt;/p&gt;
 
 &lt;p&gt;The task is to clone the remote repository and then open the file to find the password. Pretty straightforward if you know the right command. Use the &lt;strong&gt;/tmp&lt;/strong&gt; directory to clone your repository as it has the world-writable access.&lt;/p&gt;
 
-&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;git clone&lt;/code&gt; command lets you complete the level. It clones the repository to your local directory as it is. You could then enter the password of &lt;strong&gt;Bandit Level - 27&lt;/strong&gt; to clone the repository from the remote space.&lt;/p&gt;
+&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git clone&lt;/code&gt; command lets you complete the level. It clones the repository to your local directory as it is. You could then enter the password of &lt;strong&gt;Bandit Level - 27&lt;/strong&gt; to clone the repository from the remote space.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git clone ssh://bandit27-git@localhost/home/bandit27-git/repo&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git clone ssh://bandit27-git@localhost/home/bandit27-git/repo&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit28.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Password: &lt;code class=&quot;highlighter-rouge&quot;&gt;0ef186ac70e04ea33b4c1853d2526fa2&lt;/code&gt;&lt;/p&gt;
+  &lt;p&gt;Password: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0ef186ac70e04ea33b4c1853d2526fa2&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;bandit-level---29&quot;&gt;Bandit Level - 29&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit29q.PNG&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;After downloading the repository and doing a &lt;code class=&quot;highlighter-rouge&quot;&gt;cat&lt;/code&gt; command on &lt;strong&gt;README.md&lt;/strong&gt;, you notice that the password has been masked.
-As you know GIT is a version system and it keeps track of all changes to the file as &lt;strong&gt;&lt;em&gt;commits&lt;/em&gt;&lt;/strong&gt;. You can view list of commits done to the file by issuing the command &lt;code class=&quot;highlighter-rouge&quot;&gt;git log&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;After downloading the repository and doing a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cat&lt;/code&gt; command on &lt;strong&gt;README.md&lt;/strong&gt;, you notice that the password has been masked.
+As you know GIT is a version system and it keeps track of all changes to the file as &lt;strong&gt;&lt;em&gt;commits&lt;/em&gt;&lt;/strong&gt;. You can view list of commits done to the file by issuing the command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git log&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;You can see there are 3 different commits done to the file. Inspect each of the commits by running the command. &lt;code class=&quot;highlighter-rouge&quot;&gt;git show &amp;lt;commithashid&amp;gt;&lt;/code&gt; or simply do &lt;code class=&quot;highlighter-rouge&quot;&gt;git show&lt;/code&gt; to directly get the password.&lt;/p&gt;
+&lt;p&gt;You can see there are 3 different commits done to the file. Inspect each of the commits by running the command. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git show &amp;lt;commithashid&amp;gt;&lt;/code&gt; or simply do &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git show&lt;/code&gt; to directly get the password.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit29_1.PNG&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;
@@ -824,20 +824,20 @@ As you know GIT is a version system and it keeps track of all changes to the fil
 &lt;p&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Password: &lt;code class=&quot;highlighter-rouge&quot;&gt;bbc96594b4e001778eee9975372716b2&lt;/code&gt;&lt;/p&gt;
+  &lt;p&gt;Password: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bbc96594b4e001778eee9975372716b2&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;bandit-level---30&quot;&gt;Bandit Level - 30&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit30q.PNG&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;After downloading the repository and doing a &lt;code class=&quot;highlighter-rouge&quot;&gt;cat&lt;/code&gt; command on &lt;strong&gt;README.md&lt;/strong&gt;, it shows that &lt;em&gt;password is not in the production&lt;/em&gt;. This clearly tells us to see elsewhere in the development branch areas.&lt;/p&gt;
+&lt;p&gt;After downloading the repository and doing a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cat&lt;/code&gt; command on &lt;strong&gt;README.md&lt;/strong&gt;, it shows that &lt;em&gt;password is not in the production&lt;/em&gt;. This clearly tells us to see elsewhere in the development branch areas.&lt;/p&gt;
 &lt;ol&gt;
-  &lt;li&gt;Run the command &lt;code class=&quot;highlighter-rouge&quot;&gt;ls -lia&lt;/code&gt; to find the hidden directory &lt;strong&gt;.git&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;Run the command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ls -lia&lt;/code&gt; to find the hidden directory &lt;strong&gt;.git&lt;/strong&gt;.&lt;/li&gt;
   &lt;li&gt;Get into the directory&lt;/li&gt;
   &lt;li&gt;Read the file &lt;strong&gt;packed-refs&lt;/strong&gt; to get the hashes of the branches.&lt;/li&gt;
   &lt;li&gt;Cycle the hash ids the branches to get the password for the next level.&lt;/li&gt;
-  &lt;li&gt;Use the command, &lt;code class=&quot;highlighter-rouge&quot;&gt;git show &amp;lt;commithashid&amp;gt;&lt;/code&gt; to find the password to the next level.&lt;/li&gt;
+  &lt;li&gt;Use the command, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git show &amp;lt;commithashid&amp;gt;&lt;/code&gt; to find the password to the next level.&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit30_1.PNG&quot; /&gt;&lt;/p&gt;
@@ -846,7 +846,7 @@ As you know GIT is a version system and it keeps track of all changes to the fil
 &lt;p&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Password: &lt;code class=&quot;highlighter-rouge&quot;&gt;5b90576bedb2cc04c86a9e924ce42faf&lt;/code&gt;&lt;/p&gt;
+  &lt;p&gt;Password: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;5b90576bedb2cc04c86a9e924ce42faf&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;bandit-level---31&quot;&gt;Bandit Level - 31&lt;/h2&gt;
@@ -858,7 +858,7 @@ As you know GIT is a version system and it keeps track of all changes to the fil
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit31.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Password: &lt;code class=&quot;highlighter-rouge&quot;&gt;47e603bb428404d265f59c42920d81e5&lt;/code&gt;&lt;/p&gt;
+  &lt;p&gt;Password: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;47e603bb428404d265f59c42920d81e5&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;bandit-level---32&quot;&gt;Bandit Level - 32&lt;/h2&gt;
@@ -867,13 +867,13 @@ As you know GIT is a version system and it keeps track of all changes to the fil
 
 &lt;p&gt;In this challenge, you need to push a file named &lt;strong&gt;key.txt&lt;/strong&gt; to the root directory of the remote git using the content provided. You could follow these commands.&lt;/p&gt;
 &lt;ol&gt;
-  &lt;li&gt;This command &lt;code class=&quot;highlighter-rouge&quot;&gt;echo 'May I come in?' &amp;gt; key.txt&lt;/code&gt; creates a file &lt;strong&gt;key.txt&lt;/strong&gt; and writes the content inside it.&lt;/li&gt;
-  &lt;li&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;git status&lt;/code&gt; command lets you know that if any files have been added, deleted, updated in the current repository. So after creating the file and as you run &lt;code class=&quot;highlighter-rouge&quot;&gt;git status&lt;/code&gt; command, nothing shows up. However, if you create any other file for instance &lt;code class=&quot;highlighter-rouge&quot;&gt;touch bla&lt;/code&gt; and do a &lt;code class=&quot;highlighter-rouge&quot;&gt;git status&lt;/code&gt; command, it shows that a new file named &lt;strong&gt;bla&lt;/strong&gt; has been added to the repository.&lt;/li&gt;
-  &lt;li&gt;So this has something to do with the file &lt;strong&gt;.gitignore&lt;/strong&gt; which is a hidden file in the current directory. Inspecting the file &lt;code class=&quot;highlighter-rouge&quot;&gt;cat .gitignore&lt;/code&gt; shows that it has &lt;strong&gt;*.txt&lt;/strong&gt; in it. (which means the file changes for &lt;strong&gt;txt&lt;/strong&gt; files will not be shown)&lt;/li&gt;
+  &lt;li&gt;This command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;echo 'May I come in?' &amp;gt; key.txt&lt;/code&gt; creates a file &lt;strong&gt;key.txt&lt;/strong&gt; and writes the content inside it.&lt;/li&gt;
+  &lt;li&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git status&lt;/code&gt; command lets you know that if any files have been added, deleted, updated in the current repository. So after creating the file and as you run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git status&lt;/code&gt; command, nothing shows up. However, if you create any other file for instance &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;touch bla&lt;/code&gt; and do a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git status&lt;/code&gt; command, it shows that a new file named &lt;strong&gt;bla&lt;/strong&gt; has been added to the repository.&lt;/li&gt;
+  &lt;li&gt;So this has something to do with the file &lt;strong&gt;.gitignore&lt;/strong&gt; which is a hidden file in the current directory. Inspecting the file &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cat .gitignore&lt;/code&gt; shows that it has &lt;strong&gt;*.txt&lt;/strong&gt; in it. (which means the file changes for &lt;strong&gt;txt&lt;/strong&gt; files will not be shown)&lt;/li&gt;
   &lt;li&gt;All you have to do is edit the &lt;strong&gt;.gitignore&lt;/strong&gt; file and replace the &lt;strong&gt;*.txt&lt;/strong&gt; with &lt;strong&gt;*.gitignore&lt;/strong&gt;.&lt;/li&gt;
-  &lt;li&gt;Now add the file using the command &lt;code class=&quot;highlighter-rouge&quot;&gt;git add key.txt&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Now commit the changes using the command &lt;code class=&quot;highlighter-rouge&quot;&gt;git commit -m 'Adding key.txt'&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;At last push the changes to the remote repository by using the command &lt;code class=&quot;highlighter-rouge&quot;&gt;git push origin&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Now add the file using the command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git add key.txt&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Now commit the changes using the command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git commit -m 'Adding key.txt'&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;At last push the changes to the remote repository by using the command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git push origin&lt;/code&gt;&lt;/li&gt;
   &lt;li&gt;You will be providing the password of &lt;strong&gt;Bandit Level - 31&lt;/strong&gt; during the push operation.&lt;/li&gt;
   &lt;li&gt;The password will be revealed as the push operation completes.&lt;/li&gt;
 &lt;/ol&gt;
@@ -881,7 +881,7 @@ As you know GIT is a version system and it keeps track of all changes to the fil
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit32.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Password: &lt;code class=&quot;highlighter-rouge&quot;&gt;56a9bf19c63d650ce78e6ec0354ee45e&lt;/code&gt;&lt;/p&gt;
+  &lt;p&gt;Password: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;56a9bf19c63d650ce78e6ec0354ee45e&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;bandit-level---33&quot;&gt;Bandit Level - 33&lt;/h2&gt;
@@ -890,23 +890,23 @@ As you know GIT is a version system and it keeps track of all changes to the fil
 
 &lt;p&gt;The final level of Bandit box as of April 2019. Interesting level as it converts all the commands to uppercase rendering the output useless. This challenge can be solved by making use of one of the &lt;strong&gt;Bash Special Parameters&lt;/strong&gt; listed below.&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$*&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$@&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$#&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$?&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$-&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$$&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$_&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$!&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$0&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$*&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$@&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$#&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$?&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$-&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$$&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$_&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$!&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$0&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;The special parameter &lt;code class=&quot;highlighter-rouge&quot;&gt;$0&lt;/code&gt; helped to me to break out from the upper shell prompt and finding the password was again straightforward.&lt;/p&gt;
+&lt;p&gt;The special parameter &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$0&lt;/code&gt; helped to me to break out from the upper shell prompt and finding the password was again straightforward.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/blogimages/2019-04-24/bandit33.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Password: &lt;code class=&quot;highlighter-rouge&quot;&gt;c9c3199ddf4121b10cf581a98d51caee&lt;/code&gt;&lt;/p&gt;
+  &lt;p&gt;Password: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;c9c3199ddf4121b10cf581a98d51caee&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;hr /&gt;
@@ -916,23 +916,23 @@ As you know GIT is a version system and it keeps track of all changes to the fil
 &lt;h3 id=&quot;thank-you-for-being-here&quot;&gt;Thank you for being here.&lt;/h3&gt;
 
   
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/infosec/capture-the-flag-bandit-overthewireorg&quot;&gt;CaptureTheFlag #1: 'Bandit' Walkthrough for OverTheWire.Org&lt;/a&gt; was originally published by Shankar Damodaran at &lt;a href=&quot;http://localhost:4000&quot;&gt;<b><font size='5.75em'>Inventor<font color='yellow' size='6.75em'>.</font> Biker<font color='yellow' size='6.75em'>.</font> Foodie<font color='yellow' size='6.75em'>.</font> h4ck3r<font color='yellow' size='6.75em'>.</font> Wanderlust<font color='yellow' size='6.75em'>. </font> </font><p>Sometimes....<span id='changingword'>I wanna be just ME.</span></p>&lt;/a&gt; on April 19, 2019.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;/infosec/capture-the-flag-bandit-overthewireorg&quot;&gt;CaptureTheFlag #1: 'Bandit' Walkthrough for OverTheWire.Org&lt;/a&gt; was originally published by Shankar Damodaran at &lt;a href=&quot;&quot;&gt;<b><font size='5.75em'>Inventor<font color='yellow' size='6.75em'>.</font> Biker<font color='yellow' size='6.75em'>.</font> Foodie<font color='yellow' size='6.75em'>.</font> h4ck3r<font color='yellow' size='6.75em'>.</font> Wanderlust<font color='yellow' size='6.75em'>. </font> </font><p>Sometimes....<span id='changingword'>I wanna be just ME.</span></p>&lt;/a&gt; on April 19, 2019.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Bachelor's Recipe #2: The Delicious Dried Anchovies Pickle.]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/recipe/bachelors-recipe-anchovies-pickle-curry"/>
-  <id>http://localhost:4000/recipe/bachelors-recipe-anchovies-pickle-curry</id>
+  <link rel="alternate" type="text/html" href="/recipe/bachelors-recipe-anchovies-pickle-curry"/>
+  <id>/recipe/bachelors-recipe-anchovies-pickle-curry</id>
   <published>2018-09-21T00:00:00+05:30</published>
   <updated>2018-09-21T00:00:00-00:00</updated>
   
   <author>
     <name>Shankar Damodaran</name>
-    <uri>http://localhost:4000</uri>
+    <uri></uri>
     <email>d.shankarnarayana@gmail.com</email>
   </author>
-  <category scheme="http://localhost:4000/tags/#cooking" term="cooking" /><category scheme="http://localhost:4000/tags/#bachelor's%20recipe" term="bachelor's recipe" /><category scheme="http://localhost:4000/tags/#anchovies" term="anchovies" /><category scheme="http://localhost:4000/tags/#indian%20recipe" term="indian recipe" /><category scheme="http://localhost:4000/tags/#pickle" term="pickle" />
+  <category scheme="/tags/#cooking" term="cooking" /><category scheme="/tags/#bachelor's%20recipe" term="bachelor's recipe" /><category scheme="/tags/#anchovies" term="anchovies" /><category scheme="/tags/#indian%20recipe" term="indian recipe" /><category scheme="/tags/#pickle" term="pickle" />
   <content type="html">
   
     &lt;p&gt;Sadly till rowing the bachelor’s boat and this is a self made south indian recipe, &lt;strong&gt;The exclusive dried anchovies pickle curry&lt;/strong&gt;. This goes well with boiled rice as a main course and also as a side dish for chapathis and parathas. A typical &lt;strong&gt;Tamil&lt;/strong&gt; dish by heart. Give it a try! &lt;br /&gt;&lt;br /&gt;The preparation time is approximately 20 minutes. You will find a brief step-by-step method on how to make this recipe. So let’s get started.&lt;/p&gt;
@@ -1151,23 +1151,23 @@ As you know GIT is a version system and it keeps track of all changes to the fil
 &lt;hr /&gt;
 
   
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/recipe/bachelors-recipe-anchovies-pickle-curry&quot;&gt;Bachelor's Recipe #2: The Delicious Dried Anchovies Pickle.&lt;/a&gt; was originally published by Shankar Damodaran at &lt;a href=&quot;http://localhost:4000&quot;&gt;<b><font size='5.75em'>Inventor<font color='yellow' size='6.75em'>.</font> Biker<font color='yellow' size='6.75em'>.</font> Foodie<font color='yellow' size='6.75em'>.</font> h4ck3r<font color='yellow' size='6.75em'>.</font> Wanderlust<font color='yellow' size='6.75em'>. </font> </font><p>Sometimes....<span id='changingword'>I wanna be just ME.</span></p>&lt;/a&gt; on September 21, 2018.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;/recipe/bachelors-recipe-anchovies-pickle-curry&quot;&gt;Bachelor's Recipe #2: The Delicious Dried Anchovies Pickle.&lt;/a&gt; was originally published by Shankar Damodaran at &lt;a href=&quot;&quot;&gt;<b><font size='5.75em'>Inventor<font color='yellow' size='6.75em'>.</font> Biker<font color='yellow' size='6.75em'>.</font> Foodie<font color='yellow' size='6.75em'>.</font> h4ck3r<font color='yellow' size='6.75em'>.</font> Wanderlust<font color='yellow' size='6.75em'>. </font> </font><p>Sometimes....<span id='changingword'>I wanna be just ME.</span></p>&lt;/a&gt; on September 21, 2018.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[The top 25 movies hero/protagonist(s) dies in a shootout.]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/movies/the-top-25-movies-hero-protoganist-dies-in-a-shootout"/>
-  <id>http://localhost:4000/movies/the-top-25-movies-hero-protoganist-dies-in-a-shootout</id>
+  <link rel="alternate" type="text/html" href="/movies/the-top-25-movies-hero-protoganist-dies-in-a-shootout"/>
+  <id>/movies/the-top-25-movies-hero-protoganist-dies-in-a-shootout</id>
   <published>2018-01-14T00:00:00+05:30</published>
   <updated>2018-01-14T00:00:00-00:00</updated>
   
   <author>
     <name>Shankar Damodaran</name>
-    <uri>http://localhost:4000</uri>
+    <uri></uri>
     <email>d.shankarnarayana@gmail.com</email>
   </author>
-  <category scheme="http://localhost:4000/tags/#shootout%20movies" term="shootout movies" /><category scheme="http://localhost:4000/tags/#hero%20dies" term="hero dies" /><category scheme="http://localhost:4000/tags/#sad%20ending" term="sad ending" /><category scheme="http://localhost:4000/tags/#protagonist%20dies" term="protagonist dies" /><category scheme="http://localhost:4000/tags/#villain%20kills%20hero" term="villain kills hero" /><category scheme="http://localhost:4000/tags/#unexpected%20death" term="unexpected death" />
+  <category scheme="/tags/#shootout%20movies" term="shootout movies" /><category scheme="/tags/#hero%20dies" term="hero dies" /><category scheme="/tags/#sad%20ending" term="sad ending" /><category scheme="/tags/#protagonist%20dies" term="protagonist dies" /><category scheme="/tags/#villain%20kills%20hero" term="villain kills hero" /><category scheme="/tags/#unexpected%20death" term="unexpected death" />
   <content type="html">
   
     &lt;p&gt;Back with another crazy movie countdown. It really is upsetting whilst the main protagonist of a movie gets killed, well it’s inevitable and we gotta get over it. As the title depicts &lt;strong&gt;&lt;em&gt;shootout&lt;/em&gt;&lt;/strong&gt; , only kills with a &lt;strong&gt;gun(s)&lt;/strong&gt; is accounted for. Moreover, the list of movies compiled in here is a bit comprehensive and falls under a &lt;strong&gt;&lt;u&gt;ruleset&lt;/u&gt;&lt;/strong&gt; (&lt;em&gt;see below&lt;/em&gt;). This post &lt;font color=&quot;green&quot;&gt;&lt;b&gt;does not contain spoilers&lt;/b&gt;&lt;/font&gt;, just the list of names and it’s précis.&lt;/p&gt;
@@ -1510,23 +1510,23 @@ Each flick is rated from the bottom to top (the usual countdown paraphernalia), 
 &lt;h2 id=&quot;end-comments-and-criticisms-are-welcome&quot;&gt;End. Comments and criticisms are welcome.&lt;/h2&gt;
 
   
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/movies/the-top-25-movies-hero-protoganist-dies-in-a-shootout&quot;&gt;The top 25 movies hero/protagonist(s) dies in a shootout.&lt;/a&gt; was originally published by Shankar Damodaran at &lt;a href=&quot;http://localhost:4000&quot;&gt;<b><font size='5.75em'>Inventor<font color='yellow' size='6.75em'>.</font> Biker<font color='yellow' size='6.75em'>.</font> Foodie<font color='yellow' size='6.75em'>.</font> h4ck3r<font color='yellow' size='6.75em'>.</font> Wanderlust<font color='yellow' size='6.75em'>. </font> </font><p>Sometimes....<span id='changingword'>I wanna be just ME.</span></p>&lt;/a&gt; on January 14, 2018.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;/movies/the-top-25-movies-hero-protoganist-dies-in-a-shootout&quot;&gt;The top 25 movies hero/protagonist(s) dies in a shootout.&lt;/a&gt; was originally published by Shankar Damodaran at &lt;a href=&quot;&quot;&gt;<b><font size='5.75em'>Inventor<font color='yellow' size='6.75em'>.</font> Biker<font color='yellow' size='6.75em'>.</font> Foodie<font color='yellow' size='6.75em'>.</font> h4ck3r<font color='yellow' size='6.75em'>.</font> Wanderlust<font color='yellow' size='6.75em'>. </font> </font><p>Sometimes....<span id='changingword'>I wanna be just ME.</span></p>&lt;/a&gt; on January 14, 2018.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Do not throw your Old TV, Convert it to a Smart TV instead!]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/installation/convert-old-crt-tv-to-smart-tv"/>
-  <id>http://localhost:4000/installation/convert-old-crt-tv-to-smart-tv</id>
+  <link rel="alternate" type="text/html" href="/installation/convert-old-crt-tv-to-smart-tv"/>
+  <id>/installation/convert-old-crt-tv-to-smart-tv</id>
   <published>2017-12-19T00:00:00+05:30</published>
   <updated>2017-12-19T00:00:00-00:00</updated>
   
   <author>
     <name>Shankar Damodaran</name>
-    <uri>http://localhost:4000</uri>
+    <uri></uri>
     <email>d.shankarnarayana@gmail.com</email>
   </author>
-  <category scheme="http://localhost:4000/tags/#install" term="install" /><category scheme="http://localhost:4000/tags/#convert%20old%20tv%20to%20smart%20tv" term="convert old tv to smart tv" /><category scheme="http://localhost:4000/tags/#hdmi%20to%20avi" term="hdmi to avi" /><category scheme="http://localhost:4000/tags/#chromecast" term="chromecast" />
+  <category scheme="/tags/#install" term="install" /><category scheme="/tags/#convert%20old%20tv%20to%20smart%20tv" term="convert old tv to smart tv" /><category scheme="/tags/#hdmi%20to%20avi" term="hdmi to avi" /><category scheme="/tags/#chromecast" term="chromecast" />
   <content type="html">
   
     &lt;p&gt;Ever wondered what to do with your Old CRT (Cathode Ray Tube) Television? Well, even I had no idea what to do with my 25inch &lt;strong&gt;20&lt;/strong&gt; year old CRT TV (till date) and thought of selling it for 400 - 500 bucks which I had purchased for 30,000. Well the twist was no one was ready to buy it. Finally I realized &lt;strong&gt;Old is indeed Gold&lt;/strong&gt; when I had it converted to a smart TV using a very simple process.&lt;/p&gt;
@@ -1704,23 +1704,23 @@ Each flick is rated from the bottom to top (the usual countdown paraphernalia), 
 
 
   
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/installation/convert-old-crt-tv-to-smart-tv&quot;&gt;Do not throw your Old TV, Convert it to a Smart TV instead!&lt;/a&gt; was originally published by Shankar Damodaran at &lt;a href=&quot;http://localhost:4000&quot;&gt;<b><font size='5.75em'>Inventor<font color='yellow' size='6.75em'>.</font> Biker<font color='yellow' size='6.75em'>.</font> Foodie<font color='yellow' size='6.75em'>.</font> h4ck3r<font color='yellow' size='6.75em'>.</font> Wanderlust<font color='yellow' size='6.75em'>. </font> </font><p>Sometimes....<span id='changingword'>I wanna be just ME.</span></p>&lt;/a&gt; on December 19, 2017.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;/installation/convert-old-crt-tv-to-smart-tv&quot;&gt;Do not throw your Old TV, Convert it to a Smart TV instead!&lt;/a&gt; was originally published by Shankar Damodaran at &lt;a href=&quot;&quot;&gt;<b><font size='5.75em'>Inventor<font color='yellow' size='6.75em'>.</font> Biker<font color='yellow' size='6.75em'>.</font> Foodie<font color='yellow' size='6.75em'>.</font> h4ck3r<font color='yellow' size='6.75em'>.</font> Wanderlust<font color='yellow' size='6.75em'>. </font> </font><p>Sometimes....<span id='changingword'>I wanna be just ME.</span></p>&lt;/a&gt; on December 19, 2017.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Getting Started: Building a simple search engine with Apache Solr.]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/development/building-search-engine-with-solr-mysql-linux-getting-started"/>
-  <id>http://localhost:4000/development/building-search-engine-with-solr-mysql-linux-getting-started</id>
+  <link rel="alternate" type="text/html" href="/development/building-search-engine-with-solr-mysql-linux-getting-started"/>
+  <id>/development/building-search-engine-with-solr-mysql-linux-getting-started</id>
   <published>2017-07-12T00:00:00+05:30</published>
   <updated>2017-07-12T00:00:00-00:00</updated>
   
   <author>
     <name>Shankar Damodaran</name>
-    <uri>http://localhost:4000</uri>
+    <uri></uri>
     <email>d.shankarnarayana@gmail.com</email>
   </author>
-  <category scheme="http://localhost:4000/tags/#searchengine" term="searchengine" /><category scheme="http://localhost:4000/tags/#development" term="development" /><category scheme="http://localhost:4000/tags/#solr" term="solr" /><category scheme="http://localhost:4000/tags/#apache" term="apache" /><category scheme="http://localhost:4000/tags/#mysql" term="mysql" /><category scheme="http://localhost:4000/tags/#linux" term="linux" /><category scheme="http://localhost:4000/tags/#windows" term="windows" /><category scheme="http://localhost:4000/tags/#web" term="web" />
+  <category scheme="/tags/#searchengine" term="searchengine" /><category scheme="/tags/#development" term="development" /><category scheme="/tags/#solr" term="solr" /><category scheme="/tags/#apache" term="apache" /><category scheme="/tags/#mysql" term="mysql" /><category scheme="/tags/#linux" term="linux" /><category scheme="/tags/#windows" term="windows" /><category scheme="/tags/#web" term="web" />
   <content type="html">
   
     &lt;h1 id=&quot;apache-solr&quot;&gt;&lt;a href=&quot;http://lucene.apache.org/solr/&quot;&gt;Apache &lt;em&gt;Solr&lt;/em&gt;&lt;/a&gt;&lt;/h1&gt;
@@ -2088,7 +2088,7 @@ Say ..  &lt;strong&gt;Downloads&lt;/strong&gt; or whatever.. So it will look lik
 
 &lt;p&gt;&lt;img src=&quot;http://i.stack.imgur.com/aZP9W.png&quot; alt=&quot;The indexed data&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Well, there goes all 10 indexed records. Say, we need only names starting with &lt;strong&gt;Ja&lt;/strong&gt; , in this case, you need to target the column name &lt;code class=&quot;highlighter-rouge&quot;&gt;solr_name&lt;/code&gt;, Hence your query goes like this.&lt;/p&gt;
+&lt;p&gt;Well, there goes all 10 indexed records. Say, we need only names starting with &lt;strong&gt;Ja&lt;/strong&gt; , in this case, you need to target the column name &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;solr_name&lt;/code&gt;, Hence your query goes like this.&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;!-- HTML generated using hilite.me --&gt;
@@ -2102,23 +2102,23 @@ Say ..  &lt;strong&gt;Downloads&lt;/strong&gt; or whatever.. So it will look lik
 &lt;hr /&gt;
 
   
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/development/building-search-engine-with-solr-mysql-linux-getting-started&quot;&gt;Getting Started: Building a simple search engine with Apache Solr.&lt;/a&gt; was originally published by Shankar Damodaran at &lt;a href=&quot;http://localhost:4000&quot;&gt;<b><font size='5.75em'>Inventor<font color='yellow' size='6.75em'>.</font> Biker<font color='yellow' size='6.75em'>.</font> Foodie<font color='yellow' size='6.75em'>.</font> h4ck3r<font color='yellow' size='6.75em'>.</font> Wanderlust<font color='yellow' size='6.75em'>. </font> </font><p>Sometimes....<span id='changingword'>I wanna be just ME.</span></p>&lt;/a&gt; on July 12, 2017.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;/development/building-search-engine-with-solr-mysql-linux-getting-started&quot;&gt;Getting Started: Building a simple search engine with Apache Solr.&lt;/a&gt; was originally published by Shankar Damodaran at &lt;a href=&quot;&quot;&gt;<b><font size='5.75em'>Inventor<font color='yellow' size='6.75em'>.</font> Biker<font color='yellow' size='6.75em'>.</font> Foodie<font color='yellow' size='6.75em'>.</font> h4ck3r<font color='yellow' size='6.75em'>.</font> Wanderlust<font color='yellow' size='6.75em'>. </font> </font><p>Sometimes....<span id='changingword'>I wanna be just ME.</span></p>&lt;/a&gt; on July 12, 2017.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[The Mega Guide to Information Security Interview Questions.]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/infosec/mega-guide-information-security-interview-questions"/>
-  <id>http://localhost:4000/infosec/mega-guide-information-security-interview-questions</id>
+  <link rel="alternate" type="text/html" href="/infosec/mega-guide-information-security-interview-questions"/>
+  <id>/infosec/mega-guide-information-security-interview-questions</id>
   <published>2017-04-21T00:00:00+05:30</published>
   <updated>2017-04-21T00:00:00-00:00</updated>
   
   <author>
     <name>Shankar Damodaran</name>
-    <uri>http://localhost:4000</uri>
+    <uri></uri>
     <email>d.shankarnarayana@gmail.com</email>
   </author>
-  <category scheme="http://localhost:4000/tags/#infosec" term="infosec" /><category scheme="http://localhost:4000/tags/#interview%20questions" term="interview questions" /><category scheme="http://localhost:4000/tags/#pentesting" term="pentesting" /><category scheme="http://localhost:4000/tags/#security%20analyst" term="security analyst" /><category scheme="http://localhost:4000/tags/#infosec%20questions" term="infosec questions" />
+  <category scheme="/tags/#infosec" term="infosec" /><category scheme="/tags/#interview%20questions" term="interview questions" /><category scheme="/tags/#pentesting" term="pentesting" /><category scheme="/tags/#security%20analyst" term="security analyst" /><category scheme="/tags/#infosec%20questions" term="infosec questions" />
   <content type="html">
   
     &lt;p&gt;Almost &lt;strong&gt;&lt;font color=&quot;red&quot;&gt;150&lt;/font&gt;&lt;/strong&gt; questions and still counting, I’ve been contributing to this post on a regular basis. This is beneficial for anyone who wants to recall their knowledge on information security topics. This can also be used as a &lt;strong&gt;Guide&lt;/strong&gt; to prepare for Information Security Openings. The Information Security topics were intentionally shuffled to achieve robustness.&lt;/p&gt;
@@ -2240,7 +2240,7 @@ Rainbow Cracker makes use of Rainbow Tables to do the cracking process, it is a 
 
 &lt;h3 id=&quot;22-how-do-you-use-netcat-to-listen-and-connect-through-two-different-machinesvms&quot;&gt;22. How do you use netcat to listen and connect through two different machines/VMs?&lt;/h3&gt;
 
-&lt;p&gt;Say there are two machines A and B, If you want connect to A from B, then start a listener in A by running the command &lt;code class=&quot;highlighter-rouge&quot;&gt;nc -vvlp 2334&lt;/code&gt; and execute &lt;code class=&quot;highlighter-rouge&quot;&gt;nc
+&lt;p&gt;Say there are two machines A and B, If you want connect to A from B, then start a listener in A by running the command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nc -vvlp 2334&lt;/code&gt; and execute &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nc
 192.168.1.2 2334&lt;/code&gt; (&lt;em&gt;where 192.168.1.2 is the IP address for machine A&lt;/em&gt;) on machine B.&lt;/p&gt;
 
 &lt;h3 id=&quot;23-state-some-differences-between-netcat-and-ncat&quot;&gt;23. State some differences between Netcat and Ncat.&lt;/h3&gt;
@@ -2267,7 +2267,7 @@ when it comes to DNS, since TCP makes use of a &lt;em&gt;three-way-handshake&lt;
 
 &lt;h3 id=&quot;26-state-a-few-steps-you-would-use-to-secure-a-linux-machine&quot;&gt;26. State a few steps you would use to secure a Linux machine.&lt;/h3&gt;
 &lt;ul&gt;
-  &lt;li&gt;Use &lt;code class=&quot;highlighter-rouge&quot;&gt;faillog&lt;/code&gt; command to set user account lockouts after certain failure attempts.&lt;/li&gt;
+  &lt;li&gt;Use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;faillog&lt;/code&gt; command to set user account lockouts after certain failure attempts.&lt;/li&gt;
   &lt;li&gt;Ensure the linux kernel and software are up to date.&lt;/li&gt;
   &lt;li&gt;Never use root account to login, use sudo command whenever necessary.&lt;/li&gt;
   &lt;li&gt;Disable unwanted services with high privileges.&lt;/li&gt;
@@ -2279,14 +2279,14 @@ when it comes to DNS, since TCP makes use of a &lt;em&gt;three-way-handshake&lt;
 
 &lt;h3 id=&quot;28-how-to-check-for-click-jacking-and-state-atleast-one-method-to-prevent-it&quot;&gt;28. How to check for Click-Jacking and state atleast one method to prevent it?&lt;/h3&gt;
 
-&lt;p&gt;Write a normal html code, add an iframe something like this &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;iframe src=&quot;vulnerableClickJackingSite.com&quot;&amp;gt;&lt;/code&gt;, save it as test.html. Open this html in the browser. If vulnerableClickJackingSite.com
+&lt;p&gt;Write a normal html code, add an iframe something like this &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;iframe src=&quot;vulnerableClickJackingSite.com&quot;&amp;gt;&lt;/code&gt;, save it as test.html. Open this html in the browser. If vulnerableClickJackingSite.com
 opens within the iframe, then the site is vulnerable to Click-Jacking.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Prevention:&lt;/strong&gt; By configuring X-Frame Options Headers to &lt;code class=&quot;highlighter-rouge&quot;&gt;DENY&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;SAMEORIGIN&lt;/code&gt; or the site using &lt;code class=&quot;highlighter-rouge&quot;&gt;ALLOW-FROM&lt;/code&gt;. See the code below.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Prevention:&lt;/strong&gt; By configuring X-Frame Options Headers to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DENY&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SAMEORIGIN&lt;/code&gt; or the site using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ALLOW-FROM&lt;/code&gt;. See the code below.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;X-Frame-Options: DENY&lt;/code&gt; &lt;br /&gt;
-&lt;code class=&quot;highlighter-rouge&quot;&gt;X-Frame-Options: SAMEORIGIN&lt;/code&gt; &lt;br /&gt;
-&lt;code class=&quot;highlighter-rouge&quot;&gt;X-Frame-Options: ALLOW-FROM https://example.com/&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;X-Frame-Options: DENY&lt;/code&gt; &lt;br /&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;X-Frame-Options: SAMEORIGIN&lt;/code&gt; &lt;br /&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;X-Frame-Options: ALLOW-FROM https://example.com/&lt;/code&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;29-list-some-steps-in-securing-any-web-application&quot;&gt;29. List some steps in securing any Web Application.&lt;/h3&gt;
 
@@ -2352,7 +2352,7 @@ opens within the iframe, then the site is vulnerable to Click-Jacking.&lt;/p&gt;
 
 &lt;h3 id=&quot;37-state-the-simple-nmap-command-to-invoke-a-general-vulnerability-assessment-script-on-any-domain&quot;&gt;37. State the simple Nmap command to invoke a general vulnerability assessment script on any domain.&lt;/h3&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;nmap -sV --script=vuln www.somewebsitetoscan.com&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nmap -sV --script=vuln www.somewebsitetoscan.com&lt;/code&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;38-contrast-some-important-dns-tools-for-pentesting&quot;&gt;38. Contrast some important DNS tools for Pentesting&lt;/h3&gt;
 
@@ -2416,7 +2416,7 @@ holder. For eg: &lt;em&gt;SSL certificate for a website&lt;/em&gt;.&lt;/p&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;48-consider-you-are-in-the-internal-network-of-an-organization-you-need-to-find-the-operating-system-of-another-machine-in-the-same-network-without-using-any-tools-what-command-would-you-use-under-a-windows-environment&quot;&gt;48. Consider you are in the internal network of an organization, you need to find the Operating System of another machine in the same network without using any tools. What command would you use under a Windows Environment?&lt;/h3&gt;
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;systeminfo /s&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;systeminfo /s&lt;/code&gt;.&lt;/p&gt;
 
 &lt;h3 id=&quot;49-state-byod-and-its-merits-and-demerits&quot;&gt;49. State BYOD and its merits and demerits.&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;BYOD&lt;/strong&gt; - &lt;em&gt;Bring Your Own Device&lt;/em&gt; is a type of policy in any organization that lets employees to bring in their own computers, laptops or other devices that would let them connect to office’s network and do the official work. Employee’s personal devices maybe faster than that of the gadgets their companies provide. Worst part is if the personal gadget is affected by any virus or malware it will spread through the entire network.&lt;/p&gt;
@@ -2561,11 +2561,11 @@ When it comes to our question, &lt;strong&gt;Competitive CounterIntelligence&lt;
 &lt;h3 id=&quot;73-how-do-you-crack-wep-explain-in-high-level&quot;&gt;73. How do you crack &lt;strong&gt;&lt;em&gt;WEP&lt;/em&gt;&lt;/strong&gt;. Explain in High Level.&lt;/h3&gt;
 &lt;p&gt;Assuming you have a Wireless Adapter that is capable of packet injection.&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;Use &lt;code class=&quot;highlighter-rouge&quot;&gt;airmon-ng&lt;/code&gt; to get to know your network interface cards.&lt;/li&gt;
+  &lt;li&gt;Use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;airmon-ng&lt;/code&gt; to get to know your network interface cards.&lt;/li&gt;
   &lt;li&gt;Enable the Wireless Adapter to Monitor Mode.&lt;/li&gt;
   &lt;li&gt;Start capturing the traffic from the specific AP.&lt;/li&gt;
-  &lt;li&gt;Use &lt;code class=&quot;highlighter-rouge&quot;&gt;aireplay-ng&lt;/code&gt; to Inject ARP Traffic (Perform ARP Spoofing) and capture the IVs&lt;/li&gt;
-  &lt;li&gt;Use &lt;code class=&quot;highlighter-rouge&quot;&gt;aircrack-ng&lt;/code&gt; to crack the IVs. (More the IVs the faster the cracking process will be)&lt;/li&gt;
+  &lt;li&gt;Use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;aireplay-ng&lt;/code&gt; to Inject ARP Traffic (Perform ARP Spoofing) and capture the IVs&lt;/li&gt;
+  &lt;li&gt;Use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;aircrack-ng&lt;/code&gt; to crack the IVs. (More the IVs the faster the cracking process will be)&lt;/li&gt;
   &lt;li&gt;The key will be displayed on the screen in a hexadecimal format.&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -2631,10 +2631,10 @@ analysts or anyone who wants to test their information security skills.&lt;/p&gt
 not linked to the server’s key pair, eventhough if the attacker gets hold of the private key, the SSL session cannot be decrypted.&lt;/p&gt;
 
 &lt;h3 id=&quot;83-can-you-state-any-one-method-to-deface-a-website-without-using-any-tool&quot;&gt;83. Can you state any one method to deface a website without using any tool?&lt;/h3&gt;
-&lt;p&gt;Assuming the website has a stored XSS vulnerability. An attacker can easily inject a javascript with &lt;code class=&quot;highlighter-rouge&quot;&gt;location.href&lt;/code&gt; tag and redirect to any site of his/her choice.&lt;/p&gt;
+&lt;p&gt;Assuming the website has a stored XSS vulnerability. An attacker can easily inject a javascript with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;location.href&lt;/code&gt; tag and redirect to any site of his/her choice.&lt;/p&gt;
 
 &lt;h3 id=&quot;84-given-an-ip-address-how-will-you-determine-the-operating-system-it-is-running&quot;&gt;84. Given an IP Address how will you determine the Operating System it is running?&lt;/h3&gt;
-&lt;p&gt;There is no 100% effectiveness to determine the operating system of a remote machine. However certain tool like &lt;code class=&quot;highlighter-rouge&quot;&gt;xprobe2&lt;/code&gt; is used to guess the operating system to a certain extent. It is
+&lt;p&gt;There is no 100% effectiveness to determine the operating system of a remote machine. However certain tool like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xprobe2&lt;/code&gt; is used to guess the operating system to a certain extent. It is
 highly recommended over nmap.&lt;/p&gt;
 
 &lt;h3 id=&quot;85-what-happens-if-computer-as-nic-card-is-interchanged-to-computer-bs-nic-card-will-the-mac-address-be-the-same&quot;&gt;85. What happens if Computer A’s NIC card is interchanged to Computer B’s NIC card? Will the MAC Address be the same?&lt;/h3&gt;
@@ -2642,7 +2642,7 @@ highly recommended over nmap.&lt;/p&gt;
 
 &lt;h3 id=&quot;86-on-which-port-does-ping-command-work-and-how-do-you-ping-a-port&quot;&gt;86. On which port, does &lt;strong&gt;&lt;em&gt;ping&lt;/em&gt;&lt;/strong&gt; command work and how do you ping a port?&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Ping&lt;/strong&gt; does not work on TCP or UDP, so obviously, it does not make use of any port. It uses ICMP. You cannot use ping command to ping a port, instead use Nmap for this purpose. To give a you
-perfect illustration, ping works irrespective of port numbers. &lt;code class=&quot;highlighter-rouge&quot;&gt;ping sh4.in&lt;/code&gt; is same as &lt;code class=&quot;highlighter-rouge&quot;&gt;ping sh4.in 80&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;ping sh4.in 2873687234&lt;/code&gt;&lt;/p&gt;
+perfect illustration, ping works irrespective of port numbers. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ping sh4.in&lt;/code&gt; is same as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ping sh4.in 80&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ping sh4.in 2873687234&lt;/code&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;87-explain-a-simple-crucial-method-to-mitigate-xss-or-the-cross-site-scripting-attack&quot;&gt;87. Explain a simple crucial method to mitigate XSS or the Cross-Site-Scripting attack.&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Input Validation&lt;/strong&gt; and &lt;strong&gt;Output Sanitization&lt;/strong&gt; are the two important methods to ward off XSS attacks.&lt;/p&gt;
@@ -2663,7 +2663,7 @@ surveillance cameras, lockpicking, USB dropping, etc)&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;90-state-the-nmap-command-to-scan-a-target-and-output-it-to-an-xml-file-without-host-discovery-and-no-arp-pings&quot;&gt;90. State the nmap command to scan a target and output it to an XML file without host discovery and no arp pings.&lt;/h3&gt;
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;nmap -oX out.xml -Pn --disable-arp-ping 127.0.0.1&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nmap -oX out.xml -Pn --disable-arp-ping 127.0.0.1&lt;/code&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;91-whats-the-difference-between-301-and-302-http-status-codes&quot;&gt;91. What’s the difference between 301 and 302 HTTP Status Codes?&lt;/h3&gt;
 &lt;p&gt;They both constitute redirection status codes; However, the former is permanent and the latter is temporary.&lt;/p&gt;
@@ -2672,7 +2672,7 @@ surveillance cameras, lockpicking, USB dropping, etc)&lt;/li&gt;
 &lt;p&gt;As of 2017, NMap does not have the feature of writing the reports to HTML format. It can output the report to XML format and from there it is possible to convert to HTML using XSLT processors.&lt;/p&gt;
 
 &lt;h3 id=&quot;93-iptables-what-are-they-set-a-rule-to-block-googlecom-and-state-how-effective-it-is&quot;&gt;93. IPTables. What are they? Set a rule to block &lt;strong&gt;&lt;em&gt;google.com&lt;/em&gt;&lt;/strong&gt; and state how effective it is.&lt;/h3&gt;
-&lt;p&gt;IPTables is a Firewall Utility for Linux Operating System. You can set rules in it for the accepting, rejecting or dropping incoming, outgoing or forwarding connections. The following below rule sets the website google.com to be blocked. &lt;code class=&quot;highlighter-rouge&quot;&gt;iptables -A OUTPUT -p tcp -m string --string &quot;google.com&quot; --algo kmp -j DROP&lt;/code&gt;. To be straightforward, this is not an effective way to block a website, there are better ways to do it by using certains HTTP Proxies. Any user can bypass this rule by simple typing “google.co.in” or “google.co.uk” to access the website.&lt;/p&gt;
+&lt;p&gt;IPTables is a Firewall Utility for Linux Operating System. You can set rules in it for the accepting, rejecting or dropping incoming, outgoing or forwarding connections. The following below rule sets the website google.com to be blocked. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;iptables -A OUTPUT -p tcp -m string --string &quot;google.com&quot; --algo kmp -j DROP&lt;/code&gt;. To be straightforward, this is not an effective way to block a website, there are better ways to do it by using certains HTTP Proxies. Any user can bypass this rule by simple typing “google.co.in” or “google.co.uk” to access the website.&lt;/p&gt;
 
 &lt;h3 id=&quot;94-whats-a-transparent-proxy&quot;&gt;94. What’s a &lt;strong&gt;&lt;em&gt;Transparent Proxy&lt;/em&gt;&lt;/strong&gt;?&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Transparent Proxy&lt;/strong&gt; is a type of caching proxy that is configured to sit on the gateway and intercepts the WWW requests from the client and fetches the data for the first time and the consecutive requests are cached. A Transparent Proxy can be clearly understood with these two examples.&lt;/p&gt;
@@ -2871,7 +2871,7 @@ surveillance cameras, lockpicking, USB dropping, etc)&lt;/li&gt;
 &lt;p&gt;&lt;strong&gt;Yes, it is&lt;/strong&gt;. Say for instance, an employee is running a vulnerable version of a webserver or some other service that opens a port to the outside world, such that the webserver can be accessed like http://localhost:8000. This may seem that it is running only in the local machine, but certain applications can be accessed by http://1.1.1.1:8000 where 1.1.1.1 being the public ip (&lt;em&gt;just for illustration purposes&lt;/em&gt;) of the internal user.&lt;/p&gt;
 
 &lt;h3 id=&quot;128-how-would-you-scan-an-ipv6-address-using-nping&quot;&gt;128. How would you scan an IPv6 address using &lt;strong&gt;&lt;em&gt;NPing&lt;/em&gt;&lt;/strong&gt;?&lt;/h3&gt;
-&lt;p&gt;There is no such big difference when it comes to IPv6 addresses. However, it is suggested to use &lt;code class=&quot;highlighter-rouge&quot;&gt;-6&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;--ipv6&lt;/code&gt; options whilst scanning as this makes NPing to parse faster.&lt;/p&gt;
+&lt;p&gt;There is no such big difference when it comes to IPv6 addresses. However, it is suggested to use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-6&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--ipv6&lt;/code&gt; options whilst scanning as this makes NPing to parse faster.&lt;/p&gt;
 
 &lt;h3 id=&quot;129-what-does-20010db885a3000000008a2e03707334-sounds-like-to-you&quot;&gt;129. What does &lt;strong&gt;&lt;em&gt;2001:0db8:85a3:0000:0000:8a2e:0370:7334&lt;/em&gt;&lt;/strong&gt; sounds like to you?&lt;/h3&gt;
 &lt;p&gt;That’s an IPv6 address.&lt;/p&gt;
@@ -3024,7 +3024,7 @@ surveillance cameras, lockpicking, USB dropping, etc)&lt;/li&gt;
 &lt;p&gt;Mostly they refer to bootable operating system that does not require any prior installations procedure. They are mostly used in forensics, pentesting where installation is not required or for installing a newer version on the drive.&lt;/p&gt;
 
 &lt;h3 id=&quot;154-how-do-you-change-a-user-agent-in-a-chrome-browser&quot;&gt;154. How do you change a &lt;strong&gt;User-Agent&lt;/strong&gt; in a Chrome Browser?&lt;/h3&gt;
-&lt;p&gt;Go to the Developer Tools or Press &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl&lt;/code&gt;+&lt;code class=&quot;highlighter-rouge&quot;&gt;Shift&lt;/code&gt;+&lt;code class=&quot;highlighter-rouge&quot;&gt;I&lt;/code&gt; to open the Panel. To your extreme bottom left, click the three dots and choose “Network Condtions”. Search for the User Agent section. You can choose existing UAs or create your custom one.&lt;/p&gt;
+&lt;p&gt;Go to the Developer Tools or Press &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ctrl&lt;/code&gt;+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Shift&lt;/code&gt;+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;I&lt;/code&gt; to open the Panel. To your extreme bottom left, click the three dots and choose “Network Condtions”. Search for the User Agent section. You can choose existing UAs or create your custom one.&lt;/p&gt;
 
 &lt;h3 id=&quot;155-explain-sast--dast&quot;&gt;155. Explain &lt;strong&gt;SAST&lt;/strong&gt; &amp;amp; &lt;strong&gt;DAST&lt;/strong&gt;&lt;/h3&gt;
 &lt;p&gt;SAST (&lt;em&gt;Static Application Security Testing&lt;/em&gt;), otherwise referred to as White Box Pentesting of an application. Complete access to the source code will be available and it can be introduced in any SDLC models like (Agile (CICD), WaterFall) whereas in DAST (&lt;em&gt;Dynamic Application Security Testing&lt;/em&gt;), otherwise called as Black Box Pentesting, can only be applied to WaterFall SDLC model, that too only after the development phase of the software. Some of these factors are analyzed from these two models.&lt;/p&gt;
@@ -3068,23 +3068,23 @@ surveillance cameras, lockpicking, USB dropping, etc)&lt;/li&gt;
 &lt;hr /&gt;
 
   
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/infosec/mega-guide-information-security-interview-questions&quot;&gt;The Mega Guide to Information Security Interview Questions.&lt;/a&gt; was originally published by Shankar Damodaran at &lt;a href=&quot;http://localhost:4000&quot;&gt;<b><font size='5.75em'>Inventor<font color='yellow' size='6.75em'>.</font> Biker<font color='yellow' size='6.75em'>.</font> Foodie<font color='yellow' size='6.75em'>.</font> h4ck3r<font color='yellow' size='6.75em'>.</font> Wanderlust<font color='yellow' size='6.75em'>. </font> </font><p>Sometimes....<span id='changingword'>I wanna be just ME.</span></p>&lt;/a&gt; on April 21, 2017.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;/infosec/mega-guide-information-security-interview-questions&quot;&gt;The Mega Guide to Information Security Interview Questions.&lt;/a&gt; was originally published by Shankar Damodaran at &lt;a href=&quot;&quot;&gt;<b><font size='5.75em'>Inventor<font color='yellow' size='6.75em'>.</font> Biker<font color='yellow' size='6.75em'>.</font> Foodie<font color='yellow' size='6.75em'>.</font> h4ck3r<font color='yellow' size='6.75em'>.</font> Wanderlust<font color='yellow' size='6.75em'>. </font> </font><p>Sometimes....<span id='changingword'>I wanna be just ME.</span></p>&lt;/a&gt; on April 21, 2017.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Bachelor's Recipe #1: The exotic indo-chinese egg scramble.]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/recipe/bachelors-recipe-indo-chinese-egg-scramble"/>
-  <id>http://localhost:4000/recipe/bachelors-recipe-indo-chinese-egg-scramble</id>
+  <link rel="alternate" type="text/html" href="/recipe/bachelors-recipe-indo-chinese-egg-scramble"/>
+  <id>/recipe/bachelors-recipe-indo-chinese-egg-scramble</id>
   <published>2015-09-22T00:00:00+05:30</published>
   <updated>2015-09-22T00:00:00-00:00</updated>
   
   <author>
     <name>Shankar Damodaran</name>
-    <uri>http://localhost:4000</uri>
+    <uri></uri>
     <email>d.shankarnarayana@gmail.com</email>
   </author>
-  <category scheme="http://localhost:4000/tags/#cooking" term="cooking" /><category scheme="http://localhost:4000/tags/#bachelor's%20recipe" term="bachelor's recipe" /><category scheme="http://localhost:4000/tags/#egg%20scramble" term="egg scramble" /><category scheme="http://localhost:4000/tags/#indian%20recipe" term="indian recipe" /><category scheme="http://localhost:4000/tags/#chinese%20recipe" term="chinese recipe" />
+  <category scheme="/tags/#cooking" term="cooking" /><category scheme="/tags/#bachelor's%20recipe" term="bachelor's recipe" /><category scheme="/tags/#egg%20scramble" term="egg scramble" /><category scheme="/tags/#indian%20recipe" term="indian recipe" /><category scheme="/tags/#chinese%20recipe" term="chinese recipe" />
   <content type="html">
   
     &lt;p&gt;I’ve been experimenting a variety of cooking for quite sometime and this dish turned out to be &lt;strong&gt;soooo exotic&lt;/strong&gt;. Hey, I am not faking, you should definitely try this out and you will surely thank me later. This dish is not a main course, it’s a side kick and can be considered a starter as well. I am not a pro at cooking, but this one tastes luscious.&lt;br /&gt;&lt;br /&gt; The preparation time is hardly less than 5-7 minutes. You will find a brief step-by-step method on how to make this recipe. So let’s get started.&lt;/p&gt;
@@ -3245,23 +3245,23 @@ surveillance cameras, lockpicking, USB dropping, etc)&lt;/li&gt;
 &lt;hr /&gt;
 
   
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/recipe/bachelors-recipe-indo-chinese-egg-scramble&quot;&gt;Bachelor's Recipe #1: The exotic indo-chinese egg scramble.&lt;/a&gt; was originally published by Shankar Damodaran at &lt;a href=&quot;http://localhost:4000&quot;&gt;<b><font size='5.75em'>Inventor<font color='yellow' size='6.75em'>.</font> Biker<font color='yellow' size='6.75em'>.</font> Foodie<font color='yellow' size='6.75em'>.</font> h4ck3r<font color='yellow' size='6.75em'>.</font> Wanderlust<font color='yellow' size='6.75em'>. </font> </font><p>Sometimes....<span id='changingword'>I wanna be just ME.</span></p>&lt;/a&gt; on September 22, 2015.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;/recipe/bachelors-recipe-indo-chinese-egg-scramble&quot;&gt;Bachelor's Recipe #1: The exotic indo-chinese egg scramble.&lt;/a&gt; was originally published by Shankar Damodaran at &lt;a href=&quot;&quot;&gt;<b><font size='5.75em'>Inventor<font color='yellow' size='6.75em'>.</font> Biker<font color='yellow' size='6.75em'>.</font> Foodie<font color='yellow' size='6.75em'>.</font> h4ck3r<font color='yellow' size='6.75em'>.</font> Wanderlust<font color='yellow' size='6.75em'>. </font> </font><p>Sometimes....<span id='changingword'>I wanna be just ME.</span></p>&lt;/a&gt; on September 22, 2015.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[The top 15 most sick, disturbing & shocking flicks as of 2014.]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/movies/the-top-15-most-sick-disturbing-shocking-flicks-as-of-2014"/>
-  <id>http://localhost:4000/movies/the-top-15-most-sick-disturbing-shocking-flicks-as-of-2014</id>
+  <link rel="alternate" type="text/html" href="/movies/the-top-15-most-sick-disturbing-shocking-flicks-as-of-2014"/>
+  <id>/movies/the-top-15-most-sick-disturbing-shocking-flicks-as-of-2014</id>
   <published>2015-09-08T00:00:00+05:30</published>
   <updated>2015-09-13T00:00:00-00:00</updated>
   
   <author>
     <name>Shankar Damodaran</name>
-    <uri>http://localhost:4000</uri>
+    <uri></uri>
     <email>d.shankarnarayana@gmail.com</email>
   </author>
-  <category scheme="http://localhost:4000/tags/#snuff%20movies" term="snuff movies" /><category scheme="http://localhost:4000/tags/#shockumentary" term="shockumentary" /><category scheme="http://localhost:4000/tags/#disgusting%20scenes" term="disgusting scenes" /><category scheme="http://localhost:4000/tags/#sick%20movies" term="sick movies" /><category scheme="http://localhost:4000/tags/#disturbing%20movies" term="disturbing movies" /><category scheme="http://localhost:4000/tags/#movies%20that%20cannot%20be%20watched%20more%20than%20once" term="movies that cannot be watched more than once" /><category scheme="http://localhost:4000/tags/#shocking%20movies" term="shocking movies" />
+  <category scheme="/tags/#snuff%20movies" term="snuff movies" /><category scheme="/tags/#shockumentary" term="shockumentary" /><category scheme="/tags/#disgusting%20scenes" term="disgusting scenes" /><category scheme="/tags/#sick%20movies" term="sick movies" /><category scheme="/tags/#disturbing%20movies" term="disturbing movies" /><category scheme="/tags/#movies%20that%20cannot%20be%20watched%20more%20than%20once" term="movies that cannot be watched more than once" /><category scheme="/tags/#shocking%20movies" term="shocking movies" />
   <content type="html">
   
     &lt;p&gt;Well it’s been a while since I had written some mini reviews on world movies (I have a bunch of them on my Raspberry Pi 2, however needs a lot of editing). I had this post written last year (2014) and I’m glad atleast it’s out now (2015). I had a glance on those horde of reviews and this one caught my attention. I am not a fan of this genre, couldn’t blame my &lt;strong&gt;curiosity&lt;/strong&gt; (such a bad thing, huh?) for poking into such things. This compilation genre does not fall under full-gore, slasher or zombie type, instead it depicts torture, incest, rape, bizarre porn, etc. other sick-oh types you could imagine.&lt;/p&gt;
@@ -3284,7 +3284,7 @@ surveillance cameras, lockpicking, USB dropping, etc)&lt;/li&gt;
   &lt;p&gt;&lt;strong&gt;précis&lt;/strong&gt;: Cops investigate a criminal running an unsuspecting restaurant, while trying to trace the steps back to how he ended up running it suddenly.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;em&gt;This movie is based on a true event that happened in Macau, China. When I saw this movie it immediately recalled my thoughts of a 1970’s movie &lt;code class=&quot;highlighter-rouge&quot;&gt;The Cannibal Man (1973)&lt;/code&gt;. Untold Story has quite an amount of gore scenes and the most disturbing sequence is the killer potrayed by &lt;strong&gt;Anthony Wong&lt;/strong&gt; butchers little kids. Apart from a bunch of mutilation scenes, the most nauseating part of the movie is he murders the victims, chops them to pieces and serves those flesh chunks to the customers of his restaurant as “pork-chops”. There is an annoying comedy track alongside the movie which makes this flick less gripping.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This movie is based on a true event that happened in Macau, China. When I saw this movie it immediately recalled my thoughts of a 1970’s movie &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;The Cannibal Man (1973)&lt;/code&gt;. Untold Story has quite an amount of gore scenes and the most disturbing sequence is the killer potrayed by &lt;strong&gt;Anthony Wong&lt;/strong&gt; butchers little kids. Apart from a bunch of mutilation scenes, the most nauseating part of the movie is he murders the victims, chops them to pieces and serves those flesh chunks to the customers of his restaurant as “pork-chops”. There is an annoying comedy track alongside the movie which makes this flick less gripping.&lt;/em&gt;&lt;/p&gt;
 
 &lt;div class=&quot;row&quot;&gt;
     &lt;div class=&quot;large-12 columns&quot;&gt;
@@ -3406,7 +3406,7 @@ surveillance cameras, lockpicking, USB dropping, etc)&lt;/li&gt;
   &lt;p&gt;&lt;strong&gt;précis&lt;/strong&gt;: Events over the course of one traumatic night in Paris unfold in reverse-chronological order as the beautiful Alex is brutally raped and beaten by a stranger in the underpass.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;em&gt;“Excellent cinematography, amazing computer graphics &amp;amp; special effects on the fire-extinguisher scene as well as other scenes where Cassel and Dupontel are in pursuit of the rapist (especially the car scenes). The sick rape act really pushes you out of the edge. This movie was filmed in a reverse-chronological order, something like that of Memento (2000) &amp;amp; Peppermint Candy (1999) style. This movie is a masterpiece from &lt;strong&gt;Gaspar Noé&lt;/strong&gt;, his earlier flick &lt;code class=&quot;highlighter-rouge&quot;&gt;I Stand Alone (1998)&lt;/code&gt; had some intense incest content but Irreversible emerges to be more disturbing compared to that.”&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;“Excellent cinematography, amazing computer graphics &amp;amp; special effects on the fire-extinguisher scene as well as other scenes where Cassel and Dupontel are in pursuit of the rapist (especially the car scenes). The sick rape act really pushes you out of the edge. This movie was filmed in a reverse-chronological order, something like that of Memento (2000) &amp;amp; Peppermint Candy (1999) style. This movie is a masterpiece from &lt;strong&gt;Gaspar Noé&lt;/strong&gt;, his earlier flick &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;I Stand Alone (1998)&lt;/code&gt; had some intense incest content but Irreversible emerges to be more disturbing compared to that.”&lt;/em&gt;&lt;/p&gt;
 
 &lt;div class=&quot;row&quot;&gt;
     &lt;div class=&quot;large-12 columns&quot;&gt;
@@ -4204,7 +4204,7 @@ surveillance cameras, lockpicking, USB dropping, etc)&lt;/li&gt;
 
 
   
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/movies/the-top-15-most-sick-disturbing-shocking-flicks-as-of-2014&quot;&gt;The top 15 most sick, disturbing & shocking flicks as of 2014.&lt;/a&gt; was originally published by Shankar Damodaran at &lt;a href=&quot;http://localhost:4000&quot;&gt;<b><font size='5.75em'>Inventor<font color='yellow' size='6.75em'>.</font> Biker<font color='yellow' size='6.75em'>.</font> Foodie<font color='yellow' size='6.75em'>.</font> h4ck3r<font color='yellow' size='6.75em'>.</font> Wanderlust<font color='yellow' size='6.75em'>. </font> </font><p>Sometimes....<span id='changingword'>I wanna be just ME.</span></p>&lt;/a&gt; on September 08, 2015.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;/movies/the-top-15-most-sick-disturbing-shocking-flicks-as-of-2014&quot;&gt;The top 15 most sick, disturbing & shocking flicks as of 2014.&lt;/a&gt; was originally published by Shankar Damodaran at &lt;a href=&quot;&quot;&gt;<b><font size='5.75em'>Inventor<font color='yellow' size='6.75em'>.</font> Biker<font color='yellow' size='6.75em'>.</font> Foodie<font color='yellow' size='6.75em'>.</font> h4ck3r<font color='yellow' size='6.75em'>.</font> Wanderlust<font color='yellow' size='6.75em'>. </font> </font><p>Sometimes....<span id='changingword'>I wanna be just ME.</span></p>&lt;/a&gt; on September 08, 2015.&lt;/p&gt;</content>
 </entry>
 
 </feed>

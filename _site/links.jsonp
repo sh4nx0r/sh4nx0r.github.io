@@ -2,47 +2,47 @@ callback([
 
   {
     "text": "The top 15 most sick, disturbing & shocking flicks as of 2014.",
-    "href": "http://localhost:4000/movies/the-top-15-most-sick-disturbing-shocking-flicks-as-of-2014"
+    "href": "/movies/the-top-15-most-sick-disturbing-shocking-flicks-as-of-2014"
   } ,
 
   {
     "text": "Bachelor's Recipe #1: The exotic indo-chinese egg scramble.",
-    "href": "http://localhost:4000/recipe/bachelors-recipe-indo-chinese-egg-scramble"
+    "href": "/recipe/bachelors-recipe-indo-chinese-egg-scramble"
   } ,
 
   {
     "text": "The Mega Guide to Information Security Interview Questions.",
-    "href": "http://localhost:4000/infosec/mega-guide-information-security-interview-questions"
+    "href": "/infosec/mega-guide-information-security-interview-questions"
   } ,
 
   {
     "text": "Getting Started: Building a simple search engine with Apache Solr.",
-    "href": "http://localhost:4000/development/building-search-engine-with-solr-mysql-linux-getting-started"
+    "href": "/development/building-search-engine-with-solr-mysql-linux-getting-started"
   } ,
 
   {
     "text": "Do not throw your Old TV, Convert it to a Smart TV instead!",
-    "href": "http://localhost:4000/installation/convert-old-crt-tv-to-smart-tv"
+    "href": "/installation/convert-old-crt-tv-to-smart-tv"
   } ,
 
   {
     "text": "The top 25 movies hero/protagonist(s) dies in a shootout.",
-    "href": "http://localhost:4000/movies/the-top-25-movies-hero-protoganist-dies-in-a-shootout"
+    "href": "/movies/the-top-25-movies-hero-protoganist-dies-in-a-shootout"
   } ,
 
   {
     "text": "Bachelor's Recipe #2: The Delicious Dried Anchovies Pickle.",
-    "href": "http://localhost:4000/recipe/bachelors-recipe-anchovies-pickle-curry"
+    "href": "/recipe/bachelors-recipe-anchovies-pickle-curry"
   } ,
 
   {
     "text": "CaptureTheFlag #1: 'Bandit' Walkthrough for OverTheWire.Org",
-    "href": "http://localhost:4000/infosec/capture-the-flag-bandit-overthewireorg"
+    "href": "/infosec/capture-the-flag-bandit-overthewireorg"
   } ,
 
   {
     "text": "Couple's Recipe #3: The Luscious White Chicken Pasta.",
-    "href": "http://localhost:4000/recipe/couples-recipe-white-chicken-pasta"
+    "href": "/recipe/couples-recipe-white-chicken-pasta"
   } 
 
 ])
